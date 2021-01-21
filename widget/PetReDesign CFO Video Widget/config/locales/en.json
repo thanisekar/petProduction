@@ -1,0 +1,8 @@
+{
+  "resources": {
+    "VideoUrlText": "Enter Video Url",
+    "enabledHelpText": "Enable the CFO Video Widget",
+    "enabledLabel": "Widget Enable",
+    "VideoUrlTextLabel": "Video Url"
+  }
+}

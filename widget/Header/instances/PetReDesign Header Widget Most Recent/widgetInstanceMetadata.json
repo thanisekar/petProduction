@@ -1,0 +1,19 @@
+{
+  "configuration": {
+    "logoPageLink": "home",
+    "logoAltText": "Logo Alternative Text",
+    "miniCartDuration": "5",
+    "logoImage": "/img/logo.png",
+    "displayMiniCart": true,
+    "miniCartNumberOfItems": "3",
+    "requiredLinks": [
+      "home",
+      "aboutUs",
+      "returns",
+      "shipping",
+      "contactUs",
+      "privacy"
+    ]
+  },
+  "displayName": "PetReDesign Header Widget Most Recent"
+}

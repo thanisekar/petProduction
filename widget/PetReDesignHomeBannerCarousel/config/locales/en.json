@@ -1,0 +1,20 @@
+{
+  "resources": {
+    "homeBannerFirstImageTextLabel": "Home Banner Image One",
+    "homeBannerSecondImageLinkTextLabel": "Link for Image Two",
+    "homeBannerFourthImageLinkTextLabel": "Link for Image Four",
+    "homeBannerSecondImagehelp": "Choose the Banner Image Two",
+    "homeBannerFirstImageLinkhelp": "Choose the Link for Image One",
+    "homeBannerThirdImagehelp": "Choose the Banner Image Three",
+    "homeBannerThirdImageLinkhelp": "Choose the Link for Image Three",
+    "homeBannerThirdImageLinkTextLabel": "Link for Image Three",
+    "homeBannerFirstImageLinkTextLabel": "Link for Image One",
+    "homeBannerFourthImageTextLabel": "Home Banner Image Four",
+    "homeBannerSecondImageLinkhelp": "Choose the Link for Image Two",
+    "homeBannerThirdImageTextLabel": "Home Banner Image Three",
+    "homeBannerFourthImagehelp": "Choose the Banner Image Four",
+    "homeBannerSecondImageTextLabel": "Home Banner Image Two",
+    "homeBannerFourthImageLinkhelp": "Choose the Link for Image Four",
+    "homeBannerFirstImagehelp": "Choose the Banner Image One"
+  }
+}

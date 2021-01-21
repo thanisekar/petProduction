@@ -1,0 +1,17 @@
+<div class='container'>
+     <!-- ko if: (koSearchListTabView() != 'PLP' || koSearchListTabView() != 'brandPage' )-->
+    <!-- ko if: (koSearchListTabView() == 'search' )-->
+<div class='row search-tab-wrapper'>
+<div class="search-tab-container col-xs-12">
+    <!--<div data-bind="text: koSearchListTabView()"></div>-->
+   
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#" class="searchTab">Products</a></li>
+    <li><a data-toggle="tab" href="#" id="educationArticleTab" class="searchTab" data-bind='click:function(){$.Topic("PetmateArticleProducts").publish("success");}'>Education</a></li>
+  </ul>
+ 
+</div>
+</div>
+ <!-- /ko -->
+  <!-- /ko -->
+</div>

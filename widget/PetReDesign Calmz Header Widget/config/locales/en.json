@@ -1,0 +1,10 @@
+{
+  "resources": {
+    "BuyNowButtonLinkLabel": "Buy Now Button Link",
+    "BuyNowButtonTextLabel": "Buy Now Button Text",
+    "BuyNowButtonTextHelpText": "Enter Buy Now Button Text",
+    "PhoneNumberTextLabel": "Phone Number",
+    "BuyNowButtonLinkHelpText": "Enter Buy Now Button Link",
+    "PhoneNumberTextHelpText": "Enter Phone Number"
+  }
+}

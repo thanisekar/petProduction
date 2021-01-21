@@ -1,0 +1,17 @@
+{
+  "titleResourceId": "title",
+  "properties": [
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "productId",
+      "id": "productId",
+      "helpTextResourceId": "productIdHelpText",
+      "labelResourceId": "productIdLabel",
+      "type": "stringType",
+      "maxLength": 2000,
+      "required": false
+    }
+  ],
+  "descriptionResourceId": "description"
+}

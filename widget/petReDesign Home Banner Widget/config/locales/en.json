@@ -1,0 +1,14 @@
+{
+  "resources": {
+    "bannerImageLabel3": "Banner Image Label3",
+    "bannerImageHelpText": "Banner Image",
+    "bannerImageLabel2": "Banner Image Label2",
+    "bannerImageLabel1": "Banner Image Label1",
+    "bannerImageHelpText1": "Banner Image Text1",
+    "bannerImageHelpText2": "Banner Image Text2",
+    "description": "Place the Banner here",
+    "bannerImageLabel": "Banner Image Path",
+    "bannerImageHelpText3": "Banner Image Text3",
+    "title": "HomeBanner"
+  }
+}

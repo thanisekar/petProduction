@@ -1,0 +1,109 @@
+<div class="container" id="petmateCarouselWidget">
+    <!-- ko if: product().relatedProducts != null -->
+        <h1 class="headline">You may also like</h1>
+    <!--/ko-->
+    <div class="col-xs-12 carousel-container-width">
+            <!--<h2 data-bind="text: carouselTitle"></h2>-->
+            <!--<span data-bind='text:koRelatedItems().length'></span>-->
+            
+    <!--      <pre data-bind="text: ko.toJSON(koRelatedItems(), null, 2)"></pre>-->
+           <div class="row carousel_">
+            <div  id="owlCarousel" class="owl-carousel image-carousel-container" 
+            data-bind="owlCarousel: {data: koRelatedItems, 
+            owlOptions: { navigation : true, 
+            rewindNav : false, 
+            pagination:false, 
+            scrollPerPage : true,
+            items : 5, 
+            itemsDesktop : [1199, 5], 
+            itemsTablet: [991, 2], 
+            itemsMobile : [767, 2], 
+            jsonPath : false, 
+            jsonSuccess : false,
+            afterAction: function(){
+                          if ( this.itemsAmount > this.visibleItems.length ) {
+                            $('.next').show();
+                            $('.prev').show();
+                        
+                            $('.next').removeClass('disabled');
+                            $('.prev').removeClass('disabled');
+                            if ( this.currentItem == 0 ) {
+                              $('.prev').addClass('disabled');
+                            }
+                            if ( this.currentItem == this.maximumItem ) {
+                              $('.next').addClass('disabled');
+                            }
+                        
+                          } else {
+                            $('.next').hide();
+                            $('.prev').hide();
+                          }
+                        }}}">
+                <!--ko foreach: koRelatedItems()-->
+			   <div class='owl-carousel-tile'>
+			        <!--<pre data-bind="text: ko.toJSON($parent.koRelatedProdtIsFlagData(),  null, 2)"></pre>-->
+                      <!-- ko foreach: $parent.koRelatedProdtIsFlagData() --> 
+                          <!-- ko if: ($parent.id == id)-->
+                          <!-- ko if: isSaleFlag -->
+                              <!--<span class="petmate-sale-flag"></span>-->
+                              <!-- /ko -->
+                              <!-- ko if: !isSaleFlag -->
+                                  <!-- ko if: isNewFlag -->
+                                  <span class="petmate-new-flag">New</span>
+                                  <!-- /ko -->
+                              <!-- /ko -->
+                          <!-- /ko -->
+                      <!-- /ko -->
+                      <!-- ko if: promotext() -->
+                   <div class='cc-item-promo-text'>
+                         <span class="promo-message" data-bind='text:promotext'></span>
+                   </div>
+                   <!-- /ko-->
+				  <div class='owl-carousel-tile-img'>  
+				     <a data-bind="ccLink: $data, attr: {href: $data.route}">
+						 <img data-bind="ccResizeImage: {
+                                source: $data.primaryFullImageURL,
+                                xsmall: '300,300',
+                                small: '300,300',
+                                medium: '250,250',
+                                large: '250,250',
+                                alt: displayName,
+                                title:displayName}"  class="img-responsive"/>  
+					  </a> 
+				  </div>
+				  
+				   <div class="owl-carousel-title-price">
+				         <!--ko if : salePrice()!=null-->
+				          	<span data-bind='text:salePrice' class='salePriceValue'></span>
+				        	 <span data-bind='text:"$"+listPrice()' class='listPriceValue'></span>
+				         <!--/ko-->
+				       
+    				     <!--ko if:salePrice()==null-->
+    				     	<span data-bind='text:listPrice'></span>
+    				     <!--/ko-->
+            			
+                       
+                        
+                        
+				       <!-- ko foreach: $parent.koRelatedProdtIsFlagData() --> 
+                          <!-- ko if: ($parent.id == id)-->
+                          <!-- ko if: isSaleFlag -->
+                              <span class="label label-danger">Sale</span>
+                              <!-- /ko -->
+                          <!-- /ko -->
+                      <!-- /ko -->
+				   </div>
+				  <div class='owl-carousel-tile-text'>
+				      <a href="#" data-bind="ccLink: $data, attr: {href: $data.route}">
+				          <span data-bind="text:displayName"></span></a>
+				   </div>
+                    <div class='item-rating'>
+                         <div data-bind="attr:{id:'BVRRInlineGridDisplay-'+id()}"></div>
+                   </div>
+			   </div> 
+			   <!-- /ko -->
+			  
+			</div>
+        </div>
+    </div>
+</div>

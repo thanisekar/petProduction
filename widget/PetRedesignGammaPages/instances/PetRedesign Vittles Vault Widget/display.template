@@ -1,0 +1,126 @@
+<div id="vittlesVault">
+   <div class="banner">
+      <img src="/file/general/Desktop_Banner_VittlesVault_FINAL.jpg" class="img-responsive hidden-xs">
+       <img src="/file/general/Mobile_Banner_VittlesVault_FINAL.jpg" class="img-responsive visible-xs">
+      <div class="col-sm-6 col-xs-12 nopad content-center">
+      <p>You love your pets enough to buy them the very best. And the very best pet food can be expensive. Vittles Vault pays for itself by helping keep their premium food fresher longer. It’s not just for dogs - it keeps premium cat food, rabbit food, guinea pig food, even duck food fresher longer. No matter your pet’s size or type, Vittles Vault will protect your investment by offering advanced freshness. <b style="margin-right:10px">Freshness You Can Take To The Bank<sup>TM</sup> </b><span class="hidden-xs"><a data-bind="ccLink: {route: '/brands/vittlesvault/category/brand-vittlesvault'}" class="shopNow">SHOP NOW  <i class="fa fa-play" aria-hidden="true"></i></a></span></p>
+      <div class="visible-xs shop-now-mob"><a data-bind="ccLink: {route: '/brands/vittlesvault/category/brand-vittlesvault'}" class="shopNow">SHOP NOW  <i class="fa fa-play" aria-hidden="true"></i></a></div>
+      </div>
+   </div>
+   <div class="img-carousel">
+      <div class="row hidden-xs">
+         <div class="col-xs-3 hidden-xs">
+            <img src="/file/general/image_Desktop_Carousel1_VittlesVault.jpg" class="img-responsive">
+         </div>
+         <div class="col-xs-3 hidden-xs">
+            <img src="/file/general/image_Desktop_Carousel2_VittlesVault.jpg" class="img-responsive">
+         </div>
+         <div class="col-xs-3 hidden-xs">
+            <img src="/file/general/image_Desktop_Carousel3_VittlesVault.jpg" class="img-responsive">
+         </div>
+         <div class="col-xs-3 hidden-xs">
+            <img src="/file/general/VV_lifestyle_Deskop_4.jpg" class="img-responsive">
+         </div>
+      </div>
+      <!--Product Carousel-->
+       <div id="carousel-example-generic" class="carousel slide vittles visible-xs" data-ride="carousel">
+           <div class="prod-desc">
+               <h6>How Does Vittles Vault<sup>TM</sup></h6>
+               <h6>Keep high quality pet food</h6>
+               <h5>So fresh, so long?</h5>
+           </div>
+         <!-- Indicators -->
+         <ol class="carousel-indicators hidden-xs hidden-sm">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+         </ol>
+         <!-- Wrapper for slides -->
+         <div class="carousel-inner" >
+            <div class="item active">
+               <img src="/file/general/image_Mobile_Infographic_1_VittlesVault.jpg" class="img-responsive">
+               <p><b>BPA-Free and Food Safe</b> Our BPA-free resin formula provides added peace of mind. It keeps food safe in addition to keeping it fresh.</p>
+            </div>
+            <div class="item">
+               <img src="/file/general/image_Mobile_Infographic_2_VittlesVault.jpg" class="img-responsive">
+               <p><b>Gamma Seal Technology</b> The secret to Gamma2 superiority lies in
+            the patented Gamma Seal. Double gaskets coupled with the threaded
+            locking system achieve a seal so impenetrable, food stays fresher longer,
+            harmful elements stay locked out, and pests don’t have a chance.</p>
+            </div>
+            <div class="item">
+               <img src="/file/general/Mobile_Infographic3_VittlesVault.jpg" class="img-responsive">
+               <p><b>Integral Seal Ring</b> A critical element in the double gasket system, this ring provides the final layer of protection from harmful moisture and pests.</p>
+            </div>
+         </div>
+        <!-- Controls -->
+         <a style="background-image:none" class="left carousel-control hidden-sm" href="#carousel-example-generic" data-slide="prev">
+         <span class="glyphicon glyphicon-chevron-left"></span>
+         </a>
+         <a style="background-image:none" class="right carousel-control hidden-sm" href="#carousel-example-generic" data-slide="next">
+         <span class="glyphicon glyphicon-chevron-right"></span>
+         </a>
+
+      </div>
+      
+      <!--Ends-->
+      <div class="visible-xs bottom-section">
+          <img src="/file/general/image_Mobile_CMB_VittlesVault.jpg" class="img-responsive">
+                <p>Our threaded locking system works in conjunction with reliable double gaskets to create a state known as Controlled Moisture Balance. Beneficial moisture, which keeps food fresh and tasty is trapped inside while harmful moisture, which contributes to contamination is locked out.</p>
+                  <a data-bind="ccLink: {route: '/brands/vittlesvault/category/brand-vittlesvault'}"> <img src="/file/general/image_Mobile_ShopNowButton_VittlesVault.jpg" class="img-responsive"> </a>
+      </div>
+      
+      <!--Life Style Carousel-->
+       <div id="carousel-example-generic-lifestyle" class="carousel slide lifestyle visible-xs" data-ride="carousel">
+         <!-- Indicators -->
+         <ol class="carousel-indicators hidden-xs hidden-sm">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+         </ol>
+         <!-- Wrapper for slides -->
+         <div class="carousel-inner">
+            <div class="item active">
+               <img src="/file/general/image_Desktop_Carousel1_VittlesVault.jpg" class="img-responsive">
+            </div>
+            <div class="item">
+               <img src="/file/general/image_Desktop_Carousel2_VittlesVault.jpg" class="img-responsive">
+            </div>
+            <div class="item">
+               <img src="/file/general/image_Desktop_Carousel3_VittlesVault.jpg" class="img-responsive">
+            </div>
+            <div class="item">
+               <img src="/file/general/VV_Lifestyle_Mobile_4.jpg" class="img-responsive">
+            </div>
+             
+         </div>
+        <!-- Controls -->
+         <a style="background-image:none" class="left carousel-control hidden-sm" href="#carousel-example-generic-lifestyle" data-slide="prev">
+         <span class="glyphicon glyphicon-chevron-left"></span>
+         </a>
+         <a style="background-image:none" class="right carousel-control hidden-sm" href="#carousel-example-generic-lifestyle" data-slide="next">
+         <span class="glyphicon glyphicon-chevron-right"></span>
+         </a>
+      </div>
+      
+      <!--Ends-->
+      
+      
+      
+     
+   </div>
+   <div class="storage hidden-xs">
+      <div style="position: relative;">
+         <img src="/file/general/image_Desktop_Infographic1_VittlesVault.jpg" style="width: 100%; height: auto;">
+         <div class="main" style="position: absolute; left: 24%; top: 44%; width: 3.5%; height: 5%;display:inline-block;cursor:pointer;"><span class="tooltiptext"><b>BPA Free and Food Safe</b> Our BPA-free resin formula provides added peace of mind. It keeps food safe in addition to keeping it fresh.</span></div>
+         <div class="main" style="position: absolute; left: 73.5%; top: 32.5%; width: 3.5%; height: 5%;display:inline-block;cursor:pointer;"><span class="tooltiptext"><b>Gamma Seal Technology</b> The secret to Gamma2 superiority lies in
+            the patented Gamma Seal. Double gaskets coupled with the threaded
+            locking system achieve a seal so impenetrable, food stays fresher longer,
+            harmful elements stay locked out, and pests don’t have a chance.</span></div>
+         <div class="main" style="position: absolute; left: 52%; top: 20.5%; width: 3.5%; height: 5%;display:inline-block;cursor:pointer;"><span class="tooltiptext">
+            <b>Integral Seal Ring</b> A critical element in the double gasket system, this ring provides the final layer of protection from harmful moisture and pests.</span>
+         </div>
+      </div>
+   </div>
+</div>

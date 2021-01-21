@@ -1,0 +1,21 @@
+{
+  "imports": [
+    "shippingCountries",
+    "defaultShippingCountry"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Customer Profile Widget",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "pageTypes": [
+    "profile"
+  ],
+  "config": {
+    "displaySWM": "true"
+  }
+}

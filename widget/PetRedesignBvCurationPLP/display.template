@@ -1,0 +1,4 @@
+<div id="bvCurationWrap" >  
+    <!--<div id="bv-grid-gallery" ></div>-->
+    <div  class="BVGalleryWrap"  data-bind="attr: {'id': koBVGalleryContainer()}"></div> 
+</div>

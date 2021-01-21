@@ -1,0 +1,161 @@
+
+<!-- ko ifnot:isBrandPage()-->
+<!-- ko with: category -->
+  <!-- ko if : longDescription -->	
+ 
+<div id="categorydescriptionContainer"  >
+    <div class='container nopad'>
+         <div class="row" id='category-desciption' >
+                  <div class='col-xs-12 nopad' >
+    				    <div  data-bind='html :longDescription' class='plpCategoryDescription'></div>
+    				     <h6 class="show_hide" data-content="toggle-text">Read More</h6>
+                 </div>
+         </div>
+     </div>
+</div>
+<!-- /ko -->
+<!-- /ko -->
+<!-- /ko -->
+
+
+<!-- ko if:isBrandPage()-->
+  <!-- ko if : categoryId() == 'brand-aspenpet'  -->
+
+<div class="container categoryTable categoryLinks">
+<div class="row">
+<div class="col-sm-9 col-xs-12 nopad categoryTable-center">
+<h3 class="title-txt">More Pet Products</h3>
+
+<table class="table table-borderless">
+	<tbody>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dogs/dog-bedding/category/L1-beddingL2-dog-beds'}"  tabindex="0">Dog Beds and Supplies</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dog-collars-leashes/collars/category/120916'}"  tabindex="0">Dog Collars</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dog-feeding-watering/food-storage/category/120936'}"  tabindex="0">Dog Food Storage</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cats/cat-toys/category/L1-toysL2-cat-toys'}"  tabindex="0">Cat Toys</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cats/cat-kennels-carriers/category/L1-kennels-carriersL2-cat-kennels-carriers'}"  tabindex="0">Cat Kennels</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cat-collars-leashes/collars/category/120914'}"  tabindex="0">Cat Collars</a></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+<!-- /ko -->
+<!-- /ko -->
+
+<!-- ko if:isBrandPage()-->
+  <!-- ko if : categoryId() == 'brand-booda'  -->
+<div class="container categoryTable">
+<div class="row">
+<div class="col-sm-9 col-xs-12 nopad categoryTable-center">
+<h3 class="title-txt">More Pet Products</h3>
+
+<table class="table table-borderless">
+	<tbody>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dogs/dog-bedding/category/L1-beddingL2-dog-beds'}" tabindex="0">See all Dog Beds</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dog-collars-leashes/collars/category/120916'}"  tabindex="0">Unique Dog Collars</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dog-feeding-watering/food-storage/category/120936'}"  tabindex="0">Dog Food Storage</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cats/cat-toys/category/L1-toysL2-cat-toys'}"  tabindex="0">Cat Toys</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cats/cat-kennels-carriers/category/L1-kennels-carriersL2-cat-kennels-carriers'}"  tabindex="0">Cat Kennels</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cat-collars-leashes/collars/category/120914'}"  tabindex="0">Cat Collars</a></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+<!-- /ko -->
+<!-- /ko -->
+
+<!-- ko if:isBrandPage()-->
+  <!-- ko if : categoryId() == 'brand-jw'  -->
+
+<div class="container categoryTable">
+<div class="row">
+<div class="col-sm-9 col-xs-12 nopad categoryTable-center">
+<h3 class="title-txt">More Pet Products</h3>
+
+<table class="table table-borderless">
+	<tbody>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dogs/dog-bedding/category/L1-beddingL2-dog-beds'}"  tabindex="0">Beds for Dogs</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dog-collars-leashes/collars/category/120916'}"  tabindex="0">Dog Collars</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dog-feeding-watering/food-storage/category/120936'}"  tabindex="0">Food Storage for Dogs</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cats/cat-toys/category/L1-toysL2-cat-toys'}" tabindex="0">Cat Scratching Posts and Toys</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cats/cat-kennels-carriers/category/L1-kennels-carriersL2-cat-kennels-carriers'}"  tabindex="0">Best Cat Kennels</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cat-collars-leashes/collars/category/120914'}"  tabindex="0">Reflective Cat Collars</a></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+<!-- /ko -->
+<!-- /ko -->
+
+<!-- ko if:isBrandPage()-->
+  <!-- ko if : categoryId() == 'brand-lazboy'  -->
+<div class="container categoryTable">
+<div class="row">
+<div class="col-sm-9 col-xs-12 nopad categoryTable-center">
+<h3 class="title-txt">More Pet Products</h3>
+
+<table class="table table-borderless">
+	<tbody>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dogs/dog-bedding/category/L1-beddingL2-dog-beds'}" tabindex="0">Amazing Dog Bedding</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dog-collars-leashes/collars/category/120916'}"  tabindex="0">All Dog Collars</a></td>
+		</tr>
+		<tr>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dog-feeding-watering/food-storage/category/120936'}"  tabindex="0">Food Storage for Dogs</a></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+
+<!-- /ko -->
+<!-- /ko -->

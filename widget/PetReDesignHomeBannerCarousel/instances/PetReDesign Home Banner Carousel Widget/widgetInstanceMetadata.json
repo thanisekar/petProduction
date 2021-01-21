@@ -1,0 +1,25 @@
+{
+  "configuration": {
+    "homeBannerLink3": "/category/brand-lazboy",
+    "homeBannerLink4": "/category/puppy-toys",
+    "homeBannerLink1": "/category/petmate-brands",
+    "homeBannerLink2": "/category/brand-Chuckit",
+    "homeBanner4": {
+      "src": "/file/v2117435845945278129/general/JW_Puppy_Carousel_3rdversio.jpg",
+      "mediaName": "/general/JW_Puppy_Carousel_3rdversio.jpg"
+    },
+    "homeBanner3": {
+      "src": "/file/v4069649056512179787/general/LZB_Comfort-Message_Banner.jpg",
+      "mediaName": "/general/LZB_Comfort-Message_Banner.jpg"
+    },
+    "homeBanner2": {
+      "src": "/file/v1063936191390079085/general/CI_MakeFetchHappen_WebBanne.jpg",
+      "mediaName": "/general/CI_MakeFetchHappen_WebBanne.jpg"
+    },
+    "homeBanner1": {
+      "src": "/file/v7683424254665641499/general/PM_HPBanner_Holiday_CAT.jpg",
+      "mediaName": "/general/PM_HPBanner_Holiday_CAT.jpg"
+    }
+  },
+  "displayName": "PetReDesign Home Banner Carousel Widget"
+}

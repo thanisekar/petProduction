@@ -1,0 +1,248 @@
+<div class="my-account"   id="myaccount-orderDetail" style="display:block">
+    
+    <!--ko if: orderDetailsArray()-->
+    <!--<pre data-bind="text: ko.toJSON(orderDetailsArray(),     null, 2)"></pre>-->
+       <!-- ko with: orderDetailsArray() -->
+<div class="mobile-no-pad-left mobile-no-pad-right column">
+   <div class="page-header">Your Orders</div>
+   <div class="panel panel--order no-padding no-border-bottom no-margin">
+      <div class="panel-header clearfix">
+         <div class="col-xs-12 col-sm-12 col-md-6 left order-number left text-left mb-10"><strong>Order: 
+            <span class="orderId" data-bind="text:id"></span></strong>&nbsp;(<span data-bind="text:stateDetailsAsUser"></span>)
+         </div>
+         <div class="col-xs-12 col-sm-12 col-md-6 left order-title medium-text-right mb-20"><strong>Order 
+            Total:</strong>  <strong><span class="grnDollar">$</span><span class="order-total-amount" data-bind="text:totalAmountAuthorized">
+            </span></strong>                      
+         </div>
+         <p class="text-left mb-10 left clearfix" style="clear: both;"><strong>Placed 
+            on:</strong> <span data-bind="text:$parent.orderDate"></span>
+         </p>
+         <!--<p class="text-left mb-10 left clearfix trackingNumber" style="clear: both;">
+                <span><strong>Tracking Number:</strong></span>
+                <span>
+                    <a target="_blank">
+                          <span>987654321234567</span>
+                    </a>
+                </span>
+         </p>-->
+         <p class="text-right mb-10"></p>
+         <p class="text-right"></p>
+         <br><br>
+         <p></p>
+      </div>
+      <div class="panel-body">
+         <div class="row">
+            <div class="col-xs-12 col-sm-12 column mb-10">
+               <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 left mb-10">
+                  <div class="col-xs-12 col-sm-12 text-left"><strong>Shipping Address</strong></div>
+                  <!-- ko with:shippingGroups[0].shippingAddress -->
+                  <div class="col-sm-12 text-left">
+                      <div class="address">
+                          <span class="name" data-bind="text: firstName"></span>
+                           <!-- ko if: lastName !="" -->
+                           <span class="name" data-bind="text: lastName"></span>
+                           <!-- /ko -->
+                        </div>
+                     <div class="address">
+                        <span class="" data-bind="text:address1"></span>
+                        <!--ko if: address2-->
+                        <br>
+                        <span class="" data-bind="text:address2"></span>
+                        <!--/ko-->
+                        <!--ko if: address3-->
+                         <br>
+                        <span class="" data-bind="text:address3"></span>
+                        <!--/ko-->
+                     </div>
+                     <div class="city-state-zip">
+                        <span class="" data-bind="text:city"></span>,&nbsp;<span data-bind="text:state"></span>&nbsp;<span class="" data-bind="text:postalCode"></span>
+                     </div>
+                     <div class="country">
+                        <span class="" data-bind="text:country"></span>
+                     </div>
+                     <div data-bind="text:phoneNumber"></div>
+                  </div>
+                  <!--/ko -->
+               </div>
+               <div class="col-xs-12 col-sm-12 col-md-4 large-4 left mb-10">
+                  <div class="col-xs-12 col-sm-12 text-left"><strong>Billing Address</strong></div>
+                  <!--ko if: paymentGroups[0].billingAddress-->
+                  <!-- ko with:paymentGroups[0].billingAddress -->
+                  <div class="col-sm-12 text-left">
+                      <div class="address">
+                          <span class="name" data-bind="text: firstName"></span>
+                           <!-- ko if: lastName !="" -->
+                           <span class="name" data-bind="text: lastName"></span>
+                           <!-- /ko -->
+                        </div>
+                     <div class="address">
+                        <span class="" data-bind="text:address1"></span>
+                        <!--ko if: address2-->
+                         <br>
+                        <span class="" data-bind="text:address2"></span>
+                        <!--/ko-->
+                        <!--ko if: address3-->
+                         <br>
+                        <span class="" data-bind="text:address3"></span>
+                        <!--/ko-->
+                     </div>
+                     <div class="city-state-zip">
+                        <span class="" data-bind="text:city"></span>,&nbsp;<span data-bind="text:state"></span>&nbsp;<span class="" data-bind="text:postalCode"></span>
+                     </div>
+                     <div class="country">
+                        <span class="" data-bind="text:country"></span>
+                     </div>
+                     <div data-bind="text:phoneNumber"></div>
+                  </div>
+                 <!--/ko -->
+                 <!--/ko-->
+                 
+                 <!--ko if: !paymentGroups[0].billingAddress-->
+                    <!--ko with: shippingAddress-->
+                    <div class="col-sm-12 text-left">
+                        <div class="address">
+                          <span class="name" data-bind="text: firstName"></span>
+                           <!-- ko if: lastName !="" -->
+                           <span class="name" data-bind="text: lastName"></span>
+                           <!-- /ko -->
+                        </div>
+                     <div class="address">
+                        <span class="" data-bind="text:address1"></span>
+                        <!--ko if: address2-->
+                         <br>
+                        <span class="" data-bind="text:address2"></span>
+                        <!--/ko-->
+                        <!--ko if: address3-->
+                         <br>
+                        <span class="" data-bind="text:address3"></span>
+                        <!--/ko-->
+                     </div>
+                     <div class="city-state-zip">
+                        <span class="" data-bind="text:city"></span>,&nbsp;<span data-bind="text:state"></span>&nbsp;<span class="" data-bind="text:postalCode"></span>
+                     </div>
+                     <div class="country">
+                        <span class="" data-bind="text:country"></span>
+                     </div>
+                     <div data-bind="text:phoneNumber"></div>
+                  </div>
+                    <!--/ko-->
+                 <!--/ko-->
+               </div>
+               <div class="col-xs-12 col-sm-12 col-md-4 large-4 left mb-10">
+                  <div class="col-sm-12 text-left"><strong>Payment Information</strong></div>
+                  <div class="col-sm-12 text-left">
+                        <div class="col-sm-12 text-left">
+                          <!-- ko foreach: dynamicProperties -->
+                              <!-- ko if: id === 'orderPaymentInfo' -->
+                                 <!-- ko if: value && value != "" -->
+                                    <!-- ko with: $parents[1].getPaymentJsonObj(value) --> 
+                                       <!-- ko if : $data.hasOwnProperty('creditCardNo') && creditCardNo != "" --> 
+                                        <p class="no-margin"><span data-bind="text:creditCardType"></span>&nbsp;<span data-bind="text:creditCardNo"></span></p>
+                                        <!--<p class="no-margin">Type. <span data-bind="text:creditCardType"></span></p>-->
+                                        <p class="no-margin">Exp. <span data-bind="text:creditExpirationDate"></span></p>
+                                         <!-- /ko -->
+                                     <!-- /ko -->
+                                  <!-- /ko -->
+                              <!-- /ko --> 
+                           <!-- /ko --> 
+                           
+                           <!--ko if: paymentGroups[0].type != "card"-->
+                                <!--ko with: profile-->
+                                    <p class="no-margin"><span data-bind="text:email"></span></p>
+                                <!-- /ko --> 
+                           <!-- /ko --> 
+                        </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- ko foreach:shoppingCart.items -->
+   <div class="panel panel--order no-padding no-margin no-border-bottom clearfix">
+      <div class="product column mb-20">
+         <div class="product-image product-image--order-details left mb-10">
+            <a>
+            <img data-bind="attr: {src: imageInfo.primaryThumbImageURL}">
+            </a>
+         </div>
+         <div class="col-xs-6 col-sm-4 col-md-4 product-info left mb-10">
+            <div class="col-sm-12 small-text-left "><strong  data-bind="text:displayName"></strong>
+            </div>
+            <div class="col-sm-12 small-text-left "><strong>SKU - 
+               <span data-bind="text:catRefId"></span></strong>
+            </div>
+            <div class="attribute-list small-text-left left">
+                <!--ko foreach: $data.variant-->
+                    <!--ko if: optionName === "Color/style"-->
+                        <span class="text-left" data-bind="text:optionValue"></span> 
+                    <!--/ko-->
+                    <!--ko if: optionName === "Size"-->
+                        <span class="show-for-medium-up">|</span> <span class="text-left" data-bind="text: optionValue"></span> 
+                    <!--/ko-->
+                <!--/ko-->
+            </div>
+         </div>
+         <div class="col-sm-4 col-md-3 quantity-price-wrap left">
+            <div class="col-sm-5 small-text-left product-quantity-text left">
+               <div>Qty: <span data-bind="text:quantity"></span></div>
+            </div>
+            <div  class="col-sm-7 small-text-left product-price product-price--order-details left no-margin">
+               <div>
+                  $<span data-bind="text:price"></span>
+               </div>
+            </div>
+         </div>
+         <div class="col-xs-12 col-sm-3 col-md-3 mr-0 right">
+            <input class="col-sm-12 col-md-3 button button--red button--reorder right" data-bind="click: function(data){ $.Topic('addToCart').publish(data) }"  style='outline:none;text-decoration:none;border:0;'  type="submit" value="Re-Order">
+         </div>
+      </div>
+   </div>
+   <!--/ko -->
+   <!--ko if: stateDetailsAsUser == 'Fulfilled'-->
+            <div class="col-xs-12 col-sm-3 col-md-3 mr-0 right reorder-button">
+                    <input class="col-sm-12 col-md-3 button button--red button--reorder right" type="submit" value="Return" data-bind="click: function(data){ $.Topic('returnRequest').publish(data) }">
+            </div>
+        <!--/ko-->
+   <div class="panel panel--order panel--total clearfix">
+      <div class="order-subtotal">
+         <div class="mb-20 clearfix">
+            <div class="col-sm-12 col-xs-12">
+               <div class="col-sm-6 col-xs-6 left text-left">SUB TOTAL</div>
+               <div class="col-sm-6 col-xs-6 right text-right">
+                  <strong>
+                  $<span data-bind="text:priceInfo.amount"></span>
+                  </strong>                           
+               </div>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+               <div class="col-sm-6 col-xs-6 left text-left">SHIPPING</div>
+               <div class="col-sm-6 col-xs-6 right text-right">
+                  <strong>
+                  $<span data-bind="text:priceInfo.shipping"></span>
+                  </strong>                           
+               </div>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+               <div class="col-sm-6 col-xs-6 left text-left">TAX</div>
+               <div class="col-sm-6 col-xs-6 right text-right">
+                  <strong>
+                  $<span data-bind="text:priceInfo.tax"></span>
+                  </strong>                          
+               </div>
+            </div>
+            <div class="col-sm-12 col-xs-12 clearfix">
+               <div class="col-sm-6 col-xs-6 left text-left">TOTAL</div>
+               <div class="col-sm-6 col-xs-6 right text-right">
+                  <strong>
+                  <span class="grnDollar">$</span><span class="total-price" data-bind="text:priceInfo.total"></span>
+                  </strong>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!--/ko -->
+<!--/ko-->
+</div>

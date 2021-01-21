@@ -1,0 +1,43 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+    
+	.bvCurationWrap {
+		position: relative;
+		.left {
+			position: absolute;
+			right: 0;
+			z-index: 1;
+		}
+		.wrapper {
+			position: absolute;
+			top: 65%;
+			width: 100%;
+			#bv-carousel {
+				background-color: #4FC53D!important;
+				margin: 0 5px!important;
+				margin-top: 20px!important;
+			}
+		}
+	}
+	/* Ipad */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		.wrapper {
+			top: 43%!important;
+		}
+	}
+	/* Small Laptop */
+	@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+		.wrapper {
+			top: 55%!important;
+		}
+	}
+	/* Mobile */
+	@media only screen and (min-device-width: 375px) and (max-device-width: 767px) {
+		.wrapper {
+			top: 40%!important;
+		}
+		.back-image {
+			height: 300px;
+		}
+	}
+
+}

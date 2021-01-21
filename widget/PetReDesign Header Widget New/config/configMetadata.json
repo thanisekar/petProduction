@@ -1,0 +1,31 @@
+{
+  "widgetDescriptorName": "headerWidget",
+  "properties": [
+    {
+      "defaultValue": "3",
+      "name": "miniCartNumberOfItems",
+      "id": "miniCartNumberOfItems",
+      "helpTextResourceId": "miniCartNumberOfItemsHelpText",
+      "labelResourceId": "miniCartNumberOfItemsLabel",
+      "type": "stringType",
+      "required": true
+    },
+    {
+      "defaultValue": true,
+      "name": "displayMiniCart",
+      "id": "displayMiniCart",
+      "helpTextResourceId": "miniCartDisplayMiniCartHelpText",
+      "labelResourceId": "miniCartDisplayMiniCartTextLabel",
+      "type": "booleanType"
+    },
+    {
+      "defaultValue": "5",
+      "name": "miniCartDuration",
+      "id": "miniCartDuration",
+      "helpTextResourceId": "miniCartMiniCartDurationHelpText",
+      "labelResourceId": "miniCartMiniCartDurationTextLabel",
+      "type": "stringType",
+      "required": true
+    }
+  ]
+}

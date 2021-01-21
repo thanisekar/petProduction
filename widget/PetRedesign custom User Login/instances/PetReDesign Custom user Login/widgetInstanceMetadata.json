@@ -1,0 +1,10 @@
+{
+  "configuration": {
+    "loginURL": "https://services.petmate.com/b2c/api/v1/appusers/login",
+    "loginPassword": "petmate",
+    "getOrderURL": "https://services.petmate.com/b2c/api/v1/orders/getorder",
+    "userName": "petmate",
+    "LoginURL": "https://b2c-uat.petmate.com/b2c/api/v1/appusers/login"
+  },
+  "displayName": "PetReDesign Custom user Login"
+}

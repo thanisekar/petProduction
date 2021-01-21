@@ -1,0 +1,21 @@
+{
+  "configuration": {
+    "megamenuImage1": {
+      "src": "/file/v830277454296938505/general/Dogs_MegaMenuOne.jpg",
+      "mediaName": "/general/Dogs_MegaMenuOne.jpg"
+    },
+    "megamenuImage2": {
+      "src": "/file/v1475940827976061412/general/Cat_with_JGRoundLitterPan.jpg",
+      "mediaName": "/general/Cat_with_JGRoundLitterPan.jpg"
+    },
+    "megamenuImage3": {
+      "src": "/file/v5890677894089986104/collections/birds_menuimage.jpg",
+      "mediaName": "/collections/birds_menuimage.jpg"
+    },
+    "megamenuImage4": {
+      "src": "/file/v1023179431870641168/general/Dog_with_LZBSofa.jpg",
+      "mediaName": "/general/Dog_with_LZBSofa.jpg"
+    }
+  },
+  "displayName": "PetReDesign Megamenu Updated"
+}

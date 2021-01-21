@@ -1,0 +1,91 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+    .search-tab-wrapper{
+        padding:50px 0px;
+    }
+    .search-tab-container {
+            text-align: center;
+        .nav-tabs {
+                text-align: center;
+                display: inline-block;
+                border: 0px !important;
+        }
+        .nav-tabs > li {
+            margin-bottom: -2px;
+        }
+        .nav-tabs > li > a {
+                 padding: 14px 50px;
+                 background: #fff;
+                 font-weight: bold;
+                 color: #706f6e;
+                 text-transform: uppercase;
+                 position: relative;
+                border: 1px solid #edebe8;
+                outline: none;
+                box-shadow: none;
+                border-radius: 6px;
+                margin-right: 15px;
+                font-size: 14px;
+                font-family:@font-family-nunito;
+            &:before {
+                       content: "";
+                        width: 0;
+                        height: 0;
+                        border-left: 7px solid transparent;
+                        border-right: 7px solid transparent;
+                        border-top: 7px solid #fff;
+                        position: absolute;
+                        left: 5px;
+                        right: 0;
+                        top: 47px;  
+                        margin: 0 auto;
+                        transform: translateX(-50%);
+                        border: 1px solid #edebe8;
+            }
+        }
+        .nav-tabs > li.active > a {
+                 padding: 14px 50px;
+                 background: #2654bf;
+                 font-weight: bold;
+                 color: #fff;
+                 text-transform: uppercase;
+                 position: relative;
+                 border: 1px solid #edebe8;
+                 outline: none;
+                 box-shadow: none;
+                 border-radius: 6px;
+                 margin-right: 15px;
+                 font-size: 14px;
+                 font-family:@font-family-nunito;
+                  &:before {
+                       content: "";
+                        width: 0;
+                        height: 0;
+                        border-left: 7px solid transparent;
+                        border-right: 7px solid transparent;
+                        border-top: 7px solid #edebe8;
+                        position: absolute;
+                        left: 5px;
+                        right: 0;
+                        top: 47px;  
+                        margin: 0 auto;
+                        transform: translateX(-50%);
+                        border-top: 7px solid #2654bf!important;
+            }
+        }
+    }
+    @media only screen and (max-width: 1023px){
+        .search-tab-container{
+            padding-left:15px;
+            padding-right:15px;
+        }
+          .nav-tabs > li > a { 
+              padding: 14px 30px !important;
+          }
+             .nav-tabs > li.active > a {
+                 padding: 14px 30px !important;
+             }
+    }
+   
+
+
+}

@@ -1,0 +1,22 @@
+{
+  "imports": [
+    "product",
+    "imageRootUrl",
+    "loaded",
+    "productVariantOptions",
+    "productTypes"
+  ],
+  "translations": [
+    {
+      "name": "PetRedesign Education Article PDP Widget",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "pageTypes": [
+    "product"
+  ],
+  "config": {}
+}

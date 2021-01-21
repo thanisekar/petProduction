@@ -1,0 +1,22 @@
+{
+  "widgetDescriptorName": "promotionUpsell",
+  "properties": [
+    {
+      "defaultValue": "",
+      "name": "tags",
+      "id": "tags",
+      "type": "stringType",
+      "helpTextResourceId": "tagsHelpText",
+      "labelResourceId": "tagsLabel"
+    },
+    {
+      "defaultValue": "1",
+      "name": "messageLimit",
+      "id": "messageLimit",
+      "type": "stringType",
+      "helpTextResourceId": "messageLimitHelpText",
+      "labelResourceId": "messageLimitLabel",
+      "required": true
+    }
+  ]
+}

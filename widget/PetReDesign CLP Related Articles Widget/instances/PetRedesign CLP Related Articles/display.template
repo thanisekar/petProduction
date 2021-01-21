@@ -1,0 +1,50 @@
+
+
+<div class="container" id="CLPArticleSection" data-oc-id="CLPArticleSection">
+    <div class="row">
+        <div class="col-sm-2 hidden-xs">
+            
+        </div>
+        <div class="col-sm-10 col-xs-12" id='CLPArticleContainer'>
+          <div class='article-content-container '>
+             <h2 class='heading'>Petmate Academy</h2>
+               <p class='education-content'>When your dog won't stop whining or your cat won't stop scratching, find the right answers that will put your mind (and your heart) at ease.</p>
+                
+                  <!-- ko foreach: koGetRouteCategoryPath -->
+                 <a data-bind='attr:{href:$data.route}, ccLink:$data'  class='redirectingLink'>More Articles
+                  <span  class='redirect-arrow-icon'></span>
+                 </a>
+                  <!--/ko-->
+            
+           </div>
+         
+    
+       <div class='col-sm-12 col-xs-12'>
+           <!-- ko foreach: koClpRelatedArticles -->
+           <div class='col-sm-4 col-xs-12'> 
+            <div class="article-products read-articles">
+                <a data-bind="ccLink: $data, attr: {href: $data.route}">
+		        <img data-bind="ccResizeImage: {
+                                  source: primaryFullImageURL,
+                                  xsmall: '500,300',
+                                  small: '500,300',
+                                  medium: '500,300',
+                                  large: '500,300',
+                                  alt: displayName,
+                                 title:displayName}" class="img-responsive" width="100%" >
+                               
+			 	 <span class="overlay"></span>
+			 	 </a>
+			 	 
+			 </div>	 
+			 	<div  class='display-name'>
+			 	     <a alt='displayName' data-bind="ccLink: $data, attr: {href: $data.route}, text:displayName" ></a>
+			 	     </div>
+              </div>
+               <!--/ko-->
+         </div>
+      
+    </div>
+    </div>
+    
+</div>

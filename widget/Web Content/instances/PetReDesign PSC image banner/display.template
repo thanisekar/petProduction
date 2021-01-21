@@ -1,0 +1,37 @@
+<!-- ko setContextVariable: {name: 'elementConfig', value: {"3300001": {
+  "border": {
+    "borderColor": "#000000",
+    "borderWidth": 0
+  },
+  "horizontalAlignment": {"horizontalAlignment": "left"},
+  "id": "3300001",
+  "image": {
+    "isProductImage": false,
+    "src": "/file/v7990973043621326977/general/PSC_PageBanner.jpg",
+    "titleText": "Pet Sustainability Coalition",
+    "titleTextId": "3000002",
+    "zoomEnabled": false
+  },
+  "padding": {
+    "paddingBottom": "0",
+    "paddingLeft": "0",
+    "paddingRight": "0",
+    "paddingTop": "0"
+  }
+}}} --><!-- /ko -->
+
+<!-- oc layout: panels -->
+  <div class="row">
+
+    <div class="oc-panel col-md-12 nopad" data-oc-id="panel-0-0">
+
+      <!-- oc section: image -->
+<span data-bind="element: 'image',id: '3300001'"></span>
+
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+  <!-- /oc -->

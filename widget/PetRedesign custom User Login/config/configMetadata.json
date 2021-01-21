@@ -1,0 +1,46 @@
+{
+  "titleResourceId": "title",
+  "properties": [
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "loginURL",
+      "id": "loginURL",
+      "helpTextResourceId": "loginURLHelpText",
+      "labelResourceId": "loginURLLabel",
+      "type": "stringType",
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "userName",
+      "id": "userName",
+      "helpTextResourceId": "userNameHelpText",
+      "labelResourceId": "userNameLabel",
+      "type": "stringType",
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "password",
+      "id": "loginPassword",
+      "helpTextResourceId": "passwordHelpText",
+      "labelResourceId": "passwordLabel",
+      "type": "stringType",
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "getOrderURL",
+      "id": "getOrderURL",
+      "helpTextResourceId": "getOrderURLHelpText",
+      "labelResourceId": "getOrderURLLabel",
+      "type": "stringType",
+      "required": true
+    }
+  ],
+  "descriptionResourceId": "description"
+}

@@ -1,0 +1,8 @@
+{
+  "resources": {
+    "gtmIDLabel": "GTM-ID",
+    "gtmIDHelpText": "Enter your GTM-ID",
+    "description": "Google Tag Manager",
+    "title": "Google Tag Manager"
+  }
+}

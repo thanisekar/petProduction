@@ -1,0 +1,360 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+    #mapCanvasContainer {
+        position: relative;
+        display: block;
+        height: 1000px;
+        float: right !important;
+        
+    }
+  /*  .storePrintOtherDatas{
+            height: 1001px;
+            overflow-y: scroll;
+            
+    }*/
+    .storePrint{
+             height: 1001px;
+             overflow-y: scroll;
+            
+    }
+    .storeLocator-Map{
+            padding: 20px 0px;
+    }
+    
+    
+    .page-header {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-bottom: 1px solid #51534a;
+        color: #51534a;
+        padding: 3px 4px;
+        margin-bottom: 20px;
+        padding-top:15px !important;
+    }
+    .store-locator-zipcode {
+       // margin-bottom: 20px;
+    }
+     .store-locator-distance {
+        padding-left: 50px !important;
+        margin-top: 5px;
+        text-align: right;
+    }
+    .find-store{
+        text-align: right;
+    }
+    .find-store a{
+        color:#fff;
+        text-transform:uppercase;
+        background: #2654BF;
+        border-color: #2654BF;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 8px 28px;
+        font-size: 13px !important;
+        font-weight: 700 !important;
+        letter-spacing:0.676px;
+        text-decoration: none;
+           
+    }
+  .radio-control {
+      display: inline;
+      position: relative;
+      padding-left: 25px;
+      padding-right: 10px;
+      padding-top: 2px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 12px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+       font-family:@font-family-roboto;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .radio-control input {
+      position: absolute;
+      opacity: 0;
+    }
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 9px;
+        height: 16px;
+        width: 16px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px solid #d1cfcb;
+    }
+    .radio-control:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+    .radio-control input:checked ~ .checkmark {
+      background-color: #fff;
+    }
+   .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    .radio-control input:checked ~ .checkmark:after {
+      display: block;
+    }
+    .radio-control .checkmark:after {
+        top: 4px;
+        left: 4px;
+        width: 10px;
+        height: 10px;
+      border-radius: 50%;
+      background: #0A55BC;
+    }
+    .input-field {
+        width: 60%;
+        border-radius: 5px;
+        padding: 8px;
+        border: 1px solid #d1cfcb;
+        color: #51534a;
+        resize: none;
+        outline: none;
+        text-transform: none;
+    }
+    label {
+        padding-right: 15px;
+    }
+     .label-store-locator{
+            padding-top: 5px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 0.504px;
+        }
+    .errorMessage {
+           color: #eb2b2b;
+            padding: 10px 0;
+            text-align: center;
+             font-family:@font-family-roboto;
+            font-size: 14px;
+            line-height: 25px;
+            
+    }
+     .store {
+        border-bottom: 1px solid #cac5bd;
+        padding: 20px 32px;
+        position: relative;
+    }
+    .store-locator-distance{
+        .radio-control{
+           font-family:@font-family-roboto;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+    .store{
+        .StoreName{
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 600;
+            text-transform: capitalize;
+             font-family:@font-family-roboto;
+        }
+            .address1{
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: 300;
+                    text-transform: capitalize;
+                     font-family:@font-family-roboto;
+                span{
+                        font-size: 16px;
+                        line-height: 26px;
+                        font-weight: 300;
+                        text-transform: capitalize;
+                         font-family:@font-family-roboto;
+                }
+            }
+            .address2{
+                span{
+                        font-size: 16px;
+                        line-height: 26px;
+                        font-weight: 300;
+                        text-transform: capitalize;
+                         font-family:@font-family-roboto;
+                }
+            }
+            .distance{
+                span{
+                        font-size: 16px;
+                        line-height: 23.99px;
+                        font-weight: 300;
+                        text-transform: capitalize;
+                        font-family:@font-family-roboto;
+                }
+                       
+            }
+            .directions{
+                   
+                    
+                   a{
+                       font-size: 13.21px;
+                       line-height: 24.39px;
+                       letter-spacing: 0.3963px;
+                       color: #2654bf;
+                       text-transform: uppercase;
+                       &:hover{
+                           @link_hover:#8f8d8d;
+                       }
+                   }
+                span{
+                        font-size: 16px;
+                        line-height: 23.99px;
+                        font-weight: 300;
+                        text-transform: capitalize;
+                        font-family:@font-family-roboto;
+                    
+                }
+                
+            }
+            .getDirections{
+                    font-size: 13.21px;
+                    line-height: 24.39px;
+                    letter-spacing: 0.3963px;
+                    color: #2654bf;
+                    text-transform: uppercase;
+                }        
+                .directionArrow{
+                         background-image: url('/file/general/PetRedesing_rightArrow_blue.svg');
+                         background-repeat: no-repeat;
+                         width: 14px;
+                         height: 14px;
+                         position: absolute;
+                          top: 6px;
+                         left: 119px;
+                }
+        
+    }
+    .resultssection{
+        border-top: 1px solid #d1cfcb;
+    }
+    .total-results{
+       // border-top: 1px solid #d1cfcb;
+        border-bottom: 1px solid #d1cfcb;
+        padding: 8px;
+        text-align: center;
+       
+        span{
+                font-size: 14px;
+                line-height: 22.99px;
+                font-family:@font-family-roboto;
+                font-weight: 400;
+                color: #000;
+        }
+    }
+    .store p{
+        margin:0px;
+        font-size: 14px;
+        color: #333333;
+        line-height: 25px;
+    }
+    .distance {
+        padding: 10px 0px;
+    }
+    .miles{
+        padding-left:40px;
+    }
+    .phone{
+        padding-left:50px;
+    }
+    .directions {
+                 font-weight: 600;
+                    font-size: 13.21px;
+                    line-height: 24.39px;
+                    letter-spacing: 0.3963px;
+                    color: #2654b;
+                    position: relative;
+    }
+    .more-results {
+        padding: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        #loadmoreResults{
+                font-size: 13px;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.455px;
+                color:#2654bf;
+        }
+      
+    }
+    @media only screen and (max-width: 480px){
+        .label-store-locator{
+            padding-top: 5px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 0.504px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 15px;
+        }
+        .store-distance{
+            background: #fff;
+            width: 100%;
+            border-radius: 5px;
+            padding: 12px;
+            border: 1px solid #d1cfcb;
+        }
+        .find-store{
+            padding-top: 25px;
+            a{
+                width: 100%;
+                padding: 17px 28px;
+            }
+        }
+        .distanceSelect{
+            border: 1px solid #d1cfcb;
+            height: 49px;
+        }
+        .total-results{
+            margin-top: 40px;
+        }
+        .store{
+            font-size: 16px;
+        }
+    }
+    @media only screen and (max-width:991px){
+           .storePrintOtherDatas{
+                   height: auto !important;
+                  overflow-y: auto !important;
+            
+            }
+            .storePrint{
+                     height: auto !important;
+                    overflow-y: auto !important;
+            }
+            .directionArrow{
+                     top: 6px !important;
+                     left: 48% !important;
+            }
+            .label-store-locator{
+                    text-align: center;
+                     padding: 15px 0px;
+            }
+            .store-locator-zipcode{
+                padding: 15px 15px !important;
+                
+            }
+    }
+        @media only screen and (min-width: 768px){
+        .label-store-locator{
+            padding-top:5px;
+        }
+        .store-locator-distance {
+            padding-left:0px !important;
+        }
+        .find-store a{
+            padding: 8px 16px;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "resources": {
+    "VideoUrlText": "Enter LitterBox Product Id",
+    "enabledHelpText": "Enable the LitterBox Widget",
+    "enabledLabel": "Widget Enable",
+    "VideoUrlTextLabel": "LitterBox Product Ids"
+  }
+}

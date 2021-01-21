@@ -1,0 +1,25 @@
+{
+  "imports": [
+    "category",
+    "product"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Bird Collection Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "carouselTitle": "Birds & Small Pets",
+    "collectionId": "birds",
+    "enabled": true,
+    "itemDesktop": "6",
+    "itemMobile": "2",
+    "itemTablet": "3",
+    "totalItem": "20"
+  }
+}

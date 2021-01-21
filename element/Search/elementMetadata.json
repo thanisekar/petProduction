@@ -1,0 +1,17 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "inline": true,
+  "supportedWidgetType": [
+    "headerWidget"
+  ],
+  "tag": "PetReDesignSearchElementRecent",
+  "translations": [
+    {
+      "description": "Add the Search element.",
+      "language": "en",
+      "title": "Search"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "imports": [
+    "category",
+    "product"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Home Article Product Widget ",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "enabled": true,
+    "productId": "a10046,a10051,a10061,a10016"
+  }
+}

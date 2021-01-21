@@ -1,0 +1,120 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+
+
+
+    #tab{
+        margin: 20px 0;
+        .tab-content{
+            margin: 20px 0;
+        }
+        .cfoPawlification{
+            margin:0 auto;
+        }
+        #myTab{
+            li{
+                a{
+                    color: #2654bf !important;
+                    font-size: 22px;
+                    font-family: 'Nunito',sans-serif;
+                    font-style: italic;
+                }
+            }
+            li.active{
+                a{
+                    font-weight:bold;
+                }
+            }
+        }
+        #myTabContent{
+            h6{
+                margin-top: 0;
+                text-align: center;
+                color: #2654bf !important;
+                font-weight: bold;
+                font-size: 20px !important;
+            }
+        }
+         .rowTwo{
+                p{
+                    color: #666666!important;
+                    font-weight: 450;
+                    line-height: 32px!important;
+                    padding-bottom: 15px;
+                    font-size: 20px!important;
+                }
+            }
+            .socialIcons{
+                display:flex;
+            a{
+                font-size: 18px;
+                margin-right: 14px;
+                font-style: italic;
+                font-weight: 600;
+            }
+            .fa{
+                font-size:21px;
+            }
+            .facebook_icon{
+                color:#1877f2;
+            }
+            .twitter_icon{
+                color:#1da1f2;
+            }
+            .youtube_icon{
+                color:#ff0000;
+            }
+            .instagram_icon{
+                color:#c32aa3;
+            }
+                
+        }
+    }
+    
+    
+        .videoDisplay{
+        #productVideo{
+            position:relative;
+            img{
+                margin:0 auto;
+                width:90%;
+            }
+            .video-banner{
+                &:hover{
+                cursor: pointer;
+            }
+            }
+            .play-icon{
+                position: absolute;
+                top: 45%;
+                right: 45%;
+               }
+            }
+    }
+     @media only screen and (max-width:768px){
+                .rowTwo{
+                    p{
+                        font-size: 18px!important;
+                    }
+                }
+            }
+     @media only screen and (max-width:767px){
+                .socialIcons{
+                    display:block!important;
+                }
+                #myTab{
+                    li{
+                        a{
+                            font-size: 18px !important;
+                        }
+                    }
+                }
+            }
+    @media only screen and (max-width:1200px){
+                .rowTwo{
+                    img{
+                        margin: 0 auto;
+                    }
+                }
+            }
+    
+}

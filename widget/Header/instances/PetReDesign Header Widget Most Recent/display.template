@@ -1,0 +1,82 @@
+<!--
+ /**
+  *
+  * Header Widget Template
+  *
+  */
+--> 
+
+<div class="templateRegion" id="CC-headerWidget" data-oc-id="CC-headerWidget">
+  <div class="header-line container">
+    <div class='row  header-container'>
+        <div class='col-sm-12  '>
+     <div id="mobile-navbar-link" class=" nopad mobile-navbar-link col-xs-2 col-sm-2 mobile-navbar-header tablet-menu-override">
+					<button type="button" class="mobile-navbar-link-button">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <div class="label-hidden">Menu Navigation</div>
+					</button>
+	 </div>
+
+            <div class='col-md-4  desktop-logo nopad logo-wrapper'>
+                <div class="logo-image">
+    				    <a data-bind="ccLink: 'home'"  class='home-logo-image'>
+    				    <!-- <img src='/file/general/Petmate_redesign_home_logo.svg' width='100px' height='100px' />-->
+    				   <img data-bind="ccResizeImage: {
+    						     source: '/file/general/Petmate_Logo Blue.png',
+    							 medium: '57,150',
+    							 large: '57,150',
+    							 alt: 'petRedesignLogo',
+    							 title:'Petmate Logo',
+    							 errorSrc:'images/noImage.png',
+    							errorAlt:'No Image Found'}" id="PetRedesignLogo" alt="petRedesignLogo" >
+    					</a>
+    			</div>
+            </div>
+            <div class='col-sm-8 col-xs-8 mobile-logo nopad logo-wrapper' >
+                <div class="logo-image ">
+    				    <a data-bind="ccLink: 'home'"  class='home-logo-image'>
+    				    <!--  <img src='/file/general/Petmate_redesign_home_logo.svg'/>-->
+    				     <img data-bind="ccResizeImage: {
+    						 	source: '/file/general/Petmate_Logo Blue.png',
+    						 	 medium: '50,105',
+    							 large: '50,105',
+    						   	 xsmall: '50,105',
+    						 	 small: '50,105',
+    						 	 title:'Petmate Logo',
+    							 alt: 'petRedesignLogo',
+    							 errorSrc:'images/noImage.png',
+    							errorAlt:'No Image Found'}" id="PetRedesignLogo" alt="petRedesignLogo" >
+    					</a>
+    			</div>
+            </div>
+            
+             <div class='col-sm-2 col-xs-2  mobileMiniCart  mini-cart '>
+                <a class="shopping-cart" data-bind="ccLink:{route:'/cart'}" >
+          	         <span class="shopping-cart-icon"></span>
+          	         <!--<span class="mobMiniCart" data-bind="text: cart().numberOfItems()"></span>-->
+          	     </a>
+            </div> 
+            
+            <div class='col-md-8 col-sm-12 col-xs-12  searchElement'>
+                  <!-- oc section: search -->
+                
+                <div data-bind="element: 'PetReDesignSearchElementRecent'" class='search-element col-md-10 col-sm-12 nopad'></div>
+            <!-- /oc -->
+              <!-- oc section: header-dropdown-minicart -->
+                   <div class='minicartElement col-sm-2 nopad ' data-bind="element: 'PetReDesignMinicartDropdownFinal'"></div>
+              <!-- /oc -->
+            </div>
+            
+            <!-- oc section: login-registration -->
+                    <div id="login-registration-v2">
+                    <div data-bind="element: 'login-registration-v2'" class=''></div>
+                    </div>
+              <!-- /oc -->
+            
+        </div>
+    </div>
+  </div>
+
+</div>

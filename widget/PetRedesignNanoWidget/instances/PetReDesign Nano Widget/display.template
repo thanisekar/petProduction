@@ -1,0 +1,173 @@
+<div id="nano">
+   <div id="banner">
+      <!-- Carousel -->
+      <div id="carousel-example-generic" class="carousel slide nano" data-ride="carousel">
+         <!-- Indicators -->
+         <ol class="carousel-indicators hidden-xs hidden-sm hide">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+         </ol>
+         <!-- Wrapper for slides -->
+         <div class="carousel-inner">
+            <div class="item active">
+               <div class="hidden-xs">
+                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/desktop_Nano_PrimaryBanner1resized.jpg'}"   class="img-responsive"></a>
+               </div> 
+               <div class="visible-xs">
+                   <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/Nano_Landing_Mobile_1.jpg'}"   class="img-responsive"></a>
+               </div>
+            </div>
+            <div class="item">
+               <div class="hidden-xs">
+                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"> <img  data-bind="attr:{src: '/file/general/desktop_Nano_PrimaryBanner2.jpg'}"   class="img-responsive"></a>
+               </div>
+               <div class="visible-xs">
+                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"> <img  data-bind="attr:{src: '/file/general/Nano_Landing_Mobile_2.jpg'}"   class="img-responsive"></a>
+               </div>
+            </div>
+            <div class="item">
+               <div class="hidden-xs">
+                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"> <img  data-bind="attr:{src: '/file/general/desktop_NanoPrimaryBanner3_.jpg'}"   class="img-responsive"></a>
+               </div>
+               <div class="visible-xs">
+                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"> <img  data-bind="attr:{src: '/file/general/Nano_Landing_Mobile_3.jpg'}"   class="img-responsive"></a>
+               </div>
+            </div>
+         </div>
+         <!-- Controls -->
+         <div class="">
+            <a class="left carousel-control hidden-sm hidden-xs" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control hidden-sm hidden-xs" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+         </div>
+      </div>
+      <!-- Carousel -->
+   </div>
+   <div id="video">
+      <div class="row">
+         <div class="col-md-6 col-sm-10 col-xs-12 nopad content-center">
+            <div class='videoDisplay'>
+               <div class='row' id='videoSectionPlay'>
+                  <div class="col-sm-6 nopad">
+                      <p class="vid-content hidden-xs">Think all automated feeders are the same? See why Nano is the new standard for dependability.</p>
+                  </div>
+                  <div class='col-sm-6 nopad' id="CC-Video">
+                     <div class="" id="productVideo">
+                        <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/ZiaAxTkAH2U'}">
+                           <img  data-bind="attr : {src : 'file/general/nano_youitube_img_new.jpg'}" class="img-responsive video-banner" src="">
+                           <div class="play-icon"><img src="/file/general/youtube-play-button-48.png" /></div>
+                        </a>
+                     </div>
+                     <div>
+                        <a class="pdp-video"  data-bind="attr: { videourl: $data}"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   
+   <div id="desktop_contents" class="hidden-xs">
+       <div class="container">
+       <div class="row">
+           <div class="col-sm-6">
+               <div class="prod-desc">
+               <h6>THE NEW STANDARD FOR</h6>
+               <h5>DEPENDABILITY</h5>
+               <p><span id="precision">PRECISION PORTION CONTROL</span></p>
+               <p><span id="jamproof">JAMPROOF FOOD FLOW SYSTEM</span></p>
+               <p><span id="gamma">GAMMA SEAL<sup>TM</sup> TECHNOLOGY</span></p>
+               <p><span id="engineer">ENGINEERED TO BE EASY</span></p>
+               <div class="precision">
+               <p>An internal, digital dual-weighing system portions food more accurately than any other automated feeder. The two digital scales weigh the food in the hopper extremely accurately, allowing only the specified amount of 
+               food to be released into the Jamproof Food Flow System. The result is The Right Amount of Pet Food - Every Time. The retractable feeding door is designed to prevent pets from pawing out food.</p>
+               </div>
+               <div class="jamproof">
+               <p>A unique, patent-pending food dispensing technology detects and reliably auto-corrects food jams to help prevent missed meals. No other automated feeder offers anything like it. An integral baffle eliminates kibble clogging and over-crowding while the specially- designed auger has flexible, metered flights 
+               enabling tiny to large kibble to be dispensed consistently. Dual digital sensors continually monitor food flow and intelligently detect jams.</p>
+                </div>
+               <div class="gamma">
+               <p>Keeping high-quality pet food fresher longer is one of Gamma2’s fundamental commitments, and the over-molded triple gasket system found in the NanoTM does exactly that. Freshness is protected at 3 critical points throughout the NanoTM so not only is the right amount of pet food delivered every time, 
+               but it’s as fresh as it can be, too. The dark-tinted hopper bowl limits harmful uv rays as well.</p>
+                </div>
+               <div class="engineer">
+               <p>The Nano<sup>TM</sup> has made programming intuitive and setup easy. The powerful control panel offers an array of features enabling multiple preference settings. You can easily control the amount of food dispensed as well as feeding times and delivery speed. Set low-food notifications, activate manual feed, 
+               preset up to six meals settings and much more. A battery backup stores programs and operates the NanoTM in case of power outage.</p>
+                </div>
+                <a data-bind="ccLink : {route : '/gamma2-nano-automatic-pet-feeder/product/43535'}"><img src="/file/general/mobile_Nano_ShopNowButton2.jpg" class="img-responsive"></a>
+           </div>
+           </div>
+           <div class="col-sm-6">
+               <img  src="/file/general/Nano_Landing_Infographic_1.png" class="img-responsive precision">
+               <img  src="/file/general/Nano_Landing_Infographic_2.png" class="img-responsive jamproof">
+               <img  src="/file/general/Nano_Landing_Infographic_3.png" class="img-responsive gamma">
+               <img  src="/file/general/Nano_Landing_Infographic_4.png" class="img-responsive engineer">
+           </div>
+       </div>
+       </div>
+   </div>
+   
+   
+   
+<div id="tab" class="visible-xs">
+<div class="container">
+                <div id="myTabContent" class="tab-content">
+              <div class="tab-pane active in fade mob-precision">
+                <img  src="/file/general/mobile_1_Nano_Infographic_PortionControl.png" class="img-responsive">
+              </div>
+              
+            <div class="tab-pane fade mob-jamproof">
+                <img  src="/file/general/mobile_2_NanoInfographic_Jamproof.png" class="img-responsive">
+                                       
+              </div>
+              <div class="tab-pane fade mob-gamma">
+                <img  src="/file/general/mobile_3_NanoInfographic_GammaSealTech.png" class="img-responsive">
+                                       
+              </div>
+              <div class="tab-pane fade mob-engineer">
+                <img  src="/file/general/mobile_4_NanoInfographic_EngineerEasy.png" class="img-responsive">
+                                       
+              </div>
+            </div>
+            
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href=".mob-precision" data-toggle="tab">Precision Portion Control</a></li>
+              <li class=""><a href=".mob-jamproof" data-toggle="tab">Jamproof Food Flow System</a></li>
+              <li class=""><a href=".mob-gamma" data-toggle="tab">Gamma Seal<sup>TM</sup> Technology</a></li>
+              <li class=""><a href=".mob-engineer" data-toggle="tab">Engineered To Be easy</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+              <div class="tab-pane active in fade mob-precision">
+                <p>An internal, digital dual-weighing system portions food more accurately than any other automated feeder. The two digital scales weigh the food in the hopper extremely accurately, allowing only the specified amount of 
+               food to be released into the Jamproof Food Flow System. The result is The Right Amount of Pet Food - Every Time. The retractable feeding door is designed to prevent pets from pawing out food.</p>
+              </div>
+              
+              <div class="tab-pane fade mob-jamproof">
+                <p>A unique, patent-pending food dispensing technology detects and reliably auto-corrects food jams to help prevent missed meals. No other automated feeder offers anything like it. An integral baffle eliminates kibble clogging and over-crowding while the specially- designed auger has flexible, metered flights 
+               enabling tiny to large kibble to be dispensed consistently. Dual digital sensors continually monitor food flow and intelligently detect jams.</p>                  
+              </div>
+              <div class="tab-pane fade mob-gamma">
+                <p>Keeping high-quality pet food fresher longer is one of Gamma2’s fundamental commitments, and the over-molded triple gasket system found in the NanoTM does exactly that. Freshness is protected at 3 critical points throughout the NanoTM so not only is the right amount of pet food delivered every time, 
+               but it’s as fresh as it can be, too. The dark-tinted hopper bowl limits harmful uv rays as well.</p>               
+              </div>
+              <div class="tab-pane fade mob-engineer">
+                <p>The Nano<sup>TM</sup> has made programming intuitive and setup easy. The powerful control panel offers an array of features enabling multiple preference settings. You can easily control the amount of food dispensed as well as feeding times and delivery speed. Set low-food notifications, activate manual feed, 
+               preset up to six meals settings and much more. A battery backup stores programs and operates the NanoTM in case of power outage.</p>
+              </div>
+                <a  data-bind="ccLink : {route : '/gamma2-nano-automatic-pet-feeder/product/43535'}"><img style="padding: 15px;" src="/file/general/mobile_Nano_ShopNowButton2.jpg" class="img-responsive"></a>  
+            </div>
+          </div>
+</div>
+
+
+
+
+   
+   
+</div>

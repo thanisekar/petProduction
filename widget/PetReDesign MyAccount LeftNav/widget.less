@@ -1,0 +1,185 @@
+#petmatemyaccountleftnav_v1-wi200151 {
+    //padding-left:15px;
+    //padding-right:15px;
+    .myaccount-leftnav {
+        background-color: #cac5bd;
+        border-radius: 3px;
+        padding: 0px 0px;
+        margin-right: 2%;
+        min-height:350px;
+        //margin-top: 25px;
+        a {
+            font-size: 18px;
+            color: black;
+        }
+        a:hover,
+        a:focus {
+            text-decoration: none;
+        }
+        .selected {
+            font-weight: bold !important;
+            /*color: grey !important;
+            background-color: grey;*/
+            a {
+                font-size: 18px;
+                color: #51534a;
+            }
+            li {
+                background-color: #EFEFEF;
+                font-weight: normal !important;
+            }
+        }
+        ul {
+            margin: 0px;
+            padding: 0px;
+            padding-left: 40px;
+            padding-top: 10px;
+            li {
+                list-style-type: none;
+                margin-bottom: 15px;
+                font-size: 12px;
+                a {
+                    display: block;
+                    padding: 6px 20px;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: lowercase;
+                    text-decoration: none;
+                    outline:none;
+                    &:hover {
+                        background-color: #cac5bd;
+                        text-decoration: none;
+                        color: #f15d22;
+                    }
+                }
+                ul {
+                    li {
+                        margin-bottom: 0px;
+                        a {
+                            padding-left: 30px;
+                            outline:none;
+                        }
+                        a.active {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        .accordion-header {
+            background: #51534a;
+            color: #fff;
+            font-size: 28px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 27px 0 27px 0px;
+        }
+    }
+    .myaccount-link {
+        margin-top: 6px;
+        span {
+            a {
+                color: #333;
+                text-decoration: underline;
+            }
+            &:after {
+                content: "|";
+                padding-left: 6px;
+            }
+            &:last-child {
+                &:after {
+                    content: "";
+                }
+            }
+        }
+    }
+    .myaccount-listing{
+        display:block !important;
+    }
+    @media(min-width:767px)and(max-width:991px) {
+        .myaccount-leftnav {
+            margin-right: 0px;
+            .myaccount-overview-link-wrapper {
+                padding-right: 10px !important;
+                padding-left: 10px !important;
+                i.my-account-angle-arrow {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                a {
+                    font-size: 18px;
+                    color: #333;
+                    display: block;
+                    font-weight: bold;
+                }
+            }
+            .myaccount-listing {
+                margin-top: 15px;
+            }
+        }
+    }
+    @media(min-width:320px)and(max-width:767px) {
+        .myaccount-leftnav {
+            width: 100% !important;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            .myaccount-overview-link-wrapper {
+                padding-right: 10px !important;
+                padding-left: 10px !important;
+                i.my-account-angle-arrow {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                a {
+                    font-size: 18px;
+                    color: #333;
+                    display: block;
+                    font-weight: bold;
+                }
+            }
+            .myaccount-listing {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1024px){
+    .customizedNavigationMyAccountLeftCol, .customizedNavigationRightCol{
+        width:100%;
+    }
+    .customizedNavigationRightCol{
+        padding:0px 15px !important;
+    }
+        .myaccount-leftnav {
+            max-width: 100%;
+            margin: 0 auto !important;
+            margin-right:auto !important;
+            padding: 0 15px;
+            width: 100%;
+        }
+}
+@media only screen and (min-width: 1023px){
+    .petmate-myaccount-left-nav{
+        padding:0px;
+    }
+}
+@media only screen and (max-width: 1023px){
+        .myaccount-leftnav {
+            max-width: 768px;
+            margin: 0 auto !important;
+            margin-right:auto !important;
+            padding: 0 15px;
+            width: 100%;
+        }
+}
+ @media(min-width:320px)and(max-width:1023px) {
+        /*#region-re200049{
+            width:100% !important;
+        }
+        .myaccount-leftnav {
+            width: 100% !important;
+        }*/
+}

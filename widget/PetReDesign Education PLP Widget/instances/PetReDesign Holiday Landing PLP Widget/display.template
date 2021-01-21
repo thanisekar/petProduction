@@ -1,0 +1,167 @@
+<div class="product-listing clearfix">
+ 
+
+
+<!--hidden variable to get the article products  -->
+ <input class="PLPsearch" type="hidden" value="PLP" data-bind='template: {afterRender: function(){$.Topic("PLPSearch").publish("success"); }}'>
+
+  <!-- ko if: (listingViewModel().display) -->
+<div id="CC-petredesign-productListing" role="alert">
+
+  <!--  ko if: listType() == 'search' -->
+    <!--  ko with: listingViewModel -->
+      <div class="sr-only" data-bind="text :pageLoadedText"></div>
+    <!-- /ko -->
+  <!-- /ko -->
+  
+  
+
+
+  
+  
+
+
+ 
+  <!-- ko if: listType() == 'search' -->
+    <h3 id="matching-products" class="sr-only" role="alert" data-bind="widgetLocaleText: 'matchingProductsText'"></h3>
+  <!-- /ko -->
+  <div id="grid-category-content" class="tab-content">
+    <!-- Product Grid Tab -->
+    <div class="tab-pane cc-list-tab active " id="product-grid" aria-live="polite">
+    <div class="sr-only" data-bind="widgetLocaleText: 'gridViewLoadedText'" role="alert"></div>
+ 
+      <!-- ko foreach: productGrid -->
+      <div>
+      <div class="row hidden-sm hidden-xs" data-bind="foreach: $data">      
+        <div  class="cc-product-item col-md-3  col-xs-12  ">
+        <div class='product-item-wrapper'>  
+            <!-- ko with: $parents[1].user -->
+               <div class='add-to-wishlist'  data-bind='visible:loggedInUserName() && (loggedIn() && !isUserSessionExpired())'>
+                 <a class="prodListingAddToWishlist default-link blue" data-bind="attr:{'data-prod-id': $parent.repositoryId, 'id': $parent.repositoryId}" >
+                    <span class='addtoWishList' ></span>
+                </a>
+                </div>
+             <!-- /ko -->
+           <!--<span class='addtoWishList'  data-bind="click: function(data, event){$parents[1].addToSpaceClick($data)}" > </span>-->
+          <div class="cc-item-detail">
+            <a data-bind="attr : { id: 'CC-product-grid-detail-'+id()+'-'+$parentContext.$index()+$index(), title: displayName }, ccLink : $data.listingSku ? $data.listingSku : $data.product, click: $parents[1].updateFocus">
+              <span data-bind="text: displayName" class="sr-only"></span>
+              <img class="img-responsive center-block" alt="" 
+                  data-bind="productImageSource: {
+                               src: $data.listingSku && $data.listingSku.images.length > 0? $data.listingSku : $data.product, imageType: 'small',
+                               errorSrc: '/file/general/petmate-no-image.jpg',
+                               errorAlt: 'Missing Product Image'
+                             },
+                             attr: {id: 'CC-product-grid-image-'+id()+'-'+$parentContext.$index()+$index(),
+                             alt: $data.listingSku && $data.listingSku.images.length > 0 && $data.listingSku.images[0].metadata.altText? $data.listingSku.images[0].metadata.altText : $data.displayName(),
+                             title: $data.listingSku && $data.listingSku.images.length > 0 && $data.listingSku.images[0].metadata.titleText ? $data.listingSku.images[0].metadata.titleText: $data.displayName()}">
+            </a>
+          </div>
+           
+          
+           
+           <div class="cc-item-title">
+               <div class="title">
+                   <span><a data-bind="attr : { id: 'CC-product-grid-title-'+id()+'-'+$parentContext.$index()+$index()}, ccLink : $data.listingSku ? $data.listingSku : $data.product, click: $parents[1].updateFocus">
+                  <p data-bind="text: displayName, attr: {id: 'CC-product-grid-displayName-'+id()+'-'+$parentContext.$index()+$index()}" class="cc-text-overflow"></p>
+                  </a></span>
+               </div>
+            
+          </div>
+            
+          </div>
+           
+        </div>
+      </div>
+      </div>
+      <!-- /ko -->
+      <div class="row cc-product-item-formobile  visible-sm visible-xs">  
+        <!-- ko foreach: productGrid -->
+         <!-- ko foreach :$data -->
+         <div  class="productContainerForMobile  cc-product-item  col-xs-12  ">  
+               <div class='col-xs-6 '>
+                
+                       <!--<span class='addtoWishList'  data-bind="click: function(data, event){$parents[1].addToSpaceClick($data)}" > </span>-->
+                      <div class="cc-item-detail">
+                        <a data-bind="attr : { id: 'CC-product-grid-detail-'+id()+'-'+$parentContext.$index()+$index(), title: displayName }, ccLink : $data.listingSku ? $data.listingSku : $data.product, click: $parents[1].updateFocus">
+                          <span data-bind="text: displayName" class="sr-only"></span>
+                          <img class="img-responsive center-block" alt="" 
+                              data-bind="productImageSource: {
+                                           src: $data.listingSku && $data.listingSku.images.length > 0? $data.listingSku : $data.product, imageType: 'small',
+                                           errorSrc: '/file/general/petmate-no-image.jpg',
+                                           errorAlt: 'Missing Product Image'
+                                         },
+                                         attr: {id: 'CC-product-grid-image-'+id()+'-'+$parentContext.$index()+$index(),
+                                         alt: $data.listingSku && $data.listingSku.images.length > 0 && $data.listingSku.images[0].metadata.altText? $data.listingSku.images[0].metadata.altText : $data.displayName(),
+                                         title: $data.listingSku && $data.listingSku.images.length > 0 && $data.listingSku.images[0].metadata.titleText ? $data.listingSku.images[0].metadata.titleText: $data.displayName()}">
+                        </a>
+                      </div>
+             </div>
+               <div class='col-xs-6 nopad'>
+                   <!-- ko with: $parents[1].user -->
+                 <div class='addtoWishlistforMobile' data-bind='visible:loggedInUserName() && (loggedIn() && !isUserSessionExpired())'>
+                         <a class="prodListingAddToWishlist default-link blue"  data-bind="attr:{'data-prod-id': $parent.repositoryId, 'id': $parent.repositoryId}"  >
+                            <span class='addtoWishList' ></span>
+                        </a>
+                 </div>   
+                 <!-- /ko -->  
+
+                   <div class="cc-item-title">
+                    <a data-bind="attr : { id: 'CC-product-grid-title-'+id()+'-'+$parentContext.$index()+$index()}, ccLink : $data.listingSku ? $data.listingSku : $data.product, click: $parents[1].updateFocus">
+                      <p data-bind="text: displayName, attr: {id: 'CC-product-grid-displayName-'+id()+'-'+$parentContext.$index()+$index()}" class="cc-text-overflow"></p>
+                    </a>
+                  </div>
+
+         </div>
+           
+        </div>
+          <!-- /ko -->
+         <!-- /ko -->
+      </div>
+      
+    </div>
+
+   
+  </div>
+
+
+  <!-- ko with: listingViewModel -->
+  <div id="cc-paginated-controls-bottom" class="row col-md-12 visible-md visible-lg">
+    <div data-bind="visible: (totalNumberOfPages() > 1)">
+      <div class='paginations'>
+        <div class="btn-group">
+     
+                   <!-- <a class="btn btn-default" data-bind="ccNavigation: '',  attr : {href: firstPage()}, widgetLocaleText : {value:'goToFirstPageText', attr:'aria-label'}, css: { disabled: $data.currentPage() == 1 }" >
+                	<span data-bind="widgetLocaleText: 'goToFirstPagePaginationSymbol'"></span>
+                	</a>  -->
+                    <a href="#" class="btn  previouspage" data-bind="ccNavigation: '', attr: {href: previousPage()}, widgetLocaleText : {value:'goToPreviousPageText', attr:'aria-label'}, css: { disabled: $data.currentPage() == 1 }" rel="prev">
+                	<span class="goToPreviousPagePaginationSymbol" ></span>
+                	</a>
+                   
+                    <!-- ko foreach: pages -->
+                      <a href="#" class="btn  pageNumbers" data-bind="click: $parents[1].goToPageView, ccNavigation: '', attr: {href: $parent.goToPage($data)},  css: {active: $data.pageNumber===$parent.currentPage() }">
+                        <!-- ko if: $data.selected === true -->
+                          <span class="sr-only" data-bind="widgetLocaleText : 'activePageText'"></span>
+                        <!-- /ko -->
+                        <!-- ko if: $data.selected === false -->
+                          <span class="sr-only" data-bind="widgetLocaleText : 'goToPageText'"></span>
+                        <!-- /ko -->
+                        <span data-bind="ccNumber: $data.pageNumber"></span>
+                      </a>
+                    <!-- /ko -->
+                
+                    <a href="#" class="btn  nextPage" data-bind="ccNavigation: '', attr: {href: nextPage()}, widgetLocaleText : {value:'goToNextPageText', attr:'aria-label'}, css: { disabled: currentPage() == $data.totalNumberOfPages() }" rel="next">
+                	<span class="goToNextPagePaginationSymbol"></span>
+                	</a>
+                    <!--<a href="#" class="btn btn-default" data-bind="ccNavigation: '', attr: {href: lastPage()}, widgetLocaleText : {value:'goToLastPageText', attr:'aria-label'}, css: { disabled: currentPage() == $data.totalNumberOfPages() }">
+                	<span data-bind="widgetLocaleText: 'goToLastPagePaginationSymbol'"></span>
+                	</a> -->
+                  
+            </div>
+      </div>
+    </div>
+  </div>
+  <!-- /ko -->
+</div>
+<!-- /ko -->
+</div>

@@ -1,0 +1,32 @@
+<div id="petmate-order-confirmation-title">
+    <p class="order-para">
+        Thank You for Your Order!
+    </p>
+    <p class="order-para-normal">
+		We've sent you an order confirmation email. Your order will typically ship in about one day, excluding weekends and holidays. To track or view your order, log into <a href="/profile"> My Account </a>
+	</p>
+    <p class="order-para">
+        <a class="order-shopping" href="/">
+          <span >Continue Shopping</span>
+        </a>
+     </p>
+     <!--<p class="order-para">
+        Thanks for Your Business!
+    </p>
+    <p class="order-para">
+        We've sent you a confirmation to the email you provided
+    </p>-->
+    <!--ko ifnot: user().loggedIn() -->
+        <p class="order-para">
+            Don't have an account yet?
+        </p>
+        <p class="order-para">
+            <a class="order-shopping" href="/createaccount">
+                <span>Create an Account</span>
+            </a>
+        </p>
+    <!--/ko-->
+    <div class="order-confirmation">
+        Order Confirmation - <span data-bind="text:confirmation().id"></span>
+    </div>
+</div>

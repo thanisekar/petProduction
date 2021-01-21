@@ -1,0 +1,127 @@
+{
+  "elementInstances": [
+    {
+      "customTitle": "Image_1900009",
+      "styles": {},
+      "tag": "image@1900009",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Shop Our Brands",
+        "titleText": "Shop Our Brands",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "link": "/brands/category/petmate-brands",
+        "fileName": "homepage-banner-desktop.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2300001",
+      "styles": {},
+      "tag": "image@2300001",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": 0
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Nano Automatic Pet Feeder",
+        "zoomEnabled": false,
+        "titleText": "Nano Automatic Pet Feeder",
+        "isProductImage": false,
+        "link": "/nano",
+        "fileName": "January-2021_G2_Nano_Web-Ba.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_1900010",
+      "styles": {},
+      "tag": "image@1900010",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": 0
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Petmate Email Sign Up",
+        "zoomEnabled": false,
+        "titleText": "Petmate Email Sign Up",
+        "isProductImage": false,
+        "link": "/emailsignup",
+        "fileName": "Jan21Email_SignUp_Homepage.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_1900011",
+      "styles": {},
+      "tag": "image@1900011",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": 0
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Shop FAT CAT Cat Toys",
+        "zoomEnabled": false,
+        "titleText": "Shop FAT CAT Cat Toys",
+        "isProductImage": false,
+        "link": "/category/brand-fatcat",
+        "fileName": "January-2021_FC_Cat-Toy-Awa.jpg"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_1900013",
+      "styles": {},
+      "tag": "rich-text@1900013",
+      "text": null,
+      "richTextConfig": {
+        "content": " "
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "imports": [
+    "orderDetails",
+    "shippingCountries",
+    "category",
+    "product"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Anonymous Order Return Request",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": false,
+  "config": {
+    "LoginURL": "https://b2c-uat.petmate.com/b2c/api/v1/appusers/login",
+    "loginURL": "https://b2c-uat.petmate.com/b2c/api/v1/appusers/login",
+    "password": "petmate",
+    "returnPostURL": "https://b2c-uat.petmate.com/b2c/api/v1/returnRequests/createreturnrequest",
+    "returnReason": "Defective,Did Not Like,Did Not Meet Expectations,Incorrect Color,Incorrect Item,Incorrect Size",
+    "userName": "petmate"
+  }
+}

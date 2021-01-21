@@ -1,0 +1,102 @@
+<div id="sealLids">
+   <div class="banner">
+      <img src="/file/general/image_Desktop_GammaSealLids1.jpg" class="img-responsive hidden-xs">
+       <img src="/file/general/image_Mobile_GammaSealLids.jpg" class="img-responsive visible-xs">
+      <div class="col-sm-6 col-xs-12 nopad content-center">
+      <p>Now, you can protect hundreds of household products from drying, decay and deterioration while preventing harmful leaks. Just install a Gamma Seal lid on your standard utility bucket and our exclusive Gamma Seal Technology does the rest.<span class="hidden-xs"><a data-bind="ccLink: {route: '/gamma2-seal-lids/product/GM01'}" class="shopNow">SHOP NOW  <i class="fa fa-play" aria-hidden="true"></i></a></span></p>
+      <div class="visible-xs"><a data-bind="ccLink: {route: '/gamma2-seal-lids/product/GM01'}" class="shopNow">SHOP NOW  <i class="fa fa-play" aria-hidden="true"></i></a></div>
+      </div>
+   </div>
+   <div class="img-carousel">
+      <div class="row hidden-xs">
+         <div class="col-xs-3 hidden-xs">
+            <img src="/file/general/GammaLids_Lifestyle1.jpg" class="img-responsive">
+         </div>
+         <div class="col-xs-3 hidden-xs">
+            <img src="/file/general/GammaLids_Lifestyle2.jpg" class="img-responsive">
+         </div>
+         <div class="col-xs-3 hidden-xs">
+            <img src="/file/general/GammaLids_Lifestyle3_2.jpg" class="img-responsive">
+         </div>
+         <div class="col-xs-3 hidden-xs">
+            <img src="/file/general/GammaLids_Lifestyle4.jpg" class="img-responsive">
+         </div>
+      </div>
+   </div>
+   
+   <!--Life Style Carousel-->
+       <div id="carousel-example-generic-lifestyle" class="carousel slide lifestyle visible-xs" data-ride="carousel">
+         <!-- Indicators -->
+         <ol class="carousel-indicators hidden-xs hidden-sm">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+         </ol>
+         <!-- Wrapper for slides -->
+         <div class="carousel-inner">
+            <div class="item active">
+               <img src="/file/general/GammaLids_Lifestyle1.jpg" class="img-responsive">
+            </div>
+            <div class="item">
+               <img src="/file/general/GammaLids_Lifestyle2.jpg" class="img-responsive">
+            </div>
+            <div class="item">
+               <img src="/file/general/GammaLids_Lifestyle3_2.jpg" class="img-responsive">
+            </div>
+            <div class="item">
+               <img src="/file/general/GammaLids_Lifestyle4.jpg" class="img-responsive">
+            </div>
+             
+         </div>
+        <!-- Controls -->
+         <a style="background-image:none" class="left carousel-control" href="#carousel-example-generic-lifestyle" data-slide="prev">
+         <span class="glyphicon glyphicon-chevron-left"></span>
+         </a>
+         <a style="background-image:none" class="right carousel-control" href="#carousel-example-generic-lifestyle" data-slide="next">
+         <span class="glyphicon glyphicon-chevron-right"></span>
+         </a>
+      </div>
+      
+      <!--Ends-->
+   
+         <div id="carousel-example-generic" class="carousel slide seal visible-xs" data-ride="carousel">
+         <!-- Indicators -->
+         <ol class="carousel-indicators hidden-xs hidden-sm">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+         </ol>
+         <!-- Wrapper for slides -->
+          <div class="prod-desc">
+               <h6>How Does IT</h6>
+               <h5>WORK?</h5>
+           </div>
+         <div class="carousel-inner">
+            <div class="item active">
+               <img src="/file/general/image_Mobile_Infographic_1.jpg" class="img-responsive">
+                <p><b>Hundreds of Uses </b>From lawn and garden supplies to seeds and grain to paint and chemicals - and everything in between - keep air, moisture and pests out and your valuable supplies in.</p>
+            </div>
+            <div class="item">
+               <img src="/file/general/Mobile_Infographic2_GammaLids.jpg" class="img-responsive">
+               <p><b>It’s So Easy </b>Just follow the simple, two-step installation process and your standard utility bucket is now an air-tight, leak resistant storage device.</p>
+            </div>
+            <div class="item">
+               <img src="/file/general/Mobile_Infographic3_GammaLids.jpg" class="img-responsive">
+               <p><b>Gamma Seal Technology </b>Our threaded locking system and reliable double gaskets help form an air-tight, leak-resistant seal.</p>
+            </div>
+         </div>
+         <!-- Controls -->
+         <a style="background-image:none" class="left carousel-control hidden-sm" href="#carousel-example-generic" data-slide="prev">
+         <span class="glyphicon glyphicon-chevron-left"></span>
+         </a>
+         <a style="background-image:none" class="right carousel-control hidden-sm" href="#carousel-example-generic" data-slide="next">
+         <span class="glyphicon glyphicon-chevron-right"></span>
+         </a>
+      </div>
+      
+      
+   <div class="main-image hidden-xs">
+       <a data-bind="ccLink: {route: '/gamma2-seal-lids/product/GM01'}"><img src="/file/general/image_Desktop_Infographic1.jpg" class="img-responsive"></a>
+   </div>
+</div>   

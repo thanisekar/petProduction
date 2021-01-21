@@ -1,0 +1,27 @@
+<div id="CC-breadcrumb-details" class="hide" data-oc-id="CC-breadcrumb-details">
+  <!-- oc layout: panels -->
+    <div class="row">
+	  <div class="oc-panel col-md-12 col-xs-12" data-oc-id="breadcrumb-panel-1">
+	  	<!-- oc section: breadcrumb-links -->
+          <!--<div data-bind="element: 'breadcrumb-links'"></div>-->
+          <div class="col-md-12" id="breadcrumbElement">
+
+            	<div id="breadcrumbTrailTest"></div>
+            
+            	<div data-bind="foreach:breadcrumb" id="breadcrumbTrail">
+            		<!-- ko if:$index() > 0 -->
+            			<span data-bind="text: $parent.delimiter" class="delimiter"></span>		
+            		<!-- /ko -->
+            		<!-- ko if:$data.hasOwnProperty('url') &&  $data.label !== undefined -->
+            			<a data-bind="text: label, ccLink: {url:url}"></a>
+            		<!-- /ko -->
+            		
+            	</div>	
+            
+            </div>
+
+        <!-- /oc -->
+      </div>
+    </div>
+  <!-- /oc -->
+</div>

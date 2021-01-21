@@ -1,0 +1,22 @@
+{
+  "imports": [
+    "category",
+    "categoryId",
+    "dimensionId",
+    "productTypes"
+  ],
+  "translations": [
+    {
+      "name": "PetRedesign Academy Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": false,
+  "config": {
+    "collectionId": "academy",
+    "enabled": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "configuration": {
+    "carouselTitle": "Our Brands",
+    "itemTablet": "3",
+    "itemDesktop": "6",
+    "totalItem": "20",
+    "itemMobile": "2",
+    "collectionId": "petmate-brands",
+    "enabled": true
+  },
+  "displayName": "PetReDesign Brand Carousel Widget"
+}

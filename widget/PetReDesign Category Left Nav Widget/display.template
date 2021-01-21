@@ -1,0 +1,208 @@
+<div id="categoryLeftNav"  class='hidden-xs'>
+  <!--  <pre data-bind="text: ko.toJSON(category(), null, 2)"></pre>-->
+    
+     <div class="row" id='category-title-txt' >
+              <div class='col-md-12 col-xs-12 categoryLeftNavWrapper-content' >
+                 <div class='categoryTitle' data-bind='widgetLocaleText:"categoryTxt"'></div>
+                  <!-- ko with: category -->
+                  <!-- ko foreach: $data.childCategories --> 
+                    <div class='category-content-list'>
+                               <a data-bind="ccLink: $data,attr: {href: $data.route}">
+                                   <div class='childCategoryName' data-bind="text:displayName"></div></a>
+                    </div>
+               <!-- /ko -->
+	     <!-- /ko -->
+             </div>
+              <div class='col-md-12 col-xs-12 categoryLeftNavWrapper'  >
+                  <div class='categoryTitle' data-bind='widgetLocaleText:"customProductsTxt"'></div>
+                  <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"customCylindersTxt"' ></div></a>
+                    </div>
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"customPumpsTxt"' ></div></a>
+                    </div>
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"customPressesTxt"' ></div></a>
+                    </div>
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"customWranchesTxt"' ></div></a>
+                    </div>
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"customTensionersTxt"' ></div></a>
+                    </div>
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"customCylindersTxt"' ></div></a>
+                    </div>
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"customSolutionTxt"' ></div></a>
+                    </div>
+              </div>     
+              <div class='col-md-12 col-xs-12 categoryLeftNavWrapper'  >
+                  <div class='categoryTitle' data-bind='widgetLocaleText:"resourcesTxt"'></div>
+                    <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"manualAndRepairTxt"' ></div></a>
+                    </div>
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"sdsTxt"' ></div></a>
+                    </div>
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"globalWarranty"' ></div></a>
+                    </div>
+              </div> 
+             
+     </div>
+    
+</div>
+
+
+<div id="cc-mobile-left-nav " class="row  visible-xs hidden-sm">
+       <!-- <div class="visible-xs ">
+          <div id="custom-left-nav">
+            <a class="col-xs-12 col-sm-3" id="CC-custom-category-Left-Nav" data-bind='click:showCategoryLeftNav'>
+              <span id="category-nav-list" >Left Menu</span> 
+            </a>
+          </div>
+        </div>-->
+     
+      
+        <div class='guided-mobile-left-nav col-xs-12 noPad' id='custom-left-navigation-content'>
+          <!--   <div class="row" id="left-nav-close-scetion">
+                  <a id="CC-overlayedGuidedNavigation-done" 
+                  href="#"  class="cc-button-primary pull-right">
+                    <span data-bind="widgetLocaleText: 'doneText'">Done</span> 
+                  </a>
+           </div>
+     -->
+             <div class="storefront-sidenav">
+            
+           <div class="panel-group" id="CC-overlayedGuidedNavigation-accordionSection">
+               
+              <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <div class="row">
+                        <div class="col-md-7 col-xs-7 noPad">
+                          <h4><span>
+                              <a class="panel-toggle nav-header" data-toggle="collapse" 
+                              data-bind='widgetLocaleText:"categoryTxt"'></a></span></h4>
+                        </div>
+                        <div class="col-md-5 col-xs-5 noPad">
+                           <i class="indicator glyphicon glyphicon-plus"></i>
+                        </div>
+                      </div>        
+                </div>
+                    
+                <div class="panel-collapse collapse">
+                  <div class="panel-body">          
+                           <!-- ko with: category -->
+							  <!-- ko foreach: $data.childCategories --> 
+								<div class='category-content-list'>
+										   <a data-bind="ccLink: $data,attr: {href: $data.route}">
+											   <div class='childCategoryName' data-bind="text:displayName"></div></a>
+								</div>
+						   <!-- /ko -->
+						 <!-- /ko -->
+                  </div>
+                </div> 
+              </div>    
+              
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-md-7 col-xs-7 noPad">
+                      <h4><span>
+                          <a class="panel-toggle nav-header" data-toggle="collapse" 
+                          data-bind='widgetLocaleText:"customProductsTxt"'></a></span></h4>
+                    </div>
+                    <div class="col-md-5 col-xs-5 noPad">
+                        <i class="indicator glyphicon glyphicon-plus"></i>
+                    </div>
+                  </div>        
+                </div>
+                    
+                <div  class="panel-collapse collapse">
+                  <div class="panel-body">          
+                          <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"customCylindersTxt"' ></div></a>
+                    </div>
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"customPumpsTxt"' ></div></a>
+                    </div>
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"customPressesTxt"' ></div></a>
+                    </div>
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"customWranchesTxt"' ></div></a>
+                    </div>
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"customTensionersTxt"' ></div></a>
+                    </div>
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"customCylindersTxt"' ></div></a>
+                    </div>
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"customSolutionTxt"' ></div></a>
+                    </div>
+                  </div>
+                </div> 
+              </div>  
+              
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-md-7 col-xs-7 noPad">
+                      <h4><span>
+                          <a class="panel-toggle nav-header" data-toggle="collapse" 
+                         data-bind='widgetLocaleText:"resourcesTxt"'></a></span></h4>
+                    </div>
+                    <div class="col-md-5 col-xs-5 noPad">
+                       <i class="indicator glyphicon glyphicon-plus"></i>
+                    </div>
+                  </div>        
+                </div>
+                    
+                <div  class="panel-collapse collapse">
+                  <div class="panel-body">          
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"manualAndRepairTxt"' ></div></a>
+                    </div>
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"sdsTxt"' ></div></a>
+                    </div>
+                     <div class='category-content-list' >
+                               <a href='#'>
+                                   <div class='childCategoryName'  data-bind='widgetLocaleText:"globalWarranty"' ></div></a>
+                    </div>
+                  </div>
+                </div> 
+              </div>  
+              
+              
+              
+          </div>
+        </div>
+        
+       </div>
+       
+</div>   
+
+
+

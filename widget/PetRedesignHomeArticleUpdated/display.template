@@ -1,0 +1,103 @@
+
+<div class="container" id="educationArticleSectionWidget" data-oc-id="educationArticleSectionWidget">
+    <div class="col-sm-12 col-xs-12 carousel-container-width">
+       <div class='article-content-container col-sm-12 col-xs-12 '>
+             <h2 class='heading'>Canine Know-How. Feline Facts.</h2>
+               <p class='heading2'>All-Around Pet Answers.</p>
+               <p class='education-content'>When your dog won't stop whining or your cat won't stop scratching, find the right answers that will put your mind (and your heart) at ease.</p>
+                <a  data-bind="ccLink: {route: '/articles/category/articles'}" href="" class="redirectingLink  hidden-sm hidden-xs" >More Articles
+                  <span class="redirect-arrow-icon"></span>
+                 </a>
+           </div>
+    
+       <div class='col-sm-12 col-xs-12'>
+           
+              <div class='col-sm-3 col-md-3 col-xs-12'>
+                  <div class="article-products read-articles">
+                 <!--  <div class='hoverImage'>-->
+                <a data-bind="ccLink: $data, attr: {href: ArticleImage1URL()}">
+		         <img   data-bind="ccResizeImage: {
+                                   source: ArticleImage1.src(),
+                                   xsmall: '368,296',
+                                   small: '368,296',
+                                   medium: '368,296',
+                                   large: '368,296', 
+                                   alt: ArticleImage1Des, 
+                                   title:ArticleImage1Des}" class="img-responsive article-image" >
+                                 
+                 <!--   <img  data-bind='attr:{src: primaryFullImageURL}'/>     -->        
+                       <span class="overlay"></span>      
+			 	 </a>
+			 	 
+			 	 </div>
+			 <!--	 </div>-->
+			 	 <div  class='display-name'><a alt=displayName  data-bind="ccLink: {route:ArticleImage1URL()}, text: ArticleImage1Des" ></a></div>
+              </div>
+              <div class='col-sm-3 col-md-3 col-xs-12'>
+                  <div class="article-products read-articles">
+                 <!--  <div class='hoverImage'>-->
+                <a data-bind="ccLink: $data, attr: {href: ArticleImage2URL()}">
+		         <img   data-bind="ccResizeImage: {
+                                   source: ArticleImage2.src(),
+                                   xsmall: '368,296',
+                                   small: '368,296',
+                                   medium: '368,296',
+                                   large: '368,296', 
+                                   alt: ArticleImage2Des, 
+                                   title:ArticleImage2Des}" class="img-responsive article-image" >
+                                 
+                 <!--   <img  data-bind='attr:{src: primaryFullImageURL}'/>     -->        
+                       <span class="overlay"></span>      
+			 	 </a>
+			 	 
+			 	 </div>
+			 <!--	 </div>-->
+			 	 <div  class='display-name'><a alt=displayName  data-bind="ccLink: {route:ArticleImage2URL()}, text: ArticleImage2Des" ></a></div>
+              </div>
+              <div class='col-sm-3 col-md-3 col-xs-12'>
+                  <div class="article-products read-articles">
+                 <!--  <div class='hoverImage'>-->
+                <a data-bind="ccLink: $data, attr: {href: ArticleImage3URL()}">
+		         <img   data-bind="ccResizeImage: {
+                                   source: ArticleImage3.src(),
+                                   xsmall: '368,296',
+                                   small: '368,296',
+                                   medium: '368,296',
+                                   large: '368,296', 
+                                   alt: ArticleImage3Des, 
+                                   title:ArticleImage3Des}" class="img-responsive article-image" >
+                                 
+                 <!--   <img  data-bind='attr:{src: primaryFullImageURL}'/>     -->        
+                       <span class="overlay"></span>      
+			 	 </a>
+			 	 
+			 	 </div>
+			 <!--	 </div>-->
+			 	 <div  class='display-name'><a alt=displayName  data-bind="ccLink: {route:ArticleImage3URL()}, text: ArticleImage3Des" ></a></div>
+              </div>
+              <div class='col-sm-3 col-md-3 col-xs-12'>
+                  <div class="article-products read-articles">
+                 <!--  <div class='hoverImage'>-->
+                <a data-bind="ccLink: $data, attr: {href: ArticleImage4URL()}">
+		         <img   data-bind="ccResizeImage: {
+                                   source: ArticleImage4.src(),
+                                   xsmall: '368,296',
+                                   small: '368,296',
+                                   medium: '368,296',
+                                   large: '368,296', 
+                                   alt: ArticleImage4Des, 
+                                   title:ArticleImage4Des}" class="img-responsive article-image" >
+                                 
+                 <!--   <img  data-bind='attr:{src: primaryFullImageURL}'/>     -->        
+                       <span class="overlay"></span>      
+			 	 </a>
+			 	 
+			 	 </div>
+			 <!--	 </div>-->
+			 	 <div  class='display-name'><a alt=displayName  data-bind="ccLink: {route:ArticleImage4URL()}, text: ArticleImage4Des" ></a></div>
+              </div>
+              
+         </div>
+      
+    </div>
+</div>

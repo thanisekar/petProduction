@@ -1,0 +1,627 @@
+<div id="nfd-desktop" class="hidden-xs">
+   <div class="banner">
+      <img style="margin:0 auto;" src="/file/general/NFD2020_Desktop_Banner.jpg" class="img-responsive">
+   </div>
+   <div class="container">
+      <div class="row" style="margin-top:10px;">
+         <div class="section1">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-6 col-sm-8">
+               <img src="/file/general/NFD2020_Desktop_NFDSweepstakes_WithHeader.jpg" class="img-responsive">
+               <p>We’re bringing the party to you. 200 Chuckit!® fans will win National Fetch Day Backyard Party Packs built to celebrate at home.</p>
+               <div class="row">
+                  <div class="col-xs-5 enter">
+                     <img src="/file/general/NFD_LandingPage_Desktop_Enter.gif" class="img-responsive">
+                     <p style="margin-bottom:0">Post pics of your dog with #nationalfetchday and tag us @chuckitfetchgames along with 2 of your friends.</p>
+                     <!--<img style="margin-top:15px;min-width:130px;" src="/file/general/NFD_LandingPage_Desktop_Enter.jpg" class="img-responsive">-->
+                  </div>
+                  <div class="col-xs-7 win">
+                     <img src="/file/general/NFD_LandingPage_Desktop_Win.gif" class="img-responsive">
+                     <p>Tons of Chuckit!® toys for you and your friends, including the 2020 Exclusive Chuckit!® Party Ball, party gear and lots more. There’s also a chance at the Grand Prize, including a VIP spa treatment and an appearance on a Chuckit!® product package.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-5 col-sm-4">
+               <img src="/file/general/NFD2020_Desktop_PartyPack.png" class="img-responsive partyPack">
+            </div>
+         </div>
+         <div class="section2">
+            <img src="/file/general/NFD_LandingPage_Desktop_VFC.jpg" class="img-responsive">
+         </div>
+         <div class="section3">
+            <div class="row">
+               <div class="col-xs-1">
+               </div>
+               <div class="col-xs-5">
+                  <img src="/file/general/NFD2020_Desktop_UGC_Headline.gif" class="img-responsive">
+                  <p>This year, we’re delivering the best dog party of the year curbside, through your favorite dog-friendly venue.</p>
+               </div>
+               <div class="col-xs-6 rightImage">
+                  <img src="/file/general/NFD2020_Images.png" class="img-responsive">
+               </div>
+               <img src="/file/general/NFD2020_Desktop_WhosParticipating.gif" class="img-responsive participating">
+            </div>
+         </div>
+         <div class="section4">
+            <div class="row">
+               <div class="col-xs-1">
+               </div>
+               <div class="col-xs-10">
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Idle Hour</th>
+                           <th scope="col">Rock & Brews</th>
+                           <th scope="col">Urban Roots Brewing & Smokehouse</th>
+                           <th scope="col">Pub Dog Colorado</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Los Angeles, CA</td>
+                           <td>Orange County, CA</td>
+                           <td>Sacramento, CA</td>
+                           <td>Colorado Springs, CO</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://www.idlehourbar.com/" target="_blank">idlehourbar.com</a></td>
+                           <td><a href="https://www.rockandbrews.com/" target="_blank">rockandbrews.com</a></td>
+                           <td><a href="https://www.urbanrootsbrewing.com/" target="_blank">urbanrootsbrewing.com</a></td>
+                           <td><a href="https://www.pubdogcolorado.com/" target="_blank">pubdogcolorado.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">The Watering Bowl</th>
+                           <th scope="col">Ivanhoe Park Brewing</th>
+                           <th scope="col">Kush Coconut Grove</th>
+                           <th scope="col">81 Bay Brewing Co.</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Denver, CO</td>
+                           <td>Orlando, FL</td>
+                           <td>Miami, FL</td>
+                           <td>Tampa, FL</td>
+                        </tr>
+                        <tr>
+                           <td><a href="http://www.denverwateringbowl.com/" target="_blank">denverwateringbowl.com</a></td>
+                           <td><a href="https://www.ivanhoeparkbrewing.com/" target="_blank">ivanhoeparkbrewing.com</a></td>
+                           <td><a href="https://www.kushhospitality.com/" target="_blank">kushhospitality.com</a></td>
+                           <td><a href="https://www.81baybrewco.com/" target="_blank">81baybrewco.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Fetch Park ATL</th>
+                           <th scope="col">Park & Field Chicago</th>
+                           <th scope="col">Daddy Jones Bar</th>
+                           <th scope="col">The Freehouse</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Atlanta, GA</td>
+                           <td>Chicago, IL</td>
+                           <td>Boston, MA</td>
+                           <td>Minneapolis, MN</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://fetchpark.com/" target="_blank">fetchparkatl.com</a></td>
+                           <td><a href="http://www.parkandfieldchicago.com/" target="_blank">parkandfieldchicago.com</a></td>
+                           <td><a href="https://www.daddyjonesbar.com/" target="_blank">daddyjonesbar.com</a></td>
+                           <td><a href="https://www.freehousempls.com/" target="_blank">freehousempls.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Bar K</th>
+                           <th scope="col">Big Dog's Brewing Company</th>
+                           <th scope="col">Nexus Brewery & Restaurant</th>
+                           <th scope="col">NoDa Brewing Company</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Kansas City, MO</td>
+                           <td>Las Vegas, NV</td>
+                           <td>Albuquerque, NM</td>
+                           <td>Charlotte/Raleigh, NC</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://www.barkdogbar.com/" target="_blank">barkdogbar.com</a></td>
+                           <td><a href="https://www.bigdogsbrews.com/" target="_blank">bigdogsbrews.com</a></td>
+                           <td><a href="https://www.nexusbrewery.com/" target="_blank">nexusbrewery.com</a></td>
+                           <td><a href="https://www.nodabrewing.com/" target="_blank">nodabrewing.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">The Roosevelt Coffeehouse at Gravity</th>
+                           <th scope="col">Lardo Sandwiches</th>
+                           <th scope="col">Double Wide Grill</th>
+                           <th scope="col">Contigo Austin</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Columbus, OH</td>
+                           <td>Portland, OR</td>
+                           <td>Pittsburg, PA</td>
+                           <td>Austin, TX</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://linktr.ee/rooseveltcoffee" target="_blank">rooseveltcoffee.com</a></td>
+                           <td><a href="https://www.lardosandwiches.com/" target="_blank">lardosandwiches.com</a></td>
+                           <td><a href="https://www.doublewidegrill.com/" target="_blank">doublewidegrill.com</a></td>
+                           <td><a href="https://www.contigotexas.com/" target="_blank">contigotexas.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Cane Rosso</th>
+                           <th scope="col">Boheme</th>
+                           <th scope="col"></th>
+                           <th scope="col"></th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Dallas/Fort Worth, TX</td>
+                           <td>Houston, TX</td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td><a href="http://www.canerosso.com/" target="_blank">canerosso.com</a></td>
+                           <td><a href="https://www.barboheme.com/" target="_blank">barboheme.com</a></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="col-xs-1">
+               </div>
+            </div>
+         </div>
+         <div class="section5">
+            <img src="/file/general/NFD2020_Desktop_PartyBallChallengeBanner.jpg" class="img-responsive">
+         </div>
+      </div>
+   </div>
+   <div class="videoSection">
+      <div class="row">
+         <div class="col-lg-6 col-md-9 col-sm-11 col-xs-12 nopad video-center">
+            <div class="row">
+               <div class="col-sm-6 col-xs-12" style="text-align: center">
+                  <div class='videoDisplay'>
+                     <div class='row' id='videoSectionPlay'>
+                        <!-- ko if: embededUrl().length == 1 -->
+                        <!-- ko foreach: embededUrl() -->
+                        <div  id="CC-Video">
+                           <div class="" id="productVideo">
+                              <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/'+ $data}">
+                                 <img src="/file/general/nfd_video_screenshot_resize.png" class="img-responsive video-banner">
+                                 <div class="play-icon"><img src="/file/general/youTubeVideo.png" /></div>
+                              </a>
+                           </div>
+                        </div>
+                        <!-- /ko -->       
+                        <!-- /ko --> 
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6">
+                  <img src="/file/general/video_right5.jpg" class="img-responsive">
+                  <!--<h4>Last year, we had a great time with our party partners.</h4>
+                     <p>This year, as we bring our National Fetch Day parties home, let’s remember our favorite dog-friendly restaurants and pubs, and make them a part of the experience. Treat Yourself. Grab Free Gear. Bring the Party Home. Make Fetch Happen.<sup>TM</sup>     </p>-->
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div id="nfd-mobile" class="visible-xs">
+   <img src="/file/general/NFD2020_Mobile_Banner.jpg" class="img-responsive">
+   <p class="para1">We’re bringing the Best Dog Party of the Year to you. 200 Chuckit!® fans will win National Fetch Day Backyard Party Packs built to celebrate at home.</p>
+   <img style="margin: 0 auto;" src="/file/general/NFD_LandingPage_Mobile_Enter.gif" class="img-responsive">
+   <p class="para2">Post pics of your dog with #nationalfetchday and tag us @chuckitfetchgames along with 2 of your friends.</p>
+   <a class="howDo"><img style="margin: 0 auto;margin-top:15px;" src="/file/general/NFD_LandingPage_Mobile_LearnMore.gif" class="img-responsive"></a>
+   <img style="margin: 0 auto;margin-top:15px;" src="/file/general/NFD_LandingPage_Mobile_Win.gif" class="img-responsive">
+   <div class="row" style="margin-top:15px;">
+      <div class="col-xs-6 nopad">
+         <p class="para3">Tons of Chuckit!® toys for you and your friends, including the 2020 Exclusive Chuckit!® Party Ball, party gear and lots more. There’s also a chance at the Grand Prize, including a VIP spa treatment and an appearance on a Chuckit!® product package.</p>
+         <img src="/file/general/NFD2020_Mobile_NFDSweepstakesLogo.jpg" class="img-responsive">
+      </div>
+      <div class="col-xs-6 nopad">
+         <img src="/file/general/NFD2020_Mobile_PartyPack.jpg" class="img-responsive">
+      </div>
+   </div>
+   <img src="/file/general/NFD2020_Mobile_VirtualChallangeBanner.jpg" class="img-responsive">
+   <p class="para4">This National Fetch Day, we're delivering the Best Dog Party of the Year<sup>TM</sup> straight to your phone.</p>
+   <div class="row" style="margin-top:15px;">
+      <div class="col-xs-5 nopad">
+         <img src="/file/general/NFD2020_Mobile_IPhoneImage.jpg" class="img-responsive">
+      </div>
+      <div class="col-xs-7">
+         <img src="/file/general/NFD_LandingPage_Mobile_Work.gif" class="img-responsive">
+         <p class="para5">Join us Oct 17 for the Virtual Fetch Challenge Benefitting North Shore Animal League America, where you can log on and swipe to play with adoptable sheltered dogs. Our custom
+            Virtual Launcher responds to your swipe, launching a Chuckit!® ball. For each of the first 5,000 balls thrown through the Virtual Fetch Challenge, Chuckit!® will donate a toy to help a shelter dog Make Fetch Happen.<sup>TM</sup>
+         </p>
+         <img src="/file/general/NFD_LandingPage_Mobile_Challenge.gif" class="img-responsive">
+      </div>
+   </div>
+   <img src="/file/general/NFD2020_Mobile_Image1.jpg" class="img-responsive">
+   <div class="temporaryHide">
+   <img src="/file/general/NFD2020_Mobile_UGCImageHeader.gif" class="img-responsive">
+   <p class="para6">This year, we’re delivering the best dog party of the year curbside, through your favorite dog-friendly venue.</p>
+   <img style="margin: 0 auto;padding: 0 20%;margin-bottom:15px;" src="/file/general/NFD2020_Mobile_WhosParticipating.gif" class="img-responsive">
+   <div class="table-section">
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Idle Hour</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Los Angeles, CA</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.idlehourbar.com/" target="_blank">idlehourbar.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Rock & Brews</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Orange County, CA</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.rockandbrews.com/" target="_blank">rockandbrews.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Urban Roots Brewing & Smokehouse</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Sacramento, CA</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.urbanrootsbrewing.com/" target="_blank">urbanrootsbrewing.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Pub Dog Colorado</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Colorado Springs, CO</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.pubdogcolorado.com/" target="_blank">pubdogcolorado.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">The Watering Bowl</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Denver, CO</td>
+            </tr>
+            <tr>
+               <td><a href="http://www.denverwateringbowl.com/" target="_blank">denverwateringbowl.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Ivanhoe Park Brewing</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Orlando, FL</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.ivanhoeparkbrewing.com/" target="_blank">ivanhoeparkbrewing.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Kush Coconut Grove/th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Miami, FL</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.kushhospitality.com/" target="_blank">kushhospitality.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">81 Bay Brewing Co./th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Tampa, FL</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.81baybrewco.com/" target="_blank">81baybrewco.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Fetch Park ATL</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Atlanta, GA</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.fetchparkatl.com/" target="_blank">fetchparkatl.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Park & Field Chicago</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Chicago, IL</td>
+            </tr>
+            <tr>
+               <td><a href="http://www.parkandfieldchicago.com/" target="_blank">parkandfieldchicago.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Daddy Jones Bar</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Boston, MA</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.daddyjonesbar.com/" target="_blank">daddyjonesbar.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">The Freehouse</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Minneapolis, MN</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.freehousempls.com/" target="_blank">freehousempls.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Bar K</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Kansas City, MO</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.barkdogbar.com/" target="_blank">barkdogbar.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Big Dog's Brewing Company</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Las Vegas, NV</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.bigdogsbrews.com/" target="_blank">bigdogsbrews.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Nexus Brewery & Restaurant</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Albuquerque, NM</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.nexusbrewery.com/" target="_blank">nexusbrewery.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">NoDa Brewing Company</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Charlotte/Raleigh, NC</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.nodabrewing.com/" target="_blank">nodabrewing.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">The Roosevelt Coffeehouse at Gravity</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Columbus, OH</td>
+            </tr>
+            <tr>
+               <td><a href="https://linktr.ee/rooseveltcoffee/" target="_blank">rooseveltcoffee.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Lardo Sandwiches</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Portland, OR</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.lardosandwiches.com" target="_blank">lardosandwiches.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Double Wide Grill</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Pittsburg, PA</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.doublewidegrill.com" target="_blank">doublewidegrill.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Contigo Austin</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Austin, TX</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.contigotexas.com/" target="_blank">contigotexas.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Cane Rosso</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Dallas/Fort Worth, TX</td>
+            </tr>
+            <tr>
+               <td><a href="http://www.canerosso.com/" target="_blank">canerosso.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table class="table borderless">
+         <thead>
+            <tr>
+               <th scope="col">Boheme</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Houston, TX</td>
+            </tr>
+            <tr>
+               <td><a href="https://www.barboheme.com/" target="_blank">barboheme.com</a></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   </div>
+   <img src="/file/general/NFD2020_Mobile_PartyBallBanner.jpg" class="img-responsive">
+   <p class="para7">This year’s Exclusive Chuckit!® Party Ball is a limited edition toy that lights up on impact and it’s yours FREE - just for celebrating #NationalFetchDay with us. Get yours in the Backyard Party Sweepstakes Party Pack or when you take curbside delivery at your favorite dog-friendly restaurant or pub (participating stores only). Snap pics with your dog and post using #ChuckitPartyBall and show the world how you #MakeFetchHappen.</p>
+   <div class='videoDisplay'>
+      <div class='row' id='videoSectionPlay'>
+         <!-- ko if: embededUrl().length == 1 -->
+         <!-- ko foreach: embededUrl() -->
+         <div  id="CC-Video">
+            <div class="" id="productVideo">
+               <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/'+ $data}">
+                  <img src="/file/general/nfd_video_screenshot_resize.png" class="img-responsive video-banner">
+                  <div class="play-icon"><img src="/file/general/youTubeVideo.png" /></div>
+               </a>
+            </div>
+         </div>
+         <!-- /ko -->       
+         <!-- /ko --> 
+      </div>
+   </div>
+   <img src="/file/general/NFD2020_Mobile_Video_Header.gif" class="img-responsive">
+   <p class="para8">
+      This year, as we bring our National Fetch Day parties home, let’s remember our favorite dog-friendly restaurants and pubs, and make them a part of the experience. Treat Yourself. Grab Free Gear. Bring the Party Home. Make Fetch Happen.<sup>TM</sup>
+   </p>
+</div>

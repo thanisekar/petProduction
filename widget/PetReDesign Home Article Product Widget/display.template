@@ -1,0 +1,34 @@
+<!-- ko if: enabled() -->
+
+<div class="container" id="educationArticleSectionWidget" data-oc-id="educationArticleSectionWidget">
+    <div class="col-sm-12 carousel-container-width">
+     <!--<pre data-bind="text: ko.toJSON(getFinalProductData(),  null, 2)"></pre>-->
+       <div class='article-content-container col-sm-12'>
+             <h2 class='heading'>Canine Know-How.Feline Facts.</h2>
+               <p class='heading2'>All-Around Pet Answers.</p>
+               <p class='education-content'>When your dog won't stop whining or your cat won't stop searching, find the right anwsers that will put your mind(and your heart) at ease.</p>
+           </div>
+    
+       <div class='col-sm-12 col-xs-12'>
+           <!-- ko foreach: getFinalProductData -->
+              <div class='col-sm-3 col-xs-12   article-products'>
+                 <!--  <div class='hoverImage'>-->
+                <a data-bind="ccLink: $data, attr: {href: $data.route}">
+		         <img data-bind="ccResizeImage: {
+                                  source: primaryFullImageURL,
+                                  xsmall: '500,300',
+                                  small: '500,300',
+                                  medium: '500,300',
+                                  large: '500,300',
+                                  alt: 'displayName',
+                                 title:'displayName'}" class="img-responsive article-image" width="100%" >
+			 	 </a>
+			 <!--	 </div>-->
+			 	 <div  class='display-name'><a alt='displayName' data-bind="ccLink: $data, attr: {href: $data.route}, text:displayName" ></a></div>
+              </div>
+               <!--/ko-->
+         </div>
+      
+    </div>
+</div>
+ <!-- /ko -->

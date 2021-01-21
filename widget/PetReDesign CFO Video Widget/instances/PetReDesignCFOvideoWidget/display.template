@@ -1,0 +1,84 @@
+<div id="tab">
+<div class="container">
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">Charlie's Day In The Office</a></li>
+              <li class=""><a href="#profile" data-toggle="tab">Profile</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+              <div class="tab-pane active in fade" id="home">
+                <div class='videoDisplay'>
+                      <div class='row' id='videoSectionPlay'>
+                          <!-- ko if: VideoUrl()!="" -->
+                            <!-- ko foreach: embededUrl -->
+                            <div class='col-sm-6' id="CC-Video">
+                                   <div class="" id="productVideo">
+                                       <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/'+ $data}">
+                                        <img  data-bind="attr : {src : 'https://img.youtube.com/vi/' + $data + '/mqdefault.jpg'}" class="img-responsive video-banner" src="">
+                                        <div class="play-icon"><img src="/file/general/playbutton_32x32.svg" /></div>
+                                       </a>
+                                     </div>
+                                     <br>
+                                     <div>
+                                     
+                                        <a class="pdp-video"  data-bind="attr: { videourl: $data}"></a>
+                                    
+                                    </div>
+                            </div>
+                            <!-- /ko-->
+                        <!-- /ko-->
+                        </div>
+                        <div class="row hidden-xs">
+                            <div class="col-sm-6">
+                                <h6>Watch Charlie's visit to Corporate Headquarters to make sure business is running as it should. From testing new products like the JW Twist N Treats to making sure Petmate products are on store shelves, Charlie's got a busy day planned. Click play to watch a day in Charlie's  life around the office!</h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <h6>Watch Carlie's First visit to Petmate Corporate Headquaters after being hired as Petmate's Chief Four-Legged Officer. She was a little nervous at first, but after a while she warmed up and got to take home a bunch on new toys! Click play to watch Charlie's first day as Petmate's CFO!</h6>
+                            </div>
+                        </div>
+                </div> 
+              </div>
+              
+              <div class="tab-pane fade" id="profile">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="/file/general/cfoPawlification.png" class="img-responsive cfoPawlification">
+                        </div>
+                        <div class="col-md-8" style="float:right">
+                            <p>
+                                Charlie is a seven-year-old Bichon Poodle living her best life in New York City with "momager" and Social Media Director, Paige Chernick. 
+                                Charlie was rescued at three months old from what was thought to have been a foster home in Indiana, but turned out to be a puppy mill, 
+                                where dozens of dogs were confined and hoarded. Since her rescue,
+                                Charlie and Paige have had an inseparable bond and live life to the fullest by going on adventures together. Where their journeys take them,
+                                Charlie loves to meet new people and encourages belly rubs and games of fetch from anyone willing to offer them up to her.
+                                She's an avid ball chaser and tug-o-war champion, often engaging and encouraging other dogs to join in on the fun with her, 
+                                especially her little sister Sawyer! Though she is smaller in size, her assertive personality makes her the top dog boss in her household.
+                                We're extremely honored to have Charlie serving as our Chief Four-Legged Officer!.
+                        </p>    
+                            <p>
+                                Follow Charlie's adventures with Paige and her younger sister, Sawyer, here:
+                         </p>
+                         <div class="socialIcons">
+                             <div>
+                                 <span class="fa fa-instagram instagram_icon"></span><a href="http://www.instagram.com/puppynamedcharlie/" target="_blank"> : @puppynamedcharlie</a>
+                             </div>
+                             <div>
+                                 <span class="fa fa-facebook facebook_icon"></span><a href="http://www.facebook.com/puppynamedcharlie/" target="_blank"> : @puppynamedcharlie</a>
+                             </div>
+                             <div>
+                                 <span class="fa fa-twitter twitter_icon"></span><a href="http://www.twitter.com/doodlesofnyc" target="_blank"> : @doodlesofnyc</a>
+                             </div>
+                             
+                             
+                             
+                            
+                        </div>
+                        </div>
+                    </div>
+                                       
+              </div>
+            </div>
+          </div>
+</div>
+
+
+

@@ -1,0 +1,9 @@
+{
+  "configuration": {
+    "maxNoOfElements": "10",
+    "catalogId": "cloudCatalog",
+    "fields": "brand-aspenpet,brand-Chuckit,brand-fatcat,brand-gensevenpets,brand-lazboy,brand-jw,brand-jackson-galaxy,brand-petmate,brand-vittlesvault,",
+    "rootCategoryId": "rootCategory"
+  },
+  "displayName": "PetReDesign MegaMenu New Widget New"
+}

@@ -1,0 +1,17 @@
+{
+  "imports": [
+    "category",
+    "product"
+  ],
+  "translations": [
+    {
+      "name": "Petmate Redesign Video Modal Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {}
+}

@@ -1,0 +1,47 @@
+{
+  "titleResourceId": "title",
+  "properties": [
+    {
+      "defaultValue": false,
+      "name": "enabled",
+      "id": "enabled",
+      "helpTextResourceId": "enabledHelpText",
+      "labelResourceId": "enabledLabel",
+      "type": "booleanType"
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "FreeShippingText",
+      "id": "FreeShippingText",
+      "helpTextResourceId": "FreeShippingTextHelpText",
+      "labelResourceId": "FreeShippingTextLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "FreeShippingLink",
+      "id": "FreeShippingLink",
+      "helpTextResourceId": "FreeShippingLinkHelpText",
+      "labelResourceId": "FreeShippingLinkLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "FreeShippingBackgroundColor",
+      "id": "FreeShippingBackgroundColor",
+      "helpTextResourceId": "FreeShippingPromoBackgroundHelpText",
+      "labelResourceId": "FreeShippingPromoBackgroundTextLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    }
+  ],
+  "descriptionResourceId": "description"
+}

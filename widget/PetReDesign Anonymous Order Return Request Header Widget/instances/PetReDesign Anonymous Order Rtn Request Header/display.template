@@ -1,0 +1,5 @@
+<div id="returnHeader" class="anonymousReturnOrderHeader" style="display: none">
+    <div class="page-header">
+        <span>Returns for order - </span><span data-bind="text: returnOrderID"></span>
+    </div>
+</div>

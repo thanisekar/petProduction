@@ -1,0 +1,17 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "PetReDesign Litterbox",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "LitterBoxId": "29393,185101,0440032,610403,31125,02409,31317",
+    "enabled": true
+  }
+}

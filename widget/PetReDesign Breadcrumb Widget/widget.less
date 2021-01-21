@@ -1,0 +1,56 @@
+/* ---------------------------------------------------------------------- */
+/*  ecomm360 Breadcrumb Widget Styles
+/* ---------------------------------------------------------------------- */
+#CC-ecomm360breadcrumbWidget {
+    @media (max-width: 991px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #page_breadcrumbs {
+        list-style-type: none;
+        margin-top:10px;
+        padding: 0;
+        li {
+            display: inline-block;
+            padding: 2px 0px 0px 0px;
+            font-size:18px;
+            color: grey;
+            text-transform: capitalize;
+            font-weight:normal;
+            line-height:27px;
+            &:first-letter {
+                text-transform: uppercase;
+            }
+            &:first-child{
+                color:grey;
+                &:first-child a{
+                    color:grey;
+                }
+            }
+             a {
+                 
+                 text-decoration: none;
+                 font-size:18px;
+                 font-weight:normal;
+                 padding-right: 5px;
+                 &:hover {
+                    text-decoration: underline; 
+                 }
+             }
+        }
+        li:after {
+            content: "\00BB";
+            font-size: 14px;
+            position: relative;
+            top: -2px;
+            font-weight:normal;
+        }
+        li:first-child {
+            padding-left: 0;
+        }
+        li:last-child:after {
+            content: "";
+        }
+    }
+}

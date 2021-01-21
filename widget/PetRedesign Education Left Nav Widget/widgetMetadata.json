@@ -1,0 +1,25 @@
+{
+  "imports": [
+    "category",
+    "categoryId",
+    "dimensionId",
+    "productTypes"
+  ],
+  "translations": [
+    {
+      "name": "PetRedesign Education Left Nav Widget",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": false,
+  "pageTypes": [
+    "category",
+    "searchResults"
+  ],
+  "config": {
+    "collectionId": "articles",
+    "enabled": true
+  }
+}

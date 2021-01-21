@@ -1,0 +1,16 @@
+{
+  "titleResourceId": "title",
+  "properties": [
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "GTM-ID",
+      "id": "gtmID",
+      "helpTextResourceId": "gtmIDHelpText",
+      "labelResourceId": "gtmIDLabel",
+      "type": "stringType",
+      "required": true
+    }
+  ],
+  "descriptionResourceId": "description"
+}

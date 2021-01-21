@@ -1,0 +1,125 @@
+   <div class="container store-locator-continer nopad">
+			<!--<div class="page-header">Store Locator</div>-->
+			<div class="row storeLocator-Map">
+				<form method="get" action='javascript:void(0);'>
+				    
+					<div class="col-lg-6 col-md-6 col-sm-6 store-locator-zipcode  nopad">
+						<label class="label-store-locator">
+							Where To Buy
+						</label>
+						    <input id="store_search_query" value="" type="text" class="input-field" 
+						       placeholder="Enter a zip code, or city/state" >
+					</div>
+					<div class='col-sm-6 nopad'>
+    					    <div class="col-sm-8 store-locator-distance hidden-xs nopad">
+    						<label class="control radio radio-control">
+    							<input type="radio" class="radio1" id="10mile" value="10" name="radio">
+    							<span class="checkmark"></span>
+    							10 Miles
+    						</label>
+    						<label class="control radio radio-control">
+    							<input type="radio" class="radio1" id="25mile" value="25" name="radio">
+    							<span class="checkmark"></span>
+    							25 Miles
+    						</label>
+    						<label class="control radio radio-control">
+    							<input type="radio" class="radio1" value="50" id="50mile" name="radio" checked="checked">
+    							<span class="checkmark"></span>
+    							50 Miles
+    						</label>
+    						
+    					</div>
+					     	<div class="col-sm-4 hidden-xs nopad find-store">
+    						<a href="#" class="loginbtn " data-bind="click: storeCheck">Find a Store</a>
+    					</div>
+					</div>
+				  	
+					<div class="dropdown hidden-sm hidden-lg hidden-md col-xs-12">
+					    <select class="distanceSelect form-control" name="selectDistance" id="selectedDistance"
+					    aria-required="true" aria-invalid="true">
+					        <option value="10">10 Miles</option>
+					        <option value="25">25 Miles</option>
+					        <option value="50">50 Miles</option>
+                        </select>
+                    </div>
+				    <div class="hidden-sm hidden-lg hidden-md col-xs-12  find-store">
+						<a href="#" class="loginbtn " data-bind="click: storeCheck">Find a Store</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row resultssection">
+		<div id="store-section" class="col-lg-3 col-md-3 col-sm-3 nopad">
+	
+		    <div data-bind="visible: errorEmpty" class="errorMessage">
+		        Please enter a ZIP Code or city/state.
+		    </div>
+		    <div class="col-sm-12">
+    		    <div data-bind="visible: noResultError" class="errorMessage">
+    		        No results found for your search. Verify your location, or try a new search.
+    		    </div>
+		    </div>
+		
+		
+		 
+		    <!--ko if: showResults().length>0 &&  !noResultError() -->
+		    <div class='storePrint col-xs-12 nopad'>
+		      <div class="total-results" data-bind="visible:showResults().length > 0">
+                <span data-bind="text:showResults().length"></span> Results found
+            </div>
+		    <!-- ko foreach: showResults -->
+		     <!-- ko if: $index() < 4 -->
+                <div class="store">
+                    <div class='StoreName'><span data-bind="text: storeName"></span></div>
+                	<p class='address1'><span data-bind="text: address1"></span></p>
+                    <p class="address2">
+                            <span data-bind="text: city"></span>, 
+                            <span data-bind="text: state"></span> 
+                            <span>&nbsp;</span> 
+                            <span data-bind="text: postalcode"></span>
+                    </p> 
+                    <div class="distance">
+                        <span>Distance:</span> <span data-bind="text:parseFloat(miles).toFixed(2)" class="miles"></span>miles
+                       <br/> <span>Phone:</span> <span data-bind="text: phoneNumber" class="phone"></span>
+                    </div>
+                	<div class="directions">
+                	    <a href="" target="_blank" data-bind="attr: {href: 'http://maps.google.com/?daddr=' + address1 +'%20'+ city + ',%20' + state + '%20' + postalcode }" class="getDirections">Get directions<span class='directionArrow'></span></a>
+                	    </div>
+                </div>
+                <!-- /ko -->
+            <!-- /ko -->
+             <div class="more-results" data-bind="visible:showResults().length > 3">
+               <a href="javascript:void(0)" id="loadmoreResults">load more</a> 
+                </div>
+                <!-- ko foreach: showResults -->
+		      <!-- ko if: $index() >= 4 -->
+                <div class="store loadmore hide">
+                <div class='StoreName'><span data-bind="text: storeName"></span></div>
+                	<p  class='address1'><span data-bind="text: address1"></span></p>
+                    <p class="address2">
+                            <span data-bind="text: city"></span>, 
+                            <span data-bind="text: state"></span> 
+                            <span>&nbsp;</span> 
+                            <span data-bind="text: postalcode"></span>
+                    </p> 
+                    <div class="distance">
+                        <span >Distance:</span> <span data-bind="text:parseFloat(miles).toFixed(2)" class="miles"></span>miles
+                       <br/> <span>Phone:</span> <span data-bind="text: phoneNumber" class="phone"></span>
+                    </div>
+                	<div class="directions">
+                	    <a href="" target="_blank" data-bind="attr: {href: 'http://maps.google.com/?daddr=' + address1 +'%20'+ city + ',%20' + state + '%20' + postalcode }" class="getDirections">Get directions<span class='directionArrow'></span></a>
+                	    </div>
+                </div>
+                <!-- /ko -->
+            <!-- /ko -->
+            <!--/ko-->
+            </div>
+              <!--/ko-->
+         
+       
+            
+		</div>
+		<div class="col-md-9 col-lg-9 col-sm-9 hidden-xs" id="mapCanvasContainer">
+        		    
+        </div>
+</div>

@@ -1,0 +1,19 @@
+{
+  "elementInstances": [
+    {
+      "customTitle": "Rich_Text_1600015",
+      "styles": {},
+      "tag": "rich-text@1600015",
+      "text": null,
+      "richTextConfig": {
+        "content": "<div class=\"row petmatePromise-Container\">\n<div class=\"col-sm-12 nopad\">\n<div class=\"col-md-7 col-xs-12 petmatePromise-image nopad\">\n<div class=\"petPromiseSectionImgContainer\" id=\"petpromiseimgContainer\"><img alt=\"PetReDesignPromise\" class=\"img-responsive\" id=\"PetReDesignPromise\" src=\"/file/general/PetRedeisgnPetPromise-min.jpg\" style=\"width: 100%;\" /></div>\n\n<div class=\"row petPromiseEmptyContent hidden-sm hidden-xs\">\n<div class=\"col-xs-10 nopad\">&nbsp;</div>\n\n<div class=\"col-xs-2 nopad filler-section\">&nbsp;</div>\n</div>\n</div>\n\n<div class=\"col-md-5 col-xs-12 nopad\" id=\"petPromiseContent\">\n<div class=\"petPromiseSection\">\n<div><img alt=\"petRedesignLogo\" class=\"img-responsive\" id=\"PetRedesignLogo-transparent\" src=\"/file/general/PM-Logo-GhostWhite-RGB.png\" /> <span class=\"Promisetext\">Promise</span></div>\n\n<h4>Delivering <span class=\"peaceOfMind\">Peace of Mind</span> to Pet Parents</h4>\n\n<p>As pet people ourselves, our dedication to quality for the past 50 years has produced products with pet lovers and their furry (or feathered) friends in mind. We get pets, and whether you are a pet-parent novice or a seasoned veteran, know that what you&#39;re getting is up to your pet-parent standards.</p>\n<a class=\"readMoreLink\" href=\"/AboutUs\">Read More<span class=\"arrow-icon\"> </span></a></div>\n</div>\n</div>\n</div>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "PetReDesign Footer Widget ",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": false,
+  "config": {
+    "requiredLinks": [
+      "home",
+      "aboutUs",
+      "returns",
+      "shipping",
+      "contactUs",
+      "privacy",
+      "wishlist"
+    ]
+  }
+}

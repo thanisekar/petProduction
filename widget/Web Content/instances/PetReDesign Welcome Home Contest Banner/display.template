@@ -1,0 +1,40 @@
+<!-- ko setContextVariable: {name: 'elementConfig', value: {"3500001": {
+  "border": {
+    "borderColor": "#000000",
+    "borderWidth": 0
+  },
+  "horizontalAlignment": {"horizontalAlignment": "left"},
+  "id": "3500001",
+  "image": {
+    "altText": "Welcome Home Contest",
+    "altTextId": "3200002",
+    "isProductImage": false,
+    "link": "/WelcomeHome",
+    "src": "/file/v1396174562861131492/general/PM_Welcome-Home_Banner.jpg",
+    "titleText": "Welcome Home Contest",
+    "titleTextId": "3200001",
+    "zoomEnabled": false
+  },
+  "padding": {
+    "paddingBottom": "0",
+    "paddingLeft": "0",
+    "paddingRight": "0",
+    "paddingTop": "0"
+  }
+}}} --><!-- /ko -->
+
+<!-- oc layout: panels -->
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-0-0">
+
+      <!-- oc section: image -->
+<span data-bind="element: 'image',id: '3500001'"></span>
+
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+  <!-- /oc -->

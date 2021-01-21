@@ -1,0 +1,16 @@
+{
+  "imports": [
+    "space"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign PLP Add To Wishlist Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": false,
+  "config": {}
+}

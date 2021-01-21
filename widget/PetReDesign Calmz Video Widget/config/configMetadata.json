@@ -1,0 +1,79 @@
+{
+  "titleResourceId": "title",
+  "properties": [
+    {
+      "defaultValue": false,
+      "name": "enabled",
+      "id": "enabled",
+      "helpTextResourceId": "enabledHelpText",
+      "labelResourceId": "enabledLabel",
+      "type": "booleanType"
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "VideoUrl",
+      "id": "VideoUrl",
+      "helpTextResourceId": "VideoUrlText",
+      "labelResourceId": "VideoUrlTextLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "BannerImage",
+      "id": "BannerImage",
+      "helpTextResourceId": "BannerImagePath",
+      "labelResourceId": "BannerImagePathLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "SizeChartImage",
+      "id": "SizeChartImage",
+      "helpTextResourceId": "SizeChartImageText",
+      "labelResourceId": "SizeChartImageLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "PhoneNumberText",
+      "id": "PhoneNumberText",
+      "helpTextResourceId": "PhoneNumberTextHelpText",
+      "labelResourceId": "PhoneNumberTextLabel",
+      "type": "stringType",
+      "maxLength": 250
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "BuyNowButtonText",
+      "id": "BuyNowButtonText",
+      "helpTextResourceId": "BuyNowButtonTextHelpText",
+      "labelResourceId": "BuyNowButtonTextLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "BuyNowButtonLink",
+      "id": "BuyNowButtonLink",
+      "helpTextResourceId": "BuyNowButtonLinkHelpText",
+      "labelResourceId": "BuyNowButtonLinkLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    }
+  ],
+  "descriptionResourceId": "description"
+}

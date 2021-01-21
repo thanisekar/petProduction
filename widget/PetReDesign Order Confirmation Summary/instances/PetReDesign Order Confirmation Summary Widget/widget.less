@@ -1,0 +1,122 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+                padding-left: 15px;
+             @media (max-width:767px){
+                 padding-left: 0;
+             }
+/* -------------------------------------------------- */
+/*  Confirmation Summary
+/* -------------------------------------------------- */
+#confirmation-summary {
+.header-title{
+    font-size: 22px;
+    font-family: @font-family-roboto;
+    font-weight: 500!important;
+}
+  .confirmation-summary {
+    min-height: 20px;
+    //padding: 12px;
+    margin-bottom: 20px;
+    
+    h3 {
+      font-size: @fontSizeLarge;
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  .confirmation-total {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: @font-family-roboto;
+    margin-top: 15px;
+    .confirmation-total-ex-tax, .includingtaxtext {
+      font-size: @baseFontSize;
+      padding-bottom: 10px;
+    }
+  }
+
+  .confirmation-sales-tax {
+    margin-top: 12px;
+  }
+
+  .confirmation-gift-cards {
+    margin-top: 5px;
+  }
+  
+  /* FF makes continue shopping button too big without this */
+  .confirmation-continue-shopping {
+    a {
+      .btn-lg;
+      border-radius: @ButtonSecondaryBorderRadius;
+      min-height: 20px;
+    }
+  }
+
+  #confirmationSummary-continueShopping {
+    white-space: normal;
+  }
+}
+
+/*Custom Stylings*/
+
+#confirmation-summary{
+    background: #edebe8;
+    padding-bottom: 1px;
+    margin-top: 55px;
+    .confirmation-summary-center{
+            float: none;
+            margin: 0 auto;
+            .confirmation-summary {
+                margin-top:45px;
+                h4{
+                    font-weight:500;
+                    font-family: @font-family-nunito;  
+                    font-size:22px;
+                }
+                .order-information{
+                        margin: 0;
+                        padding-bottom: 25px;
+                        font-family: @font-family-nunito;  
+                        text-align: center;
+                        border-bottom: 1px solid #ccc;
+                        font-weight: 400;
+                        font-size: 28px!important;
+                        margin-top: 10px;
+                        padding-top: 0;
+                        line-height: 20px;
+                    }
+                .checkout-padding-panel{
+                    font-weight: 400;
+                    font-family: @font-family-roboto;
+                    font-size: 14px;
+                    margin-bottom: 30px;
+                    >div{
+                        margin-top:12px;
+                        color:#000!important;
+                    }
+                }
+                .orderSummarryLoadingSection{
+                        margin-top: 25px;
+                    .confirmation-total{
+                        .order-text{
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                        .ordersumprice{
+                            font-size: 22px;
+                            font-weight: 500;
+                            font-family: @font-family-nunito;  
+                        }
+                    }
+                }
+                .orderSummaryPaymentSection{
+
+                }
+                .orderSummaryShippingSection{
+                    
+                }
+            }
+    }
+}
+
+}

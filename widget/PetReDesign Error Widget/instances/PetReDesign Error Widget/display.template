@@ -1,0 +1,29 @@
+<!-- ko if: isBrandExist()-->
+<div class='container'>
+    <!-- ko with:getBrandDetails()-->
+        <!-- ko foreach:categoryImages-->
+        <!-- ko if :$index()==1-->
+        <img data-bind="ccResizeImage: {
+        		     	source:$data.url,
+            			xsmall: '480,1306',
+            			large:'480,1306',
+            			small:'480,1306',  
+            			medium:'480,1306',
+            			alt: 'footer images',
+            			errorSrc:'images/noImage.png',
+            			errorAlt:'No Image Found'}" class="img-responsive"  >
+            			
+            	<!--/ko-->
+        <!--/ko-->
+      <p data-bind='html:longDescription'></p>
+    <!-- /ko-->
+</div>
+<!--/ko-->
+<!--<p data-bind='text:isBrandExist()'></p>-->
+<!-- ko ifnot:isBrandExist()-->
+<div class='container'>
+     <div class='col-xs-12'>
+         <img src='/file/general/error404.jpg' class="img-responsive"/>
+    </div>
+</div>
+<!--/ko-->

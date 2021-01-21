@@ -1,0 +1,7 @@
+{
+  "configuration": {
+    "returnSummaryLink": "https://b2c-uat.petmate.com/b2c/api/v1/returnRequests/getreturnrequests/",
+    "storeLocatorLink": "https://services.petmate.com/b2c/api/v1/returnRequests/getreturnrequests"
+  },
+  "displayName": "PetReDesign Order Details Widget"
+}

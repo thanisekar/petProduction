@@ -1,0 +1,19 @@
+{
+  "imports": [
+    "category"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Brand Carousel",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "collectionId": "",
+    "enabled": true
+  }
+}

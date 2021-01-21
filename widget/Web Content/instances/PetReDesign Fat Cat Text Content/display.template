@@ -1,0 +1,128 @@
+<!-- ko setContextVariable: {name: 'elementConfig', value: {
+  "2400001": {
+    "border": {
+      "borderColor": "#000000",
+      "borderWidth": 0
+    },
+    "horizontalAlignment": {"horizontalAlignment": "center"},
+    "id": "2400001",
+    "image": {
+      "altText": "FAT CAT Big Mama Roadtrip Map - Cleveland, OH",
+      "altTextId": "2200001",
+      "isProductImage": false,
+      "src": "/file/v7121431574129302372/general/12-9-19_FC_BM-ROADTRIP-O-RAMA_CLEVELAND.jpg",
+      "titleText": "FAT CAT Big Mama Roadtrip Map - Cleveland, OH",
+      "titleTextId": "2200002",
+      "zoomEnabled": false
+    },
+    "padding": {
+      "paddingBottom": "0",
+      "paddingLeft": "0",
+      "paddingRight": "0",
+      "paddingTop": "0"
+    }
+  },
+  "2400002": {
+    "border": {
+      "borderColor": "#000000",
+      "borderWidth": 0
+    },
+    "horizontalAlignment": {"horizontalAlignment": "center"},
+    "id": "2400002",
+    "image": {
+      "altText": "Fat-Cat Title",
+      "altTextId": "2200003",
+      "isProductImage": false,
+      "src": "/file/v7417826162665043825/general/FatCat-Title.png",
+      "titleText": "Fat-Cat Title",
+      "titleTextId": "2200004",
+      "zoomEnabled": false
+    },
+    "padding": {
+      "paddingBottom": "0",
+      "paddingLeft": "0",
+      "paddingRight": "0",
+      "paddingTop": "10"
+    }
+  },
+  "2400003": {
+    "id": "2400003",
+    "padding": {
+      "paddingBottom": "0",
+      "paddingLeft": "0",
+      "paddingRight": "0",
+      "paddingTop": "0"
+    },
+    "richText": {
+      "content": "${occ:localizedWebContent('m490089')}",
+      "sourceMedia": "m490089"
+    }
+  },
+  "2400010": {
+    "border": {
+      "borderColor": "#000000",
+      "borderWidth": 0
+    },
+    "horizontalAlignment": {"horizontalAlignment": "left"},
+    "id": "2400010",
+    "image": {
+      "isProductImage": false,
+      "src": "/file/v741791460455278936/general/FC_BM-ROADTRIP-O-RAMA_BW-STRIPES.png",
+      "titleText": "Black Stripes",
+      "titleTextId": "2200011",
+      "zoomEnabled": false
+    },
+    "padding": {
+      "paddingBottom": "0",
+      "paddingLeft": "0",
+      "paddingRight": "0",
+      "paddingTop": "0"
+    }
+  }
+}} --><!-- /ko -->
+
+<!-- oc layout: panels -->
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-0-0">
+
+      <!-- oc section: image -->
+<span data-bind="element: 'image',id: '2400010'"></span>
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-1-0">
+
+      <!-- oc section: image -->
+<span data-bind="element: 'image',id: '2400002'"></span>
+      <!-- /oc -->
+
+      <!-- oc section: image -->
+<span data-bind="element: 'image',id: '2400001'"></span>
+
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-2-0">
+
+      <!-- oc section: rich-text -->
+<span data-bind="element: 'rich-text',id: '2400003'"></span>
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+  <!-- /oc -->

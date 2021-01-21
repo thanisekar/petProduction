@@ -1,0 +1,54 @@
+<!-- ko if: enabled() -->
+<div id="bannerPromoSection">
+    <div class="homeBanner">
+        <div class="row">
+        <span data-bind="text: HomBannerLink"></span>
+        <a data-bind="ccLink: {route: HomBannerLink()}" target="_blank">
+            <img data-bind="ccResizeImage: {
+                                source: HomeBannerText(),
+                                xsmall: '173,414',
+                                small: '320,768',
+                                medium: '660,1584',
+                                large: '793,1903',
+                                alt: 'HomeBanner',
+                                 title:'HomeBanner'}"  class="img-responsive" width="100%"/>
+         
+        </a>
+    </div>
+    </div>
+    
+    
+    <div class="promoBanner">
+        <div class="row">
+            <div class="col-sm-6">
+                <a data-bind="ccLink: {route: HomBannerLink()}" target="_blank">
+                    <img data-bind="ccResizeImage: {
+                                        source: HomeBannerText(),
+                                        xsmall: '173,414',
+                                        small: '320,768',
+                                        medium: '660,1584',
+                                        large: '793,1903',
+                                        alt: 'HomeBanner',
+                                         title:'HomeBanner'}"  class="img-responsive" width="100%"/>
+                 
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <a data-bind="ccLink: {route: HomBannerLink()}" target="_blank">
+                    <img data-bind="ccResizeImage: {
+                                        source: HomeBannerText(),
+                                        xsmall: '173,414',
+                                        small: '320,768',
+                                        medium: '660,1584',
+                                        large: '793,1903',
+                                        alt: 'HomeBanner',
+                                         title:'HomeBanner'}"  class="img-responsive" width="100%"/>
+                 
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div
+</div>
+<!--/ko-->

@@ -1,0 +1,41 @@
+<div id="main-container">
+   <!-- <pre data-bind="text: ko.toJSON(koGetCategoryList(), null, 2)"></pre>-->
+    <div id="educationLeftNav" class="educationLeftNav">
+        <h2 class="mobile-category-link">Categories<i class="icon-sort"></i></h2>
+        <!-- ko foreach: koGetCategoryList()-->
+         <!-- ko foreach:childCategories --> 
+            <div class='col-md-12 col-sm-12 col-xs-12 hidden-xs hidden-sm educationCat'>
+                <div class='col-sm-12 col-md-12 col-xs-12'>
+                    <a data-bind="ccLink: $data,attr: {href: route}">
+                           <div class='CategoryName' data-bind="text:displayName"></div></a>
+                </div>
+            </div>
+         <!-- /ko -->
+        <!-- /ko -->
+        
+         
+    <div class="mobile-category-modal hidden-md hidden-lg">
+        <div class="nav-headings">
+        <h3>Categories</h3>
+        <span id="modal-category-Close" class="filterCloseIcon"></span>
+        </div>
+            <!-- ko foreach: koGetCategoryList()-->
+         <!-- ko foreach:childCategories --> 
+            <div class='col-md-12 col-sm-12 col-xs-12  educationCat'>
+                <div class='col-sm-12 col-md-12 col-xs-12'>
+                    <a data-bind="ccLink: $data,attr: {href: route}">
+                           <div class='CategoryName' data-bind="text:displayName"></div>
+                    </a>
+                </div>
+            </div>
+         <!-- /ko -->
+        <!-- /ko -->
+        
+    </div>
+        
+        
+    </div>
+   
+    
+    
+</div>

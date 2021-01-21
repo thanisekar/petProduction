@@ -1,0 +1,6 @@
+{
+  "configuration": {
+    "storeLocatorLink": "https://petmatenews.azurewebsites.net/petmateStoreLocatorAPI.php"
+  },
+  "displayName": "PetReDesign Store Locator widget"
+}

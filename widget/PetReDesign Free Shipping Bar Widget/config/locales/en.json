@@ -1,0 +1,12 @@
+{
+  "resources": {
+    "FreeShippingTextHelpText": "Enter Free Shipping Message",
+    "FreeShippingTextLabel": "Free Shipping Message",
+    "enabledHelpText": "Enable the Shipping Widget",
+    "FreeShippingPromoBackgroundColorHelpText": "Enter Free Shipping Background Color",
+    "enabledLabel": "Widget Enable",
+    "FreeShippingLinkLabel": "Free Shipping Link",
+    "FreeShippingLinkHelpText": "Enter Free Shipping Link",
+    "FreeShippingPromoBackgroundTextLabel": "Free Shipping Background Color"
+  }
+}

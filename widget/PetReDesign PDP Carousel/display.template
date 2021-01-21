@@ -1,0 +1,97 @@
+<div class="container">
+    <!-- ko if: recommendations().length > 0 -->
+<div class="templateRegion" id="cc-recs" data-oc-id="cc-recs">
+  <!-- oc layout: panels -->
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-0-0">
+
+
+      <!-- oc section: recommendations-carousel -->
+         <!--ko if: koDealsModelData() && (koDealsModelData().length > 0) -->
+  <div class="row">
+    <!-- Collection Title -->
+    <div class="col-sm-9 col-xs-12 collection-header">
+        <h3>You May Also Like</h3>
+    </div>
+    <div id="cc-carousel-controls" class="col-xs-3">
+      <!-- Carousel Controls -->
+      <!-- ko if: koDealsModelData() && (koDealsModelData().length > 1) -->
+      <div class="controls row pull-right hidden-xs">
+          <div id="cc-carousel-left-control" class="col-sm-6">
+          <a class="corousel-left" data-slide="prev" data-bind="event: {keyup: $data.handleCarouselArrows}, widgetLocaleText:{value:'previousImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
+            <!--<i class="fa-2x fa fa-caret-left "></i>-->
+          </a>
+        </div>
+        <div id="cc-carousel-right-control" class="col-sm-6">
+          <a class="corousel-right" data-slide="next" data-bind="event: {keyup: $data.handleCarouselArrows}, widgetLocaleText:{value:'nextImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
+            <!--<i class="fa-2x fa fa-caret-right "></i>-->
+          </a>
+        </div>
+      </div>
+      <!-- /ko -->
+    </div>
+  </div>
+
+  <div data-bind="carouselSwipe, attr:{id: 'carousel-id-'+id()}" class="carousel slide inner-corousel" data-interval="false">
+    <div class="carousel-inner">
+      <!-- ko foreach: koDealsModelData -->
+        <div class="item row" data-bind="css: {'active': $index()==0}, foreach: $data">
+          <div data-bind="css: $parents[1].spanClass(), with: ccProduct" class="cc-product-item">
+
+            <div class="cc-item-detail">
+              <a data-bind="attr : { id: 'CC-product-detail-'+id(), title: displayName }, ccLink : $data.product, click: function(data, event){ return ($parents[2].recordClickThru($parent.recSetId, event, id()) &amp;&amp; $parents[2].updateFocus());}">
+              <span data-bind="text: displayName" class="sr-only"></span>
+              <img class="img-responsive center-block" data-bind="productImageSource: {src: $data.product, imageType: 'small',
+                errorSrc: '/img/no-image.jpg',
+                errorAlt: 'Missing Product Image'
+                }, attr: {id: 'CC-product-image-'+id(), alt: displayName}">
+              </a>
+            </div>
+             <div class='cc-item-rating'>
+                 <div data-bind="attr: {id: 'BVRRInlineGridDisplay-'+ id()}"> </div>
+                 
+             </div>
+            <div class="cc-item-price">
+              <!-- ko if: $data.isminMaxprice == true --> 
+				        	  <span data-bind="text: minMaxPrice"></span>
+				        <!-- /ko -->
+				        <!-- ko if: $data.isGetSalePrice == true--> 
+				            
+				        	  <span class='salePriceValue' data-bind="text: getSalePrice"></span>
+				        	    <span class='listPriceValue' data-bind="text: listPrice"></span>
+				        <!-- /ko -->
+				        <!-- ko if: $data.IslistPrice== true--> 
+				        	  <span data-bind="text: listPrice"></span>
+				        <!-- /ko -->  
+            </div>
+             <div class="cc-item-title">
+			 <a alt=displayName  data-bind="attr : { id: 'CC-product-title-'+id()},ccLink: {route: $data.route}, text:displayName" >
+				<p data-bind="text: displayName" class="cc-text-overflow"></p>
+			 </a>
+            </div>
+          </div>
+        </div>
+      <!-- /ko -->
+    </div>
+    <!-- Carousel Indicators-->
+    <!-- ko if: koDealsModelData().length > 1 -->
+      <div id="cc-carousel-indicators" class="row hide">
+        <ol role="presentation" class="carousel-indicators" data-bind="foreach: koDealsModelData">
+          <li data-bind="css: {'active': $index()==0}, attr: {'data-slide-to': $index, 'data-target': '#carousel-id-'+id()}"></li>
+        </ol>
+      </div>
+    <!-- /ko -->
+  </div>
+ <!--/ko-->
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+  <!-- /oc -->
+</div>
+<!-- /ko -->
+
+</div>

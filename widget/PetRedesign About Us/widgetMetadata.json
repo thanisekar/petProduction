@@ -1,0 +1,16 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "PetRedesign About Us",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": false,
+  "config": {
+    "imageID": ""
+  }
+}

@@ -1,0 +1,28 @@
+<div id="displayRouteCategoryContainer">
+     <div class="row hidden-xs hidden-sm"  >
+   <!--    <pre data-bind="text: ko.toJSON(category(), null, 2)"></pre> -->
+          <!-- ko with: category -->
+              <!-- ko foreach :fixedParentCategories-->
+             <!--   <div class='categoryDisplayName'>
+                  <a data-bind="ccLink : $data , attr: {href: route}" >
+                     <span >See All </span><span data-bind="text: $data.displayName"></span>
+                   </a>
+                  </div> -->
+              <!-- /ko -->
+         <!-- /ko -->
+         <!--<pre data-bind="text: ko.toJSON(koDisplayCategoryURL(), null, 2)"></pre-->
+         <!-- ko if: categoryId() !== "L1-replacement-parts" && categoryId() !== "sale" -->
+         <!-- ko foreach: koDisplayCategoryURL() -->
+           <div class='categoryDisplayName'>
+                  <a data-bind="ccLink : $data , attr: {href: $data.route}" >
+                     <span >See All </span><span data-bind="text: $data.displayName"></span>
+                   </a>
+                  </div> 
+          <!-- /ko -->        
+        <!-- /ko -->
+       </div>
+       
+</div>
+
+
+

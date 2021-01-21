@@ -1,0 +1,7 @@
+{
+  "configuration": {
+    "maxRefinementCount": "5",
+    "maxDimensionCount": "5"
+  },
+  "displayName": "PetReDesign Overlay Guided Navigation Widget"
+}

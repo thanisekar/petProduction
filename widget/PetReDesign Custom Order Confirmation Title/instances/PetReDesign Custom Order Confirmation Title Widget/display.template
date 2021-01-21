@@ -1,0 +1,37 @@
+<div id="petmate-order-confirmation-title">
+    <div class="row">
+        <div class="col-sm-8 col-xs-12 petmate-order-confirmation-title-center">
+            <h2>
+        Thank You for Your Order!
+    </h2>
+    <p class="order-para-normal">
+        Check your email for a confirmation. We know waiting is ruff, but take heart knowing we typically ship your items the very next day!<br>
+        Want to track your order? <a data-bind="ccLink:{route: '/login'}">Sign In</a> or <a data-bind="ccLink:{route: '/createaccount'}">Create An Account</a>
+	</p>
+    <div class="align-center">
+        <a data-bind="ccLink:{route: '/home'}" class="order-shopping">
+        <span>Continue Shopping</span>
+        </a>
+     </div>
+    <!--<p class="order-para">
+        Thanks for Your Business!
+    </p>
+    <p class="order-para">
+        We've sent you a confirmation to the email you provided
+    </p>-->
+    <!--ko ifnot: user().loggedIn() -->
+        <!--<p class="order-para">
+            Don't have an account yet?
+        </p>
+        <p class="order-para">
+            <a  data-bind="ccLink:{route: '/createaccount'}" class="order-shopping">
+                <span>Create an Account</span>
+            </a>
+        </p>-->
+    <!--/ko-->
+    <!--<div class="order-confirmation">
+        Order Confirmation - <span data-bind="text:confirmation().id"></span>
+    </div>-->
+        </div>
+    </div>
+</div>

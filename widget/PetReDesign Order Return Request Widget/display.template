@@ -1,0 +1,95 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div class='error-msg-display'></div>
+        
+        <div id="returnRequest" style="display: none">
+            <form id="retunOrder">
+                <!--ko foreach: returnListItems()[0]-->
+                <div class="product--return  order-Items-return mb-20 clearfix" data-bind="attr: { id: 'order-Scroll_items' + $index() }" >
+            		<div class="col-xs-3 col-md-2 col-lg-2 product-image--return">
+            			<img alt="ALT TXT" class='product-img' data-bind="attr : {src : primaryThumbImageURL }" onError="this.onError=null;this.src='/file/general/petmate-no-image.jpg';"/></div>
+            		<div class="col-xs-8 col-lg-10 left product-description-wrapper--return">
+            			<div class="col-xs-12 col-md-5 col-lg-4 product-description-margin--return left product-padding--return">
+            				<p class="product-title--return" data-bind="text: displayName"></p>
+            				<div class="product-description--return">
+            					<p class="skuID" data-bind="text: catRefId"></p>
+            					<!--ko foreach: variant-->
+            						<!--ko if: optionName == 'Color/style'  -->
+                    					<p>
+                    						Color: <span class="quantity-padding--return" data-bind="text: optionValue"></span>
+                    					</p>
+                					<!--/ko-->
+                					<!--ko if: optionName == 'Size' -->
+                    					<p>
+                    						Size: <span class="quantity-padding--return" data-bind="text: optionValue"></span>
+                    					</p>
+                					<!--/ko-->
+            					<!--/ko-->
+            				</div>
+            			</div>
+            
+            			<div class="quantity-wrapper-margin col-xs-12 col-md-3 col-lg-2 product-padding--return product-margin--return left">
+            						<div>
+            							<p class="product-quantity--return">Qty to return</p>
+            						</div>
+       
+            	
+            						
+            <input data-parsley-required-message="Please enter quantity." 
+                    id="quantity" min="0"  maxlength="3"
+                    data-bind="attr: {max : quantity,  maxQty : quantity }"   data-parsley-errors-container=".quantity-1" 
+                    placeholder="0"  value="0"  class="product-quantity-input--return mb-10 Qty" type="number"
+                    data-parsley-required="true" >
+                
+                    
+            						   <div class="product-links text-left show-for-medium-up">
+            							<br>
+            						</div>
+            					</div>
+            					<div class="col-xs-12 col-md-3 col-lg-5 reason-to-cancel product-padding--return product-margin--return clearfix left">
+            						<div>
+            							<p class="product-reason--return">Return reason</p>
+            						</div>
+            						<select id="selectmenu1" class="selectmenu1" name="" data-theme="c" 
+                                          data-bind="options: $parent.reasonArray(), 
+                                                     optionsValue:'key', 
+                                                     optionsText: 'value', 
+                                                     optionsCaption: 'Please select return reason'">        
+                                        </select>
+                                </div>
+            				<br>
+            			<br>
+            			<br>
+            		</div>
+            		<div class="col-lg-7 right">
+                    	<p class="quantity-2"></p>
+                    	<p class="return-reason-2"></p>
+                  </div>
+            	</div>
+            	<!--/ko-->
+            	<div class="right clearfix">
+                    <input title="REQUEST RETURN" value="REQUEST RETURN" class="request-return--button button left button--red" type="submit" data-bind="click : function(data) { returnRequestForm(data) }">
+                    <div class="button request-cancel--button left button--dark" data-bind="click: function() { clickCancel() }">Cancel</div>
+				</div>
+            </form>
+        </div>
+        
+        <!--Return Request Success-->
+        <div id="returnSuccess" style="display: none">
+        	<div class="page-header show-for-large-up">RETURNS</div>
+        	<div class="text-center">
+        		<p class="h6 text-center">
+        			<strong>
+        				Thank you for submitting your return!
+        			</strong>
+        		</p>
+                <p class="">Our customer service team is reviewing your request. You will receive a return email with further instruction within 48 business hours.</p>
+        		<a href="/orderHistory">
+        			<button class="button mb-20 button--dark" data-bind="click: returnOrder()">	Back to orders</button>
+        		</a>
+        	</div>
+        </div>	
+        	
+        <!--End Success-->
+    </div>
+</div>

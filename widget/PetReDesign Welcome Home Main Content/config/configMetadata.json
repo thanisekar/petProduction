@@ -1,0 +1,48 @@
+{
+  "titleResourceId": "title",
+  "properties": [
+    {
+      "defaultValue": "",
+      "name": "VideoID",
+      "id": "VideoID",
+      "helpTextResourceId": "VideoIdHelpText",
+      "labelResourceId": "VideoIdLabel",
+      "type": "stringType",
+      "maxLength": 2000
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "ConsumerCommentsOne",
+      "id": "ConsumerCommentsOne",
+      "helpTextResourceId": "ConsumerCommentsOneText",
+      "labelResourceId": "ConsumerCommentsOneLabel",
+      "type": "stringType",
+      "maxLength": 2000,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "ConsumerCommentsTwo",
+      "id": "ConsumerCommentsTwo",
+      "helpTextResourceId": "ConsumerCommentsTwoText",
+      "labelResourceId": "ConsumerCommentsTwoLabel",
+      "type": "stringType",
+      "maxLength": 2000,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "ConsumerCommentsThree",
+      "id": "ConsumerCommentsThree",
+      "helpTextResourceId": "ConsumerCommentsThreeText",
+      "labelResourceId": "ConsumerCommentsThreeLabel",
+      "type": "stringType",
+      "maxLength": 2000,
+      "required": true
+    }
+  ],
+  "descriptionResourceId": "description"
+}

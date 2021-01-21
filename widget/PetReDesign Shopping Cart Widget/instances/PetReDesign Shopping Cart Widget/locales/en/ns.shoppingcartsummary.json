@@ -1,0 +1,19 @@
+{
+  "resources": {
+    "buttonContinueShopping": "Continue Shopping",
+    "itemQuantity": "__productName__ Quantity",
+    "totalTableSubTotal": "Sub-Total:",
+    "totalTableSummary": "Shopping cart totals.",
+    "cartHeader": "Your Shopping Cart",
+    "itemHeaderItem": "PRODUCT",
+    "instockText": "In stock",
+    "itemHeaderItemTotal": "Item Total",
+    "includingTaxText": "(including tax)",
+    "cartEmptyHeader": "Your Cart Is Empty",
+    "totalTableTotal": "Total:",
+    "outofstockText": "Out of stock",
+    "buttonRemoveItem": "Remove",
+    "itemHeaderQuantity": "Quantity",
+    "buttonUpdateQuantity": "Update"
+  }
+}

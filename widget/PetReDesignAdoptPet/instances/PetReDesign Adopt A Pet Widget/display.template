@@ -1,0 +1,363 @@
+<div id="tab">
+   <div class="container">
+        <img  style="margin: 30px auto;" src="/file/general/Adoptapet_Banner.jpg" class="img-responsive" >
+        <div class="contents">
+                    <h4>Adopt The Perfect Pet</h4>
+                     <h6 style="font-style:italic">More than 19,000 animal shelters & rescues</h6>
+            <p><a href="https://www.adoptapet.com/" target="_blank">Adopt-a-Pet.com</a> is North America’s largest non-profit pet adoption website. They help over 19,000 animal shelters, humane societies, SPCAs, pet rescue groups, and pet adoption agencies advertise their homeless pets for free to millions of adopters a month. Adopt-a-Pet.com believes there’s a great home for every shelter pet, and they’ve made it their mission to help those pets find their way home. They help make that happen by putting as many adoptable pets in front of their visitors as possible and getting them on the path to finding the right pet. </p>
+            <p>But they don’t stop there; they provide valuable tools even when things don’t work out. Through Adopt-a-Pet.com’s peer-to-peer adoption service, Rehome, they’re able to help pet owners facing the heartbreaking situation of needing to find their pet a new home. Launched in 2017, Rehome is safe, free, and supportive --and it helps provide much-needed funding to animal shelters and rescues across the country. To date, they’ve helped more than 300,000 pets and raised $1.2 million through the program.</p>
+            <p>With the help of their pet-loving sponsors Adopt-a-Pet.com helps homeless dogs, cats, rabbits, and other animals go from alone to adopted.</p>
+            <a data-bind="ccLink:{route:'/welcomehome'}"><img  style="margin: 30px auto;" src="/file/general/PM_Welcome-Home_Banner.jpg" class="img-responsive" ></a>
+        </div>
+        <div class="row power">
+            <div class="col-md-3 hidden-sm hidden-xs">
+                </div>
+            <div class="col-md-6 col-xs-12">
+                 <h6 style="font-style:italic"></h6>
+            </div>
+            <div class="col-md-3 col-xs-12 adoptpower">
+                    <span style="margin-left: auto;order: 2;">Powered by : </span>
+                     <span style="order: 2;"><img  src="/file/general/adoptapet_logo_resized.png" class="img-responsive" ></span>
+            </div>
+        </div>
+      <div class="col-sm-12 col-md-12 main-table">
+         <ul id="myTab" class="nav nav-tabs">
+            <li class="active"><a href=".dog" title="dog" data-toggle="tab">Dog</a></li>
+            <li class><a href=".cat" title="cat" data-toggle="tab">Cat</a></li>
+            <li class><a href=".animal" title="animal" data-toggle="tab">Other Pets</a></li>
+         </ul>
+         <div  class="tab-content">
+            <div class="tab-pane active dog in fade">
+               <form class="dog">
+                  <div class="form-group full-width-input">
+                     <label>Location</label>
+                     <input placeholder="ZIP Code" type="number" class="form-control" data-bind="validatableValue: ZipDog,valueUpdate: 'afterkeydown'" name="zip">
+                  </div>
+                  <div>
+                     <div class="col-sm-6 form-group">
+                        <label>Distance</label>
+                        <select class="form-control" name="distance">
+                           <option value="35">Less than 35 miles (55 km)</option>
+                           <option value="50">Less than 50 miles (80 km)</option>
+                           <option value="75">Less than 75 miles (120 km)</option>
+                           <option value="100">Less than 100 miles (160 km)</option>
+                           <option value="250">Less than 250 miles (400 km)</option>
+                        </select>
+                     </div>
+                     <div class="col-sm-6 form-group">
+                        <label>Breed</label>
+                        <select class="form-control" name="breed" data-bind="
+                           options: koBreedId, 
+                           optionsText: 'label',
+                           optionsValue:'value'"></select>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="col-sm-6 form-group">
+                        <label>Sex</label>
+                        <select class="form-control" name="sex"  data-bind="
+                           options: koSexId, 
+                           optionsText: 'label',
+                           optionsValue:'value'"></select>
+                     </div>
+                     <div class="col-sm-6 form-group">
+                        <label>Age</label>
+                        <select class="form-control" name="age" data-bind="
+                           options: koAgeId, 
+                           optionsText: 'label',
+                           optionsValue:'value'"></select>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="col-sm-6 form-group">
+                        <label>Color</label>
+                        <select class="form-control" name="color" data-bind="
+                           options: koColorId, 
+                           optionsText: 'label',
+                           optionsValue:'value'"></select>
+                     </div>
+                     <div class="col-sm-6 form-group">
+                        <label>Size</label>
+                        <select class="form-control" name="size" data-bind="
+                           options: koSizeId, 
+                           optionsText: 'label',
+                           optionsValue:'value'"></select>
+                     </div>
+                  </div>
+                  <div class="btn search" data-bind="click:function(){$data.getPetData('dog')},disabled: !$data.dogvalidationModel.isValid()">Search</div>
+                  <div role="alert" class="text-danger" id="CC-login-error" data-bind="validationMessage: ZipDog" style></div>
+               </form>
+            </div>
+            <div class="tab-pane in cat fade">
+                <form class="cat">
+                  <div class="form-group full-width-input">
+                     <label>Location</label>
+                     <input placeholder="ZIP Code" type="number" class="form-control" data-bind="validatableValue: ZipCat,valueUpdate: 'afterkeydown'" name="zip">
+                  </div>
+                  <div>
+                     <div class="col-sm-6 form-group">
+                        <label>Distance</label>
+                        <select class="form-control" name="distance">
+                           <option value="35">Less than 35 miles (55 km)</option>
+                           <option value="50">Less than 50 miles (80 km)</option>
+                           <option value="75">Less than 75 miles (120 km)</option>
+                           <option value="100">Less than 100 miles (160 km)</option>
+                           <option value="250">Less than 250 miles (400 km)</option>
+                        </select>
+                     </div>
+                     <div class="col-sm-6 form-group">
+                        <label>Breed</label>
+                        <select class="form-control" name="breed" data-bind="
+                           options: koBreedId, 
+                           optionsText: 'label',
+                           optionsValue:'value'"></select>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="col-sm-6 form-group">
+                        <label>Sex</label>
+                        <select class="form-control" name="sex"  data-bind="
+                           options: koSexId, 
+                           optionsText: 'label',
+                           optionsValue:'value'"></select>
+                     </div>
+                     <div class="col-sm-6 form-group">
+                        <label>Age</label>
+                        <select class="form-control" name="age" data-bind="
+                           options: koAgeId, 
+                           optionsText: 'label',
+                           optionsValue:'value'"></select>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="col-sm-6 form-group">
+                        <label>Color</label>
+                        <select class="form-control" name="color" data-bind="
+                           options: koColorId, 
+                           optionsText: 'label',
+                           optionsValue:'value'"></select>
+                     </div>
+                     <div class="col-sm-6 form-group">
+                        <label>Hair</label>
+                        <select class="form-control" name="size" data-bind="
+                           options: koHairId, 
+                           optionsText: 'label',
+                           optionsValue:'value'"></select>
+                     </div>
+                  </div>
+                  <div class="btn search" data-bind="click:function(){$data.getPetData('cat')},disabled: !$data.catvalidationModel.isValid()">Search</div>
+                  <div role="alert" class="text-danger" id="CC-login-error" data-bind="validationMessage: ZipCat" style></div>
+               </form>
+            </div>
+            <div class="tab-pane in animal fade">
+                <form class="animal">
+                  <div class="form-group full-width-input">
+                     <label>Species</label>
+                     <select class="form-control" name="species" id="species">
+                     <!--<option selected disabled>Select Pet Type</option>-->
+                     <option value="bird">Birds</option>
+                     <option value="rabbit">Rabbits</option>
+                     <option value="small_animal">Small Animals</option>
+                     <option value="horse">Horses</option>
+                     <option value="reptile">Reptiles, Amphibians, &amp; Fish</option>
+                     <option value="farm_animal">Farm Animals</option>
+                  </select>
+                  </div>
+				  
+				  <div class="form-group full-width-input">
+                    
+                  </div>
+                  
+                   <div>
+                     <div class="col-sm-6 form-group">
+                         <label>Location</label>
+                     <input placeholder="ZIP Code" type="number" class="form-control" data-bind="validatableValue: ZipAnimal,valueUpdate: 'afterkeydown'" name="zip">
+                     </div>
+                     <div class="col-sm-6 form-group">
+                        <label>Distance</label>
+                        <select class="form-control" name="distance">
+                           <option value="35">Less than 35 miles (55 km)</option>
+                           <option value="50">Less than 50 miles (80 km)</option>
+                           <option value="75">Less than 75 miles (120 km)</option>
+                           <option value="100">Less than 100 miles (160 km)</option>
+                           <option value="250">Less than 250 miles (400 km)</option>
+                        </select>
+                     </div>
+                  </div>
+				  
+                  <div class="one">
+                     <div class="col-sm-6 form-group">
+                        <label>Breed</label>
+                        <select class="form-control" name="breed" data-bind="
+                           options: koBreedId, 
+                           optionsText: 'label',
+                           optionsValue:'value'"></select>
+                     </div>
+                     <div class="col-sm-6 form-group">
+                          <label>Size</label>
+                        <select class="form-control" name="size" data-bind="
+                           options: koSizeId, 
+                           optionsText: 'label',
+                           optionsValue:'value'"></select>
+                     </div>
+                  </div>
+                  <div class="two">
+                     <div class="col-sm-6 form-group">
+                        <label>Sex</label>
+                        <select class="form-control" name="sex"  data-bind="
+                           options: koSexId, 
+                           optionsText: 'label',
+                           optionsValue:'value'"></select>
+                     </div>
+                     <div class="col-sm-6 form-group">
+                         <label>Age</label>
+                        <select class="form-control" name="age" data-bind="
+                           options: koAgeId, 
+                           optionsText: 'label',
+                           optionsValue:'value'"></select>
+                     </div>
+                  </div>
+                  <div class="three">
+                     <div class="col-sm-6 form-group">
+                        <label>Color</label>
+                        <select class="form-control" name="color" data-bind="
+                           options: koColorId, 
+                           optionsText: 'label',
+                           optionsValue:'value'"></select>
+                     </div>
+                     <div class="col-sm-6 form-group">
+                        <label>Hair</label>
+                        <select class="form-control" name="size" data-bind="
+                           options: koHairId, 
+                           optionsText: 'label',
+                           optionsValue:'value'"></select>
+                     </div>
+                  </div>
+                  <div class="btn search" data-bind="click:function(){$data.getPetData('animal')},disabled: !$data.animalvalidationModel.isValid()">Search</div>
+                                          <div role="alert" class="text-danger" id="CC-login-error" data-bind="validationMessage: ZipAnimal" style></div>
+               </form>
+            </div>
+         </div>
+         
+      </div>
+      <div class="row items col-md-12" data-bind="visible:koPetProductDataArray">
+            <!-- ko foreach: koPetProductDataArray -->
+                        <div class="col-sm-3">
+            <div class="product-item-wrapper" data-toggle="modal" data-bind="click:function(){$parent.showPetData($data)}">
+
+            <div class="eachItems"  >
+                <div class="cc-item-detail">
+                        <img data-bind="attr: {src: large_results_photo_url}">
+                </div>
+               <div class="detailsContent">
+                    <p data-bind="text:pet_name"></p>
+                    <div class="line">
+                         <!-- ko if: sex == 'm' -->
+                                <span>Male, </span>
+                        <!-- /ko -->
+                         <!-- ko if: sex == 'f' -->
+                                <span>Female, </span>
+                        <!-- /ko -->
+                        <span data-bind="text:age"></span>
+                    </div>
+                   <div class="line">
+                        <span data-bind="text:addr_city + ','"></span>
+                        <span style="margin-left:5px;" data-bind="text:addr_state_code"></span>
+                   </div>
+               </div>
+            </div>
+            </div>
+            </div>
+            <!-- /ko -->
+            <h6 class="errorMsg" data-bind="text:koErrorMsg">Error
+            </h6>
+         </div>
+   </div>
+   <!-- ko with : koShowPetData -->
+<!-- Modal -->
+<div class="modal fade" id="petPDP" tabindex="-1" role="dialog" aria-labelledby="petPDPLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+             <span>My Name is <span data-bind="text:pet_name"></span>!</span>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="close-btn" aria-hidden="true">&times;</span>
+            </button>
+         </div>
+         <div class="modal-body">
+             <div class="modal-pet-info">
+                 <div class="row">
+                     <div style="margin-top: 10px;" class="col-md-6 col-xs-12">
+                         <div class="main-image">
+                             <img data-bind="attr: {src: $parent.koMainimg}" class="img-responsive">
+                         </div>
+                           
+                      <!-- ko foreach : images -->
+                      <div class="thumb-image hide">
+                              <img data-bind="attr: {src: original_url},click:function(){$parents[1].showMainImg($data.original_url)}" class="img-responsive">
+                         </div>
+                         <!-- /ko -->
+                      
+                     </div>
+                     <div class="col-md-6 col-xs-12">
+                         <h5>About Me!!</h5>
+                           <table>
+                               <colgroup>
+                            <col style="width: 7em;" />
+                            <col style="width: 30em;" />
+                        </colgroup>
+                               <tbody>
+                                   <!-- ko if: primary_breed -->
+                                    <tr>
+                                       <td colspan="1"><p style="font-weight: 450;">Breed:</p></td>
+                                       <td colspan="2"><p data-bind="text:primary_breed"></p></td>
+                                   </tr>
+                                    <!-- /ko -->
+                                   <!-- ko if: color -->
+                                   <tr>
+                                       <td><p style="font-weight: 450;">Color:</p> </td>
+                                       <td><p data-bind="text:color"></p></td>
+                                   </tr>
+                                   <!-- /ko -->
+                                   <!-- ko if: age -->
+                                   <tr>
+                                       <td><p style="font-weight: 450;">Age:</p> </td>
+                                       <td><p data-bind="text:age"></p></td>
+                                   </tr>
+                                   <!-- /ko -->
+                                   <!-- ko if: size -->
+                                   <tr>
+                                       <td><p style="font-weight: 450;">Size:</p> </td>
+                                       <td><p data-bind="text:size"></p></td>
+                                   </tr>
+                                   <!-- /ko -->
+                                   <!-- ko if: sex -->
+                                   <tr>
+                                       <td><p style="font-weight: 450;">Sex:</p> </td>
+                                       <td><p data-bind="text:sex"></p></td>
+                                   </tr>
+                                   <!-- /ko -->
+                                   <!-- ko if: addr_city -->
+                                   <tr>
+                                       <td><p style="font-weight: 450;">Location:</p> </td>
+                                       <td style="display:flex;"><p data-bind="text:addr_city+','"></p>&nbsp;<p data-bind="text:addr_state_code"></p></td>
+                                   </tr>
+                                   <!-- /ko -->
+                                  
+                               </tbody>
+                           </table>
+                          <span class="adoptInfo"> For Adoption Information Visit: <a target="_blank" data-bind="attr: {href: pet_details_url}">Adopt-a-Pet.com</a></span>
+                          <div class="adoptpower">
+                                <span style="margin-left: auto;order: 2;">Powered by : </span>
+                                 <span style="order: 2;"><img  src="/file/general/adoptapet_logo_resized.png" class="img-responsive" ></span>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+
+         </div>
+      </div>
+   </div>
+</div>
+<!-- /ko -->
+</div>

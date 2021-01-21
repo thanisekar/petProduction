@@ -1,0 +1,8 @@
+{
+  "resources": {
+    "messageLimitHelpText": "Message Limit HelpText",
+    "messageLimitLabel": "Message Limit Label",
+    "tagsLabel": "List of tags for which this widget would be used to display promotions.",
+    "tagsHelpText": "Add the list of tags for which this widget should be used to display promotions."
+  }
+}

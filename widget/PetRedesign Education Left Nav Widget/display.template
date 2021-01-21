@@ -1,0 +1,26 @@
+<div id="main-container">
+    <!--<pre data-bind="text: ko.toJSON(category(), null, 2)"></pre>-->
+    <div id="categoryCLPLeftNav" >
+        <!-- ko foreach: koGetCollectionList -->
+        <div class="row" id='categoryPage' >
+                <!--<pre data-bind="text: ko.toJSON(childCategories, null, 2)"></pre>-->
+               <!--<div class="categoryTitle">Category</div>-->
+            <div class='col-md-12 col-sm-12 col-xs-12' id="grid-category-content">
+                <div class='col-sm-12 col-md-12 col-xs-12'>
+                       <a data-bind="ccLink: $data,attr: {href: route}">
+                           <div class='childCategoryName' data-bind="text:displayName"></div></a>
+                </div>
+            
+             <!-- ko foreach: $data.childCategories --> 
+            <div class='col-md-12 col-sm-12 col-xs-12' id="grid-category-content-level2">
+                <div class='col-sm-12 col-md-12 col-xs-12'>
+                    <a data-bind="ccLink: $data,attr: {href: route}">
+                           <div class='childCategoryNameLevel2' data-bind="text:displayName"></div></a>
+                </div>
+            </div>
+         <!-- /ko -->
+         </div>
+        </div>
+        <!-- /ko -->
+    </div>
+</div>

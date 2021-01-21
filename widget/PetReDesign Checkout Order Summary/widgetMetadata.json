@@ -1,0 +1,21 @@
+{
+  "imports": [
+    "order",
+    "payment",
+    "shippingmethods",
+    "paymentauthorization"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Checkout Order Summary",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "pageTypes": [
+    "checkout"
+  ],
+  "config": {}
+}

@@ -1,0 +1,28 @@
+{
+  "resources": {
+    "ArticleFirstImagehelp": "Choose the First Article Image.",
+    "ArticleFirstImageUrlTextLabel": "Article1 Url ",
+    "ArticleSecondImageUrlhelp": "Enter the URL for the Second Article.",
+    "ArticleFourthImageTextLabel": "Article4 Image",
+    "ArticleSecondImageTextLabel": "Article2 Image",
+    "ArticleFirstImageUrlhelp": "Enter the URL for the First Article",
+    "ArticleSecondImageDescTextLabel": "Article2 Name",
+    "ArticleThirdImageDescTextLabel": "Article3 Name ",
+    "ArticleFourthImagehelp": "Choose the fourth Article Image.",
+    "ArticleFourthImageDescTextLabel": "Article4 Name ",
+    "ArticleThirdImageDeschelp": "Enter the name for third Article.",
+    "ArticleSecondImagehelp": "Choose the second Article Image.",
+    "ArticleThirdImagehelp": "Choose the third Article Image.",
+    "ArticleFirstImageDeschelp": "Enter the name for the First Article",
+    "ArticleFourthImageUrlhelp": "Enter the URL for the fourth Article.",
+    "ArticleThirdImageTextLabel": "Article3 Image",
+    "ArticleSecondImageUrlTextLabel": "Article2 Url ",
+    "ArticleFirstImageTextLabel": "Article1 Image",
+    "ArticleFirstImageDescTextLabel": "Article1 Name ",
+    "ArticleSecondImageDeschelp": "Enter the name for Second Article.",
+    "ArticleThirdImageUrlTextLabel": "Article3 Url ",
+    "ArticleThirdImageUrlhelp": "Enter the URL for the Third Article.",
+    "ArticleFourthImageDeschelp": "Enter the name for the fourth Article.",
+    "ArticleFourthImageUrlTextLabel": "Article4 Url "
+  }
+}

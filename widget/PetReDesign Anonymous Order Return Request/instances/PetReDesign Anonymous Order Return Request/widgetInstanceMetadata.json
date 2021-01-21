@@ -1,0 +1,11 @@
+{
+  "configuration": {
+    "password": "petmate",
+    "loginURL": "https://services.petmate.com/b2c/api/v1/appusers/login",
+    "returnReason": "Defective,Did Not Like,Did Not Meet Expectations,Incorrect Color,Incorrect Item,Incorrect Size",
+    "userName": "petmate",
+    "LoginURL": "https://b2c-uat.petmate.com/b2c/api/v1/appusers/login",
+    "returnPostURL": "https://services.petmate.com/b2c/api/v1/returnRequests/createreturnrequest"
+  },
+  "displayName": "PetReDesign Anonymous Order Return Request"
+}

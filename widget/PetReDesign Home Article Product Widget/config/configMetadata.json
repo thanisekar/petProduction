@@ -1,0 +1,25 @@
+{
+  "titleResourceId": "title",
+  "properties": [
+    {
+      "defaultValue": false,
+      "name": "enabled",
+      "id": "enabled",
+      "helpTextResourceId": "enabledHelpText",
+      "labelResourceId": "enabledLabel",
+      "type": "booleanType"
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "productId",
+      "id": "productId",
+      "helpTextResourceId": "productIdHelpText",
+      "labelResourceId": "productIdLabel",
+      "type": "stringType",
+      "maxLength": 1000,
+      "required": true
+    }
+  ],
+  "descriptionResourceId": "description"
+}

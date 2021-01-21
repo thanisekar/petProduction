@@ -1,0 +1,16 @@
+{
+  "imports": [
+    "product"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign PDP Related Articles Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {}
+}

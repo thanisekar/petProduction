@@ -1,0 +1,14 @@
+{
+  "titleResourceId": "title",
+  "properties": [
+    {
+      "defaultValue": "",
+      "name": "image-ID",
+      "id": "imageID",
+      "helpTextResourceId": "imageIDHelpText",
+      "labelResourceId": "imageIDLabel",
+      "type": "stringType"
+    }
+  ],
+  "descriptionResourceId": "description"
+}

@@ -1,0 +1,161 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+    
+    .cc-product-item{
+        margin-bottom:30px;
+            padding-top: 20px;
+        &:hover{
+                box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+        }
+        .product-item-wrapper{
+            .cc-item-detail{
+                a{
+                    img{
+                        min-height: 305px;
+                        z-index: 40;
+                         position: relative;
+                    }
+                }
+            }
+            .cc-item-title{
+                text-align: left;
+                margin: 20px;
+                .title{
+                    a{
+                        p{
+                            font-family: 'nunito',sans-serif;
+                            font-weight: 700!important;
+                            word-spacing: normal!important;
+                            letter-spacing: -.02em!important;
+                            line-height: 1.3em!important;
+                            text-transform: none!important;
+                            font-size: 20px!important;
+                            text-align: center!important;
+                        }
+                    }
+                    span{
+                            transition: border-bottom .3s ease-in;
+                    }
+                }
+                
+            }
+        }
+        @media (min-width:769px){
+                    height: 500px;
+        }
+    }
+    
+     //Pagination
+  
+  #cc-paginated-controls-bottom{margin:0px auto;text-align:center;margin-top:20px;}
+   .paginations{
+    padding:50px 0px;
+    text-align:center;
+        
+             .active{
+                    background-color: transparent!important;
+                    box-shadow: none !important;
+                    color:#000 !important;
+                    font-family:@font-family-roboto;
+                    font-size: 16px!important;
+                    line-height: 12.98px !important;
+                    letter-spacing: 0.864px !important;
+                    
+             }
+           
+        .btn-default{
+             font-family:@font-family-nunito; 
+        }
+         .pageNumbers{
+            font-size: 16px!important;
+            line-height: 12.98px !important;
+            letter-spacing: 0.864px !important;
+            color: #c2bfbc;
+            font-family:@font-family-roboto;
+            padding-top: 9px !important;
+            &:hover {
+                text-decoration: bold;
+         }
+       }
+       
+       
+        .goToPreviousPagePaginationSymbol{
+            background-image: url('/file/general/paginationarrow_left.svg');
+            top: 0px;
+            width: 28px;
+            height: 28px;
+            right: 0px;
+            position: absolute;
+            background-color: transparent;
+            border: none;
+            &:hover{
+                 background-image: url('/file/general/paginationarrow_left_hover.svg');
+                top: 0px;
+                width: 28px;
+                height: 28px;
+                right: 0px;
+                position: absolute;
+                background-color: transparent;
+                border: none;
+            }
+        }
+        .btn-group{
+            font-family:@font-family-nunito; 
+            :hover {text-decoration:underline;}
+        }
+       .btn-default.active{
+           background-color: transparent !important;
+          border-color: transparent !important;
+          
+       }
+       .btn-default:hover{
+           background-color: transparent !important;
+          border-color: transparent !important;
+       }
+    .previouspage{
+            display: block;
+            width: 32px;
+            height: 32px;
+            background-color: transparent;
+            border-radius: 4px !important;
+            cursor: pointer;
+            box-shadow: none !important;
+            margin-right: 10px;
+    }
+    .btn:active{
+         box-shadow: none !important;
+    }
+    
+    
+    .nextPage{
+            display: block;
+             width: 32px;
+            height: 32px;
+            background-color: transparent;
+            border-radius: 4px !important;
+            box-shadow: none !important;
+            margin-left: 10px !important;
+            
+    }
+    .goToNextPagePaginationSymbol{
+        background-image: url('/file/general/paginationarrow_right.svg');
+        top: 0px;
+        width: 28px;
+        height: 28px;
+        right: 0px;
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        &:hover{
+                background-image: url('/file/general/paginationarrow_right_hover.svg');
+                top: 0px;
+                width: 28px;
+                height: 28px;
+                right: 0px;
+                position: absolute;
+                background-color: transparent;
+                border: none;
+        }
+    }
+}
+
+}

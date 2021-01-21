@@ -1,0 +1,92 @@
+
+<div class="container" id="brandCollectionData">
+   <!-- ko if: koBrandCollectionData().length > 0 -->
+   <div class="templateRegion" id="cc-recs" data-oc-id="cc-recs">
+      <!-- oc layout: panels -->
+      <div class="row">
+         <div class="oc-panel col-md-12" data-oc-id="panel-0-0">
+            <div class="col-xs-12 head-section">
+               <div class="col-sm-11 col-xs-12 nopad">
+                  <h2>Adopt-a-Pet Adoption Stories</h2>
+               </div>
+               <div class="col-sm-1 col-xs-12 shopAllLinkWrapper">
+                   
+                  
+                  <div id="brand-carousel-controls" class="col-sm-4 nopad">
+                  <!-- Carousel Controls -->
+                  <!-- ko if: recommendationsGroups() && (recommendationsGroups().length > 1) -->
+                  <div class="controls row pull-right ">
+                     <div id="brand-carousel-left-control" class="col-sm-6">
+                        <a class="brand-corousel-left" data-slide="prev" data-bind="widgetLocaleText:{value:'previousImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
+                           <!--<i class="fa-2x fa fa-caret-left "></i>-->
+                        </a>
+                     </div>
+                     <div id="brand-carousel-right-control" class="col-sm-6">
+                        <a class="brand-corousel-right" data-slide="next" data-bind="widgetLocaleText:{value:'nextImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
+                           <!--<i class="fa-2x fa fa-caret-right "></i>-->
+                        </a>
+                     </div>
+                  </div>
+                  <!-- /ko -->
+               </div>
+               </div>
+            </div>
+            
+            <!-- oc section: recommendations-carousel -->
+            <!--        <div data-bind="element: 'recommendations-carousel', visible: recommendations().length > 0"></div>-->
+            <!--ko if: recommendationsGroups() && (recommendationsGroups().length > 0) -->
+            
+            <div data-bind="carouselSwipe, attr:{id: 'carousel-id-'+id()}" class="brandCollectionCarousel carousel slide inner-corousel" data-interval="false">
+               <div class="carousel-inner brand-carousel">
+                  <!-- ko foreach: recommendationsGroups -->
+                  <div class="item row" data-bind="css: {'active': $index()==0},foreach: $data">
+                     <div data-bind="css: $parents[1].spanClass()" class="cc-product-item">
+                        <div class="cc-item-detail" data-bind="">
+                         
+                           
+                           
+                           <div class="img__wrap">
+                               <img data-bind="ccResizeImage: {
+                              source: '/file/general/'+image(),
+                              xsmall: '350,275',
+                              small: '350,275',
+                              medium: '350,275',
+                              large: '350,275',
+                              alt: altText,
+                              title:altText}"  class="img-responsive" />
+                              <div class="img__description">
+                                  <!--<span data-bind="text: $data.PetParent()+' & '"></span> <span data-bind="text: $data.CoWorker"></span><br>-->
+                                   <p data-bind="text: $data.content"></p>
+                              </div>
+                                             
+                                               
+                             
+                            </div>
+
+                           
+                           
+                           
+                        </div>
+                                                 
+                     </div>
+                     
+
+                  </div>
+                   
+                  <!-- /ko -->
+                    <div class="visible-xs" style="    margin: 15px 0;
+    font-family: 'Nunito',sans-serif;
+    text-align: center;">Tap on Image to Learn More</div>
+               </div>
+              
+            </div>
+            <!--/ko-->
+            <!-- /oc -->
+         </div>
+      </div>
+      <!-- /oc -->
+   </div>
+   <!-- /ko -->
+
+
+</div>

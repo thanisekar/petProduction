@@ -1,0 +1,19 @@
+{
+  "elementInstances": [
+    {
+      "customTitle": "Rich_Text_3600001",
+      "styles": {},
+      "tag": "rich-text@3600001",
+      "text": null,
+      "richTextConfig": {
+        "content": "<h4><strong>Petmate Husky Dog House</strong></h4>\n\n<p><img alt=\"\" src=\"https://www.petmate.com/ccstore/v1/images/?source=/file/v1655996809598885772/general/PM_Husky_DogHouse_50to90l.jpg&amp;height=475&amp;width=475\" style=\"width: 250px; height: 250px;\" />&nbsp;</p>\n\n<p>YouTube Link:&nbsp;<a href=\"https://youtu.be/1z4c3K3FgAs\" target=\"_blank\">https://youtu.be/1z4c3K3FgAs</a></p>\n\n<p>Instructions:&nbsp;<a href=\"https://petmatenews.azurewebsites.net/wp-content/uploads/2020/06/470702_271625_PM_Husky-Dog-House_Inst-Sheet_LR.pdf\" target=\"_blank\">Petmate Husky Dog House Assembly Instructions</a></p>\n\n<p>&nbsp;</p>\n\n<h4><strong>Precision Pet Country Lodge</strong></h4>\n\n<p><img alt=\"\" src=\"https://www.petmate.com/ccstore/v1/images/?source=/file/v1655996809598885772/general/PR_Outback_Country_LodgeDogHouse.jpg&amp;height=475&amp;width=475\" style=\"width: 250px; height: 250px;\" />&nbsp;</p>\n\n<p>Instructions:&nbsp;<a href=\"https://petmatenews.azurewebsites.net/wp-content/uploads/2020/07/PrecisionPet_Country-Lodge-Instruction-1.pdf\" target=\"_blank\">Precision Pet Country Lodge Assembly Instructions</a></p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<h4><strong>Precision Pet Extreme Log Cabin</strong></h4>\n\n<p><img alt=\"\" src=\"https://www.petmate.com/ccstore/v1/images/?source=/file/v1655996809598885772/general/PR_Extreme_Log_Cabin_DogHouse.jpg&amp;height=475&amp;width=475\" style=\"width: 250px; height: 250px;\" />&nbsp;</p>\n\n<p>Instructions:&nbsp;<a href=\"https://petmatenews.azurewebsites.net/wp-content/uploads/2020/07/Precision_Extreme_Outback_-Log_Cabin_Instructions.pdf\" target=\"_blank\">Precision Pet Extreme Log Cabin Assembly Instructions</a></p>\n\n<p>&nbsp;</p>\n\n<h4><strong>Precision Pet Outback Log Cabin</strong></h4>\n\n<p><img alt=\"\" src=\"https://www.petmate.com/ccstore/v1/images/?source=/file/v1655996809598885772/general/PR_Outback_Log_Cabin_DogHouse.jpg&amp;height=475&amp;width=475\" style=\"width: 250px; height: 250px;\" />&nbsp;</p>\n\n<p>Instructions:&nbsp;<a href=\"https://petmatenews.azurewebsites.net/wp-content/uploads/2020/07/Precision_Outback-Log-Cabin-instructions.pdf\" target=\"_blank\">Precision Pet Outback Log Cabin Assembly Instructions</a></p>\n\n<p>&nbsp;</p>\n\n<h4><strong>Precision Pet Reversible Panel Dog House Assembly Instructions</strong></h4>\n\n<p><img alt=\"\" src=\"https://www.petmate.com/ccstore/v1/images/?source=/file/v1655996809598885772/general/PR_ReversiblePanel_DogHouse.jpg&amp;height=475&amp;width=475\" style=\"width: 250px; height: 250px;\" />&nbsp;</p>\n\n<p>Instructions:&nbsp;<a href=\"https://petmatenews.azurewebsites.net/wp-content/uploads/2020/07/PrecisionPet_ReversiblePanelDogHouse_Instructions.pdf\" target=\"_blank\">Precision Reversible Panel Dog House Assembly Instructions</a></p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    }
+  ]
+}

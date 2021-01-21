@@ -1,0 +1,8 @@
+{
+  "configuration": {
+    "catalogId": "cloudCatalog",
+    "fields": "",
+    "rootCategoryId": "rootCategory"
+  },
+  "displayName": "Breadcrumb Widget"
+}

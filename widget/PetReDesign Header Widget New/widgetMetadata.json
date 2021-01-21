@@ -1,0 +1,29 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "PetReDesign Header Widget New",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": false,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "displayMiniCart": true,
+    "logoAltText": "Logo Alternative Text",
+    "logoImage": "/img/logo.png",
+    "logoPageLink": "home",
+    "miniCartDuration": "5",
+    "miniCartNumberOfItems": "3",
+    "requiredLinks": [
+      "home",
+      "aboutUs",
+      "returns",
+      "shipping",
+      "contactUs",
+      "privacy"
+    ]
+  }
+}

@@ -1,0 +1,210 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+/* -------------------------------------------------- */
+/*  Checkout Payment Details
+/* -------------------------------------------------- */
+}
+
+/* -------------------------------------------------- */
+/*  Checkout Payment Details
+/* -------------------------------------------------- */
+#checkoutPaymentDetails {
+    padding:0px 15px;
+  fieldset {
+    margin-bottom: 36px;
+  }
+
+  legend { 
+    color: inherit; 
+    margin-bottom: 10px
+  }
+    
+    .shadowContent {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .miniController {
+        padding: 8px 0 7px 0;
+    }
+    .headline {
+        margin: 0 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #eee;
+    }
+    .arrowicon {
+        float: left;
+        margin: 0px 5px 5px 0;
+    }
+    .bartitle {
+        padding: 1px 0 5px 5px;
+    }
+    .miniContainer {
+        margin-bottom: 10px;
+    }
+    .payNow {
+        text-align: right;
+        float: left;
+        padding-top: 5px;
+        padding-left: 40px;
+    }
+    #CC-checkoutOrderSummary-paypal{
+        display:inline-block;
+    }
+    .PaypalHelpText{
+        vertical-align: middle;
+        display: inline-block;
+        margin-top: -19px;
+        margin-left: 10px;
+        font-size: 12px;
+        a{
+            &:hover{
+                cursor: help;
+            }
+        }
+    }
+    
+  .paypalText {
+    font-size: 11px; 
+    font-family: Arial, Verdana;
+  }
+    .hide {
+        display: none !important;
+    }
+  .text-error {
+    margin-bottom: 2px;
+  }
+  label.error{
+      color: #f15d22;
+    font-weight: 600;
+    line-height: 20px;
+    padding-top: 5px;
+    text-transform: none;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .paymentimages {
+    padding-top: 4px; 
+    cursor:pointer; 
+    outline: none;
+
+    img {
+      opacity: 0.4;
+      margin-top: 4px;
+      margin-bottom: 4px; 
+    }
+
+    img:hover {
+      opacity: 1; 
+      -webkit-box-shadow: 0 0 6px #bbb;
+         -moz-box-shadow: 0 0 6px #bbb;
+              box-shadow: 0 0 6px #bbb;
+    }
+
+    &.selectedCard { 
+      img {
+        opacity: 1;
+      }
+    }
+  }
+  #CC-checkoutPaymentDetails-cardCVV-whatsthis{
+      margin-left:10px;
+  }
+  /* small text needs to be darker for a11y */
+  small { 
+    color:  #005580;
+
+    &.cvvPopover { 
+      cursor: help;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+    }
+  }
+
+  button.close {
+    font-size: @fontSizeLarge; 
+    color:  #005580; 
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+
+    &:hover {
+      opacity: 1.0;
+      filter: alpha(opacity=100);
+    }
+
+  }
+
+  #CC-checkoutPaymentDetails-cardCVV-whatsthis {
+    color: @LinkColor;
+    &:hover {
+      color: @LinkHoverColor;
+    }
+
+    &.visible-phone { 
+      text-align: right; 
+    }
+  }
+
+  .popover {
+    width: 100%;
+  }
+  #CC-checkoutPaymentDetails-header {
+    font-weight: bold;
+	margin-bottom: 10px
+  }
+}
+.cardType{
+    padding:0px;
+}
+.endMonth, .cardNumber{
+    padding:0px;
+}
+.endYear{
+    padding-right:0px;
+}
+@media only screen and (max-width: 768px){
+    .password{
+        padding:0px;
+    }
+    .endYear, .cvv{
+        padding-right:0px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .cardTypeGrid{
+        margin-bottom:15px;
+    }
+}
+//}
+@media only screen and (max-width: 480px){
+    .cardTypeGrid{
+        margin-bottom:15px;
+    }
+    .popover{
+        top: 52px !important;
+        left: -114px !important;
+        display: block !important;
+        width: 262px !important;
+            .arrow {
+            top: -5% !important;
+            left: 105px !important;
+            margin-top: -11px !important;
+            border-bottom-color: #999;
+            border-right-color: transparent !important;
+            border-bottom-color: rgba(0,0,0,.25) !important;
+            border-left-width: 10px !important;
+            &:after {
+            right: -4px !important;
+            left: -10px !important;
+            top: -9px !important;
+            content: " " !important;
+            border-right-color: transparent !important;
+            border-bottom-color: #fff !important;
+            border-left-width: 10px !important;
+        }
+        }
+    }
+      
+}

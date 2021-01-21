@@ -1,0 +1,43 @@
+<!-- ko if: cart().items().length > 0 -->
+<div id="shipping-options" class="clearfix">
+  <!-- ko if: displayShippingOptions() -->
+    <div id="CC-cartShippingDetails-shippingMethods" class="col-sm-12">
+      <div class="row">
+        <span id="CC-cartShippingDetails-options-legend" data-bind="widgetLocaleText: 'shippingOptionsText'"></span>
+      </div>
+      <form>
+        <fieldset>
+          <!-- ko foreach: shippingOptions -->
+            <label class="radio shipping-option" data-bind="attr:{ for: 'CC-cartShippingDetails-shippingOption-'+repositoryId }">
+              <div class="row">
+                <input type="radio" name="optionRadio" data-bind="
+                    event: {
+                      keydown: $parent.shippingOptionsKeyDownPressHandler.bind($data, '#CC-cartShippingDetails-shippingOption-'),
+                      keyup: $parent.shippingOptionsKeyUpPressHandler}, 
+                    attr:{id: 'CC-cartShippingDetails-shippingOption-'+repositoryId},
+                    value: repositoryId,
+                    checked: $parent.selectedShippingValue">
+                  <span 
+                      data-bind="attr:{id: 'CC-cartShippingDetails-shippingMethodName-'+repositoryId},text: displayName"></span>: <span
+                      data-bind="attr:{id: 'CC-cartShippingDetails-shippingOptionPrice-'+repositoryId},currency: {price: estimatedCostText(), currencyObj: $parent.site().selectedPriceListGroup().currency}"></span>
+                </input>
+              </div>
+            </label>
+          <!-- /ko -->
+        </fieldset>
+      </form>
+    </div>
+  <!-- /ko -->
+  <!-- ko ifnot: displayShippingOptions() -->
+    <div id="CC-cartShippingDetails-feedback" class="col-sm-12">
+      <div class="row" role="alert" aria-live="rude">
+        <p class="text-danger" data-bind="widgetLocaleText: invalidShippingAddress() 
+          ? 'invalidShippingAddress' : noShippingMethods() 
+          ? 'noShippingMethodsText' : invalidShippingMethod()
+          ? 'invalidShippingMethod' : pricingError() 
+          ? 'pricingError' : 'shippingAddressRequired'"/>
+      </div>
+    </div>
+  <!-- /ko -->
+</div>
+<!-- /ko -->

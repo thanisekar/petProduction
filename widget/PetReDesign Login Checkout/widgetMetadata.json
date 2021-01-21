@@ -1,0 +1,18 @@
+{
+  "imports": [
+    "order"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Login Checkout",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "pageTypes": [
+    "checkout"
+  ],
+  "config": {}
+}

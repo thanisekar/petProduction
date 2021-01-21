@@ -1,0 +1,18 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "PetReDesign Cart Summary",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "pageTypes": [
+    "checkout"
+  ],
+  "config": {
+    "noOfItemsToDisplay": "5"
+  }
+}

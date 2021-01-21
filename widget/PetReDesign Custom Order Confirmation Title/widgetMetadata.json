@@ -1,0 +1,19 @@
+{
+  "imports": [
+    "category",
+    "product",
+    "confirmation",
+    "shippingCountries"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Custom Order Confirmation Title",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {}
+}

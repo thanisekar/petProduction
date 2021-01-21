@@ -1,0 +1,32 @@
+{
+  "imports": [
+    "category",
+    "categoryId",
+    "dimensionId",
+    "productTypes"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Search Result Widget",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": false,
+  "pageTypes": [
+    "category",
+    "searchResults"
+  ],
+  "config": {
+    "blockSize": "60",
+    "fields": "",
+    "gridWidth": "4",
+    "isScrollEnabled": false,
+    "isViewModelCacheEnabled": false,
+    "listType": "search",
+    "productsPerPage": "12",
+    "shouldUseStyleBased": false,
+    "viewModelCacheLimit": "3"
+  }
+}

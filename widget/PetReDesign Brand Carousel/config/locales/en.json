@@ -1,0 +1,8 @@
+{
+  "resources": {
+    "enabledHelpText": "Enable the Widget",
+    "enabledLabel": "Widget Enable",
+    "collectionIdLabel": "Collection Id",
+    "collectionIdHelpText": "Enter Collection Id"
+  }
+}

@@ -1,0 +1,284 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+//padding-left:15px;
+    @media (max-width:767px){
+        padding:0;
+    }
+    .couponText{
+        //font-weight:bold;
+        font-size:13px;   
+        color:#000;
+        font-family: @font-family-roboto;
+        font-weight: normal;
+    }
+    
+    #appliedCoupon{
+        font-size:12px;
+    }
+     #CC-orderSummary-coupons {
+         padding-top:15px;
+        .row {
+            .col-xs-12, .col-xs-9, .col-xs-3 {
+                padding: 0;
+            }
+            .col-xs-12 {
+                margin-bottom: 10px;
+            }
+        }
+        margin-bottom: 20px;
+    }
+
+     #couponHeader {
+       font-size: 20px !important;
+       strong {
+           color: #f15d22 !important;
+           font-weight: 600 !important;
+       }
+   }
+#CC-promotionDetails {
+  margin-top: 20px;
+  //margin-bottom: 20px;
+  //padding: 0 15px;
+  .input-inline {
+    display: inline-block;
+  }
+  #CC-promotionDetails-promoCode{
+      box-shadow: none;
+      font-size:14px;
+      :focus{
+          color:black;
+      }
+  }
+  fieldset > .row {
+    padding-left:0;
+  }
+  input:focus{
+      color:#51534a;
+  }
+  input:focus::-webkit-input-placeholder {
+                                    color: #000;
+                                }
+                                input:focus:-moz-placeholder {
+                                    color: #000;
+                                }
+                                input:focus::-moz-placeholder {
+                                    color: #000;
+                                }
+                                input:focus:-ms-input-placeholder {
+                                    color: #000;
+                                }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: #a9a9a9;
+          opacity:1px;
+        }
+        ::-moz-placeholder { /* Firefox 19+ */
+          color: #a9a9a9;
+          opacity:1px;
+        }
+        :-ms-input-placeholder { /* IE 10+ */
+          color: #a9a9a9;
+          opacity:1px;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+          color: #a9a9a9;
+          opacity:1px;
+        }
+  fieldset {
+      .row {
+          //padding: 20px;
+          text-align: center;
+          .form-group {
+              margin-bottom: 10px;
+              .control {
+                  text-align: center;
+                  
+              }
+          }
+          .row {
+              padding-top:0;
+              padding-bottom: 0;
+              .text-center {
+                  .form-group {
+                      padding-right: 0;
+                      .control {
+                          input {
+                                width: 100%;
+                                padding: 12px;
+                                border: 1px solid #f4f3f2;
+                                color: #51534a;
+                                resize: none;
+                                outline: none;
+                                text-transform: none;
+                                line-height: normal;
+                                -webkit-appearance: none;
+                                border-radius: 0;
+                          }
+                      }
+                  }
+                  .col-xs-3 {
+                      padding: 0; 
+                      .cc-button-secondary {
+                            //border: 2px solid #546470;
+                            border: 0px solid #546470;
+                            background-color: #3a454d;
+                            color: #fff;
+                            line-height: 20px;
+                            margin: 0;
+                            white-space: nowrap;
+                            font-family: inherit;
+                            text-align: center;
+                            user-select: none;
+                            border-radius: 0;
+                            font-size: 12px;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            letter-spacing: 0.06em;
+                            padding: 11px 24px;
+                            vertical-align: middle;
+                            border-right: none;
+                            &:hover{
+                                background-color: #546470;
+                            }
+                      }
+                  }
+              }
+          }
+      }
+  }
+}
+@media only screen and (max-width: 480px){
+    #CC-promotion-applyCode{
+        padding:12px 16px !important;
+    }
+    .promoCode{
+        padding:0px !important;
+    }
+    .promo-div{
+        margin:0 auto;
+        float:none;
+        padding:0px !important;
+    }
+}
+@media only screen and (max-width: 360px){
+    #CC-promotion-applyCode{
+        padding-left: 14px !important;
+        padding-right: 55px !important;
+    }
+    .promoCode-Input{
+        padding-left:0px !important;
+    }
+}
+
+
+
+/*Custom Stylings*/
+
+
+#CC-promotionDetails{
+    margin-top:0;
+    background: #f5f4f2;
+    padding-bottom: 25px;
+    position:relative!important;
+    width:auto!important;
+    top:auto!important;
+    .promotionDetails-center{
+            float: none;
+            margin: 0 auto;
+            .promo-control{
+                    text-align: left!important;
+                .promo-label{
+                    color: #706f6e!important;
+                    font-size: 11px!important;
+                    text-transform: uppercase;
+                    text-align: left;
+                    font-family: @font-family-roboto;
+                    font-weight:500;
+                    // float: left!important;
+                 }
+            }
+        
+        .promoCode{
+            .apply-content{ 
+                text-align:right;
+                #CC-promotion-applyCode{
+                    padding: 11px 17px;
+                    border-radius: 6px;
+                    background: #E5E3DF;
+                    color: #706f6e!important;
+                    outline: none;
+                    box-shadow: none;
+                    font-family: @font-family-nunito;
+                    #CC-promotion-applyCodeButton{
+                            font-family: @font-family-nunito!important;
+                            font-size: 12px;
+                            font-weight: bold;
+                        }
+                        &:hover{
+                            background: #F5F4F2;
+                        }
+                }
+            }
+            .promoCode-Input {
+                padding-right:10px!important;
+                 #CC-promotionDetails-promoCode{
+                    border: 1px solid #ccc;
+                    border-radius: 6px;
+                    box-shadow: none;
+                }
+            }
+           
+        }
+    }
+    #promotionDetails-promoCode-error, #CC-promotionDetails-promoCodeApply-error{
+        font-size:12px!important;   
+        color:#eb2b2b!important;
+        font-family: @font-family-roboto;
+        font-weight: normal;
+        text-align:left;
+        margin-bottom:0;
+    }
+   .invalid-promo{
+        font-size:12px!important;   
+        color:#eb2b2b!important;
+        font-family: @font-family-roboto;
+        font-weight: normal;
+        text-align:left;
+        margin-bottom:0;
+    }
+    #CC-orderSummary-coupons{
+        font-family: @font-family-roboto;
+        .applied-coupon{
+                font-size: 13px;
+                font-family: @font-family-roboto;
+            .coupon-display-code{
+                color: @background-color;
+                font-weight:bold;
+            }
+        }
+       .remove{
+           text-align:right;
+            color: #8f8d8d;
+            #appliedCoupon{
+                color: #8f8d8d;
+                margin-right: 2px;
+            }
+            .fa-times{
+                font-size:15px;
+                -webkit-text-stroke: 1px #f5f4f2;
+            }
+       } 
+    }
+}
+
+/*Media Queries*/
+
+@media (max-width:767px){
+    #CC-promotionDetails{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #CC-promotion-applyCode{
+        padding: 10.5px 26px !important;
+    }
+}
+
+}

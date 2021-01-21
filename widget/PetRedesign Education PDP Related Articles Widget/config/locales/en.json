@@ -1,0 +1,17 @@
+{
+  "resources": {
+    "strategyHelpText": "Products will be recommended based on the selected strategy",
+    "restrictionInCollectionLabel": "In Collection",
+    "strategyBrowsedTogetherLabel": "Browsed Together",
+    "numRecsHelpText": "Number of products to retrieve",
+    "strategyPurchasedTogetherLabel": "Purchased Together",
+    "numRecsLabel": "Number of Products",
+    "restrictionLabel": "Restriction",
+    "restrictionInBrandLabel": "In Brand",
+    "restrictionUnrestrictedLabel": "Unrestricted",
+    "strategyBlendedLabel": "Blended",
+    "strategyLabel": "Strategy",
+    "restrictionHelpText": "Only products that match the restriction will be recommended",
+    "strategyTopSellersLabel": "Top Sellers"
+  }
+}

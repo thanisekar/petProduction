@@ -1,0 +1,29 @@
+{
+  "configuration": {
+    "ArticleImage4": {
+      "src": "/file/v7894225032341594461/general/a90053.PottyTrainPuppyLikeAPro_MainImage.jpg",
+      "mediaName": "/general/a90053.PottyTrainPuppyLikeAPro_MainImage.jpg"
+    },
+    "ArticleImage3": {
+      "src": "/file/v73342984264266845/general/a90100.HowToTreatMattedDogFur_MainImage.jpg",
+      "mediaName": "/general/a90100.HowToTreatMattedDogFur_MainImage.jpg"
+    },
+    "ArticleImage2": {
+      "src": "/file/v3380485681718337578/general/a90097.5TipsToStopYourDogFromBegging_MainImage.jpg",
+      "mediaName": "/general/a90097.5TipsToStopYourDogFromBegging_MainImage.jpg"
+    },
+    "ArticleImage1": {
+      "src": "/file/v608306809058644361/general/a10019.HerdingCatsHowToPottyTrainACat_MainImage.jpg",
+      "mediaName": "/general/a10019.HerdingCatsHowToPottyTrainACat_MainImage.jpg"
+    },
+    "ArticleImage3Des": "How To Treat Matted Dog Fur",
+    "ArticleImage1Des": "Herding Cats: How to Potty Train a Kitten",
+    "ArticleImage2Des": "5 Tips to Stop Your Dog From Begging",
+    "ArticleImage2URL": "/5-tips-to-stop-your-dog-from-begging/article/a90097",
+    "ArticleImage4Des": "How to Potty Train Your Puppy Like a Pro",
+    "ArticleImage1URL": "/herding-cats-how-to-potty-train-a-cat/article/a10019",
+    "ArticleImage3URL": "/how-to-treat-matted-dog-fur/article/a90100",
+    "ArticleImage4URL": "/how-to-potty-train-your-puppy-like-a-pro/article/a90053"
+  },
+  "displayName": "PetReDesign Home Article Updated"
+}

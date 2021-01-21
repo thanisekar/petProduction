@@ -1,0 +1,17 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "inline": true,
+  "supportedWidgetType": [
+    "headerWidget"
+  ],
+  "tag": "PetReDesignMinicartDropdownRecent",
+  "translations": [
+    {
+      "description": "Element for holding header dropdown minicart",
+      "language": "en",
+      "title": "Cart Link"
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+<div id="redesign-breadcrumbWidget" data-oc-id="redesign-breadcrumbWidget" class="container nopad">
+    
+	<div class="col-xs-12 no-pad-left">
+	  <ul id="page_breadcrumbs">
+			<li><a data-bind="ccLink:{route: '/home'}">Home </a></li><span class="delimiter"> /</span>
+		
+			
+			<!-- Start PLP Section -->
+			<!-- ko if:koPageId() == 'category' && koContextId()!='articles'-->
+				 <!-- ko with: category -->
+				  <!-- ko foreach: fixedParentCategories -->
+					<!-- ko if: id != "rootCategory" && id != "brand-carousel"  && displayName !== 'Non-Navigable'-->
+						<li><a data-bind="ccLink: $data, text:displayName, attr: {href: $data.route}"></a></li>
+							<!--ko if:$parents[1].koContextId()!='dogs' || $parents[1].koContextId()!='cats' ||  $parents[1].koContextId()!='birds' -->
+					 	<span class="delimiter">/</span>
+						<!--/ko-->
+    					<!-- /ko -->
+    				   <!-- /ko -->
+    				   
+						<li data-bind="text:displayName"></li>
+				<!-- /ko -->
+			<!-- /ko -->
+			
+            <!-- Ends PLP Section -->
+            
+            <!-- education PLP section -->
+            <!-- ko if:koContextId()=='articles'-->
+            	<li>Education</li>
+            <!--/ko-->
+            <!-- education section -->
+            
+            <!-- Start Product Section -->
+			<!-- ko if:koPageId() == 'product' -->
+				<!-- ko with: product -->
+				 
+				   <li data-bind="text:displayName "></li>
+				   
+				   
+				<!-- /ko -->
+				
+			<!-- /ko -->
+            <!-- Ends Product Section -->
+            
+            	            
+            <!-- Start Search Section -->
+			<!-- ko if:( koPageId() == 'noSearchResults') -->
+			    <li>Search
+				<!-- ko if:koSearchText() !="" -->
+				   (<span data-bind="text:koSearchText"></span>)
+					<!-- /ko -->
+					</li>
+			<!-- /ko -->
+			
+            <!-- Ends Search Section -->
+            
+            <!-- brand Section -->
+            
+            	<!-- ko if:(koPageId() == 'searchresults' ) -->
+				<!-- ko if:koBrandName() !="" -->
+		      	  <li><span>Brands </span><span data-bind="text:koBrandName"></span>
+    				</li>
+    					<!-- /ko -->
+    			<!-- /ko -->
+            <!-- brand section ends here -->
+            
+            
+            
+            <!-- for search result  -->
+            
+            <!-- ko if:(koPageId() == 'searchresults') -->
+                  <li>Search Results 
+    				<!-- ko if:koSearchText() !="" -->
+    				(<span data-bind="text:koSearchText">dogs</span>)
+    				<!-- /ko -->
+				</li>
+            <!-- /ko-->
+            <!-- search results ends -->
+            
+             <!-- Start Myaccount Profile Section -->
+                <!-- ko if:(koPageId() == 'profile') -->
+    			   <li>Account</li>
+    				<!-- /ko -->
+    			
+            <!-- Ends Myaccount Profile Section -->
+            
+            
+                 <!-- Start Myaccount orderHistory Section -->
+                <!-- ko if:(koPageId() == 'orderHistory') -->
+    				<li >Account </li>&nbsp;<span class="delimiter">/</span> <li>Orders</li>
+    			<!-- /ko -->
+    			
+                <!-- Ends Myaccount orderHistory Section -->
+                
+                
+                
+                  <!-- Start Myaccount orderDetails Section -->
+                    <!-- ko if:(koPageId() == 'orderDetails') -->
+        			 <li >Account </li> <span class="delimiter">/</span> <li>Orders</li>
+        			<!-- /ko -->
+            <!-- Ends Myaccount orderDetails Section -->
+            
+                  <!-- Start Myaccount orderDetails Section -->
+                    <!-- ko if:(koPageId() == 'checkout') -->
+        				<li class="check">Checkout </li>
+        				
+        			<!-- /ko -->
+            <!-- Ends Myaccount orderDetails Section -->
+            
+             
+               <!-- Start policy Section -->
+            <!-- ko if:(koPageId() == 'termsandconditions') -->
+			
+			    <li>terms and condition policy</li>
+			<!-- /ko -->
+			
+			<!-- ko if:(koPageId() == 'privacy') -->
+				<li>privacy policy</li>
+			<!-- /ko -->
+			
+			<!-- ko if:(koPageId() == 'shipping') -->
+			      <li>shipping policy</li>
+			<!-- /ko -->
+			
+			
+			<!-- ko if:(koPageId() == 'sponsorspartners') -->
+			      <li>Sponsors & Partners</li>
+			<!-- /ko -->
+			
+			<!-- ko if:(koPageId() == 'sure') -->
+			      <li>Pet Insurance</li>
+			<!-- /ko -->
+			
+			<!-- ko if:(koPageId() == 'returns') -->
+			     <li>Return policy</li>
+			<!-- /ko -->
+            <!-- Ends policy Section -->
+            
+            
+            <!-- redesignfaq section-->
+            	<!-- ko if:(koPageId() == 'faq') -->
+			     <li>Frequently Asked Qquestions</li>
+			<!-- /ko -->
+			
+			   <!-- redesignAboutUs section-->
+            	<!-- ko if:(koPageId() == 'ourstory') -->
+			      <li>Our Story</li>
+			<!-- /ko -->
+			
+			  <!-- redesignAboutUs section-->
+            	<!-- ko if:(koPageId() == 'Affiliates') -->
+				  <li>Affiliates</li>
+			<!-- /ko -->
+			
+			<!-- redesignAboutUs section-->
+            	<!-- ko if:(koPageId() == 'emailsignup') -->
+				  <li>Email SignUp</li>
+			<!-- /ko -->
+			
+			<!-- redesignAboutUs section-->
+            	<!-- ko if:(koPageId() == 'sweepstakes') -->
+				  <li>Sweep Stakes</li>
+			<!-- /ko -->
+			
+			<!-- redesignAboutUs section-->
+            	<!-- ko if:(koPageId() == 'pilotsnpaws') -->
+				  <li>Pilots N Paws</li>
+			<!-- /ko -->
+			
+			<!-- redesignAboutUs section-->
+            	<!-- ko if:(koPageId() == 'healthychews') -->
+				  <li>Healthy Chews</li>
+			<!-- /ko -->
+			
+			<!-- redesignAboutUs section-->
+            	<!-- ko if:(koPageId() == 'adoptapet') -->
+				  <li>Adopt A Pet</li>
+			<!-- /ko -->
+			
+			<!-- redesignAboutUs section-->
+            	<!-- ko if:(koPageId() == 'SignupAndSave') -->
+				  <li>SignUp & Save</li>
+			<!-- /ko -->
+			
+			
+			<!-- redesignAboutUs section-->
+            	<!-- ko if:(koPageId() == 'ahtermsandconditions') -->
+				  <li>AH Terms & Conditions</li>
+			<!-- /ko -->
+			
+			<!-- redesignAboutUs section-->
+            	<!-- ko if:(koPageId() == 'gammaSealLids') -->
+				  <li>Gamma Seal Lids</li>
+			<!-- /ko -->
+			
+			<!-- redesignAboutUs section-->
+            	<!-- ko if:(koPageId() == 'vittlesVault') -->
+				  <li>Vittles Vault</li>
+			<!-- /ko -->
+			
+			 <!-- redesignAboutUs section-->
+            	<!-- ko if:(koPageId() == 'gamma2') -->
+				  <li>Gamma2</li>
+			<!-- /ko -->
+            
+            <!-- redesignAboutUs section-->
+            	<!-- ko if:(koPageId() == 'welcomehomecontest') -->
+				  <li>Welcome Home Contest</li>
+			<!-- /ko -->
+			
+            	<!-- ko if:(koPageId() == 'FirstResponders') -->
+				  <li>First Responders</li>
+			<!-- /ko -->
+			
+			<!-- ko if:(koPageId() == 'JobDescription') -->
+				  <li>Job Description</li>
+			<!-- /ko -->
+			
+			
+			
+			   <!-- redesigncareers section-->
+            	<!-- ko if:(koPageId() == 'careers') -->
+				    <li>Careers</li>
+			  <!-- /ko -->
+			  
+			   <!-- redesigncareers section-->
+            	<!-- ko if:(koPageId() == 'petsustainability') -->
+				    <li>Pet Sustainability</li>
+			  <!-- /ko -->
+            
+            <!-- redesigncareers section-->
+            	<!-- ko if:(koPageId() == 'keriskorner') -->
+				    <li>Keri's Korner</li>
+			  <!-- /ko -->
+          
+              <!-- redesignContactUs section-->
+            	<!-- ko if:(koPageId() == 'ContactUs') -->
+			           <li>Contact Us</li>
+			  <!-- /ko -->
+			  
+			  
+		
+			  
+			  
+			  	<!-- ko if:(koPageId() == 'media') -->
+			            <li>Media</li>
+			  <!-- /ko -->
+			  
+			  	<!-- ko if:(koPageId() == 'redesignmappolicy') -->
+			           <li>Map Policy</li>
+			  <!-- /ko -->
+			  
+			  <!-- ko if:(koPageId() == 'Gallery') -->
+			           <li>Gallery</li>
+			  <!-- /ko -->
+			  
+			  
+ 
+ 	          <!-- redesignstorelocator section-->
+            	<!-- ko if:(koPageId() == 'storelocator') -->
+				       <li>Store Locator</li>
+		    	<!-- /ko -->
+		    	
+		    	<!-- redesignsitemap section-->
+            	<!-- ko if:(koPageId() == 'SiteMap') -->
+				       <li>Site Map</li>
+		    	<!-- /ko -->
+
+       
+            <!-- Start Login Section -->
+			<!-- ko if:(koPageId() == 'login' ) -->
+				  <li>Login/Register</li>
+			<!-- /ko -->
+            <!-- Ends Login Section -->
+            
+            <!--Start Registration Section-->
+            <!-- ko if: (koPageId() == 'createaccount' ) -->
+                <li>Login / Register</li>
+            <!-- /ko -->
+            <!--End Registration Section-->
+             
+             
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,20 @@
+{
+  "imports": [
+    "category",
+    "product"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign CLP Related Articles Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "brandsId": "",
+    "enabled": true
+  }
+}

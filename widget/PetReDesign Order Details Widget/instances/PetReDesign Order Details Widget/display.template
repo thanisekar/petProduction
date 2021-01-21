@@ -1,0 +1,464 @@
+<div class="my-account"   id="myaccount-orderDetail" style="display:block">
+   <!-- ko with: orderDetails -->
+   <div class="mobile-no-pad-left mobile-no-pad-right column orderDetailsContianer">
+      <div class="page-header">Your Orders</div>
+
+      <div class="panel panel-order ">
+         <div class="panel-header  panelHeader clearfix">
+            <div class="col-xs-12 col-sm-12 col-md-6 left order-number "><strong>Order: 
+               <span  class="orderId" data-bind="text: id"></span></strong> (<span data-bind="text : orderStatus == 'Submitted to fulfillment'? 'Order has been submitted' : orderStatus "></span>)
+            </div>
+            <!-- ko with: priceInfo --> 
+            <div class="col-xs-12 col-sm-12 col-md-6 left order-title "><strong>Order 
+               Total:</strong>  <strong><span class="order-total-amount"  data-bind="currency: { price: total, currencyObj: $parent.priceListGroup.currency}">
+               </span></strong>                      
+            </div>
+            <!-- /ko -->
+            <p class="text-left mb-10 left clearfix orderPlacedTxt" style="clear: both;"><strong>Placed 
+               on:</strong> <span  data-bind="ccDate: {date: $data.submittedDate, returnedDate: 'short'}"></span>
+            </p> 
+            
+            <!--<p class="text-left mb-10 left clearfix trackingNumber" style="clear: both;">
+                <span><strong>Tracking Number:</strong></span>
+                <span>
+                    <a target="_blank">
+                          <span>987654321234567</span>
+                    </a>
+                </span>
+            </p>-->
+            
+            <!-- start tracking Info -->
+                <!-- ko if: trackingInfo.length > 0 -->
+                <p class="text-left mb-10 left clearfix trackingNumber" style="clear: both;">
+                <span><strong>Tracking Number:</strong></span>
+                <!-- ko foreach: trackingInfo-->
+                <span>
+                    <a target="_blank" data-bind="attr: { href: $data.trackingUrl },
+                           widgetLocaleText : {value: 'trackingReferenceReaderText', attr: 'aria-label', 
+                          params: {carrierName: $data.carrierName, trackingReference: $data.trackingNumber}}">
+                          <span class="info" data-bind="text: $data.trackingNumber"></span>
+                    </a>
+                </span>
+                <!-- /ko -->
+                 <!-- /ko -->
+                <!-- ko if: trackingInfo.length > 0 -->
+                <p class="text-left mb-10 left clearfix trackingNumber" style="clear: both;">
+                <span><strong>Shipping Carrier:</strong></span>
+                <!-- ko foreach: trackingInfo-->
+                <span class="info" data-bind="text: $data.carrierName"></span>
+                <!-- /ko -->
+                <!-- /ko -->
+            </p>
+            <!--<div class="row" id="CC-orderDetails-tracking-references">
+              <div id="CC-orderDetails-tracking-label" class="col-md-6">
+                <span class="titleText" data-bind="widgetLocaleText: 'trackingNumbersText'"></span>
+              </div>
+              <div id="CC-orderDetails-tracking-data" class="col-md-6 pull-left">
+                <table class="col-md-12" id="CC-orderDetails-tracking-data-table">
+                  <tbody data-bind="foreach: trackingInfo">
+                    <tr class="row">
+                      <td>
+                        <span data-bind="text: $data.carrierName" class="col-md-5 removePadding word-wrap-rmPadding-right"></span>
+                        <a class="col-md-7 removePadding" target="_blank" data-bind="attr: { href: $data.trackingUrl },
+                           widgetLocaleText : {value: 'trackingReferenceReaderText', attr: 'aria-label', 
+                          params: {carrierName: $data.carrierName, trackingReference: $data.trackingNumber}}">
+                          <span data-bind="text: $data.trackingNumber">
+                          </span>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>-->
+            <!-- /ko -->
+            <!-- ko if: trackingInfo.length == 0 && trackingNumber != null -->
+            <p class="text-left mb-10 left clearfix trackingNumber" style="clear: both;">
+                <span><strong>Tracking Number:</strong></span>
+                <span>
+                          <span data-bind="text: trackingNumber"></span>
+                </span>
+            </p>
+            <!--<div>
+              <div id="CC-orderDetails-trackingNumberText" class="col-md-5 titleText" 
+              data-bind="widgetLocaleText: 'trackingNumbersText'"> </div>
+              <div id="CC-orderDetails-trackingNumberData" class="col-md-7" 
+              data-bind="text: trackingNumber"></div>
+            </div>-->
+            <!-- /ko -->
+            <!-- end tracking info-->
+            <p class="text-right mb-10"></p>
+            <p class="text-right"></p>
+            <br><br>
+            <p></p>
+         </div>
+         <div class="panel-body panelBody">
+            <div class="row">
+               <div class="col-xs-12 col-sm-12 column mb-10">
+                  <!-- ko with: shippingAddress -->
+                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
+                     <div class="col-xs-12 col-sm-12 shipping-address">Shipping Address</div>
+                     <div class="col-sm-12 text-left">
+                         <div class="address addressFiled ">
+                          <span class="name" data-bind="text: firstName"></span>
+                           <!-- ko if: lastName !="" -->
+                           <span class="name" data-bind="text: lastName"></span>
+                           <!-- /ko -->
+                        </div>
+                        <div class="address addressFiled">
+                           <span class="" data-bind="text: address1"></span>
+                           <!-- ko if: address2 !=null -->
+                           <span>,</span><span class="" data-bind="text: address2"></span>
+                           <!-- /ko -->
+                           
+                        </div>
+                        <div class="city-state-zip addressFiled">
+                           <span class="" data-bind="text: city"></span>,&nbsp;<span class="" data-bind="text: state"></span>&nbsp;<span class="" data-bind="text: postalCode"></span>
+                        </div>
+                        <div class="country addressFiled">
+                        <span class="" data-bind="text: country"></span>
+                        </div>
+                        <!--<div data-bind="text: $parents[1].maskPhoneNumber(phoneNumber)"></div>-->
+                        <div class='addressFiled' data-bind="text: phoneNumber"></div>
+                     </div>
+                  </div>
+                  <!-- /ko -->
+                  
+                  <div class="col-xs-12 col-sm-12 col-md-4 large-4 left mb-10">
+                      <!-- ko if: $data.hasOwnProperty("billingAddress") -->
+                      <!-- ko with: billingAddress -->
+                      <div class="col-xs-12 col-sm-12 text-left billing-address">Billing Address</div>
+                     <div class="col-sm-12 text-left">
+                         <div class="address addressFiled">
+                          <span class="name" data-bind="text: firstName"></span>
+                           <!-- ko if: lastName !="" -->
+                           <span class="name" data-bind="text: lastName"></span>
+                           <!-- /ko -->
+                        </div>
+                        <div class="address addressFiled">
+                            <span class="" data-bind="text: address1"></span>
+                            <span class="" data-bind="text: address2"></span>
+                           <!-- /ko -->
+                        </div>
+                        <div class="city-state-zip addressFiled">
+                            <span class="" data-bind="text: city"></span>,&nbsp;<span class="" data-bind="text: state"></span>&nbsp;<span class="" data-bind="text: postalCode"></span>
+                        </div>
+                        <div class="country addressFiled">
+                            <span class="" data-bind="text: country"></span>
+                        </div>
+                        <!--<div data-bind="text: $parents[1].maskPhoneNumber(phoneNumber)"></div>-->
+                        <div class='addressFiled' data-bind="text: phoneNumber"></div>
+                     </div>
+                     <!-- /ko -->
+                     <!-- /ko -->
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-4 payment-info-container ">
+                     <div class="col-sm-12 payment-info">Payment Information</div>
+                     <div class="col-sm-12 ">
+                       <div class="col-sm-12 payment-wrapper">
+                        	    
+                        	 <!-- ko foreach: payments -->
+                      <!-- ko with: customPaymentProperties -->
+                      <!-- ko if: paymentInstrumentType == 'CreditCard'-->
+                      <div class="payment-details">
+                        <p class='payment-data' data-bind="text:cardType"></p>
+                        <p class='payment-data' data-bind="text:$parents[1].shippingAddress.email"></p>
+                        <p class='payment-data' data-bind="text:cardholderName"></p>
+                        <p class='payment-data' ><span>XXXX-XXXX-XXXX-</span><span data-bind="text:last4"></span></p>
+                        <p class="payment-data payment-details-expiry">
+                          <span data-bind="text:expirationDate"></span>
+                        </p>
+                      </div>
+                      <!-- /ko -->
+                      <!-- ko if: paymentInstrumentType == 'paypal_account'-->
+                      <div class="payment-details">
+                        <!--<pre data-bind="text: ko.toJSON(paymentInstrumentType.split('_')[0], null, 2)"></pre>-->
+                        <p class='payment-data' data-bind="text:paymentInstrumentType.split('_')[0]"></p>
+                        <p class='payment-data'  data-bind="text:payerEmail"></p>
+                      </div>
+                      <!-- /ko -->
+                      <!-- /ko -->
+                      <!-- /ko -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- <pre data-bind="text: ko.toJSON(order,     null, 2)"></pre>-->
+      <!-- ko with: order -->
+      <!-- ko foreach: items -->
+      <div class="panel panel-order  clearfix">
+         <div class="product column ">
+            <div class="product-image product-image--order-details ">
+               <!-- ko if: active -->
+                  <a data-bind="ccLink:$data">
+                    <img data-bind="attr:{id: 'CC-orderDetails-productImage-' +productId +catRefId, title: primaryImageTitle}, imageSource: {src: primaryThumbImageURL, alt: primaryImageAltText, errorAlt: 'Missing Product Image'}" onError="this.onError=null;this.src='/file/general/petmate-no-image.jpg';">
+                  </a>
+                <!--/ko -->
+                <!-- ko if: (primaryThumbImageURL && !active) -->
+                  <img data-bind="attr:{id: 'CC-orderDetails-productImage-' +productId +catRefId, title: primaryImageTitle}, imageSource: {src: primaryThumbImageURL, alt: primaryImageAltText, errorAlt: 'Missing Product Image'}" onError="this.onError=null;this.src='/file/general/petmate-no-image.jpg';">
+                <!--/ko -->
+                <!-- ko ifnot: primaryThumbImageURL -->
+                  <img data-bind="attr:{id: 'CC-orderDetails-productImage-' +productId +catRefId, src: '/file/general/petmate-no-image.jpg', alt: 'Missing Product Image'}" onError="this.onError=null;this.src='/file/general/petmate-no-image.jpg';">
+                <!--/ko -->
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4 product-info">
+               <div class="col-sm-12  product-details"><span data-bind="text: displayName"></span>
+               </div>
+               <div class="col-sm-12  product-details "><span>SKU - 
+                  <span  data-bind="text: catRefId"></span></span>
+               </div>
+                <!-- ko if: variant -->
+               <div class="attribute-list ">
+                   <!-- ko foreach: variant -->
+                     <!-- ko if: optionValue -->
+                     <!-- ko if: $index() == 0 -->
+                     <span class="text-left"  data-bind="text: optionValue"></span> 
+                      <!--/ko -->
+                       <!-- ko if: $index() != 0 -->
+                      <span class="show-for-medium-up">|</span> <span class="text-left"  data-bind="text: optionValue"></span> 
+                      <!--/ko -->
+                      <!--/ko -->
+                  <!--/ko -->
+               </div>
+               <!--/ko -->
+            </div>
+            <div class="col-sm-4  col-xs-6 col-md-3 quantity-price-wrap ">
+               <div class="col-sm-5  product-quantity-text ">
+                  <div class='qtyText'>Qty : <span  data-bind="text: quantity"></span></div>
+               </div>
+               <div  class="col-sm-7  product-price product-price--order-details ">
+                  <div>
+                     <span data-bind="currency: { price: unitPrice, currencyObj: $parents[1].priceListGroup.currency}">         </span>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 mr-0 right">      
+                <!--<button class="col-sm-12 col-md-3  button--reorder right" data-bind="event:{click:function(data ,event){   $parents[2].reorderAddToCart(data,event)  }} ">Re-Order</button>-->
+               <!--<button class='button--reorder' data-bind="event:{click:function(data ,event){  $parents[2].reorderAddToCart(data,event)  }} "> </button>-->
+            </div>
+         </div>
+      </div>
+       <!-- /ko -->
+      
+        <!--ko if: $parent.orderStatus == 'Submitted to fulfillment'-->
+        
+        <!--/ko-->
+        
+        <!--ko if: $parent.orderStatus == 'Fulfilled'-->
+            <div class="col-xs-12 col-sm-3 col-md-3 mr-0 right reorder-button">
+                    <!--<input class="col-sm-12 col-md-3  button--reorder right" type="submit" value="Return" data-bind="click: function(data){ $.Topic('returnRequest').publish(data) }">-->
+            </div>
+        <!--/ko--> 
+            
+        
+        <!-- /ko -->
+
+      <div class="panel panel--order panel--total clearfix">
+      <!-- ko with: priceInfo --> 
+         <div class="order-subtotal">
+            <div class="order-subtotal-details clearfix">
+               <div class="col-sm-12 col-xs-12">
+                  <div class="col-sm-6 col-xs-6 left  sub-total">Subtotal:</div>
+                  <div class="col-sm-6 col-xs-6 right subtotalCurrency ">
+                        <span data-bind="currency: { price: subTotal, currencyObj: $parent.priceListGroup.currency}"></span>
+                  </div>
+               </div>
+               <!-- ko if: $parent.discountInfo.orderDiscount --> 
+               <div class="col-sm-12 col-xs-12">
+                  <div class="col-sm-1 col-xs-3 left discount">Discount:</div>
+                  <!--test-->
+                  <div class="col-sm-5 col-xs-6">
+                  <!-- ko if: $parents[1].coupons -->
+                 <div data-bind="foreach: $parents[1].coupons">
+                   <div class="coupondiscount">
+                     <span data-bind="widgetLocaleText : {value:'orderCouponDisplayText', attr: 'innerText', params: {description: promotionDesc, code : code}}"></span>
+                   </div>
+                 </div>
+               <!-- /ko -->
+                  </div>
+                  <!--Ends-->
+                  
+                  <div class="col-sm-6 col-xs-3 right discountAmt">
+                        <span data-bind="currency: { price: -$parent.discountInfo.orderDiscount, currencyObj: $parent.priceListGroup.currency}"></span>
+                                                            
+                  </div>
+               </div>
+                <!-- /ko -->
+               <div class="col-sm-12 col-xs-12">
+                  <!--<div class="col-sm-6 col-xs-6 left text-left" data-bind="widgetLocaleText: {value: 'shippingMethodValueText', attr: 'innerText', params: {shippingMethod :$parent.shippingGroup.shippingMethodDescription}}">-->
+                      <div class="col-sm-6 col-xs-6 left text-left shippingType">   
+                      <span class='shippingTypeTitle'>Shipping Type: </span>
+                      
+                        <span data-bind="text:$parents[1].getShippingType($parent.shippingGroup.shippingMethodDescription)"></span>
+                  </div>
+                  <div class="col-sm-6 col-xs-6 right text-right shippingTypeamounttxt">
+                   <!--  <strong>-->
+                        <span  class='shippingTypeamountValue' data-bind="currency: { price: shipping, currencyObj: $parent.priceListGroup.currency}"></span>
+                    <!-- </strong>  -->                         
+                  </div>
+               </div>
+
+               <!-- ko if: $parent.discountInfo.shippingDiscount !== 0 --> 
+               <div class="col-sm-12 col-xs-12">
+                  <div class="col-sm-6 col-xs-6 left text-left shippingDiscount">Shipping Discount</div>
+                  <div class="col-sm-6 col-xs-6 right text-right">
+                   <!--  <strong>-->
+                        <span class='shippingDiscountAmt' data-bind="currency: { price: -$parent.discountInfo.shippingDiscount, currencyObj: $parent.priceListGroup.currency}"></span>
+                    <!-- </strong> -->                                       
+                  </div>
+               </div>
+                <!-- /ko -->
+
+                 <!-- ko if: shippingSurchargeValue &&  shippingSurchargeValue !== 0 --> 
+               <div class="col-sm-12 col-xs-12"> 
+                  <div class="col-sm-6 col-xs-6 left text-left shippingSurcharge">Shipping Surcharge</div>
+                  <div class="col-sm-6 col-xs-6 right text-right">
+                     <!--<strong>-->
+                        <span  class='shippingSurchargeValue' data-bind="currency: { price: shippingSurchargeValue, currencyObj: $parent.priceListGroup.currency}"></span>
+                    <!-- </strong>    -->                                    
+                  </div>
+               </div>
+                <!-- /ko -->
+
+                <!-- ko if: $parents[1].cart().showTaxSummary -->
+               <div class="col-sm-12 col-xs-12">
+                  <div class="col-sm-6 col-xs-6 left text-left tax">Tax:</div>
+                  <div class="col-sm-6 col-xs-6 right text-right ">
+                  <!-- <strong>-->
+                     <span class='taxValue' data-bind="currency: { price: tax, currencyObj: $parent.priceListGroup.currency}"></span>
+                   <!-- </strong>   -->                       
+                  </div>
+               </div>
+                <!-- /ko -->
+
+                <!-- Gift Card Used -->
+                <!-- ko if: $parents[1].isGiftCardUsed() -->
+                <div class="col-sm-12 col-xs-12 giftCart">Gift Card</div>
+                <!-- /ko -->
+                 <!-- ko foreach: $parent.payments -->
+                  <!-- ko if: paymentMethod == "physicalGiftCard" -->
+                <div class="col-sm-12 col-xs-12">
+                  <div class="col-sm-6 col-xs-6 left text-left tax">Tax</div>
+                  <div class="col-sm-6 col-xs-6 right text-right">
+                   <!--<strong>-->
+                     <span class='taxtCurrency' data-bind="currency: { price: -amount, currencyObj: $parents[1].priceListGroup.currency}"></span>
+                  <!--  </strong>-->                                      
+                  </div>
+               </div>
+               <!-- /ko -->
+               <!-- /ko -->
+
+               <!-- ko with: $parent.discountInfo --> 
+               <!-- ko if: orderImplicitDiscountList -->
+                 <small data-bind="foreach: orderImplicitDiscountList"> 
+                   <div class="discount">
+                     <div>
+                       <span data-bind="widgetLocaleText : promotionDesc, attr: { id: 'CC-orderDetails-orderImplicitDiscountList-'+$data.promotionId}"></span>
+                     </div>
+                   </div>
+                 </small>
+               <!-- /ko -->
+               <!-- ko if: $parents[2].coupons -->
+                 <!--<small data-bind="foreach: $parents[2].coupons">
+                   <div class="coupondiscount">
+                     <span data-bind="widgetLocaleText : {value:'orderCouponDisplayText', attr: 'innerText', params: {description: promotionDesc, code : code}}"></span>
+                   </div>
+                 </small>-->
+               <!-- /ko -->
+             <!-- /ko -->
+
+             <!-- Order Total excluding tax -->
+            <!-- ko if: ($parent.taxPriceInfo.isTaxIncluded && $parents[1].cart().showTaxSummary) -->
+             <div class="col-sm-12 col-xs-12">
+                  <div class="col-sm-6 col-xs-6 left text-left totalText">Total Excluding Tax:</div>
+                  <div class="col-sm-6 col-xs-6 right text-right">
+                   <!--<strong>-->
+                     <span data-bind="currency: { price: totalWithoutTax, currencyObj: $parent.priceListGroup.currency}"></span>
+                   <!-- </strong>  -->                                    
+                  </div>
+               </div>
+               <!-- /ko -->
+
+            </div>
+            <div class="col-sm-12 col-xs-12 clearfix">
+               <div class="col-sm-6 col-xs-6 left text-left totalText">Total:</div>
+               <div class="col-sm-6 col-xs-6 right text-right">
+                 <!-- <strong>-->
+                     <span class="total-price"  data-bind="currency: { price: total, currencyObj: $parent.priceListGroup.currency}"></span>
+<!--                  </strong>-->
+               </div>
+            </div>
+         </div>
+          <!-- /ko -->
+      </div>
+
+
+
+   </div>
+   <!--/ko -->
+    
+    <!--Order Return History-->
+        <!--ko if: orderReturn() != null-->
+        <div class="row">
+                <div class="col-xs-12">
+                    <!--<span data-bind="text: orderReturn().searchResults.length"></span>-->
+                    <!-- ko if: orderReturn().searchResults != null -->
+                    <div class="header">
+                        <h3 class="widgetHead">Return Summary</h3>
+                    </div>
+                    <!-- /ko -->
+                   <!--<pre data-bind="text: ko.toJSON(orderReturn(),     null, 2)"></pre>-->
+                   
+                    <div class="widgetBody">
+                        <!--ko foreach: orderReturn().searchResults-->
+                        <!--<h3 class="rma">RMA ID</h3>
+                        <label class="caption" data-bind="text: state"></label>-->
+                        <div class="product--return mb-20 clearfix">
+                        	
+                        		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 left product-description-wrapper--return">
+                        		
+                        		 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 uppercase left">
+                        				<div>
+                        					<strong>RMA ID</strong>
+                        				</div>
+                        				<p class="quantity--number" data-bind="text: returnRequestId"></p>
+                        			</div>
+                        
+                        			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 uppercase left">
+                        				<div>
+                        					<strong>Quantity</strong>
+                        				</div>
+                        				<p class="quantity--number" data-bind="text: totalReturnQuantity"></p>
+                        				<!--<div class="product-links text-left show-for-medium-up">
+                        					<br>
+                        				</div>-->
+                        			</div>
+                        			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 uppercase left">
+                        				<div>
+                        					<strong>Refund amount</strong>
+                        				</div>
+                        				<p class="quantity--number">
+                        				    <span data-bind="text: '$' + totalRefund"></span>
+                        				</p>
+                        			</div>
+                        			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 uppercase left">
+                        				<div>
+                        					<strong>Status</strong>
+                        				</div>
+                        				<p class="quantity--number" data-bind="text: state"></p>
+                        			</div>
+                        			
+                        		</div>
+                        	</div>
+                        <!--/ko-->
+                    </div>
+                </div>
+            </div>
+            <!--/ko-->
+    <!--End of Order Return History-->
+    
+</div>
+

@@ -1,0 +1,7 @@
+<div id="cfoPage">
+    <div class="row">
+        <div class="homeBanner">
+          <a data-bind=" ccLink: 'home'"> <img src="/file/collections/CFO_WebBanner.jpg" class="img-responsive"></a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<div id="categoryCLP">
+<!--    <pre data-bind="text: ko.toJSON(kofinalCategories(), null, 2)"></pre>-->
+  <div class="container " id='childCategoriesListing' >   
+   <!-- ko with: category -->
+   <!-- ko foreach :childCategories-->
+      <div class='row'  id="grid-category-content">
+          <div class='col-sm-4 col-xs-12'>
+              <div id="categoryImageWrap" >
+                 <a class='brand' data-bind="ccLink: $data, attr: {href: $data.route}" >
+                     <!--ko foreach :categoryImages-->
+        	             <!--ko if:$index()==0-->
+                     <img data-bind="ccResizeImage: {
+                                    source: $data.url,
+                                    xsmall: '300,270',
+                                    small: '300,270',
+                                    medium: '266,266',
+                                    large: '266,266',
+                                    alt: $parent.displayName,
+                                    title:$parent.displayName}" class="img-responsive" width="100%" >
+                                 
+                               <!--/ko--> 
+                            <!--/ko-->
+                  </a>
+              </div>
+          </div>
+          <div class='col-sm-8 col-xs-12'>
+               <div class="categoryName" >
+                   <p data-bind='html:description'></p>
+               </div>
+               <div class='seeBrand'>
+                   <a  class='loginbtn' id='getBrands' data-bind="ccLink: $data, attr: {href: $data.route}">See brand</a>
+               </div>
+          </div>
+      </div>
+         <!-- /ko -->
+         <!-- /ko -->
+   </div> 
+  
+   
+
+</div>

@@ -1,0 +1,21 @@
+{
+  "imports": [
+    "category",
+    "categoryId",
+    "dimensionId",
+    "productTypes",
+    "product",
+    "productVariantOptions"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Custom BV Global Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {}
+}

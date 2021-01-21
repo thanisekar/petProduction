@@ -1,0 +1,144 @@
+<div id="customLoginWidget" data-bind="visible: loginPane">
+    <div class="container">
+        <div class="page-header-title">
+            <div class="page-header">ORDER STATUS</div>
+        </div>
+        <div class="col-md-5 col-sm-6" id="loginForm-wrap">
+            <form id="loginForm" class="login-form form-wrap userLoginForm clearfix" data-bind="template: { afterRender: GetLoginFormRendered() }">
+                <div class="form_field_wrap">
+                    <div class="errorMessage" data-bind="visible: error">Log in unsuccessful. The details entered don't match our records,Please try again.</div>
+            	    <legend class="h3 small-text-center large-text-left returningCustomer">Returning Customer</legend>
+                  
+                		<div class="col-md-12 form__item form-group ">
+                			<label for="Email"  class="label-text" >email</label>
+                		    <input type="email" class="col-md-5 form-control input-box CC-login-emailId  " name="loginEmail" data-bind="validatableValue : email" id="CC-login-email" aria-required="true" required="required" placeholder="email">
+                		</div>
+            	
+            		<div class="col-md-12 form__item form-group ">
+            			<label for="password"  class="label-text">Password</label>
+            		    <input type="password" class="col-md-5 form-control input-box input-field  " name="loginPassword" data-bind="validatableValue: password" id="CC-login-password" aria-required="true" required="required" placeholder="password">
+            		</div>
+            		<div class="col-md-12 form__item form-group ">
+            			<div class="form__item">
+            			    <div class=''>
+            			 <label class="control checkbox remeberPwd">
+            				<input id="rememberpassword" name="rememberpassword" value="true" type="checkbox">
+            				<span id="control-indicator"></span>Remember my password
+            				<input name="rememberpassword" value=" " type="hidden">
+            				
+            			 </label>
+            			 </div>
+            			</div>
+        		    </div>
+            		<div class="col-md-12 login-buttons clearfix">
+                		<div class="col-sm-12 col-md-3 columns no-padding">
+                			<div class="form__item">
+                				<input name="login" value="Log In" class="loginbtn" type="submit" data-bind="click: function(data, event) {getUserLoginForm()} ">
+                				<input name="login" value=" " type="hidden">
+                			</div>
+                		 </div>
+                		</div>
+            
+            		<div class="col-md-12 small-text-center-only clearfix columns no-padding">
+                    	<a data-bind="ccLink: {route: '/passwordreset'}" class="help-block mb-20 link-grey-blue link-underline">Forgot password?</a>
+                    </div>
+        		</div>
+    		</form>
+		</div>
+        <div class="col-md-7 col-sm-6 signUpTxt">
+            <h5>Guest User?</h5>
+            <p>You can view status details for an order by entering your order number and the email address you used to place the order in the boxes below.
+            </p>
+            <form id="anonymousOrderDetail"  class="guest-order-form clearfix" data-bind="template: { afterRender: anonymousOrderDetailFormRendered() }">
+                <div class="errorMessage" data-bind="visible: OrderIDError">Order Number <span class="orderIDError" data-bind= "text:orderID "></span> is not valid. Please enter a valid order number.</div>
+                <div class="errorMessage" data-bind="visible: OrderEmailError">Email address <span class="orderIDError" data-bind="text:orderEmail"></span> not found. Please check information entered is correct.</div>
+                <div class="form__field-wrap col-sm-11 column">
+        			<div class="form__item form-group col-sm-12">
+        				<label for="Email" class="text-left link-grey-blue guest-user-order-number label-text">order number </label>
+        				    <input id="orderNumber" placeholder="order number" data-bind="validatableValue: orderno" name="orderNumber" class="input-field small-12 input-box" type="text">
+                       
+        			</div>
+        			<div class="form__item form-group col-sm-12">
+        				<label for="Email" class="text-left link-grey-blue guest-user-email label-text">email</label>
+        				    <input id="email" placeholder="email" name="email" data-bind="validatableValue: orderEmail" class="input-field small-12 input-box " type="email">
+                        
+        			</div>
+        			<input value="Submit" data-bind="click: function(data, event){anonymousOrderDetailForm()}" type="submit" class="loginbtn" >
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!--My Account Left-Nav-->
+<div class="row" data-bind="visible: passwordReset">
+    <div class="col-md-3" id="leftNav">
+        <div class="myaccount-leftnav">
+        	<div class="visible-sm myaccount-overview-link-wrapper">
+        		<a id="myAccountMobilelnk" data-bind="ccLink: {route: '/login'}">
+        			<span id="myAccountMobileTxt"></span>
+        			<i class="fa pull-right my-account-angle-arrow visible-xs fa-angle-right"></i>
+        		</a>
+        	</div>
+        	<div class="h2 accordion-header">MY ACCOUNT</div>
+          <ul class="myaccount-listing">
+        	 <li><a data-bind="ccLink:{route: '/login'}" class="myaccount-left-link" id="myaccount-link-profile" data-target="myaccount-profile">Profiles</a></li>
+        	 <li><a data-bind="ccLink:{route: '/login'}" id="myaccount-link-orderhistory" data-target="CC-orderHistory">Order</a></li>
+        	 <li><a data-bind="ccLink:{route: '/login'}" id="myaccount-link-wishlist">Wishlist</a></li>
+        	 <li><a data-bind="ccLink:{route: '/login'}" class="myaccount-left-link" id="myaccount-link-addressbook" data-target="myaccount-addressbook">Address Book</a></li>
+           </ul>
+        </div>
+    </div>
+<!--End of Left-Nav-->
+<!--Password Reset Template-->
+
+    <div class="col-xs-12 col-md-9">
+        <div id="CC-createNewPasswordPane">
+            <div class="header">
+              <h3>RESET PASSWORD</h3>
+            </div>
+            <form class="form-wrap change-password-form column large-6" id="change-password-form" data-bind="template: { afterRender: resetPwdFormRendered() }">
+
+                        <div class="form__field-wrap small-12">
+                            <div class="form__item column">
+                                <label for="CC-createNewPassword-oldPassword">
+                                    Current Password
+                                    <input type="password" name="oldpassword" class="input-field small-12" id="CC-createNewPassword-oldPassword123" aria-required="true"
+                           data-bind="validatableValue: oldPassword1, widgetLocaleText : {value:'currentPasswordText', attr:'placeholder'}"/>
+                                </label>
+                            </div>
+
+                            <div class="form__item column">
+                                <label for="createNewPassword-password">
+                                New Password
+                                     <input type="password" name="newpassword" class="input-field" id="createNewPassword-password" placeholder="new password" autocomplete="off" aria-required="true"
+                           data-bind="validatableValue: newPassword1, widgetLocaleText : {value:'newPasswdText', attr:'placeholder'}"/>
+                                </label>
+                            </div>
+                            <div class="form__item column">
+                                <label for="createNewPassword-confirmPassword">
+                                    Confirm Password
+                                     <input type="password" class="input-field" id="createNewPassword-confirmPassword" placeholder="confirm password" name="passwordconfirm" aria-required="true"
+                           data-bind="validatableValue: confirmPassword1, widgetLocaleText : {value:'newConfirmPasswordText', attr:'placeholder'}"/>
+                                </label>
+                            </div>
+                        </div>
+                        
+                <div class="left">
+                            <div class="large-centered columns">
+                                <ul class="medium-block-grid-2 large-block-grid-2">
+                                    <li class="small-6 col-sm-6 left">
+                                        <input name="resetPassword" value="Save Changes" id="CC-createNewPasswordSave" class="button button-block mb-10 button--dark" type="submit" data-bind="click: function(data, event) { resetPwdForm(data) }">
+                                    </li>
+                                    <li class="small-6 col-sm-6 left">
+                                        <a href="#" class="button button-block mb-10 button--dark">Cancel</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--End of password reset-->

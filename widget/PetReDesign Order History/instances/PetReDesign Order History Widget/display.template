@@ -1,0 +1,105 @@
+<!-- ko if: (historyViewModel().display) -->
+<div class="my-account"   id="myaccount-orderHistory" style="display:block" >
+  <div class="mobile-no-pad-left mobile-no-pad-right column orderHistoryItems">
+    <div class="page-header">Your Orders</div>
+      <div data-bind="visible: historyGrid().length == 0">
+             <div class="no-results">No Past Orders!</div>
+        </div>
+    <div class="order-container" data-bind="foreach: historyGrid">
+      <div data-bind="foreach: $data">
+        <div class="panel panel-order nopad">
+          <div class="panel-header panelHeader clearfix">
+            <div class="col-xs-12 col-sm-6 col-md-6  order-number  nopad"><strong>Order: 
+              <span class="orderId" data-bind="text : $data.orderId"></span> 
+              <!-- ko ifnot :$data.status == 'Removed' -->
+              (<span data-bind="text : $data.status == 'Submitted to fulfillment'? 'Order has been submitted' : $data.status "></span>)
+              <!-- /ko -->
+              <!-- ko if :$data.status == 'Removed' -->
+              (<span>Cancelled</span>)
+              <!-- /ko -->
+              </strong>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6  order-title "><strong>Order 
+              Total:</strong><strong><span class="order-total-amount" data-bind="currency: {price: $data.total, currencyObj: $data.priceListGroup.currency}">
+              </span></strong>                           
+            </div>
+            <p class="text-left mb-10 left clearfix orderPlacedTxt" style="clear: both;"><strong>Placed on:</strong> 
+              <span data-bind="ccDate: {date: $data.submittedDate, returnedDate: 'short'}"></span>                          
+            </p>
+            
+            <!-- start tracking Info -->
+              <!-- ko with: $data.orderDetails -->
+                  <!-- ko if: shippingGroups[0].trackingInfo.length > 0 -->
+                   <p class="text-left mb-10 left clearfix trackingNumber" style="clear: both;">
+                       <span><strong>Tracking Number:</strong></span>
+                          <!-- ko with : shippingGroups[0] --> 
+                        <!-- ko foreach: trackingInfo-->
+                     <span>
+                        <a target="_blank" data-bind="attr: { href: $data.trackingUrl },
+                               widgetLocaleText : {value: 'trackingReferenceReaderText', attr: 'aria-label', 
+                              params: {carrierName: $data.carrierName, trackingReference: $data.trackingNumber}}">
+                              <span class="number" data-bind="text: $data.trackingNumber"></span>
+                        </a> 
+                   </span>
+                <!-- /ko -->
+                <!-- /ko -->
+              </p>
+            <!-- /ko -->
+            <!-- /ko -->
+            <!-- end tracking info-->
+            
+            <p class="text-right mb-40"></p>
+          </div>
+          <div class="panel-body panelBody ">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                 <a class="col-xs-12 col-sm-12 col-md-4 col-lg-3 orderDetails" href="#"  data-bind="click: $parents[1].clickOrderDetails.bind($parents[1]), attr: {id: 'cc-order-details-'+$data.orderId}">
+                   Order Details                                
+                </a>
+                <!-- ko with: $data.orderDetails -->
+                <p class="item-number col-xs-12 col-sm-12 col-md-5 col-lg-4 left">There are <span data-bind="text : order.items.length"></span> 
+                   item(s) in this order
+                </p>
+                <!-- /ko -->
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ko with: historyViewModel -->
+  <div id="cc-paginated-controls-bottom" class="row col-md-12 visible-md visible-lg">
+    <div data-bind="visible : (totalNumberOfPages() > 1)">
+      <div class='paginations'>
+       <!-- <div class="row pull-right" data-bind="template: { name: $parent.templateAbsoluteUrl('/templates/paginationControls.template') , templateUrl: ''}"></div>-->
+       <div class="btn-group">
+     
+           <!-- <a href="#" class="btn btn-default" data-bind="click: getFirstPage, widgetLocaleText : {value:'goToFirstPageText', attr:'aria-label'}, makeAccess: {readerText: 'Go to first page &nbsp;', cssContent: 'on'}, css: { disabled: $data.currentPage() == 1 }, widgetLocaleText: 'goToFirstPagePaginationSymbol'" >&lt;&lt;</a> -->
+            <a href="#" class="btn btn-default" data-bind="click: decrementPage, widgetLocaleText : {value:'goToPreviousPageText', attr:'aria-label'}, makeAccess: {readerText: 'Go to previous page &nbsp;', cssContent: 'on'}, css: { disabled: $data.currentPage() == 1 }, widgetLocaleText: 'goToPreviousPagePaginationSymbol'" rel="prev">&lt;</a>
+                <!-- ko foreach: pages -->
+                  <a href="#" class="btn btn-default" data-bind="click: $parent.changePage.bind($parent, $data), css: {active: $data.pageNumber===$parent.clickedPage() }">
+                    <!-- ko if: $data.selected === true -->
+                      <span data-bind="widgetLocaleText : {value:'activePageText', attr:'aria-label'}, makeAccess: {readerText: 'Active page is &nbsp;', cssContent: 'on'}"></span>
+                    <!-- /ko -->
+                    <!-- ko if: $data.selected === false -->
+                      <span data-bind="widgetLocaleText : {value:'clickToViewText', attr:'aria-label'}, makeAccess: {readerText: 'Click to view page &nbsp;', cssContent: 'on'}"></span>
+                    <!-- /ko -->
+                    <span data-bind="ccNumber: $data.pageNumber"></span>
+                  </a>
+                <!-- /ko -->
+            
+                <a href="#" class="btn btn-default" data-bind="click: incrementPage, widgetLocaleText : {value:'goToNextPageText', attr:'aria-label'}, makeAccess: {readerText: 'Go to next page &nbsp; ', cssContent: 'on'}, css: { disabled: currentPage() == $data.totalNumberOfPages() }, widgetLocaleText: 'goToNextPagePaginationSymbol'" rel="next">&gt;</a>
+              <!--  <a href="#" class="btn btn-default" data-bind="click: $data.getLastPage, widgetLocaleText : {value:'goToLastPageText', attr:'aria-label'}, makeAccess: {readerText: 'Go to last page &nbsp;', cssContent: 'on'}, css: { disabled: currentPage() == $data.totalNumberOfPages() }, widgetLocaleText: 'goToLastPagePaginationSymbol'">&gt;&gt;</a>-->
+              
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- /ko -->
+
+  </div>
+</div>
+<!-- /ko -->

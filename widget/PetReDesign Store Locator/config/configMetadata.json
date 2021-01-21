@@ -1,0 +1,16 @@
+{
+  "titleResourceId": "title",
+  "properties": [
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "storeLocatorLink",
+      "id": "storeLocatorLink",
+      "helpTextResourceId": "storeLocatorLinkHelpText",
+      "labelResourceId": "storeLocatorLinkLabel",
+      "type": "stringType",
+      "required": true
+    }
+  ],
+  "descriptionResourceId": "description"
+}

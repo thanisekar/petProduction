@@ -1,0 +1,8 @@
+{
+  "resources": {
+    "imageIDLabel": "Image Name",
+    "imageIDHelpText": "Please enter Images name in comma seperated",
+    "description": "Images",
+    "title": "Images"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "titleResourceId": "title",
+  "properties": [
+    {
+      "name": "ArticleImage1Des",
+      "id": "ArticleImage1Des",
+      "type": "stringType",
+      "helpTextResourceId": "ArticleFirstImageDeschelp",
+      "labelResourceId": "ArticleFirstImageDescTextLabel"
+    },
+    {
+      "name": "ArticleImage2Des",
+      "id": "ArticleImage2Des",
+      "type": "stringType",
+      "helpTextResourceId": "ArticleSecondImageDeschelp",
+      "labelResourceId": "ArticleSecondImageDescTextLabel"
+    },
+    {
+      "name": "ArticleImage3Des",
+      "id": "ArticleImage3Des",
+      "type": "stringType",
+      "helpTextResourceId": "ArticleThirdImageDeschelp",
+      "labelResourceId": "ArticleThirdImageDescTextLabel"
+    },
+    {
+      "name": "ArticleImage4Des",
+      "id": "ArticleImage4Des",
+      "type": "stringType",
+      "helpTextResourceId": "ArticleFourthImageDeschelp",
+      "labelResourceId": "ArticleFourthImageDescTextLabel"
+    },
+    {
+      "name": "ArticleImage1URL",
+      "id": "ArticleImage1URL",
+      "type": "stringType",
+      "helpTextResourceId": "ArticleFirstImageUrlhelp",
+      "labelResourceId": "ArticleFirstImageUrlTextLabel"
+    },
+    {
+      "name": "ArticleImage2URL",
+      "id": "ArticleImage2URL",
+      "type": "stringType",
+      "helpTextResourceId": "ArticleSecondImageUrlhelp",
+      "labelResourceId": "ArticleSecondImageUrlTextLabel"
+    },
+    {
+      "name": "ArticleImage3URL",
+      "id": "ArticleImage3URL",
+      "type": "stringType",
+      "helpTextResourceId": "ArticleThirdImageUrlhelp",
+      "labelResourceId": "ArticleThirdImageUrlTextLabel"
+    },
+    {
+      "name": "ArticleImage4URL",
+      "id": "ArticleImage4URL",
+      "type": "stringType",
+      "helpTextResourceId": "ArticleFourthImageUrlhelp",
+      "labelResourceId": "ArticleFourthImageUrlTextLabel"
+    },
+    {
+      "name": "ArticleImage1",
+      "id": "ArticleImage1",
+      "type": "mediaType",
+      "helpTextResourceId": "ArticleFirstImagehelp",
+      "labelResourceId": "ArticleFirstImageTextLabel"
+    },
+    {
+      "name": "ArticleImage2",
+      "id": "ArticleImage2",
+      "type": "mediaType",
+      "helpTextResourceId": "ArticleSecondImagehelp",
+      "labelResourceId": "ArticleSecondImageTextLabel"
+    },
+    {
+      "name": "ArticleImage3",
+      "id": "ArticleImage3",
+      "type": "mediaType",
+      "helpTextResourceId": "ArticleThirdImagehelp",
+      "labelResourceId": "ArticleThirdImageTextLabel"
+    },
+    {
+      "name": "ArticleImage4",
+      "id": "ArticleImage4",
+      "type": "mediaType",
+      "helpTextResourceId": "ArticleFourthImagehelp",
+      "labelResourceId": "ArticleFourthImageTextLabel"
+    }
+  ],
+  "descriptionResourceId": "description"
+}

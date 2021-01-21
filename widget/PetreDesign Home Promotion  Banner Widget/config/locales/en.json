@@ -1,0 +1,30 @@
+{
+  "resources": {
+    "PromoBanner1LinkLabel": "Promo Banner1 Link",
+    "PromoBanner4ImageText": "Enter Promo Banner4 Image Name",
+    "PromoBanner4LinkLabel": "Promo Banner4 Link",
+    "PromoBanner1ImageText": "Enter Promo Banner1 Image Name",
+    "enabledLabel": "Widget Enable",
+    "HomeBannerLinkLabel": "Home Banner Link",
+    "HomeBannerImageLabel": "Home BannerImage Name",
+    "HomeBannerImageText": "Enter HomeBanner Image Name",
+    "enabledHelpText": "Enable the Home Banner Widget",
+    "PromoBanner3LinkLabel": "Promo Banner3 Link",
+    "PromoBanner4ImageLabel": "Promo Banner4 Name",
+    "PromoBanner1ImageLabel": "Promo Banner1 Name",
+    "PromoBanner4LinkText": "Enter Promo Banner4 Link",
+    "PromoBanner3LinkText": "Enter Promo Banner3 Link",
+    "PromoBanner5LinkText": "Enter Promo Banner5 Link",
+    "PromoBanner2LinkText": "Enter Promo Banner2 Link",
+    "PromoBanner2ImageText": "Enter Promo Banner2 Image Name",
+    "PromoBanner5LinkLabel": "Promo Banner5 Link",
+    "PromoBanner2ImageLabel": "Promo Banner2 Name",
+    "PromoBanner1LinkText": "Enter Promo Banner1 Link",
+    "PromoBanner2LinkLabel": "Promo Banner2 Link",
+    "HomeBannerLinkText": "Enter Home Banner Link",
+    "PromoBanner3ImageLabel": "Promo Banner3 Name",
+    "PromoBanner3ImageText": "Enter Promo Banner3 Image Name",
+    "PromoBanner5ImageText": "Enter Promo Banner5 Image Name",
+    "PromoBanner5ImageLabel": "Promo Banner5 Name"
+  }
+}

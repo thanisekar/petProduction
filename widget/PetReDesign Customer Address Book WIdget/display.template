@@ -1,0 +1,403 @@
+<div id="CC-checkoutAddressBook">
+   <div class="row">
+       <div class="col-md-9 col-sm-12 checkoutAddressBook-center">
+           <fieldset id="shippingAddress" data-bind="disable: shippingCountriesPriceListGroup().length == 0">
+    <div class="header-wrapper">
+        <div class="circle">2</div><h2 data-bind="widgetLocaleText:'shippingAddressText'"></h2>
+    </div>
+      <!-- View Begin -->
+           <!--<pre data-bind="text: ko.toJSON(order().shippingAddress(), null, 2)"></pre>-->
+              <!-- ko with: order().shippingAddress -->
+                <address class="shipping-address-view col-sm-10" data-bind="visible: $parent.isUsingSavedAddress()">
+                  <div data-bind="visible: isDefaultAddress">
+                    <span class="default-address">Selected Address</span>
+                    <br />
+                  </div>
+                  <span class="address-field" data-bind="text:county"></span>
+                  <br/>
+                  <span class="address-field" data-bind="text: firstName"></span>&nbsp;<span class="address-field" data-bind="text: lastName"></span>
+                  <br/>
+                  <span class="address-field" data-bind="text: address1"></span>
+                  <!-- ko if: address2 -->
+                    <br/>
+                    <span class="address-field" data-bind="text: address2"></span>
+                  <!-- /ko -->
+                  <br/>
+                  <span class="address-field" data-bind="text: city"></span>, <span class="address-field" data-bind="text: state"></span>&nbsp; <span class="address-field" data-bind="text: postalCode"></span>
+                  <br/>
+                  <span class="address-field" data-bind="text: country"></span>
+                  <!-- ko if: phoneNumber -->
+                    <br/>
+                    <span class="address-field" data-bind="text: phoneNumber"></span>
+                  <!-- /ko -->
+                  <br />
+                  <!-- ko ifnot: isValid() -->
+                  <br />
+                  <span class="address-field text-danger" data-bind="widgetLocaleText: 'unsupportedShippingAddressText'"></span>
+                  <!-- /ko -->
+                </address>
+              <!-- /ko -->
+             <div class='shipping-addressBook'> 
+        <!--  <pre data-bind="text: ko.toJSON(shippingAddressBook(), null, 2)"></pre>-->
+           
+                  <!-- ko foreach: $data.shippingAddressBook -->
+             
+                    <address class="shipping-address-view" data-bind="click: $parent.selectShippingAddress" tabindex="1">
+                      <div data-bind="visible: isDefaultAddress">
+                            <span class="default-address"></span>
+                            <br />
+                      </div>
+                      <span class="address-field" data-bind="text:county"></span>
+                      <br/>
+                      <span class="address-field" data-bind="text: firstName"></span>&nbsp;<span class="address-field" data-bind="text: lastName"></span>
+                      <br/>
+                      <span class="address-field" data-bind="text: address1"></span>
+                      <!-- ko if: address2 -->
+                        <br/>
+                        <span class="address-field" data-bind="text: address2"></span>
+                      <!-- /ko -->
+                      <br/>
+                      <span class="address-field" data-bind="text: city"></span>, <span class="address-field" data-bind="text: state">&nbsp;</span> <span class="address-field" data-bind="text: postalCode"></span>
+                      <br/>
+                      <span class="address-field" data-bind="text: country"></span>
+                      <!-- ko if: phoneNumber -->
+                        <br/>
+                        <span class="address-field" data-bind="text: phoneNumber"></span>
+                      <!-- /ko -->
+                      <br />
+                      <button class="cc-button-primary selectShippingAddress" tabindex="1"
+                              data-bind="click: $parent.selectShippingAddress,
+                                         attr: {id: 'cc-checkout-select-address' + $index()}">
+                          <!-- ko if: isDefaultAddress -->
+                          <span class="glyphicon glyphicon-ok"></span>
+                          <!-- /ko -->
+                          <!-- ko ifnot: isDefaultAddress -->
+                          <span class="glyphicon"></span>
+                          <!-- /ko -->
+                          <span data-bind="widgetLocaleText: 'selectAddressText'"></span> 
+                      </button>
+                     
+                    </address>
+                     
+                  <!-- /ko -->
+                  <!-- ko if: $data.shippingAddressBook().length === 0 -->
+                   <!-- <span data-bind="widgetLocaleText: 'noAddressesText'"></span>-->
+                  <!-- /ko -->
+            </div>
+      
+      <div class="modal fade" id="CC-addressBook-picker" data-bind="modal: 0, modalTabbingContraint">
+        <div class="modal-dialog cc-modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 data-bind="widgetLocaleText: 'addressBookText'"></h3>
+            </div>
+            <div class="modal-body cc-modal-body">
+              <!-- ko foreach: $data.shippingAddressBook -->
+                <address class="shipping-address-view" data-bind="click: $parent.selectShippingAddress" tabindex="1">
+                  <div data-bind="visible: isDefaultAddress">
+                    <span class="default-address" data-bind="widgetLocaleText: 'defaultAddressLabel'"></span>
+                    <br />
+                  </div>
+                  <span class="address-field" data-bind="text:county"></span>
+                  <br/>
+                  <span class="address-field" data-bind="text: firstName"></span>&nbsp;<span class="address-field" data-bind="text: lastName"></span>
+                  <br/>
+                  <span class="address-field" data-bind="text: address1"></span>
+                  <!-- ko if: address2 -->
+                    <br/>
+                    <span class="address-field" data-bind="text: address2"></span>
+                  <!-- /ko -->
+                  <br/>
+                  <span class="address-field" data-bind="text: city"></span>, <span class="address-field" data-bind="text: state"></span>&nbsp; <span class="address-field" data-bind="text: postalCode"></span>
+                  <br/>
+                  <span class="address-field" data-bind="text: country"></span>
+                  <!-- ko if: phoneNumber -->
+                    <br/>
+                    <span class="address-field" data-bind="text: phoneNumber"></span>
+                  <!-- /ko -->
+                  <br />
+               
+                </address>
+              <!-- /ko -->
+              <!-- ko if: $data.shippingAddressBook().length === 0 -->
+                <span data-bind="widgetLocaleText: 'noAddressesText'"></span>
+              <!-- /ko -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- View End -->
+      <div id="CC-checkoutAddressBook-shippingAddress-edit" data-bind="visible: !isUsingSavedAddress()">
+      <!-- Edit begin -->
+      <!-- ko with: order().shippingAddress -->
+          <form role="form"  id="checkoutAddressBook" novalidate="novalidate" >
+            <!-- ko if: $parent.user().loggedIn() -->
+            <div class="form-group form-elements">
+                <label class="control-label label-text inline-label"  for="txtAddressNickName3" >Nickname</label>
+                <input type="text" class="form-control input-box"  placeholder="Nickname" minlength="3" maxlength="50" id="txtAddressNickName3" name="txtAddressNickName3" data-bind="validatableValue: county">
+                <span class="displayErrorIcons"></span>
+            </div>
+            <!-- /ko -->
+              <div class="form-group form-elements">
+                 <label for="txtFirstName3" class="control-label label-text">First Name</label>
+                 <input type="text" class="form-control input-box" placeholder="First Name" id="txtFirstName3" minlength="2" maxlength="40" name="txtFirstName3" data-bind="validatableValue: firstName">
+                  <span class="displayErrorIcons"></span>
+              </div>
+              <div class="form-group form-elements">
+               <label for="txtLastName3" class="control-label label-text">Last Name</label>
+                <input type="text" class="form-control input-box" placeholder="Last Name" id="txtLastName3" minlength="2" maxlength="40" name="txtLastName3" data-bind="validatableValue: lastName">
+                 <span class="displayErrorIcons"></span>
+              </div>
+              <div class="form-group form-elements">
+                   <label for="txtAddress31 " class="control-label label-text">Shipping Address</label>
+                   <input type="text" class="form-control input-box" placeholder="Shipping Address" id="txtAddress31" name="txtAddress31" minlength="3" maxlength="50" data-bind="validatableValue: address1">
+                   <span class="displayErrorIcons"></span>
+              </div>
+              <div class="form-group form-elements">
+                 <label for="txtAddress32" class="control-label label-text">Address 2 (optional)</label>
+                  <input type="text" class="form-control input-box" placeholder="" id="txtAddress32" name="txtAddress32" minlength="3" maxlength="50" data-bind="validatableValue: address2">
+                   <span class="displayErrorIcons"></span>
+              </div>
+              <!--Business-->
+              <div class="business-address">
+              <label for="business" class="control-primary">
+                  <input type="checkbox" name="business" id="business" tabindex="0">
+        		 <span class="control-indicator"></span>
+        		 <span class="default-link">Business/Commercial Address</span>
+		    </label>   
+            </div>
+              <div class="business-input" style="display: none">
+             <div class="form-group form-elements">
+                <!--  <label for="txtAddress33" class="control-label label-text">Address 3</label>-->
+                  <input type="text" class="form-control input-box" placeholder="Company Name, c/o" id="txtAddress33" name="txtAddress33"  maxlength="50" data-bind="validatableValue: companyName">
+                   <span class="displayErrorIcons"></span>
+              </div>
+          </div>
+              <!--Ends-->
+               <!--Special Instructions-->
+              <!--<div class="special-instructions">
+                <div class="checkbox checkbox-primary">
+                     <input type="checkbox" name="specialInstructions" id="specialInstructions" tabindex="0">
+                     <label for="specialInstructions" class="control"></label>
+                     <span >Special Delivery Instructions</span>
+                  
+              </div> 
+              
+              
+            </div>
+            -->
+           <!--   <div class="instructions-input" style="display: none">
+                 <div class="form-group form-elements">
+                    <label class="control-label label-text" for="CC-checkoutAddressBook-businessAddress"></label>
+                    <input type="text" class="form-control input-box" name="" id="CC-checkoutAddressBook-businessAddressInBilling" placeholder='Access code , area to drop package' aria-required="true"  data-bind='validatableValue :jobTitle' >
+                </div>
+          </div>-->
+              <!--Ends-->
+              <div class="form-group form-elements">
+                <label for="txtCity3" class="inline-label control-label label-text">City</label>
+                <input type="text" class="form-control input-box" id="txtCity3"  placeholder="City" name="txtCity3" maxlength="30" data-bind="validatableValue: city">
+                 <span class="displayErrorIcons"></span>
+              </div>
+              <div class="form-group select-options">
+                <div class="col-md-4 form-elements nopad-left">
+                    <label for="selectState3" class="inline-label control-label label-text">State</label>
+                    <div class="select">
+                       
+                      <select class="form-control" name="selectState3" id="selectState3"  data-bind="enable: stateList().length, options: stateList,
+                        optionsText: function(item) { return item.displayName; }, optionsValue: 'abbreviation',
+                        optionsCaption: 'Select a State', value: selectedState, 
+                        validatableTarget: state, validationElement: state">
+                      </select>
+                      
+                    </div>
+                </div>
+                <div class="col-md-4  form-elements nopad-left">
+                   <label for="shipCountry" class=" control-label label-text">Country</label>
+                    <div class="select">
+                      <select name="country" placeholder="United States" class="form-control" id="shipCountry" data-bind="enable: $parent.shippingCountries().length, options: $parent.shippingCountries, optionsText: 'displayName',
+                        optionsValue: 'countryCode', optionsCaption: $parent.resources().countryText, value: selectedCountry, 
+                        validatableTarget: country, validationElement: country"></select>
+                    </div>
+                </div>
+                <div class="col-md-4 form-elements  txtzipcodeshipping nopad-left">
+                     <label for="txtZip3" class=" control-label label-text" >Zip code</label>
+                     <input type="text" class="form-control input-box zipCode" placeholder="Zip Code" id="txtZip3" name="txtZip3" maxlength="10" data-bind="validatableValue: postalCode">
+                      <span class="displayErrorIcons"></span>
+                </div>
+                <div style="clear: both"></div>
+              </div>
+              <div class="form-group form-elements">
+               <label for="txtPhoneNumber3" class="inline-label control-label label-text">
+                  Phone Number</label>
+                  <input type="tel" class="form-control input-box" placeholder="123-456-7890" id="txtPhoneNumber3"  maxlength="14" name="txtPhoneNumber3" data-bind="validatableValue: phoneNumber">
+                  <span class="displayErrorIcons"></span>
+              </div>
+              
+          </form>
+          
+      <!-- /ko -->
+      <!-- Edit ends -->
+    </div>
+    
+    
+    <!-- ko if: user().loggedIn() -->
+    <div class="row edit-add-address-btn">
+        <div class="col-xs-8 wrapper nopad">
+            <button class="cc-button-primary hide " id="cc-checkout-show-address-book"
+                href="#CC-addressBook-picker" data-toggle="modal"
+                data-bind="visible: (isUsingSavedAddress() && $data.shippingAddressBook().length > 1) ||
+                                    (!isUsingSavedAddress() && $data.shippingAddressBook().length > 0)">
+          <span data-bind="widgetLocaleText: 'addressBookText'"></span>
+        </button>
+          <a class="addNewAddress" id="cc-checkout-add-address"
+                data-bind="click: handleAddNewShippingAddress,
+                           visible: $data.shippingAddressBook().length > 0">
+           Add address
+        </a>
+        </div>
+    </div>
+    <!-- /ko -->
+    
+    
+    <div class="row" data-bind="visible: (!billingAddressEnabled() && displayUseAsBillAddress())">
+       <div class="form-group col-sm-12" >
+            	<label for="CC-checkoutAddressBook-useAsBillAddress" class="control-primary">	
+            <input type="checkbox" name="useAsBillAddress" 
+            data-bind="checked: useAsBillAddress" id="CC-checkoutAddressBook-useAsBillAddress" 
+            class="checkbox" >
+             <span class="control-indicator"></span>
+	     <span class="default-link" data-bind="widgetLocaleText:'useBillingAddressText'"></span>
+	     </label>
+       </div>
+    </div>
+    <div class="row text-danger col-sm-12" data-bind="visible: displayInvalidBillingAddressText()" role="alert" aria-live="rude">      
+      <span data-bind="widgetLocaleText: 'invalidBillingAddressText'"></span>
+    </div>
+
+  </fieldset>
+     
+  <!-- ko if: (!billingAddressEnabled()) -->
+  <div id="collapsibleBillingAddress" data-bind="visible: (!displayUseAsBillAddress() || !useAsBillAddress())">
+  <form class="clearfix my-account-form " id="billingAddressBook">
+  	<fieldset id="billingAddress" data-bind="with: order().billingAddress, inTabFlow: (!displayUseAsBillAddress() || !useAsBillAddress())">
+    <div class="header-wrapper">
+        <h2 data-bind="widgetLocaleText:'billingAddressText'"></h2>
+    </div>
+        <div class='billingAddressForm'>
+           <div class="row">
+            <div class="form__item col-xs-12 col-sm-12 col-md-12 col-lg-12 left column form-elements">
+              <label for="txtFirstName221" class="inline-label control-label label-text" >First Name</label>
+              <input type="text" class="form-control input-box" placeholder="First Name" id="txtFirstName221" minlength="2" maxlength="40" name="txtFirstName221" data-bind="validatableValue: firstName">
+               <span class="displayErrorIcons"></span>
+            </div>
+          </div>
+           <div class="row">
+            <div class="form__item col-xs-12 col-sm-12 col-md-12 col-lg-12 left column form-elements">
+              <label for="txtLastName121" class="inline-label control-label label-text">Last Name</label>
+          
+              <input type="text" class="form-control input-box" placeholder="Last Name" id="txtLastName121" minlength="2" maxlength="40" name="txtLastName121" data-bind="validatableValue: lastName">
+               <span class="displayErrorIcons"></span>
+            </div>
+          </div>
+           <div class="row">
+            <div class="form__item col-xs-12 col-sm-12 col-md-12 col-lg-12 left column form-elements">
+              <label for="txtAddress1234" class="inline-label control-label label-text" >Shipping Address</label>
+              <input type="text" class="form-control input-box" placeholder="Shipping Address" id="txtAddress1234" name="txtAddress1234" minlength="3" maxlength="50" data-bind="validatableValue: address1">
+               <span class="displayErrorIcons"></span>
+            </div>
+          </div>
+           <div class="row">
+            <div class="form__item col-xs-12 col-sm-12 col-md-12 col-lg-12 left column form-elements">
+              <label for="txtAddress2231" class="inline-label control-label label-text">Address 2(optional)</label>
+              <input type="text" class="form-control input-box" placeholder="apartment, suite, unit, building, floor, etc." id="txtAddress2231" name="txtAddress2231" minlength="3" maxlength="50" data-bind="validatableValue: address2">
+               <span class="displayErrorIcons"></span>
+            </div>
+          </div>
+            <label for="billidngaddr-businessChkbx" class="control-primary">
+        		 <input type="checkbox" name="" id="billidngaddr-businessChkbx" tabindex="0"> 
+        		 <span class="control-indicator"></span>
+        		 <span class="default-link">Business/Commercial Address</span>
+		   </label> 
+           <div class="billidngaddrbusiness-input" style="display: none">
+              <div class="row">
+                    <div class="form__item col-xs-12 col-sm-12 col-md-12 col-lg-12 left column form-elements">
+                      <!--<label for="txtAddress3231" class="inline-label control-label label-text" >Address 3</label>-->
+                      <input type="text" class="form-control input-box" placeholder="Company Name, c/o" id="txtAddress3231" name="txtAddress3231" maxlength="50">
+                       <span class="displayErrorIcons"></span>
+                              <!--<input id="address-line3" minlength="3" maxlength="50" placeholder="address line 3" name="address3" value="" class="input-field" type="text">-->
+                    </div>
+                  </div>
+                </div>  
+        <!--   <div class="checkbox checkbox-primary">
+               <input type="checkbox" name="" id="billing_specialInstructions" tabindex="0">
+                 <label for="billing_specialInstructions" class="control"></label>
+                     <span >Special Delivery Instructions</span>
+            </div>-->
+            
+          <!-- <div class="billing_instructions-input" style="display: none">
+                 <div class="form-group form-elements">
+                    <label class="control-label label-text" for="CC-checkoutAddressBook-businessAddress"></label>
+                    <input type="text" class="form-control input-box" name="" id="CC-checkoutAddressBook-businessAddress-shipping" placeholder='Access code , area to drop package'  data-bind='validatableValue :jobTitle' aria-required="true" >
+                </div>
+          </div>  -->  
+           <div class="row">
+            <div class="form__item col-xs-12 col-sm-12 col-md-12 col-lg-12 left column form-elements">
+                  <label for="txtCity231" class="inline-label control-label label-text" >City</label>
+                  <input type="text" class="form-control input-box" id="txtCity231"  placeholder="city" name="txtCity231" maxlength="30" data-bind="validatableValue: city">
+                   <span class="displayErrorIcons"></span>
+                </div>
+          </div>
+           <div class="row area">
+               <div class="col-sm-4 col-xs-12 nopad-left form-elements">
+                     <div class="form__item col-xs-12 col-sm-12 col-md-12 col-lg-12 columns clearfix">
+                         <label for="selectState231" class="inline-label control-label label-text" >State</label>
+                      
+                          <div class="select">
+                            <select class="form-control" name="selectState231" id="selectState231"  data-bind="enable: stateList().length, options: stateList,
+                              optionsText: function(item) { return item.displayName; }, optionsValue: 'abbreviation',
+                              optionsCaption: 'Select a State', value: selectedState, 
+                              validatableTarget: state, validationElement: state">
+                            </select>
+                          </div>
+                    </div>
+               </div>
+               <div class="col-sm-4 col-xs-12 nopad-left form-elements">
+                    <div class="form__item col-xs-12 col-sm-12 col-md-12 col-lg-12 left column">
+                        <label for="txtZip231" class="inline-label  control-label label-text" >Zip Code</label>
+                        <input type="text" class="form-control input-box zipCode" placeholder="zip code" id="txtZip231" name="txtZip231" maxlength="10" data-bind="validatableValue: postalCode">
+                         <span class="displayErrorIcons"></span>
+                </div>
+               </div>
+               <div class="col-sm-4 col-xs-12 nopad-left">
+                    <div class="form__item col-xs-12 col-sm-12 col-md-12 col-lg-12 columns clearfix form-elements">
+                      <label for="country1" class="inline-label control-label label-text" >Country</label>
+                   
+                      <div class="select">
+                        <select name="country1" class="form-control" data-bind="enable: $parent.shippingCountries().length, options: $parent.shippingCountries, optionsText: 'displayName',
+                          optionsValue: 'countryCode', optionsCaption: $parent.resources().countryText, value: selectedCountry, 
+                          validatableTarget: country, validationElement: country"></select>
+                      </div>
+                    </div>
+               </div>
+           </div>
+           <div class="row">
+            <div class="column edit-profile-container">
+              <div class="row row-collapse">
+                <div class="form__item col-xs-12 col-sm-12 col-md-12 col-lg-12 columns clearfix left mb-20 form-elements">
+                  <label for="txtPhoneNumber231" class="phoneNumber control-label label-text">
+                    Phone Number
+                  </label>
+                  <input type="text" class="form-control billingAddrPhone input-box" placeholder="123-456-7890" id="txtPhoneNumber231"  maxlength="14" name="txtPhoneNumber231" data-bind="validatableValue: phoneNumber">
+                   <span class="displayErrorIcons"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </fieldset>
+  </form>
+  </div>
+    <!-- /ko -->
+       </div>
+   </div>
+</div>

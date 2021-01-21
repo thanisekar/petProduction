@@ -1,0 +1,16 @@
+{
+  "resources": {
+    "returnReasonHelpText": "Enter reason for order return",
+    "returnPostURLHelpText": "Enter return POST URL",
+    "loginURLLabel": "Login",
+    "userNameLabel": "User Name",
+    "description": "Order Return Request Reasons",
+    "returnPostURLLabel": "Enter Return Request URL",
+    "title": "Order Return Request",
+    "loginURLHelpText": "Enter Login URL",
+    "userNameHelpText": "Enter User Name",
+    "returnReasonLabel": "Return Reason",
+    "passwordHelpText": "Enter Password",
+    "passwordLabel": "Password"
+  }
+}

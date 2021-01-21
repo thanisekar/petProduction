@@ -1,0 +1,19 @@
+{
+  "elementInstances": [
+    {
+      "customTitle": "Rich_Text_2000001",
+      "styles": {},
+      "tag": "rich-text@2000001",
+      "text": null,
+      "richTextConfig": {
+        "content": " "
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    }
+  ]
+}

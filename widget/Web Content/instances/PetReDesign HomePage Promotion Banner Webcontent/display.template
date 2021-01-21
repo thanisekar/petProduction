@@ -1,0 +1,134 @@
+<!-- ko setContextVariable: {name: 'elementConfig', value: {
+  "1900010": {
+    "border": {
+      "borderColor": "#000000",
+      "borderWidth": 0
+    },
+    "horizontalAlignment": {"horizontalAlignment": "left"},
+    "id": "1900010",
+    "image": {
+      "altText": "${occ:widgetCustomText('1900005')}",
+      "altTextId": "1900005",
+      "isProductImage": false,
+      "link": "/emailsignup",
+      "src": "/file/v4326542414986873786/general/Jan21Email_SignUp_Homepage.jpg",
+      "titleText": "${occ:widgetCustomText('1900006')}",
+      "titleTextId": "1900006",
+      "zoomEnabled": false
+    },
+    "padding": {
+      "paddingBottom": "0",
+      "paddingLeft": "0",
+      "paddingRight": "0",
+      "paddingTop": "0"
+    }
+  },
+  "1900011": {
+    "border": {
+      "borderColor": "#000000",
+      "borderWidth": 0
+    },
+    "horizontalAlignment": {"horizontalAlignment": "left"},
+    "id": "1900011",
+    "image": {
+      "altText": "${occ:widgetCustomText('1900003')}",
+      "altTextId": "1900003",
+      "isProductImage": false,
+      "link": "/category/brand-fatcat",
+      "src": "/file/v68127129636204598/general/January-2021_FC_Cat-Toy-Awa.jpg",
+      "titleText": "${occ:widgetCustomText('1900004')}",
+      "titleTextId": "1900004",
+      "zoomEnabled": false
+    },
+    "padding": {
+      "paddingBottom": "0",
+      "paddingLeft": "0",
+      "paddingRight": "0",
+      "paddingTop": "0"
+    }
+  },
+  "1900013": {
+    "id": "1900013",
+    "padding": {
+      "paddingBottom": "0",
+      "paddingLeft": "0",
+      "paddingRight": "0",
+      "paddingTop": "0"
+    },
+    "richText": {
+      "content": "${occ:localizedWebContent('m398691')}",
+      "sourceMedia": "m398691"
+    }
+  },
+  "2300001": {
+    "border": {
+      "borderColor": "#000000",
+      "borderWidth": 0
+    },
+    "horizontalAlignment": {"horizontalAlignment": "left"},
+    "id": "2300001",
+    "image": {
+      "altText": "${occ:widgetCustomText('3000001')}",
+      "altTextId": "3000001",
+      "isProductImage": false,
+      "link": "/nano",
+      "src": "/file/v6825250209257088652/general/January-2021_G2_Nano_Web-Ba.jpg",
+      "titleText": "${occ:widgetCustomText('2100001')}",
+      "titleTextId": "2100001",
+      "zoomEnabled": false
+    },
+    "padding": {
+      "paddingBottom": "0",
+      "paddingLeft": "0",
+      "paddingRight": "0",
+      "paddingTop": "0"
+    }
+  }
+}} --><!-- /ko -->
+
+<!-- oc layout: panels -->
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-0-0">
+
+      <!-- oc section: rich-text -->
+<span data-bind="element: 'rich-text',id: '1900013'"></span>
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+
+  <div class="row">
+
+    <div class="oc-panel col-md-4" data-oc-id="panel-1-0">
+
+      <!-- oc section: image -->
+<span data-bind="element: 'image',id: '1900011'"></span>
+      <!-- /oc -->
+
+    </div>
+
+
+    <div class="oc-panel col-md-4" data-oc-id="panel-1-1">
+
+      <!-- oc section: image -->
+<span data-bind="element: 'image',id: '1900010'"></span>
+
+      <!-- /oc -->
+
+    </div>
+
+
+    <div class="oc-panel col-md-4" data-oc-id="panel-1-2">
+
+      <!-- oc section: image -->
+<span data-bind="element: 'image',id: '2300001'"></span>
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+  <!-- /oc -->

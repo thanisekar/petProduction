@@ -1,0 +1,19 @@
+{
+  "imports": [
+    "product"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Knockout Owl Corousel",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "enabled": true,
+    "productId": "29126,43170,CI01,27462,44069,610403,22099,22842,00100,41037,43272"
+  }
+}

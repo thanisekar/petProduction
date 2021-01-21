@@ -1,0 +1,37 @@
+<!-- ko setContextVariable: {name: 'elementConfig', value: {"2500015": {
+  "border": {
+    "borderColor": "#000000",
+    "borderWidth": 0
+  },
+  "horizontalAlignment": {"horizontalAlignment": "left"},
+  "id": "2500015",
+  "image": {
+    "isProductImage": false,
+    "src": "/file/v7569941924778095668/general/AboutUs_Banner.jpg",
+    "titleText": "About Us",
+    "titleTextId": "2300011",
+    "zoomEnabled": false
+  },
+  "padding": {
+    "paddingBottom": "0",
+    "paddingLeft": "0",
+    "paddingRight": "0",
+    "paddingTop": "0"
+  }
+}}} --><!-- /ko -->
+
+<!-- oc layout: panels -->
+  <div class="row">
+
+    <div class="oc-panel col-md-12 nopad" data-oc-id="panel-0-0">
+
+      <!-- oc section: image -->
+<span data-bind="element: 'image',id: '2500015'"></span>
+
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+  <!-- /oc -->

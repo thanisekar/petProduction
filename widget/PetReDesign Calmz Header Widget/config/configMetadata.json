@@ -1,0 +1,38 @@
+{
+  "titleResourceId": "title",
+  "properties": [
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "PhoneNumberText",
+      "id": "PhoneNumberText",
+      "helpTextResourceId": "PhoneNumberTextHelpText",
+      "labelResourceId": "PhoneNumberTextLabel",
+      "type": "stringType",
+      "maxLength": 250
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "BuyNowButtonText",
+      "id": "BuyNowButtonText",
+      "helpTextResourceId": "BuyNowButtonTextHelpText",
+      "labelResourceId": "BuyNowButtonTextLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "BuyNowButtonLink",
+      "id": "BuyNowButtonLink",
+      "helpTextResourceId": "BuyNowButtonLinkHelpText",
+      "labelResourceId": "BuyNowButtonLinkLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    }
+  ],
+  "descriptionResourceId": "description"
+}

@@ -1,0 +1,112 @@
+<div id="CC-promotionDetails">
+  <div class="row">
+      <div class="col-md-7 col-sm-10 promotionDetails-center nopad">
+          <fieldset>
+    <div class="row col-sm-12">
+      
+      <div class="form-group">
+        <div class="control promo-control">
+          <span class="promo-label" data-bind="widgetLocaleText: 'promotionLabelText'"></span>
+        </div>
+      </div>
+      <div class="visible-xs col-xs-12 ">
+        <!-- ko if: cart().couponErrorMessage() -->
+          <!--<p class="text-danger" id="CC-promotionDetails-promoCodeApply-error-xs" data-bind="text : cart().couponErrorMessage()" role="alert"></p>-->
+          <!--<p class="text-danger" id="CC-promotionDetails-promoCodeApply-error-xs" role="alert"></p>-->
+        <!-- /ko -->
+        <!-- ko ifnot: cart().couponErrorMessage() -->
+         <!-- <p class="text-danger" id="CC-promotionDetails-promoCode-error-xs" data-bind="validationMessage:promoCode" role="alert"></p>-->
+        <!-- /ko -->
+      </div>
+      <div class="row promoCode nopad">
+          <div class="text-center  promo-div  nopad">
+              <div class="promoCode-Input form-group col-md-9 col-sm-7 col-xs-8 nopad">
+                <div class="control">
+                  <input type="text" class="input-inline" placeholder="Enter Promo Code" name="promoCode" id="CC-promotionDetails-promoCode" data-bind="validatableValue:promoCode, widgetLocaleText : {value:'promoCodeAriaLabelText', attr:'aria-label'}">
+                </div>
+              </div>
+              <div class="form-group col-md-3 col-sm-5 col-xs-4 nopad apply-content">
+                <a href="#" id="CC-promotion-applyCode" class="cc-button-secondary" data-bind="disabled: {condition: cart().items().length == 0 || isApplyCodeClicked, click: handleApplyCoupon}, inTabFlow: cart().items().length != 0">
+                  <!-- ko ifnot: isApplyCodeClicked -->
+                    <span id="CC-promotion-applyCodeButton" data-bind="widgetLocaleText:'buttonApplyCodeText'"></span>
+                  <!-- /ko -->
+                  <!-- ko if: isApplyCodeClicked -->
+                    <span id="CC-promotion-applyingCodeButton" data-bind="widgetLocaleText:'buttonApplyingCodeText'"></span>
+                  <!-- /ko -->
+                </a>
+              </div>
+          </div>
+      </div>
+     <!--Error Texts-->
+     <div class="col-sm-12 col-md-12">
+         
+        <!-- ko if: cart().couponErrorMessage() -->
+         <!--<p class="text-danger" id="promotionDetails-promoCode-error" data-bind="validationMessage:promoCode" role="alert"></p>-->
+          <p class="text-danger" id="CC-promotionDetails-promoCodeApply-error" data-bind="text : cart().couponErrorMessage()" role="alert"></p>
+         
+        <!-- /ko -->
+        <!-- ko ifnot: cart().couponErrorMessage() -->
+          <!--<p class="text-danger" id="CC-promotionDetails-promoCode-error" data-bind="validationMessage:promoCode" role="alert"></p>-->
+           <p class="text-danger invalid-promo" id="CC-promotionDetails-promoCodeApply-error-xs" role="alert"></p>
+        <!-- /ko -->
+      </div>
+     
+     
+     <!--Ends-->
+    </div>
+  </fieldset>
+  
+
+  
+  <!--Ends-->
+   <!-- List of coupons used -->
+ <!--<pre data-bind="text: ko.toJSON(cart().coupons(),  null, 2)"></pre>-->
+     <div id="CC-orderSummary-coupons" class="clearfix discountDescText" data-bind="foreach: cart().coupons()">
+     
+        
+       <!-- ko if: $data.status() === "claimed" -->
+        
+         <div data-bind="attr: { id: 'CC-orderSummary-couponEntry-' + $index() }">
+           <div class="row">
+                 <!--empty error message-->
+
+  
+             <!-- ko if : $data.level() === "order" -->
+             <div class="col-xs-9">
+                 <div class="applied-coupon">Applied: <span class="coupon-display-code" data-bind="widgetLocaleText : {value:'orderCouponDisplayText', attr: 'innerText', params: {code : code()}}"></span></div>
+                 <div class="couponText" data-bind="widgetLocaleText : {value:'orderCouponDisplayText', attr: 'innerText', params: {description: description()}}"></div>
+             </div>
+               
+             <!-- /ko -->
+             <!-- ko if : $data.level() === "item" -->
+             <div class="col-xs-9">
+                 <div class="applied-coupon">Applied: <span class="coupon-display-code" data-bind="widgetLocaleText : {value:'orderCouponDisplayText', attr: 'innerText', params: {code : code()}}"></span></div>
+                 <div class="couponText" data-bind="widgetLocaleText : {value:'couponDisplayText', attr: 'innerText', params: {description: description()}}"></div>
+             </div>
+               
+             <!-- /ko -->
+
+               <!-- ko if : $data.level() === "shipping" -->
+               <div class="col-xs-9">
+                 <div class="applied-coupon">Applied: <span class="coupon-display-code" data-bind="widgetLocaleText : {value:'orderCouponDisplayText', attr: 'innerText', params: {code : code()}}"></span></div>
+                 <div class="couponText" data-bind="widgetLocaleText : {value:'couponDisplayText', attr: 'innerText', params: {description: description()}}"></div>
+             </div>
+                 
+               <!-- /ko -->
+
+             <!--<span class="col-xs-3"><a href="#" class="text-underline pull-right" id="appliedCoupon" data-bind="widgetLocaleText: {attr: 'innerText', value: 'X'}, attr: {'aria-label': $parent.cart().getRemoveCouponReadText()}, click: $parent.cart().removeCoupon.bind($parent.cart())" onclick="removeCoup()"></a></span>-->
+             <div class="col-xs-3 remove"><a href="#" class="text-underline" id="appliedCoupon" data-bind="widgetLocaleText: {attr: 'innerText',value: 'Remove'}, attr: {'aria-label': $parent.cart().getRemoveCouponReadText()}, click: $parent.cart().removeCoupon.bind($parent.cart())" onclick="removeCoup()"></a>
+             <i class="fa fa-times" aria-hidden="true"></i>
+             </div>
+           </div>
+         </div>
+       <!-- /ko -->
+       
+      
+     </div>
+          
+      </div>
+  </div>
+
+</div>
+

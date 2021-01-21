@@ -1,0 +1,18 @@
+{
+  "imports": [
+    "space"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Wishlist Content",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "pageTypes": [
+    "swm"
+  ],
+  "config": {}
+}

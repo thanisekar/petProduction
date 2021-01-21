@@ -1,0 +1,72 @@
+<div id="categoryCLP">
+    <!-- ko with: category -->
+         <!-- ko if: longDescription !== null -->
+     <div class="row" id='maincategorydesc' >
+           <div class='col-md-12 col-lg-12 ' id='maincategoryWrapper'>
+               <p data-bind='html:$data.longDescription' class='main-category-desc-txt'></p>
+        </div>
+    </div>  
+    <!-- /ko --> 
+    <!-- /ko -->
+  <div class="row hidden-sm hidden-xs" id='childCategoriesListing' >   
+        <div class='col-md-12 col-lg-12' id='childCategoriesWrapper'>
+         <!-- ko foreach: categoryDataModal() --> 
+        <div class='col-md-3 col-lg-3' id="grid-category-content">
+             <div id="categoryImageWrap" >
+                 <a data-bind="ccLink:{route:categoryroute}">
+                     
+                     <img data-bind="ccResizeImage: {
+                                    source: categoryImagePath,
+                                    xsmall: '300,270',
+                                    small: '300,270',
+                                    medium: '266,266',
+                                    large: '266,266',
+                                    alt: categoryName,
+                                    title:categoryName}" class="img-responsive" width="100%" alt="displayName" title="displayName" >
+                            <!-- <img data-bind="attr: {src: $data.url}" class="img-responsive" />-->
+                        
+                  </a>
+              </div>
+              <div class="categoryName" >
+                  <a data-bind="ccLink:{route:categoryroute}">
+                     <p data-bind="text: categoryName"></p>
+                   </a>
+               </div>
+        </div>
+       <!-- /ko -->
+       </div>
+   </div> 
+   
+   
+   
+    <div class='row visible-xs visible-sm' id='mobilecategoryListing'>
+          <!-- ko foreach: categoryDataModal() --> 
+        <div class='col-sm-12 col-xs-12' id='mobilecategoryListingContainer'>
+            <div class='col-xs-3 col-sm-3' id='mobilecategoryImgWrapper'>
+              <a data-bind="ccLink:{route:categoryroute}">
+                     
+                     <img data-bind="ccResizeImage: {
+                                    source: categoryImagePath,
+                                    xsmall: '300,270',
+                                    small: '300,270',
+                                    medium: '266,266',
+                                    large: '266,266',
+                                    alt: 'categoryName',
+                                    title:'categoryName'}" class="img-responsive" width="100%" alt="displayName" title="displayName" >
+                            <!-- <img data-bind="attr: {src: $data.url}" class="img-responsive" />-->
+                        
+                  </a>
+            </div>
+            <div class='col-xs-6 col-sm-6' id='mobilecategoryDisplayName'>
+                 <a data-bind="ccLink:{route:categoryroute}">
+                     <p data-bind="text: categoryName"></p>
+                   </a>
+            </div>
+            <div class='col-xs-3 col-sm-3' id='mobilecategoryArrow'>
+                  <a data-bind="ccLink:{route:categoryroute}"><div class='right-arrow' ></div> </a>
+            </div>    
+        </div>
+         <!-- /ko -->
+    </div>
+   
+</div>

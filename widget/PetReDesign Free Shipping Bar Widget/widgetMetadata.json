@@ -1,0 +1,18 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "PetReDesign Free Shipping Bar Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "FreeShippingLink": "/login",
+    "FreeShippingText": "Free Shipping On Any Order $39 or more",
+    "enabled": true
+  }
+}

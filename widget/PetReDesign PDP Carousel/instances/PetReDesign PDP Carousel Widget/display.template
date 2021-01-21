@@ -1,0 +1,141 @@
+<!-- ko setContextVariable: {name: 'elementConfig', value: {"1400002": {
+  "font": {"styles": {"display": "block"}},
+  "id": "1400002"
+}}} --><!-- /ko -->
+
+<div class="container">
+     <!-- ko if: product().relatedProducts != null -->
+    <!-- ko if: koRelatedItems().length > 0 -->
+<div class="templateRegion" id="cc-recs" data-oc-id="cc-recs">
+  <!-- oc layout: panels -->
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-0-0">
+
+      <!-- oc section: recommendations-carousel -->
+<!--        <div data-bind="element: 'recommendations-carousel', visible: recommendations().length > 0"></div>-->
+         <!--ko if: recommendationsGroups() && (recommendationsGroups().length > 0) -->
+  <div class="row">
+    <!-- Collection Title -->
+    <div class="col-xs-9">
+                <h3 class="title-txt">You May Also Like</h3> 
+            </div>
+    <div id="cc-carousel-controls-pdp" class="col-xs-3">
+      <!-- Carousel Controls -->
+      <!-- ko if: recommendationsGroups() && (recommendationsGroups().length > 1) -->
+      <div class="controls row pull-right hidden-xs">
+          <div id="cc-carousel-left-control-pdp" class="col-sm-6">
+          <a class="corousel-left" data-slide="prev" data-bind="widgetLocaleText:{value:'previousImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
+            <!--<i class="fa-2x fa fa-caret-left "></i>-->
+          </a>
+        </div>
+        <div id="cc-carousel-right-control-pdp" class="col-sm-6">
+          <a class="corousel-right" data-slide="next" data-bind="widgetLocaleText:{value:'nextImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
+            <!--<i class="fa-2x fa fa-caret-right "></i>-->
+          </a>
+        </div>
+        
+
+      </div>
+      <!-- /ko -->
+    </div>
+  </div>
+
+  <div data-bind="carouselSwipe, attr:{id: 'carousel-id-'+id()}" class="pdpProdCarousel carousel slide inner-corousel" data-interval="false">
+    <div class="carousel-inner carousel-pdp">
+      <!-- ko foreach: recommendationsGroups -->
+        <div class="item row" data-bind="css: {'active': $index()==0},foreach: $data">
+          <div data-bind="css: $parents[1].spanClass()" class="cc-product-item">
+
+            <div class="cc-item-detail">
+              <a data-bind="attr : { id: 'CC-product-detail-'+id, title: displayName }, ccLink: {route: $data.route()}">
+              <span data-bind="text: displayName" class="sr-only"></span>
+              <img   class="img-responsive center-block" data-bind="ccResizeImage: {
+                                   source: primaryFullImageURL,
+                                   xsmall: '500,300',
+                                   small: '500,300',
+                                   medium: '266,266',
+                                   large: '266,266', 
+                                   alt: displayName, 
+                                   title:displayName}">
+              </a>
+              <div class="product-flag">
+                
+                      <!-- ko foreach: $parents[1].koRelatedProdtIsFlagData --> 
+                          <!-- ko if: ($parent.id == id)-->
+                          <!-- ko if: $data.isSaleFlag -->
+                              <span class="petmate-sale-flag">Sale</span>
+                              <!-- /ko -->
+                              <!-- ko ifnot: $data.isSaleFlag -->
+                              <!-- ko if: $data.isNewFlag -->
+                              <span class="petmate-new-flag">New</span>
+                              <!-- /ko -->
+                              <!-- /ko -->
+                          <!-- /ko -->
+                      <!-- /ko -->
+                  
+            </div>
+            </div>
+            
+             
+            <div class="cc-item-price">
+              <!--ko if : salePrice()!=null-->
+				          	<span data-bind='text:salePrice' class='salePriceValue'></span>
+				        	 <span data-bind='text:"$"+listPrice()' class='listPriceValue'></span>
+				         <!--/ko-->
+				       
+    				     <!--ko if:salePrice()==null-->
+    				     	<span data-bind='text:listPrice'></span>
+    				     <!--/ko-->
+            			 
+            </div>
+             <div class="cc-item-title">
+			 <a alt=displayName  data-bind="attr : { id: 'CC-product-title-'+id},ccLink: {route: $data.route()}" >
+				<p data-bind="text: displayName" class="cc-text-overflow"></p>
+			 </a>
+            </div>
+            <!--Best Seller-->
+                <div class="product-seller">
+                <!-- ko if: promotext  -->
+                      <div class="petmate-promo-text" >
+                          <span data-bind="text: promotext"></span>
+                      </div>
+                      <div class="clearfix"></div>
+                      <!-- /ko -->
+                      <!-- ko if: x_freeShippingRibbon -->
+                       <div class='petmate-free-shipping-text'>
+                             <span data-bind="text: x_freeShippingRibbon"></span>
+                       </div>
+                <!-- /ko-->
+                </div>
+                
+                <!--Ends-->
+                <div class='cc-item-rating'>  
+                 <div data-bv-show="inline_rating" data-bv-seo = "false" data-bind="attr: {'data-bv-product-id':id(),'data-bv-redirect-url':route()}"></div>
+                 
+             </div>
+          </div>
+        </div>
+      <!-- /ko -->
+    </div>
+    <!-- Carousel Indicators-->
+    <!-- ko if: recommendationsGroups().length > 1 -->
+      <div id="cc-carousel-indicators" class="row hide">
+        <ol role="presentation" class="carousel-indicators" data-bind="foreach: recommendationsGroups">
+          <li data-bind="css: {'active': $index()==0}, attr: {'data-slide-to': $index, 'data-target': '#carousel-id-'+$parent.id()}"></li>
+        </ol>
+      </div>
+    <!-- /ko -->
+  </div>
+ <!--/ko-->
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+  <!-- /oc -->
+</div>
+<!-- /ko -->
+<!-- /ko -->
+</div>

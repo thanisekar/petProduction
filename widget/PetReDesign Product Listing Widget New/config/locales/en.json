@@ -1,0 +1,26 @@
+{
+  "resources": {
+    "shouldUseViewModelCachingHelpText": "Check to use the client side view model caching. This applies to product listings through category navigation only and not to search results.",
+    "productLabel": "Product",
+    "shouldUseScrollableCollectionHelpText": "Check to use the scrollable listing",
+    "productsPerPageRequiredHelpText": "Enter the number of products to display on a page.",
+    "viewModelCacheLimitHelpText": "Number of categories to cache. This applies to product listings through category navigation only and not to search results.",
+    "searchLabel": "Search",
+    "VideoUrlTextTwoLabel": "Video Url Two",
+    "blockSizeRequiredHelpText": "Enter the number of products to load per request. The block size setting applies to product listings through category navigation only and not to search results.",
+    "VideoUrlOneText": "Enter Video Url One",
+    "listTypeHelpText": "Select whether the widget instance is a product listing or search results list type.",
+    "productsPerPageRequiredLabel": "Products per page",
+    "VideoUrlTwoText": "Enter Video Url Two",
+    "VideoUrlTextOneLabel": "Video Url One",
+    "shouldUseStyleBasedHelpText": "Check to use style based listing.",
+    "shouldUseScrollableCollectionTextLabel": "Use Scrollable Listing",
+    "productListingFieldsRequiredHelpText": "Enter a list of fields to be included in the response, separated by commas. The fields setting applies to product listings through category navigation only and not to search results.",
+    "blockSizeRequiredLabel": "Block Size",
+    "shouldUseStyleBasedTextLabel": "Use Style Base Listing",
+    "shouldUseViewModelCachingTextLabel": "Use client side view model caching.",
+    "listTypeTextLabel": "List Type",
+    "productListingFieldsRequiredLabel": "Fields",
+    "viewModelCacheLimitTextLabel": "Enter the number of categories to cache at any specific time."
+  }
+}

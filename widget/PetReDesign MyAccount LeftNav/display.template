@@ -1,0 +1,15 @@
+<div class="myaccount-leftnav" data-bind="visible:user().loggedIn()">
+	<!--<div class="visible-xs visible-sm myaccount-overview-link-wrapper">
+		<a id="myAccountMobilelnk" href="#">
+			<span id="myAccountMobileTxt"></span>
+			<i class="fa pull-right my-account-angle-arrow visible-xs fa-angle-right"></i>
+		</a>
+	</div>-->
+	<div class="h2 accordion-header">MY ACCOUNT</div>
+  <ul class="myaccount-listing">
+	 <li><a href="/profile#overview" class="myaccount-left-link" id="myaccount-link-profile" data-target="myaccount-profile">Profiles</a></li>
+	 <li><a data-bind="ccLink: 'orderHistory'" id="myaccount-link-orderhistory" data-target="CC-orderHistory">order history</a></li>
+	 <li><a data-bind="ccLink: 'wishlist'" id="myaccount-link-wishlist">Wish list</a></li>
+	 <li><a href="/profile#addressbook" class="myaccount-left-link" id="myaccount-link-addressbook" data-target="myaccount-addressbook">Address Book</a></li>
+   </ul>
+</div>

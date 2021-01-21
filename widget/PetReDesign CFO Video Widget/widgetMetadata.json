@@ -1,0 +1,17 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "PetReDesign CFO Video Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "VideoUrl": "3N9ZkmX8_T0",
+    "enabled": true
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "titleResourceId": "title",
+  "properties": [
+    {
+      "defaultValue": false,
+      "name": "enabled",
+      "id": "enabled",
+      "helpTextResourceId": "enabledHelpText",
+      "labelResourceId": "enabledLabel",
+      "type": "booleanType"
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "carouselTitle",
+      "id": "carouselTitle",
+      "helpTextResourceId": "carouselTitleHelpText",
+      "labelResourceId": "carouselTitleLabel",
+      "type": "stringType",
+      "maxLength": 80,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "collectionId",
+      "id": "collectionId",
+      "helpTextResourceId": "collectionIdHelpText",
+      "labelResourceId": "collectionIdLabel",
+      "type": "stringType",
+      "maxLength": 80,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "totalItem",
+      "id": "totalItem",
+      "helpTextResourceId": "totalItemHelpText",
+      "labelResourceId": "totalItemLabel",
+      "type": "stringType",
+      "maxLength": 80,
+      "required": true
+    },
+    {
+      "defaultValue": "1",
+      "name": "itemDesktop",
+      "options": [
+        {
+          "id": "itemCount1",
+          "labelResourceId": "count1Label",
+          "value": "1"
+        },
+        {
+          "id": "itemCount2",
+          "labelResourceId": "count2Label",
+          "value": "2"
+        },
+        {
+          "id": "itemCount3",
+          "labelResourceId": "count3Label",
+          "value": "3"
+        },
+        {
+          "id": "itemCount4",
+          "labelResourceId": "count4Label",
+          "value": "4"
+        },
+        {
+          "id": "itemCount5",
+          "labelResourceId": "count5Label",
+          "value": "5"
+        },
+        {
+          "id": "itemCount6",
+          "labelResourceId": "count6Label",
+          "value": "6"
+        }
+      ],
+      "id": "itemDesktop",
+      "helpTextResourceId": "itemDesktopHelpText",
+      "labelResourceId": "itemDesktopLabel",
+      "type": "optionType"
+    },
+    {
+      "defaultValue": "1",
+      "name": "itemTablet",
+      "options": [
+        {
+          "id": "itemCount1",
+          "labelResourceId": "count1Label",
+          "value": "1"
+        },
+        {
+          "id": "itemCount2",
+          "labelResourceId": "count2Label",
+          "value": "2"
+        },
+        {
+          "id": "itemCount3",
+          "labelResourceId": "count3Label",
+          "value": "3"
+        },
+        {
+          "id": "itemCount4",
+          "labelResourceId": "count4Label",
+          "value": "4"
+        },
+        {
+          "id": "itemCount5",
+          "labelResourceId": "count5Label",
+          "value": "5"
+        },
+        {
+          "id": "itemCount6",
+          "labelResourceId": "count6Label",
+          "value": "6"
+        }
+      ],
+      "id": "itemTablet",
+      "helpTextResourceId": "itemTabletHelpText",
+      "labelResourceId": "itemTabletLabel",
+      "type": "optionType"
+    },
+    {
+      "defaultValue": "1",
+      "name": "itemMobile",
+      "options": [
+        {
+          "id": "itemCount1",
+          "labelResourceId": "count1Label",
+          "value": "1"
+        },
+        {
+          "id": "itemCount2",
+          "labelResourceId": "count2Label",
+          "value": "2"
+        },
+        {
+          "id": "itemCount3",
+          "labelResourceId": "count3Label",
+          "value": "3"
+        },
+        {
+          "id": "itemCount4",
+          "labelResourceId": "count4Label",
+          "value": "4"
+        },
+        {
+          "id": "itemCount5",
+          "labelResourceId": "count5Label",
+          "value": "5"
+        },
+        {
+          "id": "itemCount6",
+          "labelResourceId": "count6Label",
+          "value": "6"
+        }
+      ],
+      "id": "itemMobile",
+      "helpTextResourceId": "itemMobileHelpText",
+      "labelResourceId": "itemMobileLabel",
+      "type": "optionType"
+    }
+  ],
+  "descriptionResourceId": "description"
+}

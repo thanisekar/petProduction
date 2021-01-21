@@ -1,0 +1,16 @@
+{
+  "configuration": {
+    "shouldUseStyleBased": false,
+    "VideoUrlTwo": "3N9ZkmX8_T0",
+    "viewModelCacheLimit": "3",
+    "isScrollEnabled": false,
+    "isViewModelCacheEnabled": false,
+    "fields": "items.childSKUs.listPrice,items.childSKUs.salePrice,items.startDateStr,items.x_freeShippingRibbon,items.promotext,items.id,items.route,items.displayName,items.listPrice,items.salePrice,items.primarySmallImageURL",
+    "gridWidth": "4",
+    "productsPerPage": "12",
+    "listType": "product",
+    "blockSize": "60",
+    "VideoUrlOne": "3N9ZkmX8_T0"
+  },
+  "displayName": "PetRedesign Product Listing Widget New"
+}

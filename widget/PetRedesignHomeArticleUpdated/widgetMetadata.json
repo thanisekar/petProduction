@@ -1,0 +1,42 @@
+{
+  "imports": [
+    "category",
+    "product"
+  ],
+  "translations": [
+    {
+      "name": "PetRedesignHomeArticleUpdated",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "ArticleImage1": {
+      "mediaName": "",
+      "src": ""
+    },
+    "ArticleImage1Des": "",
+    "ArticleImage1URL": "",
+    "ArticleImage2": {
+      "mediaName": "",
+      "src": ""
+    },
+    "ArticleImage2Des": "",
+    "ArticleImage2URL": "",
+    "ArticleImage3": {
+      "mediaName": "",
+      "src": ""
+    },
+    "ArticleImage3Des": "",
+    "ArticleImage3URL": "",
+    "ArticleImage4": {
+      "mediaName": "",
+      "src": ""
+    },
+    "ArticleImage4Des": "",
+    "ArticleImage4URL": ""
+  }
+}

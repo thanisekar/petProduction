@@ -1,0 +1,76 @@
+<!-- ko setContextVariable: {name: 'elementConfig', value: {"1400002": {
+   "font": {"styles": {"display": "block"}},
+   "id": "1400002"
+   }}} --><!-- /ko -->
+<div class="container">
+   <!-- ko if: koBrandCollectionData().length > 0 -->
+   <div class="templateRegion" id="cc-recs" data-oc-id="cc-recs">
+      <!-- oc layout: panels -->
+      <div class="row">
+         <div class="oc-panel col-md-12" data-oc-id="panel-0-0">
+            <div class="col-xs-12 head-section">
+               <div class="col-sm-7 col-md-9 col-xs-12 nopad">
+                  <h2 class="nopad">Our Brands</h2>
+               </div>
+               <div class="col-sm-5 col-md-3 col-xs-12 shopAllLinkWrapper">
+                   <div class="col-sm-8 col-xs-12 nopad">
+                       <a class="shop-all-brands" data-bind="ccLink: {route:'/brands/category/petmate-brands'} " href="/brands/category/petmate-brands">
+                  Shop All Brands <span class=" visible-xs right-arrow-icon"></span></a>
+                   </div>
+                  
+                  <div id="brand-carousel-controls" class="col-sm-4 hidden-xs nopad">
+                  <!-- Carousel Controls -->
+                  <!-- ko if: recommendationsGroups() && (recommendationsGroups().length > 1) -->
+                  <div class="controls row pull-right ">
+                     <div id="brand-carousel-left-control" class="col-sm-6">
+                        <a class="brand-corousel-left" data-slide="prev" data-bind="widgetLocaleText:{value:'previousImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
+                           <!--<i class="fa-2x fa fa-caret-left "></i>-->
+                        </a>
+                     </div>
+                     <div id="brand-carousel-right-control" class="col-sm-6">
+                        <a class="brand-corousel-right" data-slide="next" data-bind="widgetLocaleText:{value:'nextImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
+                           <!--<i class="fa-2x fa fa-caret-right "></i>-->
+                        </a>
+                     </div>
+                  </div>
+                  <!-- /ko -->
+               </div>
+               </div>
+            </div>
+            
+            <!-- oc section: recommendations-carousel -->
+            <!--        <div data-bind="element: 'recommendations-carousel', visible: recommendations().length > 0"></div>-->
+            <!--ko if: recommendationsGroups() && (recommendationsGroups().length > 0) -->
+            
+            <div data-bind="carouselSwipe, attr:{id: 'carousel-id-'+id()}" class="brandCollectionCarousel carousel slide inner-corousel" data-interval="false">
+               <div class="brand-carousel-inner">
+                  <!-- ko foreach: recommendationsGroups -->
+                  <div class="item row" data-bind="css: {'active': $index()==0},foreach: $data">
+                     <div data-bind="css: $parents[1].spanClass()" class="cc-product-item">
+                        <div class="cc-item-detail">
+                           <a class="brandDisplayName" data-bind="attr : { id: 'CC-product-detail-'+id, title: displayName }, ccLink: {route: $data.route}">
+                           <span data-bind="text: displayName" class="sr-only"></span>
+                           <img data-bind="ccResizeImage: {
+                              source: '/file/collections/'+id()+'.png',
+                              xsmall: '171,300',
+                              small: '171,300',
+                              medium: '171,300',
+                              large: '170,300',
+                              alt: displayName,
+                              title:displayName}"  class="img-responsive" />
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- /ko -->
+               </div>
+               
+            </div>
+            <!--/ko-->
+            <!-- /oc -->
+         </div>
+      </div>
+      <!-- /oc -->
+   </div>
+   <!-- /ko -->
+</div>

@@ -1,0 +1,26 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "PetreDesign Home Promotion  Banner Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "HomBannerLink": "/login",
+    "HomeBannerText": "/file/general/homepage-banner-desktop.jpg",
+    "PromoBanner1Text": "asd",
+    "PromoBanner2Text": "asd",
+    "PromoBanner3Text": "asd",
+    "Promobanner1Link": "asd",
+    "Promobanner2Link": "asd",
+    "Promobanner3Link": "asd",
+    "Promobanner4Link": "asd",
+    "Promobanner5Link": "asd",
+    "enabled": true
+  }
+}

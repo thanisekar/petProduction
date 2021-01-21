@@ -1,0 +1,17 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "PetReDesign Promotion Widget",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "pageTypes": [
+    "cart",
+    "checkout"
+  ],
+  "config": {}
+}

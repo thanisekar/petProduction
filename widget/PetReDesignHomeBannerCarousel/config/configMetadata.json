@@ -1,0 +1,61 @@
+{
+  "widgetDescriptorName": "megaMenu",
+  "properties": [
+    {
+      "name": "Home Banner 1",
+      "id": "homeBanner1",
+      "type": "mediaType",
+      "helpTextResourceId": "homeBannerFirstImagehelp",
+      "labelResourceId": "homeBannerFirstImageTextLabel"
+    },
+    {
+      "name": "Home Banner Link 1",
+      "id": "homeBannerLink1",
+      "type": "stringType",
+      "helpTextResourceId": "homeBannerFirstImageLinkhelp",
+      "labelResourceId": "homeBannerFirstImageLinkTextLabel"
+    },
+    {
+      "name": "Home Banner 2",
+      "id": "homeBanner2",
+      "type": "mediaType",
+      "helpTextResourceId": "homeBannerSecondImagehelp",
+      "labelResourceId": "homeBannerSecondImageTextLabel"
+    },
+    {
+      "name": "Home Banner Link 2",
+      "id": "homeBannerLink2",
+      "type": "stringType",
+      "helpTextResourceId": "homeBannerSecondImageLinkhelp",
+      "labelResourceId": "homeBannerSecondImageLinkTextLabel"
+    },
+    {
+      "name": "Home Banner 3",
+      "id": "homeBanner3",
+      "type": "mediaType",
+      "helpTextResourceId": "homeBannerThirdImagehelp",
+      "labelResourceId": "homeBannerThirdImageTextLabel"
+    },
+    {
+      "name": "Home Banner Link 3",
+      "id": "homeBannerLink3",
+      "type": "stringType",
+      "helpTextResourceId": "homeBannerThirdImageLinkhelp",
+      "labelResourceId": "homeBannerThirdImageLinkTextLabel"
+    },
+    {
+      "name": "Home Banner 4",
+      "id": "homeBanner4",
+      "type": "mediaType",
+      "helpTextResourceId": "homeBannerFourthImagehelp",
+      "labelResourceId": "homeBannerFourthImageTextLabel"
+    },
+    {
+      "name": "Home Banner Link 4",
+      "id": "homeBannerLink4",
+      "type": "stringType",
+      "helpTextResourceId": "homeBannerFourthImageLinkhelp",
+      "labelResourceId": "homeBannerFourthImageLinkTextLabel"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "imports": [
+    "orderDetails",
+    "shippingCountries",
+    "category",
+    "product"
+  ],
+  "translations": [
+    {
+      "name": "PetRedesign Order Look Up WIdget New",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "LoginURL": "https://b2c-uat.petmate.com/b2c/api/v1/appusers/login",
+    "getOrderURL": "https://b2c-uat.petmate.com/b2c/api/v1/orders/getorder",
+    "loginURL": "https://b2c-uat.petmate.com/b2c/api/v1/appusers/login",
+    "password": "petmate",
+    "userName": "petmate"
+  }
+}

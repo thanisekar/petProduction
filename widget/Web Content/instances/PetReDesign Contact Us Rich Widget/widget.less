@@ -1,0 +1,127 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+ 
+.main-container{
+    .main-container-center{
+        float: none;
+        margin:0 auto;
+        margin-bottom:100px;
+    }
+    .top-section{
+        padding: 0 5%;
+    }
+  h2{
+        font-weight: 300;
+        font-family: Nunito;
+        letter-spacing: -0.2px; 
+        margin-top: 60px;
+        margin-bottom: 50px;
+        font-size: 46px;
+        line-height: 46px;
+        text-align:center;
+  }
+  .questions{
+      padding-bottom:15px !important;
+    p{
+      color: #404040; 
+      font-weight: 300;
+    font-size: 15px;
+    padding-bottom: 5px;
+    a{
+        text-decoration: underline;
+    }
+     }
+  }
+a{
+    color:#2654bf;
+}
+  .sub-head{
+        font-family: @font-family-nunito;
+         font-size: 28px;
+        font-weight: 300;
+        letter-spacing: -0.2px;
+        padding-bottom: 24px;
+        color:#000;
+        line-height: 1.3;
+  }
+  .contact-row{
+      
+           font-size: 14px;
+            text-align: center;
+             p{
+                font-size:14px!important; 
+             }
+  }
+  .contact-block{
+        border: 1px solid #ebeae8;
+        width: 30%;
+        margin-right: 25px;
+        min-height: 300px;
+        margin-top:30px;
+        padding:0px !important;
+          p{
+                color: #414141; 
+                font-size: 12px;
+                margin:0px !important;
+                padding-top: 12px;
+            }
+  }
+  
+  .contact-header{
+        background-color: #ebeae8;
+        height: 40px;
+        padding: 9px;
+        font-weight: bold;
+        font-size: 11px; 
+       font-family: @font-family-roboto;
+       color:#000; 
+  }
+  .contact-details{
+       margin:20px 0px; 
+       h4{
+          margin: 0px !important;
+              font-weight: 600;
+              line-height: 1.3;
+       }
+       p{
+           text-align:center;
+             word-wrap: break-word;
+       }
+
+  }
+  .mailing{
+       margin:40px 0px;
+  }
+  .phone{ 
+      margin:40px 0px;
+  }
+}
+  @media only screen and (max-width: 767px) {
+      .top-section{
+        padding: 0!important;
+    }
+      .main-container{
+          margin: 0px 25px;
+          .page-header{
+              text-align: left;
+              font-size:32px !important;
+          }
+        .contact-block{
+          width:100%;
+      }
+      }
+
+  }
+  @media screen and (min-width : 768px) and (max-width:1024px){
+      .main-container{
+          .contact-details{
+              h4{
+                  font-size:24px!important;
+              }
+          }
+           .contact-block{
+            width: 29%;
+       }
+      }
+  }
+
+}

@@ -1,0 +1,33 @@
+{
+  "widgetDescriptorName": "megaMenu",
+  "properties": [
+    {
+      "name": "megamenu Image 1",
+      "id": "megamenuImage1",
+      "type": "mediaType",
+      "helpTextResourceId": "megamenuFirstImagehelp",
+      "labelResourceId": "megamenuFirstImageTextLabel"
+    },
+    {
+      "name": "megamenu Image 2",
+      "id": "megamenuImage2",
+      "type": "mediaType",
+      "helpTextResourceId": "megamenuSecondImagehelp",
+      "labelResourceId": "megamenuSecondImageTextLabel"
+    },
+    {
+      "name": "megamenu Image 3",
+      "id": "megamenuImage3",
+      "type": "mediaType",
+      "helpTextResourceId": "megamenuThirdImagehelp",
+      "labelResourceId": "megamenuThirdImageTextLabel"
+    },
+    {
+      "name": "megamenu Image 4",
+      "id": "megamenuImage4",
+      "type": "mediaType",
+      "helpTextResourceId": "megamenuFourthImagehelp",
+      "labelResourceId": "megamenuFourthImageTextLabel"
+    }
+  ]
+}

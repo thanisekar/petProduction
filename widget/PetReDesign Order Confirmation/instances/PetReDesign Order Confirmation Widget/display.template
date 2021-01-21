@@ -1,0 +1,195 @@
+<div id="orderConfirmation">
+  <!--<h2 data-bind="widgetLocaleText: 'orderConfirmationText'"></h2>
+  <hr />-->
+  <!-- ko if: confirmation -->
+  <!-- ko with: confirmation -->
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="order-number-message">
+        <!-- ko if: ($parent.isPending) -->
+        <!--<span data-bind="widgetLocaleText: 'pendingMsg'"></span><br />-->
+        <!-- /ko -->
+        <!-- ko ifnot: ($parent.isPending) -->
+        <!--<span data-bind="text: $parent.thankyouMsg"></span><br />
+        <span data-bind="widgetLocaleText: 'processingMsg'"></span><br />-->
+        <!-- /ko -->
+        <h2 class="header-order-confirmation" data-bind="text: $parent.orderNumberMsg"></h2>
+      </div>
+    </div>
+  </div>
+
+  <div id="order-table">
+    <div class="row">
+         <div class="order-desktop hidden-xs">
+             <div class="col-xs-12">
+      <!--<h3 data-bind="widgetLocaleText: 'yourOrderText'"></h3>-->
+      <table data-bind="attr: { summary: $parent.yourOrderText }"
+        id="order-info" class="table">
+        <thead>
+          <tr>
+            <th data-bind="widgetLocaleText: 'itemText'" scope="row"></th>
+            <th data-bind="widgetLocaleText: 'quantityText'" scope="col" class="align-center"></th>
+            <th data-bind="widgetLocaleText: 'itemTotalText'"  scope="col" class="align-right"></th>
+          </tr>
+        </thead>
+        <!-- ko with: shoppingCart -->
+        
+        <tbody data-bind="foreach: items">
+          <tr class="item">
+            <td scope="row" class="product">
+              <div class="col-xs-3">
+                     <!--  <img src="" data-bind="attr:{src: '/file/products/'+$data.productId+'.jpg'}" onError="this.onError=null;this.src='/file/general/petmate-no-image.jpg';" class="img-responsive"> -->
+                              
+                  <img src="" data-bind="attr:{src: $data.customItemImage}" onError="this.onError=null;this.src='/file/general/petmate-no-image.jpg';" class="img-responsive"> 
+              </div>
+              <div class="col-xs-9">
+                  <div data-bind="text: displayName" class="name"></div>
+              <div class="item-number">Items: <span data-bind="text : catRefId"></span></div>
+               <!-- ko foreach: variant --> 
+                 <div class="variant">
+                   <!-- ko if: $data.optionValue -->
+                     <small>
+                       <span data-bind="widgetLocaleText : {value:'option', attr:'innerText', params: {optionName: $data.optionName,
+                       optionValue: $data.optionValue}}"></span>
+                     </small>
+                   <!-- /ko -->
+                 </div>
+               <!-- /ko -->
+              </div>
+            </td>
+            <td data-bind="ccNumber: quantity" class="quantity align-center"></td>
+            <td class="price align-right" data-bind="currency: {price: price, currencyObj: $parents[1].priceListGroup.currency}"></td>
+          </tr>
+
+          
+          
+          <!-- ko if : shippingSurchargeValue !== 0 -->
+            <tr>
+              <td>
+                <div data-bind="attr: { id: 'CC-confirmation-item-shipping-surcharge-' + $data.productId + '-' + $index() }">
+                  <div class="CC-confirmation-displayShippingSurcharge" data-bind="attr: { id: 'CC-confirmation-displayShippingSurcharge-' + $data.productId + '-' + $data.catRefId }">
+                    <span data-bind="widgetLocaleText: 'shippingSurchargeText'"></span>
+                    <span data-bind="currency: {price: shippingSurchargeValue,
+                                  currencyObj: $parents[1].priceListGroup.currency, nullReplace: '0.00', prependNull: true},
+                                  attr: { id: 'CC-confirmation-item-shipping-surcharge-value-' + $data.productId + '-' + $data.catRefId }">
+                    </span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          <!-- /ko -->
+        </tbody>
+        <!-- /ko -->
+      </table>
+    </div>
+         </div>
+         
+         <div class="order-mobile visible-xs">
+                  <!-- ko with: shoppingCart -->
+                        <!-- ko foreach: items -->
+                <div class="row">
+                        <div class="col-xs-4">
+                         
+                              <img src="" data-bind="attr:{src: $data.customItemImage}" onError="this.onError=null;this.src='/file/general/petmate-no-image.jpg';" class="img-responsive"> 
+                        </div>
+                       
+                        <div class="col-xs-8 item-section">
+                            
+                                <div class="name"><span data-bind="text: displayName" class="name"></span></div>
+                               
+                                <div class="item-number">Items: <span data-bind="text : skuProperties[1].value"></span></div>
+                                
+                                <div class="variant">
+                                    <!-- ko foreach: variant -->
+                                     <div>
+                                       <!-- ko if: $data.optionValue -->
+                                         <small>
+                                           <span data-bind="widgetLocaleText : {value:'option', attr:'innerText', params: {optionName: $data.optionName,
+                                           optionValue: $data.optionValue}}"></span>
+                                         </small>
+                                       <!-- /ko -->
+                                     </div>
+                                   <!-- /ko -->
+                                </div>
+                                
+                                <div class="quantity">
+                                    <span class="col-xs-6 nopad" data-bind="widgetLocaleText: 'quantityText'"></span>
+                                    <span class="col-xs-6 nopad align-right value" data-bind="ccNumber: quantity"></span>
+                                </div>
+                                
+                                <div class="price">
+                                    <span class="col-xs-6 nopad" data-bind="widgetLocaleText: 'itemTotalText'"></span>
+                                    <span class="col-xs-6 nopad align-right value" data-bind="currency: {price: price, currencyObj: $parents[1].priceListGroup.currency}"></span>
+                                </div>
+                             
+                        </div> 
+                </div> 
+                  <!-- /ko -->
+                <!-- /ko -->
+         </div>
+    </div>
+  </div>
+
+
+  <div class="row hide">
+    <div class="col-xs-12">
+      <h3 data-bind="widgetLocaleText: 'shippingAddressAndMethodText'"></h3>
+      <hr />
+    </div>
+  </div>
+  <div class="row hide">
+    <div class="col-sm-6 summary-table">
+      <table role="presentation">
+        <tbody>
+          <tr>
+            <td data-bind="widgetLocaleText: 'shipToText'"
+              class="summary-table-title"></td>
+            <td>
+              <!-- ko with: shippingAddress -->
+              <span data-bind="widgetLocaleText : {value: 'fullName', attr: 'innerText', params: {firstName: firstName, lastName: lastName}}"></span><br />
+              <span data-bind="text: address1"></span>,<br />
+              <!-- ko if: address2 -->
+              <span data-bind="text: address2"></span>,<br />
+              <!-- /ko -->
+              <!-- ko if: state -->
+              <span data-bind="widgetLocaleText : {value: 'cityStatePostalCode', attr: 'innerText', params: {city: city, state: $parents[1].getStateDisplayName(country, state), postalCode: postalCode}}">
+              </span><br />
+              <!-- /ko -->
+              <!-- ko ifnot: state -->
+              <span data-bind="widgetLocaleText : {value: 'cityPostalCode', attr: 'innerText', params: {city: city, postalCode: postalCode}}">
+              </span><br />
+              <!-- /ko -->
+              <span data-bind="text: $parents[1].getCountryDisplayName(country)"></span><br />
+              <!-- /ko -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm-6 summary-table">
+      <table role="presentation">
+        <tbody>
+          <tr>
+            <td data-bind="widgetLocaleText: 'shippingMethodText'"
+              class="summary-table-title"></td>
+            <td>
+              <span data-bind="text: shippingGroup.shippingMethodDescription">
+              </span>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="petInsurance hide">  
+    <div class="text">Did you know every six seconds, a pet owner receives a vet bill over $1,000 and one in three pets will have an unexpected vet visit each year. This is why Petmate has partnered with Sure - to help provide peace of mind and save you money of pet costs. 
+    Policies start at $21/month and can be customized for your exact needs. It only takes 30 seconds to get set up with a free, no-obligation quote! 
+    <a data-bind="ccLink: 'sure'">Learn More About Pet Insurance</a></div>
+  </div>
+  <!-- /ko -->
+  <!-- /ko -->
+  <!-- ko ifnot: confirmation -->
+  <span data-bind="widgetLocaleText: 'orderDoesNotExist'"></span>
+  <!-- /ko -->
+</div>

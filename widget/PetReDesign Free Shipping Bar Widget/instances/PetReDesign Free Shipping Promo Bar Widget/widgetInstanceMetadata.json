@@ -1,0 +1,9 @@
+{
+  "configuration": {
+    "FreeShippingBackgroundColor": "black",
+    "FreeShippingText": "Test1, FAST, FREE SHIPPING ON ORDERS $49+",
+    "FreeShippingLink": "/shipping",
+    "enabled": true
+  },
+  "displayName": "PetReDesign Free Shipping Promo Bar Widget"
+}

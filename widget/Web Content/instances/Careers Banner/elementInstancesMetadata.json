@@ -1,0 +1,54 @@
+{
+  "elementInstances": [
+    {
+      "customTitle": "Image_1600005",
+      "styles": {},
+      "tag": "image@1600005",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "isProductImage": "0",
+        "titleText": "Career banner",
+        "zoomEnabled": "0",
+        "fileName": "careers_desktop_hero_career.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_3200001",
+      "styles": {},
+      "tag": "image@3200001",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "isProductImage": "0",
+        "titleText": "Petmate Careers",
+        "zoomEnabled": "0",
+        "fileName": "PM_Career-Page-Banner.jpg"
+      }
+    }
+  ]
+}

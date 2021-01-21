@@ -1,0 +1,34 @@
+<div id="orderSummary" class="visible-xs">
+  <div class="ordersummary clearfix">
+   
+     
+     <!-- Cart Total -->
+     <div id="CC-orderSummary-orderTotal" role="alert" aria-live="polite" aria-atomic="true" class="ordertotal clearfix">
+       <!-- ko if: (cart().isTaxIncluded && cart().showTaxSummary) -->
+       <div class="ordertotalextax">
+         <span data-bind="widgetLocaleText:'totalExcludingTaxText'"></span>
+         <span class="ordersumprice pull-right" data-bind="currency: {price: cart().totalWithoutTax(), currencyObj: $data.site().selectedPriceListGroup().currency}"></span>
+       </div>
+       <div class="row">
+         <div class="col-md-7 col-sm-12 col-xs-7">
+           <div data-bind="widgetLocaleText:'orderTotalText'"></div>
+           <div class="includingtaxtext" data-bind="widgetLocaleText:'includingTaxText'"></div>
+         </div>
+         <div class="col-md-5 col-sm-12 col-xs-5">
+           <div class="ordersumprice pull-right" data-bind="currency: {price: cart().total(), currencyObj: $data.site().selectedPriceListGroup().currency}"></div>
+         </div>
+       </div>
+       <!-- /ko -->  
+       <!-- ko ifnot: (cart().isTaxIncluded && cart().showTaxSummary) -->
+         <span class="ordersumlabel" data-bind="widgetLocaleText:'orderTotalText'"></span>
+         <span class="ordersumprice pull-right" data-bind="currency: {price: cart().total(), currencyObj: $data.site().selectedPriceListGroup().currency}"></span>
+       <!-- /ko -->
+     </div>
+  </div>
+  
+  <div id="CC-orderSummary-checkout" class="checkout row">
+    <a data-bind="click: handleValidateCart, ccNavigation: 'prevent', disabled: {condition: cart().items().length == 0, link : 'checkout'}, inTabFlow: cart().items().length != 0" class="cc-button-primary btn-checkout col-xs-12">
+      <span data-bind="widgetLocaleText:'checkoutText'"></span>
+    </a>
+  </div>
+</div> 

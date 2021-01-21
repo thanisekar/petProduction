@@ -1,0 +1,199 @@
+<div id="chuckitForward">
+    <div class="container">
+        <div class="headerSection">
+            <div class="row">
+               <div class="col-xs-8 headerRow">
+                    <div class="col-sm-4 nopad">
+                     <img src="/file/general/chuckit-holiday-season.png" class="img-responsive holiday-img">
+                </div>
+                <div class="col-sm-8 nopad">
+                     <a data-bind="ccLink: {route:'/chuckit-/category/brand-Chuckit'}"><img src="/file/general/chuckit-forward-logo.png" class="img-responsive"></a>
+                </div>
+               </div>
+            </div>
+        </div>
+        
+        <div class="buyNowSection">
+            <div class="banner-section">
+                 <img src="/file/general/chuckit-forward-banner-main.jpg" class="img-responsive"> 
+            </div>
+            <div class="gift-fetch">
+           <div class="row">
+               <div class="col-sm-4">
+                   <img src="/file/general/gift-fetch.png" class="gift-fetch-img img-responsive">
+               </div>
+               <div class="col-sm-6">
+                   <p>We're making it easy for you to #chuckitforward this holiday season and give the gift of fetch - buy one Chuckit 18M Junior Launcher and get another one FREE! Use Promo Code: GIVECHUCKIT</p>
+               </div>
+               <div class="col-sm-2">
+                   <a href="https://www.petmate.com/chuckit-junior-launcher/product/06100"> <img src="/file/general/chuckit-forward-buyNow.png" class="img-responsive"></a>
+               </div>
+           </div>
+           </div>
+        </div>
+        
+        <div class="shelterSection">
+            <div class="shelterHeader">
+            <h3>SHELTER AND RESCUE PARTNERS</h3>
+            <h4>Adopt a dog from these organizations and receive a free Chuckit! launcher to take home with you, while supplies last.</h4>
+            </div>
+            <div class="location">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <ul>
+                             <li>Houston, TX</li>
+                            <li> Houston Humane Society</li>
+                            <li><a target="_blank" href="https://www.houstonhumane.org ">houstonhumane.org </a> </li>
+                        </ul>
+                        <ul>
+                            <li>Atlanta, GA	</li>
+                            <li>Atlanta Humane Society </li>
+                            <li><a target="_blank" href="https://www.atlantahumane.org">atlantahumane.org</a></li>
+                        </ul>
+                        <ul>
+                            <li>Dallas, TX	Dallas Animal Services</li>
+                            <li><a target="_blank" href="https://dallascityhall.com/departments/dallas-animal-services/Pages/default.aspx">dallascityhall.com</a></li>
+                        </ul>
+                        <ul>
+                            <li>Dallas, TX	SPCA of Texas</li>
+                            <li><a target="_blank" href="https://www.spca.org">spca.org</a></li>
+                        </ul>
+                        <ul>
+                            <li>Arlington, TX</li>
+                            <li>Arlington Animal Services</li>
+                            <li><a target="_blank" href="http://www.arlington-tx.gov/animal">arlingtontx.gov/animal</a></li>
+                        </ul>
+                        <ul>
+                            <li>Glendale Heights, IL </li>
+                            <li>Players for Pits</li>
+                            <li><a target="_blank" href="https://www.playersforpits.com">playersforpits.com</a></li>
+                        </ul>
+                        <ul>
+                            <li>Sims, NC</li>
+                            <li>Johnston County Animal Protection League</li>
+                            <li><a target="_blank" href="https://www.Jcapl.org">Jcapl.org</a></li>
+                        </ul>
+                        <ul>
+                            <li>Fond du Lac,WI</li>
+                            <li>Sandi Paws Rescue</li>
+                            <li><a target="_blank" href="http://www.sandipaws.org">sandipaws.org</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul>
+                            <li>Woodlands, TX	</li>
+                            <li>Westie & Scottie Rescue Of Houston</li>
+                            <li><a target="_blank" href="http://www.wsrh.com">wsrh.com</a></li>
+                        </ul>
+                        <ul>
+                            <li>Lake Wylie, SC	</li>
+                            <li>Project Safe Pet</li>
+                            <li><a target="_blank" href="http://www.projectsafepet.com">projectsafepet.com</a></li>
+                        </ul>
+                        <ul>
+                            <li>Richland Hills, TX</li>
+                            <li>Helping Paws of North Texas</li>
+                            <li><a target="_blank" href="http://www.helpingpawsoffortworthtexas.org">helpingpawsoffortworthtexas.org</a></li>
+                        </ul> 
+                        <ul>
+                            <li>Nashua, NH</li>
+                            <li>Paws New England</li>
+                            <li><a target="_blank" href="https://www.pawsnewengland.com">pawsnewengland.com</a></li>
+                        </ul>
+                        <ul>
+                            <li>New York</li>
+                        </ul>
+                        <ul>
+                            <li>East Greenwich, RI</li>
+                            <li>Midnight Run Rescue</li>
+                            <li><a target="_blank" href="https://www.midnightrunrescue.net">midnightrunrescue.net</a></li>
+                        </ul>
+                        <ul>
+                            <li>Eau Claire, WI</li>
+                            <li>Eau Claire County Humane Association</li>
+                            <li><a target="_blank" href="https://www.eccha.org">eccha.org</a></li>
+                        </ul>
+                        <ul>
+                            <li>Salt  Lake City, UT</li>
+                            <li>Danate Rescue Group</li>
+                            <li><a target="_blank" href="http://www.danaterescue.org">danaterescue.org</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul>
+                            <li>Armonk, NY</li>
+                            <li>Adopt-A-Dog</li>
+                            <li><a target="_blank" href="https://www.adopt-a-dog.org">adopt-a-dog.org</a></li>
+                        </ul>
+                        <ul>
+                            <li>MT	Humane Society of Western Montana</li>
+                            <li><a target="_blank" href="https://www.myhswm.org">myhswm.org</a></li>
+                        </ul>
+                        <ul>
+                            <li>Houston, TX </li>
+                            <li>BARC Animal Shelter</li>
+                            <li><a target="_blank" href="https://www.houstontx.gov/barc">houstontx.gov/barc</a></li>
+                        </ul>
+                        <ul>
+                            <li>Redwood Valley, CA</li>
+                            <li>Humane Society for Inland Mendocino</li>
+                            <li><a target="_blank" href="https://www.mendohumanesociety.com">mendohumanesociety.com</a></li>
+                        </ul>
+                        <ul>
+                            <li>K9 Lifesavers</li>
+                            <li>Silver Spring, MD</li>
+                            <li><a target="_blank" href="https://www.k-9lifesavers.org">k-9lifesavers.org</a></li>
+                        </ul>
+                        <ul>
+                            <li>Prairie Paws Animal Shelter</li>
+                            <li>Ottawa, KS</li>
+                            <li><a target="_blank" href="https://www.prairiepaws.org">prairiepaws.org</a></li>
+                        </ul>
+                        <ul>
+                            <li>Charlottesville, VA	</li>
+                            <li>Charlottesville-Albemarle SPCA</li>
+                            <li><a target="_blank" href="https://www.caspca.org">caspca.org</a></li>
+                        </ul>
+                        <ul>
+                            <li>San Luis Obispo, CA	</li>
+                            <li>Woods Humane Society </li>
+                            <li><a target="_blank" href="http://www.woodshumanesociety.org">woodshumanesociety.org</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="footerSection">
+                <div class="row">
+                    <div class="col-sm-8 col-xs-12">
+                        <div class="row">
+                            <div class="col-sm-5 col-xs-12">
+                                <a data-bind="ccLink: 'home'"> <img src="/file/general/chuckit-PM-logo.png" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-7 col-xs-12 doskocil">
+                                <span class="dosckocil">&copy; 2018 Doskocil Manufacturing Company, Inc. dba Petmate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-12 hidden-xs hidden-sm">
+                                <!--<span>Official Rules  |  Privacy Policy</span>-->
+                            </div>
+                            <div class="col-sm-6 col-xs-12">
+                                <div class="socialIcons">
+                                     <a  href="http://www.facebook.com/Petmate" target="_blank"><img src="/file/general/chuckit-facebook.png"></a>
+                                    <a  href="http://www.twitter.com/petmateproducts" target="_blank"><img src="/file/general/chuckit-Twitter.png"></a>
+                                    <a  href="http://www.youtube.com/user/petmatepetproducts" target="_blank"><img src="/file/general/chuckit-YouTube.png"></a>
+                                    <a  href="http://instagram.com/petmatepetproducts" target="_blank"><img src="/file/general/chuckit-Instagram.png"></a>
+                                </div>
+                                 </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+    </div>
+</div> 

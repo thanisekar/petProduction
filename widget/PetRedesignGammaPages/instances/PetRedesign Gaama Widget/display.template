@@ -1,0 +1,185 @@
+<div id="gamma2">
+   <div class="container">
+      <div id="banner">
+         <!-- Carousel -->
+         <div id="carousel-example-generic" class="carousel slide gamma" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators hidden-xs hidden-sm">
+               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+               <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+               <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+               <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+               <div class="item active">
+                  <div class="hidden-xs">
+                     <img  data-bind="ccResizeImage: {
+                        source: '/file/general/image_Desktop_Banner_VittlesVault.jpg',
+                        xsmall: '400,1088',
+                        small: '400,1088',
+                        medium:'400,1088',
+                        large: '400,1088',
+                        errorSrc:'images/noImage.png',
+                        errorAlt:'No Image Found'}"  class="img-responsive"
+                        >
+                  </div>
+                  <div class="visible-xs">
+                     <img  data-bind="ccResizeImage: {
+                        source: '/file/general/image_Mobile_Banner_VittlesVault.jpg',
+                        xsmall: '400,1088',
+                        small: '400,1088',
+                        medium:'400,1088',
+                        large: '400,1088',
+                        errorSrc:'images/noImage.png',
+                        errorAlt:'No Image Found'}"  class="img-responsive"
+                        >
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="hidden-xs">
+                     <img  data-bind="ccResizeImage: {
+                        source: '/file/general/image_Desktop_Banner_GammaSealLids.jpg',
+                        xsmall: '400,1088',
+                        small: '400,1088',
+                        medium:'400,1088',
+                        large: '400,1088',
+                        errorSrc:'images/noImage.png',
+                        errorAlt:'No Image Found'}"  class="img-responsive"
+                        >
+                  </div>
+                  <div class="visible-xs">
+                     <img  data-bind="ccResizeImage: {
+                        source: '/file/general/image_Mobile_Banner_GammaSealLids.jpg',
+                        xsmall: '400,1088',
+                        small: '400,1088',
+                        medium:'400,1088',
+                        large: '400,1088',
+                        errorSrc:'images/noImage.png',
+                        errorAlt:'No Image Found'}"  class="img-responsive"
+                        >
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="hidden-xs">
+                     <img  data-bind="ccResizeImage: {
+                        source: '/file/general/image_Desktop_Banner_Nano_1.jpg',
+                        xsmall: '400,1088',
+                        small: '400,1088',
+                        medium:'400,1088',
+                        large: '400,1088',
+                        errorSrc:'images/noImage.png',
+                        errorAlt:'No Image Found'}"  class="img-responsive"
+                        >
+                  </div>
+                  <div class="visible-xs">
+                     <img  data-bind="ccResizeImage: {
+                        source: '/file/general/image_Mobile_Banner_Nano_1.jpg',
+                        xsmall: '400,1088',
+                        small: '400,1088',
+                        medium:'400,1088',
+                        large: '400,1088',
+                        errorSrc:'images/noImage.png',
+                        errorAlt:'No Image Found'}"  class="img-responsive"
+                        >
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="hidden-xs">
+                     <img  data-bind="ccResizeImage: {
+                        source: '/file/general/image_Desktop_Banner_HappyPup.jpg',
+                        xsmall: '400,1088',
+                        small: '400,1088',
+                        medium:'400,1088',
+                        large: '400,1088',
+                        errorSrc:'images/noImage.png',
+                        errorAlt:'No Image Found'}"  class="img-responsive"
+                        >
+                  </div>
+                  <div class="visible-xs">
+                     <img  data-bind="ccResizeImage: {
+                        source: '/file/general/image_Mobile_Banner_HappyPup.jpg',
+                        xsmall: '400,1088',
+                        small: '400,1088',
+                        medium:'400,1088',
+                        large: '400,1088',
+                        errorSrc:'images/noImage.png',
+                        errorAlt:'No Image Found'}"  class="img-responsive"
+                        >
+                  </div>
+               </div>
+            </div>
+            <!-- Controls -->
+            <div class="hide">
+            <a class="left carousel-control hidden-sm hidden-xs" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control hidden-sm hidden-xs" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div>
+         </div>
+         <!-- Carousel -->
+         <div class="description">
+            <div class="row">
+               <div class="col-sm-9 col-xs-12 nopad content-center">
+                  <div class="col-lg-4 hidden-xs hidden-sm image">
+                     <img src="/file/general/image_Gamma2_Logo.jpg" class="img-responsive">
+                  </div>
+                  <div class="col-lg-8 col-sm-12">
+                     <h6>A PROMISE OF INNOVATION.</h6>
+                     <p>We bring advanced technology and engineering together to offer the most innovative solutions available for your pet’s lifestyle management.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="family">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-9 col-xs-12 nopad content-center">
+               <h6>OUR FAMILY OF PRODUCTS</h6>
+               <p>Gamma2 is invested in the well-being of pets and pet owners to deliver the most high-performance feeding and storage products you can buy. We maintain a high level of integrity in our processes: extensive research, focused development and rigorous testing to ensure the utmost product experience. As a result, you get the peace of mind of knowing you’re saving time and money, enjoying convenience and dependability and improving the quality of your life as well as your pet’s.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="container">
+      <div id="contents">
+         <div class="row">
+             <div class="col-sm-12 col-md-9 nopad content-center">
+                 <div class="row">
+            <div class="col-sm-4 col-xs-12 nopad">
+              <a data-bind="ccLink : {route : '/vittlesvault'}"><img src="/file/general/image_Desktop_VittlesVault.jpg" class="img-responsive hidden-xs"></a>
+               <a data-bind="ccLink : {route : '/vittlesvault'}"><img src="/file/general/image_Mobile_VittlesVault_G2.jpg" class="img-responsive visible-xs"></a>
+               <div class="detail">
+                   <p>Keep your high-quality pet food fresher longer with Vittles Vault, the revolutionary food storage container with Gamma Seal Technology. It’s freshness you can take to the bank<sup>TM</sup>.</p>
+               <a data-bind="ccLink : {route : '/vittlesvault'}" class="learnMore">LEARN MORE  <i class="fa fa-play" aria-hidden="true"></i></a>
+               </div>
+               
+            </div>
+            <div class="col-sm-4 col-xs-12 nopad">
+                <div class="detail">
+                   <a data-bind="ccLink : {route : '/nano'}"> <img src="/file/general/image_Desktop_Nano_G2.jpg" class="img-responsive hidden-xs"></a>
+                   <a data-bind="ccLink : {route : '/nano'}"> <img src="/file/general/image_Mobile_Nano_G2.jpg" class="img-responsive visible-xs"></a>
+               <p>When it comes to automated pet feeders, Nano<sup>TM</sup> is the new standard in dependability. Precision Portion Control and Jamproof Food Flow means The Right Amount of Pet Food - Every Time.</p>
+               <a data-bind="ccLink : {route : '/nano'}" class="learnMore">LEARN MORE  <i class="fa fa-play" aria-hidden="true"></i></a>
+                </div>
+               
+            </div>
+            <div class="col-sm-4 col-xs-12 nopad">
+                <div class="detail">
+                   <a data-bind="ccLink : {route : '/gammaseallids'}"> <img src="/file/general/image_Desktop_GammaSealLids.jpg" class="img-responsive hidden-xs"></a>
+                   <a data-bind="ccLink : {route : '/gammaseallids'}"> <img src="/file/general/image_Mobile_GammaSealLid_G2.jpg" class="img-responsive visible-xs"></a>
+               <p>Transform your standard utility bucket into an air-tight, easy-to-use storage device for hundreds of household products, from lawn and garden to paint and chemicals and everything else in between.</p>
+               <a data-bind="ccLink : {route : '/gammaseallids'}" class="learnMore">LEARN MORE  <i class="fa fa-play" aria-hidden="true"></i></a>
+                </div>
+               
+            </div>
+            </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

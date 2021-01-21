@@ -1,0 +1,142 @@
+<!-- ko if: enabled() -->
+<div class="container" id="dogsCarouselWidget" data-oc-id="dogsCarouselWidget">
+       
+    <div class="col-sm-12 col-xs-12 carousel-container-width">
+     <!--   <pre data-bind="text: ko.toJSON(koDealsModelData(),  null, 2)"></pre>-->
+              <div class='col-sm-12 col-xs-12 collectionTitle-container'>
+                  <div class='col-sm-8 col-xs-8'>
+                           <h2 data-bind="text:carouselTitle"></h2>
+                  </div>
+                  
+                  <div class='col-sm-4 col-xs-4 shopAllLinkWrapper'>
+                       <!-- ko fpetmate-sale-flagoreach: koCollectionData() -->
+                        <!--ko if: $data.id=='birds'-->
+                          <a class='shop-all-link'  data-bind="ccLink: $data, attr: {href: $data.route}" >Shop All</a>
+                        <!-- /ko -->
+                      <!-- /ko -->
+                  </div>
+                  
+                  
+                  
+                  
+              </div>
+		    	
+				<!-- ko if:koDealsModelData().length > 0 -->
+			    <div  id="owlCarousel" class="owl-carousel image-carousel-container col-xs-12 col-sm-12" 
+		        	data-bind="owlCarousel: { data: koDealsModelData, 
+        			owlOptions: { center: true,
+        			loop: false,
+        			navigation : true, 
+        			rewindNav : false,
+        			pagination:false,
+        			items :itemDesktop(), 
+        			itemsDesktop : [1199, itemDesktop()],
+        			itemsTablet: [991, itemTablet()], 
+        			itemsMobile : [767,itemMobile()],
+        			jsonPath : false, 
+        			jsonSuccess : false,
+		        	afterAction: function(){
+                          if ( this.itemsAmount > this.visibleItems.length ) {
+                            $('.next').show();
+                            $('.prev').show();
+                        
+                            $('.next').removeClass('disabled');
+                            $('.prev').removeClass('disabled');
+                            if ( this.currentItem == 0 ) {
+                              $('.prev').addClass('disabled');
+                            }
+                            if ( this.currentItem == this.maximumItem ) {
+                              $('.next').addClass('disabled');
+                            }
+                        
+                          } else {
+                            $('.next').hide();
+                            $('.prev').hide();
+                          }
+                        }}}">
+			   <div class='owl-carousel-tile'>
+			       <!-- ko if: onSale -->
+                      <!--<span class="petmate-sale-flag"></span>-->
+                      <!-- /ko -->
+                      <!--<pre data-bind="text: ko.toJSON($parent.koDealsIsFlagData(),  null, 2)"></pre>-->
+                      <!-- ko foreach: $parent.koDealsIsFlagData() --> 
+                          <!-- ko if: ($parent.id == id)-->
+                          <!-- ko if: isSaleFlag -->
+                              <span class="petmate-sale-flag">Sale</span>
+                              <!-- /ko -->
+                              <!-- ko if: !isSaleFlag -->
+                              <!-- ko if: isNewFlag -->
+                              <span class="petmate-new-flag">New</span>
+                              <!-- /ko -->
+                              <!-- /ko -->
+                          <!-- /ko -->
+                      <!-- /ko -->
+                      
+				  <div class='owl-carousel-tile-img'>
+				    <a data-bind="ccLink: $data, attr: {href: $data.route}">
+			            <img data-bind="ccResizeImage: {
+                                    source: primaryFullImageURL,
+                                    xsmall: '125,125',
+                                    small: '300,270',
+                                    medium: '266,266',
+                                    large: '266,266',
+                                    alt: displayName,
+                                    title:displayName}"  class="img-responsive" width="100%"/>
+					 </a>
+				  </div>
+				<div class="cc-item-rating">
+                       <!-- ko if: $parent.ratingCount -->
+                          <!--  <span class="stars" data-bind='attr:{title:$parent.ratingCount}, template: {afterRender: function(){$.Topic("update-stars").publish("success");} }'></span>-->
+                           <!-- /ko -->
+                          <!-- ko ifnot: $parent.ratingCount -->
+                      
+                         <!-- <span class="stars" data-bind="attr:{title:'0'}"></span>-->
+                       <!-- /ko -->
+                      <div data-bind="attr: {id: 'BVRRBirdCollection-'+ id}"></div>
+                      
+                 </div>
+				  <div class='owl-carousel-tile-price'>
+				        <!-- ko if: $data.isminMaxprice == true --> 
+				        	  <span data-bind="text: minMaxPrice"></span>
+				        <!-- /ko -->
+				        <!-- ko if: $data.isGetSalePrice == true--> 
+				            
+				        	  <span class='salePriceValue' data-bind="text: getSalePrice"></span>
+				        	    <span class='listPriceValue' data-bind="text: listPrice"></span>
+				        <!-- /ko -->
+				        <!-- ko if: $data.IslistPrice== true--> 
+				        	  <span data-bind="text: listPrice"></span>
+				        <!-- /ko -->
+				        
+        					<!--<p data-bind="text: $parent.customCurrencySymbol() + parseInt(listPrice()).toFixed(2)"></p>-->
+        				<!--	  <span data-bind="text: listPrice"></span>-->
+        					  <!-- ko foreach: $parent.koDealsIsFlagData() -->
+                                  <!-- ko if: ($parent.id == id)-->
+                                  <!-- ko if: isSaleFlag -->
+                                    <!--  <span class="label label-danger">Sale</span>-->
+                                      <!-- /ko -->
+                                  <!-- /ko -->
+                              <!-- /ko -->
+				   </div>
+				  <div class='owl-carousel-tile-text'>
+					  <a href="#" data-bind="ccLink: $data, attr: {href: $data.route}"><span data-bind="text:displayName"></span></a>
+				   </div>
+				   
+                
+			
+				 <!-- ko if: promotext  -->
+                      <div class="petmate-promo-text" >
+                          <span data-bind="text: promotext"></span>
+                      </div>
+                      <div class="clearfix"></div>
+                      <!-- /ko -->
+				   <div class='owl-carousel-tile-quick-view hide'>
+					  <span class="hidden-xs visible-lg hidden-md"><a   data-toggle="modal" data-bind="click: function($data, event) { quickViewModalLnk( $data.id, event) }" class="visible-md visible-lg default-link red uppercase">Quick View &gt;</a></span>
+				   </div>
+			   </div>
+			</div>
+               <!-- /ko -->
+	
+    </div>
+</div>
+ <!-- /ko -->

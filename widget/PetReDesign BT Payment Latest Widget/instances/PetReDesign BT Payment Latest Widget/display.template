@@ -1,0 +1,155 @@
+<!--BT start-->
+<div id='brain-tree-integration' class="">  
+    <div class="row">
+        <div class="col-md-9 col-sm-12 brain-tree-integration-center">
+             <!--<div id="error-msg"></div>-->
+  <form id="bt-payment-form"  method="post" action='javascript:void(0);'  data-bind="template: { afterRender: function() {btPaymentForm() }}">
+    <!--<h2><i class="fa fa-lock" aria-hidden="true"></i> Secure Payment Details</h2>-->
+    <div class="header-wrapper">
+        <div class="circle">3</div> <h2>Secure Payment Details</h2>
+    </div>
+
+    <!--Paypal Payment Start-->
+    <div class="paypalContainer">
+      <div class="miniController">
+        <div class="headline">
+          <span class="bartitle">
+          <strong class="hide">Pay with PayPal</strong>
+          </span>
+        </div>
+      </div>
+      <div class="miniContainer">
+        <!--<span class="payNow">
+          The faster,<br>safer way to pay
+          </span>-->
+        <span>
+            <input type="hidden" id='payment_method_nonce' name="payment_method_nonce" />
+          <div id="CC-checkoutOrderSummary-paypal" class="checkout row">
+          </div>
+        </span>
+        <div class="PaypalHelpText">
+          <a href="https://www.paypal.com/webapps/mpp/paypal-popup" target="_blank">
+          What is PayPal?
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--Paypal Payment End-->
+    <div id="error-msg"></div>
+    
+    <div class="miniController">
+      <div class="headline">
+        <span class="bartitle">
+        Pay with credit or debit card
+        </span>
+      </div>
+    </div>
+      <!--<pre data-bind="text: ko.toJSON(koCardTypeImages(),  null, 2)"></pre>-->
+      <div id="BTFormFields">
+       <div class="row">
+           <div class="col-xs-12 cardTypeImage nopad">
+          <!-- ko foreach: koCardTypeImages()-->
+          <img data-bind="attr: { src: '/file/general/'+ $data +'.png', id: $data }"  class="img-responsive" width="100%"/>
+          <!-- /ko -->
+    </div>
+    
+    
+    <div class="col-xs-12 nameOnCard nopad">
+      <div class="col-xs-12 nopad form-elements">
+        <label class="control-label label-text" id="CC-checkoutPaymentDetails-nameOnCard-label"
+          for="CC-checkoutPaymentDetails-nameOnCard" data-bind="widgetLocaleText: 'nameOnCardLabel'">Name on Card</label>
+          <div class="label-help-block required hide" aria-required="true">Required</div>
+        <span class="text-danger visible-xs hide" id="CC-checkoutPaymentDetails-phone-nameOnCard-error"
+          data-bind="validationMessage: order().paymentDetails().nameOnCard" role="alert"></span>
+        <div class="control">
+          <input aria-required="true" type="text" class="col-md-12 input-box" id="CC-checkoutPaymentDetails-nameOnCard" name="nameOnCard"
+            data-bind="validatableValue: order().paymentDetails().nameOnCard" minlength="2" maxlength="40" placeholder="name on card">
+          <div id="cardOnName-error"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12  cardNum nopad">
+      <div class="col-xs-12 cardNumbe nopad form-elements">
+        <label for="bt-card-number" class="label-text">Card Number</label>
+        <div class="label-help-block required hide" aria-required="true">Required</div>
+        <div id="bt-card-number"></div>
+        <div id="cardNumber-error"></div>
+      </div>
+      
+    </div>
+    <div class="col-xs-12 CVV nopad">
+        
+        <div class="row">
+            <div class="col-xs-3 nopad">
+          <label for="bt-cvv" class="label-text">CVV</label>
+          <div class="label-help-block required hide" aria-required="true">Required</div>
+          <div id="bt-cvv"></div>
+          <div id="cvv-error"></div>
+        </div>
+        <div class="col-xs-3 cvvTextLink">
+          <div class="cc-checkout-payment-details-cvv-row">
+            <small id="CC-checkoutPaymentDetails-cardCVV-whatsthis" class="cvvPopover" data-bind="widgetLocaleText: 'cardCVVWhatsThis',event:{mouseover:cvvMouseOver, focus:cvvMouseOver}" data-toggle="popover" data-placement="right" tabindex="0" aria-label="What's this?" data-original-title="" title="">What's this?</small>
+          </div>
+        </div>
+        <div id="CC-checkoutPaymentDetails-cardCVV-details" class="a11y">
+          <h3 data-bind="widgetLocaleText: 'cardCVVPopupTitle'">CVV</h3>
+          <div data-bind="widgetLocaleText: 'cardCVVPopupText'">The last 3 digits found on your card's signature strip.</div>
+        </div>
+        </div>
+
+    </div>
+    <div class="col-xs-12 expireDate nopad">
+      <div class="col-xs-12 col-sm-12 col-md-11 col-lg-6">
+        <label for="bt-expiration-date" class="label-text">Expiration Date</label>
+        <div class="label-help-block required hide" aria-required="true">Required</div>
+        <div id="bt-expiration-date"></div>
+        <div id="expireDate-error"></div>
+          
+       <!--   <div id="expiration-month" style="height: 42px;"></div>
+
+          <div id="expiration-year" style="height: 42px;"></div>-->
+        
+      </div>
+    </div>
+       </div>
+    </div>
+    
+    <p><input id="bt-submit-pay" type="submit" value="Pay" class="hide"></p>
+  </form>
+  <!--Place Order -->
+        <div id="CC-Placeorder" class="hidden-xs">
+            <!-- ko with: user() -->
+            <!-- ko if: isUserLoggedOut()-->
+            <button data-bind="click: function(data, event){$parent.getGuestUserCheckoutForm()}" class="btn btn-primary" id="CC-Checkout-Placeorder" value="">
+                <span>PLACE ORDER</span>
+            </button>
+            <!-- /ko -->
+            <!-- ko ifnot: isUserLoggedOut()-->
+            <button data-bind="click: function(data, event){$parent.getCustomerCheckoutForm()}" class="btn btn-primary" id="CC-Checkout-Placeorder" value="">
+                <span>PLACE ORDER</span>
+            </button>
+            <!-- /ko -->
+            <!-- /ko -->
+            <!--Popup-->
+               <div class="bt-popup">
+                   <div class="orderPopup" style="display:none">
+                  <div id="popup">
+                     <span class="order-exception-text">Order Cannot Be Placed -</span> 
+                     <small id="CC-shippingSurcharge-whatsThis" class="shippingSurchargePopover" 
+                        data-bind="event:{mouseover:shippingSurchargeMouseOver, focus:shippingSurchargeMouseOver},
+                        attr: {'aria-label':resources().shippingSurchargeWhatsThis}" 
+                        data-toggle="popover" data-placement="right" tabindex="0">
+                     Order Exception</small>
+                     <div id="cc-shippingSurcharge-details" class="a11y">
+                        <div>Please Contact Consumer Services For Shipping Quote  1-877-738-6283</div>
+                     </div>
+                  </div>
+               </div>
+               </div>
+               <!--Ends-->
+            <p>By placing your order, you agree to our <a data-bind="ccLink: 'termsandconditions'">Terms and Conditions</a></p>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- BT end -->

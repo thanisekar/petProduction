@@ -1,0 +1,26 @@
+<div id="categoryLeftNav" >
+  <!--  <pre data-bind="text: ko.toJSON(category(), null, 2)"></pre>-->
+  <div class='categoryLeftNavWrapper'>  
+     <div class="row" id='category-name-listing' >
+              <div class='col-md-12 col-lg-12 nopad categoryLeftNavWrapper-content' >
+                 <div class='categoryTitle' data-bind='widgetLocaleText:"Categories"'></div>
+                  
+                    <ul class='category-content-list'>
+                         <!-- ko foreach: categoryDataModal() --> 
+                         <li>
+                          
+                          <a data-bind="text:categoryName,ccLink:{route:categoryroute}"></a>
+                            
+                          
+                        </li>
+                          <!-- /ko -->
+                    </ul>
+	          
+             </div>
+     </div>
+  </div>    
+</div>
+
+
+
+

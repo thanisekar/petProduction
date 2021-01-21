@@ -1,0 +1,1267 @@
+{
+  "elementInstances": [
+    {
+      "customTitle": "Image_2400008",
+      "styles": {},
+      "tag": "image@2400008",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "fatcat",
+        "titleText": "fatcat",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "brand-fatcat.png"
+      }
+    },
+    {
+      "customTitle": "Image_2400006",
+      "styles": {},
+      "tag": "image@2400006",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "fatcat",
+        "titleText": "fatcat",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "brand-fatcat.png"
+      }
+    },
+    {
+      "customTitle": "Image_2400004",
+      "styles": {},
+      "tag": "image@2400004",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "FAT CAT Big Mama Road Trip Start",
+        "titleText": "FAT CAT Big Mama Road Trip Start",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "6.10.19 FC_BM-ROADTRIP-O-RAMA_IG-POST.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_3000001",
+      "styles": {},
+      "tag": "image@3000001",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama on Thanksgiving",
+        "titleText": "Big Mama on Thanksgiving",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "11.27.19FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_3000003",
+      "styles": {},
+      "tag": "image@3000003",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama @ Cleveland, OH",
+        "titleText": "Big Mama @ Cleveland, OH",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "12.9.19FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2700001",
+      "styles": {},
+      "tag": "image@2700001",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "FAT CAT Big mama Road Trip - Colorado Springs, CO",
+        "titleText": "FAT CAT Big mama Road Trip - Colorado Springs, CO",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "8.12.19_FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2700004",
+      "styles": {},
+      "tag": "image@2700004",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama @ Las Vegas Show",
+        "titleText": "Big Mama @ Las Vegas Show",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "8.26.19_FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2800011",
+      "styles": {},
+      "tag": "image@2800011",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama Trip Ideas",
+        "titleText": "Big Mama Trip Ideas",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "9.30.19 FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2800013",
+      "styles": {},
+      "tag": "image@2800013",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama @ NASA",
+        "titleText": "Big Mama @ NASA",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "10.7.19_FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2900016",
+      "styles": {},
+      "tag": "image@2900016",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama @ Mt. Rushmore",
+        "titleText": "Big Mama @ Mt. Rushmore",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "11.18.19 FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2900014",
+      "styles": {},
+      "tag": "image@2900014",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama @ Cactus Flat, SD",
+        "titleText": "Big Mama @ Cactus Flat, SD",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "11.11.19 FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2900012",
+      "styles": {},
+      "tag": "image@2900012",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "FAT CAT Big Mama Meets the Flockers Dog Toys",
+        "titleText": "FAT CAT Big Mama Meets the Flockers Dog Toys",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "11.6.19 FC_BM-ROADTRIP-O-RAMA_Meet-The-Flockers.jpg"
+      }
+    },
+    {
+      "customTitle": null,
+      "styles": {},
+      "tag": "image@2900010",
+      "text": null
+    },
+    {
+      "customTitle": "Image_2900007",
+      "styles": {},
+      "tag": "image@2900007",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama @ Cawker City, KS",
+        "titleText": "Big Mama @ Cawker City, KS",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "11.4.19 FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2600001",
+      "styles": {},
+      "tag": "image@2600001",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "FAT CAT Big Mama Road Trip - Cat Creek, MT",
+        "titleText": "FAT CAT Big Mama Road Trip - Cat Creek, MT",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "7.29.19_FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2600003",
+      "styles": {},
+      "tag": "image@2600003",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "FAT CAT Big Mama Roadtrip - Salt Lake City, UT",
+        "titleText": "FAT CAT Big Mama Roadtrip - Salt Lake City, UT",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "8.5.19_FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2900005",
+      "styles": {},
+      "tag": "image@2900005",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "FAT CAT Big Mama in Halloween Costume",
+        "titleText": "FAT CAT Big Mama in Halloween Costume",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "10.28.19FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2900003",
+      "styles": {},
+      "tag": "image@2900003",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama @ OKC",
+        "titleText": "Big Mama @ OKC",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "10.21.19FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2900001",
+      "styles": {},
+      "tag": "image@2900001",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama @ Taco Stand in Austin, TX",
+        "titleText": "Big Mama @ Taco Stand in Austin, TX",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "10.14.19_FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2500013",
+      "styles": {},
+      "tag": "image@2500013",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "isProductImage": "0",
+        "titleText": "fat cat",
+        "zoomEnabled": "0",
+        "fileName": "FatCat-Popup.png"
+      }
+    },
+    {
+      "customTitle": "Image_2500010",
+      "styles": {},
+      "tag": "image@2500010",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "isProductImage": "0",
+        "titleText": "fat cat",
+        "zoomEnabled": "0",
+        "fileName": "FatCat-Popup.png"
+      }
+    },
+    {
+      "customTitle": "Image_2500016",
+      "styles": {},
+      "tag": "image@2500016",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "isProductImage": "0",
+        "titleText": "FAT CAT Big Mama Road Trip - Seattle, WA",
+        "zoomEnabled": "0",
+        "fileName": "7.22.19_FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2800001",
+      "styles": {},
+      "tag": "image@2800001",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama @ Burning Man",
+        "titleText": "Big Mama @ Burning Man",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "9.2.19_FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2800003",
+      "styles": {},
+      "tag": "image@2800003",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama @ Photos From the Road",
+        "titleText": "Big Mama @ Photos From the Road",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "9.9.19_FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2500001",
+      "styles": {},
+      "tag": "image@2500001",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "FAT CAT Big Mama San Diego Stop",
+        "titleText": "FAT CAT Big Mama San Diego Stop",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "FC_BM-ROADTRIP-O-RAMA_SANDIEGO.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2800005",
+      "styles": {},
+      "tag": "image@2800005",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama @ Area 51",
+        "titleText": "Big Mama @ Area 51",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "9.13.19_FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2800007",
+      "styles": {},
+      "tag": "image@2800007",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama Lost @ Area 51",
+        "titleText": "Big Mama Lost @ Area 51",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "9.16.19_FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2500005",
+      "styles": {},
+      "tag": "image@2500005",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama @ Hollywood Sign",
+        "titleText": "Big Mama @ Hollywood Sign",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "7.8.19_FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2800009",
+      "styles": {},
+      "tag": "image@2800009",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama @ Roswell, NM",
+        "titleText": "Big Mama @ Roswell, NM",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "9.23.19_FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2500003",
+      "styles": {},
+      "tag": "image@2500003",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama's Road Trip - San Diego ",
+        "titleText": "Big Mama's Road Trip - San Diego ",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "FC_BM-ROADTRIP-O-RAMA_SANDIEGO.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2500008",
+      "styles": {},
+      "tag": "image@2500008",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Big Mama @ Alcatraz",
+        "titleText": "Big Mama @ Alcatraz",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "7.15.19_FC_BM-ROADTRIP-O-RAMA.jpg"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2400011",
+      "styles": {},
+      "tag": "rich-text@2400011",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>June 24, 9</p>\n\n<p>It&#39;s official .. . My Roadtrip -O- Rama starts today and my first stop is 5 days away! I&#39;ll be cruisin&#39; across the country to meet new friends and see new places. Check back here to read&nbsp;my weekly diary updates and make sure to follow along on Instagram <a href=\"https://www.instagram.com/fatcattoys/\" target=\"_blank\">@fatcattoys</a> where I&#39;ll be sharing my pictures from the road!</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2400009",
+      "styles": {},
+      "tag": "rich-text@2400009",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>We make People and pets Laugh.Fat Cat&reg; is on a mission to &quot;Make People and Their Pets Laugh&quot; using innovative cat and dog products, creative designs, and a&nbsp;</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2400007",
+      "styles": {},
+      "tag": "rich-text@2400007",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>We make People and pets Laugh.Fat Cat&reg; is on a mission to &quot;Make People and Their Pets Laugh&quot; using innovative cat and dog products, creative designs, and a&nbsp;</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2400005",
+      "styles": {},
+      "tag": "rich-text@2400005",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>June 24, 2019</p>\n\n<p>It&#39;s official&hellip; My Road Trip -O - Rama starts today and my first destination is 5 days away! I&#39;ll be cruisin&#39; across the country over the next few months to see tourist attractions, visit old friends, and attend exciting events! Check back here to read my weekly diary updates where I&#39;ll share stories from the road along with a snapshot of the fun places I get to go! I&#39;m even taking over the @fatcattoys Instagram account during my roadtrip, so make sure to follow along for access to giveaways and new toy launches!&nbsp;</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_3000002",
+      "styles": {},
+      "tag": "rich-text@3000002",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>November 27, 2019</p>\n\n<p>Petmate HQ</p>\n\n<p>Made it home for the feast that is THANKSGIVING! After eating so much food and watching humans throw a ball back and forth on a tv, the fam decided we&#39;re headin&#39; to Grammy&#39;s house for the week, so I&#39;ll be gone a bit longer. Until my next road trip stop, enjoy the turkey!</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_3000004",
+      "styles": {},
+      "tag": "rich-text@3000004",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>December 9, 2019</p>\n\n<p>Cleveland, OH</p>\n\n<p>*Knocks over guitar on display* Dear Rock &amp; Roll Hall of Fame, am I doing this right? Does this make me a rockstar now? I&#39;m free next weekend for my induction into the Hall of Fame. Have your people call my people (or just bill them for the damage, totally sorry!)</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2700002",
+      "styles": {},
+      "tag": "rich-text@2700002",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>August 13, 2019</p>\n\n<p>Colorado Springs, CO</p>\n\n<p>White water rafting here in Colorado Springs was SO. MUCH. FUN. I honestly don&#39;t know why more cats don&#39;t do this. I met up with my good friends, the Bark Targets, and they convinced me to go extreme with this weeks&#39; activity of white water rafting! Does this mean I&#39;m &quot;outdoorsy&quot;? Because I&#39;ve secretly always wanted to be that kind of cat.</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2800010",
+      "styles": {},
+      "tag": "rich-text@2800010",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>September 23, 2019</p>\n\n<p>Roswell, NM</p>\n\n<p>Actually, I&#39;m not too sure of where i am right meow. I finally found the purrrfect little diner to grab some dee-licious snacks (*sign* they were out of Appeteasers). At some point during my quick cat nap on the counter, a bright light came out of nowhere and I suddenly found myself in front of some cute looking figures that kept saying &quot;We Come In Peace&quot;? Aunt Darlene warned me this might happen out here. Anywho, they mentioned something about waning my not-so-secret catnip recipe, so in exchange they told me all about Area 51!</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2800012",
+      "styles": {},
+      "tag": "rich-text@2800012",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>September 30, 2019</p>\n\n<p>These past 2 weeks of Big Mama&#39;s Raodtrip -O- Rama have been a little more dramatic than usual, so Big Mama&#39;s taking some time to plan out the rest of her trip. (Thank goodness! We can&#39;t go through that again!. If you have any suggestions for things to do at her future stops please let us know on Instagram!</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2800014",
+      "styles": {},
+      "tag": "rich-text@2800014",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>October 7, 2019</p>\n\n<p>Houston, TX</p>\n\n<p>Big Mama to Gound Control... I&#39;ve arrived here <a href=\"https://www.instagram.com/nasa/\" target=\"_blank\">@NASA</a>! After a long drive across the great state of Texas, I&#39;ve made it to my highly anticipated ceremony where I&#39;ll be named an Honorary Space Cadet! Not really sure what it means, but I&#39;ve been meaning to ask if they need another cat in space? Houston, your problems are solved!</p>\n\n<p>P.S. My next stop is #AustinCityLimits, so if anyone has any extra VIP tickets for next wekiend, lemme know!</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2900017",
+      "styles": {},
+      "tag": "rich-text@2900017",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>November 18, 2019</p>\n\n<p>Mount Rushmore National Monument</p>\n\n<p>Ya know... During my roadtrip, I think I&#39;ve learned the most while at Mount Rushmore. After doing a short tour around the monument, I *accidentally* stumbled upon a door around back. Low and behold, I had walking in on a secret workshop that contained a bunch of &quot;Classified Documents&quot;. Some of them had titles like The Lochness Monster, Military Intelligence, and the Denver Airport... none of which I knew anything about! Luckily, it only took me 48 hours to read everything before I snuck out.</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2900015",
+      "styles": {},
+      "tag": "rich-text@2900015",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>November 11, 2019</p>\n\n<p>Badlands Ranch Store, Cactus Flat, SD</p>\n\n<p>Holy Cow! Or should I say Holy Prairie Dog... I&#39;ve never seen such a large rodent before! Despite his grand presence, he didn&#39;t really say much, so I stopped in the gift shop next to it for some snacks before I hit the road again. As I was checking out, I saw a sign about feeding real prairie dogs, so I bought a bag-o-peanuts and headed out back to see the real deal. Who woulda thought these guys were so photogenic!? I even tried to convince a prairie dog to be my co-pilot for the rest of my trip but he said his schedule was sooper busy back on the ranch... Oh well, off to my next historic destination!</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2900013",
+      "styles": {},
+      "tag": "rich-text@2900013",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>November 6, 2019</p>\n\n<p>Lincoln, NE</p>\n\n<p>Somewhere between Kansas and South Dakota, I stopped along the country roads for a quick break and ended up meeting a couple of chatty birds. They mentioned wanting to visit <a href=\"https://www.instagram.com/petsmart/\" target=\"_blank\"><strong>@Petsmart</strong></a>, so I gladly dropped them off at the store on the way to my next roadtrip stop. While they were great passengers, they sure knew how to talk my ear off!</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2700005",
+      "styles": {},
+      "tag": "rich-text@2700005",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>August 26, 2019</p>\n\n<p>Las Vegas, NV</p>\n\n<p>Viva Las Vegas, baby! Over the weekend I visited some old friends, The Showgulls! Their shows are a real hoot, and they say every cat that comes to town makes a stop just to see them. They also said something about having &quot;the best catnip on the strip&quot; and that they wanted me to join them on stage?... I wonder if their catnip has some kind of secret ingredient in it?</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2900008",
+      "styles": {},
+      "tag": "rich-text@2900008",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>November 4, 2019</p>\n\n<p>Cawker City, KS</p>\n\n<p>Well, I&#39;ve made it to the World&#39;s Largest Ball of Twine and OH. EMM. GEE. More like the world&#39;s largest cat toy! Now if only I could fit it in my car...</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2600004",
+      "styles": {},
+      "tag": "rich-text@2600004",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>August 5, 2019</p>\n\n<p>Vernal, UT</p>\n\n<p>Dinosaurs really doooooo exist! This week I met Dinah the dinosaur in Vernal, Utah. I&#39;ve always wanted to meet a dinosaur, they&#39;re just so majestic and I really admire the face that they&#39;ve been around for so long. Dinah didn&#39;t have much to say, but her statuesque presence was enough encouragement to continue on my roadtrip. Until next time, Dinah!</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2600002",
+      "styles": {},
+      "tag": "rich-text@2600002",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>July 29, 2019</p>\n\n<p>Cat Creek, MT</p>\n\n<p>The road can be a lonely place, but here in Cat Creek, Montana, I feel as if I&#39;m one with nature. I&#39;ve done some fishing, the &#39;old fashioned way of course, and took numerous cat naps in the shade because well, this is the purrrfect place to do that. I&#39;m back on the road next week, and I hear I get to make a new friend! Can you guess where I&#39;m off to next?</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2900006",
+      "styles": {},
+      "tag": "rich-text@2900006",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>October 28, 2019</p>\n\n<p>Halloween is one of my most favorite holidays! I mean, who doesn&#39;t like to dress up as something completely different? I&#39;ve diligently searched through all the FAT CAT archives to find the perfect costume this year, which took a bit longer than expected to find something. Can you guess what I&#39;m supposed to be? I&#39;m a mouse... duh.</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2900004",
+      "styles": {},
+      "tag": "rich-text@2900004",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>October 21, 2019</p>\n\n<p>Oklahoma City, OK</p>\n\n<p>After several hours on the road, I made a quick stop in #OKC to stretch these travlin&#39; paws. Thanks to some super cool friends of mine, I got to play a round of ball on the @okcthunder court! Anywho, those Hipster Kickers that I met at ACL told me about the Largest Ball of Twine just north of here, so I&#39;m headed there to see what all the hoopla is about!</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2900002",
+      "styles": {},
+      "tag": "rich-text@2900002",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>October 14, 2019</p>\n\n<p>Austin, TX</p>\n\n<p>The tunes here at Austin City Limits were what I really needed after being on the road for so long. My personal faves included @billieeilish @hippiesabotage and @thirdeyeblind. After enjoying the festival, I stopped by this funky little taco truck in Austin and met these super chill Hipster Kickers! Then I tried a dee-lightful tuna taco that blew my whiskers to Fredericksburg. And guess what - turns out the Guadalupe is a river, not a fishing jig like Aunt Darlene told me. Who knew? Oh well, Keep Austin Weird!</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2500012",
+      "styles": {},
+      "tag": "rich-text@2500012",
+      "text": null,
+      "richTextConfig": {
+        "content": " "
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2500011",
+      "styles": {},
+      "tag": "rich-text@2500011",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>July 8, 2019</p>\n\n<p>Hollywood, CA</p>\n\n<p>I&#39;m not too sure why no one takes photos up here, there&#39;s practically no people so you get purrfect Instagram pics. Hollywood is my kind of place&hellip; 24/7 sun (perfect for cat naps), a beach (aka largest litterbox ever), and palm trees galore (scratching posts anyone?). After a week of non-stop poke bowls and sashimi from NOBU, I can hear the road calling my name, so I&#39;m packing my bags to head up the coast to my next desination. Can you guess where it is?&nbsp;</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2500017",
+      "styles": {},
+      "tag": "rich-text@2500017",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>July 22, 2019</p>\n\n<p>Seattle, WA</p>\n\n<p>Who knew there were acres and acres of catnip just waiting to be frolicked through?! All of these great smells really got my feet a tappin&#39; and tail a snappin&#39;. Now if only there were a disco club nearby with some groovy tunes for me to boogie the night away at...</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2500014",
+      "styles": {},
+      "tag": "rich-text@2500014",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>July 8, 2019</p>\n\n<p>Hollywood, CA</p>\n\n<p>I&#39;m not too sure why no one takes photos up here, there&#39;s practically no people so you get purrfect Instagram pics. Hollywood is my kind of place&hellip; 24/7 sun (perfect for cat naps), a beach (aka largest litterbox ever), and palm trees galore (scratching posts anyone?). After a week of non-stop poke bowls and sashimi from NOBU, I can hear the road calling my name, so I&#39;m packing my bags to head up the coast to my next desination. Can you guess where it is?&nbsp;</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2500002",
+      "styles": {},
+      "tag": "rich-text@2500002",
+      "text": null,
+      "richTextConfig": {
+        "content": " "
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2800002",
+      "styles": {},
+      "tag": "rich-text@2800002",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>September 2, 2019</p>\n\n<p>Burning Man</p>\n\n<p>Originally, my plans were to search for the largest litterbox here in Nevada... I figured the desert was the purrrfect place to start. But as I wandered closer to the Burning Man Festival, the pulsing music really just drew me in and next thing I knew, 4 days had passed! The music sure got me hooked, but the magical art really got me thinking of all the new products I need to be working on for #GlobalPetExpo2020 next year! Time to put the thinking cap on and head back out on the road!</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2800004",
+      "styles": {},
+      "tag": "rich-text@2800004",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>September 9, 2019</p>\n\n<p>Phoenix, AZ</p>\n\n<p>The Great Southwest area has been a real treat to drive through! I&#39;ve taken some Instagram worthy photos so far, which I made sure to send back to Suspicious Chicken at HQ since he keeps asking me how much work I&#39;ve gotten done for #GlobalPetExpo2020. I&#39;ve made a pit stop in Phoenix and the food here is just dee-lighful, they were even cool with adding some sardines to my street tacos!</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2500006",
+      "styles": {},
+      "tag": "rich-text@2500006",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>July 8, 2019</p>\n\n<p>Hollywood, CA</p>\n\n<p>I&#39;m not too sure why no one takes photos up here, there&#39;s practically no people so you get purrrfect Instagram pics. Hollywood is my kind of place... 24/7 sun (perfect for cat naps), a beach (aka largest litterbox ever), and palm trees galore (scratching post anyone?). After a week of non-stop poke bowls and sashimi from NOBU, I can hear the road calling my name, so I&#39;m packin&#39; my bags to head up the coast to my next destination. Can you guess where it is?</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2800006",
+      "styles": {},
+      "tag": "rich-text@2800006",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>September 13, 2019</p>\n\n<p>Area 51</p>\n\n<p>Last week I got a postcard from Aunt Darlene telling me about some event at #Area51 that I should avoid, but curiosity got the best of me so I decided to add a stop to my roadtrip! Somehow I must&#39;ve mixed up the dates, because I&#39;m here for #stormarea51 but no one else seems to be?</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2500004",
+      "styles": {},
+      "tag": "rich-text@2500004",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>July 1, 2019</p>\n\n<p>San Diego, CA</p>\n\n<p>My first stop on my road trip is her in sunny San Diego, California! This weekend I got to go to a <a href=\"https://www.instagram.com/padres/\" target=\"_blank\">@Padres</a> baseball game, where I cheered on both teams, mainly because I&#39;m not entirely sure how the game of baseball is played. Sampling all the yummy food here was really my priorityl Pretty sure I ordered one of everything and boy oh boy were they dee-licious! After doing a bit more sightseeing here I&#39;m packin&#39; up my bags and heading up the coast on Highway 5, any guesses where I&#39;m headed to next?</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2800008",
+      "styles": {},
+      "tag": "rich-text@2800008",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>September 16, 2019</p>\n\n<p>Area 51</p>\n\n<p>THIS JUST IN: Big Mama has not been seen for one entire week. She&#39;s belived to have last been seen near #Area51 in Nevada while making her way across the US as part of a roadtrip. If you&#39;ve seen Big Mama, please post a picture on Instagram and use the hashtag #BigMamasBeenFound to help us locate her!</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2500009",
+      "styles": {},
+      "tag": "rich-text@2500009",
+      "text": null,
+      "richTextConfig": {
+        "content": "<p>July&nbsp;15, 2019</p>\n\n<p>San Fransicso, CA</p>\n\n<p>The golden state sure is scenic! I had quite the view of the San Francisco Bay from the top of Alcatraz. Pretty sure I wasn&#39;t allowed up there, If that&#39;s what No Trespassing means? After a quick cat nap there at Alcatraz, I took the ferry back to the mainland and stopped by Fisherman&#39;s Wharf to pick out fresh fish and boy oh boy were they dee-lish! California&#39;s been great, but its time to pack up and continue up the coast again!</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    }
+  ]
+}

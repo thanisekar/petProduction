@@ -1,0 +1,13 @@
+<!-- ko if:kogetBrandPageId()!=''-->
+<div class='BrandDetailsContainer'>
+    <div class='row'>
+        <div class='col-xs-12 brandDetailCotent'>
+            <!--ko with:category()-->
+             <p data-bind='html:description' class='description'></p>
+             <p data-bind='html:longDescription' class='longDescription'></p>
+            <!-- /ko-->
+        </div>
+    </div>
+</div>
+<!--/ko-->
+

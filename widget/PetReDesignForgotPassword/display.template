@@ -1,0 +1,45 @@
+
+<!--ko with: user -->
+<div id="forgotPwd" data-bind="visible: $parent.resetEmail">
+    <div class="row mlr">
+        <div class="col-xs-12">
+            <div class="page-header">
+                <h2>FORGOT PASSWORD</h2>
+            </div>
+            <div class="page-body col-sm-8 col-md-7">
+                <form id="forgotPassword">
+                    <label class="caption">Please enter your email address. We will send you a temporary password.</label>
+                    <div class="error-msg" data-bind="visible: $parent.noProfileError">No profile found.</div>
+                    <div class="form-group">
+                        <label for="emailAddress">email</label>
+                        <input type="email" name="emailaddress" class="form-control" data-bind="validatableValue: emailAddressForForgottenPwd" id="emailAddress" aria-describedby="emailHelp" placeholder="example@example.com">
+                    </div>
+                    <button type="submit" class="btn btn-block" data-bind="click: function(data, event){ if(forgotPwd.form()) { $parent.resetForgotPassword1(data) } } ">SUBMIT</button>
+                </form>
+                <div class="panel">
+                    <p class="h4">
+                        New User? <span class="registerBtn"><a href="/createaccount">Register Here</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ko-->
+
+<div id="pwdSend" data-bind="visible: resetPwdMsg">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="page-header">
+                RESET PASSWORD
+            </div>
+            <div class="text-center">
+                <p class="h6 text-center"><strong>Reset password email sent</strong></p>
+                <p>A temporary password has been sent to the email address you provided. Please use the temporary password provided to reset your password on your next log in to the My Account section.</p>
+                <a href="/login">
+                    <button class="button mb-20">Return To Login</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

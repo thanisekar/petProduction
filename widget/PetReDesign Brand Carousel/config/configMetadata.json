@@ -1,0 +1,23 @@
+{
+  "titleResourceId": "title",
+  "properties": [
+    {
+      "defaultValue": false,
+      "name": "enabled",
+      "id": "enabled",
+      "helpTextResourceId": "enabledHelpText",
+      "labelResourceId": "enabledLabel",
+      "type": "booleanType"
+    },
+    {
+      "defaultValue": "",
+      "name": "collectionId",
+      "id": "collectionId",
+      "helpTextResourceId": "collectionIdHelpText",
+      "labelResourceId": "collectionIdLabel",
+      "type": "stringType",
+      "required": false
+    }
+  ],
+  "descriptionResourceId": "description"
+}

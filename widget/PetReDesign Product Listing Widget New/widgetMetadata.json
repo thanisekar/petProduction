@@ -1,0 +1,34 @@
+{
+  "imports": [
+    "category",
+    "categoryId",
+    "dimensionId",
+    "productTypes"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Product Listing Widget New",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": false,
+  "pageTypes": [
+    "category",
+    "searchResults"
+  ],
+  "config": {
+    "VideoUrlOne": "3N9ZkmX8_T0",
+    "VideoUrlTwo": "3N9ZkmX8_T0",
+    "blockSize": "60",
+    "fields": "",
+    "gridWidth": "4",
+    "isScrollEnabled": false,
+    "isViewModelCacheEnabled": false,
+    "listType": "product",
+    "productsPerPage": "12",
+    "shouldUseStyleBased": false,
+    "viewModelCacheLimit": "3"
+  }
+}

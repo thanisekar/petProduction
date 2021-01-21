@@ -1,0 +1,4 @@
+<div class="bvCurationWrap" >
+    <!--<div  class="BVGalleryWrap"  data-bind="attr: {'id': koBVGalleryContainer()}"></div> -->
+    <div data-bind="attr: { 'data-bv-show': 'curations', 'data-bv-widget': 'bv-carousel','data-bv-display-tag': koDisplayProperty }"></div>
+</div>

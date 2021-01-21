@@ -1,0 +1,45 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+    
+    .modal-dialog{
+        width: 80%;
+        max-width: 62.5rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        position: absolute;
+        z-index: 1005;
+        background-color: #FFFFFF;
+        padding: 1.875rem;
+        border: solid 1px #666666;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        border-radius: 3px;
+        top:10%;
+        @media(max-width:767px){
+            width:100%;
+        }
+    }
+    .modal-content{
+        border: 0px;
+        box-shadow: none;
+        padding: 0px;
+    }
+    .modal-body{
+        padding:0px;
+    }
+    .close{
+        position: absolute;
+        float: right;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 18px;
+        top: -20px !important;
+         right: -15px !important;
+        opacity:1;
+        &:hover{
+            color: #000;
+        }
+    }
+
+
+}

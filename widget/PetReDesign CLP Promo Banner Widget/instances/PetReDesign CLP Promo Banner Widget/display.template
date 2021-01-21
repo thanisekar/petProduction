@@ -1,0 +1,23 @@
+
+<div class='CLPPromoBanner'>
+    <div class='container nopad'>
+     <div class='row nopad'>
+        <div class='col-xs-12 nopad categoryImageWidget'>
+            <!--ko with:category-->
+               <img data-bind="ccResizeImage: {
+        		     	source:'/file/general/'+ $data.id +'_promonew.jpg',
+            			xsmall: '480,1306',
+            			large:'480,1306',
+            			small:'480,1306',
+            			medium:'480,1306',
+            			alt: $data.displayName,
+            			errorSrc:'images/noImage.png',
+            			title:$data.displayName,
+            			errorAlt:'No Image Found'}" class="img-responsive" >
+                <!-- /ko-->
+        </div>
+    </div>
+    </div>
+</div>
+
+

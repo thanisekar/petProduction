@@ -1,0 +1,84 @@
+<!-- ko if: enabled() -->
+<div class="container" id="brandCarouselWidget" data-oc-id="brandCarouselWidget">
+    
+    <div class="col-sm-12 col-xs-12 carousel-container-width">
+     
+              <div class='col-sm-12 col-xs-12 collectionTitle-container'>
+                  <div class='col-sm-10 col-xs-12 nopad'>
+                           <h2 data-bind="text:carouselTitle"></h2>
+                  </div>
+                  
+                  <div class='col-sm-2 col-xs-12 shopAllLinkWrapper'>
+                      <a class='shop-all-brands'  data-bind="ccLink: $data, attr: {href: getBrandsUrl() }" >
+                              Shop All Brands <span class=" visible-xs right-arrow-icon"></span></a>
+                  </div>
+                  
+                  
+                  
+                  
+              </div>
+		    	
+				<!-- ko if:koBrandCollectionData().length > 0 -->
+			    <div  id="owlCarousel" class="owl-carousel image-carousel-container col-xs-12 col-sm-12" 
+		        	data-bind="owlCarousel: { data: koBrandCollectionData, 
+        			owlOptions: { center: true,
+        			loop: false,
+        			navigation : true, 
+        			rewindNav : false,
+        			pagination:false,
+        			items :itemDesktop(), 
+        			itemsDesktop : [1199, itemDesktop()],
+        			itemsTablet: [991, itemTablet()], 
+        			itemsMobile : [767,itemMobile()],
+        			jsonPath : false, 
+        			jsonSuccess : false,
+        			scrollPerPage : true,
+		        	afterAction: function(){
+                          if ( this.itemsAmount > this.visibleItems.length ) {
+                            $('.next').show();
+                            $('.prev').show();
+                        
+                            $('.next').removeClass('disabled');
+                            $('.prev').removeClass('disabled');
+                            if ( this.currentItem == 0 ) {
+                              $('.prev').addClass('disabled');
+                            }
+                            if ( this.currentItem == this.maximumItem ) {
+                              $('.next').addClass('disabled');
+                            }
+                        
+                          } else {
+                            $('.next').hide();
+                            $('.prev').hide();
+                          }
+                        }}}">
+			   <div class='owl-carousel-tile'>
+			      
+                       
+				  <div class='owl-carousel-tile-img image-section brandListing'>
+				    <a data-bind="attr: {href: '/searchresults'+BrandNValue+'&Nrpp=24&type=search&brand='+id, 'data-brandId':id}"  class='brandDisplayName'>
+        	                
+        		           <img data-bind="ccResizeImage: {
+                                        source: $data.categoryImages['0'].url,
+                                        xsmall: '171,300',
+                                        small: '171,300',
+                                        medium: '171,300',
+                                        large: '170,300',
+                                        alt: displayName,
+                                        title:displayName}"  class="img-responsive" />
+                                       
+        				 </a>
+				  </div>
+				
+				   
+                
+			
+				 
+				   
+			   </div>
+			</div>
+               <!-- /ko -->
+	
+    </div>
+</div>
+ <!-- /ko -->

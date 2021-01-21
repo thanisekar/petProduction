@@ -1,0 +1,19 @@
+{
+  "elementInstances": [
+    {
+      "customTitle": "Rich_Text_3300002",
+      "styles": {},
+      "tag": "rich-text@3300002",
+      "text": null,
+      "richTextConfig": {
+        "content": "<h1 data-bind=\"text:displayName\" id=\"cc-product-listing-title\">Focused on Environmental Impact - Now, And In the Future</h1>\n\n<p style=\"margin-bottom:11px\">The Pet Sustainability Coalition is a nonprofit organization in the pet industry that helps companies identify ways to drive business performance through social and environmental impact. PSC has demonstrated that sustainability pays, by improving productivity, encouraging innovation, saving money through efficiencies and meeting the growing demands for healthy, safe and sustainable products.</p>\n\n<p style=\"margin-bottom:11px\">As a member of the Pet Sustainability Coalition, Petmate is committed to implementing sustainable business practices that minimize our impact on the environment and the communities where we do business. We believe sustainability is a critical component of any successful business strategy and are proud to say that we are focused on a more sustainable future for our consumers and the pets they love.</p>\n\n<p style=\"margin-bottom:11px\">Learn more about the Pet Sustainability Coalition at&nbsp;&nbsp;<a href=\"http://www.petsustainability.org\" target=\"_blank\">petsustainability.org</a></p>\n\n<p style=\"margin-bottom:11px\">&nbsp;</p>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    }
+  ]
+}

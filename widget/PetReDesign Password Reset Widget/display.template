@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-xs-12 col-md-6">
+        <!--ko with: user-->
+          <div id="CC-createNewPasswordPane">
+            <div class="header">
+              <h3>RESET PASSWORD</h3>
+            </div>
+            <div class="body">
+              <div id="CC-createNewPassword" data-bind="with: $parent.user">
+                <div class="form-group row">
+                  <div class="controls col-md-12">
+                    <label class="control-label inline" for="CC-createNewPassword-oldPassword" data-bind="widgetLocaleText:'currentPasswordText'"></label>
+                    <div class="password-errors" role="alert">
+                      <div class="text-danger" id="CC-createNewPassword-oldPassword-error" data-bind="validationMessage: oldPassword"></div>
+                    </div>
+                    <input type="password" class="col-md-5 form-control" id="CC-createNewPassword-oldPassword" aria-required="true"
+                           data-bind="validatableValue: oldPassword, widgetLocaleText : {value:'currentPasswordText', attr:'placeholder'}"/>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="controls col-md-12">
+                    <label class="control-label inline" for="CC-createNewPassword-password" data-bind="widgetLocaleText:'newPasswdText'"></label>
+                    <input type="password" class="col-md-5 form-control" id="CC-createNewPassword-password" aria-required="true"
+                           data-bind="validatableValue: newPassword, widgetLocaleText : {value:'newPasswdText', attr:'placeholder'}"/>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="controls col-md-12">
+                    <label class="control-label inline" for="CC-createNewPassword-confirmPassword" data-bind="widgetLocaleText:'newConfirmPasswordText'"></label>
+                    <input type="password" class="col-md-5 form-control" id="CC-createNewPassword-confirmPassword" aria-required="true"
+                           data-bind="validatableValue: confirmPassword, widgetLocaleText : {value:'newConfirmPasswordText', attr:'placeholder'}"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer">
+              <div class="center-block">
+                <button type="button" class="cc-button-primary btn-block" id="CC-createNewPasswordSave" data-bind="click: function(data, event) { $parent.savePassword(data, $parent, event)() }, widgetLocaleText: 'buttonSave'"></button>
+                <button class="cc-button-secondary btn-block" id="CC-createNewPasswordCancel"  data-bind="click: function(data, event) { handleCancel.bind(data, $parent, event)() }, widgetLocaleText: 'buttonCancel'"></button>
+              </div>
+            </div>
+          </div>
+          <!--/ko-->
+    </div>
+</div>

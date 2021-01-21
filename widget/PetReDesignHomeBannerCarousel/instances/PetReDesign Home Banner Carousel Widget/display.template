@@ -1,0 +1,52 @@
+<div id="home-banner-carousel">
+      <!-- oc section: unknown-1 -->
+      <div id="carousel-example-generic"  class="carousel slide homeBanner-carousel" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                          </ol>
+                        
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" data-bind="template: { afterRender: function() {homeCarousel() }}"> 
+                          <!-- ko if : homeBanner1.src() != '' -->
+                            <div class="item active">
+                               <a data-bind="ccLink: {route: homeBannerLink1()}">
+                              <img data-bind="attr:{src: homeBanner1.src()}" alt="Shop Our Brands" title="Shop Our Brands">
+                              </a>
+                            </div>
+                            <!-- /ko -->
+                            <!-- ko if : homeBanner2.src() != '' -->
+                            <div class="item">
+                                <a data-bind="ccLink: {route: homeBannerLink2()}">
+                              <img data-bind="attr:{src: homeBanner2.src()}" alt="Shop Chuckit! Fetch Toys" title="Shop Chuckit! Fetch Toys">
+                            </a>
+                            </div>
+                             <!-- /ko -->
+                              <!-- ko if : homeBanner3.src() != '' -->
+                            <div class="item">
+                              <a data-bind="ccLink: {route: homeBannerLink3()}">
+                            <img data-bind="attr:{src: homeBanner3.src()}" alt="Shop La-Z-Boy Pet Bedding" title="Shop La-Z-Boy Pet Bedding">
+                          </a>
+                            </div>
+                             <!-- /ko -->
+							 <!-- ko if : homeBanner4.src() != '' -->
+                            <div class="item">
+                              <a data-bind="ccLink: {route: homeBannerLink4()}">
+                            <img data-bind="attr:{src: homeBanner4.src()}" alt="Shop Puppy Toys" title="Shop Puppy Toys">
+                          </a>
+                            </div>
+                             <!-- /ko -->
+                          </div>
+                        
+                          <!-- Controls -->
+                          <a class="left carousel-control hidden-sm hidden-xs" href="#carousel-example-generic" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </a>
+                          <a class="right carousel-control hidden-sm hidden-xs" href="#carousel-example-generic" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                          </a>
+                        </div>
+</div>

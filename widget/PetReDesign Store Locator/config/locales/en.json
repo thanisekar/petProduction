@@ -1,0 +1,8 @@
+{
+  "resources": {
+    "storeLocatorLinkHelpText": "Enter reason for order return",
+    "storeLocatorLinkLabel": "Return Reason",
+    "description": "Petmate Store Locator Map and Address",
+    "title": "Petmate Store Locator"
+  }
+}

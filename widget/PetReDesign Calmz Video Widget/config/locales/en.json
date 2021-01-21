@@ -1,0 +1,18 @@
+{
+  "resources": {
+    "VideoUrlText": "Enter Video Url",
+    "enabledLabel": "Widget Enable",
+    "BuyNowButtonTextLabel": "Buy Now Button Text",
+    "BannerImagePathLabel": "Banner Image Path",
+    "BuyNowButtonTextHelpText": "Enter Buy Now Button Text",
+    "VideoUrlTextLabel": "Video Url",
+    "SizeChartImageLabel": "Size Chart Image Path",
+    "BannerImagePath": "Enter banner Image Path",
+    "BuyNowButtonLinkLabel": "Buy Now Button Link",
+    "enabledHelpText": "Enable the Calmz Video Widget",
+    "SizeChartImageText": "Enter Size Chart Image Path",
+    "PhoneNumberTextLabel": "Phone Number",
+    "BuyNowButtonLinkHelpText": "Enter Buy Now Button Link",
+    "PhoneNumberTextHelpText": "Enter Phone Number"
+  }
+}

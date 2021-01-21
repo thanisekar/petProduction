@@ -1,0 +1,418 @@
+#PetReDesignCustomerAddressbook_v1-wi2700043 {
+//#PetReDesignCustomerAddressbook_v1-wi2700037 {
+     padding-right: 15px;
+    @media (max-width:767px){
+        padding:0;
+    }
+/* -------------------------------------------------- */
+/*  Checkout Address Book
+/* -------------------------------------------------- */
+#CC-checkoutAddressBook {
+  
+  fieldset {
+    margin-bottom: 36px;
+  }
+  
+  
+  
+  legend {
+    color: inherit;
+    margin-bottom: 10px;
+  }
+  
+  .text-error {
+    margin-bottom: 2px;
+  }  
+  
+  .shipping-address-view {
+    .btn-xs;
+    
+    .address-field {
+      display: inline-block;
+    }
+    
+    padding: 8px 8px;
+    border: 1px solid gray;
+    
+    // Handle truncation on really narrow screens
+    overflow: auto;
+  }
+  
+  .row > span {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .default-address {
+    font-weight: bold;
+    font-family: @font-family-roboto;
+  }
+  
+  #CC-addressBook-picker .modal-body {
+    overflow-y: auto;
+  }
+  
+  .shipping-addressBook{
+      width:100% !important;
+  }
+  .slimScrollDiv{
+      width:100% !important;
+  }
+  .address-field{
+     font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    font-family: @font-family-roboto;
+    line-height: 1.4;
+    font-weight:300;
+    letter-spacing: 0.16px;
+  }
+  .selectShippingAddress{
+      .PetmatePrimaryMediumButton;
+       width:auto !important;
+       font-size:14px !important;
+       margin-top:10px !important;
+       font-family: @font-family-roboto;
+       font-weight: 500 !important;
+      letter-spacing: 0.8px !important;
+       &:hover{
+           .PetmatePrimaryMediumButtonHover;
+       }
+  }
+  .addNewAddress{
+          color: @background-color;
+          font-size: 14px;
+          text-decoration: underline;
+          margin: 0px 5px;
+          cursor: pointer;
+          text-transform: uppercase;
+          font-weight: bold;
+  }
+}
+
+
+//Custom Stylings
+
+#CC-checkoutAddressBook {
+              padding:0;
+              border-left:1px solid #eee;
+              border-right:1px solid #eee;
+              padding-bottom:1px;
+              .checkoutAddressBook-center{
+                  float: none;
+                  margin:0 auto;
+                  margin-top: 20px;
+              }
+              .label-text{
+                    font-weight: normal;
+                    text-transform: uppercase;
+                    color: #706f6e;
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                    display:block !important;
+                }
+                .form-group{
+                    position: relative;
+                }
+                .txtzipcodeshipping{
+                    .showSuccess:after{
+                        right:23px !important;
+                    }
+                }
+                #checkoutAddressBook{
+                     
+               /*         .error:after {
+                            content: '\f06a';
+                            color: #eb2a2b;
+                            font-family: FontAwesome;
+                            font-size: 22px;
+                            border: 0px !important;
+                            position: absolute;
+                            top: 42px;
+                            right: 12px;
+                        }*/
+                      
+                }
+                
+                .billingAddressForm{
+                    margin-top:30px !important;
+                    .area{
+                    label.error:after{
+                    top: 40px;
+                    right: 5px;
+                   }
+                    select{
+                        background-image: url('/file/general/petredesign_select_dropdown_12x12.svg');
+                        position: relative;
+                        background-color: transparent;
+                        background-repeat: no-repeat;
+                        background-position: 95% center;
+                        -webkit-appearance: none !important; 
+                    }
+
+                   }
+                }
+             
+            select{
+                    height: 50px;
+                    color: #959595 !important; 
+                    padding: 12px 16px!important;
+                    font-size: 16px;
+                    box-shadow: none;
+                    border: 1px solid #d1cfcb;
+                    border-radius: 6px;
+
+                    &:focus{
+                        border: 1px solid @background-color;
+                    }
+            }
+            .zipCode{
+                    margin-bottom: 25px;
+
+            }
+            .select-options{
+                label.error:after{
+                    top: 42px;
+                    right: 22px;
+                   }
+                    select{
+                           background-image: url(/file/general/petredesign_select_dropdown_12x12.svg);
+                        position: relative;
+                        background-color: transparent;
+                        background-repeat: no-repeat;
+                        background-position: 95% center;
+                        -webkit-appearance: none !important; 
+                        
+                    }
+                    .fa{
+                       &:before{
+                            position:absolute;
+                       }
+                    }
+            }
+            
+            input.error {
+                border: 1px solid #eb2a2b !important;
+            }
+             select.error {
+                border: 1px solid #eb2a2b !important;
+            }
+            #selectState3.invalid{
+                    background-color: transparent !important;
+            }
+            #selectState231.invalid{
+                 background-color: transparent !important;
+            }
+           /* .error:after {
+                content: '\f06a';
+                color: #eb2a2b;
+                font-family: FontAwesome;
+                font-size: 22px;
+                border: 0px !important;
+                position: absolute;
+                top: 42px;
+                right: 12px;
+            }*/
+            .business-input{
+                 /*.error:after {
+                   top: 12px !important;
+                 }*/
+            }
+              .header-wrapper {
+                        border-bottom: 1px solid #eee;
+                        padding-bottom: 25px;
+                    }
+                    .shipping-address-view{
+                            border: none;
+                            outline:none;
+                            font-size: 15px;
+                            margin-top: 5px;
+                            width:100%;
+                    }
+                    .edit-add-address-btn{
+                        margin-bottom: 20px;
+                        .wrapper{
+                            display: flex;
+                        }
+                        button{
+                            background:#fff;
+                            border: none;
+                            padding:0;
+                            outline: none;
+                            box-shadow: none;
+                            text-decoration:underline;
+                            color:#0352C6;
+                            font-size: 18px;
+                            
+                        }
+                        #cc-checkout-show-address-book{
+                            padding-right: 15px;
+                        }
+                    }
+                    #collapsibleBillingAddress{
+                        #billingAddress{
+                            h2{
+                                font-size:28px!important;
+                                font-weight:300;
+                                margin:0;
+                            }
+                        }
+                    }
+              #shippingAddress{
+                  h2{
+                          margin: 0;
+                            font-weight: 300;
+                            font-size:28px;
+                            display: block;
+                            margin-left: 35px;
+                  }
+                  
+                  #CC-checkoutAddressBook-shippingAddress-edit{
+                          margin-top: 30px;
+                  }
+              }
+              
+              #billingAddress{
+                  .first-row{
+                      margin-top:30px;
+                  }
+              }
+              
+        .checkbox-primary{
+            position: relative;
+            margin-left: -15px;
+        }
+        #control-indicator:after{
+                content: '\f096';
+                font-family: FontAwesome;
+                font-size: 24px;
+                font-weight: normal;
+                 color: #d1d1d1;
+                 top: -0.25rem;
+                position: absolute;
+                left: 0;
+                display: block;
+                width: 21px;
+                height: 21px;
+                line-height: 2rem;
+                &:hover{
+                      color: #939393;
+                      top: -0.25rem;
+                        position: absolute;
+                        left: 0;
+                        display: block;
+                        width: 21px;
+                        height: 21px;
+                        line-height: 2rem;
+                }
+           }
+         input:checked ~ #control-indicator:after {
+                content:'\f14a';
+                color: @background-color;
+                font-family: FontAwesome;
+                font-size:24px;
+                border:0px !important;
+            }
+         input[type="checkbox"] {
+                margin: 4px 0 0;
+                line-height: normal;
+                box-sizing: border-box;
+                padding: 0;
+                opacity:0;
+            }    
+    
+ /* /*checkbox style start*/
+  /*.checkbox {
+    padding-left: 20px; }
+   .checkbox label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px; }
+    .checkbox label::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      margin-left: -20px;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      background-color: #fff;
+      -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+      -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+      transition: border 0.15s ease-in-out, color 0.15s ease-in-out; }
+    .checkbox label::after {
+      display: inline-block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 2px;
+      top: -1px;
+      margin-left: -20px;
+      padding-left: 3px;
+      padding-top: 1px;
+      font-size: 11px;
+      color: #555555; }
+    .checkbox input[type="checkbox"] {
+    opacity: 0; }
+    .checkbox input[type="checkbox"]:focus + label::before {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+    .checkbox input[type="checkbox"]:checked + label::after {
+      font-family: 'FontAwesome';
+      content: "\f00c"; }
+    .checkbox input[type="checkbox"]:disabled + label {
+      opacity: 0.65; }
+      .checkbox input[type="checkbox"]:disabled + label::before {
+        background-color: #eeeeee;
+        cursor: not-allowed; }
+    .checkbox.checkbox-circle label::before {
+    border-radius: 50%; }
+     .checkbox.checkbox-inline {
+    margin-top: 0; }
+     .checkbox-primary input[type="checkbox"]:checked + label::before {
+  background-color: #0352C6;
+  border-color: #0352C6; }
+   .checkbox-primary input[type="checkbox"]:checked + label::after {
+  color: #fff; }*/
+  /*checkbox style end*/          
+   }
+
+
+/*Media Queries*/
+
+@media only screen and (max-width:767px){
+    #CC-checkoutAddressBook{
+        border: none!important;
+    }
+}
+
+@media only screen and (max-width:768px){
+
+}
+
+@media only screen and (max-width:1024px){
+        #CC-checkoutAddressBook{
+            .select-options{
+                >div{
+                    padding:0!important;
+                }
+            }
+        }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    #CC-checkoutAddressBook{
+        padding: 5%;
+        .header-wrapper{
+                h2{
+                        font-size: 24px!important;
+                }
+            }
+    }
+}
+
+//}
+}

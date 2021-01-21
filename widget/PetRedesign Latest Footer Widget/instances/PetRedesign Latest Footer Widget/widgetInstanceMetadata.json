@@ -1,0 +1,15 @@
+{
+  "configuration": {
+    "gtmID": "GTM-WBB2HNH",
+    "requiredLinks": [
+      "home",
+      "aboutUs",
+      "returns",
+      "shipping",
+      "contactUs",
+      "privacy",
+      "wishlist"
+    ]
+  },
+  "displayName": "PetRedesign Latest Footer Widget"
+}

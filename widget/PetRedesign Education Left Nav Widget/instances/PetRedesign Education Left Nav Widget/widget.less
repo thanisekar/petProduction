@@ -1,0 +1,139 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+   #main-container{ margin-top:15%;}
+    .CategoryName:hover {
+                        text-decoration:underline; 
+        }
+    #educationLeftNav{
+        h2{
+         font-size: 14px;
+         font-family: @font-family-roboto;
+         font-weight: 700;
+         line-height: 30px;
+         text-transform: capitalize;
+         margin-bottom: 7px;
+        }
+       .educationCat{
+            a{
+                font-family: @font-family-roboto;
+                font-size: 14px;
+                color: #000;
+                text-transform: capitalize;
+                text-decoration: none;
+                line-height: 30px;
+                font-weight: 300;
+
+            }
+            
+        }
+    }
+    @media(max-width:1023px){
+       
+        #educationLeftNav{
+            margin-top:0px;
+            padding-right:15px;
+            padding-left:15px;
+            h2{
+                    color: #2654bf !important;
+                    padding: 10px 39px;
+                    border: 2px solid #2654bf;
+                    border-radius: 4px;
+                    display: inline-block;
+                    margin-right: 15px;
+                    position: relative;
+                    padding-left: 20px;
+                    padding-right: 36px;
+                    width: 100%;
+                    margin-top: 0px;
+                    text-align: center;
+                .icon-sort {
+                    background-image: url('/file/general/dropdownarrow_blue.svg');
+                    top: 22px;
+                    width: 8px;
+                    height: 8px;
+                    left: 60%;
+                    position: absolute;
+                    background-color: transparent;
+                    border: none;
+                    background-repeat: no-repeat;
+                    margin-top:0px;
+              }
+            }
+            
+            
+            
+        }
+        
+       
+        .mobile-category-modal{
+            background-color: white;
+        	position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1050;
+            display: none;
+            
+             .filterCloseIcon {
+                background-image: url(/file/general/PetReDesignCloseIcon18x18.png);
+                top: 25px;
+                width: 18px;
+                height: 18px;
+                right: 15px;
+                position: absolute;
+                background-color: transparent;
+                border: none;
+                background-repeat: no-repeat;
+                
+            }
+            .nav-headings{
+                padding-bottom: 35px;
+                border-bottom: 1px solid #d1cfcb;
+                font-size: 26px;
+                font-weight: normal;
+            
+            h3{
+                color:#000 !important;
+                margin: 0px;
+                position: absolute;
+                top: 0px;
+                padding: 15px 15px 10px 0px !important;
+                //font-size:1rem;
+                padding-bottom: 35px;
+                font-family: 'Roboto', sans-serif;
+    /* border-bottom: 1px solid #d1cfcb; */
+    font-size: 26px;
+    font-weight: normal;
+            }}
+            .educationCat a{line-height:15px !important;}
+            .CategoryName{
+                padding: 25px 0px;
+                border-bottom: 1px solid #dedfda;
+                font-size:17px;
+                font-weight: bold;
+    text-transform: capitalize;
+    color: #000;
+            }
+            
+        }
+             
+         
+         .displayedMobileCat{
+             transition: all 0.3s ease;
+           display: block;
+           z-index:2000;
+            padding: 50px 20px;
+        }
+          
+       
+       
+        
+        
+    }
+    @media only screen and (max-width:767px){
+        #main-container{
+            margin-top:10px !important;
+        }
+    }
+    
+}

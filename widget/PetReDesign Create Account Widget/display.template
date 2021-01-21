@@ -1,0 +1,180 @@
+<div class="container register">
+    <div class="row">
+        <div class="col-md-7 col-sm-12 col-xs-12" id="form-wrap">
+            <div class="col-md-8 col-xs-12 register-center"> 
+                <form id="registerForm">
+                <div class="registered-error">
+                    <span data-bind="if:emailError" class="already_registerd">A user already exists with the login <span></span></span>
+                </div>
+                <h4 class="text-center createAccountTitle"  >create an account</h4>
+                <div class="form_field_wrap" id="CC-userRegistration" data-bind=" $parent.user">
+                    <div class="line">
+                        <div class="form_item form-elements">
+                            <label for="CC-userRegistration-emailAddress" class="label-text">Email</label>
+                            <input type="text" class="inputField input-field input-box" id="CC-login-email" data-bind="validatableValue : email"   maxlength="100" name="emailaddress" placeholder="Email" />
+                             <span class="displayErrorIcons"></span>
+                        </div>
+                    </div> 
+                    <div class="line">
+                        <div class="form_item form-elements">
+                            <label for="emailconfirm" class="label-text">Confirm email</label>
+                            <input type="text" class="inputField input-box" data-bind="text : emailConfirm" id="emailconfirm"  maxlength="100" name="confirmEmail" placeholder="Confirm email"/>
+                             <span class="displayErrorIcons"></span>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="form_item form-elements">
+                            <label for="CC-userRegistration-firstname" class="label-text">First name</label>
+                            <input type="text" class="inputField input-box" id="CC-userRegistration-firstname" data-bind="validatableValue : firstName" minlength="2" maxlength="40" name="firstname" placeholder="First name"/>
+                             <span class="displayErrorIcons"></span>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="form_item form-elements">
+                            <label for="CC-userRegistration-lastname" class="label-text">Last name</label>
+                            <input type="text" class="inputField input-box" id="CC-userRegistration-lastname" data-bind="validatableValue : lastName" minlength="2" maxlength="40" autocomplete="off" name="lastname" placeholder="Last name"/>
+                             <span class="displayErrorIcons"></span>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="form_item form-elements">
+                            <label for="CCuserRegistration-password" class="label-text">Password</label>
+                            <input type="password" class="inputField input-box" id="CCuserRegistration-password" data-bind="validatableValue: password"  name="password" autocomplete="off" placeholder="Password"/>
+                             <span class="displayErrorIcons"></span>
+                        </div>
+                    </div>
+                     <div class="line">
+                        <div class="form_item form-elements">
+                            <label for="CC-userRegistration-confirmPassword" class="label-text">Confirm password</label>
+                            <input type="password" class="inputField input-box" data-bind="text: passwordConfirm" id="CC-userRegistration-confirmPassword"  name="confirmPassword" autocomplete="off" placeholder="Confirm password"/>
+                             <span class="displayErrorIcons"></span>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="form_item">
+                            <!--<label class="control checkbox" for="email-opt">
+                                <input id="email-opt" data-bind="checked:emailOpt" name="email-opt" value="true" type="checkbox" >
+                                <input name="email-opt" value=" " type="hidden">
+                                <span class="control-indicator"></span>
+                                <small class="default-link white">Email OPT-IN</small>
+                            </label>-->
+                            <div class="checkbox checkbox-primary">
+                                <input id="email-opt" data-bind="checked:emailOpt" name="email-opt" value="true" type="checkbox" >
+                                <label class="control" for="email-opt">
+                                <input name="email-opt" value=" " type="hidden">
+                                </label>
+                                <span class="default-link white">EMAIL OPT-IN</span>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="line">
+                        <div class="column">
+                            
+                                <h6 class="text-uppercase">Tell us about your pet(s)</h6>
+                                <!--<div class="label-help-block optional">(optional)</div>-->
+                            
+                            <div class="help-block">You can always add this later from profile pages in 'My Account' section.</div>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <!-- ko foreach:  petProfile -->
+                        <div class="pet-add-section">
+                            <div class="pet-add clearfix" id="petProfileDetails">
+                                <div class="small-12 medium-12 large-12 column mb-20 form-elements">
+									<label for="" class="label-text">Pet's Name</label>
+										<input type="text" placeholder="Pet's name" minlength="2" maxlength="40" class="input-field input-box ignore" data-bind="textInput:petName, attr:{name: 'petname'+$index()}" >
+										 <span class="displayErrorIcons"></span>
+									
+								</div>
+								<div class="small-6 col-xs-6 medium-6 large-6 columns clearfix nopad-left">
+								
+								<div class="select form-elements">
+								    <label for="" class="label-text">Type of Pet</label>
+											<select aria-label="select menu" class="form-control input-box"  name="pet1" id="select_0" data-parsley-id="8690"  data-bind="textInput:petType">
+												<option value="">Select</option>
+												<option value="dog">Dog</option>
+												<option value="cat">Cat</option>
+												<option value="bird">Bird</option>
+												<option value="other">Other</option>
+												</select>
+										</div>
+								</div>		
+								
+                                <div class="small-6 col-xs-6 medium-6 columns left mb-10">
+									<div class="mb-25 gender clearfix">
+										<label class="mb-10 label-text">Gender</label>
+											<div class="flex-display">
+											    <label class="gender-label  control radio label-text radio-control uppercase" data-bind="attr:{'for': 'petMale'+$index()}">
+												<input type="radio" value="Male" data-bind="checked: petGender, attr:{name: 'petGender'+$index(),id: 'petMale'+$index()}">
+													<span class="checkmark"></span>
+															M
+											</label>
+											<label class="gender-label control label-text radio radio-control uppercase" data-bind="attr:{'for': 'petFemale'+$index()}">
+												<input type="radio" value="Female" data-bind="checked: petGender, attr:{name: 'petGender'+$index(),id: 'petFemale'+$index()}">
+													<span class="checkmark"></span>
+															F 
+											</label>
+											</div>
+									    </div>
+								    </div>
+									<div class="small-6 medium-6 col-xs-6 large-6 columns mb-20 form-elements nopad-left">
+										<label for="" class="label-text">Breed</label>
+											<input type="text" minlength="2" maxlength="40" class="input-field input-box ignore" placeholder="Breed" data-bind="textInput:petBreed, attr:{name: 'petbreed'+$index()}">
+										     <span class="displayErrorIcons"></span>
+									</div>
+									
+									<div class="small-6 col-xs-12 col-sm-12 col-md-12 column large-6 left mb-20 form-elements">
+										<label data-bind="attr: {'for': 'DOB' + $index()}" class="inlines label-text">Date of Birth</label>
+										
+										<input type="text" id="createAccountBOD" data-format="MM/DD/YYYY" data-template="MMM DD YYYY" name="date"  class="input-field input-field--calendar pet_Birthday input-box" data-bind="textInput:petDOB , attr:{name: 'petDOB'+$index(),id: 'DOB'+$index()}">
+											 <!--<input type="text"   placeholder="date of birth"  readonly="true" class="date-field input-field input-field--calendar petBirthday input-box" data-bind="textInput:petDOB, attr:{name: 'petDOB'+$index(),id: 'DOB'+$index()}">-->
+									        	 <!--<i class="PickDate fa fa-calendar"></i>-->
+											 <!--<span class="btn btn-default">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>-->
+                                              <!--  <div id = "datepicker"></div>-->
+                                                
+										
+									</div>
+									<hr class="mb-30">
+                            </div>
+                            <hr class="mb-30">
+                        </div>
+                        <!--/ko-->
+                        <input type="hidden" id="totalCreateCountvar" value>
+                        <div class="add-button add-create-account column mb-40">
+                            <a  class="button--add add-pet"></a>
+                            <span class="text">add another pet</span>
+                        </div>
+                        <hr class="mb-30">
+                        <!--<div class="terms-wrap clearfix column mb-20">
+                            <label class="control checkbox uppercase">
+                                <small class="uppercase default-link white"> I acknowledge Petmate's
+                                    <a href="/termsandconditions" class="default-link white">
+                                        <span class="terms-conditions">Terms and Conditions</span>
+                                    </a>
+                                </small>
+                                <div class="pull-left"><input type="checkbox" id="terms" name="terms">
+                                <span class="control-indicator"></span></div>
+                                
+                                
+                            </label>
+                        </div>-->
+                        <div class="mb-20 text-center column register-btn">
+                            <a id="CC-userRegistrationSubmit" data-bind="click: function(data, event) {if(createaccountForm.form()){createProfile();}} " class="small-12 medium-6 large-4 button button--dark">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            </div>
+         </div>
+         <div class="col-md-5 col-sm-12 col-xs-12">
+            <div class="panel panel--green panel--login">
+                <h3 class='registeredTitle'> already <br> registered?</h3>
+                <a href="/login" class="create-acc-login-btn button button--dark">Log In</a>
+            </div>
+            <div class="panel panel--orange panel--login show-for-large-up hide"></div>
+            <div class="panel panel--blue panel--login show-for-large-up hide"></div>
+        </div>
+</div>

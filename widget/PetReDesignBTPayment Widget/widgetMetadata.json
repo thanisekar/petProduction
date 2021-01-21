@@ -1,0 +1,17 @@
+{
+  "imports": [
+    "order",
+    "payment"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesignBTPayment Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {}
+}

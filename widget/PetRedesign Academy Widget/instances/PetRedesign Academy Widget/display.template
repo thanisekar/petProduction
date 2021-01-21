@@ -1,0 +1,93 @@
+<div id="main-container" class='row'>
+  <div id="academy"  >
+    <!-- ko if:koGetCollectionList().length > 0 -->
+    <!-- ko foreach: koGetCollectionList -->
+    <!-- ko with: category -->
+    <div class='col-sm-12 col-md-12 col-xs-12 academyWrap'>
+        <div class="col-sm-12 col-md-3 academyLogo">
+        <!-- ko foreach:categoryImages-->
+        <div>
+            <img data-bind="ccResizeImage: {
+                                source: url,
+                                xsmall: '250,270',
+                                small: '250,270',
+                                medium: '250,266',
+                                large: '250,266',
+                                alt: 'Petmate Acadamey',
+                                title:'Petmate Acadamey'}"  class="img-responsive" width="100%"/>
+        </div>
+         <!-- /ko -->
+         </div>
+         <div class="col-sm-12 col-md-9 academyDescriptionContainer">
+        <div class="academyTitle"><h1 data-bind="text:displayName"></h1></div>
+        <div class='academyDescription' data-bind="html: longDescription"></div>
+        </div>
+        </div>
+    <!-- /ko -->
+    
+    <!-- ko if: items -->
+    <!-- ko foreach: items-->
+    <!-- ko if: $index() == 0 -->
+    <div class="col-sm-12 col-md-12 col-xs-12">
+      <div class='col-sm-12 col-md-12 col-xs-12 items nopad'>
+          <a   data-bind="ccLink: {route: $data.route} ">
+            <img data-bind="ccResizeImage: {
+                                source: fullImageURLs[1],
+                                xsmall: '500,270',
+                                small: '500,270',
+                                medium: '460,893',
+                                large: '569,1106',
+                                alt: displayName,
+                                title:displayName}"  class="img-responsive" width="100%" />
+                               
+        </a>                        
+                                <div class="plp-date">
+                                    <span data-bind="text:$parents[1].newMonthDisplay($data)" ></span>
+                                </div>
+        <div class='itemName'><h2 data-bind="text:displayName"></h2></div>
+        <div class="more itemDesc">
+            <span class="descriptionText" data-bind="html: $parents[1].truncate(description)"></span>
+        </div>
+        <div class="articleBtn">
+        <a class="readArticleBtn uppercase"   data-bind="ccLink: {route: $data.route} "  >Read Article</a>
+        </div>
+    </div>
+    </div>
+    <!-- /ko -->
+    <!-- ko if: $index() > 0 -->
+    <div class="col-sm-12 col-md-6 " id='readArticleProducts'>
+      <div class='col-sm-12 col-md-12 col-xs-12'>
+          <div class=" read-articles">
+          <a   data-bind="ccLink: {route: $data.route} ">
+            <img data-bind="ccResizeImage: {
+                                source: fullImageURLs[1],
+                                xsmall: '500,270',
+                                small: '500,270',
+                                medium: '500,893',
+                                large: '500,1106',
+                                alt: displayName,
+                                title:displayName}"  class="img-responsive" width="100%"/>
+                                
+            <span class="overlay"></span>                    
+        </a>                     
+        </div>
+        <div class="plp-date">
+                                    <span data-bind="text:$parents[1].newMonthDisplay($data)" ></span>
+                                </div>
+        <div class='itemNames'><h2  data-bind="text:displayName"></h2></div>
+        <div class="more itemDesc">
+            <span class="readArticledescriptionText" data-bind="html: $parents[1].truncate(description)" ></span>
+        </div>
+        <div class="articleBtn">
+        <a class="readArticleBtn uppercase"  data-bind="ccLink: {route: $data.route} "  >Read Article</a>
+        </div>
+    </div>
+    </div>
+    <!-- /ko -->
+   
+  <!-- /ko -->
+  <!-- /ko -->
+  <!-- /ko -->
+  <!-- /ko -->
+  </div>
+</div>

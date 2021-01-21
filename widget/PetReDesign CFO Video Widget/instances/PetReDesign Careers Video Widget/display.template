@@ -1,0 +1,60 @@
+<div id="careersContent">
+<div class="container">
+    <div class="web-content section-one">
+        <h2>Are You Pet-Passionate?</h2>
+        
+        <p>We care about making the lives of pets better. That’s why we’ve spent over 60 years creating innovative, quality products like kennels, toys and so much more for pet lovers all over the world. Fueled by passionate, hard-working people who strive every day to create quality pet products, we are more than just a place to work, we are a family. </p>
+        
+        <p>A family who takes pride in our products being made right here in the U.S.A. </p>
+        
+        <p>A family who inspires one another (especially our four-legged co-workers) to find new and better ways of doing things.</p>
+        
+        <p>At Petmate, we take care of our people, providing market leading benefits to our employees, the backbone of our company. Always ready to listen to new ideas, we put love and thoughtfulness into all the things we do. After all, our end-users are part of our own families as well.</p>
+        
+        <p>Scroll down and if you see a position you’re interested in, click the link, review, and apply!</p>
+    </div>
+
+    
+    
+     <div class='videoDisplay'>
+                       <div class="row heading hidden-xs">
+                            <div class="col-sm-6">
+                                <h6>Meet Our CEO, Alice</h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <h6>Who We Are</h6>
+                            </div>
+                        </div>
+                      <div class='row' id='videoSectionPlay'>
+                          <!-- ko if: VideoUrl()!="" -->
+                            <!-- ko foreach: embededUrl -->
+                             
+                            <div class='col-sm-6' id="CC-Video">
+                                <h6 class="CEO visible-xs">Meet Our CEO, Alice</h6>
+                                 <h6 class="weAre visible-xs">Who We Are</h6>
+                                   <div class="" id="productVideo">
+                                       <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/'+ $data}">
+                                        <img  data-bind="attr : {src : 'https://img.youtube.com/vi/' + $data + '/mqdefault.jpg'}" class="img-responsive video-banner" src="">
+                                        <div class="play-icon"><img src="/file/general/youtube-play-button-48.png" /></div>
+                                       </a>
+                                     </div>
+                                     <br>
+                                     <div>
+                                     
+                                        <a class="pdp-video"  data-bind="attr: { videourl: $data}"></a>
+                                    
+                                    </div>
+                            </div>
+                            <!-- /ko-->
+                        <!-- /ko-->
+                        </div>
+                       
+                </div> 
+                
+                
+    <div class="benefits"><a href="https://petmatenews.azurewebsites.net/wp-content/uploads/2020/02/Petmate_BenefitsSummary.pdf" target="_blank"><img class="img-responsive" src="/file/general/PM_Benefits-Banner_CareerPage.jpg" style="margin:30px auto;"></a></div>
+</div>
+</div>
+
+
+

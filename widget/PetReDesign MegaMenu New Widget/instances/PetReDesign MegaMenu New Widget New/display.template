@@ -1,0 +1,371 @@
+<div id="CC-megaMenu_new"  class="mainMegaMenu">
+    
+<div class="container mega-menu-container"> 
+		<!-- DESKTOP MEGA MENU -->
+	<div class=' desktop-menu'>	
+      <nav class="mega-menu navbar  visible-lg  visible-md " role="navigation">
+    <div class="collapse navbar-collapse mega-menu-fullwidth-collapse themeBlue">
+      <ul class="nav navbar-nav" >
+      <!-- ko foreach: { data: koMenuModelData() , as: 'koMenuModel' ,afterRender:testHeight} -->
+      
+        <!-- ko if:$data.id()!='L1-replacement-parts' && $data.id()!='petmate-brands' && $data.id()!='sale'  -->
+        <li class="dropdown mega-menu-fullwidth menu-item cc-desktop-dropdown">
+          <a class="dropdown-toggle Level1" data-bind=" ccLink: $data , attr: { id: $data.uiIdentifier ,'aria-label': $data.ariaLabelText, title: $data.displayName,  href: $data.route   }">
+            <span data-bind="text: displayName"></span> 
+          </a>
+            <ul class="dropdown-menu subCatagory ">
+                 <li class="dropdown-submenu">
+					<!-- ko if: $parent.koMenuStructure()[$data.id()] -->
+                       <!-- ko if: $parent.koMenuStructure()[$data.id()].template == "template1" -->
+							<div class="subCategory1" >
+								<!-- ko foreach:$parent.koMenuStructure()[$data.id()].columns  -->
+									<div class="subCategoryColumn" >
+										<!-- ko foreach:{ data: $data.column, as: 'menuColumn' }  -->
+											<ul>
+											<!-- ko foreach:koMenuModel.childCategories -->
+												<!-- ko if: menuColumn == $data.id() -->
+												<li class="subCatagoryLevel1" >
+													<a tabindex="0" data-bind="text: $data.displayName, ccLink : $data, attr:{ href: $data.route}" 
+                                                    class="category-header Level2 inLine font14"></a>
+                                                   <!-- ko if: $data.childCategories -->
+                                                    <ul data-bind="foreach: $data.childCategories">
+                                                        <li>
+                                                          <a class="Level3 " data-bind="text: $data.displayName, ccLink : $data.route, attr: { href: $data.route}"></a>
+                                                        </li>
+                                                     </ul>
+                                                   <!-- /ko -->
+												</li>
+												<!-- /ko -->
+											<!-- /ko -->
+											</ul>
+										<!-- /ko -->
+									</div>
+								<!-- /ko -->
+							</div>
+							 <!-- ko if: $parent.koMenuStructure()[$data.id()].categoryImage == true -->
+								<div class="subCategory1Image">
+								    <a data-bind='ccLink: $data, attr:{ href: $data.route }'>
+								 	<img  data-bind="attr: {src: $parent.koMenuStructure()[$data.id()].categoryImageUrl, alt: $data.displayName(), title : $data.displayName()}" />
+									</a>
+								</div>
+							   <!-- /ko -->
+					             <!-- /ko -->
+					   <!-- /ko -->
+					<!-- /ko -->
+				</li>
+          </ul>
+        </li>
+          <!-- /ko -->
+          
+          
+            <!-- ko if:$data.id()=='petmate-brands' -->
+            <li class="dropdown mega-menu-fullwidth menu-item cc-desktop-dropdown">
+              <a class="dropdown-toggle Level1" data-bind=" ccLink: $data , attr: { id: $data.uiIdentifier ,'aria-label': $data.ariaLabelText, title: $data.displayName,  href: $data.route   }">
+                <span data-bind="text: displayName"></span> 
+              </a>
+                <ul class="dropdown-menu subCatagory ">
+                     <li class="dropdown-submenu">
+                        <div class='col-md-6 brandImages-wrapper' >
+                        	<div class=' brand-section'  >
+                        	    <div  class='brand-images'>
+                                         <!-- ko foreach :childCategories-->
+                        	   	                 <!-- ko foreach: $parents[1].kobrandImages() -->
+                        	   	                 <!-- ko if: $data === $parent.id() -->
+                                                 <a data-bind="ccLink : $data, attr:{ href: $parent.route()}" class=' brand-image-link'>
+                                                    <img src="" data-bind="attr: {src: '/file/collections/'+$parent.id()+'.png', alt: $parent.id , title:$parent.id }"  class='brand-image '/>
+                                                </a>
+                                                 <!--/ko-->
+                                            <!--/ko-->  
+                                        <!--/ko-->
+                                 </div>
+                                 
+                                 <div class='brand-Names'>
+    							    	<div class=" subCategoryColumn-template2" >
+    										<ul class='brand-displayName'>
+    										   <!-- ko foreach :childCategories-->
+    												<li class="subCatagoryLevel1" >
+                                                          <a class="Level3 " data-bind="text: $data.displayName, ccLink : $data.route, attr: { href: $data.route}"></a>
+    												</li>
+											 <!--/ko-->
+    										</ul>
+    							     	</div>
+    			              		</div>
+                             </div>
+						</div> 
+    				   <div class="subCategory2Image col-md-4">
+					        <a data-bind='ccLink: $data, attr:{ href: $data.route }'>
+					    	<img  data-bind="attr: { src: '/file/collections/'+$data.id()+'_menuimage.jpg' , alt: $data.displayName(), title:$data.displayName() }"  class='brandCategoryImage' /></a>
+					    </div>
+    				</li>
+              </ul>
+            </li>
+          <!-- /ko -->
+         <!-- /ko -->
+         
+         
+          <li  class="dropdown mega-menu-fullwidth menu-item cc-desktop-dropdown" >
+             <a class="dropdown-toggle Level1" data-bind="ccLink: {route: '/articles/category/articles'}" ><span>Education</span></a>
+          </li>
+          
+        <!-- ko foreach: koMenuModelData() -->
+          <!-- ko if:$data.id()=='sale'-->
+             <li class="dropdown mega-menu-fullwidth menu-item cc-desktop-dropdown">
+              <a class="dropdown-toggle Level1" data-bind=" ccLink: $data , attr: { id: $data.uiIdentifier ,'aria-label': $data.ariaLabelText, title: $data.displayName,  href: $data.route   }">
+                <span data-bind="text: displayName" class='salePage'></span> 
+              </a></li>
+          <!--/ko-->
+         <!--/ko--> 
+         
+          
+        </ul>
+      
+      
+      
+      
+     
+      
+      
+       <ul class='myaccount-wrapper'>
+           <li class='myaccount-menu'  data-bind="event:{mouseover:showHelpCenterDetails,mouseout:showHelpCenterDetails}"    >
+              <a class='helpcenter' >
+                  <span class='hlpTitleTxt'>Help</span>
+                <span class='helpCenter-icon '></span>
+              </a>
+               <div class='helpcenter-wrapper' id='help-center'>
+        		    <h5 class='haveQuest'>Have Questions?</h5>
+        		    <p class='help-text'>You're barking up the right tree-we have the answers!</p>
+        		    <div><div class='HelpLineTxt'>1-877-petmate</div>
+        		    <span class='help-contact'>(1-877-738-6283)</span>
+        		    </div>
+        		    <div class='wheretoBuy_section'>
+        		        <a class='btnredirect' data-bind="ccLink: 'storelocator'" >Where to buy </a>
+        		        <a class='btnredirect' data-bind="ccLink: 'ContactUs'" >contact us</a>
+        		    </div>
+        		    <div class='help-menu-options'>
+        		        <ul class='help-menu-options-container'>
+        		             <li class='help-menu-items' >
+        		                <a data-bind="ccLink: 'shipping'" >Shipping</a>
+        		                </li>
+        		              <span class='divider'>|</span>
+        		             <li class='help-menu-items'><a  data-bind="ccLink: 'returns'"  >Returns</a></li>
+        		             <span class='divider'>|</span>
+        		            <li class='help-menu-items'><a  data-bind="ccLink: 'faq'"  >FAQS</a></li>
+        		        </ul>
+        		    </div>
+        		</div>
+              
+          </li>
+          <!-- ko with: user -->
+               <li class='myaccount-menu' data-bind="visible:(!loggedIn() || isUserSessionExpired()), event:{mouseover:$parent.showMyaccountDetails,mouseout: $parent.showMyaccountDetails}" >
+                   <a class='myaccount' >
+                       <span class='myacntTxt'>My Account</span>
+                     <span class='myaccount-icon'></span>
+                   </a>
+                   	<div class='myaccount-details' id='myaccount-details'  data-bind="visible:(!loggedIn() || isUserSessionExpired())"  >
+            		        <a class='PetmatePrimaryMediumButton signIn-btn' data-bind="ccLink: 'login'"  href='#'>Sign In</a>
+            		       <ul class='myaccount-menu'>
+            		            <li  class='myaccount-menu-items'  ><a data-bind="ccLink: 'createaccount'" >Create An Account</a></li>
+            		            <!--<li  class='myaccount-menu-items' ><a  data-bind="ccLink: 'profile'" >Profile</a></li>
+            		            <li  class='myaccount-menu-items' ><a > Order History</a></li>-->
+            		           <!-- <li  class='myaccount-menu-items' ><a data-bind="ccLink: 'wishlist'">Wishlist</a></li>-->
+            		       </ul>
+            		 </div>
+                   
+               </li>
+               
+                <li class='myaccount-menu'   data-bind='visible:loggedInUserName() && (loggedIn() && !isUserSessionExpired()) , event:{mouseover:$parent.showLoggedInDetails,mouseout: $parent.showLoggedInDetails}'  >
+                   <a class='myaccount' data-bind="ccLink: 'profile'" >
+                    <span class='welcomeTxt'>   
+                       <span class='HelloText'>Hello,</span>
+                       <span class='loggedInUserName' data-bind='text:loggedInUserName()'></span>
+                       <span class='myaccount-icon'></span>
+                   </span>
+                   </a>
+                    <div class='loggedin-details myaccount-details' id='loggedin-details'  data-bind='visible:loggedInUserName() && (loggedIn() && !isUserSessionExpired())'>
+            	           <ul class='myaccount-menu'>
+            		            <li  class='myaccount-menu-items' ><a data-bind="ccLink: 'profile'">Profile</a></li>
+            		           <li  class='myaccount-menu-items' ><a data-bind="ccLink: 'orderHistory'">Order History</a></li>
+            		           <li  class='myaccount-menu-items' ><a data-bind="ccLink: 'wishlist'">Wishlist</a></li>
+            		          <li  class='myaccount-menu-items'  ><a class='signOut' data-bind="click: function(data, event) {handleLogout()}"  >sign out</a></li>
+            		    </ul>
+            	     </div>
+                </li>
+               
+            <!--/ko-->
+        </ul>
+        
+        
+      </div>
+  </nav>
+    </div>
+		<script type="text/html" id="megamenu-template">  
+			<a tabindex="0" data-bind="attr:{id: $data.uiIdentifier ,'aria-label': $data.ariaLabelText, title: $data.displayName, href: $data.route}" class="category-header">
+				<span data-bind="text: displayName"></span>
+			</a>
+		   <!-- ko if:  $data.childCategories -->
+			  <ul data-bind="foreach: $data.childCategories">
+				<li data-bind="template: {name: 'megamenu-template'}" ></li>
+			  </ul>
+			<!-- /ko -->
+		</script>
+
+		<!-- MOBILE MENU -->
+		
+		<nav class="mp-menu mp-cover" id="mp-menu">
+                    <div class="mp-level">
+                        <ul>
+                            <!--<li><a title="CLOSE X" href="javascript:;" class="mp-back"><img src="/file/general/PetReDesignCloseIcon18x18.png" class="menu-close"></a></li>-->
+                          	<li class="mobilemenu-login">
+                            	<!-- ko with: user -->   
+                            	<span>
+                                  <a class='mobileSingIn' href='/login' data-bind="visible:(!loggedIn() || isUserSessionExpired())" >Sign In</a>
+                                  <span  data-bind="visible:(!loggedIn() || isUserSessionExpired())" class='eitherText'>or</span>
+                                  <a  class='mobileCreateAccount'  href='/createaccount' data-bind="visible:(!loggedIn() || isUserSessionExpired())">Register</a>
+                                  </span>
+                                  
+                                 <!--/ko-->
+                                 <!-- ko with: user --> 
+                                 <span class='MobileHelloText loggedInTxt' data-bind='visible:loggedInUserName() && (loggedIn() && !isUserSessionExpired())'  >Hello,</span>
+                                 <span class='MobileloggedInUserName'  data-bind="text: loggedInUserName(), visible:loggedInUserName() && (loggedIn() && !isUserSessionExpired()) "></span>
+                                  <!--/ko-->
+                              </li> 
+                              
+                              <!-- ko foreach: koMenuModelData() -->
+					           	<!-- ko if: $data.childCategories -->
+						       <!-- ko if: $data.id()!='petmate-brands' && $data.id()!='L1-replacement-parts' -->
+					       
+						       <li class='mobile-menu-list1'>
+						           <a data-bind="text:displayName, attr:{href:'javascript:void(0)'}" >
+						       </a>
+                                <div class="mp-level">
+                                   <!-- <a href="javascript:;" >BACK</a>-->
+                                   <div class='row backarrow-section' >
+                                       <div class='col-xs-2 back-icon-wrapper'>
+                                           <a href='href:javascript:void(0)' class="mp-back "></a>
+                                           
+                                       </div>
+                                       <div class='col-xs-10'>
+                                            <a class='categoryDisplayName' data-bind="text:displayName, attr:{href:$data.route }" ></a>
+                                       </div>
+                                     
+                                     
+                                      </div>
+                                    <!-- ko if: $data.childCategories -->
+                                    <ul class="sub-menu third-level">
+                                    	<!-- ko foreach: $data.childCategories -->
+                                        <li  class='mobile-menu-list1'>
+                                            <a  class='' data-bind="text:displayName, attr:{href:'javascript:void(0)'}">
+                                            </a>
+                                            
+                                            <div class="mp-level">
+                                                 <div class='row backarrow-section' >
+                                                   <div class='col-xs-2 back-icon-wrapper'>
+                                                       <a href='href:javascript:void(0)' class="mp-back "></a>
+                                                   </div>
+                                                   <div class='col-xs-10'>
+                                                        <a class='categoryDisplayName' data-bind="text:displayName, attr:{href:$data.route }" ></a>
+                                                   </div>
+                                                 </div>
+                                            <!-- ko foreach: $data.childCategories -->
+                                                <ul class="sub-menu third-level">
+                                                    <li  class='mobile-menu-list-noarrow'><a data-bind="text:displayName, attr:{href:$data.route}"></a> </li>
+                                                </ul>
+                                                <!-- /ko -->
+                                            </div>
+                                         </li>  
+                                        
+                                       	<!-- /ko -->
+                                    </ul>
+                                    <!-- /ko -->
+                                  </div>
+                              </li>
+				           	   <!-- /ko -->
+                              <!-- /ko -->
+						     
+						   
+						   <!-- to dispplay the brands category -->  
+                              <!-- ko if: $data.id()=='petmate-brands' -->
+						       <li class='mobile-menu-list1'>
+						           <a data-bind="text: displayName, attr: { title: $data.displayName, href:'javascript:void(0)' }"> <i class="groupIcon"></i></a>
+                                <div class="mp-level">
+                                   <!-- <a href="javascript:;" >BACK</a>-->
+                                      <div class='row backarrow-section' >
+                                       <div class='col-xs-2 back-icon-wrapper'>
+                                           <a href='href:javascript:void(0)' class="mp-back "> </a>
+                                       </div>
+                                       <div class='col-xs-10'>
+                                            <a class='categoryDisplayName' data-bind="text:displayName, attr:{href:$data.route }" ></a>
+                                       </div>
+                                      </div>
+                                        <!-- ko if: $data.childCategories -->
+                                        <ul class="sub-menu third-level">
+                                        		<!-- ko foreach: $data.childCategories -->
+                                             <li class='mobile-menu-list-noarrow'>
+                                                <!-- <a  data-bind="text: $data.displayName, attr: {href:$parents[1].getBrandValue(BrandNValue ,id)}"></a>-->
+                                                  <a data-bind="text:displayName, attr:{href:$data.route}"></a>
+                                             </li>  
+                                           	<!-- /ko -->
+                                        </ul>
+                                	<!-- /ko -->
+                                  </div>
+                                </li>
+				           	    <!-- /ko -->
+				           	   <!-- /ko -->
+				           	   
+				           	   
+				          <li class='mobile-menu-list-noarrow'>
+					       <a href='/articles/category/articles'>Education</a>
+					     </li>
+    					  
+					   <!-- ko with: user -->
+					   <!-- ko if:loggedInUserName() && (loggedIn() && !isUserSessionExpired())-->
+    					    <li class='mobile-menu-list-noarrow  myaccountMobileIcon'>
+    					       <a href='/profile'  class='mobile-my-account-menu'>My Account
+    					       <!--<span class="myaccount-icon"></span>-->
+    					       </a>
+    					   </li>
+    					   
+    					   
+    					   <li class='mobile-menu-list-noarrow  wishlistMobileIcon'>
+    					       <a  href='/wishlist' class='wishlist' >Wish list
+    					 <!--  <span  class="myaccount-icon"></span> -->
+    					       </a>
+    					   </li>
+					   <!-- /ko -->
+					   <!-- /ko -->
+			            <li class='mobile-menu-list-noarrow contactUsMobileIcon'>
+					       <a  href='/ContactUs' class='contact'>Contact Us
+					      <!-- <span class="helpCenter-icon"></span-->
+					       </a>
+					   </li>
+					   	<!-- ko with: user -->
+					   <li class='mobile-menu-list-noarrow'>
+					      <!-- <a class='mobileProfilelogoutLinks' data-bind="click: function(data, event) {handleLogout()} ,visible:loggedInUserName() && (loggedIn() && !isUserSessionExpired())"  >sign out</a>-->
+					      <a class="mobileProfilelogoutLinks" data-parentid="CC-loginHeader-logout" data-original-title="logout" data-bind="widgetLocaleText: {attr: 'innerText', value: 'Sign out'}, visible:loggedInUserName() && (loggedIn() && !isUserSessionExpired()) "></a> 
+					   </li>
+					   <!-- /ko -->
+				           	   
+				           	   
+				           	   
+                        </ul>
+                    </div>
+                </nav>
+		
+		
+		 <script type="text/html" id="mobilemenu-template">  
+				<a tabindex="0" data-bind="text: displayName, attr:{title: $data.displayName, href: $data.route}">
+					
+				  </a>
+				  
+			   <!-- ko if: $data.childCategories -->
+				  <ul>
+				    <li><a href="#" class="menu-main-category-title" data-bind="text:displayName, attr: {href: route}"></a></li>
+					<!-- ko foreach: $data.childCategories -->
+					<li><a href="#" data-bind="text:displayName, attr: {href: route}"></a></li>
+					<!-- /ko -->
+				  </ul>
+				  <!-- /ko --> 
+			</script>
+			
+	</div>
+</div>

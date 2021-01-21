@@ -1,0 +1,98 @@
+
+
+ <!-- ko if:relatedArticlesData().length>0-->  
+<div  id="petRedesignRelatedArticlesWidget">
+    <div class="container">
+        
+        <div class='row row-wrapper'>
+        <!--<pre data-bind="text: ko.toJSON(relatedArticlesData().length, null, 2)"></pre>-->
+  
+              <div class='article-header'>  
+                <h3>Related Articles</h3>
+            </div>
+        <!-- ko foreach:relatedArticlesData()-->
+      <!--ko if: $index()%2 === 0-->
+
+          
+       <div class='row section-one'>    
+            <div class='col-md-5 col-sm-12 image-container'>
+               <a data-bind="attr: {href: $data.route,target: '_blank'}">
+		          <img data-bind="ccResizeImage: {
+                                  source: primaryFullImageURL,
+                                  xsmall: '500,300',
+                                  small: '500,300',
+                                  medium: '500,300',
+                                  large: '500,300',
+                                  alt: 'displayName',
+                                 title:'displayName'}" class="img-responsive"
+                                  alt="displayName" title="displayName" >
+			 	 </a>
+            </div>
+             <div class='col-md-7 col-sm-12 details-container'>
+                <div class="test">
+                    <div class="display-name" data-bind='text:displayName'></div>
+                <div class="display-description" data-bind='html:$parent.truncate(description)'></div>
+                <a class="read-more" data-bind="attr: {href: $data.route,target: '_blank'}" >Read More
+                <span class="right-arrow"></span>
+                </a>
+                </div>
+                
+              </div>
+          </div>
+           <!--/ko-->
+           <!--ko if: $index()%2 === 1-->
+       <div class='row section-two'>   
+       <div class='col-md-5 col-sm-12 image-container image-container-toggle'>
+               <a data-bind="attr: {href: $data.route,target: '_blank'}">
+		          <img data-bind="ccResizeImage: {
+                                  source: primaryFullImageURL,
+                                  xsmall: '500,300',
+                                  small: '500,300',
+                                  medium: '500,300',
+                                  large: '500,300',
+                                  alt: 'displayName',
+                                 title:'displayName'}" class="img-responsive"
+                                  alt="displayName" title="displayName" >
+			 	 </a>
+            </div>
+            
+         <div class='col-md-7 col-sm-12 details-container'>
+                <div class="display-name" data-bind='text:displayName'></div>
+                <div class="display-description" data-bind='html:$parent.truncate(description)'></div>
+                <a class="read-more"  data-bind="attr: {href: $data.route,target: '_blank'}">Read More
+                <span class="right-arrow"></span>
+                </a>
+                
+              </div>
+            
+           
+          </div>
+           <!--/ko-->
+         <!--/ko-->
+  
+
+    </div>
+    </div>
+</div>  
+  <!--/ko-->
+
+
+  <!--Review Highlights-->
+    <div class="container">
+        <div data-bv-show="review_highlights" data-bind="attr: {'data-bv-product-id':product().id}"></div>
+    </div>
+
+    <!--Ends-->
+   <!--Reviews Section-->
+    <div class="container">
+        <div data-bv-show="reviews" data-bind="attr: {'data-bv-product-id':product().id}"></div>
+    </div>
+    <!--Ends-->
+    <!--Q &A section-->
+    <div class="container">
+          <div 
+              data-bv-show="questions" 
+              data-bind="attr: {'data-bv-product-id':product().id}">
+            </div>
+    </div>
+    <!--Ends-->

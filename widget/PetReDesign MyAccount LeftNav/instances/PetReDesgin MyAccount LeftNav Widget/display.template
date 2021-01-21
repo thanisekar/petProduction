@@ -1,0 +1,42 @@
+<div class="myaccount-leftnav hidden-xs " data-bind="visible:user().loggedIn()">
+	<!--<div class="visible-xs visible-sm myaccount-overview-link-wrapper">
+		<a id="myAccountMobilelnk" href="#">
+			<span id="myAccountMobileTxt"></span>
+			<i class="fa pull-right my-account-angle-arrow visible-xs fa-angle-right"></i>
+		</a>
+	</div>-->
+	<div class="h2 accordion-header">My Account</div>
+     <ul class="myaccount-listing">
+	 <li><a data-bind="ccLink:{route:'/profile'}" class="myaccount-left-link" id="myaccount-link-profile" data-target="myaccount-profile">Profiles</a></li>
+	 <li><a data-bind="ccLink:{route:'/orderHistory'}" id="myaccount-link-orderhistory" data-target="CC-orderHistory">order history</a></li>
+	 <li><a data-bind="ccLink:{route:'/wishlist'}" id="myaccount-link-wishlist">Wish list</a></li>
+	
+   </ul>
+</div>
+
+  <div class="visible-xs navigation-section">
+                  <div class="account-section">
+                      <button type="button" id="accountPage" class="btn" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">ACCOUNT PAGES <i class="fa fa-angle-down"></i></button>
+                  </div> 
+                  
+                  <div id="navbar" class="collapse">
+                    <div class="navHeading">
+                      <span>Account Pages</span>
+                      <span class="pull-right collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><img src="/file/general/PetReDesignCloseIcon18x18.png"></span>
+                    </div>
+                    <div class="mobNavLinks">
+                      <ul class="leftNav">
+                        <li>
+                          <a class="profile" data-bind="ccLink:{route:'/profile'}">Profile</a> 
+                        </li>
+                        <li>
+                          <a data-bind="ccLink:{route:'/orderHistory'}">Order History</a>
+                        </li>
+                        <li>
+                          <a data-bind="ccLink:{route:'/wishlist'}">Wish List</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </div>

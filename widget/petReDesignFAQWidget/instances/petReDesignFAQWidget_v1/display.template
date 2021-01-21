@@ -1,0 +1,141 @@
+<div class="row main-container">
+    <div class="row">
+        <div class="col-sm-10 col-xs-12 nopad main-container-center">
+             <div class="main-content">
+                 <h2>FAQs</h2>
+            <div class="panel-group" id="accordion" role="tablist">
+          <p class="faq-heading"></p>
+          <div class="faq-block panel">
+                <h5 role="tab" id="headingOne" class="panel-headings"><a role="button" class="activeLink" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><div class="col-sm-11 col-xs-10">Can you take my order over the phone?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o hide" aria-hidden="true"></i><i class="fa fa-minus-square-o" aria-hidden="true"></i></div></a></h5>
+                <div class="col-sm-11 col-xs-10 panel-collapse collapse in" id="collapseOne" role="tabpanel" aria-labelledby="headingOne"><p>We are not setup to take phone orders. 
+                    Please order via petmate.com. If you need assistance placing an online order please contact a Petmate Consumer Services Team Member at 1-877-738-6283 who will be able to assist you.</p></div>
+          </div>
+           <div class="faq-block panel">
+                    <h5 role="tab" id="headingTwo" class="panel-headings"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><div class="col-sm-11 col-xs-10">How do I check the status of my order?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div id="collapseTwo" class="panel-collapse collapse col-xs-10 col-sm-11" role="tabpanel" aria-labelledby="headingTwo">
+                        <p>Click on the&nbsp;<a data-bind="ccLink:{route: '/orderhistoryanonymous'}">order status</a>&nbsp;link in the footer.</p>
+                        </div>
+          </div>
+          <div class="faq-block panel">
+            <h5 role="tab" id="headingThree" class="panel-headings"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><div class="col-sm-11 col-xs-10">I have a promotion code. Where do I enter it to receive my discount?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+            <div id="collapseThree" class="panel-collapse collapse col-xs-10 col-sm-11" role="tabpanel" aria-labelledby="headingThree"><p>On the&nbsp;<a data-bind="ccLink:{route: '/Checkout'}">checkout</a>&nbsp;page, there is a box to enter a promo code. To add a promo code enter your promo code in the box under promo code and select apply. We regret that promo codes cannot be to an existing or past order that has been placed. In most cases promo codes may not be stacked or used in combination. </p></div>
+          </div>
+          <div class="faq-block panel">
+            <h5 role="tab" id="headingFour" class="panel-headings"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><div class="col-sm-11 col-xs-10">I'm making a purchase as a gift. Can you send a gift receipt?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+            <div id="collapseFour" class="panel-collapse collapse col-xs-10 col-sm-11"><p>Unfortunately we do not have an option for gift receipts.</p></div>
+          </div>
+           <div class="faq-block panel">
+            <h5 role="tab" id="headingFive" class="panel-headings"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><div class="col-sm-11 col-xs-10">What forms of payment do you accept?</div><div class="col-xs-1 col-sm-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+             <div id="collapseFive" class="panel-collapse collapse col-xs-10 col-sm-11"><p>We accept Visa, Mastercard, American Express, Discover, as well as PayPal.</p></div>
+          </div>
+          <div class="faq-block panel">
+            <h5 role="tab" id="headingFive" class="panel-headings"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseFive"><div class="col-sm-11 col-xs-10">Do you allow Tax-Exempt Purchases?</div><div class="col-xs-1 col-sm-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+             <div id="collapseSix" class="panel-collapse collapse col-xs-10 col-sm-11"><p>Some of our customers may make purchases that qualify for tax exemption.  If your purchases qualify for exemptions, we’re here to help you. If you have tax-exempt status please contact a member of our Consumer Services Team to provide your tax-exempt information. Tax Exemptions are subject to review and approval based on state and local laws.  You may email your information for review to <a href = "mailto: consumerservices@petmate.com">consumerservices@petmate.com</a></p></div>
+          </div>
+          <p class="faq-heading shipping">shipping</p>
+           <div class="faq-block panel">
+                    <h5 role="tab" id="headingSix" class="panel-headings"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><div class="col-sm-11 col-xs-10">Do you ship to Canada?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div id="collapseSix" class="panel-collapse collapse col-xs-10 col-sm-11"><p>At this time, we only ship to the 48 contiguous United States.</p></div>
+          </div>
+		   <div class="faq-block panel">
+                    <h5 role="tab" id="headingSeven" class="panel-headings"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"><div class="col-sm-11 col-xs-10">How long before you ship out my order?</div><div class="col-sm-1 col-xs-1 icons"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div  id="collapseSeven" class="panel-collapse collapse col-xs-10 col-sm-11"><p>The majority of orders will leave our warehouse within 24 hours.</p></div>
+          </div>
+		   <div class="faq-block panel">
+                    <h5 role="tab" id="headingEight" class="panel-headings"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight"><div class="col-sm-11 col-xs-10">How will my order ship? How much will it cost?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div id="collapseEight" class="panel-collapse collapse col-xs-10 col-sm-11"><p>Each order will have three shipping options, depending on the speed of delivery. Total shipping charges are automatically calculated during checkout prior to completing your order. If your order qualifies for free shipping ($49 and above before taxes) your shipping discount will appear in the Order Summary.</p></div>
+          </div>
+           <p class="faq-heading shipping">Returns</p>
+           <div class="faq-block panel">
+                    <h5 role="tab" id="headingNine" class="panel-headings"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine"><div class="col-sm-11 col-xs-10">How do I return an item?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div id="collapseNine" class="panel-collapse collapse col-xs-10 col-sm-11"><p>Please visit the&nbsp;<a data-bind="ccLink:{route: '/returns'}">returns policy&nbsp;</a>link in the footer.</p></div>
+          </div>
+		   <div class="faq-block panel">
+                    <h5 role="tab" id="headingTen" class="panel-headings"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen"><div class="col-sm-11 col-xs-10">What do I do if my order is damaged in transit?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div id="collapseTen" class="panel-collapse collapse col-xs-10 col-sm-11"><p>Please visit the&nbsp;<a data-bind="ccLink:{route: '/returns'}">returns policy&nbsp;</a>link in the footer.</p></div>
+          </div>
+		   <div class="faq-block panel">
+                    <h5 role="tab" id="headingEleven" class="panel-headings"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven"><div class="col-xs-10 col-sm-11">Do I have to pay for return shipping for a damaged item?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div  id="collapseEleven" class="panel-collapse collapse col-xs-10 col-sm-11"><p>No!  Please first contact the Petmate Consumer Services Team for further instruction for an item that was damaged in transit. <a href="mailto:consumerservices@petmate.com" target="_top"> consumerservices@petmate.com</a></strong</p></div>
+          </div>
+           <p class="faq-heading shipping">Products</p>
+           <div class="faq-block panel">
+                    <h5 role="tab" id="prd_1" class="panel-headings"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#prdOne" aria-expanded="false" aria-controls="prdOne"><div class="col-sm-11 col-xs-10">Can I order a specific color of dog toy?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div id="prdOne" class="panel-collapse collapse col-sm-11 col-xs-10"><p>Several items come in assorted colors and will be labeled accordingly on that product’s detail page. If there are color options that you can select, you’ll be given the opportunity to choose when you add the item to your cart.</p></div>
+          </div>
+		   <div class="faq-block panel">
+                    <h5 role="tab" id="prd_2" class="panel-headings"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#prdTwo" aria-expanded="false" aria-controls="prdTwo"><div class="col-sm-11 col-xs-10">What is the warranty on your products?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div  id="prdTwo" class="panel-collapse collapse col-sm-11 col-xs-10"><p>We offer a warranty on select Petmate products. Any applicable warranties will be outlined on that product’s detail page.</p></div>
+          </div>
+		   <div class="faq-block panel">
+                    <h5 role="tab" id="prd_3" class="panel-headings"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#prdThree" aria-expanded="false" aria-controls="prdThree"><div class="col-sm-11 col-xs-10">Can I buy replacement parts for my Petmate products that I already own?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div  id="prdThree" class="panel-collapse collapse col-sm-11 col-xs-10"><p>Yes! Please visit our&nbsp;<a data-bind="ccLink:{route: '/replacement-parts/category/L1-replacement-parts'}">replacement parts</a>&nbsp;link in the footer.</p></div>
+          </div>
+		  <div class="faq-block panel">
+                    <h5 role="tab" id="prd_4" class="panel-headings"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#prdFour" aria-expanded="false" aria-controls="prdFour"><div class="col-sm-11 col-xs-10">Are your plastic kennels airline approved?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div  id="prdFour" class="panel-collapse collapse col-sm-11 col-xs-10"><p>Each individual airline has their own set of pet travel requirements. In order to avoid delays at the airport on travel day, please contact your airline in advance of travel to ensure you have the correct size, type, and make of pet carrier that will meet their specific requirements.</p></div>
+          </div>
+		  <div class="faq-block panel">
+                    <h5 role="tab" id="prd_5" class="panel-headings"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#prdFive" aria-expanded="false" aria-controls="prdFive"><div class="col-sm-11 col-xs-10">Do I have to pay for return shipping to exchange an item?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div  id="prdFive" class="panel-collapse collapse col-sm-11 col-xs-10"><p>No! If an item was sent incorrectly we will pay the ground shipping rate for you to return an item to us. For more information, please visit the&nbsp;<a data-bind="ccLink:{route: '/returns'}">returns policy</a>&nbsp;link in the footer.</p></div>
+          </div>
+		  <div class="faq-block panel">
+                    <h5 role="tab" id="prd_6" class="panel-headings"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#prdSix" aria-expanded="false" aria-controls="prdSix"><div class="col-sm-11 col-xs-10">Can I submit a review on the product I recently purchased?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div   id="prdSix" class="panel-collapse collapse col-sm-11 col-xs-10"><p>Feel free to post comments on our Facebook page at any time or select write a review by going to any product page.</p></div>
+          </div>
+		  <div class="faq-block panel">
+                    <h5 role="tab" id="prd_7" class="panel-headings"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#prdSeven" aria-expanded="false" aria-controls="prdSeven"><div class="col-sm-11 col-xs-10">What is Microban®?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div  id="prdSeven" class="panel-collapse collapse col-sm-11 col-xs-10"><p>Microban® antimicrobial protection helps prevent the growth of stain and odor causing bacteria on select products. The Microban brand is your assurance of continuous, durable, and effective antimicrobial protection that will provide an added level of defense against damaging microbes. Microban protection has undergone extensive independent laboratory testing and has a long history of safe use. The Microban additive is registered with the EPA and is NSF approved for food contact applications.</p></div>
+          </div>
+		   <div class="faq-block panel">
+                    <h5 role="tab" id="prd_8" class="panel-headings"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#prdEight" aria-expanded="false" aria-controls="prdEight"><div class="col-sm-11 col-xs-10">How do I know what size to buy for my pet?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div  id="prdEight" class="panel-collapse collapse col-sm-11 col-xs-10"><p>Each product page will have sizing information for the type of pet the product is typically purchased for. On many items, we use weight as the key product differentiator, so if you know how much your pet weighs, that will be a good starting place.</p></div>
+          </div>
+           <p class="faq-heading shipping">Community</p>
+           <div class="faq-block panel">
+                    <h5 role="tab" id="comm_1" class="panel-headings"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#commOne" aria-expanded="false" aria-controls="commOne"><div class="col-sm-11 col-xs-10">I am opening a pet store. Can I carry your products?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div  id="commOne" class="panel-collapse collapse col-sm-11 col-xs-10"><p>For more information on carrying Petmate products in your store, click on the&nbsp;<a data-bind="ccLink:{route: '/ContactUs'}">contact us</a>&nbsp;link in the footer to send us an inquiry.</p></div>
+          </div>
+		   <div class="faq-block panel">
+                    <h5 role="tab" id="comm_2" class="panel-headings"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#commTwo" aria-expanded="false" aria-controls="commTwo"><div class="col-sm-11 col-xs-10">I run a non-profit organization. How do I request donations?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div id="commTwo" class="panel-collapse collapse col-sm-11 col-xs-10"><p>Due to the high volume of product donation requests received through electronic and regular mail, Petmate is unable to fairly select donation recipients without excluding equally deserving organizations and individuals. For this reason, Petmate only makes donations to the pet community through existing partnerships. To learn more about our partners visit the Petmate&nbsp;<a data-bind="ccLink:{route: '/AboutUs'}">about us&nbsp;</a>page.</p></div>
+          </div>
+		   <div class="faq-block panel">
+                    <h5 role="tab" id="comm_3" class="panel-headings"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#commThree" aria-expanded="false" aria-controls="commThree"><div class="col-sm-11 col-xs-10">Are you hiring?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div  id="commThree" class="panel-collapse collapse col-sm-11 col-xs-10"><p>Visit our&nbsp;<a data-bind="ccLink:{route: '/careers'}">careers</a>&nbsp;link in the footer to review any open positions.</p></div>
+          </div>
+		  <div class="faq-block panel">
+                    <h5 role="tab" id="comm_4" class="panel-headings"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#commFour" aria-expanded="false" aria-controls="commFour"><div class="col-sm-11 col-xs-10">How do I become a distributor?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div  id="commFour" class="panel-collapse collapse col-sm-11 col-xs-10"><p>Please visit our &nbsp;<a data-bind="ccLink:{route: '/ContactUs'}">contact us</a>&nbsp;link in the footer to request information on becoming a distributor.</p></div>
+          </div>
+           <p class="faq-heading shipping">Where to Buy</p>
+           <div class="faq-block panel">
+                    <h5 role="tab" id="buy_1" class="panel-headings"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#buyOne" aria-expanded="false" aria-controls="buyOne"><div class="col-sm-11 col-xs-10">I need one of your products today. Where can I go to buy them?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+                    <div  id="buyOne" class="panel-collapse collapse col-sm-11 col-xs-10"><p>Use the&nbsp;<a data-bind="ccLink:{route: '/storelocator'}">store locator</a>&nbsp;link in the footer to find a Petmate dealer near you.</p></div>
+          </div>
+		   <div class="faq-block panel">
+                    <h5 role="tab" id="buy_2" class="panel-headings"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#buyTwo" aria-expanded="false" aria-controls="buyTwo"><div class="col-sm-11 col-xs-10">How do I know if I'm purchasing a Petmate product from an Authorized dealer?</div><div class="col-sm-1 col-xs-1"><i class="fa fa-plus-square-o" aria-hidden="true"></i><i class="fa fa-minus-square-o hide" aria-hidden="true"></i></div></a></h5>
+					<div  id="buyTwo" class="panel-collapse collapse col-sm-11 col-xs-10">
+                    <p>Because Petmate is committed to providing consumers with high-quality products, we sell our products through a network of authorized dealers. Only Petmate Authorized Dealers are able to properly demonstrate, give guidance, and provide after-sale support for Petmate products.<br>
+					<br>
+					To ensure that you receive quality products when you purchase Petmate products, it is important that all your purchases of Petmate products be made only from Petmate directly or a Petmate authorized dealer. Only products purchased directly from Petmate or a Petmate authorized dealer will be covered by warranty and customer service support.<br>
+					<br>
+					A number of retailers that sell our products are not Petmate authorized dealers. An unauthorized dealer may offer our products for sale via a retail store or the Internet. The products that they sell may be acquired through illegal methods or questionable business practices. The goods may be damaged, defective, used, or even counterfeit. These unauthorized dealers cannot offer full warranty support.<br>
+					<br>
+					If you purchase a Petmate product from an unauthorized dealer, any Petmate warranty and customer service support will not be valid. Check your source or contact us and we will gladly direct you to a Petmate Authorized Dealer.
+					</p>
+					</div>
+		</div>
+
+	
+	
+      </div>
+             </div>
+        </div>
+        
+    </div>
+      
+
+     
+
+</div>

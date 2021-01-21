@@ -1,0 +1,21 @@
+{
+  "imports": [
+    "orderDetails",
+    "shippingCountries",
+    "category",
+    "product"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Order Details Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": false,
+  "config": {
+    "returnSummaryLink": "https://b2c-uat.petmate.com/b2c/api/v1/returnRequests/getreturnrequests/"
+  }
+}

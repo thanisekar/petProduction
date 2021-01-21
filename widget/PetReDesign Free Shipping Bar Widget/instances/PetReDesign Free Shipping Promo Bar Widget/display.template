@@ -1,0 +1,10 @@
+<!-- ko if: enabled() -->
+<div class='petredeisgnshippingBar_wrapper' data-bind="style:{ 'background-color': FreeShippingBackgroundColor}">
+    <div class='container'>
+            <div class='petredesing-shippingBar col-xs-12 col-sm-12 '>
+                 <a data-bind="text: FreeShippingText, ccLink : 'redesignshipping', attr:{ href:FreeShippingLink}">
+                </a>
+              </div>
+        </div>
+    </div>
+<!--/ko-->

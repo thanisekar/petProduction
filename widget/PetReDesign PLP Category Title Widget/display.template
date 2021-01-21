@@ -1,0 +1,24 @@
+<div id="categoryLeftNav"  class='hidden-xs'>
+  <!--  <pre data-bind="text: ko.toJSON(category(), null, 2)"></pre>-->
+    
+     <div class="row" id='category-title-txt' >
+              <div class='col-md-12 col-xs-12 categoryLeftNavWrapper-content' >
+                 <div class='categoryTitle' data-bind='widgetLocaleText:"categoryTxt"'></div>
+                  <!-- ko with: category -->
+                  <!-- ko foreach: $data.childCategories --> 
+                    <div class='category-content-list'>
+                               <a data-bind="ccLink: $data,attr: {href: $data.route}">
+                                   <div class='childCategoryName' data-bind="text:displayName"></div></a>
+                    </div>
+               <!-- /ko -->
+	     <!-- /ko -->
+             </div>
+                 
+            
+             
+     </div>
+    
+</div>
+
+
+

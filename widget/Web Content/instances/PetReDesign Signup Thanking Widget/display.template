@@ -1,0 +1,10 @@
+<div class="container" style="min-height: 500px">
+   <div class="row">
+      <div class="col-sm-7 col-xs-12 thank-center">
+         <p>Thank you for subscribing to the Petmate.com email list!
+            New subscribers will receive a 10% off promotion.
+            Please check your inbox for details. You may unsubscribe at any time.
+         </p>
+      </div>
+   </div>
+</div>

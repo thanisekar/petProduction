@@ -1,0 +1,26 @@
+{
+  "resources": {
+    "count2Label": "2",
+    "totalItemHelpText": "Enter Total No. of Items",
+    "enabledLabel": "Widget Enable",
+    "carouselTitleHelpText": "Enter Carousel Title",
+    "itemDesktopHelpText": "Select No. of Items to be shown in Desktop",
+    "itemMobileLabel": "Mobile Item Count",
+    "carouselTitleLabel": "Carousel Title",
+    "collectionIdHelpText": "Enter Collection Id",
+    "description": "Place the Carousel here",
+    "count6Label": "6",
+    "count1Label": "1",
+    "title": "Carousel",
+    "itemDesktopLabel": "Desktop Item Count",
+    "totalItemLabel": "Total No. of Items",
+    "enabledHelpText": "Enable the Carousel",
+    "count4Label": "4",
+    "itemTabletHelpText": "Select No. of Items to be shown in Tablet",
+    "collectionIdLabel": "Collection Id",
+    "count3Label": "3",
+    "itemTabletLabel": "Tablet Item Count",
+    "itemMobileHelpText": "Select No. of Items to be shown in Mobile",
+    "count5Label": "5"
+  }
+}

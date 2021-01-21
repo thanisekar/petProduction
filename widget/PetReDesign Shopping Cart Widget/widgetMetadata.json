@@ -1,0 +1,22 @@
+{
+  "imports": [
+    "product",
+    "imageRootUrl",
+    "loaded",
+    "productVariantOptions",
+    "productTypes"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Shopping Cart Widget",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "pageTypes": [
+    "cart"
+  ],
+  "config": {}
+}

@@ -1,0 +1,11 @@
+<div id="CC-promotionUpsell">
+  <!-- ko foreach : {data: $data.promotionUpsellMessages(), as: 'message'}-->
+            <div class='petredeisgnshippingBar_wrapper'>
+            <div class='container'>
+                    <div class='petredesing-shippingBar col-xs-12 col-sm-12 '>
+                         <a class="cc-rich-text" data-bind="html: message.text, ccLink: 'shipping'"></a>
+                      </div>
+                </div>
+            </div>
+  <!-- /ko -->
+</div>

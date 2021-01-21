@@ -1,0 +1,42 @@
+{
+  "titleResourceId": "title",
+  "properties": [
+    {
+      "defaultValue": "",
+      "name": "bannerImage",
+      "id": "bannerImage",
+      "helpTextResourceId": "bannerImageHelpText",
+      "labelResourceId": "bannerImageLabel",
+      "type": "stringType",
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "name": "bannerText1",
+      "id": "bannerText1",
+      "helpTextResourceId": "bannerImageHelpText1",
+      "labelResourceId": "bannerImageLabel1",
+      "type": "stringType",
+      "required": false
+    },
+    {
+      "defaultValue": "",
+      "name": "bannerText2",
+      "id": "bannerText2",
+      "helpTextResourceId": "bannerImageHelpText2",
+      "labelResourceId": "bannerImageLabel2",
+      "type": "stringType",
+      "required": false
+    },
+    {
+      "defaultValue": "",
+      "name": "bannerText3",
+      "id": "bannerText3",
+      "helpTextResourceId": "bannerImageHelpText3",
+      "labelResourceId": "bannerImageLabel3",
+      "type": "stringType",
+      "required": false
+    }
+  ],
+  "descriptionResourceId": "description"
+}

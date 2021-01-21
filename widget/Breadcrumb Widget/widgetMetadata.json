@@ -1,0 +1,27 @@
+{
+  "imports": [
+    "category",
+    "product",
+    "user"
+  ],
+  "translations": [
+    {
+      "name": "Breadcrumb Widget",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "pageTypes": [
+    "product",
+    "category",
+    "searchResults",
+    "noSearchResults"
+  ],
+  "config": {
+    "catalogId": "cloudCatalog",
+    "fields": "",
+    "rootCategoryId": "rootCategory"
+  }
+}

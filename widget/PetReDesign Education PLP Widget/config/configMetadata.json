@@ -1,0 +1,13 @@
+{
+  "widgetDescriptorName": "productListing",
+  "properties": [
+    {
+      "defaultValue": true,
+      "name": "shouldUseStyleBased",
+      "id": "shouldUseStyleBased",
+      "helpTextResourceId": "shouldUseStyleBasedHelpText",
+      "labelResourceId": "shouldUseStyleBasedTextLabel",
+      "type": "booleanType"
+    }
+  ]
+}

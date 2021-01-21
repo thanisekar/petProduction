@@ -1,0 +1,377 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+    #customLoginWidget{
+        .login-container{
+               
+        }
+        .page-header-title{
+             margin: 20px 0 10px 0;
+              padding: 0 15px;
+        h3{
+            padding: 0 5px;
+            text-transform: uppercase;
+            font-weight: normal;
+            font-size: 24px;
+            color:#333333;
+            border-bottom: 1px solid #000;
+        }
+    }
+    
+    #loginForm-wrap {
+        padding: 0 15px;
+        #loginForm{
+            border: 1px solid #eee;
+            padding: 15px 35px 30px 35px;
+        }
+    } 
+    .signUpTxt {
+       padding: 0 15px;
+       .text-wrapper{
+           padding: 25px;
+           p{
+           color: #000;
+           margin-bottom:0;
+        }
+       }
+       
+    }
+    .bold{
+        font-weight: bold;
+    }
+    legend {
+        border-bottom:0px !important;
+    }
+    .form_field-wrap 
+    {
+        .errorMessage {
+                color: #eb2b2b!important;
+                text-transform: none!important;
+                font-size: 12px!important;
+                font-family: 'Roboto', sans-serif !important;
+                line-height: 1.3!important;
+                font-weight: 500!important;
+                letter-spacing: 1px!important;
+                margin-bottom: 0!important;
+                padding-top: 10px !important;
+                padding: 10px 0;
+                text-align: left;
+        }
+    }
+    .form-wrap label {
+        text-transform: lowercase;
+        color: #8F8F8F;
+        font-size: 16px;
+        margin-bottom: 5px;
+         margin-left: 0px;
+        //display: inline !important;
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+    }
+    .form_item {
+        position: relative;
+        padding:0px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .form-control {
+        height: 45px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #000;
+        padding: 15px!important;
+        font-size: 16px;
+        border: 1px solid #d1cfcb;
+        border-radius: 6px;
+        box-shadow: none;
+    }
+    #rememberpassword {
+        opacity:0;
+        position: absolute;
+    }
+    .remember-password{
+            margin-left: 20px;
+    }
+    .control {
+        padding-left: 30px;
+    }
+    #control-indicator:after {
+        content: '\f096';
+        font-family: FontAwesome;
+        font-size: 24px;
+        font-weight: normal;
+        color: #d1d1d1;
+        top: -0.25rem;
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 21px;
+        height: 21px;
+        line-height: 2rem;
+    }
+
+    #loginForm input:checked ~ #control-indicator:after {
+        content: '\f14a';
+        color: #2654bf;
+        font-family: FontAwesome;
+        font-size: 24px;
+        border: 0px !important;
+    }
+    .login-button, .registerBtn{
+        color: #fff;
+        text-transform: uppercase;
+        background: #2654BF;
+        border-color: #2654BF;
+        font-size: 14px;
+	font-family: @font-family-nunito;  
+        font-weight: bold;
+        letter-spacing: -0.36px;
+        padding: 12px 23px;
+        &:hover{
+            background-color: #3f6dd1;
+        }
+    }
+        .registerBtn{
+            padding: 12px 64px;
+        }
+        @media (max-width:767px){
+            .registerBtn{
+                width: 100%;
+            }
+        }
+    }
+    #CC-createNewPasswordPane{
+        h4{
+            font-family: 'Nunito', sans-serif;
+            color: #000000;
+            font-size: 32px;
+            line-height: 1.5;
+            font-weight: normal;
+        }
+        .form-elements{
+        position:relative;
+    }
+    .center-block{
+        display:inline-flex;
+    }
+    
+    .cc-button-blue{
+        margin: 20px 0 40px 0;
+        padding: 14px 35px!important;
+        background: #2654BF;
+        border-color: #2654BF;
+        outline: none;
+        box-shadow: none;
+        line-height: 12px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.05rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-weight:bold;
+    }
+    .cc-button-transparent{
+        margin: 20px 0 40px 0;
+        padding: 14px 35px!important;
+        background: #fff;
+        border-color: #fff;
+        outline: none;
+        box-shadow: none;
+        text-transform: uppercase!important;
+        font-size: 12px;
+        color: #2654bf;
+        text-decoration: underline;
+        font-family: 'Nunito', sans-serif;
+        line-height: 12px;
+        font-weight: 700;
+        letter-spacing: 0.05rem;
+        font-weight:bold;
+    }
+    }
+    
+    /* Reset Password styling*/
+    .myaccount-leftnav {
+        background-color: #cac5bd;
+        border-radius: 3px;
+        padding: 0px 0px;
+        margin-right: 2%;
+        min-height:350px;
+        //margin-top: 25px;
+        a {
+            font-size: 18px;
+            color: black;
+        }
+        a:hover,
+        a:focus {
+            text-decoration: none;
+        }
+        .selected {
+           
+          
+            a {
+                color: #2654bf !important;
+                //border-bottom: 2px solid #99c2ff;
+                display: inline-block;
+                font-weight: 300 !important;
+                font-family:@font-family-roboto;
+                 line-height:16px;
+            }
+            li {
+                background-color: #EFEFEF;
+                font-weight: normal !important;
+            }
+        }
+        ul {
+            margin: 0px;
+            padding: 0px;
+            padding-left: 40px;
+         //   padding-top: 10px;
+            li {
+                list-style-type: none;
+                 line-height:30px;
+                     margin-bottom: 3px !important;
+                a {
+                   color: #000;
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    padding: 0;
+                    font-weight: 300;
+                    font-family: @font-family-roboto;
+                     line-height:16px;
+                    
+                    &:hover {
+                        text-decoration: none;
+                        
+                        color: #2654bf;
+                    }
+                }
+                ul {
+                    li {
+                        margin-bottom: 0px;
+                        a {
+                            padding-left: 30px;
+                            outline:none;
+                        }
+                        a.active {
+                            font-weight: bold;
+                        }
+                    }
+                    
+                }
+            }
+        }
+     
+    }
+    
+    .myaccount-link {
+        margin-top: 6px;
+        span {
+            a {
+                color: #333;
+                text-decoration: underline;
+            }
+            &:after {
+                content: "|";
+                padding-left: 6px;
+            }
+            &:last-child {
+                &:after {
+                    content: "";
+                }
+            }
+        }
+    }
+    .myaccount-listing{
+        display:block !important;
+    }
+    @media(min-width:767px)and(max-width:991px) {
+        .myaccount-leftnav {
+            margin-right: 0px;
+            .myaccount-overview-link-wrapper {
+                padding-right: 10px !important;
+                padding-left: 10px !important;
+                i.my-account-angle-arrow {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                a {
+                    font-size: 18px;
+                    color: #333;
+                    display: block;
+                    font-weight: bold;
+                }
+            }
+            .myaccount-listing {
+                margin-top: 15px;
+            }
+        }
+    }
+    @media(min-width:320px)and(max-width:767px) {
+        .myaccount-leftnav {
+            width: 100% !important;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            .myaccount-overview-link-wrapper {
+                padding-right: 10px !important;
+                padding-left: 10px !important;
+                i.my-account-angle-arrow {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                a {
+                    font-size: 18px;
+                    color: #333;
+                    display: block;
+                    font-weight: bold;
+                }
+            }
+            .myaccount-listing {
+                margin-top: 15px;
+            }
+        }
+    }
+    
+    
+/*Custom Stylings*/
+.myaccount-leftnav{
+        margin-top:30px;
+        background: #fff;
+        border-radius: 0;
+        .accordion-header{
+                font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+        }
+        .myaccount-listing{
+            padding-left: 0;
+            li{
+                    line-height:30px;
+                        margin-bottom: 3px !important;
+                a{
+                    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #000;
+    text-transform: capitalize;
+    text-decoration: none;
+    line-height: 30px;
+    font-weight: 300;
+                    
+                    &:hover{
+                        background:#fff;
+                        text-decoration: underline;
+                        
+                        
+                        
+                    }
+                }
+            }
+        }
+}
+
+    
+
+       
+}    
+    

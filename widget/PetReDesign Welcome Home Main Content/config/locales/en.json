@@ -1,0 +1,12 @@
+{
+  "resources": {
+    "ConsumerCommentsOneText": "Please Enter Consumer Comments One",
+    "ConsumerCommentsTwoLabel": "Consumer Comments Two",
+    "ConsumerCommentsThreeLabel": "Consumer Comments Three",
+    "VideoIdHelpText": "Enter Video Id's",
+    "VideoIdLabel": "Video Id's",
+    "ConsumerCommentsThreeText": "Please Enter Consumer Comments Three",
+    "ConsumerCommentsOneLabel": "Consumer Comments One",
+    "ConsumerCommentsTwoText": "Please Enter Consumer Comments Two"
+  }
+}

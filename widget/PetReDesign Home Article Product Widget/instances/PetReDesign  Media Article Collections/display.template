@@ -1,0 +1,45 @@
+<!-- ko if: enabled() -->
+<div class="container" id="educationArticleSectionWidget" data-oc-id="educationArticleSectionWidget">
+    <div class="row main-container" id="media-contents">
+             <div class='heading'>Media</div>
+           </div>
+ </div>
+ <!-- /ko -->
+ 
+
+<div class="row content-block">
+<div class="row col-sm-9 col-xs-12 nopad media-contents-center">
+
+ <div class='col-sm-12 col-xs-12'>
+     
+           <!-- ko foreach: getFinalProductData() -->
+     <div class="article-content">
+         <span class="monthTxt" data-bind="text:$parent.newMonthDisplay($data)"> </span>
+     <h4 class="col-sm-12 media-contents"> <div class="headingTxt" data-bind="text: displayName"> </div></h4>
+     <!--<p class="descriptionTxt" data-bind="text: longDescription"></p>-->
+     <div class="more hidden-xs">
+            <span class="descriptionText" data-bind="text: description"></span>
+      </div>
+     <div class="row">
+         <div class='article-products'>
+         <div class="read-more"><a class="loginbtn" alt='displayName' data-bind="ccLink: $data, attr: {href: $data.route() +'?media=true'}">READ MORE</a></div>  
+              </div>
+     </div>
+     </div>
+     
+       <!--/ko-->       
+              
+         </div>
+       
+    
+</div>
+ <!-- /ko -->
+
+ <!-- /ko -->
+
+
+</div>
+<!--</div>-->
+
+
+ 

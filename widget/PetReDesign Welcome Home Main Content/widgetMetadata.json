@@ -1,0 +1,21 @@
+{
+  "imports": [
+    "product"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Welcome Home Main Content",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "ConsumerCommentsOne": "“I never realized how important a kennel was to my Corgi until I researched natural denning instincts. I want her ‘den’ to be as comfortable and safe as possible.”                         <br><span>Debra M. Holt, Talco, TX</span>",
+    "ConsumerCommentsThree": "\"Our Schnauzer's kennel is his home-inside-our-home. He loves it. He takes his toys with him when he goes to bed. I feel so good knowing it's confortable for him\" <br><span>Donna Fuller, Spokane, WA</span>",
+    "ConsumerCommentsTwo": "\"Our dog's a member of the family and needs to sleep comfortably too. I never thought about how much safer and more comfortable plastic kennels can be.\" <br><span>D.B. McPhee, Boulder CO</span>",
+    "VideoID": "-jAjqNDsw3I"
+  }
+}

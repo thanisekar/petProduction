@@ -1,0 +1,587 @@
+<!-- ko if: enabled() -->
+
+
+<div id="litterBox">
+    <div id="megamenu">
+        <div class="container">
+            <ul>
+                <li><img src="/file/general/PM_LYLB_Logo.png" class="img-responsive"></li>
+                <li><span id="education">EDUCATION</span></li>
+                <li><span id="pansToLove">PANS TO LOVE</span></li>
+                <li><span id="community">COMMUNITY</span></li>
+                <li><span id="shop">SHOP</span></li>
+            </ul>
+        </div>
+            <div class="homeBanner">
+            <img data-bind="ccResizeImage: {
+                                source: '/file/general/PM_LYLB_Main-Banner.jpg',
+                                xsmall: '62,270',
+                                small: '168,768',
+                                medium: '206,893',
+                                large: '440,1903',
+                                alt: displayName,
+                                title:displayName}"  class="img-responsive" width="100%"/>
+             </div>
+            <h6 class="boldOne">THE RIGHT PRODUCT FROM PETMATE IS A GOOD START.</h6>
+            <h6 class="regular">There are things you can do on a regular basis to practice healthy litterbox management.</h6>
+        </div>
+
+    <div class="education">
+        <div class="container wrapper">
+            <div class="row">
+                
+                <div class="col-sm-2 col-sm-offset-1 odd">
+                    <div class="item-wrapper">
+                        <div class="hover-text hidden-xs">
+                            Odors can eventually penetrate plastics and resins. Plus, your cat's scratching alone takes a toll. We recommend you swap out your old litterbox for a new one once a year. Keep the old one nearby for a short transition period.
+                        </div>
+                        <img  src="/file/general/PM_LYLB_Replace-Icon.png" class="img-responsive hover-image"><span>Replace Your<br/> Litterbox Once a Year</span>
+                        <div class="hover-text visible-xs">
+                            Odors can eventually penetrate plastics and resins. Plus, your cat's scratching alone takes a toll. We recommend you swap out your old litterbox for a new one once a year. Keep the old one nearby for a short transition period.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 even">
+                    <div class="item-wrapper">
+                        <img src="/file/general/PM_LYLB_Multi-Cats-Icon.png" class="img-responsive"><span>Multi Boxes<br/> For Multi Cats</span>
+                        <div class="hover-text">
+                            Cats can get stressed when they have to share litterboxes. Most vets agree if you own more than one cat, you should have one more litterbox than the number of cats you own. So, for two cats, keep three litterboxes.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 odd">
+                    <div class="item-wrapper">
+                        <div class="hover-text hidden-xs">
+                            Cats can be finicky about litterbox habits. If you don't manage it well, you'll find they are taking their business elsewhere. Litterboxes should be scooped once a day. Litter should be changed regularly, ranging from every other day to once weekly.<br>     
+                        </div>
+                        <img src="/file/general/PM_LYLB_Scoop-Icon.png" class="img-responsive"><span>Practice<br/> Regular Scooping</span>
+                        <div class="hover-text visible-xs">
+                            Cats can be finicky about litterbox habits. If you don't manage it well, you'll find they are taking their business elsewhere. Litterboxes should be scooped once a day. Litter should be changed regularly, ranging from every other day to once weekly.<br>     
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 even">
+                    <div class="item-wrapper">
+                        <img src="/file/general/PM_LYLB_Right-Fit-Icon.png" class="img-responsive"><span>Make The<br/> Size Right</span>
+                        <div class="hover-text">
+                            Consider your cat's size when determining which litterbox is the right one. Generally, your litterbox should be 1.5 times longer than your cat. They need room when eliminating, because they often stretch out and move around in the litterbox to cover their messes.
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-sm-2 odd">
+                    <div class="item-wrapper">
+                        <div class="hover-text hidden-xs" style="font-size:11px;line-height:15px">
+                            Many factors impact whether a cat feels safe enough to do their business. Make sure the litterbox is easily accessible and avoid putting it in places they would have a hard time accessing, particularly older cats with mobility issues. Be sure and keep it away from noisy, high-traffic areas and never place it near their food supply.
+                        </div>
+                        <img src="/file/general/PM_LYLB_Location-Icon.png" class="img-responsive"><span>Location,<br/> Location, Location</span>
+                        <div class="hover-text visible-xs" style="font-size:11px;line-height:15px">
+                            Many factors impact whether a cat feels safe enough to do their business. Make sure the litterbox is easily accessible and avoid putting it in places they would have a hard time accessing, particularly older cats with mobility issues. Be sure and keep it away from noisy, high-traffic areas and never place it near their food supply.
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+       
+        </div>
+    </div>
+    
+    <div class="pansToLove">
+        <div class="container">
+            <div class="banner">
+                <h6 class="boldOne">PETMATE HAS SOLUTIONS TO MAKE CAT LITTER MAINTAINENCE A MORE PLEASANT EXPERIENCE.</h6>
+                <h6 class="regular">Learn more about our products below.</h6>
+            </div>
+            <div id="carousel-example-generic"  class="carousel slide litter-carousel" data-ride="carousel">
+                          <!-- Indicators -->
+                         
+                        
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner"> 
+                          <!-- Controls -->
+                      
+                            <div class="item active">
+                                <div class="imageBox hidden-xs">
+                                  <div class="imageInn">
+                                        <a data-bind="ccLink:{route:'/booda-dome-cleanstep-litter-box/product/50020'}">      
+                                            <img data-bind="ccResizeImage: {
+                                                source: '/file/general/PM_LYLB_Love-Hate-Ad_01_HoverTxt1.jpg',
+                                                xsmall: '157,375',
+                                                small: '168,768',
+                                                medium: '206,893',
+                                                large: '440,1903',
+                                                alt: displayName,
+                                                title:displayName}"  class="img-responsive" width="100%"/>
+                                        </a>    
+                                     </div>
+                                  <div class="hoverImg">
+                                       <a data-bind="ccLink:{route:'/booda-dome-cleanstep-litter-box/product/50020'}">   
+                                            <img data-bind="ccResizeImage: {
+                                                source: '/file/general/PM_LYLB_Love-Hate-Ad_01_Ghost_Cleanstep.jpg',
+                                                xsmall: '157,375',
+                                                small: '168,768',
+                                                medium: '206,893',
+                                                large: '440,1903',
+                                                alt: displayName,
+                                                title:displayName}"  class="img-responsive" width="100%"/>
+                                        </a>
+                                  </div>
+                                </div>
+                                <div class="imageBox visible-xs mobile">
+                                    <div class="imageInn">
+                                        <a data-bind="ccLink:{route:'/booda-dome-cleanstep-litter-box/product/50020'}">      
+                                            <img data-bind="ccResizeImage: {
+                                                source: '/file/general/PM_LYLB_Love-Hate-Ad_01_MOBILE.jpg',
+                                                xsmall: '157,375',
+                                                small: '168,768',
+                                                medium: '206,893',
+                                                large: '440,1903',
+                                                alt: displayName,
+                                                title:displayName}"  class="img-responsive" width="100%"/>
+                                        </a>    
+                                     </div>
+                                </div>
+                            </div>
+                          
+                            <div class="item">
+                                <div class="imageBox hidden-xs">
+                                  <div class="imageInn">
+                                        <a data-bind="ccLink:{route:'/petmate-basic-hooded-litter-pan/product/PM102'}">      
+                                            <img data-bind="ccResizeImage: {
+                                                source: '/file/general/PM_LYLB_Love-Hate-Ad_02_HoverTxt.jpg',
+                                                xsmall: '157,375',
+                                                small: '168,768',
+                                                medium: '206,893',
+                                                large: '440,1903',
+                                                alt: displayName,
+                                                title:displayName}"  class="img-responsive" width="100%"/>
+                                        </a>    
+                                     </div>
+                                  <div class="hoverImg">
+                                       <a data-bind="ccLink:{route:'/petmate-basic-hooded-litter-pan/product/PM102'}">   
+                                            <img data-bind="ccResizeImage: {
+                                                source: '/file/general/PM_LYLB_Love-Hate-Ad_02_Ghost_Hooded.jpg',
+                                                xsmall: '157,375',
+                                                small: '168,768',
+                                                medium: '206,893',
+                                                large: '440,1903',
+                                                alt: displayName,
+                                                title:displayName}"  class="img-responsive" width="100%"/>
+                                        </a>
+                                  </div>
+                                </div>
+                                <div class="imageBox visible-xs mobile">
+                                    <div class="imageInn">
+                                        <a data-bind="ccLink:{route:'/petmate-basic-hooded-litter-pan/product/PM102'}">      
+                                            <img data-bind="ccResizeImage: {
+                                                source: '/file/general/PM_LYLB_Love-Hate-Ad_02_MOBILE.jpg',
+                                                xsmall: '157,375',
+                                                small: '168,768',
+                                                medium: '206,893',
+                                                large: '440,1903',
+                                                alt: displayName,
+                                                title:displayName}"  class="img-responsive" width="100%"/>
+                                        </a>    
+                                     </div>
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="imageBox hidden-xs">
+                                  <div class="imageInn">
+                                        <a data-bind="ccLink:{route:'/petmate-simple-sifting-litter-pan/product/42095'}">      
+                                            <img data-bind="ccResizeImage: {
+                                                source: '/file/general/PM_LYLB_Love-Hate-Ad_03_HoverTxt.jpg',
+                                                xsmall: '157,375',
+                                                small: '168,768',
+                                                medium: '206,893',
+                                                large: '440,1903',
+                                                alt: displayName,
+                                                title:displayName}"  class="img-responsive" width="100%"/>
+                                        </a>    
+                                     </div>
+                                  <div class="hoverImg">
+                                       <a data-bind="ccLink:{route:'/petmate-simple-sifting-litter-pan/product/42095'}">   
+                                            <img data-bind="ccResizeImage: {
+                                                source: '/file/general/PM_LYLB_Love-Hate-Ad_03_Ghost_Sifting.jpg',
+                                                xsmall: '157,375',
+                                                small: '168,768',
+                                                medium: '206,893',
+                                                large: '440,1903',
+                                                alt: displayName,
+                                                title:displayName}"  class="img-responsive" width="100%"/>
+                                        </a>
+                                  </div>
+                                </div>
+                                <div class="imageBox visible-xs mobile">
+                                    <div class="imageInn">
+                                        <a data-bind="ccLink:{route:'/petmate-simple-sifting-litter-pan/product/42095'}">      
+                                            <img data-bind="ccResizeImage: {
+                                                source: '/file/general/PM_LYLB_Love-Hate-Ad_03_MOBILE.jpg',
+                                                xsmall: '157,375',
+                                                small: '168,768',
+                                                medium: '206,893',
+                                                large: '440,1903',
+                                                alt: displayName,
+                                                title:displayName}"  class="img-responsive" width="100%"/>
+                                        </a>    
+                                     </div>
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="imageBox hidden-xs">
+                                  <div class="imageInn">
+                                        <a data-bind="ccLink:{route:'/petmate-top-entry-litter-pan/product/22062'}">      
+                                            <img data-bind="ccResizeImage: {
+                                                source: '/file/general/PM_LYLB_Love-Hate-Ad_04_HoverTxt.jpg',
+                                                xsmall: '157,375',
+                                                small: '168,768',
+                                                medium: '206,893',
+                                                large: '440,1903',
+                                                alt: displayName,
+                                                title:displayName}"  class="img-responsive" width="100%"/>
+                                        </a>    
+                                     </div>
+                                  <div class="hoverImg">
+                                       <a data-bind="ccLink:{route:'/petmate-top-entry-litter-pan/product/22062'}">   
+                                            <img data-bind="ccResizeImage: {
+                                                source: '/file/general/PM_LYLB_Love-Hate-Ad_04_Ghost_TopEntry.jpg',
+                                                xsmall: '157,375',
+                                                small: '168,768',
+                                                medium: '206,893',
+                                                large: '440,1903',
+                                                alt: displayName,
+                                                title:displayName}"  class="img-responsive" width="100%"/>
+                                        </a>
+                                  </div>
+                                </div>
+                                <div class="imageBox visible-xs mobile">
+                                    <div class="imageInn">
+                                        <a data-bind="ccLink:{route:'/petmate-top-entry-litter-pan/product/22062'}">      
+                                            <img data-bind="ccResizeImage: {
+                                                source: '/file/general/PM_LYLB_Love-Hate-Ad_04_MOBILE.jpg',
+                                                xsmall: '157,375',
+                                                small: '168,768',
+                                                medium: '206,893',
+                                                large: '440,1903',
+                                                alt: displayName,
+                                                title:displayName}"  class="img-responsive" width="100%"/>
+                                        </a>    
+                                     </div>
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="imageBox hidden-xs">
+                                  <div class="imageInn">
+                                        <a data-bind="ccLink:{route:'/petmate-basic-litter-pan/product/22184'}">      
+                                            <img data-bind="ccResizeImage: {
+                                                source: '/file/general/PM_LYLB_Love-Hate-Ad_05_HoverTxt.jpg',
+                                                xsmall: '157,375',
+                                                small: '168,768',
+                                                medium: '206,893',
+                                                large: '440,1903',
+                                                alt: displayName,
+                                                title:displayName}"  class="img-responsive" width="100%"/>
+                                        </a>    
+                                     </div>
+                                  <div class="hoverImg">
+                                       <a data-bind="ccLink:{route:'/petmate-basic-litter-pan/product/22184'}">   
+                                            <img data-bind="ccResizeImage: {
+                                                source: '/file/general/PM_LYLB_Love-Hate-Ad_05_Ghost_Open.jpg',
+                                                xsmall: '157,375',
+                                                small: '168,768',
+                                                medium: '206,893',
+                                                large: '440,1903',
+                                                alt: displayName,
+                                                title:displayName}"  class="img-responsive" width="100%"/>
+                                        </a>
+                                  </div>
+                                </div>
+                                <div class="imageBox visible-xs mobile">
+                                    <div class="imageInn">
+                                        <a data-bind="ccLink:{route:'/petmate-basic-litter-pan/product/22184'}">      
+                                            <img data-bind="ccResizeImage: {
+                                                source: '/file/general/PM_LYLB_Love-Hate-Ad_05_MOBILE.jpg',
+                                                xsmall: '157,375',
+                                                small: '168,768',
+                                                medium: '206,893',
+                                                large: '440,1903',
+                                                alt: displayName,
+                                                title:displayName}"  class="img-responsive" width="100%"/>
+                                        </a>    
+                                     </div>
+                                </div>
+                            </div>
+                            
+                          
+                          </div>
+                            <a class="left carousel-control hidden-sm hidden-xs" href="#carousel-example-generic" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </a>
+                          <a class="right carousel-control hidden-sm hidden-xs" href="#carousel-example-generic" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                          </a>
+                           <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                          </ol>
+
+                        </div>
+        </div>
+    </div>
+    
+    <div class="community">
+        <div class="container">
+                <h6>Join the Love Your Litterbox community.<br>Trust us, your cat will thank you.</h6>
+                <div id="carousel-example-generic-community"  class="carousel slide community-carousel" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic-community" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic-community" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic-community" data-slide-to="2"></li>
+                          </ol>
+                        
+                          <!-- Wrapper for slides -->
+                          <div class="col-sm-9 col-xs-12 litterBox-center">
+                          <div class="carousel-inner"> 
+                            
+                                <div class="item active">
+                                    <div class="review-container col-xs-12 col-md-4">
+                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <div class="review">
+                                            <span>"The top removes easily for me to clean it. We are definitely happy with our litter box upgrade."</span><br>
+                                             <span class="reviewer">-Heatherperk</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-container col-xs-12 col-md-4">
+                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <div class="review">
+                                            <span>"This flip top hooded pan is a serious litter box upgrade if you don't already own it."</span><br>
+                                             <span class="reviewer">-AmberK85</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-container col-xs-12 col-md-4">
+                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <div class="review">
+                                            <span>"My cats like the cat box and use with out any problems. It does control the odor very well."</span><br>
+                                             <span class="reviewer">-snowball and Gretchen</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="review-container col-xs-12 col-md-4">
+                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <div class="review">
+                                            <span>"Large size is perfect for multiple cats to use and still no smell. Very easy to clean. Very well made. Great litter box."</span><br>
+                                             <span class="reviewer">-Stefnrod</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-container col-xs-12 col-md-4">
+                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <div class="review">
+                                            <span>"My cat was so excited to have some alone time in her pan! She instantly took to it. It was easy for her to get in and out and even easyier for me to clean!"</span><br>
+                                             <span class="reviewer">-Cali</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-container col-xs-12 col-md-4">
+                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <div class="review">
+                                            <span>"My cat took to this litter box right away with no issues. The main reason I got this one is so the dog would stop getting in and eating the cat feces! She can't reach it now."</span><br>
+                                             <span class="reviewer">-Lou the cat</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="review-container col-xs-12 col-md-4">
+                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <div class="review">
+                                            <span>"I find this litter box easy to use and clean and prefer it to just scooping out clumps from traditional boxes."</span><br>
+                                             <span class="reviewer">-JennSLP</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-container col-xs-12 col-md-4">
+                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <div class="review">
+                                            <span>"This is a wonderful box and we recommended it. Even for picky cats like mine."</span><br>
+                                             <span class="reviewer">-AmyS81</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-container col-xs-12 col-md-4">
+                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <div class="review">
+                                            <span>"The Petmate jumbo hooded litter pan is great if you have multiple cats in your home."</span><br>
+                                             <span class="reviewer">-HollyAnn82</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+                            </div>
+                             <!-- <a class="left carousel-control hidden-sm hidden-xs" href="#carousel-example-generic-community" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </a>
+                          <a class="right carousel-control hidden-sm hidden-xs" href="#carousel-example-generic-community" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                          </a>-->
+                          </div>
+                        
+
+                        </div>
+                <h4>#LoveYourLitterBox</h4>           
+        </div>
+        
+    </div>
+               
+    <div class="shop">
+        <div class="container">
+    <!-- ko if: koDealsModelData().length > 0 -->
+<div class="templateRegion" id="cc-recs" data-oc-id="cc-recs">
+  <!-- oc layout: panels -->
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-0-0">
+
+
+      <!-- oc section: recommendations-carousel -->
+<!--        <div data-bind="element: 'recommendations-carousel', visible: recommendations().length > 0"></div>-->
+         <!--ko if: recommendationsGroups() && (recommendationsGroups().length > 0) -->
+  
+  <div data-bind="carouselSwipe, attr:{id: 'carousel-id-'+id()}" class="collectionProdCarousel carousel slide inner-corousel" data-interval="false">
+      <div class="col-md-9 col-sm-12 community-carousel-center">
+          <div class="row">
+    <!-- Collection Title -->
+    
+    <div id="cc-carousel-controls" class="col-xs-3">
+      <!-- Carousel Controls -->
+      <!-- ko if: recommendationsGroups() && (recommendationsGroups().length > 1) -->
+      <div class="controls row pull-right">
+          <div id="cc-carousel-left-control" class="col-sm-6">
+          <a class="corousel-left disabled" data-slide="prev" data-bind="widgetLocaleText:{value:'previousImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
+            <!--<i class="fa-2x fa fa-caret-left "></i>-->
+          </a>
+        </div>
+        <div id="cc-carousel-right-control" class="col-sm-6">
+          <a class="corousel-right" data-slide="next" data-bind="widgetLocaleText:{value:'nextImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
+            <!--<i class="fa-2x fa fa-caret-right "></i>-->
+          </a>
+        </div>
+        
+
+      </div>
+      <!-- /ko -->
+    </div>
+  </div>
+
+    <div class="carousel-inner home-carousel">
+      <!-- ko foreach: recommendationsGroups -->
+        <div class="item row" data-bind="css: {'active': $index()==0},foreach: $data">
+          <div data-bind="css: $parents[1].spanClass()" class="cc-product-item">
+
+            <div class="cc-item-detail">
+              <a data-bind="attr : { id: 'CC-product-detail-'+id, title: displayName }, ccLink: {route: $data.route}">
+              <span data-bind="text: displayName" class="sr-only"></span>
+               <img  class="img-responsive" data-bind="ccResizeImage: {
+                                   source: primarySmallImageURL,
+                                   size: '165,165',
+                                   alt: displayName, 
+                                   title:displayName}">
+              </a>
+              <div class="product-flag">
+                
+                      <!-- ko foreach: $parents[1].koDealsIsFlagData --> 
+                          <!-- ko if: ($parent.id == id)-->
+                          <!-- ko if: $data.isSaleFlag -->
+                              <span class="petmate-sale-flag">Sale</span>
+                              <!-- /ko -->
+                              <!-- ko ifnot: $data.isSaleFlag -->
+                              <!-- ko if: $data.isNewFlag -->
+                              <span class="petmate-new-flag">New</span>
+                              <!-- /ko -->
+                              <!-- /ko -->
+                          <!-- /ko -->
+                      <!-- /ko -->
+                  
+            </div>
+            </div>
+            
+             
+            <div class="cc-item-price">
+              <!-- ko if: $data.isminMaxprice == true --> 
+				        	  <span data-bind="text: minMaxPrice"></span>
+				        <!-- /ko -->
+				        <!-- ko if: $data.isGetSalePrice == true--> 
+				            
+				        	  <span class='salePriceValue' data-bind="text: getSalePrice"></span>
+				        	  <!-- ko if: listPrice--> 
+				        	    <span class='listPriceValue'>$</span><span class='listPriceValue' data-bind="text: listPrice"></span>
+				        	    <!-- /ko -->
+				        <!-- /ko -->
+				        <!-- ko if: $data.IslistPrice== true--> 
+				        	  <span data-bind="text: listPrice"></span>
+				        <!-- /ko -->  
+            </div>
+             <div class="cc-item-title">
+			 <a alt=displayName  data-bind="attr : { id: 'CC-product-title-'+id},ccLink: {route: $data.route}" >
+				<p data-bind="text: displayName" class="cc-text-overflow"></p>
+			 </a>
+            </div>
+            <!--Best Seller-->
+                <div class="product-seller">
+                <!-- ko if: promotext  -->
+                      <div class="petmate-promo-text" >
+                          <span data-bind="text: promotext"></span>
+                      </div>
+                      <div class="clearfix"></div>
+                      <!-- /ko -->
+                      <!-- ko if: x_freeShippingRibbon -->
+                       <div class='petmate-free-shipping-text'>
+                             <span data-bind="text: x_freeShippingRibbon"></span>
+                       </div>
+                <!-- /ko-->
+                </div>
+                
+                <!--Ends-->
+                <div class='cc-item-rating'>  
+                <div data-bind="attr: { 'data-bv-show': 'inline_rating', 'data-bv-product-id': id }"></div>
+                <!-- <div data-bind="attr: {id: 'BVRRCollection-'+ id}"> </div>-->
+                 
+                     </div>
+                  </div>
+                </div>
+              <!-- /ko -->
+            </div>
+              <!-- Carousel Indicators-->
+                <!-- ko if: recommendationsGroups().length > 1 -->
+                  <div id="cc-carousel-indicators" class="row hide">
+                    <ol role="presentation" class="carousel-indicators" data-bind="foreach: recommendationsGroups">
+                      <li data-bind="css: {'active': $index()==0}, attr: {'data-slide-to': $index, 'data-target': '#carousel-id-'+$parent.id()}"></li>
+                    </ol>
+                  </div>
+                <!-- /ko -->
+            </div>    
+              
+              </div>
+             <!--/ko-->
+                  <!-- /oc -->
+        
+                </div>
+            
+            
+              </div>
+              <!-- /oc -->
+            </div>
+            <!-- /ko -->
+            
+            </div>
+    </div>          
+
+</div>
+<!--/ko-->

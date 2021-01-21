@@ -1,0 +1,794 @@
+<!-- ko if: (user().loggedIn() || user().isUserSessionExpired()) -->
+<div id="CC-customerAccount">
+  <div class="row">
+    <div class="col-xs-12 nopad">
+      <div id="CC-customerAccount-details">
+        <div class="row hide">
+          <div class="col-xs-6 my-orders">
+            <div id="CC-customerProfile-orderDetails-section" class="cc-customerProfile-order-details">
+              <div id="CC-customerProfile-order-details">
+                <!-- ko with: user -->
+                <div class="h2" data-bind="widgetLocaleText:'myOrdersText'" id="CC-customerProfile-myorders-title">
+                </div>
+                <hr>
+                <div class="cc-customerOrders-container" id="CC-customerOrders-controls">
+                  <!-- ko if: countOfSubmittedOrders() == 0 -->
+                  <span data-bind="widgetLocaleText:'noOrdersFound'"></span>
+                  <!-- /ko -->
+                  <!-- ko if: countOfSubmittedOrders() > 0 -->
+                  <a href="#" id="CC-customerAccount-view-orders" class="text-underline" data-bind="widgetLocaleText:'viewOrderHistory', click: validatePrivilagePageRequest, ccNavigation: 'prevent', ccLink: 'orderHistory'"></a>
+                  <!-- /ko -->
+                </div>
+                <!-- /ko -->
+              </div>
+            </div>
+            <br/>
+          </div>
+          <div class="col-xs-6 my-wishlist">
+            <!-- ko if: showSWM -->
+            <div id="CC-customerProfile-spaceSettings-section" class="cc-customerProfile-space-settings">
+              <div id="CC-customerProfile-spaceSettings">
+                <div class="h2" data-bind="widgetLocaleText:'myWishListText'"></div>
+                <hr/>
+                <div class="row col-md-12">
+                  <a href="#" data-bind="widgetLocaleText:'wishListSettingsText', ccLink: 'wishlist_settings'"></a>
+                </div>
+              </div>
+            </div>
+            <br/>
+            <!-- /ko -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="CC-customerProfile-profileDetails-section" class="row cc-customerProfile-profile-details">
+              <div id="CC-customerProfile" data-bind="onRender: addEventHandlersForAnchorClick">
+                <div id="CC-customerProfile-title" >
+                  <span class="profileText" >Account: </span><span class='myprofile' data-bind="widgetLocaleText:'myProfileText'"></span>
+                </div>
+                <!--<div class="visible-xs navigation-section">
+                  <div class="account-section">
+                      <button type="button" id="accountPage" class="btn" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">ACCOUNT PAGES <i class="fa fa-angle-down"></i></button>
+                  </div> 
+                  
+                  <div id="navbar" class="collapse">
+                    <div class="navHeading">
+                      <span>Account Pages</span>
+                      <span class="pull-right collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><img src="/file/general/PetReDesignCloseIcon18x18.png"></span>
+                    </div>
+                    <div class="mobNavLinks">
+                      <ul class="leftNav">
+                        <li>
+                          <a class="profile" data-bind="ccLink:{route:'/profile'}">Profile</a> 
+                        </li>
+                        <li>
+                          <a data-bind="ccLink:{route:'/orderHistory'}">Order History</a>
+                        </li>
+                        <li>
+                          <a data-bind="ccLink:{route:'/wishlist'}">Wish List</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <hr>-->
+                <div class="cc-customerProfile-container" id="CC-customerProfile-controls">
+                  <div class="row">
+                    <div class="col-sm-6" id="left-section">
+                      <div id="CC-customerProfile-user-details" class="row cc-customerProfile-user-details">
+                        <div class="col-xs-12 nopad">
+                          <!-- ko with: user -->
+                          <fieldset id="CC-customerProfile-userdetail-edit-fields">
+                           <div class="user-information">
+                               
+                              <span class="cc-profile-legend-title" data-bind="widgetLocaleText:'userDetailsText'"></span>
+                           
+                            <div class="my-account" id="myaccount-profile" data-bind='visible: !$parent.isUserDetailsEdited()'>
+                              <div class="panel-group no-pad-right">
+                                <div class="column">
+                                  <div class="table clearfix">
+                                    <div class="col-xs-12 col-sm-12">
+                                      <div class="col-xs-12 col-sm-5 left text-left mb-10 nopad">
+                                        <span class='profileInfoTitle'>First Name</span>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-7 left text-left mb-10  nopad profileInfoValues" data-bind="text:firstName"></div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12">
+                                      <div class="col-xs-12 col-sm-5 left text-left mb-10 nopad">
+                                        <span  class='profileInfoTitle'>Last Name</span>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-7 left text-left mb-10 nopad profileInfoValues" data-bind="text:lastName"></div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12">
+                                      <div class="col-xs-12 col-sm-5 left text-left mb-10 nopad ">
+                                        <span  class='profileInfoTitle'>Email</span>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-7 left text-left mb-10 nopad emailId  profileInfoValues" data-bind="text:email"></div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12">
+                                      <div class="col-xs-12 col-sm-5 left text-left mb-10 nopad">
+                                        <span  class='profileInfoTitle'>Phone Number</span>
+                                      </div>
+                                      <div class="col-xs-6 col-sm-7 left text-left mb-10 nopad ">
+                                        <!--<span data-bind="visible:daytimeTelephoneNumber()!='', text:$parent.maskPhoneNumber(daytimeTelephoneNumber())"></span>-->
+                                        <span class='profileInfoValues' data-bind="visible:daytimeTelephoneNumber()!='' || daytimeTelephoneNumber()!= 'null', text:daytimeTelephoneNumber()"></span>
+                                        <span  class='profileInfoValues' data-bind="visible:daytimeTelephoneNumber()=='' || daytimeTelephoneNumber()=='Not provided' || daytimeTelephoneNumber()=='null' || daytimeTelephoneNumber()== null ">Not Provided</span>
+                                      </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12">
+                                      <div class="col-xs-12 col-sm-5 left text-left mb-10 nopad ">
+                                        <span  class='profileInfoTitle'> Gender</span>  
+                                      </div>
+                                      <div class="col-xs-12 col-sm-7 left text-left mb-10 nopad profileInfoValues " data-bind="text:gender"></div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12">
+                                      <div class="col-xs-12 col-sm-5 left text-left mb-10 nopad">
+                                         <span  class='profileInfoTitle'> Birthday</span>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-7 left text-left mb-10  nopad ">
+                                        <span  class='profileInfoValues' data-bind="visible: $parent.koDOB() != 'Not provided', text:$parent.koDOB"></span>
+                                        <span class='profileInfoValues' data-bind="visible:$parent.koDOB()=='' || $parent.koDOB()=='Not provided' || $parent.koDOB()=='null'">Not Provided</span>
+                                      </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12">
+                                      <div class="col-xs-12 col-sm-5 left text-left mb-10 nopad ">
+                                         <span  class='profileInfoTitle'> Zip Code</span>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-7 left text-left mb-10 nopad">
+                                        <span class='profileInfoValues'  data-bind="visible:$parent.koViewZipCode()!='', text:$parent.koViewZipCode"></span>
+                                        <span  class='profileInfoValues' data-bind="visible:$parent.koViewZipCode()=='' || $parent.koViewZipCode()=='Not provided' || $parent.koViewZipCode()=='null'">Not Provided</span>
+                                      </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12">
+                                      <div class="col-xs-12 col-sm-5 left text-left mb-10 nopad">
+                                         <span  class='profileInfoTitle'> Email Signup</span>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-7 left text-left mb-10 nopad  profileInfoValues" data-bind="text:receiveEmail"></div>
+                                    </div>
+                                    <div class="profile-button">
+                                     
+                                      <button class="cc-button-primary cc-button-blue" id="edit-profile" data-bind="click:$parent.editUserDetails">
+                                      <span data-bind="widgetLocaleText: 'editText'">Edit</span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div  id="editProfile"  data-bind="visible: $parent.isUserDetailsEdited()">
+                              <form id="profileUpdateForm" class="editprofile-form" data-bind="template: { afterRender: $parent.profileUpdateFormRendered() }">
+                                <label class="error" data-bind="attr:{for: 'DOB'+$index()}" style="display:none"></label> 
+                                <div class="page-header hide">Edit Profile</div>
+                                <div class="form-wrap clearfix">
+                                  <div class="form__field-wrap">
+                                    <div class="column edit-profile-container">
+                                      <div class="row row-collapse">
+                                        <div class="form__item column col-sm-12 form-elements">
+                                          <label for="firstname" class="label-text">First Name</label>
+                                          <input minlength="2" maxlength="40"  class="input-field input-box" id="CC-customerProfile-edit-details-firstname" placeholder="First Name" name="firstname" data-bind="textInput: $parent.koFirstName, widgetLocaleText : {value:'firstNameText', attr:'placeholder'}">
+                                           <span class="displayErrorIcons"></span>
+                                        </div>
+                                        <div class="form__item column col-sm-12 form-elements">
+                                          <label for="lastname" class="label-text">Last Name</label>
+                                          <input minlength="2" maxlength="40" class="input-field input-box" placeholder="Last Name" name="lastname" data-bind="textInput: $parent.koLastName, widgetLocaleText : {value:'lastNameText', attr:'placeholder'}">
+                                          <span class="displayErrorIcons"></span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="column edit-profile-container">
+                                      <div class="row row-collapse">
+                                        <div class="form__item column col-sm-12 form-elements">
+                                          <label for="email" class="label-text">Email</label>
+                                          <input minlength="2" maxlength="100" class="input-field input-box" placeholder="Email" name="emailaddress" data-bind="textInput: $parent.koEmail, widgetLocaleText : {value:'emailAddressText', attr:'placeholder'}">
+                                          <span class="displayErrorIcons"></span>
+                                        </div>
+                                        <div class="form__item column col-sm-12 form-elements">
+                                          <label class="inline-label label-text" for="">Phone Number</label>
+                                          <input type="text" maxlength="18" id="editProfilePhoneNumber" class="input-field input-box"  placeholder="123-456-7890"  name="phonenumber" data-bind="textInput: $parent.koPhoneNumber">
+                                          <span class="displayErrorIcons"></span>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="column edit-profile-container">
+                                      <div class="row row-collapse">
+                                        <div class="form__item column col-sm-12 form-elements">
+                                          <label class="label-text" for="">Birthday</label>
+                                           <input type="text" id="ProfileDOB" data-format="MM/DD/YYYY" data-template="MMM DD YYYY" name="date"  class="input-field date-field input-field--calendar pet_Birthday input-box" data-bind="textInput:$parent.koDOB">
+                                         
+                                        </div>
+                                        <div class="form__item column col-sm-12 gender form-elements">
+                                          <label class="mb-10 label-text">Gender</label> 
+                                          <div class="flex-display">
+                       
+                                            <label class="control radio radio-control">
+                                                <!--<p data-bind='text:  $parent.koGender '></p>-->
+                                                <input type="radio" value="male" data-bind="checked: $parent.koGender">
+                                                <span class="control-indicator checkmark"></span> Male
+                                            </label>
+                                            <label class="control radio radio-control">
+                                                <input type="radio" value="female" data-bind="checked: $parent.koGender">
+                                                <span class="control-indicator checkmark"></span> Female
+                                            </label>
+                                            <label class="control radio radio-control">
+                                                <input type="radio" value="other" data-bind="checked: $parent.koGender">
+                                                 <span class="control-indicator checkmark"></span> Prefer not to say
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="column edit-profile-container">
+                                      <div class="row row-collapse">
+                                        <div class="form__item column col-sm-12 form-elements">
+                                          <label for="zipcode" class="label-text">Zipcode</label>
+                                          <input minlength="2" maxlength="5" data-bind="textInput: $parent.koZipcode" class="input-field input-box" placeholder="Zipcode" name="zipcode">
+                                          <span class="displayErrorIcons"></span>
+                                        </div>
+                                        <div class="form__item column col-sm-12 email-signup form-elements">
+                                          <div class="mb-10">
+                                            <label class="mb-10 label-text">EMAIL SIGN UP</label>
+                                            <div class="flex-display">
+                                              <label class="control radio radio-control">
+                                                 <input class="subscribe" name="subscribe" value="yes" type="radio" data-bind="checked: $parent.koEmailSubscribe" >
+                                                 <span class="control-indicator checkmark"></span>Yes
+                                              </label>     
+                                              <label class="control radio radio-control">
+                                                <input class="subscribe" name="subscribe" value="no" type="radio" data-bind="checked:$parent.koEmailSubscribe">
+                                                 <span class="control-indicator checkmark"></span>No
+                                              </label>   
+                                           <!--     
+                                            <label class="control radio uppercase">
+                                            <input class="subscribe" name="subscribe" value="yes" type="radio" data-bind="checked: $parent.koEmailSubscribe" >
+                                            <span class="control-indicator"></span>
+                                            Yes
+                                            </label>
+                                            <label class="control radio uppercase">
+                                            <input class="subscribe" name="subscribe" value="no" type="radio" data-bind="checked:$parent.koEmailSubscribe">
+                                            <span class="control-indicator"></span>
+                                            No
+                                            </label>-->
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <input name="petProfileObj" id="petProfileObj" type="hidden" value="">
+                                  <input id="updateSuccessURL" name="updateSuccessURL" value="" type="hidden">
+                                  <div class="column clearfix">
+                                    <div class="large-centered columns">
+                                      <div class="col-sm-12 mb-20 left">
+                                         <button id="editProfileBtn" class="cc-button-primary cc-button-blue editProfile-save-button" data-bind="click:  function(data, event) {$parent.getEditProfileForm()}">
+                                            Save
+                                         </button>
+                                         <button id="btnCancel" class="cc-button-primary cc-button-transparent editProfile-cancel-button" data-bind='click: $parent.handleCancelUpdate'>
+                                            Cancel
+                                         </button>
+                                       
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                           </div>
+                           
+                            <div class="pet-information">
+                                <div id="petProfileInfo" class="row">
+                              <div class="column">
+                                <div class="header-section">
+                                   <!-- <span data-bind="text:'pet profile length'+ $parent.petProfile().length"></span>-->
+                               <!-- <span class="page-header">Pet Information</span>-->
+                                <span class="add-button add-edit-profile column mb-20 pull-right">
+                                  <a href="#" class="button button-block button--dark mb-20" id="add-pet-profile" data-bind="click:$parent.addNewPet">+ ADD NEW PET</a>
+                                </span>
+                                </div>
+                                <!-- ko if: $parent.petProfile().length == 0 -->
+                                <div class="noPetInfo" ><span>No Pet Information Provided</span></div>
+                                <!-- /ko -->
+                                <!--<div class="noPetInfo" data-bind='visible:$parent.koNopetProfile() '><span>No Pet Information Provided</span></div> -->
+                                <!-- ko if: $parent.petProfile().length > 0 -->
+                                <div class="petDetails" data-bind='visible:!$parent.isPetDetailsEdited()'>
+                                  <!--<pre data-bind="text: ko.toJSON($parent.petProfile(), null, 2)"></pre>-->
+                                  <!-- ko foreach: $parent.petProfile() -->
+                                  <!-- ko if: ($data.petName() != '' || $data.petBreed() != '' || $data.petDOB() != '' || $data.petGender() != '' || $data.petType() != '') -->
+                                  <div class="petDetailsInfo row">
+                                      <div class="page-header-Pet">
+                                          <span class='page-header-txt'>Pet </span>
+                                          <span class='page-header-txt'  data-bind="text: $index()+1"></span>
+                                          <span class='page-header-txt' > Information</span></div>
+                                  <div class="row mb-10">
+                                    <div class="col-xs-12 col-sm-5 nopad">
+                                      <span class='profileInfoTitle' >Pet's Name</span>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 nopad">
+                                      <span data-bind="text: $data.petName" class='profileInfoValues'></span>
+                                    </div>
+                                  </div>
+                                  <div class="row mb-10">
+                                    <div class="col-xs-12 col-sm-5 nopad">
+                                      <span class='profileInfoTitle'  >Type of Pet</span>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 nopad">
+                                      <span data-bind="text: $data.petType " class='profileInfoValues'></span>
+                                    </div>
+                                  </div>
+                                  <div class="row mb-10">
+                                    <div class="col-xs-12 col-sm-5 nopad">
+                                      <span class='profileInfoTitle'>Gender</span>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 nopad">
+                                      <span data-bind="text: $data.petGender " class='profileInfoValues'></span>
+                                    </div>
+                                  </div>
+                                  <div class="row mb-10">
+                                    <div class="col-xs-12 col-sm-5 nopad">
+                                      <span class='profileInfoTitle'>Breed</span>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 nopad">
+                                      <span data-bind="text: $data.petBreed " class='profileInfoValues'></span>
+                                    </div>
+                                  </div>
+                                  <div class="row mb-10">
+                                    <div class="col-xs-12 col-sm-5 nopad">
+                                      <span class='profileInfoTitle'>Birthday</span>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 nopad">
+                                      <span data-bind="text: $data.petDOB " class='profileInfoValues'></span>
+                                    </div>
+                                  </div>
+                                  <div class="edit-remove-btn">
+                                      <button class="cc-button-primary cc-button-blue" data-bind="click:function(data, event){$parents[1].editCurrentPetDetails(data, event)}, attr:{name: 'editLink'+$index()}">
+                                        <span data-bind="widgetLocaleText: 'editText'">Edit</span>
+                                    </button>
+                                    <button class="cc-button-primary cc-button-transparent editProfile-cancel-button" data-bind="click: function(data, event){$parents[1].removePetDetails(data, event)}, attr:{name: 'deleteLink'+$index()}" name="deleteLink0">
+                                           Remove
+                                    </button>
+                                  </div>  
+                                 
+                                  </div>
+                                  <!-- /ko -->
+                                  <!-- /ko -->
+                                </div> 
+                                <!-- /ko -->
+                              </div>
+                             
+                            
+                              <div data-bind='visible: $parent.isPetDetailsEdited()'>
+                                <!--<pre data-bind="text: ko.toJSON($parent.currentPetProfile(), null, 2)"></pre>-->
+                                <!-- ko foreach:$parent.currentPetProfile -->
+                                <div class="pet-add-sections">
+                                 <form id="editPetProfile" class="editprofile-form" data-bind="template: { afterRender: $parents[1].editPetProfileFormRendered() }">  
+                                  <div class="pet-add clearfix">
+                                    <label class="commonError" style="color:#f15d22; font-size: 12px;"></label>
+                                    <div class="col-xs-12 nopad input-field--edit-profile-large columns form-elements">
+                                      <label class="label-text">Pet's Name</label>
+                                      <input  type="text"  id='petName' name='petName'  maxlength="40" placeholder="Pet's Name"  data-bind="textInput:$data.petName" class="input-field petname input-box">
+                                        <span class='displayErrorIcons'></span>
+                                    </div>
+                                    <div class="col-xs-12 input-field--edit-profile-large left column nopad form-elements">
+                                      <label class="label-text pet-select" for="">Type of Pet</label>
+                                      <select class="petType input-box"    name="petType" id="petType" data-bind="textInput:$data.petType">
+                                        <option value="">Select</option>
+                                        <option value="dog">Dog</option>
+                                        <option value="cat">Cat</option>
+                                        <option value="bird">Bird</option>
+                                        <option value="other">Other</option>
+                                      </select>
+                                        <span class='displayErrorIcons'></span>
+                                    </div>
+                                    <div class="col-xs-12 column left input-gender input-field--edit-profile-large nopad gender">
+                                      <label class="mb-10 input-field--edit-profile-gender-label label-text">Gender</label> 
+                                      <div class="flex-display">
+                                          <label class="control radio radio-control">
+                                            <input type="radio"   value="male" name="petGender"   data-bind="checked:$data.petGender">
+                                            <span class="control-indicator checkmark"></span> Male
+                                          </label>
+                                          <label class="control radio radio-control">
+                                            <input type="radio" value="female" name="petGender" data-bind="checked:$data.petGender">
+                                            <span class="control-indicator checkmark"></span> Female
+                                          </label>
+                                           <label class="control radio radio-control">
+                                                <input type="radio" value="other" data-bind="checked:$data.petGender">
+                                                 <span class="control-indicator checkmark"></span> Prefer not to say
+                                            </label>
+                                          
+                                         <!-- 
+                                          <label class="control radio uppercase"  data-bind="attr:{'for': 'petMale'+$index()}">
+                                      <input type="radio"   value="male" data-bind="checked:$data.petGender, attr:{name: 'petGender'+$index(),id: 'petMale'+$index()}">
+                                      <span class="control-indicator"></span> M
+                                      </label>
+                                      <label class="control radio uppercase"  data-bind="attr:{'for': 'petFemale'+$index()}">
+                                      <input type="radio" value="female" data-bind="checked:$data.petGender, attr:{name: 'petGender'+$index(),id: 'petFemale'+$index()}">
+                                      <span class="control-indicator"></span> F
+                                      </label>-->
+                                          
+                                      </div>
+                                    </div>
+                                    <div class="col-xs-12 input-field--edit-profile-large columns input-breed desktop-no-pad-left nopad form-elements">
+                                      <label class="label-text" for="">Breed</label>
+                                      <input type="text" maxlength="40"  name='petBreed'  id='petBreed' placeholder="Breed"  data-bind="textInput:petBreed" class="input-field pet_Breed input-box">
+                                       <span class='displayErrorIcons'></span>
+                                    </div>
+                                    <div class="col-xs-12 input-field--edit-profile-large input-birth columns nopad form-elements">
+                                      <label class="label-text" for="">Birthday</label>
+                                     <input type="text" id="petDOB" data-format="MM/DD/YYYY" data-template="MMM DD YYYY" name="date"  class="input-field date-field input-field--calendar pet_Birthday input-box" data-bind="textInput:petDOB">
+                                    
+                                     <!-- <input  placeholder="Birthday"  id='petDOB' name='petDOB' readonly="true" data-bind="textInput:petDOB" class="input-field date-field input-field--calendar pet_Birthday input-box" type="text">-->
+                                       <span class='displayErrorIcons'></span>
+                                    </div>
+                                    <div class="col-sm-12 savePetDetails">
+                                        <!-- ko ifnot: $parents[1].isnewPetDetails() -->
+                                       <button id="saveChanges" class="cc-button-primary cc-button-blue editProfile-save-button" data-bind="click: function(data, event) {$parents[1].getEditProfileForm()}">  
+                                           <span data-bind="widgetLocaleText: 'updateCancelModalSave'"></span>  
+                                         </button> 
+                                         <!-- /ko -->
+                                          <!-- ko if: $parents[1].isnewPetDetails() -->
+                                         <button id="saveChanges" class="cc-button-primary cc-button-blue editProfile-save-button" data-bind="click: function(data, event) {$parents[1].getPetInfoForm(data)}"> 
+                                           <span data-bind="widgetLocaleText: 'updateCancelModalSave'"></span>  
+                                         </button>
+                                         <!-- /ko -->
+                                        
+                                       <button class="cc-button-primary cc-button-transparent editProfile-cancel-button" data-bind="click: $parents[1].cancelPetDetailsEdit, attr:{name: 'cancelPetDetails'+$index()}">
+                                           <span>Cancel</span>  
+                                         </button> 
+                                      <!--<a href="" id="saveChanges" class="button mb-10 button--dark editProfile-save-button" data-bind="click:  function(data, event) {if(editProfileForm.form()){$parents[1].updateProfileInfo()}}">Save</a>
+                                  
+                                 
+                                      <a href="#" class="right default-link white uppercase underline deleteLink" data-bind="click: $parents[1].cancelPetDetailsEdit, attr:{name: 'cancelPetDetails'+$index()}">Cancel</a>-->
+                                    </div>
+                                  </div>
+                                  </form>
+                                </div>
+                                <!-- /ko -->
+                              </div>
+                              
+                            </div>
+                            </div>
+                            
+                          </fieldset> 
+                          <!-- /ko -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6" id="right-section">
+                      <!--Password-->
+                      <div id="CC-customerProfile-password" class="row cc-customerProfile-password" >
+                        <div class="col-xs-12 nopad">
+                          <!-- ko with: user -->
+                          <fieldset id="CC-customerProfile-password-edit-fields">
+                              <h4>Change Password</h4>
+                             <form id="change-password-form" class="form-wrap change-password-form change-password-column" data-bind="template: { afterRender: $parent.changePwdFormRendered() }">
+                            		    <div id="changePasswordErrorMessage" class="errorMessage" style="display:none">Password not updated. The supplied original password does not match the current password in the profile.</div>
+                            			<div class=" col-sm-12">
+                            				<div class="form-group column ">
+                            				    <div class='control form-elements'>
+                            				        	<label for="oldpassword" class='   control-label label-text'>Old Password</label>
+                            				         	<input  name="oldpassword" id="CC-customerProfile-soldPassword"  data-bind="validatableValue: oldPassword" class="input-field oldPassword  input-box" type="password" >
+                            				         	<span class='displayErrorIcons'></span>
+                            				    </div>
+                            				</div>
+                            				
+                            				<div class="form-group column form-elements ">
+                            				    <div class='control'>
+                            					<label for="newpassword" class=' control-label label-text'>New Password</label>
+                            							<input id="createNewPassword-password"  data-bind="validatableValue: newPassword, 
+                                                  valueUpdate: 'afterkeydown', event: {blur: $parent.passwordFieldLostFocus.bind($parent), focus: $parent.passwordFieldFocused.bind($parent)}" name="newpassword" class="input-field  input-box" type="password" autocomplete="off" >
+                                                   <span class='displayErrorIcons'></span>
+                                                </div>
+                            				</div>
+                            				<div class="form-group column form-elements">
+                            				     <div class='control'>
+                            					<label for="passwordconfirm" class='control-label label-text'>Confirm Password
+                            						</label>
+                            							<input id='confirm-password'  name="passwordconfirm" data-bind="validatableValue: confirmPassword, 
+                                                valueUpdate: 'afterkeydown', event: {blur: $parent.confirmPwdFieldLostFocus.bind($parent), focus: $parent.confirmPwdFieldFocused.bind($parent)}"  class="input-field  input-box " type="password">
+                                                 <label></label>
+                                                     <span class='displayErrorIcons'></span>
+                            					
+                            						</div>
+                            				</div>
+                            
+                            
+                            			</div>
+                            			<div class="col-sm-12">
+                            				<div class=" columns">
+                            					<div class=" clearfix">
+                            							<input value="Save"  id='ChangePwd' class="disableChangePwd"  disabled data-bind="click: function(data, event) {$parent.getChangePasswordForm()}" type="submit">
+                            						
+                            							<a href="#" class="showCancelBtn cancel-button" data-bind="click: function(data, event) {$parent.ChangePwdCancelUpdate() }">Cancel</a>
+                            					
+                            					</div>
+                            				</div>
+                            			</div>
+                            
+                            		</form>
+                          </fieldset>
+                          <!-- /ko -->
+                        </div>
+                      </div>
+                      <!--Ends-->
+                      <!--Address Book-->
+                      <div class="cc-customerProfile-shipping-address" id="CC-customerProfile-shipping-details">
+                        <div class="col-xs-12 nopad">
+                          <!-- ko with: user -->
+                          <fieldset id="CC-customerProfile-edit-fields">
+                            
+                              <span class="cc-profile-legend-title" >Addresses</span> 
+                              <button class="cc-button-primary pull-right hidden-xs" id="cc-customer-profile-shipping-address-add"
+                                data-bind="click:$parent.handleCreateShippingAddress">
+                              <span class="add-text" >+ Add New Address</span>
+                              </button>
+                              <a class=" pull-right visible-xs" id="cc-customer-profile-shipping-address-add-mobile"
+                                data-bind="click:$parent.handleCreateShippingAddress">
+                              <span class="add-text" >+ ADD NEW ADDRESS</span>
+                              </a>
+                           
+                            <div class="row" data-bind="visible: !$parent.isUserProfileShippingEdited()" id="CC-customerProfile-shippingAddress-view">
+                              <!-- View Begins -->
+                              <div class="col-sm-12 nopad" id="CC-customerProfile-shippingAddress-view-region">
+                                 <!-- <div class="successMessage" id="defaultShippingAddressSuccess" >Your primary address has successfully been updated</div>
+		                           <div class="successMessage" id="deleteShippingAddress" >Address deleted successfully</div>-->
+                                <!-- ko if: shippingAddressBook().length == 0 -->
+                                <span >No addresses saved.</span>
+                                <!-- /ko -->
+                               
+                                <!-- ko if: shippingAddressBook().length > 0 -->
+		                    	<!-- ko foreach: shippingAddressBook.slice(0).sort(function(a,b){if(a.county() == null) {a.county('')};if(b.county() == null) {b.county('')}; return a.county().localeCompare(b.county())}) -->
+		                    	  <div class="CC-customerProfile-shipping-address cc-customer-profile-shipping-address-view col-xs-12">
+                                  <span data-bind="text: (county() != 'null'? county: '')" class="nick-name"></span><br/>
+                                  <span class="address-field" data-bind="text: firstName"></span>&nbsp;<span class="address-field" data-bind="text: lastName"></span>
+                                  <br/>
+                                  <span class="address-field" data-bind="text: address1"></span>
+                                  <!-- ko if: address2 -->
+                                  <br/>
+                                  <span class="address-field" data-bind="text: address2"></span>
+                                  <!-- /ko -->
+                                  <br/>
+                                  <span class="address-field" data-bind="text: city"></span>, 
+                                  <span class="address-field" data-bind="text: state"></span>
+                                  <span class="address-field" data-bind="text: postalCode"></span>
+                                  <br/>
+                                  <span class="address-field" data-bind="text: country"></span>
+                                  <!-- ko if: phoneNumber -->
+                                  <br/>
+                                  <span class="address-field" data-bind="text: phoneNumber"></span>
+                                  <!-- /ko -->
+                                  <br/>
+                                  <br/>
+                                  <!-- ko if: $parent.shippingAddressBook().length > 1 -->
+                                 <div class='col-xs-12 col-sm-12'>
+                                     <div class='col-sm-6 col-xs-12 nopad primaryShippingAddress '>
+                                        <label class="control-primary  mb-20">
+                        
+                                                <input type="checkbox" data-bind="checked: isDefaultAddress, click: $parents[1].updateDefaultShipping" >
+                                                 <span class="control-indicator"></span>
+                                                 <span class="set-default " >Make this my Primary Shipping Address</span>
+                                          
+                                        </label>
+                                     </div>
+                                   
+                                     <div class='col-sm-6 col-xs-12 nopad primaryBillingAddress'>
+                                       <div>
+                                       <!--class="checkbox checkbox-primary">-->
+                                           	<label class="  makeDefaultAddress control-primary">
+                        						<input id="radio2" name="radioBill" type="checkbox" data-bind="checkedValue: county, checked: $parents[1].billingAddressCounty1,click: $parents[1].updateDefaultBilling" >
+                          						<span class="control-indicator"></span>
+                          						<span class="set-default">Make this my Primary Billing Address</span>
+                			     		</label>
+                                        </div>
+                                       
+                                     </div>
+                                 </div>
+                                 <!-- /ko -->
+                                  <div class="col-xs-12 nopad">
+                                    <button class="cc-button-primary cc-button-blue"  data-bind="click: $parents[1].handleEditShippingAddress,
+                                      attr: {id: 'CC-customerProfile-edit-addr-btn-' + $index()},
+                                      widgetLocaleText: {value:'editAddressBtnTitle', attr:'title'}">
+                                        <span data-bind="widgetLocaleText: 'editText'"></span>
+                                    </button>
+                                    <button class="cc-button-primary cc-button-transparent"   data-bind="click: function(data, event){ $parents[1].handleRemoveShippingAddress(data, event) }">Remove</button>
+                                  </div>
+                                </div>
+		                    	
+		                    	<!-- /ko -->
+                                <!-- /ko -->
+
+                              </div>
+                              <!-- View ends -->
+                            </div>
+                            <div id="CC-customerProfile-shippingAddress-edit" data-bind="visible: $parent.isUserProfileShippingEdited()">
+                              <!-- Edit begin -->
+                              <!-- ko with: editShippingAddress -->
+                              <div id="CC-customerProfile-shippingAddress-edit-region">
+                                  <div id="nickNameExist" style='display:none' class="errorMessage" >Address with the nick name already exists.</div>
+                                 <form class="my-account-form" id="myAccountAddressBook" data-bind="template: { afterRender: $parents[1].myAccountFormRendered() }">
+                                     <div class="col-xs-12 col-sm-12 no-pad-left-right">
+                                   <div class="form__item column form-elements">
+        						    	<label for="email" class="inline-label label-text">Nickname Address</label>
+                                       <input type="text" class="input-box"   minlength="3" id="txtAddressNickName12" name="txtAddressNickName12" data-bind="validatableValue: county">
+                                       <span class='displayErrorIcons'></span>
+                                  </div>
+                                  
+                                  <div class="column edit-profile-container">
+        										<div class="row row-collapse">
+        											<div class="form__item  column form-elements">
+        												<label for="firstname" class="inline-label label-text">First Name</label>
+        												
+        												<input type="text" class="input-box"  id="txtFirstName22" minlength="2" maxlength="40" name="txtFirstName22" data-bind="validatableValue: firstName">
+        												<span class='displayErrorIcons'></span>
+        											</div>
+        											<div class="form__item column form-elements">
+        												<label for="lastname" class="inline-label label-text">Last Name</label>
+        												
+        												<input type="text" class="input-box"  id="txtLastName12" minlength="2" maxlength="40" name="txtLastName12" data-bind="validatableValue: lastName">
+        												<span class='displayErrorIcons'></span>
+        											</div>
+        										</div>
+        							</div>
+                                  
+                                  <div class="column edit-profile-container">
+    									<div class="row row-collapse">
+    										<div class="form__item  column form-elements">
+    											<label for="lastname" class="inline-label label-text">Shipping Address</label>
+    										
+    											<input type="text" class="input-box"  id="txtAddress123" name="txtAddress123" minlength="3" maxlength="50" data-bind="validatableValue: address1">
+    											<span class='displayErrorIcons'></span>
+    										</div>
+    									</div>
+    								</div>
+                                  <div class="form-group business-address">
+                                    <label class="checkbox checkbox-primary control-primary">
+                                      <input type="checkbox" name="businessAddress" data-bind='checked:$parents[1].koBusinessAddress()' id="business" tabindex="0" >
+                                      <span class="control-indicator"></span>
+                                      <label for="business" ></label><span class='checkBoxTex'>Business/Commercial Address</span>
+                                     
+                                      
+                                    </label>
+                                  </div>
+                                  <div class="column edit-profile-container business-input" style='display:none'>
+        										<div class="row row-collapse">
+        											<div class="form__item column form-elements">
+        												<label for="lastname" class="label-text">Address 3</label>
+        												<input type="text" class="input-box" id="txtAddress323" name="txtAddress323" minlength="3" maxlength="50" data-bind="validatableValue: companyName">
+        												<span class='displayErrorIcons'></span>
+        												<!--<input id="address-line3" minlength="3" maxlength="50" placeholder="address line 3" name="address3" value="" class="input-field" type="text">-->
+        											</div>
+        										</div>
+        							</div>
+        							
+                                  <div class="column edit-profile-container">
+									<div class="row row-collapse">
+									    <div class="form__item  column form-elements">
+											<label for="lastname" class="inline-label label-text">City</label>
+										
+											<input type="text" class="input-box" id="txtCity23"  name="txtCity23" maxlength="30" data-bind="validatableValue: city">
+											<span class='displayErrorIcons'></span>
+										</div>
+										
+											<div class="form__item columns clearfix form-elements">
+												<label for="" class="inline-label label-text">State <span class="hide-for-small-only">/Province</span></label>
+											
+												<div class="select">
+												<!--<select class="input-box" name="selectState23" id="selectState23" data-bind="enable: stateList().length, options: stateList,
+													   optionsText: function(item) { return item.abbreviation + ' - ' + item.displayName; }, optionsValue: 'abbreviation',
+													   optionsCaption: 'Select a State', value: selectedState, 
+													   validatableTarget: state, validationElement: state">
+												  </select>-->
+												  <select class="input-box" name="selectState23" id="selectState23" data-bind="enable: stateList().length, options: stateList,
+													   optionsText: function(item) { return item.displayName; }, optionsValue: 'abbreviation',
+													   optionsCaption: 'Select a State', value: selectedState, 
+													   validatableTarget: state, validationElement: state">
+												  </select>
+												  <span class='displayErrorIcons'></span>
+												  </div>
+											</div>
+									
+										
+									</div>
+								</div>
+        									
+					        	  <div class="column mb-20 edit-profile-container">
+										<div class="row row-collapse state-city-wrap">
+										   	<div class="form__item   column form-elements">
+											<label for="lastname" class="inline-label label-text">Zip <span class="hide-for-small-only">/Postal Code</span></label>
+										
+											<input type="text" class="input-box"  id="txtZip23" name="txtZip23" maxlength="10" data-bind="validatableValue: postalCode">
+											<span class='displayErrorIcons'></span>
+										</div>
+
+											<div class="form__item  columns clearfix form-elements">
+												<label for="" class="inline-label label-text">Country</label>
+												<div class="select">
+												<select   class="input-box country" name="country" data-bind="enable: $parents[1].shippingCountries().length, options: $parents[1].shippingCountries, optionsText: 'displayName',
+                             optionsValue: 'countryCode', optionsCaption: $parents[1].resources().countryText, value: selectedCountry, 
+                             validatableTarget: country, validationElement: country"></select>
+                            
+                             </div>
+                              <span class='displayErrorIcons'></span>
+											</div>
+										</div>
+									</div>
+									
+								  <div class="column edit-profile-container">
+										<div class="row row-collapse">
+											<div class="form__item  columns  form-elements">
+												<label for="" class='label-text'>Phone Number</label>
+													<input type="tel" class="input-box" placeholder="123-456-7890"  id="txtPhoneNumber23"  maxlength="18" name="txtPhoneNumber23" data-bind="validatableValue: phoneNumber">
+													<span class='displayErrorIcons'></span>
+											</div>
+										</div>
+									</div>
+									
+        							<!-- ko if: $parent.shippingAddressBook().length > 0 -->				
+        							<div class="column default-shipping-checkbox mb-20 edit-profile-container">
+        								<div class="row row-collapse">				
+                                           <!--<div class="checkbox column col-sm-6" >
+                                             <label class="control checkbox">
+                                               <input type="checkbox"><span class="control-indicator" data-bind="checked: isDefaultAddress"></span>Mark this as my default shipping address
+                                             </label>
+                                          </div>-->
+                                        <div class="form-group col-md-12 nopad">
+                                         <label class="checkbox checkbox-primary control-primary ">
+                                             
+                                              <input type="checkbox" id="CC-customerProfile-sdefault" data-bind="checked: isDefaultAddress">
+                                             <span class="control-indicator"></span>
+                                        	 <label for="CC-customerProfile-sdefault" ></label><span class='checkBoxTex'>Make this my default address</span>
+                                            </label>
+                                        </div>
+                                        </div>
+                                  </div>
+                                  <!-- /ko -->
+                                   <div class="col-sm-12 mb-20 column left">
+                                  <button type="button" class="button savebtn " data-bind="click: function(data, event){$parents[1].getMyAccountAddressBoxForm()}">Save</button>
+                                   <a  class="button " id="addressCancelButton" data-bind="click:function(data, event){$parents[1].cancelAddress()}">Cancel</a>
+                              </div>
+                               </div>
+                                 </form>
+                                <!-- ko if: (!$parent.isAddressSaved($data) && $parent.shippingAddressBook().length > 0) ||
+                                  ($parent.isAddressSaved($data) && (!isDefaultAddress() || isDefaultAddress.isModified()) && $parent.shippingAddressBook().length > 1) -->
+                                <div>
+                                  <!--<div class="form-group col-md-8 checkbox">
+                                    <div class="control">
+                                      <input type="checkbox" id="CC-customerProfile-sdefault"
+                                        data-bind="checked: isDefaultAddress" />
+                                    </div>
+                                    <label for="CC-customerProfile-sdefault" data-bind="widgetLocaleText:'selectDefaultAddressBtnTitle'"></label>
+                                  </div>-->
+                                  
+                                </div>
+                                <!-- /ko -->
+                              </div>
+                              <!-- /ko -->
+                              <!-- Edit ends -->
+                            </div>
+                            
+                          </fieldset>
+                          <!-- /ko -->
+                        </div>
+                      </div>
+                      <!--Ends-->
+                    </div>
+                  </div>
+                </div>
+                
+               <!-- <div id="CC-customerProfile-save-cancel-control" class="row cc-customer-profile-save-cancel" 
+                  data-bind="visible: (isUserDetailsEdited() || isUserProfileShippingEdited() || isUserProfileDefaultAddressEdited() || isUserProfilePasswordEdited())">
+                  <button class="cc-button-primary col-sm-2 col-xs-12 pull-right cc-customer-profile-button" id="CC-customerProfile-save" data-bind="click: handleUpdateProfile, event: { mousedown: handleMouseDown, mouseup: handleMouseUp}">
+                  <span data-bind="widgetLocaleText: 'buttonSave'"></span>
+                  </button>
+                  <button class="cc-button-secondary col-sm-2 col-xs-12 pull-right cc-customer-profile-button" id="CC-customerProfile-cancel" data-bind="click: handleCancelUpdate, event: { mousedown: handleMouseDown, mouseup: handleMouseUp}">
+                  <span data-bind="widgetLocaleText: 'buttonCancel'"></span>
+                  </button>
+                </div>-->
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /ko -->

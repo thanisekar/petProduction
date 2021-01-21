@@ -1,0 +1,18 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "PetReDesign Calmz Header Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": false,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "BuyNowButtonLink": "/calmz-anxiety-relief-system/product/PM76",
+    "BuyNowButtonText": "BUY NOW",
+    "PhoneNumberText": "877-256-7129"
+  }
+}

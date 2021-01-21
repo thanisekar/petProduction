@@ -1,0 +1,18 @@
+{
+  "imports": [
+    "category"
+  ],
+  "translations": [
+    {
+      "name": "PetRedesign Brand carousel Updated",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "pageTypes": [
+    "home"
+  ],
+  "config": {}
+}

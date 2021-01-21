@@ -1,0 +1,28 @@
+{
+  "resources": {
+    "orderDateText": "Order Date:",
+    "noShippingAddressText": "No Shipping Address Available",
+    "orderTotalText": "Order Total:",
+    "address2": "__address2__,",
+    "orderDetailsText": "Order Details",
+    "address1": "__address1__,",
+    "myOrders": "My Orders",
+    "salesTaxText": "Sales Tax:",
+    "cityPostalCode": "__city__. __postalCode__",
+    "cityStatePostalCode": "__city__, __state__. __postalCode__",
+    "fullName": "__firstName__ __lastName__",
+    "shippingMethodText": "Shipping Method:",
+    "shippingAddressText": "Ship To:",
+    "shippingMethodValueText": "__shippingMethod__:",
+    "backToMyOrdersLink": "<< Back to My Orders",
+    "shippingAddressAndMethodText": "Shipping Address and Method",
+    "orderNumberText": "Order Number:",
+    "orderStatusText": "OrderStatus:",
+    "includingTaxText": "(including tax)",
+    "trackingNumbersText": "Tracking Numbers:",
+    "trackingReferenceReaderText": "__carrierName__ tracking Reference __trackingReference__",
+    "totalExcludingTaxText": "Total (excluding tax): ",
+    "orderCouponDisplayText": "* __description__ - __code__",
+    "shippingText": "Standard Shipping:"
+  }
+}

@@ -1,0 +1,66 @@
+<!-- comment refinementList -->
+<ul class="nav nav-list">
+  <!-- ko foreach: refinements.display -->
+    
+    <!-- ko if: $data.multiSelect === false -->
+      <li>
+        <a data-bind="attr: {for: 'CC-guidedNavigation-refinementValue-' + $parentContext.$index() + '_' + $index()}, click: $data.clickRefinement" href="#">
+          <!-- ko if: $parents[1].checkForRange($data) -->
+            <!-- ko ifnot: $parents[1].checkIfUnboundRange($data) -->
+              <span data-bind="currency: {price: $parents[2].guidedNavigationViewModel().getLowerBound($data), currencyObj: $parents[2].site().selectedPriceListGroup().currency, nullReplace: '0.00', prependNull: true}"></span>
+              <span>&nbsp;-&nbsp;</span>
+              <span data-bind="currency: {price: $parents[2].guidedNavigationViewModel().getUpperBound($data), currencyObj: $parents[2].site().selectedPriceListGroup().currency, nullReplace: '0.00', prependNull: true}"></span>
+              &nbsp;(<span data-bind="text: $data.count"></span>)
+            <!-- /ko -->
+            <!-- ko if: $parents[1].checkIfUnboundRange($data) -->
+              <span data-bind="currency: {price: $parents[2].guidedNavigationViewModel().getLowerBound($data), currencyObj: $parents[2].site().selectedPriceListGroup().currency, nullReplace: '0.00', prependNull: true}"></span>
+              <span data-bind="text: $parents[2].guidedNavigationViewModel().getUpperBoundText($data)"></span>
+              &nbsp;(<span data-bind="text: $data.count"></span>)
+            <!-- /ko -->
+          <!-- /ko -->
+		  <span id="control-indicator" ></span>
+          <!-- ko ifnot: $parents[1].checkForRange($data) -->
+            <span data-bind="text: $data.refinementValue"></span>
+          <!-- /ko -->
+        </a>
+      </li>
+    <!-- /ko -->
+  
+    <!-- ko if: $data.multiSelect === true -->
+      <li>
+        <div class="checkbox">
+          <label data-bind="attr: {for: 'CC-guidedNavigation-refinementCheckboxValue-'+ $parentContext.$index() + '_' + $index()}">
+            <input type="checkbox" data-bind="attr: {id: 'CC-guidedNavigation-refinementCheckboxValue-'+ $parentContext.$index() + '_' + $index()}, checked: $data.checkedValue">
+              <!-- ko if: $parents[1].checkForRange($data) -->
+                <!-- ko ifnot: $parents[1].checkIfUnboundRange($data) -->
+                  <span data-bind="currency: {price: $parents[2].guidedNavigationViewModel().getLowerBound($data), currencyObj: $parents[2].site().selectedPriceListGroup().currency, nullReplace: '0.00', prependNull: true}"></span>
+                  <span>&nbsp;-&nbsp;</span>
+                  <span data-bind="currency: {price: $parents[2].guidedNavigationViewModel().getUpperBound($data), currencyObj: $parents[2].site().selectedPriceListGroup().currency, nullReplace: '0.00', prependNull: true}"></span>
+                  &nbsp;(<span data-bind="text: $data.count"></span>)
+                <!-- /ko -->
+                <!-- ko if: $parents[1].checkIfUnboundRange($data) -->
+                  <span data-bind="currency: {price: $parents[2].guidedNavigationViewModel().getLowerBound($data), currencyObj: $parents[2].site().selectedPriceListGroup().currency, nullReplace: '0.00', prependNull: true}"></span>
+                  <span data-bind="text: $parents[2].guidedNavigationViewModel().getUpperBoundText($data)"></span>
+                  &nbsp;(<span data-bind="text: $data.count"></span>)
+                <!-- /ko -->
+              <!-- /ko -->
+			  <span id="control-indicator" ></span>
+              <!-- ko ifnot: $parents[1].checkForRange($data) -->
+                <span data-bind="text: $data.refinementValue"></span>
+              <!-- /ko -->
+            </input>
+          </label>
+        </div>
+      </li>
+    <!-- /ko -->
+  
+  <!-- /ko -->
+ </ul>               
+<!-- ko if: (refinements().length > $parent.maxRefinementCount) -->  
+<div class='RefinementMoreOrLess'>                 
+  <span class="li-see-more-less">                
+    <span class="sign" id="CC-guidedNavigation-plusOrMinusForDimension" data-bind="css: { 'showMore' : $data.refinements.showAll() ==false , 'showLess' :$data.refinements.showAll()==true } "></span>                        
+    <a class="see-more-less" id="CC-guidedNavigation-seeMoreOrLessForRefinement" data-bind="widgetLocaleText: $data.refinements.showAll() ? 'seeLessText' : 'seeMoreText', click: $data.refinements.toggleShowAll" href="#"></a>                
+  </span>
+  </div>
+<!-- /ko -->

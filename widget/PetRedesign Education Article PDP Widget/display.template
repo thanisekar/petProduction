@@ -1,0 +1,62 @@
+<!--
+ /**
+  *
+  * Product Details Widget Template
+  *
+  */
+-->
+<!-- ko if: loaded -->
+<div id="petredesignEducationArticlePDP" class="container article-pdp-content">
+<div class="templateRegion" id="cc-product-details" data-oc-id="cc-product-details">
+    <div class="page-header-details clearfix left row">  
+        <span data-bind="window.articleSearchBackToListLink"></span>
+        <span class="long-arrow-left"></span>
+			<a href="#" class="backToArticles" data-bind="ccLink: {route: '/articles/category/articles'}">Back to all articles</a>
+			<!--a href="/education">&lt; back to listings</a>-->
+	</div>
+<hr>  
+<!-- oc section: petmate-product-long-description -->
+        <!-- <div data-bind="element: 'petmate-product-long-description'"></div> -->
+        <div class="row prod-long-description">
+            <div data-bind="html: product().longDescription" id="CC-prodDetails-longDescription"></div>
+        </div>
+    <!-- /oc -->
+    
+<div class="select-detail-wrapper mb-50 clearfix">
+    <div class="prev-next-margin next-previous-button-margin select-detail show-for-large-up clearfix">
+    	    
+    <!-- ko if: product -->
+    <!-- ko if: product().previousId -->
+        <a class="prev" data-bind="ccLink: {route: '/product/' + product().previousId(), displayName: 'Previous' }">prev</a>
+    <!-- /ko -->
+    
+    <!-- ko if: product().nextid -->
+        <a class="next" data-bind="ccLink: {route: '/product/' + product().nextid(), displayName: 'Next' }">next </a>
+    <!-- /ko -->
+    <!-- /ko -->
+    </div>
+</div>
+<hr class="">
+<div class="articleTag">
+    <span class="TagTitle">Tags: </span>
+    <!-- ko foreach: koArticleProductCategory() -->
+    <a class="prev" data-bind="ccLink: {route:  route }">
+        <span data-bind="text: displayName"></span>
+    </a>
+    <!-- /ko -->
+</div>
+    <div class="social-share-div right">
+        <span class="socialShareTitle">Share this article:</span>
+      <div id="petmateSocialIcons" class="social-share-icons social-links social-links--product-details">
+          <div class="addthis_sharing_toolbox"></div>
+      </div>
+      <div id="global-social-email">
+          <a id="global-social-shareemail" href="#">
+              <img src="/file/general/social-email-icon.png" style="width:20px; height:20px" class="social-email-icon img-responsive">
+          </a>
+      </div>
+    </div>  
+
+</div>
+</div>
+<!-- /ko -->

@@ -1,0 +1,32 @@
+{
+  "imports": [
+    "category"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesignHomeBannerCarousel",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "homeBanner1": {
+      "mediaName": "/general/HealthyChewsTreats_WS_SS_Banner.jpg",
+      "src": "/file/v7981976728504196838/general/HealthyChewsTreats_WS_SS_Banner.jpg"
+    },
+    "homeBanner2": {
+      "mediaName": "/general/PM_Welcome-Home_Banner.jpg",
+      "src": "/file/v1396174562861131492/general/PM_Welcome-Home_Banner.jpg"
+    },
+    "homeBanner3": {
+      "mediaName": "/general/PM_HPBanner_Toys_CAT.jpg",
+      "src": "/file/v6317275652725178190/general/PM_HPBanner_Toys_CAT.jpg"
+    },
+    "homeBannerLink1": "/category/brand-healthychews",
+    "homeBannerLink2": "/welcomehome",
+    "homeBannerLink3": "/category/petmate-brands"
+  }
+}

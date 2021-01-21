@@ -1,0 +1,239 @@
+<!-- ko if: (listingViewModel().display) -->
+<div id="CC-productListing" class="education-plp" role="alert">
+    
+     <!-- ko with: listingViewModel -->
+             <div class='sortingOptionsForMobileView row hidden-md hidden-lg'>
+                  <div  id='sortingOptionsForMobile' class='col-sm-12 col-xs-12'>
+                      <div class='col-xs-12 sortBycontainer'>
+                              <label id="CC-product-listing-sortby-label-mobile" class="control-label" for="CC-product-listing-sortby" data-bind="widgetLocaleText: 'sortByText'"></label> 
+                               <span id="sortingOptionsForMobile-Close" class="filterCloseIcon"></span>
+                      </div>
+                    <div class='col-xs-12'>
+                          <select id="CC-product-listing-sortby" style="display:none;" class="form-control" data-bind="options: sortOptions, optionsText:'displayText', name: sortByText,value: selectedSort, event: {change: $data.doSort.bind($data, selectedSort(), $parent.sortingCallback) }"></select>
+                          <!-- <ul class='sorting-options'>-->
+                              <!-- ko foreach: sortOptions -->
+                                <div class='radiButtonContainer'>
+                                 <input type="radio" name="sortingOptions" class='sortingOptionsValues'  data-bind='value:displayText , attr:{selectedIndex :$index()} '> 
+                                  <span class='optionsDisplayName' data-bind="text: displayText"></span>
+                                  </div>
+                              <!--   <li class="sorting-values" data-bind='text:displayText,css:{seletedOption:$index() == $parents[1].koSelectedIndex()}'></li>-->
+                              <!-- /ko -->
+                        <!--  </ul>-->
+                    </div>
+                 </div>
+             </div> 
+        <!-- /ko -->
+    
+    
+  <!--  ko if: listType() == 'search' -->
+    <!--  ko with: listingViewModel -->
+      <div class="sr-only" data-bind="text :pageLoadedText"></div>
+    <!-- /ko -->
+  <!-- /ko -->
+  
+<div class="pagination-sort-wrapper row">
+<!-- ko with: listingViewModel -->
+  <div class="pagination  productListingResultText mb-25 clearfix col-xs-12 col-md-5">
+    	<!--<div class="pull-left pagination-title">
+    		<strong class="uppercase">View on page:</strong>
+    	</div>-->
+    	<div class='col-md-6 col-sm-6 showResultingText'>
+    	<span data-bind="text:totalNumber()"></span>
+    	<span>items</span>
+    	<span data-bind="text: $parent.resultsText"></span>
+    	</div>
+    	<div class='col-md-6 col-sm-6 nopad '>
+    	<ul class="view-page hidden-xs">
+    		<li class="pull-left"><a class='itemNumberlisting' href="#" data-bind="click: function(){$parent.changeProductsPerPage(24, firstPage());}, css: {active: $parent.productsPerPage() == '24'}">24</a></li>
+    	   	<li class="pull-left"><a class='itemNumberlisting'  href="#" data-bind="click: function(){$parent.changeProductsPerPage(48, firstPage());}, css: {active: $parent.productsPerPage() == '48'}">48</a></li>
+    	   	<li class="pull-left"><a class='itemNumberlisting'  href="#" data-bind="click: function(){$parent.changeProductsPerPage(72, firstPage());}, css: {active: $parent.productsPerPage() == '72'}">72</a></li>
+    	</ul>
+    	</div>
+    
+    
+    </div>
+  <!-- /ko -->
+  
+  
+  
+  <div id="CC-product-listing-controls" class="col-xs-12 col-md-7 nopad">
+    <div class="col-sm-12">
+      <!-- ko with: listingViewModel -->
+        <!-- ko if: $parent.listType() == 'search' -->
+          <h2 id="search-results" class="sr-only" role="alert" data-bind="widgetLocaleText: 'searchResultsText'"></h2>
+        <!-- /ko -->
+       
+        <!-- ko if: $parent.listType() == 'search' -->
+          <!-- ko if: noSearchResultsText -->
+            <div class="row">
+              <div id="cc-productlisting-noSearchResults" class="col-xs-12">
+                <span data-bind="text: noSearchResultsText"></span>
+              </div>
+            </div>
+          <!-- /ko -->
+          <!-- ko if: suggestedSearches().length > 0 -->
+            <div id="cc-productlisting-didYouMean">
+              <span data-bind="widgetLocaleText:'didYouMeanText'"></span>
+              <div id="cc-productlisting-didYouMeanTerms" data-bind="foreach : suggestedSearches">
+                <a data-bind="attr: {id: 'cc-productlisting-didYouMean-Suggestion-'+$index()}, widgetLocaleText: {value:'dYMTermAriaLabel', attr:'aria-label'}, click: $data.clickSuggestion" href="#">                
+                <!-- ko if: ( $index() < ($parent.suggestedSearches().length - 1)) -->
+                  <span data-bind="widgetLocaleText : {value:'dYMTermTextHasNext', attr:'innerText', params: {label: $data.label}}"></span>                
+                <!-- /ko -->
+                <!-- ko if: ( $index() == ($parent.suggestedSearches().length - 1)) -->
+                  <span data-bind="widgetLocaleText : {value:'dYMTermText', attr:'innerText', params: {label: $data.label}}"></span>                
+                 <!-- /ko -->
+                </a>
+              </div>
+            </div>
+          <!-- /ko -->
+        <!-- /ko -->
+      <!-- /ko -->
+      <!-- ko if: (listingViewModel().totalNumber() > 0) -->
+        <div data-bind="text: resultsText" class="sr-only" role="alert"></div>
+        <!-- ko if: listType() == 'search' -->
+          <h3 class="sr-only" role="alert" data-bind="widgetLocaleText: 'viewingOptionsText'"></h3>
+        <!-- /ko -->
+        <div class="row">
+          <div class="col-sm-8 col-md-12" id="cc-area-controls">
+            <div class="row">
+<div id="CC-product-listing-sortby-controls" class="col-md-12 nopad col-xs-12">
+                <!-- ko with: listingViewModel -->
+                      <div class="form-group sorting-controls-form row  ">
+                          
+                          
+                        <div class=" sorting-option-head-for-mobile visible-xs visible-sm ">
+                            
+                        		<a href="#" class="text-left uppercase filter-link active" id="custom-guided-link" data-bind="click: $parent.handleRefineResults.bind($parent), visible: $parent.displayRefineResults()">
+                        		    <span class="icon-filter"></span> <strong>Filter</strong>
+                        		    </a>
+                    		<a  class="text-left showSortingOptions sort--margin-top uppercase filter-link sort-filter" id="custom-sort-link">
+                    		    <i class="icon-sort"></i> 
+                    		    <strong>Sort By</strong>
+                    		    </a>
+                        </div>
+                        
+                        <div class="sorting-option-for-desktop hidden-sm hidden-xs">
+                            
+                          <select id="CC-product-listing-sortby" style="display:none;" class="form-control" data-bind="options: sortOptions, optionsText:'displayText', name: sortByText,value: selectedSort, event: {change: $data.doSort.bind($data, selectedSort(), $parent.sortingCallback) }"></select>
+                               <label id="CC-product-listing-sortby-label" class="control-label" for="CC-product-listing-sortby" data-bind="widgetLocaleText: 'sortByText'"></label>     
+                               <ul class='sorting-options'>
+                              <!-- ko foreach: sortOptions -->
+                                <li class="sorting-values" data-bind='text:displayText,css:{seletedOption:$index() == $parents[1].koSelectedIndex()}'></li>
+                              <!-- /ko -->
+                              </ul>
+                        </div>
+                      </div>
+                <!-- /ko -->
+              </div>              
+              <!--<div id="CC-product-listing-viewby-controls" class="col-sm-5 col-xs-12">
+                <div>
+                  <span data-bind="widgetLocaleText:'viewByText'"></span>
+                  <div class="btn-group">
+                    <button class="btn btn-default" id="CC-productList-GridButton" data-target="#product-grid" data-toggle="pill" data-bind="widgetLocaleText: {value: 'gridText',attr: 'aria-label'}, hasFocus: productListingElementFocus"><i class="glyphicon glyphicon-th-large"></i></button>
+                    <button class="btn btn-default" id="CC-productList-ListButton" data-target="#product-list" data-toggle="pill" data-bind="widgetLocaleText: {value: 'listText',attr: 'aria-label'}"><i class="glyphicon glyphicon-th-list"></i></button>
+                  </div>
+                </div>
+              </div>-->
+            </div>
+          </div>
+        </div>
+      <!-- /ko -->
+    </div>
+  </div>
+</div>
+  
+  <!-- ko if: listType() == 'search' -->
+    <h3 id="matching-products" class="sr-only" role="alert" data-bind="widgetLocaleText: 'matchingProductsText'"></h3>
+  <!-- /ko -->
+  <div id="grid-category-content" class="tab-content">
+    <!-- Product List Tab -->
+    
+    <!-- ko with: listingViewModel -->
+    <div id ="product-list" class=" active cc-list-tab" aria-live="polite">
+      <div class="sr-only" data-bind="widgetLocaleText: 'listViewLoadedText'" role="alert"></div>
+    
+      <div  data-bind="foreach: currentProducts">
+          <!--<span data-bind="text:creationNewFlag" class="plp-date"></span>-->
+         
+           
+        <!-- ko if: $data.childSKUs -->
+        <div class="row articlePLPListing" data-bind="css : ($index() % 2) == 0 ? 'row' : 'row alternate'">
+          <div class="col-md-4 col-xs-6 no-pad-left read-articles">
+            <a data-bind="attr : { id: 'CC-product-list-imagelink-'+id()+'-'+$parentContext.$index()+$index()}, ccLink : $data.listingSku ? $data.listingSku : $data.product">
+              <img class="img-responsive" alt="" data-bind="productImageSource: {src: $data.listingSku && $data.listingSku.images.length > 0? $data.listingSku : $data.product, imageType: 'small',
+                                           errorSrc: '/file/general/petmate-no-image.jpg',
+                                           errorAlt: 'Missing Product Image'
+                                           }, attr: {id: 'CC-product-list-image-'+id()+'-'+$parentContext.$index()+$index()}">
+            <span class="overlay"></span>
+	    </a>
+            
+          </div>
+          <div class="col-md-8 col-xs-6 plp-decription-wrapper no-pad-right">
+            <!--  <span data-bind="text:startDateStr()" class="plp-date"></span>-->
+            <span data-bind="text:$parents[1].newMonthDisplay($data)" class="plp-date"></span>  
+             
+            <a data-bind="attr : { id: 'CC-product-list-'+id()+'-'+$parentContext.$index()+$index()}, ccLink : $data.listingSku ? $data.listingSku : $data.product">
+              <p class="product-title" data-bind="text: displayName, attr: {id: 'CC-product-list-displayName-'+id()+'-'+$parentContext.$index()+$index()}"></p>
+            </a>
+            <div class='hidden-xs' data-bind="text: $parents[1].truncate($data.description)"></div>
+            <!--<div class="more hidden-xs">
+            <span class="cc-product-description hidden-xs descriptionText" data-bind="text: $parents[1].truncate($data.description) , attr: {id: 'CC-product-list-description-'+id()+'-'+$parentContext.$index()+$index()}"></span>
+            </div>-->
+            <a data-bind="ccLink : $data.listingSku ? $data.listingSku : $data.product" class="read-article">
+              Read article
+            </a>
+          </div>
+         
+        </div>
+        <!-- /ko -->
+      </div>
+    </div>
+    <!-- /ko -->
+    <div class="hidden-lg hidden-md">
+      <div class="row" id="cc-product-spinner">
+        <div id="cc-product-spinner-area" class="col-md-12"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ko with: listingViewModel -->
+  <div id="cc-paginated-controls-bottom" class="row col-md-12 visible-md visible-lg">
+    <div data-bind="visible: (totalNumberOfPages() > 1)">
+     <div class='paginations'>
+        <div class="btn-group">
+     
+                   <!-- <a class="btn btn-default" data-bind="ccNavigation: '',  attr : {href: firstPage()}, widgetLocaleText : {value:'goToFirstPageText', attr:'aria-label'}, css: { disabled: $data.currentPage() == 1 }" >
+                	<span data-bind="widgetLocaleText: 'goToFirstPagePaginationSymbol'"></span>
+                	</a>  -->
+                    <a href="#" class="btn  previouspage" data-bind="ccNavigation: '', attr: {href: previousPage()}, widgetLocaleText : {value:'goToPreviousPageText', attr:'aria-label'}, css: { disabled: $data.currentPage() == 1 }" rel="prev">
+                	<span class="goToPreviousPagePaginationSymbol" ></span>
+                	</a>
+                   
+                    <!-- ko foreach: pages -->
+                      <a href="#" class="btn  pageNumbers" data-bind="ccNavigation: '', attr: {href: $parent.goToPage($data)}, css: {active: $data.pageNumber===$parent.currentPage() }">
+                        <!-- ko if: $data.selected === true -->
+                          <span class="sr-only" data-bind="widgetLocaleText : 'activePageText'"></span>
+                        <!-- /ko -->
+                        <!-- ko if: $data.selected === false -->
+                          <span class="sr-only" data-bind="widgetLocaleText : 'goToPageText'"></span>
+                        <!-- /ko -->
+                        <span data-bind="ccNumber: $data.pageNumber"></span>
+                      </a>
+                    <!-- /ko -->
+                
+                    <a href="#" class="btn  nextPage" data-bind="ccNavigation: '', attr: {href: nextPage()}, widgetLocaleText : {value:'goToNextPageText', attr:'aria-label'}, css: { disabled: currentPage() == $data.totalNumberOfPages() }" rel="next">
+                	<span class="goToNextPagePaginationSymbol"></span>
+                	</a>
+                    <!--<a href="#" class="btn btn-default" data-bind="ccNavigation: '', attr: {href: lastPage()}, widgetLocaleText : {value:'goToLastPageText', attr:'aria-label'}, css: { disabled: currentPage() == $data.totalNumberOfPages() }">
+                	<span data-bind="widgetLocaleText: 'goToLastPagePaginationSymbol'"></span>
+                	</a> -->
+                  
+            </div>
+            
+        </div>
+    </div>
+  </div>
+  <!-- /ko -->
+</div>
+<!-- /ko -->

@@ -1,0 +1,25 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "PetRedesign Latest Footer Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": false,
+  "config": {
+    "gtmID": "GTM-PRSZPD",
+    "requiredLinks": [
+      "home",
+      "aboutUs",
+      "returns",
+      "shipping",
+      "contactUs",
+      "privacy",
+      "wishlist"
+    ]
+  }
+}

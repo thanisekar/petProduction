@@ -1,0 +1,41 @@
+
+<div class='brandpromobanner'>
+    <div class='container nopad'>
+    <div class='row'>
+        <!-- ko if:koBrandPromoForDesktop()!=''-->
+         <div class='col-md-12 hidden-xs promoimageContainer'>
+             <!-- ko with : category-->
+             <a data-bind="ccLink: {url: $parent.koBrandRedirect()}">
+                <img data-bind="ccResizeImage: {
+        		     	source:$parent.koBrandPromoForDesktop(),
+            			xsmall: '480,1306',
+            			large:'480,1306',
+            			small:'480,1306',  
+            			medium:'480,1306',
+            			title: displayName,
+            			alt: displayName,
+            			errorSrc:'images/noImage.png',
+            			errorAlt:'No Image Found'}" class="img-responsive"  alt='brand-promo-image'></a>
+            			<!--/ko-->
+         </div>
+         <!--/ko-->
+          <!-- ko if:koBrandPromoForMobile()!=''-->
+         <div class='col-xs-12 visible-xs promoimageContainer'>
+             <a data-bind="ccLink: {url: koBrandRedirect()}">
+                <img data-bind="ccResizeImage: {
+        		     	source:koBrandPromoForMobile(),
+            			xsmall: '480,1306',
+            			large:'480,1306',
+            			small:'480,1306', 
+            			medium:'480,1306',
+            			alt: 'footer images',
+            			errorSrc:'images/noImage.png',
+            			errorAlt:'No Image Found'}" class="img-responsive"  alt='brand-promo-image' style='margin:0 auto'></a>
+         </div>
+          <!--/ko-->
+    </div>
+    </div>
+</div>
+
+
+

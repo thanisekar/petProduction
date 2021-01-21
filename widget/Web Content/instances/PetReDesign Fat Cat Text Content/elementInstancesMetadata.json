@@ -1,0 +1,96 @@
+{
+  "elementInstances": [
+    {
+      "customTitle": "Image_2400010",
+      "styles": {},
+      "tag": "image@2400010",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "isProductImage": "0",
+        "titleText": "Black Stripes",
+        "zoomEnabled": "0",
+        "fileName": "FC_BM-ROADTRIP-O-RAMA_BW-STRIPES.png"
+      }
+    },
+    {
+      "customTitle": "Image_2400001",
+      "styles": {},
+      "tag": "image@2400001",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "center"
+      },
+      "imageConfig": {
+        "altText": "FAT CAT Big Mama Roadtrip Map - Cleveland, OH",
+        "titleText": "FAT CAT Big Mama Roadtrip Map - Cleveland, OH",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "12-9-19_FC_BM-ROADTRIP-O-RAMA_CLEVELAND.jpg"
+      }
+    },
+    {
+      "customTitle": "Image_2400002",
+      "styles": {},
+      "tag": "image@2400002",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "10",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "center"
+      },
+      "imageConfig": {
+        "altText": "Fat-Cat Title",
+        "titleText": "Fat-Cat Title",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "FatCat-Title.png"
+      }
+    },
+    {
+      "customTitle": "Rich_Text_2400003",
+      "styles": {},
+      "tag": "rich-text@2400003",
+      "text": null,
+      "richTextConfig": {
+        "content": " "
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    }
+  ]
+}

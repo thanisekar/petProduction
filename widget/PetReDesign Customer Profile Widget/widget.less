@@ -1,0 +1,909 @@
+#PetReDesignCustomerProfile_v1-wi2700057 {
+/*#PetReDesignCustomerProfile_v3-wi2700018 {*/
+    #CC-customerAccount {
+        
+    label.error{
+            color: #eb2a2b !important;
+            font-weight: normal !important;
+    } 
+    input.error{
+         border:1px solid #eb2a2b !important;
+    }
+    .control{
+        position:relative;
+    }
+    
+    .checkBoxTex{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px; 
+         font-family:@font-family-roboto;
+        
+         
+    }
+    div input.invalid{
+        background-color: transparent!important;
+    }
+      .showSuccess:after{
+                content:'';
+                border: 0px !important;
+                position: absolute;
+                top: 38px;
+                right: 12px;
+                background-image: url('/file/general/success_alert.svg');
+                background-repeat: no-repeat;
+                width: 22px;
+                height: 22px;
+    }
+   
+  
+    .set-default{
+            font-size: 14px;
+            line-height: 20px;
+            font-family:@font-family-roboto;
+            font-weight: 300;
+            color: #000;
+            //padding-left: 10px;
+            
+    }
+    .mb-10{
+            margin-bottom: 3px !important;
+            
+    }
+    
+    #nickNameExist{
+           color: #eb2a2b !important;
+            font-weight: normal !important;
+    }
+    .profileInfoTitle{
+            font-size: 15px;
+            line-height: 30px;
+            letter-spacing: 0.24px;
+            font-family:@font-family-roboto;
+            font-weight: 500;
+            color: #282828;
+    }
+    .profileInfoValues{
+        font-size: 15px;
+        letter-spacing: 0.24px;
+        line-height: 30px;
+         font-family:@font-family-roboto;
+         font-weight: 300;
+         color: #000;
+    }
+
+
+  .cc-customerProfile-user-details {
+    min-height: 300px;
+  }
+  .cc-customerProfile-password {
+    min-height: 200px;
+  }
+  .cc-customerProfile-order-details {
+    margin-right: 0px;
+  }
+  .cc-customerProfile-space-settings {
+    margin-left: 0px;
+  }
+  .cc-customerProfile-shipping-address {
+     min-height: 355px;
+     margin-top:40px;
+  }
+  .cc-customer-profile-pxeckbox {
+    margin-top: 30px;
+  }
+  .cc-customer-profile-shipping-address-phone {
+    margin-top: 30px;
+  }
+  .cc-customer-profile-save-cancel {
+    margin-top: 30px;
+    margin-right: 0px;
+    padding-left: 20px;
+  }
+  .cc-customer-profile-button {
+    margin: 5px 5px 5px 5px;
+  }
+
+  .cc-profile-modal-footer {
+    text-align: right;
+    background-color: white;
+    border-top: 0px;
+    border-radius: 0px 0px 6px 6px;
+  }
+  .cc-profile-modal-heading {
+    background-color: white;
+    border-bottom: 0px;
+    border-radius: 6px 6px 0px 0px;
+    padding: 9px 15px 9px 15px;
+    margin-bottom: 20px;
+  }
+  .cc-profile-confirm-icon {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 30px;
+    background: transparent url(/img/icons-32x32/icon-alert-alt-32x32.png) no-repeat 0 0;
+  }
+  .cc-profile-modal {
+    max-width: 450px;
+    background-color: white;
+  }
+  .cc-profile-body-modal {
+    max-height: 400px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .cc-profile-legend-title {
+       font-family: @font-family-nunito; 
+        display: inline-block;
+        font-size: 22px;
+        padding-bottom: 10px;
+        line-height:50px;
+        font-weight:600 !important;
+            color: #1f1f1f !important;
+  }
+
+  @-moz-document url-prefix() {
+    #CC-customerProfile-userdetail-edit-fields{
+      display:table-cell;
+	}
+  }
+
+  #CC-customerProfile-modal-headerText {
+    margin-left: 20px;
+    margin-top: -2px;
+  }
+
+  #CC-customerProfile-marketingMail-text {
+    color: @grayLight;
+  }
+
+  #cc-customerProfile-user-details-edit {
+    .btn-xs;
+    border-radius: @ButtonPrimaryBorderRadius;
+  }
+  
+  #CC-customerProfile-password-edit {
+    .btn-xs;
+    border-radius: @ButtonPrimaryBorderRadius;
+        margin: 0px !important;
+  }
+  #CC-customerProfile-shippingAddress-edit{
+      #CC-customerProfile-shippingAddress-edit-region{
+          #myAccountAddressBook{
+              .column{
+                   position: relative;
+              }
+              .columns {
+                  position: relative;
+              }
+              
+              
+          }
+      }
+  }
+  
+  .cc-customer-profile-shipping-address-view {
+    .btn-xs;
+    
+    .address-field {
+        display: inline-block;
+        font-size: 15px;
+        font-family:@font-family-roboto; 
+        line-height: 25px;
+        font-weight: 300;
+        letter-spacing: 0.24px;
+    }
+    .nick-name{
+         font-size: 15px;
+         font-family:@font-family-roboto; 
+         line-height: 25px;
+         font-weight: 600;
+         letter-spacing: 0.24px;
+         
+    }
+    
+    padding: 8px 8px;
+    border: 1px solid gray;
+  }
+
+  .cc-customer-profile-default-address {
+        font-weight: 600;
+        line-height: 25px;
+        font-family:@font-family-roboto; 
+        letter-spacing: 0.24px;
+        font-size: 15px;
+  }
+
+  #cc-customer-profile-shipping-address-add {
+         border-radius: 4px;
+        font-family:@font-family-nunito; 
+        background: #fff;
+        box-shadow: none;
+        outline: none;
+        color: #2654bf;
+        border: none;
+        text-decoration: underline;
+        .add-text{
+                font-weight: 600;
+                font-size: 12px;
+                letter-spacing: .05rem;
+                line-height: 12px;
+                color: #2654bf;
+                text-transform: uppercase;
+                
+        }
+  }
+#cc-customer-profile-shipping-address-add-mobile{
+        font-family: 'Nunito', sans-serif;
+    background: #fff;
+    box-shadow: none;
+    outline: none;
+    color: #2654bf;
+    border: none;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: .05rem;
+    line-height: 12px;
+}
+  @media (min-width: 768px) {
+    #CC-customerProfile-modal-dialog {
+      width: 450px;
+    }
+  }
+
+  #CC-customerProfile-edit-marketingMail-checkbox {
+    padding-bottom: 20px;
+  }
+
+  #CC-customerProfile-marketingMail {
+    margin-bottom: -10px;
+  }
+  
+}
+
+#CC-customerProfile-password{
+    .changePasswordbtn{
+            padding: 15px 40px !important;
+            background: #2654BF;
+            border-color: #2654BF;
+            outline: none;
+            box-shadow: none;
+            color: #fff;
+            border-width: 0px;
+            border-radius: 6px;
+             text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+            font-family:@font-family-nunito;
+            line-height: 12px;
+            letter-spacing: 0.624px;
+            
+    }
+    
+    .disableChangePwd{
+            padding: 15px 40px !important;
+            background: #f5f4f2;
+            border-color: #c2bfbc;
+            color: #c2bfbc;
+            outline: none;
+            box-shadow: none;
+            border-width: 0px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+            font-family:@font-family-nunito;
+            line-height: 12px;
+            letter-spacing: 0.624px;
+            
+    }
+    .cancel-button{
+            color: #2654bf;
+            text-decoration: underline;
+            margin: 0px 35px;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.05rem;
+            line-height: 12px;
+            display:none;
+            font-family:@font-family-nunito;
+            
+    }
+}
+
+/*Custom Stylings*/
+
+#CC-customerAccount-details{
+    .navigation-section{
+        padding:0 15px;
+        .account-section{
+             #accountPage{
+               background: #fff;
+                width: -webkit-fill-available;
+                border: 2px solid #2654BF;
+                color: #2654BF;
+                font-weight: bold;
+                //margin: 0 15px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-radius: 6px;
+            }
+        }
+           
+        }
+    #CC-customerProfile-profileDetails-section{
+        #CC-customerProfile-title{
+               padding: 35px 0px 0px 0px;
+            
+            .profileText{
+                 font-family: @font-family-nunito;
+                  font-size: 56px;
+                  line-height: 50px;
+                  font-weight:500 !important;
+                  color:#1f1f1f !important;
+                   letter-spacing: -2px;
+            }
+            .myprofile{
+                     font-family: @font-family-nunito;
+                     font-size: 56px;
+                      font-weight: 200 !Important;
+                       color: #1f1f1f !important;
+                        letter-spacing: -2px;
+            }
+            
+      
+            
+        }
+        
+        #CC-customerProfile-controls{
+            margin-top: 30px;
+            //left
+            #left-section{
+                padding-right: 11%!important;
+                padding-left: 0px;
+                //Personal Information
+                #CC-customerProfile-user-details{
+                    //user
+                    #CC-customerProfile-userdetail-edit-fields{
+                        text-transform: capitalize;
+                        .user-information{
+                            #myaccount-profile, #editProfile{
+                                border-bottom:2px solid #000;
+                                font-family: @font-family-roboto;
+                            }
+                        }
+                         .pet-information{
+                                //margin-top: 40px;
+                          .header-section{
+                              .page-header{
+                                    font-family: @font-family-nunito;
+                                    font-size: 22px;
+                                    font-weight: bold;
+                                    border-bottom: none;
+                                    line-height: 50px;
+                                    font-weight: 600 !important;
+                                    color: #1f1f1f !important;
+                              }
+                              #add-pet-profile{
+                                    font-family: @font-family-nunito;
+                                    background: #fff; 
+                                    box-shadow: none;
+                                    outline: none;
+                                    color: #2654bf;
+                                    border: none;
+                                    text-decoration: underline;
+                                    font-weight: 600;
+                                    font-size:12px;
+                                    letter-spacing: .05rem;
+                                    line-height: 12px;
+                              }
+                          }  
+                          .noPetInfo{
+                              font-size: 21px;
+                              //font-weight: bold;
+                              margin-top:30px;
+                          }
+                          .petDetails{
+                            //  margin-top:30px;
+                              text-transform: capitalize;
+                              .petDetailsInfo{
+                                 margin-top:40px;
+                                  border-bottom:1px solid #e6e6e6;
+                                  .page-header-txt{
+                                     font-family: @font-family-nunito; 
+                                     font-size: 22px;
+                                     border-bottom: none;
+                                     line-height: 20px;
+                                     font-weight: 600 !important;
+                                     color: #1f1f1f !important;
+                                 }
+                                 .page-header-Pet{
+                                         margin-bottom: 15px;
+                                 }
+                                 
+                              }
+                          }
+                            .pet-add-sections{
+                                margin-top:30px;
+                                select{
+                                    padding:0 15px;
+                                }
+                            }
+                        }
+                        .gender, .email-signup{
+                            margin-bottom: 20px;
+                            .radio{
+                                    margin-top: 0;
+                                    margin: 0 10px;
+                                    font-size: 14px;
+                                    font-family:@font-family-roboto; 
+                                    font-weight: 300;
+                                    text-transform: initial;
+                            }
+                            .radio + .radio, .checkbox + .checkbox {
+                                margin-top: 0px;
+                            }
+                        }
+                        
+                        #CC-customerProfile-details-view{
+                            #CC-customerProfile-details-region{
+                                .cc-button-blue{
+                                    float: left; 
+                                }
+                            }
+                        }
+                        .emailId{
+                            text-transform:initial;
+                                word-break: break-all;
+                                white-space: nowrap;
+                        }
+                    }
+                }
+            }
+            //right
+            #right-section{
+                padding-right: 10%!important;
+                //Change Password
+                #CC-customerProfile-password{
+                    #CC-customerProfile-password-edit-fields{
+                        border-bottom:2px solid #000;
+                        padding-bottom: 50px;
+                        h4{
+                            font-family: @font-family-nunito;
+                            font-size: 22px;
+                            font-weight: 600;
+                            line-height: 50px;
+                            color: #1f1f1f;
+                             margin: 0px;
+                             margin-bottom: 5px;
+                            
+                        }
+                    }
+                }
+                #CC-customerProfile-edit-region{
+                  // border-bottom:2px solid #000;
+                }
+                //Address Book
+                #CC-customerProfile-shipping-details{
+                    select{
+                        padding:0 15px!important;
+                    }
+                   
+                    #CC-customerProfile-edit-fields{
+                        margin-bottom:40px;
+                         .control{
+                            position: relative;
+                        }
+                        .cc-profile-legend-title{
+                                button{
+                                    background: #fff;
+                                    box-shadow: none;
+                                    outline: none;
+                                    color:#0A55BC;
+                                    border: none;
+                                    text-decoration: underline;
+                                    font-weight: bold;
+                                    .add-text{
+                                        font-family: @font-family-roboto;
+                                    }
+                                }
+                            }
+                            #CC-customerProfile-shippingAddress-view{
+                            //    border-bottom: 1px solid #eee;
+                            }
+                            #CC-customerProfile-shippingAddress-view-region{
+                                .cc-customer-profile-shipping-address-view{
+                                    font-family: @font-family-roboto;
+                                    border: none;
+                                    font-size: 14px;
+                                    padding:0;
+                                    text-transform: capitalize;
+                                    line-height: 1.5;
+                                    border-bottom: 1px solid #e6e6e6;
+                                    margin-bottom: 33px;
+                                    
+                                }
+                            }
+                            
+                    }
+                }
+            }
+        }
+    }
+}
+
+#CC-customerProfile-edit-fields{
+/* .makeDefaultAddress::after{
+     left: 1px!important;
+     top: -9px !important;
+ }*/
+              
+}
+#myAccountAddressBook{
+    .savebtn{
+            background: #2654BF;
+            border-color: #2654BF;
+            outline: none;
+            box-shadow: none;
+            color: #fff;
+            border-width: 0px;
+            border-radius: 6px;
+            line-height: 12px;
+            font-family: @font-family-nunito;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.05rem;
+            height: 42px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-right: 35px;
+            padding-left: 35px;
+            
+    }
+    #addressCancelButton{
+            color: #2654bf;
+            text-decoration: underline;
+            margin: 0px 35px;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.05rem;
+            line-height: 12px;
+            cursor: pointer;
+            font-family: @font-family-nunito;
+    }
+    
+    
+}
+
+/*Media Queries*/
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    #CC-customerAccount{
+        #CC-customerAccount-details{
+            #CC-customerProfile-profileDetails-section{
+                #CC-customerProfile-title{
+                    strong, span{
+                            font-size: 34px;
+                    }
+                  
+                }
+                .navigation-section{
+                    
+                }
+                #left-section, #right-section{
+                    padding-right:15px!important;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:767px){
+    #CC-customerAccount{
+        #CC-customerAccount-details{
+            #CC-customerProfile-profileDetails-section{
+                #CC-customerProfile-title{
+    .profileText   {
+        line-height: 80px;
+    }             
+                }
+                .navigation-section{
+                    .account-section{
+                            border-bottom: 1px solid #d1cfcb;
+                            padding-bottom: 50px;
+                            margin-bottom: 30px;
+                            margin-top: 20px;
+                    }
+                     
+                }
+            }
+        }
+    }
+}
+//Overall Stylings
+
+legend{
+    font-size: 21px!important;
+    font-weight: bold;
+    border-bottom: none;
+    padding-bottom:0!important;
+}
+.cc-button-blue{
+        margin: 20px 0 40px 0;
+        background: #2654BF;
+        border-color: #2654BF;
+        outline: none;
+        box-shadow: none;
+        line-height: 12px;
+        font-family:@font-family-nunito; 
+        font-size: 12px;
+        letter-spacing: 0.05rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        height: 42px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-right: 35px;
+        padding-left: 35px;
+        
+    span{
+        text-transform: uppercase!important;
+        font-family:@font-family-nunito; 
+        font-size: 12px;
+        letter-spacing: 0.05rem;
+        font-weight: 600;
+        line-height: 12px;
+        
+    }
+    
+}
+.cc-button-transparent{
+    margin: 20px 0 40px 0;
+    padding: 14px 35px!important;
+    background: #fff;
+    border-color: #fff;
+    outline: none;
+    box-shadow: none;
+    text-transform: uppercase!important;
+    font-size: 12px;
+    color: #2654bf;
+    text-decoration: underline;
+    font-family:@font-family-nunito; 
+    line-height: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    span{
+       
+        
+        
+    }
+}
+
+    .flex-display{
+        display: flex;
+    }
+   .left-nav-section{
+       font-size:14px;
+        .leftNav{
+       padding:0px;
+       margin:0px;
+       li{
+           list-style-type:none;
+           margin:0px !important;
+           text-transform:none !important;
+           /*.profile{
+               color:#2654BF;
+               text-decoration: underline;
+           } */
+           a{
+               color:#000 !important;
+               font-size:14px;
+           }
+           a:hover{
+               color:#195d8d !important;
+           }
+       }
+     } 
+   }
+.accountBlock{
+    margin-top: 30px;
+    display: block;
+    margin-bottom:10px;
+}    
+  .profileText{
+      font-weight:normal !important;
+  }  
+#navbar{
+    position: fixed;
+    background: #fff;
+    top: 0px;
+    z-index: 9999;
+    width: 100%;
+    right: 0px;
+    left: 0px;
+    padding: 20px;
+    height:2260px !important;
+    .navHeading{
+            padding-bottom: 35px;
+            border-bottom: 1px solid #d1cfcb;
+            font-size: 26px;
+            font-weight: normal;
+    }
+    .mobNavLinks{
+        
+            ul{    
+                padding-left: 0;
+                li{
+                        list-style-type: none;
+                        padding: 20px 0;
+                        border-bottom: 1px solid #d1cfcb;
+                        margin-bottom: 0;
+                        font-size: 16px;
+                    a{
+                         font-weight:bold;
+                         text-transform:capitalize;
+                         color:#000;
+                    }
+                }
+            }
+        
+    }
+}    
+.no-padding{
+    padding:0;
+}    
+
+#CC-customerProfile-shipping-details{
+    .makeDefaultAddress{
+            color: #000;
+            font-weight: normal !important;
+            display: flex;
+    } 
+    #selectState23{
+            color: #908e8f !important;
+    }
+    .country{
+            color: #908e8f !important;
+    }
+         
+      
+         .primaryShippingAddress{
+             position: relative;
+              .checkbox{
+             .control-indicator:after{
+
+                 content: "";
+                  display: inline-block!important;
+                  position: absolute!important;
+                  width: 20px!important;
+                  height: 20px!important;
+                  border: 1px solid #cccccc!important;
+                  border-radius: 3px!important;
+                  background-color: #fff!important;
+                  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+                  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+                  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+                  top: 11px;
+                  left: 1px;
+                  cursor:pointer;
+              
+           }
+             input:checked ~ .control-indicator:after {
+                  display: inline-block!important;
+                  position: absolute!important;
+                  width: 20px!important;
+                  height: 20px!important;
+                  font-size: 11px!important;
+                  background-color: #2654BF!important;
+                  border-color: #2654BF;
+                  font-family: 'FontAwesome';
+                  content: "\f00c";
+                  color: #fff; 
+                  top: 11px;
+                  left: 1px;
+                  padding: 0px 0px 0px 3px;
+                  cursor:pointer;
+                }
+            input[type="checkbox"] {
+                    margin: 4px 0 0;
+                    line-height: normal;
+                    box-sizing: border-box;
+                    padding: 0;
+                    opacity:0;
+                    margin-left: -15px;
+                    z-index: 1000;
+                    cursor:pointer;
+                }
+             }
+         }
+         .primaryBillingAddress{
+             position: relative;
+              .checkbox{
+             .control-indicator:after{
+
+                 content: "";
+                  display: inline-block!important;
+                  position: absolute!important;
+                  width: 20px!important;
+                  height: 20px!important;
+                  
+                  border: 1px solid #cccccc!important;
+                  border-radius: 3px!important;
+                  background-color: #fff!important;
+                  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+                  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+                  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+                   top: 11px;
+                  left: 1px;
+                cursor:pointer;
+              
+           }
+             input:checked ~ .control-indicator:after {
+                  display: inline-block!important;
+                  position: absolute!important;
+                  width: 20px!important;
+                  height: 20px!important;
+                  font-size: 11px!important;
+                  background-color: #2654BF!important;
+                  border-color: #2654BF;
+                  font-family: 'FontAwesome';
+                  content: "\f00c";
+                  color: #fff; 
+                   top: 11px;
+                  left: 1px;
+                  padding: 0px 0px 0px 3px;
+                  cursor:pointer;
+                  
+                  
+                }
+            input[type="checkbox"] {
+                    margin: 4px 0 0;
+                    line-height: normal;
+                    box-sizing: border-box;
+                    padding: 0;
+                    opacity:0;
+                    margin-left: -15px;
+                    z-index: 1000;
+                    cursor:pointer;
+                }
+             }
+         }
+         
+         
+        select.invalid{
+            color: #373737;
+            background-color: #fff !important;
+            
+        }
+           select{
+                 background-image: url('/file/general/petredesign_select_dropdown_12x12.svg');
+                 width: 14px;
+                 height: 14px;
+                 position: relative;
+                 background-color: transparent;
+                 border: none;
+                 background-repeat: no-repeat;
+                 background-position: 98% center;
+                -webkit-appearance: none !important;
+        }
+        
+}    
+    
+   
+    
+
+    
+    
+    
+    
+    
+    
+    
+/*}*/
+}

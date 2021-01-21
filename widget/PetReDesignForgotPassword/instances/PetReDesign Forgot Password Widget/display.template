@@ -1,0 +1,45 @@
+
+<!--ko with: user -->
+<div id="forgotPwd" data-bind="visible: $parent.resetEmail">
+    <div class="row mlr">
+        <div class="col-xs-12">
+            <div class="page-header">
+                <h2>FORGOT PASSWORD</h2>
+            </div>
+            <div class="page-body col-sm-8 col-md-7">
+                <form id="forgotPassword" data-bind="template: { afterRender: $parent.forgetPwdFormValidate() }">
+                    <label class="caption">Enter the email address you used when creating the account and click Send Password Reset Email. A message will be sent to that address containing a link to reset your password.</label>
+                    <div class="error-msg" data-bind="visible: $parent.noProfileError">No profile found.</div>
+                    <div class="form-group form-elements">
+                        <label for="emailAddress" class="label-text">email</label>
+                        <input type="email" name="emailaddress" class="input-box" data-bind="validatableValue: emailAddressForForgottenPwd" id="emailAddress" aria-describedby="emailHelp" placeholder="example@example.com">
+                    </div>
+                    <button type="submit" class="btn btn-block" data-bind="event: { click: function(data, event) { $parent.resetForgotPasswordSubmit(data) } }">Send Password Reset Email</button>
+                </form>
+                <div class="panel">
+                    <p class="h4">
+                        New User? <span class="registerBtn"><a data-bind="ccLink:{route: '/createaccount'}">Register Here</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ko-->
+
+<div id="pwdSend" data-bind="visible: resetPwdMsg">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="page-header">
+                RESET PASSWORD
+            </div>
+            <div class="text-center">
+                <p class="h6 text-center"><strong>Reset password email sent</strong></p>
+                <p>A message has been sent to the email address you have provided containing a link to reset your password. If you do not receive your email within five minutes please check your spam folder.</p>
+                <a data-bind="ccLink:{route: '/login'}">
+                    <button class="button mb-20">Return To Login</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

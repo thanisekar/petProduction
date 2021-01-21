@@ -1,0 +1,24 @@
+<!-- ko if: initialized() && $data.hasOwnProperty('search-box-new') -->
+  <form role="form" id="searchTypeAheadForm" data-bind="submit: function(data, event) { $data['search-box-new'].handleSearch.bind($data['search-box-new'], $data['search-box-new'], event)() }, event: { keydown : $data['search-box-new'].handleKeyPress }">
+    <!-- ko with: $data['search-box-new'] -->
+      <label for="CC-headerWidget-Search" class="label-hidden" data-bind="widgetLocaleText :'searchLabel'">Search</label>
+      <div class="col-xs-12 pull-right input-group search">   
+	  <input class="typeAheadSearchInput" type="hidden" value="search" >
+	  <span class="searchIcon"></span>
+       <input id="CC-headerWidget-Search" type="text" class="form-control search-query" autocomplete="off"
+          data-bind="widgetLocaleText: {attr: 'placeholder', value: getPlaceHolderVale()}, textInput: searchText, onRender:initializeSearch.bind($parent), event: { focus: searchSelected(),keypress: searchKeyboardCmd()}" />
+        <span class="searchdeleteIcon"></span>
+		<div class="input-group-btn search-button hidden-sm hidden-xs">
+          <button type="submit" id="searchSubmit" class="btn btn-default form-control " data-bind="event: { keydown : hideSearchDropdown}">
+            <span class="searchBtn" data-bind="widgetLocaleText :'searchButtonText'"></span>
+            <span class="searchBtn" data-bind="widgetLocaleText :'searchButtonText'"></span>
+            <span class="glyphicon glyphicon-search sr-only"></span>
+			<span class='arrow-icon'></span>
+          </button>
+        </div>
+		
+      </div>
+    <!-- /ko -->
+  </form>
+   <span id='CancelLink' class='CancelLink '>Cancel</span>
+<!-- /ko -->

@@ -1,0 +1,146 @@
+{
+  "titleResourceId": "title",
+  "properties": [
+    {
+      "defaultValue": false,
+      "name": "enabled",
+      "id": "enabled",
+      "helpTextResourceId": "enabledHelpText",
+      "labelResourceId": "enabledLabel",
+      "type": "booleanType"
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "HomeBannerText",
+      "id": "HomeBannerText",
+      "helpTextResourceId": "HomeBannerImageText",
+      "labelResourceId": "HomeBannerImageLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "HomBannerLink",
+      "id": "HomBannerLink",
+      "helpTextResourceId": "HomeBannerLinkText",
+      "labelResourceId": "HomeBannerLinkLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "PromoBanner1Text",
+      "id": "PromoBanner1Text",
+      "helpTextResourceId": "PromoBanner1ImageText",
+      "labelResourceId": "PromoBanner1ImageLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "Promobanner1Link",
+      "id": "Promobanner1Link",
+      "helpTextResourceId": "PromoBanner1LinkText",
+      "labelResourceId": "PromoBanner1LinkLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "PromoBanner1Text",
+      "id": "PromoBanner2Text",
+      "helpTextResourceId": "PromoBanner2ImageText",
+      "labelResourceId": "PromoBanner2ImageLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "Promobanner1Link",
+      "id": "Promobanner2Link",
+      "helpTextResourceId": "PromoBanner2LinkText",
+      "labelResourceId": "PromoBanner2LinkLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "PromoBanner1Text",
+      "id": "PromoBanner3Text",
+      "helpTextResourceId": "PromoBanner3ImageText",
+      "labelResourceId": "PromoBanner3ImageLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "Promobanner1Link",
+      "id": "Promobanner3Link",
+      "helpTextResourceId": "PromoBanner3LinkText",
+      "labelResourceId": "PromoBanner3LinkLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "PromoBanner1Text",
+      "id": "PromoBanner4Text",
+      "helpTextResourceId": "PromoBanner4ImageText",
+      "labelResourceId": "PromoBanner4ImageLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "Promobanner1Link",
+      "id": "Promobanner4Link",
+      "helpTextResourceId": "PromoBanner4LinkText",
+      "labelResourceId": "PromoBanner4LinkLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "PromoBanner1Text",
+      "id": "PromoBanner5Text",
+      "helpTextResourceId": "PromoBanner5ImageText",
+      "labelResourceId": "PromoBanner5ImageLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    },
+    {
+      "defaultValue": "",
+      "minLength": 1,
+      "name": "Promobanner1Link",
+      "id": "Promobanner5Link",
+      "helpTextResourceId": "PromoBanner5LinkText",
+      "labelResourceId": "PromoBanner5LinkLabel",
+      "type": "stringType",
+      "maxLength": 250,
+      "required": true
+    }
+  ],
+  "descriptionResourceId": "description"
+}

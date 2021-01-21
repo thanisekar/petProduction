@@ -1,0 +1,234 @@
+<div id="CC-footerWidget">
+  <div class="footer-region">
+   <div class="">
+    <div class="row">
+     <footer class="col-xs-12 footer">
+       <div class='row email-signup-wrapper'>
+           <div class='container'>
+              <div class='col-sm-12 col-xs-12 petparks-section'>
+                <div class='signup-content'>
+                <h4 class='perkstxt'>Petmate Perks</h4>
+                     <p class='signuptxt'>Sign up for our list to be the first to receive pawsome deals and pet-parent tips.</p>
+                     <div id='sign-up'>
+                         <i class="fa fa-envelope" id='envelope-icon' aria-hidden="true"></i>
+                         <div class="long-arrow-right"></div>
+                         <input id="emailSignUp" type="text" class="form-control" placeholder="Email Address" value=''>
+                         
+                     </div>
+                </div>
+               </div>
+           </div>
+       </div>
+       <div class='row footer-menu-wrapper'> 
+          <div class='container'>
+    	       <div class='col-sm-12 footer-center-content hidden-xs hidden-sm'> 
+    				<div class='col-sm-2 nopad'>
+    					 <h4 class='title-txt'>Shop By</h4>
+    					 <ul class='footer-menu'>
+    						  <li class='footer-menu-item'><a data-bind='ccLink:"/dogs/category/dogs"' >Dogs</a></li>
+    						  <li class='footer-menu-item'><a data-bind='ccLink:"/cats/category/cats"'>Cats</a></li>
+    						  <li class='footer-menu-item'><a data-bind='ccLink:"/birds/category/birds"' >Small Pets</a></li>
+    						  <li class='footer-menu-item'><a href='' >Replacement Parts</a></li>
+    						  <li class='footer-menu-item'><a href='' >Brands</a></li>
+    					 </ul>
+    				 </div>
+    				 <div class='col-sm-2 nopad'>
+    					 <h4 class='title-txt' >Support</h4>
+    					  <ul class='footer-menu'>
+    						  <li class='footer-menu-item'><a data-bind="ccLink: 'contactUs'" >Contact Us</a></li>
+    						  <li class='footer-menu-item'><a href='' >Where To Buy</a></li>
+    						  <li class='footer-menu-item'><a data-bind="ccLink: 'returnPolicy'">Return Policy</a></li>
+    						  <li class='footer-menu-item'><a data-bind="ccLink: 'shippingPolicy'">Shipping Policy</a></li>
+    						  <li class='footer-menu-item'><a data-bind="ccLink: 'faq'" >FAQS</a></li>
+    					 </ul>
+    				</div>
+    				<div class='col-sm-2 nopad'>
+    					 <h4 class='title-txt' >Company</h4>
+    					  <ul class='footer-menu'>
+    						  <li class='footer-menu-item'><a href='' >Our Story</a></li>
+    						  <li class='footer-menu-item'><a data-bind="ccLink: 'careers'" >Careers</a></li>
+    						  <li class='footer-menu-item'><a href='' >Affiliates</a></li>
+    						  <li class='footer-menu-item'><a href='' >Media</a></li>
+    						  <li class='footer-menu-item'><a href='' >Sponsors & Partners</a></li>
+    					 </ul>
+    				</div>
+    				<div class='col-sm-2 nopad'>
+    					 <h4 class='title-txt' >Account</h4>
+    					  <ul class='footer-menu'>
+    						  <li class='footer-menu-item'><a data-bind="ccLink: 'login'" >Log In</a></li>
+    						  <li class='footer-menu-item'><a data-bind="ccLink: 'createaccount'" >Create Account</a></li>
+    						  <li class='footer-menu-item'><a data-bind="ccLink: 'orderhistoryanonymous'"  >Order Status</a></li>
+    						  <li class='footer-menu-item'><a data-bind="ccLink: 'wishlist'" >Wish List</a></li>
+    					 </ul>
+    				</div>
+    				<div class='col-sm-4 nopad social-icon-wrapper'>
+    				    <div class='logo-image'>
+    				    <a data-bind="ccLink: 'home'" >
+    					<img data-bind="ccResizeImage: {
+    							source: '/file/general/PetRedesign_logo_white.png',
+    							xsmall: '45,120',
+    							small: '45,120',
+    							medium: '45,120',
+    							large: '45,120',
+    							alt: 'petRedesignLogo',
+    							errorSrc:'images/noImage.png',
+    							errorAlt:'No Image Found'}" id="logoFoot" alt="petRedesignLogo">
+    					</a>
+    					</div>
+    					<div class='social-icons'>
+    					   <ul class='social-icon-menu'>
+    					       <li class='social-icon-item'><a href="http://www.facebook.com/Petmate" target="_blank" ><i class="fa fa-facebook facebook-icon" aria-hidden="true"></i> </a></li>
+    					       <li class='social-icon-item'><a href="http://www.twitter.com/petmateproducts" target="_blank" ><i class="fa fa-twitter  twitter-icon" aria-hidden="true"></i> </a></li>
+    					       <li class='social-icon-item'><a href="http://instagram.com/petmatepetproducts/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
+    					       <li class='social-icon-item'><a href="http://www.pinterest.com/PetmateProducts" target="_blank" ><i class="fa fa-pinterest pinteret-icon" aria-hidden="true"></i> </a></li>
+    					       <li class='social-icon-item'><a href="http://www.youtube.com/user/petmatepetproducts" target="_blank"><i class="fa fa-youtube-play youtube-icon" aria-hidden="true"></i></a></li>
+    					   </ul>
+    					</div>
+    				</div>
+    		   </div>
+    		      <!--Accordion for mobile device-->
+        	       <div class='col-xs-12 visible-xs visible-sm footer-moile-accordion'>
+        	           
+            	        <div class="panel-group footer-panel-group" id="accordion1">
+                        	  <div class="panel panel-default  footer-panel-default">
+                            		<div class="panel-heading footer-panel-heading">
+                                		  <h4 class="panel-title  footer-panel-title">
+                                			<a class="accordion-toggle">
+                                			 <span class='heading'>Shop By</span>
+                                			<i class="fa fa-plus icon" aria-hidden="true"></i></a>
+                                		  </h4>
+                            		</div>
+                            		<div  id="collapse1"  class="panel-collapse collapse  footer-panel-collapse">
+                                		  <div class="panel-body panel-content footer-panel-content">
+                                		       <ul class='panel-menu'>
+                            						  <li class='panel-menu-item'><a href='' >Dogs</a></li>
+                            						  <li class='panel-menu-item'><a href='' >Cats</a></li>
+                            						  <li class='panel-menu-item'><a href='' >Small Pets</a></li>
+                            						  <li class='panel-menu-item'><a href='' >Replacement Parts</a></li>
+                            						  <li class='panel-menu-item'><a href='' >Brands</a></li>
+                            					 </ul>
+                                		  </div>
+                            		</div>
+                        	  </div>
+                      </div>
+                        <div class="panel-group footer-panel-group" id="accordion2">
+                    	  <div class="panel panel-default footer-panel-default">
+                    		<div class="panel-heading  footer-panel-heading">
+                    		  <h4 class="panel-title footer-panel-title">
+                    			<a class="accordion-toggle">
+                    			 <span class='heading'>Support By</span>
+                    			 <i class="fa fa-plus icon" aria-hidden="true"></i>
+                    			 </a>
+                    		  </h4>
+                    		</div>
+                    		<div id="collapse2" class="panel-collapse collapse  footer-panel-collapse">
+                    		  <div class="panel-body panel-content footer-panel-content">
+                    		      <ul class='panel-menu'>
+            						  <li class='panel-menu-item'><a data-bind="ccLink: 'contactUs'"  >Contact Us</a></li>
+            						  <li class='panel-menu-item'><a href='' >Where To Buy</a></li>
+            						  <li class='panel-menu-item'><a data-bind="ccLink: 'returnPolicy'"  >Return Policy</a></li>
+            						  <li class='panel-menu-item'><a data-bind="ccLink: 'shippingPolicy'" >Shipping Policy</a></li>
+            						  <li class='panel-menu-item'><a data-bind="ccLink: 'faq'"  >FAQS</a></li>
+            				     </ul>
+                    		  </div>
+                    		</div>
+                    	  </div>
+                      </div>
+                        <div class="panel-group footer-panel-group" id="accordion3">
+                    	  <div class="panel panel-default footer-panel-default">
+                    		<div class="panel-heading footer-panel-heading">
+                    		  <h4 class="panel-title footer-panel-title">
+                    			<a class="accordion-toggle" >
+                    			 <span class='heading'>Company</span>
+                    			  <i class="fa fa-plus icon" aria-hidden="true"></i>
+                    			 </a>
+                    		  </h4>
+                    		</div>
+                    		<div id="collapse3" class="panel-collapse collapse  footer-panel-collapse">
+                    		  <div class="panel-body panel-content footer-panel-content">
+                    		        <ul class='panel-menu'>
+            						  <li class='panel-menu-item'><a href='' >Our Story</a></li>
+            						  <li class='panel-menu-item'><a  data-bind="ccLink: 'careers'" >Careers</a></li>
+            						  <li class='panel-menu-item'><a href='' >Affiliates</a></li>
+            						  <li class='panel-menu-item'><a href='' >Media</a></li>
+            						  <li class='panel-menu-item'><a href='' >Sponsors & Partners</a></li>
+            					 </ul>
+                    		  </div>
+                    		</div>
+                    	  </div>
+                      </div>
+                        <div class="panel-group  footer-panel-group" id="accordion4">
+                    	  <div class="panel panel-default footer-panel-default">
+                    		<div class="panel-heading footer-panel-heading">
+                    		  <h4 class="panel-title footer-panel-title">
+                    			<a class="accordion-toggle" >
+                    			 <span class='heading' >Account</span>
+                    			  <i class="fa fa-plus icon" aria-hidden="true"></i>
+                    			 </a>
+                    		  </h4>
+                    		</div>
+                    		<div id="collapse4" class="panel-collapse collapse  footer-panel-collapse">
+                    		  <div class="panel-body panel-content footer-panel-content">
+                    		      <ul class='panel-menu'>
+            						  <li class='panel-menu-item'><a  data-bind="ccLink: 'login'" >Log In</a></li>
+            						  <li class='panel-menu-item'><a  data-bind="ccLink: 'createaccount'" >Create Account</a></li>
+            						  <li class='panel-menu-item'><a  data-bind="ccLink: 'orderhistoryanonymous'" >Order Status</a></li>
+            						  <li class='panel-menu-item'><a data-bind="ccLink: 'wishlist'" >Wish List</a></li>
+            					 </ul>
+                    		  </div>
+                    		</div>
+                    	  </div>
+                      </div>
+                      
+                       <div class='col-xs-12 nopad social-icon-wrapper'>
+        				    <div class='logo-image'>
+            				    <a data-bind="ccLink: 'home'" >
+                					<img data-bind="ccResizeImage: {
+                							source: '/file/general/PetRedesign_logo_white.png',
+                							xsmall: '45,120',
+                							small: '45,120',
+                							medium: '45,120',
+                							large: '45,120',
+                							alt: 'petRedesignLogo',
+                							errorSrc:'images/noImage.png',
+                							errorAlt:'No Image Found'}" id="logoFoot" alt="petRedesignLogo">
+            					</a>
+        					</div>
+        					<div class='social-icons'>
+        					   <ul class='social-icon-menu'>
+        					       <li class='social-icon-item'><a href="http://www.facebook.com/Petmate" target="_blank" ><i class="fa fa-facebook facebook-icon" aria-hidden="true"></i> </a></li>
+        					       <li class='social-icon-item'><a href="http://www.twitter.com/petmateproducts" target="_blank" ><i class="fa fa-twitter  twitter-icon" aria-hidden="true"></i> </a></li>
+        					       <li class='social-icon-item'><a href="http://instagram.com/petmatepetproducts/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> </a></li>
+        					       <li class='social-icon-item'><a href="http://www.pinterest.com/PetmateProducts" target="_blank" ><i class="fa fa-pinterest pinteret-icon" aria-hidden="true"></i> </a></li>
+        					       <li class='social-icon-item'><a href="http://www.youtube.com/user/petmatepetproducts" target="_blank"><i class="fa fa-youtube-play youtube-icon" aria-hidden="true"></i></a></li>
+        					   </ul>
+        					</div>
+    				</div>
+	             </div>
+	             <!--Accordion for mobile device-->
+    		   <div class='col-xs-12  termsAndpolicy' id='terms-and-policy-section'>
+    		      <div class='policy-txt col-xs-12  col-md-10'>
+    		          <ul class='pet-terms'>
+    		              <li class='pet-terms-menu'><a data-bind="ccLink: 'termsandconditions'" href="/termsandconditions" >Terms of use</a></li>
+    		              <li class='pet-terms-menu'><a data-bind="ccLink: 'privacy'" href="/privacy">Privacy Policy</a></li>
+    		              <li class='pet-terms-menu'><span class="footer-copyrights">© 2018 Doskocil Manufacturing Company, Inc. dba Petmate</span></li>
+    		          </ul>
+    			  </div>
+    			  <div class='norton-logo col-xs-12  col-md-2'>
+    			      <a href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.petmate.com&amp;lang=en" target="popup" onclick="window.open('https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.petmate.com&amp;lang=en','popup','width=600,height=600'); return false;" style="color:#ffffff; text-decoration:none; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">
+                            <img name="seal" src="/file/general/getseal.png" alt="Norton SECURED">
+                        </a>
+    			  </div>
+    			  
+    		   </div>
+    		   
+    		   
+		  </div> 
+	   </div>
+	  
+    </footer>
+    
+    </div>
+    </div>
+  </div>
+</div>

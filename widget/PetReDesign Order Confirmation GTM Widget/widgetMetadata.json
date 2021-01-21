@@ -1,0 +1,18 @@
+{
+  "imports": [
+    "confirmation"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Order Confirmation GTM Widget",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "pageTypes": [
+    "confirmation"
+  ],
+  "config": {}
+}

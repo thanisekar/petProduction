@@ -1,0 +1,443 @@
+//Recaptcha Icon Global Style
+@media (min-width:767px){
+  .grecaptcha-badge{
+    bottom: 55px!important;
+  }
+}
+#PetReDesigncheckoutOrderSummary_v3-wi2900120 { padding-left:15px;
+    @media (max-width:767px){
+        padding:0;
+    }
+ #CC-checkoutOrderSummary {
+	padding-top: 20px;
+           
+            @media (min-width:767px){
+        min-height:580px;
+    }
+  @CheckoutOrderSummaryTabletFontSize:   12px;
+  
+    background-color: #F5F4F2;
+    //Hidding Placeholder Shipping Option
+    .CC-checkoutOrderSummary-shippingOption-300004{
+        display:none!important;
+    }
+    
+    //Ends
+ //Alaska/Hawaii
+    
+    .state-alert{
+        display:none;
+            color: #eb2b2b;
+        font-weight: bold;
+    }
+    // shipping surcharge css 
+      
+      #popup{
+           padding:15px 0px;
+           .order-exception-text{
+               color:#eb2b2b !important;
+                   font-weight: 500!important;
+           }
+           .popover-title {
+                padding: 8px 14px;
+                margin: 0;
+                font-size: 14px!important;
+                font-weight: normal;
+                line-height: 18px;
+                background-color: #f7f7f7;
+                border-bottom: 1px solid #ebebeb;
+                border-radius: 5px 5px 0 0;
+                letter-spacing: 0;
+            }
+            button.close {
+                font-size:14px;
+                padding: 0!important;
+
+            }
+          span{
+                  font-weight: 600;
+                  font-size: 14px;
+                  color: #000;
+                  font-family:@font-family-roboto; 
+          }
+          small{
+                  font-weight: 600;
+                  font-size: 14px;
+                  color: #000;
+                  font-family:@font-family-roboto; 
+                  text-decoration: underline;
+                   cursor: pointer;
+          }
+          .popover {
+              width:86% !important;
+          }
+          
+      }
+      
+    
+      //ENds
+   
+    //PromoUpsell
+    
+    .promoUpsell{
+        p{
+            color: #eb2b2b !important;
+            line-height: 19px!important;
+            margin-bottom: 0;
+            font-family: 'Roboto',sans-serif;
+            font-size: 13px!important;
+            font-weight: 400;
+        }
+    }
+    //ENds
+    #CC-checkoutOrderSummary-discounts{
+            color:#eb2b2b !important;
+            margin-top: 0;
+            font-family: 'Roboto',sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+    }
+  .ordersummary {
+    /*min-height: 20px;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: @grayLightest;
+    border: 1px solid @grayLighter;
+    -webkit-border-radius: @baseBorderRadius;
+       -moz-border-radius: @baseBorderRadius;
+            border-radius: @baseBorderRadius;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+       -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);*/
+
+    h3 {
+        font-weight: 400;
+      font-size: 28px!important; 
+      margin-top: 10px; 
+      padding-top: 0; 
+      letter-spacing: 0.02em;
+      line-height: 1;
+    }
+
+    .ordertotal{
+      font-family: @font-family-roboto;
+      font-size:15px;
+      font-weight: 500;
+      margin-top: 15px;
+      border-top: 1px solid #c2bfbc;
+      padding-top: 30px;
+      color:#000;
+      .ordersumprice {
+          font-size: 22px;
+          font-weight:500;
+          color:#000!important;
+          font-family:@font-family-nunito;
+      }
+      .ordertotalextax, .includingtaxtext {
+        font-size: @baseFontSize;
+        padding-bottom: 10px;
+      }
+    }
+
+    .changeShipping{
+      margin-top: -6px;
+    }
+    .shippingOptions{
+      //background-color: @grayLighter;
+      padding: 8px;
+      word-wrap: break-word;
+      legend {
+        line-height: 1.6em;
+        margin-bottom:4px;
+        color: #000;
+        white-space: normal;
+      }
+      label {
+        clear: both;
+        display:block;
+        font-weight:400!important;
+        color: #000;
+      }
+    }
+  }
+
+  .salesTax {
+    margin-top:17px;
+  }
+  
+  .paymentoptions, .checkout, .paypalCheckout{ 
+    margin: 0 0 24px 0;
+  }
+    .checkout{
+        padding-top: 20px;
+    }
+  .paymentoptions h3 {
+      font-size: @fontSizeLarge;
+  }
+
+  .paymentoptions a, .paymentimages, .paypalCheckout {
+    text-align:center;
+  }
+
+  /* FF makes checkout button too big without this */
+  #orderSummary {
+    .checkout {
+      a { min-height: 20px;}
+    }
+  }
+
+
+  .collapse {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.35s ease;
+       -moz-transition: height 0.35s ease;
+         -o-transition: height 0.35s ease;
+            transition: height 0.35s ease;
+  }
+
+  .collapse.in {
+    height: auto;
+  }
+
+  #CC-orderSummary-checkout {
+    a {
+      .btn-lg;
+      border-radius: @ButtonPrimaryBorderRadius;
+      span {
+        color: @ButtonPrimaryTextColor;
+      }
+    }
+  }
+
+  #CC-checkoutOrderSummary-shippingName {
+    word-wrap: break-word;
+    display: block;
+    color:#000;
+   }
+   
+   #CC-checkoutOrderSummary-shippingPrice {
+   
+    color:#000;
+   }
+   
+   #CC-checkoutOrderSummary-subTotal{
+       color:#000;
+   }
+
+  .row-fluid {
+    min-height: 5px;
+    .span7 {
+      min-height: 5px;
+    }
+
+    .span5 {
+      min-height: 5px;
+    }
+  }
+
+  @media (max-width: 767px) {
+      .shippingOptions{
+          background:#fff!important;
+      }
+    .row-fluid .span7 {
+      display: inline;
+      width: 70%;
+      float: left;
+    }
+    .row-fluid .span5 {
+      display: inline;
+      width: 30%;
+      float: right;
+    }
+  }
+
+  @media (max-width: 979px) and (min-width: 768px) {
+    font-size: @CheckoutOrderSummaryTabletFontSize;
+    .checkout-order-summary-shipping-description,
+    .checkout-order-summary-shipping-price {
+      font-size: @fontSizeMini;
+      line-height: @baseLineHeight;
+    }
+    .ordertotal {
+      font-size: @CheckoutOrderSummaryTabletFontSize;
+    }
+  }
+
+  #CC-checkoutOrderSummary-placeOrder 
+  p{
+                    font-size: 12px!important;
+                    font-family: @font-family-roboto!important;
+                    font-weight:200;
+                    .terms{
+                        font-weight:500;
+                    }
+                }
+  button {
+    .btn-lg;
+    border-radius: @ButtonPrimaryBorderRadius;
+    font-family:@font-family-roboto;
+    
+  }
+  .checkout{
+      margin: 0!important;
+  }
+
+}
+ 
+ /*Custom Stylings*/
+ 
+ #CC-checkoutOrderSummary{
+    padding-top:0;
+    background: #f5f4f2!important;
+    
+    .shippingDiscount-Text{
+            color: #eb2b2b;
+            font-family: 'Roboto',sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+        }
+    
+    .checkoutOrderSummary-center{
+            float: none;
+            margin: 0 auto;
+    }
+    .ordersummary{ 
+        padding: 40px 0;
+    }
+    h3{
+        color: #000;
+        font-size: 24px!important;
+        font-weight: normal;
+        text-align: center;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #c2bfbc;
+        margin-bottom: 15px;
+    }
+    #CC-orderSummaryLoadingModal{
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            .subtotal{
+                color:#706f6e;
+                .sub-text{
+                    color:#000!important;
+                    font-size: 14px!important;
+                }
+                span{
+                    font-size: 12px!important;
+                    
+                }
+            }
+        .row{
+            margin: 6px 0;
+        }
+    }
+    #CC-checkoutOrderSummary-enterShipping{
+        margin: 10px 0;
+        font-size: 12px!important;
+         font-family: @font-family-roboto;
+         font-weight:400!important;
+         color:#706f6e!important;
+        }
+    
+    #CC-checkoutOrderSummary-coupons{
+        .promoCapsText{
+            padding:0;
+            color: #eb2b2b;
+            font-family: 'Roboto',sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+        }
+    }
+    #CC-checkoutOrderSummary-salesTax{
+        margin: 10px 0;
+        color:#000;
+    }
+    #CC-Checkout-Placeorder-Mobile{
+                background: #0A55BC!important;
+                color: #fff!important;
+                font-weight: bold!important;
+                outline: none!important;
+                box-shadow: none!important;
+                border-radius: 4px!important;
+                border: 1px solid #0A55BC!important;
+                padding: 12px!important;
+                width: 100%!important;
+                text-transform: uppercase!important;
+                margin-bottom: 20px;
+                span{
+                    font-size: 14px!important;
+                }
+                
+            }
+ }
+ #CC-checkoutOrderSummary-shippingMethods{
+     .shippingOptions{
+         padding:0!important;
+         background: inherit;
+         font-size: 14px!important;
+         font-family: @font-family-roboto;
+         font-weight:400!important;
+     }
+ }
+ #CC-checkoutOrderSummary-enterShipping{
+     float:none !important;
+ }
+ #CC-checkoutOrderSummary-placeOrder{
+     background:#fff;
+ }
+ .overSized{
+     display:none;
+     font-size:14px!important;
+     font-weight:400!important;
+ }
+ 
+ /*Media Queries*/
+
+@media only screen and (max-width:767px){
+    #CC-checkoutOrderSummary{
+        position: relative!important;
+        width:auto!important;
+        background:#fff;
+        top:0px!important;
+        .ordersummary {
+            padding: 0!important;
+            margin: 0!important;
+            background: #fff!important;
+            //margin-top: 30px!important;
+            h3{
+                border-bottom: none!important;
+                text-align: left!important;
+            }
+            #CC-orderSummaryLoadingModal{
+                font-weight: normal!important;
+            }
+            #CC-checkoutOrderSummary-orderTotal{
+            
+                    font-weight: normal!important;
+                
+            }
+            
+    }
+    }
+    
+}
+
+@media only screen and (max-width:768px){
+
+}
+
+@media only screen and (max-width:1024px){
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .ordersummary{
+            //padding: 10%!important;
+    }
+}
+
+    
+}

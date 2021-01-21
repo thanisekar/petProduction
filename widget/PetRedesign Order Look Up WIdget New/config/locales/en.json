@@ -1,0 +1,14 @@
+{
+  "resources": {
+    "loginURLLabel": "Login",
+    "userNameLabel": "User Name",
+    "description": "Order Lookup",
+    "title": "Order LookUp",
+    "loginURLHelpText": "Enter Login URL",
+    "userNameHelpText": "Enter User Name",
+    "getOrderURLLabel": "GET Order URL",
+    "passwordHelpText": "Enter Password",
+    "passwordLabel": "Password",
+    "getOrderURLHelpText": "Enter GET Order URL "
+  }
+}

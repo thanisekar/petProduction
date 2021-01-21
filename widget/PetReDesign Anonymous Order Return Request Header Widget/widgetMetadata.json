@@ -1,0 +1,19 @@
+{
+  "imports": [
+    "orderDetails",
+    "shippingCountries",
+    "category",
+    "product"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Anonymous Order Return Request Header Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": false,
+  "config": {}
+}

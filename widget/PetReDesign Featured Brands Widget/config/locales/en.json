@@ -1,0 +1,8 @@
+{
+  "resources": {
+    "brandsIdHelpText": "Enter Brand's Id",
+    "enabledHelpText": "Enable the brands section",
+    "enabledLabel": "Widget Enable",
+    "brandsIdLabel": "Brand's Id"
+  }
+}

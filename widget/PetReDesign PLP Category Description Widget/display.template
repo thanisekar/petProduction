@@ -1,0 +1,16 @@
+<div id="categoryTitleContainer"  >
+     <div class="row" id='category-title-txt' >
+              <div class='col-xs-12 ' >
+                  <!-- ko with: category -->
+                   <div class='category-content-list'>
+                           <h2 id="cc-product-listing-title" data-bind="text:displayName"></h2>
+                    </div>
+					
+					<p data-bind='html:longDescription'></p>
+	     <!-- /ko -->
+             </div>
+     </div>
+</div>
+
+
+

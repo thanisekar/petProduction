@@ -1,0 +1,17 @@
+{
+  "imports": [
+    "category",
+    "categoryId"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Error Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": false,
+  "config": {}
+}

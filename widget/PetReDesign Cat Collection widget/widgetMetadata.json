@@ -1,0 +1,25 @@
+{
+  "imports": [
+    "category",
+    "product"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Cat Collection widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "carouselTitle": "Cats",
+    "collectionId": "cats",
+    "enabled": true,
+    "itemDesktop": "6",
+    "itemMobile": "2",
+    "itemTablet": "3",
+    "totalItem": "20"
+  }
+}

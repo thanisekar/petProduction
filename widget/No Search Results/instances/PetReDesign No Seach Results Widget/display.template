@@ -1,0 +1,11 @@
+<div id="CC-noSearchResults-display" class="row" aria-live="polite">
+  <div class="col-sm-12">
+    <div id="CC-noSearchResults-searchText">
+      <div data-bind="text: getResultsText().toLowerCase()"></div>      
+    </div>
+  </div>
+  <div class='col-xs-12 nosearchDisplayTxt'>
+      <p class='nosearchResultTxt'>Even well-trained search engines don't always get it right on the first try.</p>
+      <p class='searchForOtherProducts'>Search another phrase or shop by<a class='redirectingLinks' data-bind="ccLink: {route: '/dogs/category/dogs'}"> Dogs,</a>  <a  class='redirectingLinks' data-bind="ccLink: {route: '/cats/category/cats'}" > Cats,</a> <a class='redirectingLinks'  data-bind="ccLink: {route: '/birds/category/birds'}"> Birds & Small Pets,</a> or<a class='redirectingLinks'  data-bind="ccLink: {route: '/brands/category/petmate-brands'}"> Brands</a></p>
+  </div>
+</div>

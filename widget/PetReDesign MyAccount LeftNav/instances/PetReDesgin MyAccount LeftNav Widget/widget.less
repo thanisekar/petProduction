@@ -1,0 +1,278 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+
+    //padding-left:15px;
+    //padding-right:15px;
+    .myaccount-leftnav {
+        background-color: #cac5bd;
+        border-radius: 3px;
+        padding: 0px 0px;
+        margin-right: 2%;
+        min-height:350px;
+        //margin-top: 25px;
+        a {
+            font-size: 18px;
+            color: black;
+        }
+        a:hover,
+        a:focus {
+            text-decoration: none;
+        }
+        .selected {
+           
+          
+            a {
+                color: #2654bf !important;
+                //border-bottom: 2px solid #99c2ff;
+                display: inline-block;
+                font-weight: 300 !important;
+                font-family:@font-family-roboto;
+                 line-height:16px;
+            }
+            li {
+                background-color: #EFEFEF;
+                font-weight: normal !important;
+            }
+        }
+        ul {
+            margin: 0px;
+            padding: 0px;
+            padding-left: 40px;
+         //   padding-top: 10px;
+            li {
+                list-style-type: none;
+                 line-height:30px;
+                     margin-bottom: 3px !important;
+                a {
+                   color: #000;
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    padding: 0;
+                    font-weight: 300;
+                    font-family: @font-family-roboto;
+                     line-height:16px;
+                    
+                    &:hover {
+                        text-decoration: none;
+                        
+                        color: #2654bf;
+                    }
+                }
+                ul {
+                    li {
+                        margin-bottom: 0px;
+                        a {
+                            padding-left: 30px;
+                            outline:none;
+                        }
+                        a.active {
+                            font-weight: bold;
+                        }
+                    }
+                    
+                }
+            }
+        }
+     
+    }
+    
+    .myaccount-link {
+        margin-top: 6px;
+        span {
+            a {
+                color: #333;
+                text-decoration: underline;
+            }
+            &:after {
+                content: "|";
+                padding-left: 6px;
+            }
+            &:last-child {
+                &:after {
+                    content: "";
+                }
+            }
+        }
+    }
+    .myaccount-listing{
+        display:block !important;
+    }
+    @media(min-width:767px)and(max-width:991px) {
+        .myaccount-leftnav {
+            margin-right: 0px;
+            .myaccount-overview-link-wrapper {
+                padding-right: 10px !important;
+                padding-left: 10px !important;
+                i.my-account-angle-arrow {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                a {
+                    font-size: 18px;
+                    color: #333;
+                    display: block;
+                    font-weight: bold;
+                }
+            }
+            .myaccount-listing {
+                margin-top: 15px;
+            }
+        }
+    }
+    @media(min-width:320px)and(max-width:767px) {
+        .myaccount-leftnav {
+            width: 100% !important;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            .myaccount-overview-link-wrapper {
+                padding-right: 10px !important;
+                padding-left: 10px !important;
+                i.my-account-angle-arrow {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                a {
+                    font-size: 18px;
+                    color: #333;
+                    display: block;
+                    font-weight: bold;
+                }
+            }
+            .myaccount-listing {
+                margin-top: 15px;
+            }
+        }
+    }
+    
+    
+/*Custom Stylings*/
+.myaccount-leftnav{
+        margin-top:30px;
+        background: #fff;
+        border-radius: 0;
+        .accordion-header{
+                font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+        }
+        .myaccount-listing{
+            padding-left: 0;
+            li{
+                    line-height:30px;
+                        margin-bottom: 3px !important;
+                a{
+                    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #000;
+    text-transform: capitalize;
+    text-decoration: none;
+    line-height: 30px;
+    font-weight: 300;
+                    
+                    &:hover{
+                        background:#fff;
+                        text-decoration: underline;
+                        
+                        
+                        
+                    }
+                }
+            }
+        }
+}
+
+    
+}
+
+  .navigation-section{
+       padding: 50px 15px;
+        .account-section{
+             #accountPage{
+               background: #fff;
+                width: -webkit-fill-available;
+                border: 2px solid #2654BF;
+                color: #2654BF;
+                font-weight: bold;
+                //margin: 0 15px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-radius: 6px;
+            }
+        }
+           
+        }
+        #navbar{
+    position: fixed;
+    background: #fff;
+    top: 0px;
+    z-index: 9999;
+    width: 100%;
+    right: 0px;
+    left: 0px;
+    padding: 20px;
+    height:2260px !important;
+    .navHeading{
+            padding-bottom: 35px;
+            border-bottom: 1px solid #d1cfcb;
+            font-size: 26px;
+            font-weight: normal;
+    }
+    .mobNavLinks{
+        
+            ul{    
+                padding-left: 0;
+                li{
+                        list-style-type: none;
+                        padding: 20px 0;
+                        border-bottom: 1px solid #d1cfcb;
+                        margin-bottom: 0;
+                        font-size: 16px;
+                    a{
+                         font-weight:bold;
+                         text-transform:capitalize;
+                         color:#000;
+                    }
+                }
+            }
+        
+    }
+}  
+@media only screen and (min-width: 991px) and (max-width: 1024px){
+    .customizedNavigationMyAccountLeftCol, .customizedNavigationRightCol{
+        width:100%;
+    }
+    .customizedNavigationRightCol{
+        padding:0px 15px !important;
+    }
+        .myaccount-leftnav {
+            max-width: 100%;
+            margin: 0 auto !important;
+            margin-right:auto !important;
+            padding: 0 15px;
+            width: 100%;
+        }
+}
+@media only screen and (min-width: 1023px){
+    .petmate-myaccount-left-nav{
+        padding:0px;
+    }
+}
+@media only screen and (max-width: 1023px){
+        .myaccount-leftnav {
+            max-width: 768px;
+            margin: 0 auto !important;
+            margin-right:auto !important;
+            padding: 0 15px;
+            width: 100%;
+        }
+}
+ @media(min-width:320px)and(max-width:1023px) {
+        /*#region-re200049{
+            width:100% !important;
+        }
+        .myaccount-leftnav {
+            width: 100% !important;
+        }*/
+}

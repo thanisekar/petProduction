@@ -1,0 +1,22 @@
+{
+  "imports": [
+    "orderDetails",
+    "shippingCountries",
+    "category",
+    "product"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Order Return Header",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": false,
+  "pageTypes": [
+    "orderHistory",
+    "orderDetails"
+  ],
+  "config": {}
+}

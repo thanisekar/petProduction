@@ -1,0 +1,147 @@
+<!-- ko if: enabled() -->
+
+<div id="calmzBody">
+    <div class="stripes">
+        <img src="/file/general/Stripes.png">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-xs-12 left-section">
+                    <!--<div id="cc_img__resize_wrapper">
+                        <img data-bind="ccResizeImage: {
+                                   source: '/file/general/calmz-dog.png',
+                                   xsmall: '500,300',
+                                   small: '500,300',
+                                   medium: '650,750',
+                                   large: '700,500', 
+                                   alt: displayName, 
+                                   title:displayName}" class=""></div>-->
+                                   
+                    <img data-bind="attr:{ src:BannerImage}"  class="img-responsive"> 
+                    <!--<img src="/file/general/Calmz-vaterinarian.png" class="veterinarian img-responsive hidden-xs">-->
+                    <img src="/file/general/Calmz-promo-offer.png" class="veterinarian img-responsive hidden-xs">
+            </div>
+            <div class="col-sm-5 col-xs-12">
+                <div class="col-xs-12">
+                        <div class='videoDisplay'>
+                             <div class=''>
+                              <div class='row' id='videoSectionPlay'>
+                                    <div class='col-xs-12 nopad' id="CC-Video">
+                                           <div class="" id="productVideo">
+                                               
+                                               <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/'+ VideoUrl()}">
+                                          
+                                                <img data-bind="attr : {src : 'https://img.youtube.com/vi/' + VideoUrl() + '/0.jpg'}" class="img-responsive video-banner" src="">
+                                              
+                                                <div class="play-icon"><img src="/file/general/playbutton_32x32.svg" /></div>
+                                                
+                                               </a>
+                                             </div>
+                                           
+                
+                                      
+                                             <br>
+                                             <div>
+                                             
+                                                <a class="pdp-video"  data-bind="attr: { videourl: VideoUrl()}"></a>
+                                            
+                                            </div>
+                                    </div>
+                                </div>
+                             </div>
+                        </div> 
+                </div>
+                <div class="col-xs-12">
+                    <div class="bottom-content">
+                        <h6>When dogs get anxious,  owners get Calmz<span>®</span></h6>
+                        <ul>
+                            Comes With:
+                            <li>
+                                Adjustable comfort fit vest
+                            </li>
+                            <li>
+                                Calmz Device
+                            </li>
+                            <li>
+                                Detailed instruction booklet that include tips for aclimation
+                            </li>
+                        </ul>
+                        <p>The Calmz device has 12 settings for duration, intensity of vibration and repeat or no repeat mode</p>
+                        <br>
+                        <p>Requires 3 AAA batteries (not included)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section-two">
+            
+                <div class="row">
+                    <div class="banner">
+                        <div class="container">  
+                        <p>HOW IT WORKS</p>
+                    </div>
+                    </div>
+                    <div class="container">
+                        <div class="content-type col-sm-8 col-xs-12">
+                            <span style="padding-left: 20px;">The Calmz Anxiety Relief System</span>
+                            <ul>
+                                <li>Calmz comfort fit vest cradles Calmz device over key accupressure point on the dogs spine.</li>
+                                <li>When the device is activated, the clinically proven NeuroSync Technology<span class="neuro-mark">®</span> takes over.</li>
+                                <li>Your dog will hear and feel a therapeutic blend of classical music, tones and vibrations that soothes anxiety in minutes</li>
+                                <li>The vibrations increases blood flow to the brain which helps decrease adrenaline and reduce anxiety</li>
+                            </ul>
+                            <div class="buy-now-section">
+                            
+                            <a class="buy_now_button" data-bind="text: BuyNowButtonText, attr:{ href:BuyNowButtonLink}"></a>
+                            <span class="buy_now_text">you will be redirected to petmate.com to purchase</span>
+                        </div>
+                        </div>
+                        <div class="cat-box-image hidden-xs">
+                         <img  style=" top: -125px;right: 30%;z-index: 1;max-height: 185px;" src="/file/general/Calmz-vaterinarian.png" class="vet img-responsive">  
+                        <img src="/file/general/Calmz-cat.png" class=" cat img-responsive"> 
+                        <img src="/file/general/Calmz-box.png"  class="box img-responsive"> 
+                        </div>
+                    </div>
+        </div> 
+    </div>
+    
+    <div class="section-three">
+            
+                <div class="row">
+                    <div class="banner">
+                        <div class="container">  
+                        <p>HOW TO FIT YOUR DOG</p>
+                    </div>
+                    </div>
+                    <div class="container">
+                        <div class="content-type">
+                            <span style="padding-left: 20px;">Use the chart below to get the exact fit your dog needs.</span>
+                            <!--<div id="cc_img__resize_wrapper">
+                        <img data-bind="ccResizeImage: {
+                                   source: '/file/general/Adjustable-vest-size.png',
+                                   xsmall: '500,300',
+                                   small: '500,300',
+                                   medium: '750,750',
+                                   large: '750,750', 
+                                   alt: displayName, 
+                                   title:displayName}" class=""></div>-->
+                                   <img data-bind="attr:{ src:SizeChartImage}"  class="img-responsive"> 
+                        </div>
+                    </div>
+        </div> 
+    </div>
+    <div class="empty-section">
+        <div class="container">
+            
+        <img style="float: right;max-width: 300px;margin-top: 5%;margin-right: 10%;" src="/file/general/calmz-petmate-logo.png"  class="box hidden-xs img-responsive"> 
+        <img style="max-width: 300px;padding-top: 5%;margin: 0 auto;" src="/file/general/calmz-petmate-logo.png"  class="box visible-xs img-responsive">
+            
+        </div>
+        
+    </div>
+    
+</div>
+
+<!--/ko-->

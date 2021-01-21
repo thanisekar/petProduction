@@ -1,0 +1,158 @@
+<div id="welcomeHome">
+
+    <div class="row">
+        <img class="header-img img-responsive hidden-xs" src="/file/general/WH-Header-new -1.png">
+        <img class="header-img img-responsive visible-xs" src="/file/general/WH-Header_mobile.png">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-10 float-none">
+                <div class="col-sm-4">
+                    <img style="float:right" class="img-responsive" src="/file/general/WH-Kennel-new-2.png">
+                </div>
+                <div class="col-sm-6">
+                   <!-- <img  class="img-responsive premium-text" src="/file/general/Premium_text.png">-->
+                    <p>Plastic kennels are simply the safest and
+                        best choice for lots of reasons.</p>
+                </div>
+            </div>
+            <hr class="border-line-one"> 
+            
+        </div>
+        <div class="row components">
+            <div class="col-sm-4">
+                <img src="/file/general/wh-img1.png">
+                <p> 
+                    <b>Designed for comfort.</b><br>
+                    Your pet is your family. You want them to sleep as comfortably as you do. With that in mind, Petmate builds its plastic kennels to minimize sharp edges and provide a safe, inviting place for your little fur baby to rest.
+                <p>
+            </div>
+            <div class="col-sm-4">
+                <img src="/file/general/wh-img2.png">
+                <p> 
+                     <b>Satisfies your dog’s natural denning instinct.</b><br>
+                     Your dog loves feeling safe and secure in their very own space. Petmate’s plastic kennels satisfy their instinctual desire to be snug and comfortable.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img src="/file/general/wh-img3.png">
+                <p> 
+                 <b>Protects your pet and your home.</b><br>
+                 When it comes to keeping your family  safe, nothing stands in the way. Petmate’s plastic kennels are built to be strong and safe, protecting your furry loved one from harm. Plastic kennels also protect your home from damage your furry loved one can deal out when you’re away.
+                </p>
+            </div>
+        </div>
+        <div class="row components">
+            <div class="col-sm-4">
+                <img src="/file/general/wh-img4.png">
+                <p> 
+                <b>Fits all shapes and sizes.</b><br>
+                Petmate knows you want your little fur babies to be comfy, cozy and safe in their kennels, no matter how big or small they are. There’s a plastic kennel from Petmate that’s perfect for your pet to relax and sleep peacefully in.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img src="/file/general/wh-img5.png">
+                <p> 
+                <b>Built to last.</b><br>
+                You want your pet to enjoy bedtime, just like you, for years to come. That’s why Petmate engineered durable plastic kennels to resist rust, stand up to weather and provide a cozy, safe environment for your furry family member year in and year out.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img src="/file/general/wh-img6.png">
+                <p> 
+                      <b> Plastic kennels from 
+                       Petmate are made for safe travel.</b><br>
+                       Your furry family member will love their comfy home away from home as they go with you on your travels. Petmate’s plastic kennels are fully compliant with air and highway travel requirements so you and your little buddy can relax. 
+                </p>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom:100px">
+             <div class='videoDisplayTop'>
+         <div class=''>
+          <div class='row' id='videoSectionPlay'>
+                <div class='col-xs-12 nopad' id="CC-Video">
+                       <div class="" id="productVideo">
+                           <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/Wz97XsOOfSQ'}">
+                            <img data-bind="attr : {src : 'https://img.youtube.com/vi/Wz97XsOOfSQ/mqdefault.jpg'}" class="img-responsive video-banner" src="">
+                            <div class="play-icon"><img src="/file/general/youtube-play-button-48.png" /></div>
+                           </a>
+                         </div>
+                </div>
+            </div>
+         </div>
+    </div> 
+        </div>
+        <a data-bind="ccLink : {route : 'category/120958'}"><img class="shop-cta img-responsive" src="/file/general/wh-Shop_CTA.png"></a>
+        <hr class="border-line-two">
+        <div>
+            <img class="img-responsive" style="margin:0 auto" src="/file/general/wh-SleepingDog.png">
+        </div>
+    </div>
+    
+    
+    <div class="row">
+        <div class="carousel-area">
+            <div class="white-margin">
+            <div class="col-sm-6  col-xs-8 float-none">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      
+                    
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                         
+                          <div class="carousel-content" data-bind="html:ConsumerCommentsOne">
+                                
+                          </div>
+                        </div>
+                        <div class="item">
+                          
+                          <div class="carousel-content" data-bind="html:ConsumerCommentsTwo">
+                           
+                          </div>
+                        </div>
+                        <div class="item">
+                          
+                          <div class="carousel-content" data-bind="html:ConsumerCommentsThree">
+                            
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="glyph-left"></span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="glyph-right"></span>
+                      </a>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- ko if: VideoID()!="" -->
+    <div class='videoDisplay'>
+         <div class=''>
+          <div class='row' id='videoSectionPlay'>
+                <div class='col-xs-12 nopad' id="CC-Video">
+                       <div class="" id="productVideo">
+                           <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/'+ VideoID()}">
+                            <img data-bind="attr : {src : 'https://img.youtube.com/vi/' + VideoID() + '/mqdefault.jpg'}" class="img-responsive video-banner" src="">
+                            <div class="play-icon"><img src="/file/general/youtube-play-button-48.png" /></div>
+                           </a>
+                         </div>
+                         <br>
+                         <div>
+                         
+                            <a class="pdp-video"  data-bind="attr: { videourl: VideoID()}"></a>
+                        
+                        </div>
+                </div>
+            </div>
+         </div>
+    </div> 
+    <!-- /ko-->
+</div>
+

@@ -1,0 +1,29 @@
+{
+  "elementInstances": [
+    {
+      "customTitle": "Image_2500015",
+      "styles": {},
+      "tag": "image@2500015",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "isProductImage": "0",
+        "titleText": "About Us",
+        "zoomEnabled": "0",
+        "fileName": "AboutUs_Banner.jpg"
+      }
+    }
+  ]
+}

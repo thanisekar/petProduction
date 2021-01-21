@@ -1,0 +1,1005 @@
+#petReDesignBrandCarouselWidget_v1-wi2800032 {}
+
+
+
+
+
+
+/* ---------------------------------------------------------------------- */
+/*	 carousel Widget Styles
+/* ---------------------------------------------------------------------- */
+
+#brandCarouselWidget {
+    
+    
+    
+        padding: 65px 0px;
+    display:block;
+    background-color:#fff;
+   /*INherited Styles*/
+   .shop-all-brands{
+               font-family:@font-family-nunito; 
+               text-transform: uppercase;
+              color: @background-color;
+              font-size: 13px;
+              font-weight: bold;
+              text-decoration: none;
+              letter-spacing: 0.5px;
+              line-height:13px;
+              position:relative;
+                &:hover{
+                  color:@link_hover;
+            }
+        }
+        .brandListing{
+            padding-left: 15px;
+             padding-right: 15px;
+        }
+        .brandListing:first-child{
+            //padding-left:0px !important;
+        }
+         .brandListing:last-child{
+            //padding-right:0px !important;
+        }
+        .collectionTitle-container{
+            padding: 20px 0px !important;
+        }
+        .brandDisplayName{
+                background-color: #fcfbf7;
+                padding: 10px 20px;
+                 display: block;
+                border: 1px solid #eeedeb;
+                img{
+                     margin:0 auto;
+                     height: 85px;
+                   // height:36px;
+                }
+        }
+        .brandDisplayName:hover{
+                    border: 2px solid @background-color;
+                    padding: 8px 18px !important;
+                    display: block;
+                    background-color: #fcfbf7;
+                    
+        }
+   
+   /*Ends*/
+   .default-link.red {
+        color: default;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .image-section{
+        margin-bottom:20px;
+    }
+        .petPicks{
+           text-align:center;
+           
+       }
+       .title-txt{
+           font-size:42px;
+           line-height:50px;
+           color:#000;
+           font-weight: 300;
+           font-family:@font-family-nunito;
+           
+       }
+    
+		.owl-carousel-title-price{
+                  .label {
+                    font-size: 12px !important;
+                }
+                
+              } 
+              .salePriceValue{
+                         color: #eb2b2b !important;
+                         font-family:@font-family-roboto; 
+                         font-weight: 500!important;
+                }
+                .listPriceValue{
+                        text-decoration: line-through !important;
+                        text-decoration-color: #8f8b8d !important;
+                        font-family:@font-family-roboto; 
+                        font-weight: 500!important;
+                }
+              
+    .carousel-container-width {
+        width:100%;
+        margin:0 auto;
+        //float:none;
+        @media (max-width:991px){
+            width:100%;
+        }
+        
+        @media (max-width:767px){
+            
+            width:100%;
+            .owl-item {
+        			width:140px !important;
+        			img{
+        			    width:unset !important;
+        			    margin: 0 auto;
+        			}
+        		}
+            .owl-prev {
+                left: -5px !important;
+            }
+          .owl-prev:hover{
+                left: -5px !important;
+            }
+          .owl-next {
+                right:-20px !important;
+            }
+          .owl-next:hover {
+                right:-20px !important;
+            }
+        }
+        @media (max-width:480px){
+            .owl-prev {
+                left: -15px !important;
+            }
+          .owl-prev:hover{
+                left: -15px !important;
+            }
+          .owl-next {
+                right:-6px !important;
+            }
+          .owl-next:hover {
+                right:-6px !important;
+            }
+        }
+    }
+h2 {    
+        text-align: left;
+	    color: #000;
+        margin: 0px;
+        font-size: 42px;
+        font-weight: 300;
+        line-height: 40px;
+        margin: 0px;
+        font-family:@font-family-nunito;
+        padding:0 15px;
+        
+	}
+	.collectionTitle-container{
+	      
+        padding: 15px 0px !important; 
+        .shopAllLinkWrapper{
+                text-align: left;
+                padding: 15px 0 0 0;
+                
+            .shop-all-link{
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: bold;
+                font-family:@font-family-nunito; 
+                color: @background-color;
+                letter-spacing: 1.2px;
+                line-height:1.6;
+                cursor: pointer;
+                margin-right: 25%;
+                text-decoration: none;
+                &:hover{
+                    color:@link_hover
+                }
+                
+            }
+            
+        }
+	}
+	
+	
+	
+	
+	 @media (max-width:767px){
+            h2{
+                text-align:center;
+            }
+            .shopAllLinkWrapper{
+                padding-top: 5px!important;
+                text-align:center!important;
+                .shop-all-brands{
+                    .right-arrow-icon{
+                            background-image: url(/file/general/ArrowBlueright_16x16.png);
+                        top: 3px;
+                        width: 16px;
+                        height: 12px;
+                        right: -18px;
+                        position: absolute;
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                        background-repeat: no-repeat;
+                    }
+                } 
+            }
+            .brandListing{
+                padding:0!important;
+            }
+        }
+        
+        
+        
+	@media only screen and (max-width:768px){
+	    .shop-all-link{
+	          margin-right: 35% !important;
+	    }
+	}
+	.cc-item-rating{
+	    margin-bottom: 10px;
+        line-height: 21.6px;
+        font-size: 14.4px;
+        height: 14px;
+        padding-top: 6px;
+        padding-bottom: 11px;
+	}
+	.cc-item-rating{
+	    .bv-cv2-cleanslate{
+	        .bv-inline-rating-container{
+	            text-align: center !important;
+	            display: inline !important;
+	            .bv-stars-container{
+	                text-align:center!important;
+	                .bv-rating-ratio{
+	                    display:block !important;
+	                }
+	            }
+	            
+	        }
+	    }
+	}
+	span.stars{
+	    display: block;
+        background: url('/file/general/rating-stars.png') 0 -16px repeat-x;
+        width: 80px;
+        height: 16px;
+	}
+	span.stars span{
+            display: block;
+            background: url('/file/general/rating-stars.png') 0 -16px repeat-x;
+            width: 80px;
+            height: 16px;
+            background-position: 0 0;
+        }
+	.owl-carousel.details-carousel-container {
+		.owl-item {
+			padding-right: 15px;
+		}
+	}
+    #owlCarousel {
+		margin-left: 0 !important;
+        .owl-carousel-tile {
+    	    text-align: center;
+    	    .petmate-sale-flag {
+                position:absolute;
+                right: 85px;
+                top: 66%;
+                z-index: 100;
+                text-transform: uppercase;
+                background-color: #EC0101;
+                color: #fff;
+                padding: 4px 12px;
+                border-radius: 2px;
+                font-size: 10px;
+                line-height: 1.5;
+                font-weight: 600;
+                text-align: center;
+                font-family:@font-family-roboto; 
+                
+              }
+              .petmate-new-flag {
+                position:absolute;
+                right: 60px;
+                top: 103px;
+                z-index: 100;
+                text-transform: uppercase;
+                background-color: @background-color;
+                color: #fff;
+                padding: 4px 12px;
+                border-radius: 2px;
+                font-size: 10px;
+                line-height: 1.5;
+                font-weight: bold;
+                text-align: center;
+                font-family:@font-family-roboto; 
+              }
+                
+             .petmate-promo-text {
+                        position: absolute;
+                        right: 0px;
+                        top: 0px;
+                        z-index: 100;
+                        text-transform: uppercase;
+                        background-color: #2753bf;
+                        color: #fff;
+                        padding: 4px 12px;
+                        border-radius: 2px;
+                        font-size: 10px;
+                        line-height: 1.5;
+                        font-weight: 600;
+                        text-align: center;
+                         font-family:@font-family-nunito;
+                	span {
+                		color: #fff !important;
+                		font-size: 12px;
+                		font-weight:bold;
+                	}
+                }
+                /*.petmate-promo-text:before {
+                	content: "";
+                	width: 0;
+                	height: 0;
+                	border-top: 14px solid transparent;
+                	border-right: 14px solid #f15d22;
+                	border-bottom: 14px solid transparent;
+                	position: absolute;
+                	left: -14px;
+                	margin-top: -3px;
+                }*/
+                .petmate-promo-text:before, .petmate-promo-text:after {
+                    clear:both;
+                }
+			.owl-carousel-tile-img {
+				img {
+					max-height: 100%;
+					max-width: 100%;
+					 @media (min-width:768px) and (max-width:991px) {
+						max-height: 160px;
+					}
+					@media (max-width:767px) {
+						max-height: 250px;
+					}
+				}
+			}
+    	    .owl-carousel-tile-text {
+    	        a {
+    	                display: inline-block;
+                        width: 100%;
+                        font-weight: normal;
+                        color: #8f8d8b;
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                        line-height: 1.5;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        text-align: center;
+                        text-decoration: none;
+                        font-family:@font-family-roboto; 
+                    
+                    @media (max-width: 767px){
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 18px;
+                        width: auto;
+                        font-family:@font-family-roboto; 
+                    }
+    	        }
+    	        
+    	    }
+    	    .owl-carousel-tile-price {
+    	             font-size: 14px;
+                    color: #151515;
+                    font-weight: 500;
+                    line-height: 21px;
+                    margin-top: 15px;
+                    text-align: center;
+                    font-family:@font-family-roboto; 
+                @media (max-width: 767px){
+                    font-size: 15px;
+                    font-weight: 800;
+                }
+                .label{
+                    font-size:12px !important;
+                }
+    	    }
+    	    .owl-carousel-tile-quick-view{
+    	        font-size:14px;
+    	        font-weight: 600;
+    	        color: #f15d22;
+    	        text-decoration:none;
+    	        text-transform: uppercase;
+    	        text-align: center;
+    	        line-height:24.0001px;
+    	        letter-spacing:1.5px;
+    	        cursor:pointer;
+    	    }
+    	}
+    	.owl-controls .owl-buttons div {
+            background-color: transparent !important;
+            text-indent: -9999em;
+        }
+        
+    }
+	
+	#owlCarousel.image-carousel-container {
+	    .owl-carousel-tile {
+	        width: 95%;
+	        margin:0 auto;
+	        //margin-left:19px;
+	        .owl-carousel-tile-text {
+	                 color: #757575;
+                     font-size: 12px;
+                     font-weight: bold;
+                     padding-top: 5px;
+                     text-align: center;
+                     text-decoration: none;
+	        }
+            
+        }
+        @media (max-width:767px){
+            .owl-carousel-tile {
+                width: 90%;
+                margin-left:10px;
+            }
+           
+        }
+		.owl-carousel-tile-img {
+		    img {
+		        display: block;
+			    width: 100%;
+		    }
+		}
+		
+	}
+	
+	.featured-container {
+        width:89%;
+        margin: 0 auto;
+        float: none;
+        @media (max-width:991px){
+            width:104%;
+        }
+        @media (max-width:767px){
+            width:100%;
+        }
+        
+        @media (min-width:992px){
+            #owlCarousel.image-carousel-container .owl-prev {
+                left: -45px;
+            }
+            #owlCarousel.image-carousel-container .owl-next {
+                right: -45px;
+            }
+        }
+    }
+    
+	@media (min-width:320px) and (max-width:767px){
+    .owl-carousel.details-carousel-container {
+		.owl-item {
+			padding-right: 0px;
+		}
+		
+	}
+    #owlCarousel .owl-next{
+	    right:-6px;
+	}
+	#owlCarousel .owl-next:hover{
+	    right:-6px;
+	}
+	
+}
+	
+	/* 
+	 * 	Core Owl Carousel CSS File
+	 *	v1.3.3
+	 */
+
+	/* clearfix */
+	.owl-wrapper{
+	    transform: translate3d(0px, 0px, 0px);
+	}
+	.owl-carousel .owl-wrapper:after {
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+	}
+	/* display none until init */
+	.owl-carousel{
+		display: none;
+		position: relative;
+		width: 100%;
+		-ms-touch-action: pan-y;
+	}
+	.owl-carousel .owl-wrapper{
+		display: none;
+		position: relative;
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	.owl-carousel .owl-wrapper-outer{
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		padding: 20px 0px;
+	}
+	.owl-carousel .owl-wrapper-outer.autoHeight{
+		-webkit-transition: height 500ms ease-in-out;
+		-moz-transition: height 500ms ease-in-out;
+		-ms-transition: height 500ms ease-in-out;
+		-o-transition: height 500ms ease-in-out;
+		transition: height 500ms ease-in-out;
+	}
+		
+	.owl-carousel .owl-item{
+		float: left;
+	}
+	.owl-controls .owl-page,
+	.owl-controls .owl-buttons div{
+		cursor: pointer;
+	}
+	.owl-controls {
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+
+	/* mouse grab icon */
+	.grabbing { 
+		cursor:url(grabbing.png) 8 8, move;
+	}
+
+	/* fix */
+	.owl-carousel  .owl-wrapper,
+	.owl-carousel  .owl-item{
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility:    hidden;
+		-ms-backface-visibility:     hidden;
+	  -webkit-transform: translate3d(0,0,0);
+	  -moz-transform: translate3d(0,0,0);
+	  -ms-transform: translate3d(0,0,0);
+	}
+
+	/*
+	* 	Owl Carousel Owl Demo Theme 
+	*	v1.3.3
+	*/
+
+	.owl-theme .owl-controls{
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	/* Styling Next and Prev buttons */
+
+	.owl-theme .owl-controls .owl-buttons div{
+		color: #FFF;
+		display: inline-block;
+		zoom: 1;
+		*display: inline;/*IE7 life-saver */
+		margin: 5px;
+		padding: 3px 10px;
+		font-size: 12px;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		border-radius: 30px;
+		filter: Alpha(Opacity=50);/*IE7 fix*/
+		opacity: 0.5;
+	}
+	/* Clickable class fix problem with hover on touch devices */
+	/* Use it for non-touch hover action */
+	.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+		filter: Alpha(Opacity=100);/*IE7 fix*/
+		opacity: 1;
+		text-decoration: none;
+	}
+
+	/* Styling Pagination*/
+
+	.owl-theme .owl-controls .owl-page{
+		display: inline-block;
+		zoom: 1;
+		*display: inline;/*IE7 life-saver */
+	}
+	.owl-theme .owl-controls .owl-page span{
+		display: block;
+		width: 12px;
+		height: 12px;
+		margin: 5px 7px;
+		filter: Alpha(Opacity=50);/*IE7 fix*/
+		opacity: 0.5;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		border-radius: 20px;
+		background: #869791;
+	}
+
+	.owl-theme .owl-controls .owl-page.active span,
+	.owl-theme .owl-controls.clickable .owl-page:hover span{
+		filter: Alpha(Opacity=100);/*IE7 fix*/
+		opacity: 1;
+	}
+
+	/* If PaginationNumbers is true */
+
+	.owl-theme .owl-controls .owl-page span.owl-numbers{
+		height: auto;
+		width: auto;
+		color: #FFF;
+		padding: 2px 10px;
+		font-size: 12px;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		border-radius: 30px;
+	}
+
+	/* preloading images */
+	.owl-item.loading{
+		min-height: 150px;
+		background: url(AjaxLoader.gif) no-repeat center center
+	}
+	
+	/* 
+	 *  Owl Carousel CSS3 Transitions 
+	 *  v1.3.2
+	 */
+
+	.owl-origin {
+		-webkit-perspective: 1200px;
+		-webkit-perspective-origin-x : 50%;
+		-webkit-perspective-origin-y : 50%;
+		-moz-perspective : 1200px;
+		-moz-perspective-origin-x : 50%;
+		-moz-perspective-origin-y : 50%;
+		perspective : 1200px;
+	}
+	/* fade */
+	.owl-fade-out {
+	  z-index: 10;
+	  -webkit-animation: fadeOut .7s both ease;
+	  -moz-animation: fadeOut .7s both ease;
+	  animation: fadeOut .7s both ease;
+	}
+	.owl-fade-in {
+	  -webkit-animation: fadeIn .7s both ease;
+	  -moz-animation: fadeIn .7s both ease;
+	  animation: fadeIn .7s both ease;
+	}
+	/* backSlide */
+	.owl-backSlide-out {
+	  -webkit-animation: backSlideOut 1s both ease;
+	  -moz-animation: backSlideOut 1s both ease;
+	  animation: backSlideOut 1s both ease;
+	}
+	.owl-backSlide-in {
+	  -webkit-animation: backSlideIn 1s both ease;
+	  -moz-animation: backSlideIn 1s both ease;
+	  animation: backSlideIn 1s both ease;
+	}
+	/* goDown */
+	.owl-goDown-out {
+	  -webkit-animation: scaleToFade .7s ease both;
+	  -moz-animation: scaleToFade .7s ease both;
+	  animation: scaleToFade .7s ease both;
+	}
+	.owl-goDown-in {
+	  -webkit-animation: goDown .6s ease both;
+	  -moz-animation: goDown .6s ease both;
+	  animation: goDown .6s ease both;
+	}
+	/* scaleUp */
+	.owl-fadeUp-in {
+	  -webkit-animation: scaleUpFrom .5s ease both;
+	  -moz-animation: scaleUpFrom .5s ease both;
+	  animation: scaleUpFrom .5s ease both;
+	}
+
+	.owl-fadeUp-out {
+	  -webkit-animation: scaleUpTo .5s ease both;
+	  -moz-animation: scaleUpTo .5s ease both;
+	  animation: scaleUpTo .5s ease both;
+	}
+	/* Keyframes */
+	/*empty*/
+	@-webkit-keyframes empty {
+	  0% {opacity: 1}
+	}
+	@-moz-keyframes empty {
+	  0% {opacity: 1}
+	}
+	@keyframes empty {
+	  0% {opacity: 1}
+	}
+	@-webkit-keyframes fadeIn {
+	  0% { opacity:0; }
+	  100% { opacity:1; }
+	}
+	@-moz-keyframes fadeIn {
+	  0% { opacity:0; }
+	  100% { opacity:1; }
+	}
+	@keyframes fadeIn {
+	  0% { opacity:0; }
+	  100% { opacity:1; }
+	}
+	@-webkit-keyframes fadeOut {
+	  0% { opacity:1; }
+	  100% { opacity:0; }
+	}
+	@-moz-keyframes fadeOut {
+	  0% { opacity:1; }
+	  100% { opacity:0; }
+	}
+	@keyframes fadeOut {
+	  0% { opacity:1; }
+	  100% { opacity:0; }
+	}
+	@-webkit-keyframes backSlideOut {
+	  25% { opacity: .5; -webkit-transform: translateZ(-500px); }
+	  75% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+	  100% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+	}
+	@-moz-keyframes backSlideOut {
+	  25% { opacity: .5; -moz-transform: translateZ(-500px); }
+	  75% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
+	  100% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
+	}
+	@keyframes backSlideOut {
+	  25% { opacity: .5; transform: translateZ(-500px); }
+	  75% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
+	  100% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
+	}
+	@-webkit-keyframes backSlideIn {
+	  0%, 25% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(200%); }
+	  75% { opacity: .5; -webkit-transform: translateZ(-500px); }
+	  100% { opacity: 1; -webkit-transform: translateZ(0) translateX(0); }
+	}
+	@-moz-keyframes backSlideIn {
+	  0%, 25% { opacity: .5; -moz-transform: translateZ(-500px) translateX(200%); }
+	  75% { opacity: .5; -moz-transform: translateZ(-500px); }
+	  100% { opacity: 1; -moz-transform: translateZ(0) translateX(0); }
+	}
+	@keyframes backSlideIn {
+	  0%, 25% { opacity: .5; transform: translateZ(-500px) translateX(200%); }
+	  75% { opacity: .5; transform: translateZ(-500px); }
+	  100% { opacity: 1; transform: translateZ(0) translateX(0); }
+	}
+	@-webkit-keyframes scaleToFade {
+	  to { opacity: 0; -webkit-transform: scale(.8); }
+	}
+	@-moz-keyframes scaleToFade {
+	  to { opacity: 0; -moz-transform: scale(.8); }
+	}
+	@keyframes scaleToFade {
+	  to { opacity: 0; transform: scale(.8); }
+	}
+	@-webkit-keyframes goDown {
+	  from { -webkit-transform: translateY(-100%); }
+	}
+	@-moz-keyframes goDown {
+	  from { -moz-transform: translateY(-100%); }
+	}
+	@keyframes goDown {
+	  from { transform: translateY(-100%); }
+	}
+
+	@-webkit-keyframes scaleUpFrom {
+	  from { opacity: 0; -webkit-transform: scale(1.5); }
+	}
+	@-moz-keyframes scaleUpFrom {
+	  from { opacity: 0; -moz-transform: scale(1.5); }
+	}
+	@keyframes scaleUpFrom {
+	  from { opacity: 0; transform: scale(1.5); }
+	}
+
+	@-webkit-keyframes scaleUpTo {
+	  to { opacity: 0; -webkit-transform: scale(1.5); }
+	}
+	@-moz-keyframes scaleUpTo {
+	  to { opacity: 0; -moz-transform: scale(1.5); }
+	}
+	@keyframes scaleUpTo {
+	  to { opacity: 0; transform: scale(1.5); }
+	}
+}  
+@media only screen and (max-width: 1023px){
+        #brandCarouselWidget {
+            max-width: 768px;
+            margin: 0 auto;
+            padding: 0 15px;
+            width:auto;
+        }
+    }
+     @media (max-width:768px){
+            #brandCarouselWidget {
+                margin :0px 15px;
+           /* .owl-prev {
+                left: -20px !important;
+            }*/
+            .owl-next {
+                right: -18px !important;
+            }
+        }
+             
+         }
+    @media only screen and (max-width: 732px){
+        #brandCarouselWidget {
+            width: 700px;
+            .carousel-container-width .owl-prev {
+                left: -18px !important;
+            }
+        }
+    }
+    @media only screen and (max-width: 678px){
+        #brandCarouselWidget {
+            width: 632px;
+        }
+    }
+    @media only screen and (max-width: 640px){
+        #brandCarouselWidget {
+            width: 611px;
+            .owl-prev {
+                left: -19px !important;
+            }
+            .owl-next {
+                right: -15px !important;
+            }
+        }
+    }
+    @media only screen and (max-width: 568px){
+        #brandCarouselWidget {
+            width: 530px;
+        }
+    }
+@media only screen and (max-width: 480px){
+    #brandCarouselWidget {
+        padding:0px;
+        width:auto;
+        //margin:0px 15px;
+        .image-carousel-container {
+            .owl-prev {
+                display:none !important;
+            }
+            .owl-next {
+                display:none !important;
+            }
+        }  
+        .shop-all-link{
+            margin:0px !important;
+        }
+    }
+    
+}
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+      
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    #owlCarousel {
+        .owl-controls {
+            .owl-buttons {
+                .owl-prev {
+                    left: -20px;
+                }
+                .owl-next{
+                    right: -16px;
+                }
+            }
+        }
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+       #owlCarousel {
+        .owl-controls {
+            .owl-buttons {
+                .owl-prev {
+                    left: -20px;
+                }
+                .owl-next{
+                    right: -16px;
+                }
+            }
+        }
+    }
+
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+
+
+
+
+

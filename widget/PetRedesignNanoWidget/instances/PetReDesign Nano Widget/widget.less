@@ -1,0 +1,231 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+
+	#nano {
+	    
+		font-family: NexaRustSansBlack!important;
+		.content-center {
+			float: none;
+			margin: 0 auto;
+		}
+		sup {
+			top: -1.5em!important;
+			font-size: 40%!important;
+		}
+		#banner {
+			img {
+				width: 100%!important;
+				//	max-height: 650px;
+			}
+			.carousel-control {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				color: #fff;
+				display: block;
+				width: 32px;
+				height: 32px;
+				background-color: rgba(0, 0, 0, .15);
+				border-radius: 16px;
+				text-align: center;
+				cursor: pointer;
+				transition: background-color .25s;
+			}
+			.glyphicon {
+				top: 12px;
+				left: 12px;
+			}
+			.carousel-control {
+				.glyphicon-chevron-right {
+					background-image: url(/file/general/round_keyboard_arrow_right_white_18dp.png);
+					&:before {
+						content: ""!important;
+					}
+				}
+				.glyphicon-chevron-left {
+					background-image: url(/file/general/round_keyboard_arrow_left_white_18dp.png);
+					&:before {
+						content: ""!important;
+					}
+				}
+			}
+		}
+		#video {
+			background: #cdcdcd;
+			margin: 2% 0;
+			.vid-content {
+				padding-right: 0;
+                font-weight: bold;
+                margin-bottom: 0;
+                font-size: 22px !important;
+                margin: 13% 0 0 10%;
+                line-height:25px!important;
+			} 
+			.videoDisplay {
+				#productVideo { 
+					position: relative;
+					img {
+						//margin: 0 auto;
+						width: 85%;
+					}
+					.video-banner {
+						&:hover {
+							cursor: pointer;
+						}
+					}
+					.play-icon {
+						position: absolute;
+						top: 45%;
+						right: 55%;
+					}
+				}
+			}
+		}
+		#desktop_contents {
+			background: #000;
+			text-align: left;
+			.prod-desc {
+				padding-top: 10%!important;
+				padding: 15px 0;
+				background: #000;
+				h5 {
+					margin: 0!important;
+					line-height: 1!important;
+					font-weight: bold;
+					color: #ffd200;
+					font-family: NexaRustSansBlack;
+					background: #000;
+					margin-bottom: 20px!important;
+					font-size: 34px;
+				}
+				h6 {
+					margin: 0!important;
+					line-height: 1!important;
+					font-weight: bold;
+					background: #000;
+					color: #fff;
+					font-family: NexaRustSansBlack;
+					font-size: 28px!important;
+				}
+				p {
+					color: #dedcd7!important;
+					margin-bottom: 8px;
+				}
+				div {
+					p {
+						margin: 22px 0 30px 0;
+						line-height: 26px!important;
+					}
+				}
+				a {
+					img {
+						max-width: 50%;
+					}
+				}
+			}
+			#precision {
+				color: #ffd200;
+			}
+			#precision,
+			#gamma,
+			#jamproof,
+			#engineer {
+				&:hover {
+					color: #ffd200!important;
+					cursor: pointer;
+				}
+			}
+		}
+		//Ipad
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+			#video {
+				.videoDisplay {
+					#videoSectionPlay {
+						.vid-content {
+							margin: 10% 0% 5% 5%;
+							padding-right: 0;
+							font-weight: 500;
+							font-size: 15px!important;
+							line-height: 24px !important;
+							text-align:center;
+						}
+					}
+				}
+			}
+			#desktop_contents {
+				.prod-desc {
+					padding-top: 5% !important;
+					h6 {
+						font-size: 16px !important;
+					}
+					h5 {
+						font-size: 20px !important;
+						margin-bottom: 10px!important;
+					}
+					p {
+						margin-bottom: 0px;
+						font-size: 12px !important;
+						line-height: 22px !important;
+					}
+					div {
+						p {
+							line-height: 20px !important;
+							font-size: 12px!important;
+							margin: 10px 0 15px 0;
+						}
+					}
+				}
+			}
+		}
+		//Mobile
+		@media only screen and (min-device-width: 75px) and (max-device-width: 667px) {
+			#video {
+				#CC-Video {
+					padding: 0!important;
+					#productVideo {
+						img {
+							width: 100%;
+						}
+						.play-icon{
+						    top: 40%;
+                            right: 45%;
+						}
+					}
+				}
+			}
+			#tab {
+				#myTabContent {
+					padding: 0!important;
+					background: #e1d8d8;
+					p {
+						font-size: 14px!important;
+						line-height: 22px !important;
+						font-family: 'Nunito', sans-serif;
+					}
+				}
+				#myTab {
+					display: flex;
+					background: #000;
+					.active {
+						a {
+							color: #ffd200;
+							background: #000;
+						}
+					}
+					li {
+						border: 1px solid #fff;
+						a {
+							font-weight: 100 !important;
+							font-size: 9px;
+							padding: 14px 5px;
+							text-align: center;
+							border: none;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	
+	}
+
+}

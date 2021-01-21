@@ -1,0 +1,20 @@
+{
+  "imports": [
+    "product"
+  ],
+  "translations": [
+    {
+      "name": "PetRedesign Education PDP Related Articles Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "numRecs": "4",
+    "restriction": "Unrestricted",
+    "strategy": "Browsed Together"
+  }
+}

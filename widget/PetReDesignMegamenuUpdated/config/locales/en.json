@@ -1,0 +1,12 @@
+{
+  "resources": {
+    "megamenuFourthImagehelp": "Choose the Category Brand Image",
+    "megamenuSecondImageTextLabel": "Megamenu Cat Image",
+    "megamenuFirstImageTextLabel": "Megamenu Dog Image",
+    "megamenuThirdImagehelp": "Choose the Category Birds Image.",
+    "megamenuThirdImageTextLabel": "Megamenu Birds Image",
+    "megamenuSecondImagehelp": "Choose the Category cat Image.",
+    "megamenuFourthImageTextLabel": "Megamenu Brand Image",
+    "megamenuFirstImagehelp": "Choose the Category Dog Image."
+  }
+}

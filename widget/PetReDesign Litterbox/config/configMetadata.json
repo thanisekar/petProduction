@@ -1,0 +1,23 @@
+{
+  "titleResourceId": "title",
+  "properties": [
+    {
+      "defaultValue": false,
+      "name": "enabled",
+      "id": "enabled",
+      "helpTextResourceId": "enabledHelpText",
+      "labelResourceId": "enabledLabel",
+      "type": "booleanType"
+    },
+    {
+      "defaultValue": "",
+      "name": "LitterBoxId",
+      "id": "LitterBoxId",
+      "helpTextResourceId": "VideoUrlText",
+      "labelResourceId": "VideoUrlTextLabel",
+      "type": "stringType",
+      "required": false
+    }
+  ],
+  "descriptionResourceId": "description"
+}

@@ -1,0 +1,33 @@
+{
+  "imports": [
+    "category"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesignMegamenuUpdated",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "megamenuImage1": {
+      "mediaName": "",
+      "src": ""
+    },
+    "megamenuImage2": {
+      "mediaName": "",
+      "src": ""
+    },
+    "megamenuImage3": {
+      "mediaName": "",
+      "src": ""
+    },
+    "megamenuImage4": {
+      "mediaName": "",
+      "src": ""
+    }
+  }
+}

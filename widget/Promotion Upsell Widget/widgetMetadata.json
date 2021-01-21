@@ -1,0 +1,17 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "Promotion Upsell Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": false,
+  "config": {
+    "messageLimit": "1",
+    "tags": ""
+  }
+}

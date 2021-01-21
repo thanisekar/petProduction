@@ -1,0 +1,16 @@
+{
+  "configuration": {
+    "shouldUseStyleBased": false,
+    "VideoUrlTwo": "hcy7unMm4Gs",
+    "viewModelCacheLimit": "3",
+    "isScrollEnabled": false,
+    "isViewModelCacheEnabled": false,
+    "fields": "items.childSKUs.listPrice,items.childSKUs.salePrice,items.description,items.startDateStr,items.x_freeShippingRibbon,items.promotext,items.id,items.route,items.displayName,items.listPrice,items.salePrice,items.primarySmallImageURL",
+    "gridWidth": "4",
+    "productsPerPage": "12",
+    "listType": "product",
+    "blockSize": "60",
+    "VideoUrlOne": "nTRkpA9gwG8"
+  },
+  "displayName": "PetReDesign United Airlines PLP New"
+}

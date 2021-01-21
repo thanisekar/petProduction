@@ -1,0 +1,78 @@
+<!-- ko setContextVariable: {name: 'elementConfig', value: {
+  "100001": {
+    "border": {
+      "borderColor": "#000000",
+      "borderWidth": 0
+    },
+    "horizontalAlignment": {"horizontalAlignment": "left"},
+    "id": "100001",
+    "image": {
+      "altText": "Promo Banner",
+      "altTextId": "100005",
+      "isProductImage": false,
+      "src": "/file/general/wwe_launch_TICKER.jpg",
+      "titleText": "Promo Banner",
+      "titleTextId": "100006",
+      "zoomEnabled": false
+    },
+    "padding": {
+      "paddingBottom": "10",
+      "paddingLeft": "0",
+      "paddingRight": "0",
+      "paddingTop": "0"
+    }
+  },
+  "100002": {"id": "100002"},
+  "100003": {
+    "id": "100003",
+    "padding": {
+      "paddingBottom": "0",
+      "paddingLeft": "0",
+      "paddingRight": "0",
+      "paddingTop": "0"
+    },
+    "richText": {
+      "content": "${occ:localizedWebContent('m11066')}",
+      "sourceMedia": "m11066"
+    }
+  },
+  "100004": {
+    "id": "100004",
+    "padding": {
+      "paddingBottom": "0",
+      "paddingLeft": "0",
+      "paddingRight": "0",
+      "paddingTop": "0"
+    },
+    "richText": {
+      "content": "${occ:localizedWebContent('m11068')}",
+      "sourceMedia": "m11068"
+    }
+  }
+}} --><!-- /ko -->
+
+<div id="cc-categoryContent" class="templateRegion col-md-12" data-oc-id="cc-categoryContent">
+  
+  <!-- oc layout: panels -->
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-0-0">
+
+      <!-- oc section: categoryContent-carousel -->
+        <div data-bind="element: 'categoryContent-carousel'"></div>
+      <!-- /oc -->
+
+      <!-- oc section: categoryContent-longDescription -->
+        <div data-bind="element: 'categoryContent-longDescription'"></div>
+      <!-- /oc -->
+
+      <!-- oc section: categoryContent-description --><div data-bind="element: 'categoryContent-description'"></div>
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+  <!-- /oc -->  
+</div>
+

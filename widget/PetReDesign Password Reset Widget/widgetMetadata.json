@@ -1,0 +1,14 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "PetReDesign Password Reset Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {}
+}

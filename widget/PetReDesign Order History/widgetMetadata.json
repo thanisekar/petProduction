@@ -1,0 +1,16 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "PetReDesign Order History",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "pageTypes": [
+    "orderHistory"
+  ],
+  "config": {}
+}

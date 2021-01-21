@@ -1,0 +1,31 @@
+{
+  "elementInstances": [
+    {
+      "customTitle": "Image_3500001",
+      "styles": {},
+      "tag": "image@3500001",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": "0"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Welcome Home Contest",
+        "titleText": "Welcome Home Contest",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "link": "/WelcomeHome",
+        "fileName": "PM_Welcome-Home_Banner.jpg"
+      }
+    }
+  ]
+}

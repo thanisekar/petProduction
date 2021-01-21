@@ -1,0 +1,16 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "PetReDesign Store Locator",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "storeLocatorLink": "https://petmatenews.azurewebsites.net/petmateStoreLocatorAPI.php"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "PetReDesign Guided Navigation Widget",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": false,
+  "pageTypes": [
+    "category",
+    "searchResults"
+  ],
+  "config": {
+    "maxDimensionCount": "5",
+    "maxRefinementCount": "5"
+  }
+}

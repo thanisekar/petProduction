@@ -1,0 +1,22 @@
+{
+  "imports": [],
+  "translations": [
+    {
+      "name": "PetReDesign Calmz Video Widget",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {
+    "BannerImage": "/file/general/Calmz-dog-banner.png",
+    "BuyNowButtonLink": "/calmz-anxiety-relief-system/product/PM76",
+    "BuyNowButtonText": "BUY NOW",
+    "PhoneNumberText": "877-256-7129",
+    "SizeChartImage": "/file/general/Adjustable-vest-size.png",
+    "VideoUrl": "1CjCv3cdVqI",
+    "enabled": true
+  }
+}

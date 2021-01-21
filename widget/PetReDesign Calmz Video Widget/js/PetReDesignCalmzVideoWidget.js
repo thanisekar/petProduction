@@ -1,0 +1,34 @@
+/**
+ * @fileoverview Footer Widget.
+ *
+ * @author Taistech
+ */
+define(
+  //-------------------------------------------------------------------
+  // DEPENDENCIES
+  // Adding knockout
+  //-------------------------------------------------------------------
+  ['knockout'],
+
+  //-------------------------------------------------------------------
+  // MODULE DEFINITION
+  //-------------------------------------------------------------------
+  function (ko) {
+
+    "use strict";
+	var getWidget = "";
+    return {
+		onLoad: function(widget) {
+		},
+
+		beforeAppear: function(page) {         
+		
+	    
+		}
+		
+	
+	
+		
+    };
+  }
+);

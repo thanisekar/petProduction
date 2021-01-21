@@ -1,0 +1,19 @@
+{
+  "elementInstances": [
+    {
+      "customTitle": "Rich_Text_1700005",
+      "styles": {},
+      "tag": "rich-text@1700005",
+      "text": null,
+      "richTextConfig": {
+        "content": "<div id=\"affiliates\">\n<div class=\"row\">\n<div class=\"col-sm-9 col-xs-12 nopad affiliates-center\">\n<div class=\"main-content\">   \n<h2>Join The Petmate Affiliate Program</h2>\n\n<div class=\"web-content section-one\">\n<p>Fetch 10% Commission on petmate.com Sales</p>\n\n<ul>\n\t<li>The Petmate Affiliate Program gives you the opportunity to benefit from sales made on Petmate.com simply by advertising on your site. Put your web traffic to work for you and earn 10% commission when we make a sale to a customer referred from your website.&nbsp;We&#39;ll give you the tools, the benefit of partnering with a leader in the pet category and handle the transaction and commission details. You earn quick revenue.</li>\n</ul>\n</div>\n\n<div class=\"web-content section-two\">\n<p>Sign up today! It&#39;s free and easy</p>\n\n<ul>\n\t<li>Sign up with our performance marketing network,&nbsp;<a href=\"https://www.shareasale.com/shareasale.cfm?merchantID=74750\" target=\"_blank\">ShareASale</a><br />\n\tOnce approved you&#39;ll have access to Petmate promotions, text links, banners, and product feed, complete with ShareASale tracking.</li>\n\t<li>Place your desired Petmate content on your site. When your visitors click on this content, your affiliate link will take them directly to Petmate.com. If they complete a purchase, we pay you a 10% commission.</li>\n</ul>\n</div>\n\n<div class=\"web-content section-three\">\n<p>Program Benefits</p>\n\n<ul>\n\t<li>10% commission on all sales</li>\n\t<li>30 day cookie duration</li>\n\t<li>Regularly updated creative, content, and affiliate&nbsp;exclusive promotions</li>\n\t<li>Experienced program management from the team at ebove &amp; beyond performance marketing</li>\n\t<li>Support from Petmate on custom requests, strategy and ShareASale assistance&nbsp;</li>\n</ul>\n</div>\n</div>\n</div>\n</div>\n</div>\n"
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      }
+    }
+  ]
+}

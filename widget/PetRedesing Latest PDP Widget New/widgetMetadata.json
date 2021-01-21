@@ -1,0 +1,20 @@
+{
+  "imports": [
+    "product",
+    "imageRootUrl",
+    "loaded",
+    "productVariantOptions",
+    "productTypes"
+  ],
+  "translations": [
+    {
+      "name": "PetRedesing Latest PDP Widget New",
+      "language": "en"
+    }
+  ],
+  "availableToAllPages": true,
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "config": {}
+}

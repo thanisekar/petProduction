@@ -1,0 +1,23 @@
+{
+  "imports": [
+    "order",
+    "shippingCountriesPriceListGroup",
+    "shippingCountries",
+    "billingCountries",
+    "defaultShippingCountry",
+    "defaultBillingCountry"
+  ],
+  "translations": [
+    {
+      "name": "PetReDesign Customer Address Book WIdget",
+      "language": "en"
+    }
+  ],
+  "jsEditable": true,
+  "minWidth": 1,
+  "globalEnabled": true,
+  "pageTypes": [
+    "checkout"
+  ],
+  "config": {}
+}

@@ -1,0 +1,8 @@
+{
+  "resources": {
+    "ReturnSummaryLinkHelpText": "Enter return summary url",
+    "ReturnSummaryLinkLabel": "Return Summary",
+    "description": "PetReDesign Order Details And Return Summary",
+    "title": "PetReDesign Order Details"
+  }
+}

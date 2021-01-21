@@ -1,0 +1,37 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+    
+      height: 350px;
+    overflow-y: scroll;
+    margin: 30px 0;
+      border-top: 10px dotted #cbe060;
+       border-spacing: 15px;
+  .row{
+      &:not(:last-child){
+      border-bottom: 10px dotted #cbe060;
+      }
+        .cc-image,.cc-rich-text{
+            min-height: 125px;
+            margin-bottom: 30px;
+            p{font-family: ChauncyFatty;}
+            p:nth-child(1){
+                width: max-content;
+                padding: 5px 10px;
+                background:#44A0B8;
+                color:#fff!important;
+            }
+        //text-align:center;
+        img {
+            &:hover{
+             transform: scale(1.2);
+             cursor: pointer;
+            }
+        }
+        }
+    }
+    @media (max-width: 767px){
+        .cc-image img{
+            //margin: 30px;
+        }
+    }
+
+}

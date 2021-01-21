@@ -1,0 +1,73 @@
+<div id="CC-SiteMap-Contents" class="container site-map-wrapper">
+   <h2>Site Map</h2>
+   <div class="dynamic-list-wrapper">
+      <ul class="list">
+         <!-- ko foreach: kositeMapModelData() --> 
+         
+         <li class="level1" data-bind="text:displayName()"></li>
+         
+         
+         <!-- ko if: hasOwnProperty('childCategories') --> 
+         <!-- ko foreach: childCategories() --> 
+         <li class="level2">
+            <a href="#" data-bind="attr: {href: $data.route}"><span data-bind="text:displayName()"></span></a>
+         </li>
+         
+         <!-- ko if: hasOwnProperty('childCategories') --> 
+         <!-- ko foreach: childCategories() --> 
+         <li class="level3"> 
+            <a href="#" data-bind="attr: {href: $data.route}"><span data-bind="text:displayName()"></span></a>
+         </li>
+         
+         <!-- /ko --> 
+         <!-- /ko -->
+         <!-- /ko -->
+         <!-- /ko -->
+         <!-- /ko -->
+        
+         
+      </ul>
+   </div>
+ 
+ 
+   <div class="static-list-wrapper" style="display:none">
+       <div class="col-xs-12 col-sm-3 no-pad-left" style="display:none">
+           <ul>
+                <li><a href="#">Gift Registry</a></li>
+                <li><a href="/createGiftRegistry">Create a Registry</a></li>
+                <li><a href="/findGiftRegistry">Find a Registry</a></li>
+                <li><a href="/manageGiftRegistry">Manage a Registry</a></li>
+                <li><a href="/topRegistryGifts">Top Registry Gifts</a></li>
+                <li><a href="/reasonsRegister">Reasons to Register</a></li>
+                <li><a href="/tipsGuide">Tips and Guides</a></li>
+                <li><a href="/specialRegistryEvent">Special Registry Events</a></li>
+                <li><a href="/giftRegitryConcierge">Gift Registry Concierge</a></li>
+                <li><a href="/giftFromUs">Gifts from Us</a></li>
+           </ul>
+       </div>
+       
+       <div class="col-xs-12 col-sm-3 no-pad-left" style="display:none">
+           <ul>
+                <li><a href="#">Classes</a></li>
+                <li><a href="/findCookingClass">Find a Cooking Class</a></li>
+                <li><a href="/classLocations">Class Locations</a></li>
+                <li><a href="#">Online Cooking Classes</a></li>
+                <li><a href="/whatToExpect">What to Expect</a></li>
+                <li><a href="/haveYourEventHere">Have Your Event Here</a></li>
+                <li><a href="/createOwnClass">Create Your Own Class</a></li>
+                <li><a href="#">Cooking Class Products</a></li>
+           </ul>
+       </div>
+       
+       <div class="col-xs-12 col-sm-3 no-pad-left" style="display:none">
+           <ul>
+                <li><a href="/purchaseGiftCard">Gift Cards</a></li>
+                <li><a href="http://gifts.surlatable.com/giftideas/?cleanSession=true&amp;pCat=cat1030418">Gift Ideas</a></li>
+                <li><a href="/purchaseGiftCard">Mother's Day</a></li>
+           </ul>
+       </div>
+       
+   </div>
+   
+</div>
+

@@ -1,0 +1,3 @@
+<div class="bvCurationWrap" >  
+    <div data-bind="attr: { 'data-bv-show': 'curations', 'data-bv-widget': 'bv-carousel','data-bv-display-tag': koDisplayProperty }"></div>
+</div>

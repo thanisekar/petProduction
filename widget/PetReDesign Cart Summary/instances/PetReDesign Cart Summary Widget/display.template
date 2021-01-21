@@ -1,0 +1,146 @@
+<div id="checkoutCartSummary" class="">
+  <div class="checkout-cart-summary">
+
+    <div class="row edit-cart">
+        <div class="col-xs-6 nopad desktop-header hidden-xs">
+                <h3 data-bind="widgetLocaleText: 'cartSummaryText'"></h3>
+        </div>
+        
+        <div class="col-xs-12 visible-xs mobile-header nopad">
+            <div class="header-wrapper">
+                <div class="circle">4</div> <h2>Review Your Order</h2>
+            </div>
+        </div>
+        
+        <div class="col-xs-6 nopad hidden-xs">
+             
+       <a id="CC-checkoutCartSummary-editCart" data-bind="ccLink: {route:'/cart'} , widgetLocaleText : {value:'editCartText', attr:'aria-label'}" class="cc-button-primary pull-right" tabindex="0"><span data-bind="widgetLocaleText: 'buttonEditCartSummary'"></span></a>
+     
+        </div>
+    </div>
+    
+    
+    <span id="cartSummaryItemLimitText" class="bottom-padding hide" data-bind="visible: (cart().items().length > noOfItemsToDisplay()), widgetLocaleText: {value:'cartSummaryItemLimitText', attr:'innerText', 
+        params: {noOfItems: noOfItemsToDisplay()}}"></span>
+    <!-- ko foreach: cart().items() -->
+    <!-- ko if: $index() < $parent.noOfItemsToDisplay() -->
+    <div data-bind="with: productData" class="row product-details">
+      <div class="col-xs-3 productImg">
+        <img class="img-responsive" data-bind="productImageSource: 
+                            {src: $data, imageType: 'thumb',
+                             alt: displayName,
+                             errorSrc: '/img/no-image.jpg',
+                             errorAlt: 'Missing Product Image'
+                             },
+                             attr:{id: 'CC-checkoutCartSummary-itemImage-'+id+$parent.catRefId}"></img>
+      </div>
+      <div class="col-xs-9 right-content nopad">
+        <div class="row">
+          <div class="col-xs-10 product-information">
+            <a
+               data-bind="attr : { id: 'CC-checkoutCartSummary-itemDisplayName-'+id+$parent.catRefId},ccLink: {route: $parent.product_route_ref()},text: displayName"
+               class="checkout-cart-summary-product-description">
+            </a>
+            <div class="quantity">
+              <small>
+                <span data-bind="widgetLocaleText: 'quantityText'"></span>
+                <span data-bind="attr : { id: 'CC-checkoutCartSummary-itemQuantity-'+id+$parent.catRefId}, ccNumber: $parent.quantity"></span>
+              </small>
+            </div>
+            <div class="item-number">
+                <small>
+                Item: <span data-bind="text : childSKUs[0].itemno"></span>
+                </small>
+                </div>
+            <!-- ko if : $parent.selectedOptions.length > 0 -->
+            <!-- ko foreach: $parent.selectedOptions -->
+            <!-- ko if: $data.optionValue != null -->
+            <div class="option-wrap">
+                <small>
+                    <span data-bind="text:optionName"></span>:   <span data-bind="text:optionValue.toLowerCase()"></span>
+                </small>
+            </div>
+            <!-- /ko -->
+            <!-- /ko -->
+            <!-- /ko -->
+           
+            
+          </div>
+          <div class="col-xs-2 checkout-cart-summary-product-price nopad">
+            <span 
+              data-bind="attr : { id: 'CC-checkoutCartSummary-itemPrice-'+id+$parent.catRefId}, currency: {price: $parent.itemTotal(), currencyObj: $parents[1].site().selectedPriceListGroup().currency}" class="pull-right-text">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /ko -->
+    
+    <!-- /ko -->
+    
+    <div class="row collapse" id="showall">
+        <!-- ko foreach: cart().items() -->
+        <!-- ko if:$index() > 3 -->  
+            <div data-bind="with: productData" class="row product-details">
+      <div class="col-xs-3 productImg">
+        <img class="img-responsive" data-bind="productImageSource: 
+                            {src: $data, imageType: 'thumb',
+                             alt: displayName,
+                             errorSrc: '/img/no-image.jpg',
+                             errorAlt: 'Missing Product Image'
+                             },
+                             attr:{id: 'CC-checkoutCartSummary-itemImage-'+id+$parent.catRefId}"></img>
+      </div>
+      <div class="col-xs-9 right-content nopad">
+        <div class="row">
+          <div class="col-xs-10 product-information">
+            <span
+               data-bind="attr : { id: 'CC-checkoutCartSummary-itemDisplayName-'+id+$parent.catRefId}, text: displayName"
+               class="checkout-cart-summary-product-description">
+            </span>
+            <div class="quantity">
+              <small>
+                <span data-bind="widgetLocaleText: 'quantityText'"></span>
+                <span data-bind="attr : { id: 'CC-checkoutCartSummary-itemQuantity-'+id+$parent.catRefId}, ccNumber: $parent.quantity"></span>
+              </small>
+            </div>
+            <!-- ko if : $parent.selectedOptions.length > 0 -->
+            <!-- ko foreach: $parent.selectedOptions -->
+                        <!-- ko if: $data.optionValue != null -->
+            <div class="option-wrap">
+                <small>
+                    <span data-bind="text:optionName"></span>:   <span data-bind="text:optionValue"></span>
+                </small>
+            </div>
+            <!-- /ko -->
+            <!-- /ko -->
+            <!-- /ko -->
+           
+            
+          </div>
+          <div class="col-xs-2 checkout-cart-summary-product-price nopad">
+            <span 
+              data-bind="attr : { id: 'CC-checkoutCartSummary-itemPrice-'+id+$parent.catRefId}, currency: {price: $parent.itemTotal(), currencyObj: $parents[1].site().selectedPriceListGroup().currency}" class="pull-right-text">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- /ko -->
+        <!-- /ko -->
+    </div>
+    <!--Additional Items-->
+    <div class="additional-items row text-center">
+            <div class="CC-checkoutCartSummary-showAllLink" data-bind="if: (cart().items().length > noOfItemsToDisplay())">
+       <span>
+         <a data-toggle="collapse" data-target="#showall" id="CC-checkoutCartSummary-showAll" data-bind="widgetLocaleText : {value:'seeAllProducts', attr:'aria-label'}"><span data-bind="widgetLocaleText: 'showAll'"></span></a>
+       </span>
+     </div>
+        </div>
+    <!--Ends-->
+  </div>
+  
+  
+  
+  <!--Mobile-->
+</div>

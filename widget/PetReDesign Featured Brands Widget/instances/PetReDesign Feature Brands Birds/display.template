@@ -1,0 +1,39 @@
+<!-- ko if: enabled() -->
+<div class="container" id="petredesignFeaturedBrands" data-oc-id="petredesignFeaturedBrands">
+    <div class='container'>
+        <div class='row' id='CLPfeaturedBrands'>
+            <div class="col-sm-2 hidden-xs">
+                
+            </div>
+            <div class='col-sm-10 col-xs-12' id='CLPfeaturedBrands-maincontainer' >
+               <h3 class='title-txt'>Featured Brands</h3>
+               <p class='displaytxt'>We're the company behind the brands you love.</p>
+              <!--  <pre data-bind="text: ko.toJSON(kofeaturedBrandCollection(),  null, 2)"></pre>-->
+                <!-- ko if:kofeaturedBrandCollection().length!=0-->
+                <ul class='featured-menu'>
+                   <!-- ko foreach: kofeaturedBrandCollection()-->
+                   <li class='featured-menu-items'>
+        				    <a class='brandDisplayName' data-bind="ccLink: $data, attr: {href: $data.route}" >
+                                 <!--ko foreach :categoryImages-->
+                    	             <!--ko if:$index()==0-->
+                                 <img data-bind="ccResizeImage: {
+                                                source: $data.url,
+                                                xsmall: '100,180',
+                                                small: '100,180',
+                                                medium: '100,180',
+                                                large: '100,180',
+                                                alt: $parent.displayName,
+                                                title:$parent.displayName}" class="img-responsive" >
+                                             
+                                           <!--/ko--> 
+                                        <!--/ko-->
+                              </a>
+        				 </li>
+        				  <!--/ko-->
+        				  </ul>
+                <!--/ko-->
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- /ko -->

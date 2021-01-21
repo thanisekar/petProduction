@@ -1,0 +1,260 @@
+<div id="confirmation-summary">
+  <div class="row">
+      <div class="col-md-9 col-sm-10 confirmation-summary-center">
+          <div class="confirmation-summary clearfix">
+            <h2 class="order-information" data-bind="widgetLocaleText:'delimiter'"></h2>
+    <!-- ko if: confirmation -->
+    <!-- ko with: confirmation -->
+    
+   <!--Subtotal Section-->
+   
+    <div class="orderSummarryLoadingSection">
+        <h4 data-bind="widgetLocaleText: 'orderSummaryText'"></h4>
+        <div class="checkout-padding-panel">
+                <!-- Sub-Total -->
+    <div class="row">
+      <div class="col-xs-7 nopad">
+        <div data-bind="widgetLocaleText: 'subTotalText'"></div>
+        <!-- ko if: ((typeof taxPriceInfo != "undefined") && (taxPriceInfo != null) && (taxPriceInfo.isTaxIncluded && $parent.cart().showTaxSummary)) -->
+          <div data-bind="widgetLocaleText: 'includingTaxText'"></div>
+        <!-- /ko -->
+      </div>
+      <div class="col-xs-5 nopad">
+        <div data-bind="currency: {price: priceInfo.subTotal, currencyObj: $data.priceListGroup.currency}" class="pull-right"></div>
+      </div>
+    </div>
+    
+    <!-- discount -->
+    <!-- ko if: discountInfo.orderDiscount != 0 -->
+      <div id="CC-confirmationSummary-discount">
+        <span id="CC-confirmationSummary-discountText" data-bind="widgetLocaleText:'discountText'"></span>
+        <span id="CC-confirmationSummary-discountAmt" class="pull-right" data-bind="currency: {price: -discountInfo.orderDiscount, currencyObj: $data.priceListGroup.currency}"></span>
+      </div>
+    <!-- /ko -->
+    
+    <!-- Shipping -->
+    <!-- ko if: shippingGroup.shippingMethodDescription -->
+      <div>
+        <span data-bind="text: shippingGroup.shippingMethodDescription"></span>
+        <!--<span data-bind="widgetLocaleText:'delimiter'"></span>-->
+        <span data-bind="currency: {price: priceInfo.shipping, currencyObj: $data.priceListGroup.currency}"
+          class="pull-right">
+        </span>
+      </div>
+    <!-- /ko -->
+    
+    <!-- ko if: shippingGroup.shippingMethodDescription -->
+      <!-- Shipping Discount -->
+      <!-- ko if: discountInfo.shippingDiscount !== 0 -->
+        <div id="CC-confirmationSummary-shippingDiscount">
+          <span data-bind="widgetLocaleText: 'shippingDiscountText'"></span>
+          <span data-bind="currency: {price: -discountInfo.shippingDiscount, currencyObj: $data.priceListGroup.currency}"
+            class="pull-right">
+          </span>
+        </div>
+      <!-- /ko -->
+      
+      <!-- Shipping Surcharge-->
+      <!-- ko if: priceInfo.shippingSurchargeValue !== 0 -->
+        <div>
+          <span data-bind="widgetLocaleText:'shippingSurchargeText'"></span>
+          <span data-bind="currency: {price: priceInfo.shippingSurchargeValue, currencyObj: $data.priceListGroup.currency}"
+            class="pull-right">
+          </span>
+        </div>
+      <!-- /ko -->
+      
+	<!-- /ko -->
+	
+	
+	
+    <!-- Sales Tax -->
+    <!-- ko if: $parent.cart().showTaxSummary -->
+    <div class="confirmation-sales-tax">
+      <span data-bind="widgetLocaleText: 'salesTaxText'"></span>
+      <span data-bind="currency: {price: priceInfo.tax, currencyObj: $data.priceListGroup.currency}" class="pull-right"></span>
+    </div>
+    <!-- /ko -->
+        
+    <!-- Gift Card Used -->
+    <!-- ko if: $parent.isGiftCardUsed() -->
+    <span data-bind="widgetLocaleText:'giftCardUsedText'"></span>
+    <!-- /ko -->
+    
+    
+    <!-- adding in addition checks on the payment -->
+    <!-- ko if: ((typeof payments != "undefined") && (payments != null)) -->
+      <!-- ko foreach: payments -->
+        <!-- ko if: paymentMethod == "physicalGiftCard" -->
+          <div class="confirmation-gift-cards clearfix discountDescText">
+            <span data-bind="text: maskedCardNumber"></span>
+            <span data-bind="currency: {price: -amount, currencyObj: $parent.priceListGroup.currency}" class="pull-right"></span>
+          </div>
+        <!-- /ko -->
+      <!-- /ko -->
+    <!-- /ko -->
+    
+    
+    <!-- discount descriptions -->
+
+    <div id="CC-confimrationSummary-discounts" class="clearfix discountContainer discountDescText" data-bind="foreach: discountInfo.orderDiscountDescList">
+      <!-- ko if : $data.promotionLevel === "order" -->
+        <div data-bind="attr: { id: 'CC-confimrationSummary-discountEntry-' + $index() }" >
+          <!-- ko ifnot: $data.coupon -->
+            <span data-bind="attr: { id: 'CC-confirmationSummary-discountDescription-' + $index() }, widgetLocaleText : {value:'OrderDiscountDesc', attr: 'innerText', params: {discountDesc: $data.promotionDesc}}" ></span>
+          <!-- /ko -->
+          <!-- ko if : $data.coupon -->
+            <span data-bind="attr: { id: 'CC-confirmationSummary-discountDescription-' + $index() }, widgetLocaleText : {value:'orderCouponDisplayText', attr: 'innerText', params: {description: promotionDesc, code : coupon}}"></span>
+          <!-- /ko -->
+        </div>
+      <!-- /ko -->
+      <!-- ko if : $data.promotionLevel === "item" -->
+        <div data-bind="attr: { id: 'CC-confimrationSummary-discountEntry-' + $index() }" >
+          <!-- ko ifnot: $data.coupon -->
+            <span data-bind="attr: { id: 'CC-confirmationSummary-discountDescription-' + $index() }, text : promotionDesc" ></span>
+          <!-- /ko -->
+          <!-- ko if : $data.coupon -->
+            <span data-bind="attr: { id: 'CC-confirmationSummary-discountDescription-' + $index() }, widgetLocaleText : {value:'couponDisplayText', attr: 'innerText', params: {description: promotionDesc, code : coupon}}"></span>
+          <!-- /ko -->
+        </div>
+      <!-- /ko -->
+      <!-- ko if : $data.promotionLevel === "shipping" -->
+        <div data-bind="attr: { id: 'CC-confimrationSummary-discountEntry-' + $index() }" >
+          <!-- ko ifnot: $data.coupon -->
+            <span data-bind="attr: { id: 'CC-confirmationSummary-discountDescription-' + $index() }, text : promotionDesc" ></span>
+          <!-- /ko -->
+          <!-- ko if : $data.coupon -->
+            <span data-bind="attr: { id: 'CC-confirmationSummary-discountDescription-' + $index() }, widgetLocaleText : {value:'couponDisplayText', attr: 'innerText', params: {description: promotionDesc, code : coupon}}"></span>
+          <!-- /ko -->
+        </div>
+      <!-- /ko -->
+    </div>
+
+    <!-- Order Total -->
+    <!-- ko if: ((typeof taxPriceInfo != "undefined") && (taxPriceInfo != null) && (taxPriceInfo.isTaxIncluded && $parent.cart().showTaxSummary)) -->
+    <div class="confirmation-total">
+      <div class="confirmation-total-ex-tax">
+        <span class="order-text" data-bind="widgetLocaleText:'totalExcludingTaxText'"></span>
+        <span data-bind="currency: {price: priceInfo.totalWithoutTax, currencyObj: $data.priceListGroup.currency}" class="pull-right ordersumprice"></span>
+      </div>
+      <div class="row">
+        <div class="col-md-7 col-sm-12 col-xs-7">
+          <div class="order-text" data-bind="widgetLocaleText: 'orderTotalText'"></div>
+          <div class="includingtaxtext" data-bind="widgetLocaleText:'includingTaxText'"></div>
+        </div>
+        <div class="col-md-5 col-sm-12 col-xs-5">
+          <div data-bind="currency: {price: priceInfo.total, currencyObj: $data.priceListGroup.currency}" class="pull-right ordersumprice"></div>
+        </div>
+      </div>
+    </div>
+    <!-- /ko -->
+    
+    <!-- ko ifnot: ((typeof taxPriceInfo != "undefined") && (taxPriceInfo != null) && (taxPriceInfo.isTaxIncluded && $parent.cart().showTaxSummary)) -->
+    <div class="confirmation-total">
+      <span data-bind="widgetLocaleText: 'orderTotalText'"></span>
+      <span data-bind="currency: {price: priceInfo.total, currencyObj: $data.priceListGroup.currency}" class="pull-right ordersumprice"></span>
+    </div>
+    <!-- /ko -->
+        </div>
+   </div>
+     <!--Payment Section-->
+      <div class="row orderSummaryPaymentSection">
+    <h4 class="header-title">Payment Details</h4>
+    <div class="checkout-padding-panel">
+      <!--<pre data-bind="text: ko.toJSON(payments, null, 2)"></pre> --> 
+      <!-- ko foreach: payments -->
+      <!-- ko with: customPaymentProperties -->
+      <!-- ko if: paymentInstrumentType == 'CreditCard'-->
+
+        <div data-bind="text:cardType"></div>
+        <div data-bind="text:$parents[1].shippingAddress.email"></div>
+        <div data-bind="text:cardholderName"></div>
+        <div><span>XXXX-XXXX-XXXX-</span><span data-bind="text:last4"></span></div>
+        <div class="payment-details-expiry">
+          <span data-bind="text:expirationDate"></span>
+        </div>
+
+      <!-- /ko -->
+      <!-- ko if: paymentInstrumentType == 'paypal_account'-->
+      <div class="payment-details">
+        <!--<pre data-bind="text: ko.toJSON(paymentInstrumentType.split('_')[0], null, 2)"></pre>-->
+        <p data-bind="text:paymentInstrumentType.split('_')[0]"></p>
+        <p data-bind="text:payerEmail"></p>
+      </div>
+      <!-- /ko -->
+      <!-- /ko -->
+      <!-- /ko -->
+    </div>
+  </div>
+     <!--Ends-->
+     <!--Shipping Address-->
+    <!-- ko with: shippingAddress -->
+     <div class="row orderSummaryShippingSection">
+         
+    <h4 class="header-title">Shipping Address</h4>
+    <div class="checkout-padding-panel">
+        <div class="shipping-address-owner">
+            <span data-bind="text:firstName"></span> <span data-bind="text:lastName"></span>
+        </div>
+
+        <div class="">
+            <span class="address" data-bind="text: address1"></span>
+              <!-- ko if: address2 !="" -->
+              ,<span class="address" data-bind="text: address2"></span>
+              <!-- /ko -->
+        </div>
+        <div>
+          <span class="address" data-bind="text: city"></span>&nbsp;<span class="address" data-bind="text: state"></span>&nbsp;<span class="address" data-bind="text: postalCode"></span>
+        </div>
+        <div class="address" data-bind="text: country">US</div>
+
+      <div>
+        <!--<span class="shipping-address-details" data-bind="text: $parents[1].maskPhoneNumber(phoneNumber)"></span>-->
+        <span class="shipping-address-details" data-bind="text: phoneNumber"></span>
+      </div>
+    </div>
+    </div>
+    <!-- /ko -->
+    <!--ENds-->
+    <!--Your Contact Information -->
+     <div class="row">
+        <p class="header-title">
+          <strong>Your Contact Information</strong>
+        </p>
+        <div class="checkout-padding-panel">
+          <!--<span><strong class="shipping-address-email">Email Address</strong></span><br>-->
+          <!-- ko with: shippingAddress -->
+          <div>
+            <span class="shipping-address-email-details" data-bind="text: email"></span>
+          </div>
+          <!-- /ko -->
+        </div>
+  </div>
+     <!--Your Contact Information ends -->
+    
+    
+    
+    <!-- /ko -->
+    <!-- /ko -->
+    
+    
+    <!-- ko ifnot: confirmation -->
+    <div data-bind="widgetLocaleText: 'orderDoesNotExist'"></div>
+    <!-- /ko -->
+
+  </div>
+
+  <div class="confirmation-continue-shopping clearfix hide">
+    <a id="confirmationSummary-continueShopping" data-bind="widgetLocaleText: 'continueShoppingText', ccLink: 'home'" class="cc-button-secondary col-xs-12">Continue Shopping</a>
+  </div>
+      </div>
+  </div>
+    
+    
+    
+    
+    
+   
+
+
+</div>
