@@ -122,7 +122,7 @@
 					    <a tabindex="0" data-bind="ccLink:{route:'/category/L1-accessoriesL2-dog-accessories'}" class="category-header Level2 inLine font14">Dog Accessories</a>
 					</td>
 					<td>
-					    <a tabindex="0" data-bind="ccLink:{route:'/cats/cat-accessories/category/L1-accessoriesL2-cat-accessories'}" class="category-header Level2 inLine font14">Accessories for Cats</a>
+					    <a tabindex="0" data-bind="ccLink:{route:'/category/L1-accessoriesL2-cat-accessories'}" class="category-header Level2 inLine font14">Accessories for Cats</a>
 					</td>
 					<td>
 					    <a tabindex="0" data-bind="ccLink:{route:'/category/L1-replacement-parts'}" class="category-header Level2 inLine font14">All Replacement Parts </a>
@@ -130,78 +130,78 @@
 				</tr>
 				<tr>
 					<td>
-					   <a tabindex="0" data-bind="ccLink:{route:'/dogs/dog-bedding/category/L1-beddingL2-dog-beds'}" class="category-header Level2 inLine font14">Dog Bedding</a>
+					   <a tabindex="0" data-bind="ccLink:{route:'/category/L1-beddingL2-dog-beds'}" class="category-header Level2 inLine font14">Dog Bedding</a>
 					</td>
 					<td>
-					    <a tabindex="0" data-bind="ccLink:{route:'/cats/cat-beds/category/L1-beddingL2-cat-beds'}" class="category-header Level2 inLine font14" >Cat Beds</a>
+					    <a tabindex="0" data-bind="ccLink:{route:'/category/L1-beddingL2-cat-beds'}" class="category-header Level2 inLine font14" >Cat Beds</a>
 					</td>
 					<td>
-					    <a tabindex="0" data-bind="ccLink:{route:'/replacement-parts/feeding-watering/category/L1-replacement-partsL2-feeding-watering'}" class="category-header Level2 inLine font14" >Feeding &amp; Watering Replacement Parts</a>
+					    <a tabindex="0" data-bind="ccLink:{route:'/category/L1-replacement-partsL2-feeding-watering'}" class="category-header Level2 inLine font14" >Feeding &amp; Watering Replacement Parts</a>
 					</td>
 				</tr>
 				<tr>
 				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/dogs/dog-collars-leashes/category/L1-collars-leashesL2-dog-collars-leashes'}" class="category-header Level2 inLine font14" >Dog Collars &amp; Leashes</a>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-collars-leashesL2-dog-collars-leashes'}" class="category-header Level2 inLine font14" >Dog Collars &amp; Leashes</a>
 				    </td>
 				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/cats/cat-collars-leashes/category/L1-collars-leashesL2-cat-collars-leashes'}" class="category-header Level2 inLine font14">Cat Collars &amp; Leashes</a>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-collars-leashesL2-cat-collars-leashes'}" class="category-header Level2 inLine font14">Cat Collars &amp; Leashes</a>
 				    </td>
 				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/replacement-parts/kennels-carriers/category/L1-replacement-partsL2-kennels-carriers'}" class="category-header Level2 inLine font14">Kennel &amp; Carrier Replacement Parts</a>
-				    </td>
-				</tr>
-				<tr>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/dogs/dog-feeding-watering/category/L1-feeding-wateringL2-dog-feeding-watering'}" class="category-header Level2 inLine font14" >Feeding &amp; Watering</a>
-				    </td>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/cats/cat-feeding-watering/category/L1-feeding-wateringL2-cat-feeding-watering'}" class="category-header Level2 inLine font14" >Feeding &amp; Watering for Cats</a>
-				    </td>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/replacement-parts/litter-pans/category/L1-replacement-partsL2-litter-pans'}" class="category-header Level2 inLine font14" >Litter Pan Replacement Parts</a>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-replacement-partsL2-kennels-carriers'}" class="category-header Level2 inLine font14">Kennel &amp; Carrier Replacement Parts</a>
 				    </td>
 				</tr>
 				<tr>
 				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/dogs/dog-grooming/category/L1-groomingL2-dog-grooming'}" class="category-header Level2 inLine font14" >Grooming Accessories for Dogs</a>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-feeding-wateringL2-dog-feeding-watering'}" class="category-header Level2 inLine font14" >Feeding &amp; Watering</a>
 				    </td>
 				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/cats/cat-grooming/category/L1-groomingL2-cat-grooming'}" class="category-header Level2 inLine font14" >Cat Grooming Supplies</a>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-feeding-wateringL2-cat-feeding-watering'}" class="category-header Level2 inLine font14" >Feeding &amp; Watering for Cats</a>
 				    </td>
 				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/replacement-parts/shelters/category/L1-replacement-partsL2-shelters'}" class="category-header Level2 inLine font14" >Shelter Replacement Parts</a>
-				    </td>
-				</tr>
-				<tr>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/dogs/dog-kennels-carriers/category/L1-kennels-carriersL2-dog-kennels-carriers'}" class="category-header Level2 inLine font14" >Dog Kennels</a>
-				    </td>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/cats/cat-kennels-carriers/category/L1-kennels-carriersL2-cat-kennels-carriers'}" class="category-header Level2 inLine font14">Cat Kennels &amp; Carriers</a>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-replacement-partsL2-litter-pans'}" class="category-header Level2 inLine font14" >Litter Pan Replacement Parts</a>
 				    </td>
 				</tr>
 				<tr>
 				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/dogs/dog-shelters/category/L1-sheltersL2-dog-shelters'}" class="category-header Level2 inLine font14">Shelters for Dogs</a>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-groomingL2-dog-grooming'}" class="category-header Level2 inLine font14" >Grooming Accessories for Dogs</a>
 				    </td>
 				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/cats/cat-shelters/category/L1-sheltersL2-cat-shelters'}" class="category-header Level2 inLine font14">Top Cat Shelters</a>
-				    </td>
-				</tr>
-				<tr>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/dogs/dog-toys/category/L1-toysL2-dog-toys'}" class="category-header Level2 inLine font14">Popular Dog Toys</a>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-groomingL2-cat-grooming'}" class="category-header Level2 inLine font14" >Cat Grooming Supplies</a>
 				    </td>
 				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/cats/cat-toys/category/L1-toysL2-cat-toys'}" class="category-header Level2 inLine font14">Cat Toys</a>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-replacement-partsL2-shelters'}" class="category-header Level2 inLine font14" >Shelter Replacement Parts</a>
 				    </td>
 				</tr>
 				<tr>
 				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/dogs/dog-travel/category/L1-travelL2-dog-travel'}" class="category-header Level2 inLine font14">Travel Accessories for Dog Owners</a>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-kennels-carriersL2-dog-kennels-carriers'}" class="category-header Level2 inLine font14" >Dog Kennels</a>
 				    </td>
 				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/cats/cat-travel/category/L1-travelL2-cat-travel'}" class="category-header Level2 inLine font14">Travel Accessories for Cat Owners</a>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-kennels-carriersL2-cat-kennels-carriers'}" class="category-header Level2 inLine font14">Cat Kennels &amp; Carriers</a>
+				    </td>
+				</tr>
+				<tr>
+				    <td>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-sheltersL2-dog-shelters'}" class="category-header Level2 inLine font14">Shelters for Dogs</a>
+				    </td>
+				    <td>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-sheltersL2-cat-shelters'}" class="category-header Level2 inLine font14">Top Cat Shelters</a>
+				    </td>
+				</tr>
+				<tr>
+				    <td>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-toysL2-dog-toys'}" class="category-header Level2 inLine font14">Popular Dog Toys</a>
+				    </td>
+				    <td>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-toysL2-cat-toys'}" class="category-header Level2 inLine font14">Cat Toys</a>
+				    </td>
+				</tr>
+				<tr>
+				    <td>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-travelL2-dog-travel'}" class="category-header Level2 inLine font14">Travel Accessories for Dog Owners</a>
+				    </td>
+				    <td>
+				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-travelL2-cat-travel'}" class="category-header Level2 inLine font14">Travel Accessories for Cat Owners</a>
 				    </td>
 				</tr>
 			</tbody>

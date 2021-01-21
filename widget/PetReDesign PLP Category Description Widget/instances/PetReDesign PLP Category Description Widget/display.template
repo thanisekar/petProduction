@@ -29,22 +29,22 @@
 <table class="table table-borderless">
 	<tbody>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dogs/dog-bedding/category/L1-beddingL2-dog-beds'}"  tabindex="0">Dog Beds and Supplies</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/L1-beddingL2-dog-beds'}"  tabindex="0">Dog Beds and Supplies</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dog-collars-leashes/collars/category/120916'}"  tabindex="0">Dog Collars</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/dog-collars'}"  tabindex="0">Dog Collars</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dog-feeding-watering/food-storage/category/120936'}"  tabindex="0">Dog Food Storage</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/dog-food-storage'}"  tabindex="0">Dog Food Storage</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cats/cat-toys/category/L1-toysL2-cat-toys'}"  tabindex="0">Cat Toys</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/L1-toysL2-cat-toys'}"  tabindex="0">Cat Toys</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cats/cat-kennels-carriers/category/L1-kennels-carriersL2-cat-kennels-carriers'}"  tabindex="0">Cat Kennels</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/L1-kennels-carriersL2-cat-kennels-carriers'}"  tabindex="0">Cat Kennels</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cat-collars-leashes/collars/category/120914'}"  tabindex="0">Cat Collars</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/cat-collars'}"  tabindex="0">Cat Collars</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -66,22 +66,22 @@
 <table class="table table-borderless">
 	<tbody>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dogs/dog-bedding/category/L1-beddingL2-dog-beds'}" tabindex="0">See all Dog Beds</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/L1-beddingL2-dog-beds'}" tabindex="0">See all Dog Beds</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dog-collars-leashes/collars/category/120916'}"  tabindex="0">Unique Dog Collars</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/dog-collars'}"  tabindex="0">Unique Dog Collars</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dog-feeding-watering/food-storage/category/120936'}"  tabindex="0">Dog Food Storage</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/dog-food-storage'}"  tabindex="0">Dog Food Storage</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cats/cat-toys/category/L1-toysL2-cat-toys'}"  tabindex="0">Cat Toys</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/L1-toysL2-cat-toys'}"  tabindex="0">Cat Toys</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cats/cat-kennels-carriers/category/L1-kennels-carriersL2-cat-kennels-carriers'}"  tabindex="0">Cat Kennels</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/L1-kennels-carriersL2-cat-kennels-carriers'}"  tabindex="0">Cat Kennels</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cat-collars-leashes/collars/category/120914'}"  tabindex="0">Cat Collars</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/cat-collars'}"  tabindex="0">Cat Collars</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -104,22 +104,22 @@
 <table class="table table-borderless">
 	<tbody>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dogs/dog-bedding/category/L1-beddingL2-dog-beds'}"  tabindex="0">Beds for Dogs</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/L1-beddingL2-dog-beds'}"  tabindex="0">Beds for Dogs</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dog-collars-leashes/collars/category/120916'}"  tabindex="0">Dog Collars</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/dog-collars'}"  tabindex="0">Dog Collars</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dog-feeding-watering/food-storage/category/120936'}"  tabindex="0">Food Storage for Dogs</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/dog-food-storage'}"  tabindex="0">Food Storage for Dogs</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cats/cat-toys/category/L1-toysL2-cat-toys'}" tabindex="0">Cat Scratching Posts and Toys</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/L1-toysL2-cat-toys'}" tabindex="0">Cat Scratching Posts and Toys</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cats/cat-kennels-carriers/category/L1-kennels-carriersL2-cat-kennels-carriers'}"  tabindex="0">Best Cat Kennels</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/L1-kennels-carriersL2-cat-kennels-carriers'}"  tabindex="0">Best Cat Kennels</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/cat-collars-leashes/collars/category/120914'}"  tabindex="0">Reflective Cat Collars</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/reflective-cat-collars'}"  tabindex="0">Reflective Cat Collars</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -141,13 +141,13 @@
 <table class="table table-borderless">
 	<tbody>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dogs/dog-bedding/category/L1-beddingL2-dog-beds'}" tabindex="0">Amazing Dog Bedding</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/L1-beddingL2-dog-beds'}" tabindex="0">Amazing Dog Bedding</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dog-collars-leashes/collars/category/120916'}"  tabindex="0">All Dog Collars</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/dog-collars'}"  tabindex="0">All Dog Collars</a></td>
 		</tr>
 		<tr>
-			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/dog-feeding-watering/food-storage/category/120936'}"  tabindex="0">Food Storage for Dogs</a></td>
+			<td><a class="category-header Level2 inLine font14" data-bind="ccLink:{route:'/category/dog-food-storage'}"  tabindex="0">Food Storage for Dogs</a></td>
 		</tr>
 	</tbody>
 </table>
