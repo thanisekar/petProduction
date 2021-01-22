@@ -51,6 +51,8 @@ define(
             isOverWeight: ko.observable(false),
             koIsFreeShipping: ko.observable(false),
             overRideWeight: ko.observable(false),
+            koSmallKennels: ko.observable(false),
+            koOrderExceptionSku: ko.observable(),
             koPromoUpsell: ko.observable(),
             paypalImageSrc: ko.observable("https://fpdbs.paypal.com/dynamicimageweb?cmd=_dynamic-image"),
             // Spinner resources
@@ -916,6 +918,8 @@ define(
                  getWidget.isOverSized(false);
                  getWidget.koIsFreeShipping(false);
                  getWidget.overRideWeight(false);
+                 var smallKennels = ['00100','00200','00300','21859','21863','21947','21948','21790','21850','21100','21142','21551','21552','21087','21091','21083','21084','21085','21086','21090','21089','21088','21181','21182','41298','41299','41300','41021','41022','41023','41024','21225','21227','21231','21232','41130','41033','41034','41039','41037','41031','41040','41038','41032','21937','21791','21792','21793','21794'
+                 ,'41165','37058','37062','41131','41129'];
                 $.each(getWidget.cart().allItems(), function(index, value) {
                     if (value.productData() != undefined) {
                         if (value.productData().childSKUs !== null) {
@@ -923,12 +927,18 @@ define(
                                 if (value.productData().childSKUs[0] != undefined) {
                                     if (value.productData().childSKUs[0].overSizedSku) {
                                         getWidget.isOverSized(true);
+                                        getWidget.koOrderExceptionSku(value.productData().childSKUs[0].repositoryId);
                                     }
                                     if (value.productData().childSKUs[0].isFreeShipping) {
                                         getWidget.koIsFreeShipping(true);
                                     }
                                     if (value.productData().childSKUs[0].x_overRideWeight) {
                                         getWidget.overRideWeight(true);
+                                    }
+                                    if(smallKennels.includes(value.productData().childSKUs[0].repositoryId)){
+                                        getWidget.koSmallKennels(true);
+                                        getWidget.koOrderExceptionSku(value.productData().childSKUs[0].repositoryId);
+                                       // console.log('value.productData().childSKUs[0]',value.productData().childSKUs[0].repositoryId);
                                     }
                                 }
                             }
@@ -1179,8 +1189,8 @@ define(
 
 		// Case 13: Alaska/Hawai
                 setTimeout(function() {
-                 $.Topic("shippingLoaded.memory").subscribe(function(e){
-                    if(getWidget.airCheck() && getWidget.isOverSized()){
+                 //$.Topic("shippingLoaded.memory").subscribe(function(e){
+                    if((getWidget.airCheck() && getWidget.isOverSized()) || (getWidget.isOverSized() && getWidget.isAPOCheck()) || (getWidget.airCheck() && getWidget.koSmallKennels())){
                         $("#CC-orderSummaryLoadingModal").hide();
                         $('.state-alert').css('display','block'); 
                         $('.overSized').hide();
@@ -1205,7 +1215,7 @@ define(
                         getWidget.shippingmethods().defaultShipping("300010");
                         getWidget.selectedShippingValue("300010");
                     }
-                 })
+                 //})
                 }, 300);
                 },
 

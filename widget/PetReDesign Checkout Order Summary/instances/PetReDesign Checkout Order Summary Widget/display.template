@@ -198,7 +198,7 @@
     </div>
     
     
-            <div class="state-alert">One or more of your items are not eligible to ship to Alaska or Hawaii. Please remove this item to proceed with checkout.</div>
+            <div class="state-alert">One or more items is not eligible to ship to AK, HI, or an APO address. Please remove the item(<span data-bind="text:koOrderExceptionSku"></span>) to proceed with your checkout.</div>
     <!-- Gift Card -->
     <!--  ko with: order -->
     <!-- ko if: giftCards().length >0 --> 
