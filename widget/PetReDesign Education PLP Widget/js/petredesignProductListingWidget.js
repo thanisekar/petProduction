@@ -22,7 +22,7 @@ define(['knockout', 'viewModels/productListingViewModelFactory', 'CCi18n',
             productsPerPage: ko.observable(),
             currentPageUrl: ko.observable(),
             koContextId: ko.observable(''),
-            koSelectedIndex: ko.observable(0),
+            koSelectedIndex: ko.observable(1),
             sortOptionIndexValue: ko.observable(0),
             koGetCategories:ko.observableArray([]),
             koUserDetails:ko.observable(),
@@ -334,6 +334,10 @@ define(['knockout', 'viewModels/productListingViewModelFactory', 'CCi18n',
                     if ((!category || (category.id != value.id)) || (previousSearch) || (!widget.listingViewModel().paginationOnly)) {
 
                         widget.listingViewModel().resetSortOptions();
+                        //Fix to display Newest articles onload
+                       widget.listingViewModel().sortDirectiveProp(widget.listingViewModel().sortOptions()[1].id), 
+                       widget.listingViewModel().sortDirectiveOrder(widget.listingViewModel().sortOptions()[1].order());         
+                       //Ends
                         widget.listingViewModel().category(value);
                         widget.listingViewModel().clearOnLoad = true;
                         widget.listingViewModel().load(1);
@@ -484,17 +488,18 @@ define(['knockout', 'viewModels/productListingViewModelFactory', 'CCi18n',
                         }
                     }, function(data) {});
                 });
-                setTimeout(function(){
+                /*setTimeout(function(){
                     if($('#CC-product-listing-sortby-controls .sorting-values:nth-child(2)').text() == 'Newest'){
                      $('#CC-product-listing-sortby-controls .sorting-values:nth-child(2)').click();
                  }
-                },1000)
+                },1000)*/
             },
             
              truncate:function(string){
                  var getString;
         			   getString=string();
-                        if (string().length > 155 )
+        			   if(getString){
+        			        if (string().length > 155 )
                            {
                              getString= string().substring(0,155)+'...'; 
                                return getString;
@@ -502,6 +507,8 @@ define(['knockout', 'viewModels/productListingViewModelFactory', 'CCi18n',
                            else{
                                 return getString;
                            }
+        			   }
+                       
              
                  },
             
