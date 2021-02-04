@@ -5,7 +5,7 @@
     <div class="header-wrapper">
         <div class="circle">2</div><h2 data-bind="widgetLocaleText:'shippingAddressText'"></h2>
          <div class="internationalShipping"><a data-bind="ccLink : {route : '/internationalShipping'}">*For International Shipping? 
-         <img src="https://www.c21stores.com/on/demandware.static/Sites-C21-Site/-/default/dw4f2ea148/images/myUS.svg" title="Sign up for International Shipping with MyUS" alt="Sign up for International Shipping with MyUS"></a> </div>
+         <img src="https://www.myus.com/content/images/logo.svg" title="Sign up for International Shipping with MyUS" alt="Sign up for International Shipping with MyUS"></a> </div>
   
 
     </div>
