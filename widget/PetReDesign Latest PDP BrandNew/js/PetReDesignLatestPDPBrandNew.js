@@ -1186,7 +1186,7 @@ define(
                 if(itemBrandArray){
                     for (var t = 0; t < itemBrandArray.length; t++) {
                     itemBrand = itemBrandArray[t].route();
-                    if(itemBrand.indexOf("/brands/") != -1){
+                    if(itemBrand.indexOf("brand-") != -1){
                          itemBrand = itemBrandArray[t].route();
                         widgetModel.koBrandRoute(itemBrand);
                         return
