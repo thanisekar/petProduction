@@ -905,14 +905,15 @@ define(['knockout', 'viewModels/productListingViewModelFactory', 'CCi18n',
             truncate: function(string) {
                 var combinedString = string;
                 var finalString;
-                if (combinedString.length > 150) {
-                    var getString = combinedString.substring(0, 150) + '...';
-                    return getString;
-
-                } else {
-                    return string;
+                if(combinedString){
+                    if (combinedString.length > 150) {
+                        var getString = combinedString.substring(0, 150) + '...';
+                        return getString;
+    
+                    } else {
+                        return string;
+                    }
                 }
-
             },
 
 
