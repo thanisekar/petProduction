@@ -1169,6 +1169,12 @@ define(
                         if (item == id) {
                             itemNumber = itemNoArray[t].itemno();
                             widgetModel.koproductItemNo(itemNumber);
+                            var final = productIds.indexOf(itemNumber);
+                            if(final >= 0){
+                                widgetModel.koAvailableOnline(false);
+                            }else{
+                                widgetModel.koAvailableOnline(true);
+                            }
                         }
                     }
 
