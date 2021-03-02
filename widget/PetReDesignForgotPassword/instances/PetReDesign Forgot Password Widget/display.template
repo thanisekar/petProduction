@@ -6,7 +6,7 @@
             <div class="page-header">
                 <h2>FORGOT PASSWORD</h2>
             </div>
-            <div class="page-body col-sm-8 col-md-7">
+            <div class="page-body">
                 <form id="forgotPassword" data-bind="template: { afterRender: $parent.forgetPwdFormValidate() }">
                     <label class="caption">Enter the email address you used when creating the account and click Send Password Reset Email. A message will be sent to that address containing a link to reset your password.</label>
                     <div class="error-msg" data-bind="visible: $parent.noProfileError">No profile found.</div>
@@ -17,9 +17,9 @@
                     <button type="submit" class="btn btn-block" data-bind="event: { click: function(data, event) { $parent.resetForgotPasswordSubmit(data) } }">Send Password Reset Email</button>
                 </form>
                 <div class="panel">
-                    <p class="h4">
-                        New User? <span class="registerBtn"><a data-bind="ccLink:{route: '/createaccount'}">Register Here</a></span>
-                    </p>
+                    <div class="h4">
+                         <div style="margin-bottom: 5px;">New User?</div><a class="craeteAccount" data-bind="ccLink:{route: '/createaccount'}">Register Here</a>
+                    </div>
                 </div>
             </div>
         </div>
