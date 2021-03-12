@@ -143,8 +143,8 @@
                         <!--/ko-->
                         <input type="hidden" id="totalCreateCountvar" value>
                         <div class="add-button add-create-account column mb-40">
-                            <a  class="button--add add-pet"></a>
-                            <span class="text">add another pet</span>
+                            <a  class="button--add button--add--style add-pet"></a>
+                            <span class="text button--add">add another pet</span>
                         </div>
                         <hr class="mb-30">
                        
