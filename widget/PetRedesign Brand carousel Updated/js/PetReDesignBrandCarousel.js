@@ -24,7 +24,7 @@ define(
 				  "id":"brand-Chuckit"
 			   },
 			   {
-				  "route":"/healthychews",
+				  "route":"/category/brand-healthychews",
 				  "displayName":"Healthy Chews",
 				  "id":"brand-healthychews"
 			   },

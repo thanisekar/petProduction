@@ -10,8 +10,8 @@
       "altText": "${occ:widgetCustomText('1900005')}",
       "altTextId": "1900005",
       "isProductImage": false,
-      "link": "/emailsignup",
-      "src": "/file/v4326542414986873786/general/Jan21Email_SignUp_Homepage.jpg",
+      "link": "/jw-puppy-connects/product/53002",
+      "src": "/file/v1181481521252415366/general/March21_PMProductOfTheMonth_PuppyConnects.jpg",
       "titleText": "${occ:widgetCustomText('1900006')}",
       "titleTextId": "1900006",
       "zoomEnabled": false
@@ -34,8 +34,8 @@
       "altText": "${occ:widgetCustomText('1900003')}",
       "altTextId": "1900003",
       "isProductImage": false,
-      "link": "/category/brand-fatcat",
-      "src": "/file/v68127129636204598/general/January-2021_FC_Cat-Toy-Awa.jpg",
+      "link": "/national-k9-veterans-day-why-and-how-to-celebrate/article/a90120",
+      "src": "/file/v8287128257183427502/general/March-2021_PM_K9VeteransDay.jpg",
       "titleText": "${occ:widgetCustomText('1900004')}",
       "titleTextId": "1900004",
       "zoomEnabled": false
@@ -71,8 +71,8 @@
       "altText": "${occ:widgetCustomText('3000001')}",
       "altTextId": "3000001",
       "isProductImage": false,
-      "link": "/nano",
-      "src": "/file/v6825250209257088652/general/January-2021_G2_Nano_Web-Ba.jpg",
+      "link": "/jw-robobone-electronic-treat-dispenser/product/32290",
+      "src": "/file/v9043045031721432496/general/Robobone_Web-Banner-01.jpg",
       "titleText": "${occ:widgetCustomText('2100001')}",
       "titleTextId": "2100001",
       "zoomEnabled": false
@@ -106,6 +106,7 @@
 
       <!-- oc section: image -->
 <span data-bind="element: 'image',id: '1900011'"></span>
+
       <!-- /oc -->
 
     </div>
@@ -115,7 +116,6 @@
 
       <!-- oc section: image -->
 <span data-bind="element: 'image',id: '1900010'"></span>
-
       <!-- /oc -->
 
     </div>

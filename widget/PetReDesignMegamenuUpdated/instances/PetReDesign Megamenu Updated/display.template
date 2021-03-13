@@ -686,17 +686,17 @@
                                                   
                                                     <ul >
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/120994'}" >accessories</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/cat-travel-accessories'}" >accessories</a>
                                                         </li>
                                                         <li>
                                                           <a class="Level3 " data-bind="ccLink:{route:'/category/cat-Pet-Strollers'}" >Pet Strollers</a>
                                                           </li>
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/120995'}" >plastic travel kennels</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/cat-plastic-travel-kennels'}" >plastic travel kennels</a>
                                                         </li>
                                                      
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/120996'}">softsided carriers</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/soft-sided-cat-carriers'}">softsided carriers</a>
                                                         </li>
                                                      </ul>
                                                    
@@ -713,11 +713,11 @@
                                                   
                                                     <ul >
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/121007'}" >filters</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/litter-box-filters'}" >filters</a>
                                                         </li>
                                                      
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/121008'}" >liners</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/litter-box-liners'}" >liners</a>
                                                         </li>
                                                      
                                                         <li>
@@ -725,15 +725,15 @@
                                                         </li>
                                                      
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/121011'}">litter pans</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/cat-litter-boxes-pans'}">litter pans</a>
                                                         </li>
                                                      
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/121012'}" >litter scoops</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/cat-litter-scoops'}" >litter scoops</a>
                                                         </li>
                                                      
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/121013'}" >starter kits</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/litter-box-starter-kits'}" >starter kits</a>
                                                         </li>
                                                      </ul>
                                                  
@@ -775,24 +775,17 @@
                                                 
                                                     <ul >
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/120896'}" >bird baths</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/bird-cage-baths'}" >bird baths</a>
                                                         </li>
                                                      
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/120897'}" >sand perches</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/bird-perches'}" >bird perches</a>
                                                         </li>
                                                      
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/120898'}" >swing perches</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/bird-cage-swings'}" >bird swings</a>
                                                         </li>
                                                      
-                                                        <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/120899'}" >wood perches</a>
-                                                        </li>
-                                                     
-                                                        <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/121016'}" >rope perches</a>
-                                                        </li>
                                                         <li>
                                                          <a class="Level3 " data-bind="ccLink :{route :'/category/122001'}">Fish Supplies</a>
                                                         </li>
@@ -810,38 +803,21 @@
                                                   
                                                     <ul >
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/120922'}" >feeders</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/bird-feeders'}" >feeders</a>
                                                         </li>
                                                      
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/120923'}" >waterers</a>
-                                                        </li>
-                                                        <li>
                                                           <a class="Level3 " data-bind="ccLink :{route:'/category/bird-food-storage'}">food storage</a>    
                                                         </li>
-                                                     </ul>
-                                                   
-												</li>
-											
-											</ul>
-										
-											<ul>
-										
-												<li class="subCatagoryLevel1">
-													<a tabindex="0" data-bind="ccLink:{route:'/category/L1-groomingL2-bird-grooming'}"  class="category-header Level2 inLine font14">grooming</a>
-                                                   
-                                                    <ul >
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/130896'}">bathing</a>
+                                                          <a class="Level3 " data-bind="ccLink :{route:'/category/bird-waterers'}">waterers</a>    
                                                         </li>
                                                      </ul>
-                                                 
+                                                   
 												</li>
 											
-											
-												
 											</ul>
-										
+						
 											<ul>
 										
 												<li class="subCatagoryLevel1">
@@ -849,7 +825,7 @@
                                                   
                                                     <ul >
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/120978'}" >chicken coops</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/chicken-coops'}" >chicken coops</a>
                                                         </li>
                                                           <li>
                                                           <a class="Level3 " data-bind="ccLink:{route:'/category/small-animal-cages'}" >small animal cages</a>
@@ -867,11 +843,15 @@
                                                 
                                                     <ul >
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/120983'}">interactive</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/interactive-bird-toys'}">interactive toys</a>
                                                         </li>
                                                      
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/120984'}" >solo play</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/bird-cage-mirror-toys'}" >mirror toys</a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/solo-play-bird-toys'}" >solo play toys</a>
                                                         </li>
                                                      </ul>
                                                    
@@ -916,7 +896,7 @@
                                                  <a data-bind="ccLink:{route:'/category/brand-gensevenpets'}" class=" brand-image-link" href="">
                                                     <img src="/file/collections/brand-gensevenpets.png"  class="brand-image " alt="brand-gensevenpets" title="brand-gensevenpets">
                                                 </a>
-                                                <a  data-bind="ccLink:{route:'/healthychews'}"  class=" brand-image-link" >
+                                                <a  data-bind="ccLink:{route:'/category/brand-healthychews'}"  class=" brand-image-link" >
                                                     <img src="/file/collections/brand-healthychews.png"  class="brand-image " alt="brand-healthychews" title="brand-healthychews">
                                                 </a>
                                                 <a data-bind="ccLink:{route:'/category/brand-petqwerks'}" class=" brand-image-link" href="">
@@ -1902,7 +1882,7 @@
                                                  </div>
                                           
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/120994'}" >accessories</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/cat-travel-accessories'}" >accessories</a> </li>
                                                 </ul>
                                                 
                                                 
@@ -1912,11 +1892,11 @@
                                                 
                                                 
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/120995'}" >plastic travel kennels</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/cat-plastic-travel-kennels'}" >plastic travel kennels</a> </li>
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/120996'}" >softsided carriers</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/soft-sided-cat-carriers'}" >softsided carriers</a> </li>
                                                 </ul>
                                              
                                             </div>
@@ -1937,11 +1917,11 @@
                                                  </div>
                                            
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/121007'}" >filters</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/litter-box-filters'}" >filters</a> </li>
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/121008'}" >liners</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/litter-box-liners'}" >liners</a> </li>
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">
@@ -1949,15 +1929,15 @@
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/121011'}" >litter pans</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/cat-litter-boxes-pans'}" >litter pans</a> </li>
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/121012'}" >litter scoops</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/cat-litter-scoops'}" >litter scoops</a> </li>
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/121013'}" >starter kits</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/litter-box-starter-kits'}" >starter kits</a> </li>
                                                 </ul>
                                               
                                             </div>
@@ -2000,24 +1980,17 @@
                                                  </div>
                                           
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/120896'}" >bird baths</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/bird-cage-baths'}" >bird baths</a> </li>
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/120897'}" >sand perches</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/bird-perches'}" >bird perches</a> </li>
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/120898'}" >swing perches</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/bird-cage-swings'}" >bird swings</a> </li>
                                                 </ul>
                                                 
-                                                <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/120899'}" >wood perches</a> </li>
-                                                </ul>
-                                                
-                                                <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/121016'}" >rope perches</a> </li>
-                                                </ul>
                                                   <ul class="sub-menu third-level">
                                                  <li class="mobile-menu-list-noarrow"> <a class="Level3 " data-bind="ccLink :{route :'/category/122001'}">Fish Supplies</a></li>
                                                 </ul>
@@ -2039,41 +2012,20 @@
                                                  </div>
                                            
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/120922'}" >feeders</a> </li>
-                                                </ul>
-                                                
-                                                <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/120923'}" >waterers</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/bird-feeders'}" >feeders</a> </li>
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">
                                                     <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/bird-food-storage'}" >food storage</a> </li>
                                                 </ul>
-                                            </div>
-                                         </li>  
-                                        
-                                       	
-                                        <li class="mobile-menu-list1">
-                                            <a class=""  href="javascript:void(0)">grooming</a>
-                                            
-                                            <div class="mp-level" data-level="3">
-                                                 <div class="row backarrow-section">
-                                                   <div class="col-xs-2 back-icon-wrapper">
-                                                       <a href="href:javascript:void(0)" class="mp-back "></a>
-                                                   </div>
-                                                   <div class="col-xs-10">
-                                                        <a class="categoryDisplayName" data-bind="attr:{href :'/category/L1-groomingL2-bird-grooming'}" >grooming</a>
-                                                   </div>
-                                                 </div>
-                                           
+                                                
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/130896'}" >bathing</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/bird-waterers'}" >waterers</a> </li>
                                                 </ul>
-                                              
                                             </div>
                                          </li>  
-                                        
-                                       	
+                                          
+
                                         <li class="mobile-menu-list1">
                                             <a class=""  href="javascript:void(0)">shelter</a>
                                             
@@ -2088,7 +2040,7 @@
                                                  </div>
                                            
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/120978'}" >chicken coops</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/chicken-coops'}" >chicken coops</a> </li>
                                                 </ul>
                                                  <ul class="sub-menu third-level">
                                                      <li><a class="Level3 " data-bind="attr:{href :'/category/small-animal-cages'}" >small animal cages</a></li>
@@ -2111,11 +2063,15 @@
                                                  </div>
                                            
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/120983'}" >interactive</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/interactive-bird-toys'}" >interactive toys</a> </li>
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/120984'}" >solo play</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/bird-cage-mirror-toys'}" >mirror toys</a> </li>
+                                                </ul>
+                                                
+                                                <ul class="sub-menu third-level">
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/solo-play-bird-toys'}" >solo play toys</a> </li>
                                                 </ul>
                                                 
                                             </div>
@@ -2169,7 +2125,7 @@
                                                         <a  data-bind="attr:{href :'/category/brand-gensevenpets'}" >Gen7 Pets</a>
     												</li>
     												<li class="mobile-menu-list-noarrow">
-                                                          <a  data-bind="ccLink : {route :'/healthychews'}" >Healthy Chews</a>
+                                                          <a  data-bind="ccLink : {route :'/category/brand-healthychews'}" >Healthy Chews</a>
     												</li>
     												<li class="mobile-menu-list-noarrow">
                                                       <a data-bind="attr:{href :'/category/brand-jackson-galaxy'}" >Jackson Galaxy</a>

@@ -50,8 +50,8 @@
 	  </table>	  
 	</div>
 
-<div class="modal width-fixed fade cc-modalForm" id="cc-addNewNotesModal" 
-  tabindex="-1" data-bind="modal: 0, modalTabbingContraint">
+<div class="modal fade" id="cc-addNewNotesModal"
+  tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">

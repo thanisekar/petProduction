@@ -1,20 +1,20 @@
 {
   "configuration": {
     "megamenuImage1": {
-      "src": "/file/v830277454296938505/general/Dogs_MegaMenuOne.jpg",
-      "mediaName": "/general/Dogs_MegaMenuOne.jpg"
+      "src": "/file/v6993165843598290703/general/Dogs_MegaMenu.jpg",
+      "mediaName": "/general/Dogs_MegaMenu.jpg"
     },
     "megamenuImage2": {
-      "src": "/file/v1475940827976061412/general/Cat_with_JGRoundLitterPan.jpg",
-      "mediaName": "/general/Cat_with_JGRoundLitterPan.jpg"
+      "src": "/file/v1852914636640640277/general/Cats_Mega-menu.jpg",
+      "mediaName": "/general/Cats_Mega-menu.jpg"
     },
     "megamenuImage3": {
       "src": "/file/v5890677894089986104/collections/birds_menuimage.jpg",
       "mediaName": "/collections/birds_menuimage.jpg"
     },
     "megamenuImage4": {
-      "src": "/file/v1023179431870641168/general/Dog_with_LZBSofa.jpg",
-      "mediaName": "/general/Dog_with_LZBSofa.jpg"
+      "src": "/file/v4564897484937363517/general/Brands_MegaMenu.jpg",
+      "mediaName": "/general/Brands_MegaMenu.jpg"
     }
   },
   "displayName": "PetReDesign Megamenu Updated"

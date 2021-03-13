@@ -7,7 +7,7 @@
             <p><a href="https://www.adoptapet.com/" target="_blank">Adopt-a-Pet.com</a> is North America’s largest non-profit pet adoption website. They help over 19,000 animal shelters, humane societies, SPCAs, pet rescue groups, and pet adoption agencies advertise their homeless pets for free to millions of adopters a month. Adopt-a-Pet.com believes there’s a great home for every shelter pet, and they’ve made it their mission to help those pets find their way home. They help make that happen by putting as many adoptable pets in front of their visitors as possible and getting them on the path to finding the right pet. </p>
             <p>But they don’t stop there; they provide valuable tools even when things don’t work out. Through Adopt-a-Pet.com’s peer-to-peer adoption service, Rehome, they’re able to help pet owners facing the heartbreaking situation of needing to find their pet a new home. Launched in 2017, Rehome is safe, free, and supportive --and it helps provide much-needed funding to animal shelters and rescues across the country. To date, they’ve helped more than 300,000 pets and raised $1.2 million through the program.</p>
             <p>With the help of their pet-loving sponsors Adopt-a-Pet.com helps homeless dogs, cats, rabbits, and other animals go from alone to adopted.</p>
-            <a data-bind="ccLink:{route:'/welcomehome'}"><img  style="margin: 30px auto;" src="/file/general/PM_Welcome-Home_Banner.jpg" class="img-responsive" ></a>
+            <a data-bind="ccLink:{route:'/welcomehome'}"><img  style="margin: 30px auto;" src="/file/general/PM_Welcome-Home_Banner1.jpg" class="img-responsive" ></a>
         </div>
         <div class="row power">
             <div class="col-md-3 hidden-sm hidden-xs">

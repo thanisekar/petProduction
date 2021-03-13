@@ -21,7 +21,7 @@
                             <!-- ko if : homeBanner2.src() != '' -->
                             <div class="item">
                                 <a data-bind="ccLink: {route: homeBannerLink2()}">
-                              <img data-bind="attr:{src: homeBanner2.src()}" alt="Shop Chuckit! Fetch Toys" title="Shop Chuckit! Fetch Toys">
+                              <img data-bind="attr:{src: homeBanner2.src()}" alt="Shop Pet Qwerks Dog Toys" title="Shop Pet Qwerks Dog Toys">
                             </a>
                             </div>
                              <!-- /ko -->
@@ -35,7 +35,7 @@
 							 <!-- ko if : homeBanner4.src() != '' -->
                             <div class="item">
                               <a data-bind="ccLink: {route: homeBannerLink4()}">
-                            <img data-bind="attr:{src: homeBanner4.src()}" alt="Shop Puppy Toys" title="Shop Puppy Toys">
+                            <img data-bind="attr:{src: homeBanner4.src()}" alt="Shop Chuckit! Fetch Toys" title="Shop Chuckit! Fetch Toys">
                           </a>
                             </div>
                              <!-- /ko -->

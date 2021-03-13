@@ -46,12 +46,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Nano Automatic Pet Feeder",
+        "altText": "Shop JW RoboBone Dog Toy",
         "zoomEnabled": false,
-        "titleText": "Nano Automatic Pet Feeder",
+        "titleText": "Shop JW RoboBone Dog Toy",
         "isProductImage": false,
-        "link": "/nano",
-        "fileName": "January-2021_G2_Nano_Web-Ba.jpg"
+        "link": "/jw-robobone-electronic-treat-dispenser/product/32290",
+        "fileName": "Robobone_Web-Banner-01.jpg"
       }
     },
     {
@@ -73,12 +73,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Petmate Email Sign Up",
+        "altText": "Petmate's March 2021 Product of the Month",
         "zoomEnabled": false,
-        "titleText": "Petmate Email Sign Up",
+        "titleText": "Petmate's March 2021 Product of the Month",
+        "link": "/jw-puppy-connects/product/53002",
         "isProductImage": false,
-        "link": "/emailsignup",
-        "fileName": "Jan21Email_SignUp_Homepage.jpg"
+        "fileName": "March21_PMProductOfTheMonth_PuppyConnects.jpg"
       }
     },
     {
@@ -100,12 +100,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Shop FAT CAT Cat Toys",
+        "altText": "K9 Veterans Day Article | Petmate Academy",
         "zoomEnabled": false,
-        "titleText": "Shop FAT CAT Cat Toys",
+        "titleText": "K9 Veterans Day Article | Petmate Academy",
         "isProductImage": false,
-        "link": "/category/brand-fatcat",
-        "fileName": "January-2021_FC_Cat-Toy-Awa.jpg"
+        "link": "/national-k9-veterans-day-why-and-how-to-celebrate/article/a90120",
+        "fileName": "March-2021_PM_K9VeteransDay.jpg"
       }
     },
     {

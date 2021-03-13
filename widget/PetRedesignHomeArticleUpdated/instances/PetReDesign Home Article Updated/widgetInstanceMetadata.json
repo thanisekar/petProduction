@@ -1,29 +1,29 @@
 {
   "configuration": {
     "ArticleImage4": {
-      "src": "/file/v7894225032341594461/general/a90053.PottyTrainPuppyLikeAPro_MainImage.jpg",
-      "mediaName": "/general/a90053.PottyTrainPuppyLikeAPro_MainImage.jpg"
+      "src": "/file/v3199558294185028723/general/a90112.BadDogBreathCauses_MainImage.jpg",
+      "mediaName": "/general/a90112.BadDogBreathCauses_MainImage.jpg"
     },
     "ArticleImage3": {
-      "src": "/file/v73342984264266845/general/a90100.HowToTreatMattedDogFur_MainImage.jpg",
-      "mediaName": "/general/a90100.HowToTreatMattedDogFur_MainImage.jpg"
+      "src": "/file/v6190104755971095379/general/a90083.ClippingYourCatsNails_MainImage.jpg",
+      "mediaName": "/general/a90083.ClippingYourCatsNails_MainImage.jpg"
     },
     "ArticleImage2": {
-      "src": "/file/v3380485681718337578/general/a90097.5TipsToStopYourDogFromBegging_MainImage.jpg",
-      "mediaName": "/general/a90097.5TipsToStopYourDogFromBegging_MainImage.jpg"
+      "src": "/file/v1555382889229653181/general/a90111.HowToPrepareYourPetForPostPandemicBackToWork_MainImage.jpg",
+      "mediaName": "/general/a90111.HowToPrepareYourPetForPostPandemicBackToWork_MainImage.jpg"
     },
     "ArticleImage1": {
-      "src": "/file/v608306809058644361/general/a10019.HerdingCatsHowToPottyTrainACat_MainImage.jpg",
-      "mediaName": "/general/a10019.HerdingCatsHowToPottyTrainACat_MainImage.jpg"
+      "src": "/file/v5531681244375235161/general/a90120.NationalK9VeteransDay_MainImage.jpg",
+      "mediaName": "/general/a90120.NationalK9VeteransDay_MainImage.jpg"
     },
-    "ArticleImage3Des": "How To Treat Matted Dog Fur",
-    "ArticleImage1Des": "Herding Cats: How to Potty Train a Kitten",
-    "ArticleImage2Des": "5 Tips to Stop Your Dog From Begging",
-    "ArticleImage2URL": "/5-tips-to-stop-your-dog-from-begging/article/a90097",
-    "ArticleImage4Des": "How to Potty Train Your Puppy Like a Pro",
-    "ArticleImage1URL": "/herding-cats-how-to-potty-train-a-cat/article/a10019",
-    "ArticleImage3URL": "/how-to-treat-matted-dog-fur/article/a90100",
-    "ArticleImage4URL": "/how-to-potty-train-your-puppy-like-a-pro/article/a90053"
+    "ArticleImage3Des": "Clipping Your Cats Nails",
+    "ArticleImage1Des": "National K9 Veterans Day: Why and How to Celebrate",
+    "ArticleImage2Des": "How to Prepare Your Pets for Post-Pandemic Going Back to Work",
+    "ArticleImage2URL": "/how-to-prepare-your-pet-for-post-pandemic-going-back-to-work/article/a90111",
+    "ArticleImage4Des": "Bad Dog Breath: Causes & Solutions",
+    "ArticleImage1URL": "/national-k9-veterans-day-why-and-how-to-celebrate/article/a90120",
+    "ArticleImage3URL": "/clipping-your-cats-nails/article/a90083",
+    "ArticleImage4URL": "/bad-dog-breath-causes-solutions/article/a90112"
   },
   "displayName": "PetReDesign Home Article Updated"
 }
