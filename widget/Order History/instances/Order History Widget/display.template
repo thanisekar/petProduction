@@ -91,7 +91,6 @@
               </a>
      		<!-- /ko -->
             </td>
-            <!-- /ko -->
           </tr>
         </tbody>
         <!-- /ko -->
@@ -104,8 +103,8 @@
         </tbody>
         <!-- /ko -->
       </table>
-    </section>
-  </div>
+	</div>
+	</section>
 
 	<!-- Place Order Modal-->
             <div data-bind="modal: 0,
@@ -147,7 +146,7 @@
               <a class="text-underline" href="#" data-bind="attr: {id: 'CC-profile-order-' + $data.orderId},click: $parents[1].clickOrderDetails.bind($parents[1])">
               <span data-bind="widgetLocaleText: 'orderDetails'"></span>
               </a>
-              <div data-bind="text : $data.scheduledOrderId"></td>
+              <div data-bind="text : $data.scheduledOrderId"></div>
             </td>
             <td>
             <!-- ko if:($parents[1].cart().items().length > 0) -->

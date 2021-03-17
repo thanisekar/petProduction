@@ -37,7 +37,7 @@
           </div>
           <div class="col-sm-10">
             <label class="control-label" id="CC-splitPayments-historicalPayment-label2">
-        	    <span data-bind="text: $data" />
+        	    <span data-bind="text: $data" ></span>
             </label>
           </div>
         </div>
@@ -59,12 +59,12 @@
               <label class="control-label" id="CC-splitPayments-CompletedPayment-label2">
               <!-- since in agent, we show amountAuthorized always and not the amount for completed payments, changed this field -->
                 <!-- ko if: ($parent.cart().showSecondaryShippingData() || $parent.cart().showSecondaryTaxData()) -->
-                  <span data-bind="currency: {price: $data.amountAuthorized, currencyObj: $parent.cart().secondaryCurrency()} " />
-                  <span data-bind="text: $parent.getMaskedNumberText($data, true)" />
+                  <span data-bind="currency: {price: $data.amountAuthorized, currencyObj: $parent.cart().secondaryCurrency()} " ></span>
+                  <span data-bind="text: $parent.getMaskedNumberText($data, true)" ></span>
                 <!-- /ko -->
                 <!-- ko ifnot: ($parent.cart().showSecondaryShippingData() || $parent.cart().showSecondaryTaxData()) -->
-                  <span data-bind="currency: {price: $data.amountAuthorized, currencyObj: $parent.cart().currency} " />
-                  <span data-bind="text: $parent.getMaskedNumberText($data, true)" />
+                  <span data-bind="currency: {price: $data.amountAuthorized, currencyObj: $parent.cart().currency} " ></span>
+                  <span data-bind="text: $parent.getMaskedNumberText($data, true)" ></span>
                 <!-- /ko -->
               </label>
             </div>
@@ -96,12 +96,12 @@
 			<!-- /ko -->
           	<label class="control-label" data-bind = "attr: {id: 'CC-splitPayments-pendingPayment-details' + $index()}"  >
               <!-- ko if: ($parent.cart().showSecondaryShippingData() || $parent.cart().showSecondaryTaxData()) -->
-                <span data-bind="currency: {price: $data.amount(), currencyObj: $parent.cart().secondaryCurrency()} " />
+                <span data-bind="currency: {price: $data.amount(), currencyObj: $parent.cart().secondaryCurrency()} " ></span>
               <!-- /ko -->
               <!-- ko ifnot: ($parent.cart().showSecondaryShippingData() || $parent.cart().showSecondaryTaxData()) -->
-                <span data-bind="currency: {price: $data.amount(), currencyObj: $parent.cart().currency} " />
+                <span data-bind="currency: {price: $data.amount(), currencyObj: $parent.cart().currency} " ></span>
               <!-- /ko -->
-          		<span data-bind="text: $parent.getMaskedNumberText($data)" />
+          		<span data-bind="text: $parent.getMaskedNumberText($data)" ></span>
           	</label>
           	<a href="#" data-bind="click:$parent.editPendingPayment.bind($parent, $index)"><u><span data-bind="widgetLocaleText: 'edit'"></span></u></a>
             <!-- <a href="#" data-bind="click:$parent.removePendingPayment.bind($parent, $index)"><u><span data-bind="widgetLocaleText: 'removePayment'"></span></u></a> -->
@@ -130,12 +130,12 @@
             <div class="col-sm-10">
               <label class="control-label" id="CC-splitPayments-pendingCardPayment-label2">
                 <!-- ko if: ($parent.cart().showSecondaryShippingData() || $parent.cart().showSecondaryTaxData()) -->
-                  <span data-bind="currency: {price: $data.amount(), currencyObj: $parent.cart().secondaryCurrency()} " />
-                  <span data-bind="text: $parent.getMaskedNumberText($data)" />
+                  <span data-bind="currency: {price: $data.amount(), currencyObj: $parent.cart().secondaryCurrency()} " ></span>
+                  <span data-bind="text: $parent.getMaskedNumberText($data)" ></span>
                 <!-- /ko -->
                 <!-- ko ifnot: ($parent.cart().showSecondaryShippingData() || $parent.cart().showSecondaryTaxData()) -->
-                  <span data-bind="currency: {price: $data.amount(), currencyObj: $parent.cart().currency} " />
-                  <span data-bind="text: $parent.getMaskedNumberText($data)" />
+                  <span data-bind="currency: {price: $data.amount(), currencyObj: $parent.cart().currency} " ></span>
+                  <span data-bind="text: $parent.getMaskedNumberText($data)" ></span>
                 <!-- /ko -->
               </label>
               <a href="#" data-bind="click:$parent.editCardPayment.bind($parent, $index)"><u>Edit</u></a>
@@ -188,7 +188,7 @@
         </div>
         <div class="col-sm-4">
           <input aria-required="true" class="form-control" type="text" id="CC-splitPayments-amount-text" name="amount"
-            data-bind="validatableValue: selectedAmount, widgetLocaleText : {value:'paymentAmountAriaLabelText', attr:'aria-label'}, css: {'sf-error' : ! selectedAmount.__valid__()} "/>
+            data-bind="validatableValue: selectedAmount, widgetLocaleText : {value:'paymentAmountAriaLabelText', attr:'aria-label'}, css: {'sf-error' : ! selectedAmount.__valid__()} "></span>
         </div>
         <div class="hidden-xs col-sm-6">
   	      <span class="text-danger" id="CC-splitPayments-amount-error"

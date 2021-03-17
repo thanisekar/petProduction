@@ -133,7 +133,7 @@
 
 
 <!--hidden variable to get the article products  -->
- <input class="PLPsearch" type="hidden" value="PLP" data-bind='template: {afterRender: function(){$.Topic("PLPSearch").publish("success"); }}'>
+ <div data-bind='template: {afterRender: function(){$.Topic("PLPSearch").publish("success"); }}'><input class="PLPsearch" type="hidden" value="PLP"></div>
 
   <!-- ko if: (listingViewModel().display) -->
 <div id="CC-petredesign-productListing" role="alert">

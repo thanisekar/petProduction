@@ -40,15 +40,18 @@
                     </a>
                 </span>
                 <!-- /ko -->
+               </p>
                  <!-- /ko -->
+
                 <!-- ko if: trackingInfo.length > 0 -->
                 <p class="text-left mb-10 left clearfix trackingNumber" style="clear: both;">
                 <span><strong>Shipping Carrier:</strong></span>
                 <!-- ko foreach: trackingInfo-->
                 <span class="info" data-bind="text: $data.carrierName"></span>
+               <!-- /ko -->
+               </p>    
                 <!-- /ko -->
-                <!-- /ko -->
-            </p>
+               
             <!--<div class="row" id="CC-orderDetails-tracking-references">
               <div id="CC-orderDetails-tracking-label" class="col-md-6">
                 <span class="titleText" data-bind="widgetLocaleText: 'trackingNumbersText'"></span>
@@ -71,7 +74,7 @@
                 </table>
               </div>
             </div>-->
-            <!-- /ko -->
+            
             <!-- ko if: trackingInfo.length == 0 && trackingNumber != null -->
             <p class="text-left mb-10 left clearfix trackingNumber" style="clear: both;">
                 <span><strong>Tracking Number:</strong></span>
@@ -138,7 +141,6 @@
                         <div class="address addressFiled">
                             <span class="" data-bind="text: address1"></span>
                             <span class="" data-bind="text: address2"></span>
-                           <!-- /ko -->
                         </div>
                         <div class="city-state-zip addressFiled">
                             <span class="" data-bind="text: city"></span>,&nbsp;<span class="" data-bind="text: state"></span>&nbsp;<span class="" data-bind="text: postalCode"></span>

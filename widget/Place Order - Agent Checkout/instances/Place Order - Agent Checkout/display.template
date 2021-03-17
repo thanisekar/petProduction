@@ -8,7 +8,7 @@
   <!-- ko if : $data.cart().isSplitShipping()  -->
     <div id="CC-splitToSingleShip-button" class="checkout row">
       <button class="cc-button-primary pull-right padding-right" data-bind="click: navigateToAgentCheckout, widgetLocaleText : 'shipToSingleAddressText', visible: !(($data.cart().currentOrderState == 'PENDING_PAYMENT') || 
-      ($data.cart().currentOrderState == 'PENDING_PAYMENT_TEMPLATE')">
+      ($data.cart().currentOrderState == 'PENDING_PAYMENT_TEMPLATE'))">
       </button>
     </div>
     <br>

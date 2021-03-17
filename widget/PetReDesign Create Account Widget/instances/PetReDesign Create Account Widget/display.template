@@ -132,9 +132,9 @@
 									
 									<div class="small-6 col-xs-12 col-sm-12 col-md-12 column large-6 left mb-20 form-elements">
 										<label data-bind="attr: {'for': 'DOB' + $index()}" class="inlines label-text">Date of Birth</label>
-										
-										<input type="text"  data-format="MM/DD/YYYY" data-template="MMM DD YYYY" name="date"  class="input-field input-field--calendar petBirthday input-box" data-bind="textInput:petDOB  , attr:{name: 'petDOB'+$index(), id: 'DOB'+$index()}, template: {afterRender: $parent.getPetDob($index())}">
-										
+										<div data-bind="template: {afterRender: $parent.getPetDob($index())}">
+										<input type="text"  data-format="MM/DD/YYYY" data-template="MMM DD YYYY" name="date"  class="input-field input-field--calendar petBirthday input-box" data-bind="textInput:petDOB  , attr:{name: 'petDOB'+$index(), id: 'DOB'+$index()}">
+                                    </div>
 									</div>
 									<hr class="mb-30">
                             </div>
