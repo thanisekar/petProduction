@@ -618,7 +618,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
                   <!-- /oc -->
                 <!-- ko if: koOverSizeAlert -->  
                       <div class="oversize-error-msg">
-                        This item must ship ground via motor freight. Cannot ship to AK, HI, or APO’s
+                        This item mush ship motor freight. Cannot ship to AK, HI, or APO’s
                       </div>
                        <!-- /ko -->
                   <!-- oc section: product-add-to-space -->

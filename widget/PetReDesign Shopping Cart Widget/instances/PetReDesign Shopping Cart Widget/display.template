@@ -136,7 +136,7 @@
                     <!-- ko with: productData -->
 					<!-- ko if:childSKUs[0].overSizedSku -->
 					<div class="row">
-					<p class="overSizedItem">This item must ship ground via motor freight. Cannot ship to AK, HI, or APO’s </p>
+					<p class="overSizedItem">This item mush ship motor freight. Cannot ship to AK, HI, or APO’s</p>
 					</div>
 					<!-- /ko -->
 					
