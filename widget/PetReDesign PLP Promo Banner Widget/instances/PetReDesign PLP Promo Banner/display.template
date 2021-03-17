@@ -2,21 +2,34 @@
 <div class='CLPPromoBanner' data-bind="template: {afterRender: handlePromoBanner()}">
     <div class='container nopad'>
      <div class='row nopad'>
-         <!-- ko if :koCategoryPromo() != ''-->
-        <div class='col-xs-12 nopad categoryImageWidget'>
-           <img  data-bind="ccResizeImage: {
-					source: koCategoryPromo(),
-					xsmall: '400,1088',
-					small: '400,1088',
-					medium:'400,1088',
-					large: '400,1088',
-					alt: 'categoryPromo',
-					errorSrc:'images/noImage.png',
-					errorAlt:'No Image Found'}" id="categoryPromo" title="categoryPromo" 
-					>
-					
-        </div>
-        <!--/ko-->
+          <!-- ko if :category().id == 'L1-replacement-parts'-->
+        <div class='hidden-xs col-xs-12 nopad categoryImageWidget'>
+			<img class="img-responsive" data-bind="ccResizeImage: {
+					 source: '/file'+category().categoryImages[0].path,
+					 xsmall: '400,1088',
+					 small: '400,1088',
+					 medium:'400,1088',
+					 large: '400,1088',
+					 alt: 'category().categoryImages[0].path',
+					 errorSrc:'images/noImage.png',
+					 errorAlt:'No Image Found'}" id="categoryPromo" title="categoryPromo" 
+					 >
+					 
+		 </div>
+		 <div class='visible-xs col-xs-12 nopad categoryImageWidget'>
+			 <img class="img-responsive" data-bind="ccResizeImage: {
+					 source: '/file'+category().categoryImages[1].path,
+					 xsmall: '400,1088',
+					 small: '400,1088',
+					 medium:'400,1088',
+					 large: '400,1088',
+					 alt: 'category().categoryImages[0].path',
+					 errorSrc:'images/noImage.png',
+					 errorAlt:'No Image Found'}" id="categoryPromo" title="categoryPromo" 
+					 >
+					 
+		 </div>
+		 <!--/ko-->
         <!-- ko if :category().displayName === "plastic kennels" -->
         <div class='col-xs-12 nopad categoryImageWidget'>
            <img  data-bind="ccResizeImage: {
