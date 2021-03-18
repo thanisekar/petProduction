@@ -43,7 +43,11 @@ define(
                    }
               }
               
-            
+             $('body').delegate('.show_hide', 'click', function() {
+		             var txt = $(".keriContent").is(':visible') ? 'Read More' : 'Read Less';
+                        $(".show_hide").text(txt);
+                        $('.keriContent').slideToggle(300);
+                });
               
               
           },
@@ -53,7 +57,7 @@ define(
              // console.log('12/11');
             $(document).ready(function() {
                      	$('.keri').carousel({
-                      interval: 3000
+                      interval: 5000
                     }) 
                    $(".keri").swiperight(function() {
                       $(this).carousel('prev');
