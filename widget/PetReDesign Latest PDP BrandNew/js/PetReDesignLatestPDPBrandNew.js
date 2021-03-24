@@ -130,6 +130,7 @@ define(
             koSurchargeData: ko.observable(),
             koSkuSurchargeFlag: ko.observable(false),
             koAvailableOnline: ko.observable(false),
+            koPlasticKennels: ko.observable(false),
             resourcesLoaded: function(widget) {
                 resourcesAreLoaded = true;
             },
@@ -742,6 +743,9 @@ define(
                 }
                 $.Topic("SIDECAR_RELOAD.memory").publish();
                 
+                
+                widget.plasticKennel();
+                
                 //Fix for long description space
                 
                 /*$('.long-description p').each(function() {
@@ -750,7 +754,31 @@ define(
                     if (txt=='&nbsp;') {
                         $p.attr('style', 'line-height: 0px !important');  
                     }
-                });*/
+                });
+*/
+
+            },
+            
+            
+            plasticKennel: function(){
+                var widget = this;
+                var getProduct = widget.product().parentCategories();
+                widget.koPlasticKennels(false);
+                if(widget.product().brand() === 'Petmate'){
+                    for (var i = 0; i < getProduct.length; i++) {
+                        console.log(getProduct[i].id(),'getProduct[i].id()');
+                        if((getProduct[i].id() === 'plastic-dog-kennels' || getProduct[i].id() === 'cat-kennels-carriers')){
+                            console.log(getProduct[i].id(),'getProduct[i].id()1');
+                             widget.koPlasticKennels(true);
+                        }
+                }
+                    
+                        
+                        /*if (!variantOptions[i].selectedOption.isValid() && !variantOptions[i].disable()) {
+                            allOptionsSelected = false;
+                            break;
+                        }*/
+                    }
                 
 
 

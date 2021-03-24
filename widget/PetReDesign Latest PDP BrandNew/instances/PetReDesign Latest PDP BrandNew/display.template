@@ -800,29 +800,21 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
         </div>
         <!--/ko-->
      
- <!-- ko if : product().parentCategory.displayName() === "plastic kennels"-->
-     <!-- ko ifnot : product().id() == '21225' -->
+
+ <!-- ko if : koPlasticKennels -->
          <div class="container" >
             <div class='col-xs-12 nopad categoryImageWidget'>
                 <a  target="_blank" data-bind="attr: {href: '/welcomeHome',target: '_blank'}">
-                     <img  src="/file/general/PM_WelcomeHomePageBanner.jpg" class="img-responsive">
+                     <img  src="/file/general/PM_Welcome-Home_Banner.jpg" class="img-responsive">
     			</a>		
             </div> 
             </div>
-            <!--/ko-->
-        
-         <!--Banner for single product 21225-->
-          <!-- ko if : product().id() == '21225' -->
-           <div class="container" >
-            <div class='col-xs-12 nopad categoryImageWidget'>
-                <a  target="_blank" data-bind="attr: {href: '/welcomeHome',target: '_blank'}">
-                     <img  src="/file/general/Product-21225-Banner.jpg" class="img-responsive">
-    			</a>		
-            </div> 
-            </div>
-          <!-- /ko --> 
-         <!--Ends-->
         <!--/ko-->
+         
+    
+        
+
+
         
         
      <!--More Info Section-->
