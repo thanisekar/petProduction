@@ -21,7 +21,7 @@
                                        <div class='col-sm-5 kerisCenter' id="CC-Video">
                                               <div class="" id="productVideo">
                                                   <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/'+ $data}">
-                                                   <img  data-bind="attr : {src : '/file/general/KK_Video_DESKTOPPlaceHolder.png'}" class="img-responsive video-banner" src="">
+                                                   <img  data-bind="attr : {src : '/file/general/JW-Grooming_Product-VIDEO-POSTER_KK-Intro_1200x700.png'}" class="img-responsive video-banner" src="">
                                                    <div class="play-icon"><img class="play-image" src="/file/general/KK_Video-Button.png" /></div>
                                                   </a>
                                                 </div>
