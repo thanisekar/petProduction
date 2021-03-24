@@ -80,6 +80,8 @@ define(
                             widget.createSocialLink();
                         }
                     }, 100);
+        //Fix for articles image stylings
+        setTimeout(function(){$( "#CC-prodDetails-longDescription img" ).addClass( "img-responsive" );},1000)
         
       },
      
