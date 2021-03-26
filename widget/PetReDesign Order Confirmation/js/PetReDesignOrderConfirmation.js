@@ -786,6 +786,10 @@ define(
                 var shareAnalytics =  '<script defer async type="text/javascript" src=""https://www.dwin1.com/19038.js"></script>'
                 
                 $('body').append(shareImg,shareAnalytics);
+
+                //Upsellit Converison Tracking code
+                
+                getWidget.appendScript('https://www.upsellit.com/active/petmate_pixel.jsp?orderID='+getWidget.koOrderID()+'&'+getWidget.koTotal()+'='+getWidget.koSubTotal()+'');
             },
 
             handleInventorySurcharge: function() {
