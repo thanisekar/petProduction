@@ -11,13 +11,15 @@
     <div class="page-header-details clearfix left row">  
         <span data-bind="window.articleSearchBackToListLink"></span>
         <span class="long-arrow-left"></span>
-        <!-- ko ifnot: isMediaArticle && isGiftCard-->
+        <!-- ko ifnot: isMediaArticle -->
+        <!-- ko ifnot: isGiftCard -->
 			<a href="#" class="backToArticles" data-bind="ccLink: {route: '/category/articles'}">Back to all articles</a>
 			<!-- /ko -->
-			<!-- ko if: isMediaArticle && !isGiftCard-->
+			<!-- /ko -->
+			<!-- ko if: isMediaArticle -->
 			<a href="#" class="backToArticles" data-bind="ccLink: {route: '/media'}">Back to Media</a>
 			<!-- /ko -->
-			<!-- ko if: isGiftCard-->
+			<!-- ko if: isGiftCard -->
 			<a href="#" class="backToArticles" data-bind="ccLink: {route: '/category/giftGuides'}">Back to Gift Guides</a>
 			<!-- /ko -->
 			<!--a href="/education">&lt; back to listings</a>-->
