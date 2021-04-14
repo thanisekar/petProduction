@@ -918,7 +918,7 @@ define(
                     txtPhoneNumber3: {
                         required: true,
                         //numericOnly: true,
-                        maskedPhone: true,
+                        maskedPhone: false,
                         minlength: 10,
                         maxlength: 12
                         //maskedPhone:true
@@ -971,7 +971,7 @@ define(
                     $(element).valid();
                 },
             });
-            $("#txtPhoneNumber3").mask("999-999-9999");
+           // $("#txtPhoneNumber3").mask("999-999-9999");
         };
 
         function CustomerBillingAddressBook() {
@@ -1053,7 +1053,7 @@ define(
                     txtPhoneNumber231: {
                         required: true,
                         //numericOnly: true,
-                        maskedPhone: true,
+                        maskedPhone: false,
                         minlength: 10,
                         maxlength: 12
                     }
@@ -1109,7 +1109,7 @@ define(
                     $(element).valid();
                 }
             });
-            $("#txtPhoneNumber231").mask("999-999-9999");
+            //$("#txtPhoneNumber231").mask("999-999-9999");
         };
 
         function checkoutuserLogin() {

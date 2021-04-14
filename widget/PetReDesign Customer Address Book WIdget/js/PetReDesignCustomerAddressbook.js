@@ -618,32 +618,32 @@ define(
           
            getWidget = widget;
                 
-                $('body').on( 'focus click', '#txtPhoneNumber3',function() {  
-                  $(this)[0].setSelectionRange(0, 0);
-                    $.Topic("addCheckoutAddressFormValid").publish("success");
-                    /*$('#txtPhoneNumber3').focus();
-                    $('#txtPhoneNumber3').blur();*/
-                });
-                $('body').on( 'focus click', '#txtPhoneNumber231',function() {
-                  $(this)[0].setSelectionRange(0, 0);
-                    $.Topic("checkoutAddBillingAddress").publish("success");
-                    /*$('#txtPhoneNumber231').focus();
-                    $('#txtPhoneNumber231').blur();*/
-                });
+              //   $('body').on( 'focus', '#txtPhoneNumber3',function() {  
+              //     //$(this)[0].setSelectionRange(0, 0);
+              //       $.Topic("addCheckoutAddressFormValid").publish("success");
+              //       /*$('#txtPhoneNumber3').focus();
+              //       $('#txtPhoneNumber3').blur();*/
+              //   });
+              //   $('body').on( 'focus', '#txtPhoneNumber231',function() {
+              //    // $(this)[0].setSelectionRange(0, 0);
+              //       $.Topic("checkoutAddBillingAddress").publish("success");
+              //       /*$('#txtPhoneNumber231').focus();
+              //       $('#txtPhoneNumber231').blur();*/
+              //   });
                 
-                //PMS 202
-                $('body').delegate('#txtPhoneNumber3', 'change', function(e) {
-                  if($('#txtPhoneNumber3').val() != ''){
-                      $('#txtPhoneNumber3').removeClass('error');
-                      $('#txtPhoneNumber3-error').css('display','none');
-                  }
-              });
-              $('body').delegate('#txtPhoneNumber231', 'change', function(e) {
-                  if($('#txtPhoneNumber231').val() != ''){
-                      $('#txtPhoneNumber231').removeClass('error');
-                      $('#txtPhoneNumber231-error').css('display','none');
-                  }
-              });
+              //   //PMS 202
+              //   $('body').delegate('#txtPhoneNumber3', 'change', function(e) {
+              //     if($('#txtPhoneNumber3').val() != ''){
+              //         $('#txtPhoneNumber3').removeClass('error');
+              //         $('#txtPhoneNumber3-error').css('display','none');
+              //     }
+              // });
+              // $('body').delegate('#txtPhoneNumber231', 'change', function(e) {
+              //     if($('#txtPhoneNumber231').val() != ''){
+              //         $('#txtPhoneNumber231').removeClass('error');
+              //         $('#txtPhoneNumber231-error').css('display','none');
+              //     }
+              // });
                 
 
 
