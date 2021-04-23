@@ -57,12 +57,13 @@ define(
 
                     
                     var startLoop = startPosition;
+                    //Commenting because of error
                     /**** Update order item details */
-                  for (var i = 0; i < orders.length; i++) {  
+                  /*for (var i = 0; i < orders.length; i++) {  
                         widget.historyViewModel().data()[startLoop].orderDetails = ko.observable();
                         getWidget.getProfileOrder(orders[i].orderId, i);
                         startLoop = startLoop + 1;
-                    }
+                    }*/
 
                     numElements = orders.length;
                     width = parseInt(widget.historyViewModel().itemsPerRow(), 10);
