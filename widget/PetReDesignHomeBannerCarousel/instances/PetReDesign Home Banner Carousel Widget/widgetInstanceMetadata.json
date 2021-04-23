@@ -1,24 +1,24 @@
 {
   "configuration": {
-    "homeBannerLink3": "/searchresults?&&&N=753097965+622070027&Nrpp=12&suppressResults=false&searchType=guided&type=search",
-    "homeBannerLink4": "/category/brand-Chuckit",
-    "homeBannerLink1": "/category/petmate-brands",
-    "homeBannerLink2": "/category/L1-beddingL2-dog-beds",
+    "homeBannerLink3": "/category/L1-beddingL2-dog-beds",
+    "homeBannerLink4": "/category/petmate-brands",
+    "homeBannerLink1": "/searchresults?Ntt=nutterz&Nty=1&No=0&Nrpp=12&Rdm=899&searchType=simple&type=search",
+    "homeBannerLink2": "/jw-hol-ee-roller/product/43113",
     "homeBanner4": {
-      "src": "/file/v1063936191390079085/general/CI_MakeFetchHappen_WebBanne.jpg",
-      "mediaName": "/general/CI_MakeFetchHappen_WebBanne.jpg"
+      "src": "/file/v7057230527119932312/general/PM_HPBanner_Kennel_DOG.jpg",
+      "mediaName": "/general/PM_HPBanner_Kennel_DOG.jpg"
     },
     "homeBanner3": {
-      "src": "/file/v8716518628437620421/general/JW_CatToys_Web-Banne.jpg",
-      "mediaName": "/general/JW_CatToys_Web-Banne.jpg"
-    },
-    "homeBanner2": {
       "src": "/file/v7010431642876507352/general/March-2021_Bedding_Web-Banner_1906x650.jpg",
       "mediaName": "/general/March-2021_Bedding_Web-Banner_1906x650.jpg"
     },
+    "homeBanner2": {
+      "src": "/file/v1548280877021621539/general/JW_HYH_Web-Banner.jpg",
+      "mediaName": "/general/JW_HYH_Web-Banner.jpg"
+    },
     "homeBanner1": {
-      "src": "/file/v7057230527119932312/general/PM_HPBanner_Kennel_DOG.jpg",
-      "mediaName": "/general/PM_HPBanner_Kennel_DOG.jpg"
+      "src": "/file/v7415501514222423475/general/HC_Nutterz_Web-Banne.jpg",
+      "mediaName": "/general/HC_Nutterz_Web-Banne.jpg"
     }
   },
   "displayName": "PetReDesign Home Banner Carousel Widget"

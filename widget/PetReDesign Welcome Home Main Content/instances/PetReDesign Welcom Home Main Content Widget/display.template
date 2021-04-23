@@ -82,7 +82,7 @@
          </div>
     </div> 
         </div>
-        <a data-bind="ccLink : {route : 'category/120958'}"><img class="shop-cta img-responsive" src="/file/general/wh-Shop_CTA.png"></a>
+        <a data-bind="ccLink : {route : '/category/plastic-dog-kennels'}"><img class="shop-cta img-responsive" src="/file/general/wh-Shop_CTA.png"></a>
         <hr class="border-line-two">
         <div>
             <img class="img-responsive" style="margin:0 auto" src="/file/general/wh-SleepingDog.png">

@@ -151,6 +151,11 @@
 				  <li>Affiliates</li>
 			<!-- /ko -->
 			
+			 <!-- redesignAboutUs section-->
+            	<!-- ko if:(koPageId() == 'Accessibility') -->
+				  <li>Accessibility Statement</li>
+			<!-- /ko -->
+			
 			<!-- redesignAboutUs section-->
             	<!-- ko if:(koPageId() == 'emailsignup') -->
 				  <li>Email SignUp</li>

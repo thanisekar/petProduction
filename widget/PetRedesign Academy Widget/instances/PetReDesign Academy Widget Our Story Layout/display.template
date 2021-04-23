@@ -1,0 +1,53 @@
+<div id="main-container">
+    <div class="container">
+        <div id="academy-ourstory" >
+      <h5 alt="Petmate Academy Articles" title="Petmate Academy Articles">Petmate Academy</h5>
+      <p>It’s more than just creating and selling products – it’s about doing everything we can to help pet parents, shelters, or anyone who cares about their loyal companions. At Petmate Academy, we have a wealth of knowledge across of variety of topics to help as you navigate through serious considerations regarding your pet. </p>
+      <div class="row gridRow">
+         <!-- ko foreach: koGetCollectionList -->
+         <!-- ko foreach: items -->
+         <div class="col-md-4  col-xs-12 cc-product-item">
+             <div class="product-item-wrapper">
+                 <div class="row">
+                     <div class="col-xs-6 col-sm-4 col-md-12 nopad read-articles">
+                            <a   data-bind="ccLink: {route: $data.route} ">
+                            <img data-bind="ccResizeImage: {
+                               source: fullImageURLs[0],
+                               xsmall: '500,270',
+                               small: '500,270',
+                               medium: '500,893',
+                               large: '500,1106',
+                               alt: displayName,
+                               title:displayName}"  class="img-responsive" width="100%"/>
+                            <span class="overlay"></span>                    
+                            </a>  
+                     </div>
+                     <div class="col-xs-6 col-sm-8 col-md-12 nopad descriptionContent">
+                        <div data-bind="text:$parents[1].newMonthDisplay($data)" class="plp-date"></div>
+                           <a data-bind="ccLink: {route: $data.route} ">
+                              <p class="product-title" data-bind="text: displayName"></p>
+                           </a>
+                           <div class="wrap">
+                              <div class='description' data-bind="text: $parents[1].truncate($data.description)"></div>
+                              <span><a data-bind="ccLink: {route: $data.route} "  class="read-article">
+                              Read Article
+                              </a></span>
+                           </div>
+                            
+                     </div>
+                 </div>
+             
+            
+        </div>
+         </div>
+         <hr class="visible-xs">
+         <!-- /ko -->
+         <!-- /ko -->
+      </div>
+      <div class="more" style="text-align: center;margin-top:30px">
+       <a  class="more-articles" alt="Click for more articles" title="More articles" data-bind="ccLink:{route:'/category/articles'}" >More Articles</a>
+       </div>
+   </div>
+    </div>
+   
+</div>

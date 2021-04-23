@@ -1,134 +1,161 @@
-
-<div class="" id="brandCollectionData">
-    
-    <div class="message-cartridge">
-        <div class="row">
-            <div class="col-md-4 nopad">
-                <h5>Our Story</h5>
-                <p>Your pets are part of your family. It’s exactly the same as us. At Petmate, that love and passion which forges the bond we all have with our furry and feathered companions also fuels the joy and dedication exhibited in the products we make. In 1959, Doskocil Manufacturing was founded after the creation of the very first dog kennel. Although the company originally specialized in kennels, growing demand for other pet supplies led to an emphasis on other product categories. Since that time, we have continued evolving (not just our name) our practices and methodologies to create a vast line of products, with the well-being of our own pets – and yours – at the center.</p>
+<div id="aboutUs">
+   <div class="container">
+      <div class="message-cartridge">
+         <div class="row">
+            <div class="col-xs-12">
+               <h5 alt="The Petmate Story" title="The Petmate Story">The Petmate Story</h5>
+               <p>Over 60 years ago, Petmate began with a single focus on providing safe pet transportation, resulting in the creation of the very first dog kennel. Flash forward to today, and the same love & bond that existed to provide safe travels for our pets now permeates through the 21 brands we own. Knowing that pets are every bit as much a part of the family, we are constantly working – not just on creating reliable products – but more importantly on how we can improve your pets’ quality of life. Our commitment now and in the future is to continue a responsible evolution of manufacturing practices with the well-being of all pets at the center of everything we do.</p>
             </div>
-            <div class="col-md-4">
-               <img src="/file/general/facesofpetmate_alice_winston_CEO.png" class="img-responsive">
-            </div>
-            <div class="col-md-4 nopad">
-                <h5>Our Environment</h5>
-                 <p>It’s the responsibility of any manufacturer to be mindful not just of the quality of products they’re creating, but also the manner in which they’re made and the impact it has on the environment. At Petmate, when considering the world’s delicate eco-system, our products and the process in which they’re made are just as important as their enjoyment or usefulness. With our eco-friendly manufacturing techniques and Edison Green Award-Winning Spectrum Facility, our aim is to reduce the impacts of our manufacturing operations by embracing new technologies and promoting best practices to help reduce our carbon footprint to ensure pets and their families have a beautiful world to play in.</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="container">
-   <!-- ko if: koBrandCollectionData().length > 0 -->
-   <div class="templateRegion" id="cc-recs" data-oc-id="cc-recs">
-      <!-- oc layout: panels -->
-      <div class="row">
-         <div class="oc-panel col-md-12" data-oc-id="panel-0-0">
-            <div class="col-xs-12 head-section">
-               <div class="col-sm-11 col-xs-12 nopad">
-                   <img style="margin: 0 auto" src="/file/general/FacesAndPaws.png" class="img-responsive">
-               </div>
-               <div class="col-sm-1 col-xs-12 shopAllLinkWrapper">
-                   
-                  
-                  <div id="brand-carousel-controls" class="col-sm-4 nopad">
-                  <!-- Carousel Controls -->
-                  <!-- ko if: recommendationsGroups() && (recommendationsGroups().length > 1) -->
-                  <div class="controls row pull-right ">
-                     <div id="brand-carousel-left-control" class="col-sm-6">
-                        <a class="brand-corousel-left" data-slide="prev" data-bind="widgetLocaleText:{value:'previousImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
-                           <!--<i class="fa-2x fa fa-caret-left "></i>-->
-                        </a>
-                     </div>
-                     <div id="brand-carousel-right-control" class="col-sm-6">
-                        <a class="brand-corousel-right" data-slide="next" data-bind="widgetLocaleText:{value:'nextImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
-                           <!--<i class="fa-2x fa fa-caret-right "></i>-->
-                        </a>
-                     </div>
-                  </div>
-                  <!-- /ko -->
-               </div>
-               </div>
-            </div>
-            
-            <!-- oc section: recommendations-carousel -->
-            <!--        <div data-bind="element: 'recommendations-carousel', visible: recommendations().length > 0"></div>-->
-            <!--ko if: recommendationsGroups() && (recommendationsGroups().length > 0) -->
-            
-            <div data-bind="carouselSwipe, attr:{id: 'carousel-id-'+id()}" class="brandCollectionCarousel carousel slide inner-corousel" data-interval="false">
-               <div class="carousel-inner brand-carousel">
-                  <!-- ko foreach: recommendationsGroups -->
-                  <div class="item row" data-bind="css: {'active': $index()==0},foreach: $data">
-                     <div data-bind="css: $parents[1].spanClass()" class="cc-product-item">
-                        <div class="cc-item-detail" data-bind="">
-                           
-                           
-                           
-                           
-                           <div class="img__wrap">
-                               <img data-bind="ccResizeImage: {
-                              source: '/file/general/'+image(),
-                              xsmall: '350,275',
-                              small: '350,275',
-                              medium: '350,275',
-                              large: '350,275',
-                              alt: altText,
-                              title:altText}"  class="img-responsive" />
-                              <div class="img__description">
-                                  <!--<span data-bind="text: $data.PetParent()+' & '"></span> <span data-bind="text: $data.CoWorker"></span><br>-->
-                                   <p data-bind="text: $data.content"></p>
-                              </div>
-                                             
-                                               
-                             
-                            </div>
-                           
-                           
-                           
-                           
-                        </div>
-                     </div>
-                     
-                  
-                  </div>
-                   
-                  <!-- /ko -->
-               </div>
-              
-            </div>
-            <!--/ko-->
-            <!-- /oc -->
          </div>
       </div>
-      <!-- /oc -->
-   </div>
-   <!-- /ko -->
-    <div class="timeline">
-        <div class="row">
+      <div class="testimony">
+          <div class="row">
+              <div class="col-xs-1 hidden-xs nopad">
+                  
+              </div>
+              <div class="col-xs-12 col-sm-10 nopad">
+                   <div class="row child">
+               <div class="col-md-5  col-sm-6 col-xs-12 left nopad">
+                   <div class="wrap">
+                        <h2 alt="Petmate's Promise" title="Petmate's Promise">Our Promise</h2>
+                   <p>Petmate is a special place, where everything we make and do is about improving the quality of life for pets, and pet parents. Filled with engaging, passionate, and creative people, our promise is to design and produce products which fill a specific need. Loving pets is what we’re all about.</p>
+                   <a class="shop-brands" alt="Click to Shop Petmate's brands" title="See our brands" data-bind="ccLink: {route:'/category/petmate-brands'} ">See Our Brands</a>
+                   </div>
+                  
+               </div>
+               <div class="col-md-7  col-sm-6 col-xs-12  right nopad">
+                   <div class='videoDisplay'>
+                     <div class='row' id='videoSectionPlay'>
+                        <div  id="CC-Video">
+                           <div class="" id="productVideo">
+                              <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/Hb444wWkvpY'}">
+                                 <img src="/file/general/copy2.png" class="img-responsive video-banner">
+                                 <div class="play-icon"><img src="/file/general/youTubeVideo.png" /></div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+           </div>
+              </div>
+              <div class="col-xs-1 hidden-xs">
+                  
+              </div>
+          </div>
+      </div>
+      <div class="stewardship">
+         <div class="row">
             <div class="col-xs-12">
-                <img style="margin:0 auto" src="/file/general/PetmateTimelineUpdated.jpg" class="img-responsive">
+               <h5 alt="Environmental Stewardship" title="Environmental Stewardship">Environmental Stewardship</h5>
+               <p class="ste-content">As a responsible manufacturer, one must be mindful not just of the quality of the products they’re creating, but also how they are made and their environmental impact. Our eco-friendly manufacturing techniques and Edison Green Award-Winning Spectrum facility help reduce our carbon footprint to ensure pets and their families have a beautiful world to play in.</p>
+
+                  <div class="row">
+                     <div class="col-sm-4 col-xs-12">
+                         <img alt="Petmate resin is made with over 95% recycled content" title="Petmate resin environmental stat" src="/file/general/PM_EnvironmentalStats1RECT.png" class="img-responsive">
+                        </div>
+                       <div class="col-sm-4 col-xs-12">
+                           <img alt="We keep over 60 million pounds of waste out of landfills every year" title="Petmate waste environmental stat" src="/file/general/PMEnvironmentalStats2RECT.png" class="img-responsive">
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                          <img alt="Over 90% of all manufacturing scrap is recycled" title="Petmate recycling environmental stat" src="/file/general/PMEnvironmentalStats3RECT.png" class="img-responsive">
+                        </div>
+
+                 
+                   
+               </div>
             </div>
-        </div>
-    </div>
-    
-     <div class="friends-of-petmate">
-        <div class="row">
+         </div>
+      </div>
+      <!-- ko if: koBrandCollectionData().length > 0 -->
+      <div class="templateRegion" id="cc-recs" data-oc-id="cc-recs">
+         <!-- oc layout: panels -->
+         <div class="row">
+            <div class="oc-panel col-md-12" data-oc-id="panel-0-0">
+               <div class="col-xs-12 head-section">
+                  <div class="col-xs-12 nopad">
+                     <img style="margin:0 auto" alt="Faces and Paws of Petmate" title="Faces and Paws of Petmate" src="/file/general/FacesAndPaws.png" class="img-responsive">
+                  </div>
+               </div>
+               <!-- oc section: recommendations-carousel -->
+               <!--        <div data-bind="element: 'recommendations-carousel', visible: recommendations().length > 0"></div>-->
+               <!--ko if: recommendationsGroups() && (recommendationsGroups().length > 0) -->
+               <div data-bind="carouselSwipe, attr:{id: 'carousel-id-'+id()}" class="brandCollectionCarousel carousel slide inner-corousel" data-interval="false">
+                  <div class="carousel-inner brand-carousel">
+                     <!-- ko foreach: recommendationsGroups -->
+                     <div class="item row" data-bind="css: {'active': $index()==0},foreach: $data">
+                        <div data-bind="css: $parents[1].spanClass()" class="cc-product-item">
+                           <div class="cc-item-detail" data-bind="">
+                              <div class="img__wrap">
+                                 <img data-bind="ccResizeImage: {
+                                    source: '/file/general/'+image(),
+                                    xsmall: '350,275',
+                                    small: '350,275',
+                                    medium: '350,275',
+                                    large: '350,275',
+                                    alt: altText,
+                                    title:altText}"  class="img-responsive" />
+                                 <div class="img__description">
+                                    <!--<span data-bind="text: $data.PetParent()+' & '"></span> <span data-bind="text: $data.CoWorker"></span><br>-->
+                                    <p class="over-text" data-bind="text: $data.content"></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- /ko -->
+                  </div>
+               </div>
+               <!--/ko-->
+               <!-- /oc -->
+                <div id="brand-carousel-controls" class="nopad">
+                        <!-- Carousel Controls -->
+                        <!-- ko if: recommendationsGroups() && (recommendationsGroups().length > 1) -->
+                        <div class="controls row">
+                           <div id="brand-carousel-left-control" class="">
+                              <a class="brand-corousel-left" data-slide="prev" data-bind="widgetLocaleText:{value:'previousImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
+                                 <!--<i class="fa-2x fa fa-caret-left "></i>-->
+                              </a>
+                           </div>
+                           <div id="brand-carousel-right-control" class="">
+                              <a class="brand-corousel-right" data-slide="next" data-bind="widgetLocaleText:{value:'nextImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
+                                 <!--<i class="fa-2x fa fa-caret-right "></i>-->
+                              </a>
+                           </div>
+                        </div>
+                        <!-- /ko -->
+                     </div>
+            </div>
+         </div>
+         <!-- /oc -->
+      </div>
+      <!-- /ko -->
+      <div class="timeline" style="margin-bottom:30px;">
+         <div class="row">
+            <div class="col-xs-12">
+               <img style="margin:0 auto" alt="Petmate Timeline" title="Petmate Timeline" src="/file/general/2021-PetmateCorporateTimeline.jpg" class="img-responsive">
+            </div>
+         </div>
+      </div>
+      <div class="friends-of-petmate hide">
+         <div class="row">
             <h2>Friends of Petmate</h2>
             <div class="col-md-4">
-                <a data-bind="ccLink : {route : 'arf'}">
-                    <img class="shop-cta img-responsive" src="/file/general/ARF-logo-hori.jpg">
-                </a>
+               <a data-bind="ccLink : {route : 'arf'}">
+               <img class="shop-cta img-responsive" src="/file/general/ARF-logo-hori.jpg">
+               </a>
             </div>
             <div class="col-md-4">
-                <a data-bind="ccLink : {route : 'pilotsnpaws'}">
-                    <img class="shop-cta img-responsive" src="/file/general/PilotsNPaws_LogoVersion2.jpg">
-                </a>
+               <a data-bind="ccLink : {route : 'pilotsnpaws'}">
+               <img class="shop-cta img-responsive" src="/file/general/PilotsNPaws_LogoVersion2.jpg">
+               </a>
             </div>
             <div class="col-md-4">
-                <a data-bind="ccLink : {route : 'projectfreedomride'}">
-                    <img class="shop-cta img-responsive" src="/file/general/freedom-project.jpg">
-                </a>
+               <a data-bind="ccLink : {route : 'projectfreedomride'}">
+               <img class="shop-cta img-responsive" src="/file/general/freedom-project.jpg">
+               </a>
             </div>
-        </div>
-    </div>
-    </div>
+         </div>
+      </div>
+   </div>
 </div>

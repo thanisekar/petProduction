@@ -1,0 +1,36 @@
+{
+  "elementInstances": [
+    {
+      "customTitle": "Image_3900002",
+      "styles": {},
+      "tag": "image@3900002",
+      "text": null,
+      "borderConfig": {
+        "borderColor": "#000000",
+        "borderWidth": 0
+      },
+      "paddingConfig": {
+        "paddingBottom": "0",
+        "paddingTop": "0",
+        "paddingLeft": "0",
+        "paddingRight": "0"
+      },
+      "horizontalAlignmentConfig": {
+        "horizontalAlignment": "left"
+      },
+      "imageConfig": {
+        "altText": "Affiliates",
+        "zoomEnabled": false,
+        "titleText": "Affiliates",
+        "isProductImage": false,
+        "fileName": "PetmateAffiliateBanner.jpg"
+      }
+    },
+    {
+      "customTitle": null,
+      "styles": {},
+      "tag": "rich-text@3900001",
+      "text": null
+    }
+  ]
+}

@@ -1,29 +1,29 @@
 {
   "configuration": {
     "ArticleImage4": {
-      "src": "/file/v3199558294185028723/general/a90112.BadDogBreathCauses_MainImage.jpg",
-      "mediaName": "/general/a90112.BadDogBreathCauses_MainImage.jpg"
+      "src": "/file/v73342984264266845/general/a90100.HowToTreatMattedDogFur_MainImage.jpg",
+      "mediaName": "/general/a90100.HowToTreatMattedDogFur_MainImage.jpg"
     },
     "ArticleImage3": {
-      "src": "/file/v6190104755971095379/general/a90083.ClippingYourCatsNails_MainImage.jpg",
-      "mediaName": "/general/a90083.ClippingYourCatsNails_MainImage.jpg"
+      "src": "/file/v8934607868434572710/general/a90134.MakingYourDogYourBestFriend_MainImage.jpg",
+      "mediaName": "/general/a90134.MakingYourDogYourBestFriend_MainImage.jpg"
     },
     "ArticleImage2": {
-      "src": "/file/v1555382889229653181/general/a90111.HowToPrepareYourPetForPostPandemicBackToWork_MainImage.jpg",
-      "mediaName": "/general/a90111.HowToPrepareYourPetForPostPandemicBackToWork_MainImage.jpg"
+      "src": "/file/v479207800326020295/general/a90135.WhyDoCatsPurrr_MainImage.jpg",
+      "mediaName": "/general/a90135.WhyDoCatsPurrr_MainImage.jpg"
     },
     "ArticleImage1": {
-      "src": "/file/v5531681244375235161/general/a90120.NationalK9VeteransDay_MainImage.jpg",
-      "mediaName": "/general/a90120.NationalK9VeteransDay_MainImage.jpg"
+      "src": "/file/v7020790984511078132/general/a90136.NationalAdoptAShelterPet_MainImage.jpg",
+      "mediaName": "/general/a90136.NationalAdoptAShelterPet_MainImage.jpg"
     },
-    "ArticleImage3Des": "Clipping Your Cats Nails",
-    "ArticleImage1Des": "National K9 Veterans Day: Why and How to Celebrate",
-    "ArticleImage2Des": "How to Prepare Your Pets for Post-Pandemic Going Back to Work",
-    "ArticleImage2URL": "/how-to-prepare-your-pet-for-post-pandemic-going-back-to-work/article/a90111",
-    "ArticleImage4Des": "Bad Dog Breath: Causes & Solutions",
-    "ArticleImage1URL": "/national-k9-veterans-day-why-and-how-to-celebrate/article/a90120",
-    "ArticleImage3URL": "/clipping-your-cats-nails/article/a90083",
-    "ArticleImage4URL": "/bad-dog-breath-causes-solutions/article/a90112"
+    "ArticleImage3Des": "Making Your Dog Your Bestfriend",
+    "ArticleImage1Des": "National Adopt a Shelter Pet Day: How to Make a Difference in a Shelter Pet's Life",
+    "ArticleImage2Des": "Why Do Cats Purr?",
+    "ArticleImage2URL": "/why-do-cats-purr-/article/a90135",
+    "ArticleImage4Des": "How to Treat Matted Dog Fur",
+    "ArticleImage1URL": "national-adopt-a-shelter-pet-day-how-you-can-make-a-difference-in-a-shelter-pets-life/a90136",
+    "ArticleImage3URL": "/making-your-dog-your-best-friend/article/a90134",
+    "ArticleImage4URL": "/how-to-treat-matted-dog-fur/article/a90100"
   },
   "displayName": "PetReDesign Home Article Updated"
 }

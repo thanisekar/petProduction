@@ -80,7 +80,7 @@
                 <span data-bind="text :items.length"></span>
               </section>
             </td>
-            <td  class="col-md-4" scope="row" data-bind="attr:{id:'purchase-list-shared-info-md-4' + $data.id}">
+            <td  class="col-md-4" scope="row" data-bind="attr:{id:"purchase-list-shared-info-md-4" + $data.id}">
               <!-- ko if : ($data.sharedWithOthers) -->
               <span data-bind="widgetLocaleText: {attr: 'title', value: 'sharedList'}"
                 class="fa fa-users fa-lg cc-purchase-list-user-icon pull-right" aria-hidden="true"></span>
@@ -136,8 +136,8 @@
           <tbody data-bind="foreach: purchaseListGrid">
           <tr data-bind="foreach: $data">
             <td>
-              <a href="#"
-                 data-bind="click: $parents[1].clickPurchaseListDetails.bind($parents[1]), attr:{id:'purchase-list-info-name-md-8' + $data.id}"
+              <a href="#" 
+                 data-bind="click: $parents[1].clickPurchaseListDetails.bind($parents[1]), attr:{id:"purchase-list-info-name-md-8" + $data.id}"
                  style=" text-decoration: underline ;">
                 <span data-bind="text : (name.length > 30 ? name.substring(0, 29) + '..' : name), attr : {title : name.length > 30 ? name : null}" scope="row"></span>
               </a>
@@ -150,7 +150,7 @@
                 <span data-bind="widgetLocaleText : 'meText'"></span>
               </section>
             </td>
-            <td data-bind="attr:{id:'purchase-list-shared-info'}" class="col-md-4" scope="row">
+            <td data-bind="attr:{id:"purchase-list-shared-info"}" class="col-md-4" scope="row">
               <!-- ko if : ($data.sharedWithOthers) -->
               <span data-bind="widgetLocaleText: {attr: 'title', value: 'sharedList'}"
                 class="fa fa-users fa-lg cc-purchase-list-user-icon" aria-hidden="true"></span>
@@ -315,8 +315,8 @@
             <tbody data-bind="foreach: sharedPurchaseListGrid">
             <tr data-bind="foreach: $data">
               <td>
-                <a href="#"
-                   data-bind="click: $parents[1].clickPurchaseListDetails.bind($parents[1]), attr:{id:'purchase-list-info-name-md' + $data.id}"
+                <a href="#" 
+                   data-bind="click: $parents[1].clickPurchaseListDetails.bind($parents[1]), attr:{id:"purchase-list-info-name-md" + $data.id}"
                    style=" text-decoration: underline ;">
                   <span data-bind="text : (name.length > 30 ? name.substring(0, 29) + '..' : name), attr : {title : name.length > 30 ? name : null}" scope="row"></span>
                 </a>
@@ -661,7 +661,7 @@
           <!-- /ko -->
         </table>
         <!-- ko if : (purchaseListViewModel().items().length == 0 ) -->
-        <div data-bind="widgetLocaleText:'NoItemDisplayMessage' "></div>
+        <div data-bind="widgetLocaleText:'NoItemDisplayMessage' "/>
         <!-- /ko -->
       </div>
     </section>
@@ -739,7 +739,7 @@
           <!-- /ko -->
         </table>
         <!-- ko if : (purchaseListViewModel().items().length == 0 ) -->
-        <div data-bind="widgetLocaleText:'NoItemDisplayMessage' "></div>
+        <div data-bind="widgetLocaleText:'NoItemDisplayMessage' "/>
         <!-- /ko -->
       </div>
     </section>
@@ -875,7 +875,7 @@
                  </div>                 
                  <div class="pull-right col-lg-5">
                   <div class="col-lg-10">
-                  <select aria-required="true" aria-label="purchaseListAccessRightCheckbox"  class="form-control" data-bind="options: $parent.editOptions(), optionsValue: 'value', optionsText:'displayName', value: $data.editEnabled, attr:{id:'purchase-list-editable-' + $data.id}"></select>
+                  <select aria-required="true" aria-label="purchaseListAccessRightCheckbox"  class="form-control" data-bind="options: $parent.editOptions(), optionsValue: 'value', optionsText:'displayName', value: $data.editEnabled, attr:{id:"purchase-list-editable-" + $data.id}"></select>                    
                   </div>
                   <a href="#" tabindex="0" class="glyphicon glyphicon-trash pull-right" style="cursor: pointer; color:#000000;" data-bind="click: $parent.deleteEmailSharing.bind($parent,$index())"></a>
                  </div>
@@ -949,7 +949,7 @@
                 <a href="#" aria-required="true" data-bind="text:$data.email"></a>
                 <div class="col-lg-5  pull-right">
                  <div class="col-lg-11">
-                <select aria-required="true"  class="form-control" data-bind="options: $parent.editOptions, optionsValue: 'value', optionsText:'displayName', value: $data.editEnabled, attr:{id:'purchase-list-editable-lg-5'+ $data.id}"></select>
+                <select aria-required="true"  class="form-control" data-bind="options: $parent.editOptions, optionsValue: 'value', optionsText:'displayName', value: $data.editEnabled, attr:{id:"purchase-list-editable-lg-5"+ $data.id}"></select>
                 </div>
                 <a href="#" tabindex="0"  class="glyphicon glyphicon-trash pull-right" style="cursor: pointer; color:#000000" data-bind="click: $parent.deleteEmailSharing.bind($parent,$index())"></a>                                    
                 </div>

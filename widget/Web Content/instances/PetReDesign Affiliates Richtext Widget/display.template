@@ -1,29 +1,45 @@
-<!-- ko setContextVariable: {name: 'elementConfig', value: {"1700005": {
-  "id": "1700005",
-  "padding": {
-    "paddingBottom": "0",
-    "paddingLeft": "0",
-    "paddingRight": "0",
-    "paddingTop": "0"
-  },
-  "richText": {
-    "content": "${occ:localizedWebContent('m302867')}",
-    "sourceMedia": "m302867"
-  }
-}}} --><!-- /ko -->
-
-<!-- oc layout: panels -->
-  <div class="row">
-
-    <div class="oc-panel col-md-12" data-oc-id="panel-0-0">
-
-      <!-- oc section: rich-text -->
-<span data-bind="element: 'rich-text',id: '1700005'"></span>
-
-      <!-- /oc -->
-
+<div id="affiliates">
+    <div class="container">
+        <div class="header">
+        <h1 class="hide">Join The Petmate Affiliate Program</h1>
+        <!--<img src="/file/general/PM_ResizedAffiliateBanner.jpg" class="img-responsive" title="Join the Petmate Affiliate Program" />-->
+        <p>
+            The Petmate Affiliate Program on ShareASale gives you the opportunity to benefit from sales made on Petmate.com simply by advertising on your site. Put your web traffic to work for you and earn 10% commission when we make a sale to a customer referred from your website. We’ll give you the tools, the benefit of partnering with a leader in the pet industry, and handle the transaction and commission details so you can earn quick revenue.
+        </p>
     </div>
-
-
-  </div>
-  <!-- /oc -->
+    </div>
+    
+    <div class="bodyContent">
+        <div class="">
+        <div class="row rowWrap">
+            <div class="col-md-6">
+                <div class="left">
+                     <h6>FOR WEBSITES</h6>
+                <p>Do you run a website that features pet products? Join the Petmate affiliate program on ShareASale for opportunities to earn bonus commission in exchange for featured placement!</p>
+                <p></p>
+                <ul>
+                    <li>10% Commission</li>
+                    <li>30-Day Cookie</li>
+                    <li>Opportunity to earn increased commission for features</li>
+                    <li>Frequent featured products and promotions that you will be able to use on your site</li>
+                </ul>
+                <a class="applyNow" alt="Click to Apply Now" title="Apply Now" target="_blank" href="http://www.shareasale.com/shareasale.cfm?merchantID=74750&source=PemateSite">Apply Now</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="right">
+                    <h6>FOR INFLUENCERS</h6>
+                <p>Are you an influencer with a passion for pets & a strong social following? Join Petmate's program on ShareASale to review sample products & earn bonus commission!</p>
+                <ul>
+                    <li>10% Commission</li>
+                    <li>30-Day Cookie</li>
+                    <li>Opportunity to receive product samples</li>
+                    <li>Creative tools to help you sell including banners and educational information</li>
+                </ul>
+                <a class="applyNow" alt="Click to Apply Now" title="Apply Now" target="_blank" href="http://www.shareasale.com/shareasale.cfm?merchantID=74750&source=PetmateSiteInfluencer">Apply Now</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

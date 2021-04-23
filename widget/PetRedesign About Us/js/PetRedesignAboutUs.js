@@ -24,9 +24,9 @@ define(
 				  "altText":"Meet-Richard-and-Daphne"
 			   },
 			   {
-				  "image":"facesofpetmate_melissa_rickybobby.png",
-				  "content":"Meet Ricky Bobby! He's a 4-year-old Cocker Spaniel who was rescued by his mama on Christmas Eve. His favorite thing about coming to work with mom is the unlimited supply of toys to test and seeing all his work buddies. He even gets to attend important meetings with mom! But don't ask him to take notes for you... he's asleep in mom's lap by the end of every meeting. At home, Ricky Bobby loves to chase the pool vacuum and play with his favorite tambourine toy.",
-				  "altText":"Meet-Melissa-and-RickyBobby"
+				  "image":"facesofpetmate_laurenS_fisher.png",
+				  "content":"Everyone, meet Fisher! He's a loving 1-year-old pup who was adopted by his mom, Lauren at the very beginning of quarantine. While he loved working from home with his mom and getting all of her attention, he now seeks the attention of another pup in the office, Ms. Martini who works with her mom is the next cubicle over. #OfficeRomance",
+				  "altText":"Meet-LaurenS-and-Fisher"
 			   },
 			   {
 				  "image":"facesofpetmate_patricia_martini.png",
@@ -38,17 +38,17 @@ define(
 				  "content":"Meet Koby! He's a happy 2-year-old Shetland Sheepdog who loves coming to work with mom. Every morning, he dances at the front door hoping he gets to go to work with mom. While mom works, Koby enjoys playing with the other dogs in the office as well as hoping in your lap to make sure you get to pet him. At home, his favorite thing to do is play in the water as his dad tries to water the plants.",
 				  "altText":"Meet-Kelly-and-Koby"
 			   },{
-				  "image":"facesofpetmate_Casey_Freya.png",
-				  "content":"Meet Freya! She's a playful 7-year-old Great Dane who plays hard, sleeps hard, and has never met a stranger... animal or human. Her favorite thing about coming to work with mom is getting all the love and attention. While mom works, you can find Freya tossing toys to herself, showing off her 5 1/2 feet jumping skills, or cuddled up in her bed catching some beauty sleep. Ask her cube mates how cute her snore is.",
-				  "altText":"Meet-Casey-and-Freya"
+				  "image":"facesofpetmate_laurenM_alfie.png",
+				  "content":"Meet Alfie! He's a 15-year-old Dachshund who loves coming to work with his mom for all the smells around the office. His mom, Lauren describes him as grumpy, yet cuddly with a serious case of FOMO. He is terrified of missing out on anything. When he's not busy being nosy around the office, you can find him right under his mom's feet.",
+				  "altText":"Meet-LaurenM-and-Alfie"
 			   },{
 				  "image":"facesofpetmate_lindsey_peyton.png",
 				  "content":"Meet Peyton! She's a sweet 7-year-old, soft-coated Wheaten Terrier who was rescued by her mom, Lindsey in 2013. In between meetings she attends with mom, Peyton loves getting all the attention from anyone who stops by to say hi and will smother you in kisses as long as you let her. At home, her favorite thing to do is nap... that is, when she can catch a break from her mischievous kitten brother.",
 				  "altText":"Meet-Lindsey-and-Peyton"
 			   },{
-				  "image":"facesofpetmate_Keiko.png",
-				  "content":"Meet Keiko! He's a friendly 7-year-old Husky who loves coming to work with his mom and watching everyone walk by her office. His big, bright blue eyes catch everyone's attention and he works extra hard for his treats. At home, his favorite thing to do is watch the bunnies that live in the bushes in his front yard.",
-				  "altText":"Meet-Keiko"
+				  "image":"facesofpetmate_mary_summer2.png",
+				  "content":"Meet Summer! She's a spunky 9-year-old Chihuahua who loves coming to work with mom and playing with all of mom's friends. After her morning playtime, you can find Summer napping in her bed right next to her mom's keyboard. At home, Summer's favorite thing to do is play and catch bouncing balls.",
+				  "altText":"Meet-Mary-and-Summer"
 			   },{
 				  "image":"facesofpetmate_katie_lucky.png",
 				  "content":"Meet Lucky Boy! He's an 8-year-old Staffordshire Terrier who is a total mama's boy. His favorite thing about coming to work with mom is getting to test all the new toys Petmate creates. When he's not testing toys, he loves sitting in his very own chair so it's easier for humans to pet him as they walk by. He has so much fun at work with mom, that he snoozes the whole ride home. At home, his favorite thing to do is snuggle under the covers and chase his tail.",
@@ -66,9 +66,9 @@ define(
 				  "content":"Meet Millie! She's a loving 8-year-old Maltipoo who thinks she's a real life princess. Her favorite part about coming to work with mom is getting to spend the whole day right by her side and getting all the lovins' from moms friends. After long days at the office, Millie goes home to her castle and finds the fluffiest stack of pillows and gets her beauty rest.",
 				  "altText":"Meet-Keri-and-Millie"
 			   },{
-				  "image":"facesofpetmate_Christine_Lucy2.png",
-				  "content":"Meet Lucy! She's a vibrant 4-year-old Mini Schnauzer who was rescued by her mama after being found on the side of a busy road. Her favorite thing about coming to work with mom is all the love and cuddles she gets from mom's co-workers. At home, Lucy enjoys chewing on her squeaky toys and cuddling under blankets. She even gives direct eye contact when you talk to her and her tail spins around like a helocopter propeller when she's really excited.",
-				  "altText":"Meet-Christine-and-Lucy"
+				  "image":"facesofpetmate_Dave_LucyLou.png",
+				  "content":"Meet Lucy Lou! She's a sweet and loving 14-month-old Portuguese Water Dog who loves laying at her daddy's feet while he works. When she can get dad away from work, her favorite thing to do is swim, play fetch, and take long talks.",
+				  "altText":"Meet-Dave-and-LucyLou"
 			   }
 			   
 			]

@@ -46,12 +46,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Shop JW RoboBone Dog Toy",
+        "altText": "Click now for Adopt-a-Pet",
         "zoomEnabled": false,
-        "titleText": "Shop JW RoboBone Dog Toy",
+        "titleText": "Adopt-a-Pet",
+        "link": "/adoptapet",
         "isProductImage": false,
-        "link": "/jw-robobone-electronic-treat-dispenser/product/32290",
-        "fileName": "Robobone_Web-Banner-01.jpg"
+        "fileName": "April-2021_PM_National-Adop.jpg"
       }
     },
     {
@@ -73,12 +73,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Petmate's March 2021 Product of the Month",
+        "altText": "Petmate's April 2021 Product of the Month",
         "zoomEnabled": false,
-        "titleText": "Petmate's March 2021 Product of the Month",
-        "link": "/jw-puppy-connects/product/53002",
+        "titleText": "Petmate's April 2021 Product of the Month",
+        "link": "/gamma2-nano-automatic-pet-feeder/product/43535",
         "isProductImage": false,
-        "fileName": "March21_PMProductOfTheMonth_PuppyConnects.jpg"
+        "fileName": "April-2021_PM_Product-of-th.jpg"
       }
     },
     {
@@ -100,12 +100,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "K9 Veterans Day Article | Petmate Academy",
+        "altText": "Click now to read about Adopt A Shelter Pet Day",
         "zoomEnabled": false,
-        "titleText": "K9 Veterans Day Article | Petmate Academy",
+        "titleText": "How You Can Make A Difference In A Shelter Pet's ",
         "isProductImage": false,
-        "link": "/national-k9-veterans-day-why-and-how-to-celebrate/article/a90120",
-        "fileName": "March-2021_PM_K9VeteransDay.jpg"
+        "link": "/national-adopt-a-shelter-pet-day-how-to-can-make-a-difference-in-a-shelter-pets-life/article/a90136",
+        "fileName": "April-2021_PM-Academy-Adopt.jpg"
       }
     },
     {

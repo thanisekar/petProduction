@@ -1,0 +1,39 @@
+<!-- ko setContextVariable: {name: 'elementConfig', value: {"3900002": {
+  "border": {
+    "borderColor": "#000000",
+    "borderWidth": 0
+  },
+  "horizontalAlignment": {"horizontalAlignment": "left"},
+  "id": "3900002",
+  "image": {
+    "altText": "${occ:widgetCustomText('3400001')}",
+    "altTextId": "3400001",
+    "isProductImage": false,
+    "src": "/file/v5335449483243845966/general/PetmateAffiliateBanner.jpg",
+    "titleText": "${occ:widgetCustomText('3400002')}",
+    "titleTextId": "3400002",
+    "zoomEnabled": false
+  },
+  "padding": {
+    "paddingBottom": "0",
+    "paddingLeft": "0",
+    "paddingRight": "0",
+    "paddingTop": "0"
+  }
+}}} --><!-- /ko -->
+
+<!-- oc layout: panels -->
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-0-0">
+
+      <!-- oc section: image -->
+<span data-bind="element: 'image',id: '3900002'"></span>
+
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+  <!-- /oc -->

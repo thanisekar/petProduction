@@ -14,28 +14,28 @@
                           <!-- ko if : homeBanner1.src() != '' -->
                             <div class="item active">
                                <a data-bind="ccLink: {route: homeBannerLink1()}">
-                              <img data-bind="attr:{src: homeBanner1.src()}" alt="Shop Our Brands" title="Shop Our Brands">
+                              <img data-bind="attr:{src: homeBanner1.src()}" alt="Shop NEW WonderSnaXX NutterZ Dog Treats" title="Shop NEW WonderSnaXX NutterZ Dog Treats">
                               </a>
                             </div>
                             <!-- /ko -->
                             <!-- ko if : homeBanner2.src() != '' -->
                             <div class="item">
                                 <a data-bind="ccLink: {route: homeBannerLink2()}">
-                              <img data-bind="attr:{src: homeBanner2.src()}" alt="Shop Pet Qwerks Dog Toys" title="Shop Pet Qwerks Dog Toys">
+                              <img data-bind="attr:{src: homeBanner2.src()}" alt="A Yellow banner containing ways to hack your JW Hol-ee Roller Dog Toy for added fun for your dog" title="Hack Your Hol-ee Roller Dog Toy">
                             </a>
                             </div>
                              <!-- /ko -->
                               <!-- ko if : homeBanner3.src() != '' -->
                             <div class="item">
                               <a data-bind="ccLink: {route: homeBannerLink3()}">
-                            <img data-bind="attr:{src: homeBanner3.src()}" alt="Shop La-Z-Boy Pet Bedding" title="Shop La-Z-Boy Pet Bedding">
+                            <img data-bind="attr:{src: homeBanner3.src()}" alt="Shop Dog Beds for Every Sleep Style" title="Shop Dog Beds for Every Sleep Style">
                           </a>
                             </div>
                              <!-- /ko -->
 							 <!-- ko if : homeBanner4.src() != '' -->
                             <div class="item">
                               <a data-bind="ccLink: {route: homeBannerLink4()}">
-                            <img data-bind="attr:{src: homeBanner4.src()}" alt="Shop Chuckit! Fetch Toys" title="Shop Chuckit! Fetch Toys">
+                            <img data-bind="attr:{src: homeBanner4.src()}" alt="Shop Our Brands" title="Shop Our Brands">
                           </a>
                             </div>
                              <!-- /ko -->

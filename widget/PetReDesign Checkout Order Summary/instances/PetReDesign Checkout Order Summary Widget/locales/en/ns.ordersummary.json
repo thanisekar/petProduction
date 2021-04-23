@@ -12,7 +12,7 @@
     "applicableTaxesText": "Applicable taxes will be calculated at checkout.",
     "noShippingMethodsText": "There are no shipping methods available for your destination address.",
     "shippingMethodRequiredText": "Shipping Method is mandatory.",
-    "salesTaxText": "Sales Tax: ",
+    "salesTaxText": "Estimated Sales Tax: ",
     "paymentMethodNotAvilable": "(This payment option cannot be used for scheduled orders.)",
     "noShippingMethodsForAddressText": "No shipping methods are available for the selected address",
     "placeOrderText": "Place Order",
