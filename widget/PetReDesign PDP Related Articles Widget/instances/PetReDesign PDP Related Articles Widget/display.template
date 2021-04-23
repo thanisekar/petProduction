@@ -23,9 +23,9 @@
                                   small: '500,300',
                                   medium: '500,300',
                                   large: '500,300',
-                                  alt: 'displayName',
-                                 title:'displayName'}" class="img-responsive"
-                                  alt="displayName" title="displayName" >
+                                  alt: displayName,
+                                 title:displayName}" class="img-responsive"
+                                   >
 			 	 </a>
             </div>
              <div class='col-md-7 col-sm-12 details-container'>
@@ -50,9 +50,9 @@
                                   small: '500,300',
                                   medium: '500,300',
                                   large: '500,300',
-                                  alt: 'displayName',
-                                 title:'displayName'}" class="img-responsive"
-                                  alt="displayName" title="displayName" >
+                                  alt: displayName,
+                                 title:displayName}" class="img-responsive"
+                               >
 			 	 </a>
             </div>
             

@@ -1,14 +1,14 @@
 <div id="welcomeHome">
 
     <div class="row">
-        <img class="header-img img-responsive hidden-xs" src="/file/general/WH-Header-new -1.png">
-        <img class="header-img img-responsive visible-xs" src="/file/general/WH-Header_mobile.png">
+        <img alt="Welcome Home" title="Welcome Home" class="header-img img-responsive hidden-xs" src="/file/general/WH-Header-new -1.png">
+        <img alt="Welcome Home" title="Welcome Home" class="header-img img-responsive visible-xs" src="/file/general/WH-Header_mobile.png">
     </div>
     <div class="container">
         <div class="row">
             <div class="col-xs-10 float-none">
                 <div class="col-sm-4">
-                    <img style="float:right" class="img-responsive" src="/file/general/WH-Kennel-new-2.png">
+                    <img alt="Plastic Kennel" title="Plastic Kennel" style="float:right" class="img-responsive" src="/file/general/WH-Kennel-new-2.png">
                 </div>
                 <div class="col-sm-6">
                    <!-- <img  class="img-responsive premium-text" src="/file/general/Premium_text.png">-->
@@ -21,21 +21,21 @@
         </div>
         <div class="row components">
             <div class="col-sm-4">
-                <img src="/file/general/wh-img1.png">
+                <img alt="Designed for comfort" title="Designed for comfort" src="/file/general/wh-img1.png">
                 <p> 
                     <b>Designed for comfort.</b><br>
                     Your pet is your family. You want them to sleep as comfortably as you do. With that in mind, Petmate builds its plastic kennels to minimize sharp edges and provide a safe, inviting place for your little fur baby to rest.
                 <p>
             </div>
             <div class="col-sm-4">
-                <img src="/file/general/wh-img2.png">
+                <img alt="Satisfies your dog’s natural denning instinct" title="Satisfies your dog’s natural denning instinct" src="/file/general/wh-img2.png">
                 <p> 
                      <b>Satisfies your dog’s natural denning instinct.</b><br>
                      Your dog loves feeling safe and secure in their very own space. Petmate’s plastic kennels satisfy their instinctual desire to be snug and comfortable.
                 </p>
             </div>
             <div class="col-sm-4">
-                <img src="/file/general/wh-img3.png">
+                <img alt="Protects your pet and your home" title="Protects your pet and your home" src="/file/general/wh-img3.png">
                 <p> 
                  <b>Protects your pet and your home.</b><br>
                  When it comes to keeping your family  safe, nothing stands in the way. Petmate’s plastic kennels are built to be strong and safe, protecting your furry loved one from harm. Plastic kennels also protect your home from damage your furry loved one can deal out when you’re away.
@@ -44,21 +44,21 @@
         </div>
         <div class="row components">
             <div class="col-sm-4">
-                <img src="/file/general/wh-img4.png">
+                <img alt="Fits all shapes and sizes" title="Fits all shapes and sizes" src="/file/general/wh-img4.png">
                 <p> 
                 <b>Fits all shapes and sizes.</b><br>
                 Petmate knows you want your little fur babies to be comfy, cozy and safe in their kennels, no matter how big or small they are. There’s a plastic kennel from Petmate that’s perfect for your pet to relax and sleep peacefully in.
                 </p>
             </div>
             <div class="col-sm-4">
-                <img src="/file/general/wh-img5.png">
+                <img alt="Built to last" title="Built to last" src="/file/general/wh-img5.png">
                 <p> 
                 <b>Built to last.</b><br>
                 You want your pet to enjoy bedtime, just like you, for years to come. That’s why Petmate engineered durable plastic kennels to resist rust, stand up to weather and provide a cozy, safe environment for your furry family member year in and year out.
                 </p>
             </div>
             <div class="col-sm-4">
-                <img src="/file/general/wh-img6.png">
+                <img alt="Petmate are made for safe travel" title="Petmate are made for safe travel" src="/file/general/wh-img6.png">
                 <p> 
                       <b> Plastic kennels from 
                        Petmate are made for safe travel.</b><br>
@@ -85,7 +85,7 @@
         <a data-bind="ccLink : {route : '/category/plastic-dog-kennels'}"><img class="shop-cta img-responsive" src="/file/general/wh-Shop_CTA.png"></a>
         <hr class="border-line-two">
         <div>
-            <img class="img-responsive" style="margin:0 auto" src="/file/general/wh-SleepingDog.png">
+            <img class="img-responsive" alt="Sleep" title="Sleep"  style="margin:0 auto" src="/file/general/wh-SleepingDog.png">
         </div>
     </div>
     

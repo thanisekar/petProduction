@@ -69,7 +69,7 @@
                               large: '350,275',
                               alt: altText,
                               title:altText}"  class="img-responsive" />
-                              <div class="img__description">
+                              <div class="img__description" data-bind="attr:{alt:altText,title:altText}">
                                   <!--<span data-bind="text: $data.PetParent()+' & '"></span> <span data-bind="text: $data.CoWorker"></span><br>-->
                                    <p data-bind="text: $data.content"></p>
                               </div>

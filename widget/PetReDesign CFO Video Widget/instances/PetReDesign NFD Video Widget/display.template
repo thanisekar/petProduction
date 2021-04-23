@@ -1,6 +1,6 @@
 <div id="nfd-desktop" class="hidden-xs">
    <div class="banner">
-      <img style="margin:0 auto;" src="/file/general/NFD2020_Desktop_Banner.jpg" class="img-responsive">
+      <img alt="National Fetch Day" Title="National Fetch Day" style="margin:0 auto;" src="/file/general/NFD2020_Desktop_Banner.jpg" class="img-responsive">
    </div>
    <div class="container">
       <div class="row" style="margin-top:10px;">
@@ -8,11 +8,11 @@
             <div class="col-md-1">
             </div>
             <div class="col-md-6 col-sm-8">
-               <img src="/file/general/NFD2020_Desktop_NFDSweepstakes_WithHeader.jpg" class="img-responsive">
+               <img alt="Backyard Party" Title="Backyard Party" src="/file/general/NFD2020_Desktop_NFDSweepstakes_WithHeader.jpg" class="img-responsive">
                <p>We’re bringing the party to you. 200 Chuckit!® fans will win National Fetch Day Backyard Party Packs built to celebrate at home.</p>
                <div class="row">
                   <div class="col-xs-5 enter">
-                     <img src="/file/general/NFD_LandingPage_Desktop_Enter.gif" class="img-responsive">
+                     <img alt="How do I Enter" Title="How do I Enter" src="/file/general/NFD_LandingPage_Desktop_Enter.gif" class="img-responsive">
                      <p style="margin-bottom:0">Post pics of your dog with #nationalfetchday and tag us @chuckitfetchgames along with 2 of your friends.</p>
                      <!--<img style="margin-top:15px;min-width:130px;" src="/file/general/NFD_LandingPage_Desktop_Enter.jpg" class="img-responsive">-->
                   </div>
@@ -34,13 +34,13 @@
                <div class="col-xs-1">
                </div>
                <div class="col-xs-5">
-                  <img src="/file/general/NFD2020_Desktop_UGC_Headline.gif" class="img-responsive">
+                  <img alt="Treat Yourself" title="Treat Yourself" src="/file/general/NFD2020_Desktop_UGC_Headline.gif" class="img-responsive">
                   <p>This year, we’re delivering the best dog party of the year curbside, through your favorite dog-friendly venue.</p>
                </div>
                <div class="col-xs-6 rightImage">
-                  <img src="/file/general/NFD2020_Images.png" class="img-responsive">
+                  <img alt="National Fetch Day" title="National Fetch Day" src="/file/general/NFD2020_Images.png" class="img-responsive">
                </div>
-               <img src="/file/general/NFD2020_Desktop_WhosParticipating.gif" class="img-responsive participating">
+               <img alt="Who's Participating?" title="Who's Participating?" src="/file/general/NFD2020_Desktop_WhosParticipating.gif" class="img-responsive participating">
             </div>
          </div>
          <div class="section4">
@@ -198,7 +198,7 @@
             </div>
          </div>
          <div class="section5">
-            <img src="/file/general/NFD2020_Desktop_PartyBallChallengeBanner.jpg" class="img-responsive">
+            <img alt="Chuckit Party ball" title="Chuckit Party ball" src="/file/general/NFD2020_Desktop_PartyBallChallengeBanner.jpg" class="img-responsive">
          </div>
       </div>
    </div>

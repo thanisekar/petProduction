@@ -68,7 +68,7 @@
                                 alt: displayName,
                                 title:displayName}"  class="img-responsive" width="100%"/>
                                 
-            <span class="overlay"></span>                    
+                                <span data-bind="attr:{alt:displayName,title:displayName}" class="overlay"></span>                    
         </a>                     
         </div>
         <div class="plp-date">

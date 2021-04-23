@@ -19,7 +19,7 @@
                                large: '500,1106',
                                alt: displayName,
                                title:displayName}"  class="img-responsive" width="100%"/>
-                            <span class="overlay"></span>                    
+                            <span data-bind="attr:{alt:displayName,title:displayName}" class="overlay"></span>                    
                             </a>  
                      </div>
                      <div class="col-xs-6 col-sm-8 col-md-12 nopad descriptionContent">

@@ -27,7 +27,7 @@
                                    title:ArticleImage1Des}" class="img-responsive article-image" >
                                  
                  <!--   <img  data-bind='attr:{src: primaryFullImageURL}'/>     -->        
-                       <span class="overlay"></span>      
+				 <span data-bind="attr:{alt:ArticleImage1Des,title:ArticleImage1Des}" class="overlay"></span>      
 			 	 </a>
 			 	 
 			 	 </div>
@@ -48,7 +48,7 @@
                                    title:ArticleImage2Des}" class="img-responsive article-image" >
                                  
                  <!--   <img  data-bind='attr:{src: primaryFullImageURL}'/>     -->        
-                       <span class="overlay"></span>      
+				 <span data-bind="attr:{alt:ArticleImage2Des,title:ArticleImage2Des}" class="overlay"></span>       
 			 	 </a>
 			 	 
 			 	 </div>
@@ -69,7 +69,7 @@
                                    title:ArticleImage3Des}" class="img-responsive article-image" >
                                  
                  <!--   <img  data-bind='attr:{src: primaryFullImageURL}'/>     -->        
-                       <span class="overlay"></span>      
+				 <span data-bind="attr:{alt:ArticleImage3Des,title:ArticleImage3Des}" class="overlay"></span>       
 			 	 </a>
 			 	 
 			 	 </div>
@@ -90,7 +90,7 @@
                                    title:ArticleImage4Des}" class="img-responsive article-image" >
                                  
                  <!--   <img  data-bind='attr:{src: primaryFullImageURL}'/>     -->        
-                       <span class="overlay"></span>      
+				 <span data-bind="attr:{alt:ArticleImage4Des,title:ArticleImage4Des}" class="overlay"></span>      
 			 	 </a>
 			 	 
 			 	 </div>

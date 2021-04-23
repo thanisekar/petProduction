@@ -1,194 +1,194 @@
 <div id="kerikornervideo">
-   <div class="banner">
-     <img style="margin:0 auto;" src="/file/general/JW_KKTopBanner_Desktop_Resized.jpg" class="img-responsive hidden-xs">
-     <img style="margin:0 auto;" src="/file/general/JW_KK_TopBanner_Mobile.jpg" class="img-responsive visible-xs">
-  </div>
-   <div class="container">
-       <div class="partTwo">
-       <div style="text-align:center;" class="col-sm-10 kerisCenter">
-       <h3>Hi, I'm Keri!<br> I'm here to walk you through everything <br>you need to know to groom <br>your dog and cat at home. <span class="show_hide" data-content="toggle-text"> Read More</span></h3>
-       <div class="col-sm-10 kerisCenter">
-           <h6 class="keriContent">My goal is to give you the confidence that you need to use our products at home. I'll walk you through them all— what makes them unique and different and how and why you'll want to use them.</h6>
-       </div>
-       </div>
-       </div>
-       <div class="partThree">
-                       <div class="">
-               <div class='videoDisplay'>
-                                 <div class='row' id='videoSectionPlay'>
-                                     <!-- ko if: VideoUrl()!="" -->
-                                       <!-- ko foreach: embededUrl -->
-                                       <div class='col-sm-5 kerisCenter' id="CC-Video">
-                                              <div class="" id="productVideo">
-                                                  <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/'+ $data}">
-                                                   <img  data-bind="attr : {src : '/file/general/JW-Grooming_Product-VIDEO-POSTER_KK-Intro_1200x700.png'}" class="img-responsive video-banner" src="">
-                                                   <div class="play-icon"><img class="play-image" src="/file/general/KK_Video-Button.png" /></div>
-                                                  </a>
-                                                </div>
-                                                <br>
-                                                <div>
-                                                
-                                                   <a class="pdp-video"  data-bind="attr: { videourl: $data}"></a>
-                                               
-                                               </div>
-                                       </div>
-                                       <!-- /ko-->
-                                   <!-- /ko-->
-                                   </div>
-                           </div> 
-           </div>
-       </div>
-       <div class="partFour">
-          <!-- Carousel -->
-     <div id="carousel-example-generic" class="carousel keri slide" data-ride="carousel">
-        
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-           <div class="item active">
-              <div class="hidden-xs">
-                 <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_CatComb_Slide1.jpg'}"   class="img-responsive"></a>
-              </div> 
-              <div class="visible-xs">
-                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_CatComb_Mobile_Slide1.jpg'}"   class="img-responsive"></a>
-              </div>
-           </div>
-           <div class="item">
-              <div class="hidden-xs">
-                 <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_CatDeshedTool_Slide2.jpg'}"   class="img-responsive"></a>
-              </div> 
-              <div class="visible-xs">
-                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_CatDeshedTool_Mobile_Slide2.jpg'}"   class="img-responsive"></a>
-              </div>
-           </div>
-           <div class="item">
-              <div class="hidden-xs">
-                 <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_CatGroomGlove_Slide3.jpg'}"   class="img-responsive"></a>
-              </div> 
-              <div class="visible-xs">
-                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_CatGroomGlove_Mobile_Slide3.jpg'}"   class="img-responsive"></a>
-              </div>
-           </div>
-           <div class="item">
-              <div class="hidden-xs">
-                 <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_CatNailClipper_Slide4.jpg'}"   class="img-responsive"></a>
-              </div> 
-              <div class="visible-xs">
-                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_CatNailClipper_Mobile_Slide4.jpg'}"   class="img-responsive"></a>
-              </div>
-           </div>
-           <div class="item">
-              <div class="hidden-xs">
-                 <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_CatSlickerBrush_Slide5.jpg'}"   class="img-responsive"></a>
-              </div> 
-              <div class="visible-xs">
-                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_CatSlickerBrush_Mobile_Slide5.jpg'}"   class="img-responsive"></a>
-              </div>
-           </div>
-           <div class="item">
-              <div class="hidden-xs">
-                 <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_DogDeluxeNailClipper_Slide6.jpg'}"   class="img-responsive"></a>
-              </div> 
-              <div class="visible-xs">
-                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_DogDeluxeNailClipper_Mobile_Slide6.jpg'}"   class="img-responsive"></a>
-              </div>
-           </div>
-           <div class="item">
-              <div class="hidden-xs">
-                 <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_DogDeluxeUndercoatRake_Slide7.jpg'}"   class="img-responsive"></a>
-              </div> 
-              <div class="visible-xs">
-                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_DogDeluxeUndercoatRake_Mobile_Slide7.jpg'}"   class="img-responsive"></a>
-              </div>
-           </div>
-           <div class="item">
-              <div class="hidden-xs">
-                 <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_DogFlea&FineComb_Slide8.jpg'}"   class="img-responsive"></a>
-              </div> 
-              <div class="visible-xs">
-                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_DogFlea&FineComb_Mobile_Slide8.jpg'}"   class="img-responsive"></a>
-              </div>
-           </div>
-           <div class="item">
-              <div class="hidden-xs">
-                 <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_DogGroomGlove_Slide9.jpg'}"   class="img-responsive"></a>
-              </div> 
-              <div class="visible-xs">
-                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_DogGroomGlove_Mobile_Slide9.jpg'}"   class="img-responsive"></a>
-              </div>
-           </div>
-           <div class="item">
-              <div class="hidden-xs">
-                 <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_DogPin&Bristle_Slide10.jpg'}"   class="img-responsive"></a>
-              </div> 
-              <div class="visible-xs">
-                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  data-bind="attr:{src: '/file/general/JW_KK_DogPin&Bristle_Mobile_Slide10.jpg'}"   class="img-responsive"></a>
-              </div>
-           </div>
-        </div>
-        <!-- Indicators -->
-        <ol class="carousel-indicators top-banner">
-           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-           <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-           <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-           <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-           <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-           <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-           <li data-target="#carousel-example-generic" data-slide-to="7"></li>
-           <li data-target="#carousel-example-generic" data-slide-to="8"></li>
-           <li data-target="#carousel-example-generic" data-slide-to="9"></li>
-        </ol>
-        <!-- Controls -->
-        <div class="">
-           <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-           <span class="glyphicon glyphicon-chevron-left"></span>
-           </a>
-           <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-           <span class="glyphicon glyphicon-chevron-right"></span>
-           </a>
-        </div>
-     </div>
-     <!-- Carousel -->
-     <img style="margin:50px auto;" src="/file/general/JW_TipsBanner_Desktop.png" class="img-responsive hidden-xs">
-     <img style="margin:50px auto;" src="/file/general/JW_Tips_Banner_mobile.png" class="img-responsive visible-xs">
-     <!-- Carousel -->
-     <div id="carousel-example-generic-2" class="carousel slide kerisCenter col-sm-8" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-           <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
-           <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
-           <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <h4 class="didKnow">DID YOU KNOW?</h4>
-        <div class="carousel-inner">
-           <div class="item active">
-                   <p>Petting dogs is proven to lower the blood pressure of dog owners</p>
-           </div>
-           <div class="item">
-                   <p>The Basenji, an African wolf dog, is the only breed of dog that cannot bark</p>
-           </div>
-           <div class="item">
-                       <p>Cats have over 100 vocal cords</p>
-           </div>
-        </div>
-        <!-- Controls -->
-        <div class="hide">
-           <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-           <span class="glyphicon glyphicon-chevron-left"></span>
-           </a>
-           <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-           <span class="glyphicon glyphicon-chevron-right"></span>
-           </a>
-        </div>
-     </div>
-     <!-- Carousel -->
-       </div>
+    <div class="banner">
+      <img style="margin:0 auto;" alt="Keri's Korner" title="Keri's Korner" src="/file/general/JW_KKTopBanner_Desktop_Resized.jpg" class="img-responsive hidden-xs">
+      <img style="margin:0 auto;" alt="Keri's Korner" title="Keri's Korner" src="/file/general/JW_KK_TopBanner_Mobile.jpg" class="img-responsive visible-xs">
    </div>
-   
-   
-   
-   
+    <div class="container">
+        <div class="partTwo">
+        <div style="text-align:center;" class="col-sm-10 kerisCenter">
+        <h3>Hi, I'm Keri!<br> I'm here to walk you through everything <br>You need to know to groom <br>Your dog and cat at home. <span class="show_hide" data-content="toggle-text"> Read More</span></h3>
+        <div class="col-sm-10 kerisCenter">
+            <h6 class="keriContent">My goal is to give you the confidence that you need to use our products at home. I'll walk you through them all— what makes them unique and different and how and why you'll want to use them.</h6>
+        </div>
+        </div>
+        </div>
+        <div class="partThree">
+                        <div class="">
+                <div class='videoDisplay'>
+                                  <div class='row' id='videoSectionPlay'>
+                                      <!-- ko if: VideoUrl()!="" -->
+                                        <!-- ko foreach: embededUrl -->
+                                        <div class='col-sm-5 kerisCenter' id="CC-Video">
+                                               <div class="" id="productVideo">
+                                                   <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/'+ $data}">
+                                                    <img  data-bind="attr : {src : '/file/general/JW-Grooming_Product-VIDEO-POSTER_KK-Intro_1200x700.png'}" class="img-responsive video-banner" src="">
+                                                    <div class="play-icon"><img class="play-image" src="/file/general/KK_Video-Button.png" /></div>
+                                                   </a>
+                                                 </div>
+                                                 <br>
+                                                 <div>
+                                                 
+                                                    <a class="pdp-video"  data-bind="attr: { videourl: $data}"></a>
+                                                
+                                                </div>
+                                        </div>
+                                        <!-- /ko-->
+                                    <!-- /ko-->
+                                    </div>
+                            </div> 
+            </div>
+        </div>
+        <div class="partFour">
+           <!-- Carousel -->
+      <div id="carousel-example-generic" class="carousel keri slide" data-ride="carousel">
+         
+         <!-- Wrapper for slides -->
+         <div class="carousel-inner">
+            <div class="item active">
+               <div class="hidden-xs">
+                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  alt="Gripsoft Catcomb" title="Gripsoft Catcomb" data-bind="attr:{src: '/file/general/JW_KK_CatComb_Slide1.jpg'}"   class="img-responsive"></a>
+               </div> 
+               <div class="visible-xs">
+                   <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  alt="Gripsoft Catcomb" title="Gripsoft Catcomb" data-bind="attr:{src: '/file/general/JW_KK_CatComb_Mobile_Slide1.jpg'}"   class="img-responsive"></a>
+               </div>
+            </div>
+            <div class="item">
+               <div class="hidden-xs">
+                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  alt="Gripsoft Shed Tool" title="Gripsoft Shed Tool" data-bind="attr:{src: '/file/general/JW_KK_CatDeshedTool_Slide2.jpg'}"   class="img-responsive"></a>
+               </div> 
+               <div class="visible-xs">
+                   <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img alt="Gripsoft Shed Tool" title="Gripsoft Shed Tool" data-bind="attr:{src: '/file/general/JW_KK_CatDeshedTool_Mobile_Slide2.jpg'}"   class="img-responsive"></a>
+               </div>
+            </div>
+            <div class="item">
+               <div class="hidden-xs">
+                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img  alt="Gripsoft Groom Glove" title="Gripsoft Groom Glove" data-bind="attr:{src: '/file/general/JW_KK_CatGroomGlove_Slide3.jpg'}"   class="img-responsive"></a>
+               </div> 
+               <div class="visible-xs">
+                   <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img alt="Gripsoft Groom Glove" title="Gripsoft Groom Glove" data-bind="attr:{src: '/file/general/JW_KK_CatGroomGlove_Mobile_Slide3.jpg'}"   class="img-responsive"></a>
+               </div>
+            </div>
+            <div class="item">
+               <div class="hidden-xs">
+                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img alt="Gripsoft Nail Clipper" title="Gripsoft Nail Clipper" data-bind="attr:{src: '/file/general/JW_KK_CatNailClipper_Slide4.jpg'}"   class="img-responsive"></a>
+               </div> 
+               <div class="visible-xs">
+                   <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img alt="Gripsoft Nail Clipper" title="Gripsoft Nail Clipper" data-bind="attr:{src: '/file/general/JW_KK_CatNailClipper_Mobile_Slide4.jpg'}"   class="img-responsive"></a>
+               </div>
+            </div>
+            <div class="item">
+               <div class="hidden-xs">
+                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img alt="Gripsoft Slicker Brush" title="Gripsoft Slicker Brush" data-bind="attr:{src: '/file/general/JW_KK_CatSlickerBrush_Slide5.jpg'}"   class="img-responsive"></a>
+               </div> 
+               <div class="visible-xs">
+                   <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img alt="Gripsoft Slicker Brush" title="Gripsoft Slicker Brush" data-bind="attr:{src: '/file/general/JW_KK_CatSlickerBrush_Mobile_Slide5.jpg'}"   class="img-responsive"></a>
+               </div>
+            </div>
+            <div class="item">
+               <div class="hidden-xs">
+                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img alt="Gripsoft Nail Clipper" title="Gripsoft Nail Clipper" data-bind="attr:{src: '/file/general/JW_KK_DogDeluxeNailClipper_Slide6.jpg'}"   class="img-responsive"></a>
+               </div> 
+               <div class="visible-xs">
+                   <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img alt="Gripsoft Nail Clipper" title="Gripsoft Nail Clipper" data-bind="attr:{src: '/file/general/JW_KK_DogDeluxeNailClipper_Mobile_Slide6.jpg'}"   class="img-responsive"></a>
+               </div>
+            </div>
+            <div class="item">
+               <div class="hidden-xs">
+                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img alt="Gripsoft Coat Rake" title="Gripsoft Coat Rake" data-bind="attr:{src: '/file/general/JW_KK_DogDeluxeUndercoatRake_Slide7.jpg'}"   class="img-responsive"></a>
+               </div> 
+               <div class="visible-xs">
+                   <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img alt="Gripsoft Coat Rake" title="Gripsoft Coat Rake" data-bind="attr:{src: '/file/general/JW_KK_DogDeluxeUndercoatRake_Mobile_Slide7.jpg'}"   class="img-responsive"></a>
+               </div>
+            </div>
+            <div class="item">
+               <div class="hidden-xs">
+                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img alt="Gripsoft Flea & Fine" title="Gripsoft Flea & Fine" data-bind="attr:{src: '/file/general/JW_KK_DogFlea&FineComb_Slide8.jpg'}"   class="img-responsive"></a>
+               </div> 
+               <div class="visible-xs">
+                   <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img alt="Gripsoft Flea & Fine" title="Gripsoft Flea & Fine" data-bind="attr:{src: '/file/general/JW_KK_DogFlea&FineComb_Mobile_Slide8.jpg'}"   class="img-responsive"></a>
+               </div>
+            </div>
+            <div class="item">
+               <div class="hidden-xs">
+                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img alt="Gripsoft Groom Glove" title="Gripsoft Groom Glove" data-bind="attr:{src: '/file/general/JW_KK_DogGroomGlove_Slide9.jpg'}"   class="img-responsive"></a>
+               </div> 
+               <div class="visible-xs">
+                   <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img alt="Gripsoft Groom Glove" title="Gripsoft Groom Glove" data-bind="attr:{src: '/file/general/JW_KK_DogGroomGlove_Mobile_Slide9.jpg'}"   class="img-responsive"></a>
+               </div>
+            </div>
+            <div class="item">
+               <div class="hidden-xs">
+                  <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img alt="Gripsoft Pin & Bristle" title="Gripsoft Pin & Bristle" data-bind="attr:{src: '/file/general/JW_KK_DogPin&Bristle_Slide10.jpg'}"   class="img-responsive"></a>
+               </div> 
+               <div class="visible-xs">
+                   <a data-bind="ccLink:{route:'/gamma2-nano-automatic-pet-feeder/product/43535'}"><img alt="Gripsoft Pin & Bristle" title="Gripsoft Pin & Bristle" data-bind="attr:{src: '/file/general/JW_KK_DogPin&Bristle_Mobile_Slide10.jpg'}"   class="img-responsive"></a>
+               </div>
+            </div>
+         </div>
+         <!-- Indicators -->
+         <ol class="carousel-indicators top-banner">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+         </ol>
+         <!-- Controls -->
+         <div class="">
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+         </div>
+      </div>
+      <!-- Carousel -->
+      <img style="margin:50px auto;"  alt="Tail Wagging Tips" Title="Tail Wagging Tips" src="/file/general/JW_TipsBanner_Desktop.png" class="img-responsive hidden-xs">
+      <img style="margin:50px auto;" alt="Tail Wagging Tips" Title="Tail Wagging Tips" src="/file/general/JW_Tips_Banner_mobile.png" class="img-responsive visible-xs">
+      <!-- Carousel -->
+      <div id="carousel-example-generic-2" class="carousel slide kerisCenter col-sm-8" data-ride="carousel">
+         <!-- Indicators -->
+         <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
+         </ol>
+         <!-- Wrapper for slides -->
+         <h4 class="didKnow">DID YOU KNOW?</h4>
+         <div class="carousel-inner">
+            <div class="item active">
+                    <p>Petting dogs is proven to lower the blood pressure of dog owners</p>
+            </div>
+            <div class="item">
+                    <p>The Basenji, an African wolf dog, is the only breed of dog that cannot bark</p>
+            </div>
+            <div class="item">
+                        <p>Cats have over 100 vocal cords</p>
+            </div>
+         </div>
+         <!-- Controls -->
+         <div class="hide">
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+         </div>
+      </div>
+      <!-- Carousel -->
+        </div>
+    </div>
+    
+    
+    
+    
 
 </div>
 

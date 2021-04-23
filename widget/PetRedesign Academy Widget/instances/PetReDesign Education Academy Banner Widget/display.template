@@ -1,7 +1,7 @@
      <div class="main-banner">
       <!--ko with:category-->
       <!--ko if:categoryImages[0].path-->
-       <img data-bind="attr: {src: '/file'+categoryImages[0].path}" class="img-responsive">
+       <img data-bind="attr: {src: '/file'+categoryImages[0].path,alt:displayName,title:displayName}" class="img-responsive">
       <!-- /ko -->
       <!-- /ko -->
    </div>

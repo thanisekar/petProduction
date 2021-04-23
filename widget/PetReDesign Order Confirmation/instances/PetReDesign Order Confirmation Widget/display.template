@@ -40,7 +40,7 @@
               <div class="col-xs-3">
                      <!--  <img src="" data-bind="attr:{src: '/file/products/'+$data.productId+'.jpg'}" onError="this.onError=null;this.src='/file/general/petmate-no-image.jpg';" class="img-responsive"> -->
                               
-                  <img src="" data-bind="attr:{src: $data.customItemImage}" onError="this.onError=null;this.src='/file/general/petmate-no-image.jpg';" class="img-responsive"> 
+                  <img src="" data-bind="attr:{src: $data.customItemImage,alt:displayName,title:displayName}" onError="this.onError=null;this.src='/file/general/petmate-no-image.jpg';" class="img-responsive"> 
               </div>
               <div class="col-xs-9">
                   <div data-bind="text: displayName" class="name"></div>

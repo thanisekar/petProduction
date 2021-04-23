@@ -5,7 +5,7 @@
     <div id="megamenu">
         <div class="container">
             <ul>
-                <li><a data-bind="ccLink: 'home'"><img src="/file/general/PM_LYLB_Logo.png" class="img-responsive"></a></li>
+                <li><a data-bind="ccLink: 'home'"><img alt="LitterBox" title="LitterBox" src="/file/general/PM_LYLB_Logo.png" class="img-responsive"></a></li>
                 <li><span id="education">EDUCATION</span></li>
                 <li><span id="pansToLove">PANS TO LOVE</span></li>
                 <li><span id="community">COMMUNITY</span></li>
@@ -41,7 +41,7 @@
                         <div class="hover-text hidden-xs">
                             Odors can eventually penetrate plastics and resins. Plus, your cat's scratching alone takes a toll. We recommend you swap out your old litterbox for a new one once a year. Keep the old one nearby for a short transition period.
                         </div>
-                        <img  src="/file/general/PM_LYLB_Replace-Icon.png" class="img-responsive hover-image"><span>Replace Your<br/> Litterbox Once a Year</span>
+                        <img alt="Replace" title="Replace" src="/file/general/PM_LYLB_Replace-Icon.png" class="img-responsive hover-image"><span>Replace Your<br/> Litterbox Once a Year</span>
                         <div class="hover-text visible-xs">
                             Odors can eventually penetrate plastics and resins. Plus, your cat's scratching alone takes a toll. We recommend you swap out your old litterbox for a new one once a year. Keep the old one nearby for a short transition period.
                         </div>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="col-sm-2 even">
                     <div class="item-wrapper">
-                        <img src="/file/general/PM_LYLB_Multi-Cats-Icon.png" class="img-responsive"><span>Multi Boxes<br/> For Multi Cats</span>
+                        <img alt="Multi Cats" title="Multi Cats" src="/file/general/PM_LYLB_Multi-Cats-Icon.png" class="img-responsive"><span>Multi Boxes<br/> For Multi Cats</span>
                         <div class="hover-text">
                             Cats can get stressed when they have to share litterboxes. Most vets agree if you own more than one cat, you should have one more litterbox than the number of cats you own. So, for two cats, keep three litterboxes.
                         </div>
@@ -60,7 +60,7 @@
                         <div class="hover-text hidden-xs">
                             Cats can be finicky about litterbox habits. If you don't manage it well, you'll find they are taking their business elsewhere. Litterboxes should be scooped once a day. Litter should be changed regularly, ranging from every other day to once weekly.<br>     
                         </div>
-                        <img src="/file/general/PM_LYLB_Scoop-Icon.png" class="img-responsive"><span>Practice<br/> Regular Scooping</span>
+                        <img alt="Scoop" title="Scoop" src="/file/general/PM_LYLB_Scoop-Icon.png" class="img-responsive"><span>Practice<br/> Regular Scooping</span>
                         <div class="hover-text visible-xs">
                             Cats can be finicky about litterbox habits. If you don't manage it well, you'll find they are taking their business elsewhere. Litterboxes should be scooped once a day. Litter should be changed regularly, ranging from every other day to once weekly.<br>     
                         </div>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="col-sm-2 even">
                     <div class="item-wrapper">
-                        <img src="/file/general/PM_LYLB_Right-Fit-Icon.png" class="img-responsive"><span>Make The<br/> Size Right</span>
+                        <img alt="Fit" title="Fit" src="/file/general/PM_LYLB_Right-Fit-Icon.png" class="img-responsive"><span>Make The<br/> Size Right</span>
                         <div class="hover-text">
                             Consider your cat's size when determining which litterbox is the right one. Generally, your litterbox should be 1.5 times longer than your cat. They need room when eliminating, because they often stretch out and move around in the litterbox to cover their messes.
                         </div>
@@ -79,7 +79,7 @@
                         <div class="hover-text hidden-xs" style="font-size:11px;line-height:15px">
                             Many factors impact whether a cat feels safe enough to do their business. Make sure the litterbox is easily accessible and avoid putting it in places they would have a hard time accessing, particularly older cats with mobility issues. Be sure and keep it away from noisy, high-traffic areas and never place it near their food supply.
                         </div>
-                        <img src="/file/general/PM_LYLB_Location-Icon.png" class="img-responsive"><span>Location,<br/> Location, Location</span>
+                        <img alt="Location" title="Location" src="/file/general/PM_LYLB_Location-Icon.png" class="img-responsive"><span>Location,<br/> Location, Location</span>
                         <div class="hover-text visible-xs" style="font-size:11px;line-height:15px">
                             Many factors impact whether a cat feels safe enough to do their business. Make sure the litterbox is easily accessible and avoid putting it in places they would have a hard time accessing, particularly older cats with mobility issues. Be sure and keep it away from noisy, high-traffic areas and never place it near their food supply.
                         </div>
@@ -357,21 +357,21 @@
                             
                                 <div class="item active">
                                     <div class="review-container col-xs-12 col-md-4">
-                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <img alt="Review" title="Review" src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
                                         <div class="review">
                                             <a data-bind="ccLink:{route:'/petmate-flip-top-jumbo-hooded-litter-pan/product/42175'}"> <span>"The top removes easily for me to clean it. We are definitely happy with our litter box upgrade."</span></a><br>
                                              <span class="reviewer">-Heatherperk</span>
                                         </div>
                                     </div>
                                     <div class="review-container col-xs-12 col-md-4">
-                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <img alt="Review" title="Review" src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
                                         <div class="review">
                                             <a data-bind="ccLink:{route:'/petmate-flip-top-jumbo-hooded-litter-pan/product/42175'}"> <span>"This flip top hooded pan is a serious litter box upgrade if you don't already own it."</span></a><br>
                                              <span class="reviewer">-AmberK85</span>
                                         </div>
                                     </div>
                                     <div class="review-container col-xs-12 col-md-4">
-                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <img alt="Review" title="Review" src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
                                         <div class="review">
                                            <a data-bind="ccLink:{route:'/booda-dome-cleanstep-litter-box/product/50020'}">  <span>"My cats like the cat box and use with out any problems. It does control the odor very well."</span></a><br>
                                              <span class="reviewer">-snowball and Gretchen</span>
@@ -381,21 +381,21 @@
                                 
                                 <div class="item">
                                     <div class="review-container col-xs-12 col-md-4">
-                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <img alt="Review" title="Review" src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
                                         <div class="review">
                                             <a data-bind="ccLink:{route:'/petmate-basic-hooded-litter-pan/product/PM102'}"> <span>"Large size is perfect for multiple cats to use and still no smell. Very easy to clean. Very well made. Great litter box."</span></a><br>
                                              <span class="reviewer">-Stefnrod</span>
                                         </div>
                                     </div>
                                     <div class="review-container col-xs-12 col-md-4">
-                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <img alt="Review" title="Review" src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
                                         <div class="review">
                                             <a data-bind="ccLink:{route:'/petmate-flip-top-jumbo-hooded-litter-pan/product/42175'}"> <span>"My cat was so excited to have some alone time in her pan! She instantly took to it. It was easy for her to get in and out and even easyier for me to clean!"</span></a><br>
                                              <span class="reviewer">-Cali</span>
                                         </div>
                                     </div>
                                     <div class="review-container col-xs-12 col-md-4">
-                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <img alt="Review" title="Review" src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
                                         <div class="review">
                                             <a data-bind="ccLink:{route:'/petmate-top-entry-litter-pan/product/22062'}"> <span>"My cat took to this litter box right away with no issues. The main reason I got this one is so the dog would stop getting in and eating the cat feces! She can't reach it now."</span></a><br>
                                              <span class="reviewer">-Lou the cat</span>
@@ -405,13 +405,13 @@
                                 
                                 <div class="item">
                                     <div class="review-container col-xs-12 col-md-4">
-                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <img alt="Review" title="Review" src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
                                         <div class="review">
                                             <a data-bind="ccLink:{route:'/petmate-simple-sifting-litter-pan/product/42095'}"> <span>"I find this litter box easy to use and clean and prefer it to just scooping out clumps from traditional boxes."</span></a><br>
                                              <span class="reviewer">-JennSLP</span>
                                         </div>
                                     </div>
-                                    <div class="review-container col-xs-12 col-md-4">
+                                    <div alt="Review" title="Review" class="review-container col-xs-12 col-md-4">
                                         <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
                                         <div class="review">
                                             <a data-bind="ccLink:{route:'/petmate-flip-top-jumbo-hooded-litter-pan/product/42175'}"> <span>"This is a wonderful box and we recommended it. Even for picky cats like mine."</span></a><br>
@@ -419,7 +419,7 @@
                                         </div>
                                     </div>
                                     <div class="review-container col-xs-12 col-md-4">
-                                        <img src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
+                                        <img alt="Review" title="Review" src="/file/general/PM_LYLB_Review-Icon.png" class="img-responsive">
                                         <div class="review">
                                             <a data-bind="ccLink:{route:'/petmate-basic-hooded-litter-pan/product/PM102'}"> <span>"The Petmate jumbo hooded litter pan is great if you have multiple cats in your home."</span></a><br>
                                              <span class="reviewer">-HollyAnn82</span>

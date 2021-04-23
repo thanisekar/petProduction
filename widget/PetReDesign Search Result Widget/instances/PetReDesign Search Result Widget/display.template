@@ -574,7 +574,7 @@
             			errorSrc:'images/noImage.png',
             			errorAlt:'No Image Found'}" class="img-responsive" alt='article products'>
             												
-                <span class="overlay"></span>
+                  <span data-bind="attr:{alt:displayName,title:displayName}" class="overlay"></span>
                 </a>
              </div>
              <div class='col-sm-8 col-xs-12 article-description-wrapper'>

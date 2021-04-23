@@ -78,18 +78,19 @@
     							small: '45,120',
     							medium: '45,120',
     							large: '45,120',
-    							alt: 'petRedesignLogo',
+    							alt: 'Petmate',
+    							title: 'Petmate',
     							errorSrc:'images/noImage.png',
-    							errorAlt:'No Image Found'}" id="logoFoot" alt="petRedesignLogo">
+    							errorAlt:'No Image Found'}" id="logoFoot">
     					</a>
     					</div>
     					<div class='social-icons'>
     					   <ul class='social-icon-menu'>
-    					       <li class='social-icon-item'><a href="http://www.facebook.com/Petmate" target="_blank" class='facebook_icon'></a></li>
-    					       <li class='social-icon-item'><a href="http://www.twitter.com/petmateproducts" target="_blank"  class="  twitter-icon"></a></li>
-    					       <li class='social-icon-item'><a href="http://instagram.com/petmatepetproducts/" target="_blank"  class="instagram-icon" ></a></li>
-    					       <li class='social-icon-item'><a href="http://www.pinterest.com/PetmateProducts" target="_blank"  class="pinteret-icon" ></a></li>
-    					       <li class='social-icon-item'><a href="http://www.youtube.com/user/petmatepetproducts" target="_blank"  class="youtube-icon"></a></li>
+    					       <li class='social-icon-item'><a alt="Facebook" title="Facebook" href="http://www.facebook.com/Petmate" target="_blank" class='facebook_icon'></a></li>
+    					       <li class='social-icon-item'><a alt="Twitter" title="Twitter" href="http://www.twitter.com/petmateproducts" target="_blank"  class="  twitter-icon"></a></li>
+    					       <li class='social-icon-item'><a alt="Instagram" title="Instagram" href="http://instagram.com/petmatepetproducts/" target="_blank"  class="instagram-icon" ></a></li>
+    					       <li class='social-icon-item'><a alt="Pinterest" title="Pinterest" href="http://www.pinterest.com/PetmateProducts" target="_blank"  class="pinteret-icon" ></a></li>
+    					       <li class='social-icon-item'><a alt="Youtube" title="Youtube" href="http://www.youtube.com/user/petmatepetproducts" target="_blank"  class="youtube-icon"></a></li>
     					   </ul>
     					</div>
     				</div>
@@ -231,7 +232,7 @@
     			  
     			  <div class='norton-logo col-xs-12  col-md-2'>
     			      <a href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.petmate.com&amp;lang=en" target="popup" onclick="window.open('https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.petmate.com&amp;lang=en','popup','width=600,height=600'); return false;" style="color:#ffffff; text-decoration:none; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">
-                            <img class='resize' name="seal" src="/file/general/footer-norton.png" alt="Norton SECURED">
+                            <img class='resize' name="seal" src="/file/general/footer-norton.png" alt="Norton SECURED" title="Norton SECURED">
                         </a>
     			  </div> 
     		   </div>

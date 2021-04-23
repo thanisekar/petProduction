@@ -23,7 +23,7 @@
 <!-- ko ifnot:isBrandExist()-->
 <div class='container'>
      <div class='col-xs-12'>
-         <img src='/file/general/error404.jpg' class="img-responsive"/>
+         <img alt="The Requested Page Not Found" title="The Requested Page Not Found" src='/file/general/error404.jpg' class="img-responsive"/>
     </div>
 </div>
 <!--/ko-->

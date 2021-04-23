@@ -14,7 +14,7 @@
                 <div class="row">
                     <div class="col-xs-4">
                         <!-- ko with : product -->
-                        <img data-bind="attr:{src:primaryThumbImageURL}">
+                        <img data-bind="attr:{src:primaryThumbImageURL,alt:displayName(),title:displayName()}">
                         <!-- /ko -->
                     </div>
                     <div class="col-xs-8">
@@ -353,6 +353,8 @@
                         									small: '80,100',
                         									medium: '120,120',
                         									large: '120,120',
+                        									alt:'Made In USA',
+                        									title:'Made In USA',
                         									errorSrc:'',}">
                         			 </div>                         
                         		<!-- /ko -->
@@ -727,7 +729,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
      <div class="container" >
         <div class='col-xs-12 nopad categoryImageWidget'>
             <a  target="_blank" data-bind="attr: {href: '/bigmamasroadtrip',target: '_blank'}">
-                 <img  src="/file/general/Fatcat-PDP.png" class="img-responsive">
+                 <img  alt="Fat Cat" title="Fat Cat" src="/file/general/Fatcat-PDP.png" class="img-responsive">
 			</a>		
         </div>
         </div>
@@ -738,7 +740,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
      <div class="container" >
         <div class='col-xs-12 nopad categoryImageWidget'>
             <a  target="_blank" data-bind="attr: {href: '/healthychews',target: '_blank'}">
-	    <img  src="/file/general/HealthyChews_WS_SS_PDPBanner.jpg" class="img-responsive">
+	    <img alt="Healthy Chews" title="Healthy Chews" src="/file/general/HealthyChews_WS_SS_PDPBanner.jpg" class="img-responsive">
 	    			</a>		
         </div> 
         </div>
@@ -749,7 +751,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
      <div class="container" >
         <div class='col-xs-12 nopad categoryImageWidget'>
             <a  target="_blank" data-bind="attr: {href: '/vittlesvault',target: '_blank'}">
-                <img  src="/file/general/VittlesVault_GMExperience_PDPBanner.jpg" class="img-responsive">
+                <img  alt="Vittles Vault" title="Vittles Vault" src="/file/general/VittlesVault_GMExperience_PDPBanner.jpg" class="img-responsive">
 			</a>		
         </div>
         </div>
@@ -759,7 +761,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
      <div class="container hide" >
         <div class='col-xs-12 nopad categoryImageWidget'>
             <a  target="_blank" data-bind="attr: {href: '/keriskorner',target: '_blank'}">
-                <img  src="/file/general/JW_KerisKornerGroomingExperience_PDPBanner.jpg" class="img-responsive">
+                <img alt="Keris Korner" title="Keris Korner" src="/file/general/JW_KerisKornerGroomingExperience_PDPBanner.jpg" class="img-responsive">
 			</a>		
         </div>
         </div>
@@ -770,7 +772,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
      <div class="container" >
         <div class='col-xs-12 nopad categoryImageWidget'>
             <a  target="_blank" data-bind="attr: {href: '/gammaseallids',target: '_blank'}">
-                 <img  src="/file/general/GammaSealLid_GMExperience_PDPBanner.jpg" class="img-responsive">
+                 <img alt="Gamma Seal Lids" title="Gamma Seal Lids" src="/file/general/GammaSealLid_GMExperience_PDPBanner.jpg" class="img-responsive">
 			</a>		
         </div>
         </div>
@@ -781,7 +783,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
      <div class="container" >
         <div class='col-xs-12 nopad categoryImageWidget'>
             <a  target="_blank" data-bind="attr: {href: '/nano',target: '_blank'}">
-                 <img  src="/file/general/G2_NanoPDP_Banner.jpg" class="img-responsive">
+                 <img alt="Nano" title="Nano" src="/file/general/G2_NanoPDP_Banner.jpg" class="img-responsive">
 			</a>		
         </div>
         </div>
@@ -794,7 +796,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
      <div class="container" >
         <div class='col-xs-12 nopad categoryImageWidget'>
             <a target="_blank" data-bind="attr: {href: '/Loveyourlitterbox',target: '_blank'}">
-                 <img  src="/file/general/PM_LYLB-Product-Page-Banner.jpg" class="img-responsive">
+                 <img alt="Love Your LitterBox" title="Love Your LitterBox" src="/file/general/PM_LYLB-Product-Page-Banner.jpg" class="img-responsive">
 			  </a>		
         </div>
         </div>
@@ -805,7 +807,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
          <div class="container" >
             <div class='col-xs-12 nopad categoryImageWidget'>
                 <a  target="_blank" data-bind="attr: {href: '/welcomeHome',target: '_blank'}">
-                     <img  src="/file/general/PM_Welcome-Home_Banner.jpg" class="img-responsive">
+                     <img alt="Welcome Home" title="Welcome Home" src="/file/general/PM_Welcome-Home_Banner.jpg" class="img-responsive">
     			</a>		
             </div> 
             </div>
@@ -921,8 +923,9 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
                 <a href="" data-toggle="modal" data-target="#sizeChartImage" >
                     <img class="img-responsive center-block" data-bind="ccResizeImage: {
                               isSrcSetEnabled : true,
-                              source: sizeChartPath , 
-                              alt:'Hero Image 1' }">
+                              source: sizeChartPath ,
+                              title:'Size Chart',
+                              alt:'Size Chart' }">
                 </a>
                 <div class="sizechartNote">Click On Image To Enlarge</div>
                         
@@ -941,7 +944,8 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
                           <img class="img-responsive center-block" data-bind="ccResizeImage: {
                                                   isSrcSetEnabled : true,
                                                   source: sizeChartPath , 
-                                                  alt:'Hero Image 1' }">
+                                                  title:'Size Chart',
+                                                  alt:'Size Chart' }">
                           </div>
                     
                         </div>
@@ -962,7 +966,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
      <div class="container">
      <div class="row cfo-cartridge">
          <div class="left-content col-sm-3">
-         <img src="/file/general/CFO_Approved.png" class="img-responsive">
+         <img alt="CFO Approved" title="CFO Approved" src="/file/general/CFO_Approved.png" class="img-responsive">
          </div>
          <div class="right-content col-sm-9">
          <p data-bind="html:product().x_cFOPDPUpdates"></p>
@@ -994,7 +998,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
                  <div class=" col-sm-12 col-xs-12 replacement-part mb-50">
                    <!--<div class="col-sm-12 col-md-6 left replacementParts-padding">-->
                      <div class="col-xs-4 col-sm-2 col-md-2 left replacementParts replacementParts-padding">
-                         <a href="#" data-bind="attr: {href: route, title: displayName},ccLink:$data.route">
+                         <a href="#" data-bind="attr: {href: route, title: displayName, alt: displayName},ccLink:$data.route">
                          <img data-bind="attr:{src:primaryThumbImageURL}">
                          </a>
                       </div>

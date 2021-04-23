@@ -183,7 +183,7 @@
                               errorSrc: '/file/general/petmate-no-image.jpg',
                               errorAlt: 'Missing Product Image'
                               }, attr: {id: 'CC-product-list-image-'+id()+'-'+$parentContext.$index()+$index()}">
-                           <span class="overlay"></span>
+							  <span data-bind="attr:{alt:displayName,title:displayName}" class="overlay"></span>
                            </a> </div>
 									<div class="col-xs-6 col-sm-8 col-md-12 nopad descriptionContent">
 										<div data-bind="text:$parents[2].newMonthDisplay($data)" class="plp-date"></div>

@@ -10,7 +10,8 @@
 					 small: '400,1088',
 					 medium:'400,1088',
 					 large: '400,1088',
-					 alt: 'category().categoryImages[0].path',
+					alt: 'Replacement Parts',
+					title: 'Replacement Parts',
 					 errorSrc:'images/noImage.png',
 					 errorAlt:'No Image Found'}" id="categoryPromo" title="categoryPromo" 
 					 >
@@ -23,7 +24,8 @@
 					 small: '400,1088',
 					 medium:'400,1088',
 					 large: '400,1088',
-					 alt: 'category().categoryImages[0].path',
+					alt: 'Replacement Parts',
+					title: 'Replacement Parts',
 					 errorSrc:'images/noImage.png',
 					 errorAlt:'No Image Found'}" id="categoryPromo" title="categoryPromo" 
 					 >
@@ -38,7 +40,9 @@
 					small: '400,1088',
 					medium:'400,1088',
 					large: '400,1088',
-					errorSrc:'images/noImage.png',
+					alt: 'Kennel',
+					title: 'Kennel',
+					errorSrc:'Kennel',
 					errorAlt:'No Image Found'}"  class="img-responsive"
 					>
 					
