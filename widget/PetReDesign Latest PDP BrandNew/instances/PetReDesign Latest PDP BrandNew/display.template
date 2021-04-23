@@ -448,7 +448,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
               
                   <div class="item-stock-wrapper">
                            <div class="item-number">
-                                <span>Item: <span data-bind='text:koproductItemNo'></span></span>
+                                <span>Item: <span itemprop="sku" data-bind='text:koproductItemNo'></span></span>
                            </div>
                            <!-- ko if: product().brand() -->
                            <div class="item-brand">
@@ -618,7 +618,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
                   <!-- /oc -->
                 <!-- ko if: koOverSizeAlert -->  
                       <div class="oversize-error-msg">
-                        This item mush ship motor freight. Cannot ship to AK, HI, or APO’s
+                        This item must ship motor freight. Cannot ship to AK, HI, or APO’s
                       </div>
                        <!-- /ko -->
                   <!-- oc section: product-add-to-space -->
