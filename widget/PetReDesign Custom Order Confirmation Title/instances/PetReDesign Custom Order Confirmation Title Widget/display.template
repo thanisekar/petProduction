@@ -5,7 +5,7 @@
         Thank You for Your Order!
     </h2>
     <p class="order-para-normal">
-        Check your email for a confirmation. We know waiting is ruff, but take heart knowing we typically ship your items the very next day!<br>
+        Check your email for a confirmation. We know waiting is ruff, but take heart knowing we are working on your order now!<br>
         Want to track your order? <a data-bind="ccLink:{route: '/login'}">Sign In</a> or <a data-bind="ccLink:{route: '/createaccount'}">Create An Account</a>
 	</p>
     <div class="align-center">
