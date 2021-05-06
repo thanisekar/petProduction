@@ -117,7 +117,7 @@
     "productPriceChanged": "This item's price has changed since it was added to your cart. Original price was: __currency____originalPrice__ ",
     "giftChoiceText": "You have qualified for a free gift. Please select your options below.",
     "cartSessionExpired": "Your session has expired due to inactivity. Please log in again",
-    "quantityRequireMsg": "Quantity is mandatory. ",
+    "quantityRequireMsg": "Quantity is required. ",
     "partialPreOrderMsg": "We currently have __stockLimit__ item(s) in stock. However, you can place an order now for the full quantity entered, and the remaining stock will be filled at a later date as a pre order.",
     "hiphenText": "-",
     "removeItemMsg": "Remove item from your cart?",
