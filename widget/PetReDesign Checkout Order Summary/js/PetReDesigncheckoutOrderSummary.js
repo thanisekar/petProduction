@@ -109,10 +109,10 @@ define(
                     //Reordering and changing names for shipping methods
                     setTimeout(function(){
                         $(".CC-checkoutOrderSummary-shippingOption-300008").insertAfter(".CC-checkoutOrderSummary-shippingOption-300009");
-                        $("#CC-checkoutOrderSummary-shippingOptionPrice-300010").text("Ground (Standard Shipping: 2 - 5 Business Days)");
+                        $("#CC-checkoutOrderSummary-shippingOptionPrice-300010").text("Ground (Standard Shipping: 3 - 5 Business Days)");
                         $("#CC-checkoutOrderSummary-shippingOptionPrice-300009").text("Two Day Shipping: Expect Within 2 Business Days");
                         $( "#CC-checkoutOrderSummary-discounts span:contains('FREE Ground Shipping All Orders')" ).css( "display", "none" );
-                        },2500)
+                        },3500)
                 });
                 //Popup
                 widget.shippingSurchargeMouseOver = function(widget, event) {
