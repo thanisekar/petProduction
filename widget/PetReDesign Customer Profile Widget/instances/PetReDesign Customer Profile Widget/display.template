@@ -715,7 +715,7 @@
 										<div class="row row-collapse">
 											<div class="form__item  columns  form-elements">
 												<label for="" class='label-text'>Phone Number</label>
-													<input type="tel" class="input-box" placeholder="123-456-7890"  id="txtPhoneNumber23"  maxlength="18" name="txtPhoneNumber23" data-bind="validatableValue: phoneNumber">
+													<input type="text" class="input-box" placeholder="1234567890"  id="txtPhoneNumber23"  maxlength="10" name="txtPhoneNumber23" data-bind="validatableValue: phoneNumber">
 													<span class='displayErrorIcons'></span>
 											</div>
 										</div>

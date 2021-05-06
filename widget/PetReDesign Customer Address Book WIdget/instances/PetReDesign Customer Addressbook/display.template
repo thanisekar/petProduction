@@ -230,7 +230,7 @@
               <div class="form-group form-elements">
                <label for="txtPhoneNumber3" class="inline-label control-label label-text">
                   Phone Number</label>
-                  <input type="text" class="form-control input-box"  placeholder="123-456-7890" id="txtPhoneNumber3"  maxlength="10" name="txtPhoneNumber3" data-bind="validatableValue: phoneNumber">
+                  <input type="text" class="form-control input-box"  placeholder="1234567890" id="txtPhoneNumber3"  maxlength="10" name="txtPhoneNumber3" data-bind="validatableValue: phoneNumber">
                   <span class="displayErrorIcons"></span>
               </div>
               
@@ -381,7 +381,7 @@
                   <label for="txtPhoneNumber231" class="phoneNumber control-label label-text">
                     Phone Number
                   </label>
-                  <input type="text" class="form-control billingAddrPhone input-box"  placeholder="123-456-7890" id="txtPhoneNumber231"  maxlength="10" name="txtPhoneNumber231" data-bind="validatableValue: phoneNumber">
+                  <input type="text" class="form-control billingAddrPhone input-box"  placeholder="1234567890" id="txtPhoneNumber231"  maxlength="10" name="txtPhoneNumber231" data-bind="validatableValue: phoneNumber">
                    <span class="displayErrorIcons"></span>
                 </div>
               </div>
