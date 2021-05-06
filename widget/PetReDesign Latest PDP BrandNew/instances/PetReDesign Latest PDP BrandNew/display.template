@@ -915,7 +915,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
            
                  <div class="col-sm-7 col-xs-12 left">
                     <div class="size-details">
-                        <h2  class='spec-title'>Size Chart</h2>
+                        <h2  class='spec-title'>Additional Information</h2>
                         <p  class='sizeChartTxt' data-bind="html: sizeChartText"></p>
                     </div>
                 </div>
