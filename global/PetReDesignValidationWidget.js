@@ -515,7 +515,7 @@ define(
 
             $.validator.addMethod('numericOnly', function(value) {
                 return /^[0-9]+$/.test(value);
-            }, 'This value should be digits.');
+            }, 'Please enter a phone number with no dashes or spaces');
 
             $.validator.addMethod("nickNameValidation", function(value, element) {
                 return this.optional(element) || value.length < 51;
@@ -579,7 +579,7 @@ define(
                     ,
                     txtPhoneNumber23: {
                         required: true,
-                        //numericOnly: true,
+                        numericOnly: true,
                         maskedPhone: false,
                         minlength: 10,
                         maxlength: 12
@@ -850,7 +850,7 @@ define(
 
             $.validator.addMethod('numericOnly', function(value) {
                 return /^[0-9]+$/.test(value);
-            }, 'This value should be digits.');
+            }, 'Please enter a phone number with no dashes or spaces');
 
 
             $.validator.addMethod("nickNameValidation", function(value, element) {
@@ -917,7 +917,7 @@ define(
                     },
                     txtPhoneNumber3: {
                         required: true,
-                        //numericOnly: true,
+                        numericOnly: true,
                         maskedPhone: false,
                         minlength: 10,
                         maxlength: 12
@@ -994,7 +994,7 @@ define(
 
             $.validator.addMethod('numericOnly', function(value) {
                 return /^[0-9]+$/.test(value);
-            }, 'This value should be digits.');
+            }, 'Please enter a phone number with no dashes or spaces');
 
             $.validator.addMethod("nickNameValidation", function(value, element) {
                 return this.optional(element) || value.length < 51;
@@ -1052,7 +1052,7 @@ define(
                     },
                     txtPhoneNumber231: {
                         required: true,
-                        //numericOnly: true,
+                        numericOnly: true,
                         maskedPhone: false,
                         minlength: 10,
                         maxlength: 12

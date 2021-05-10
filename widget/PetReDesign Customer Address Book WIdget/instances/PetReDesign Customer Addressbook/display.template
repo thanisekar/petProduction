@@ -229,7 +229,7 @@
               </div>
               <div class="form-group form-elements">
                <label for="txtPhoneNumber3" class="inline-label control-label label-text">
-                  Phone Number</label>
+                  Phone Number <span class="tool" data-toggle="tooltip" title="We may need to contact you with shipping or order questions">required <i class="fa fa-question-circle" aria-hidden="true"></i></span></label> 
                   <input type="text" class="form-control input-box"  placeholder="1234567890" id="txtPhoneNumber3"  maxlength="10" name="txtPhoneNumber3" data-bind="validatableValue: phoneNumber">
                   <span class="displayErrorIcons"></span>
               </div>
