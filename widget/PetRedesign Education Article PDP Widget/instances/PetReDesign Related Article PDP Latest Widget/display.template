@@ -77,5 +77,115 @@
     </div>  
 
 </div>
+<!--Promo-->
+<!-- ko if: product().id() == 'a10002' -->
+<div class="promo">
+    <form action="https://bm5150.com/public/webform/process/" method="post">
+       <input type="hidden" name="fid" value="357frkqb4mil7gr1llzy41jgpnrkl" />
+       <input type="hidden" name="sid" value="c870c70bc4229a431f4cebfef43e131d" />
+       <input type="hidden" name="delid" value="" />
+       <input type="hidden" name="subid" value="" />
+       <input type="hidden" name="td" value="" />
+       <input type="hidden" name="formtype" value="addcontact" />
+       <script type="text/javascript">
+          var fieldMaps = {};
+       </script>
+       <div class="section" id="row_46880">
+          <div class="" id="column_57654">
+             <div class="">
+                <div class="row">
+                   <div class="col-sm-7 col-xs-12 email-center">
+                      <div class="contents">
+                         <p style="font-family: helvetica;" xml="lang"><strong><span style="font-size: 14pt;" xml="lang">DID YOU LIKE THIS ARTICLE?</span></strong></p>
+                         <p><span style="font-size: 12pt;">Enter your email address below to download and receive exclusive offers.</span></p>
+                         <div class="email field_block">
+                            <div class="caption"></div>
+                            <div class="field" style="position:relative;margin-bottom: 10px;">
+                               <i class="fa fa-envelope" id="envelope-icon" aria-hidden="true"></i>
+                               <input type="text" class="text field fb-email" placeholder="Email Address"  name="110912" value="" />
+                               <div class="field_error"></div>
+                               <p style="font-size: 12px!important;margin-bottom: 0!important;">You may unsubscribe at any time</p>
+                            </div>
+                         </div>
+                         <input type="hidden" name="110913[1689877]" value="true" />
+                         <div class="field_block" field_id="4169964">
+                            <div class="field">
+                               <span>
+                               <input type="hidden" id="field_4169964" class="hidden field" name="110917[4169964]" value="1" />
+                               </span>
+                            </div>
+                         </div>
+                         <div class="field_block">
+                            <div class="field">
+                               <span>
+                               <input class="subscribe" type="submit" value="Submit" />
+                               </span>
+                            </div>
+                         </div>
+                         <hr/>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </form>
+ </div>
+ <!-- /ko -->
+ <!-- ko if: product().id() == 'a90005' -->
+ <div class="promo">
+    <form action="https://bm5150.com/public/webform/process/" method="post">
+       <input type="hidden" name="fid" value="e42me9wc9airztqqhvpcpjt6ig3kj" />
+       <input type="hidden" name="sid" value="c870c70bc4229a431f4cebfef43e131d" />
+       <input type="hidden" name="delid" value="" />
+       <input type="hidden" name="subid" value="" />
+       <input type="hidden" name="td" value="" />
+       <input type="hidden" name="formtype" value="addcontact" />
+       <script type="text/javascript">
+          var fieldMaps = {};
+       </script>
+       <div class="section" id="row_46876">
+          <div class="" id="column_57650">
+             <div class="">
+                <div class="row">
+                   <div class="col-sm-7 col-xs-12 email-center">
+                      <div class="contents">
+                         <p style="font-family: helvetica;" xml="lang"><strong><span style="font-size: 14pt;" xml="lang">DID YOU LIKE THIS ARTICLE?</span></strong></p>
+                         <p><span style="font-size: 12pt;">Enter your email address below to download and receive exclusive offers.</span></p>
+                         <div class="email field_block">
+                            <div class="caption"> </div>
+                            <div class="field" style="position:relative;margin-bottom: 10px;">
+                               <i class="fa fa-envelope" id="envelope-icon" aria-hidden="true"></i>
+                               <input type="text" class="text field fb-email" placeholder="Email Address"  name="110905" value="" />
+                               <div class="field_error"></div>
+                               <p style="font-size: 12px!important;margin-bottom: 0!important;">You may unsubscribe at any time</p>
+                            </div>
+                         </div>
+                         <input type="hidden" name="110908[1689877]" value="true" />
+                         <div class="field_block" field_id="4169963">
+                            <div class="field">
+                               <span>
+                               <input type="hidden" id="field_4169963" class="hidden field" name="110910[4169963]" value="1" />
+                               </span>
+                            </div>
+                         </div>
+                         <div class="field_block">
+                            <div class="field">
+                               <span>
+                               <input class="subscribe" type="submit" value="Submit" />
+                               </span>
+                            </div>
+                         </div>
+                         <hr/>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </form>
+ </div>
+ <!-- /ko -->
+ <!--Ends-->
 </div>
 <!-- /ko -->
