@@ -39,6 +39,10 @@ define(
 		        $(".subCatagory").css("display", "none");
                 $(this).next().css("display", "block");
             });
+            $('body').on('focus', '.cc-desktop-dropdown .dropdown-toggle', function(){
+              $(".subCatagory").css("display", "none");
+                  $(this).next().css("display", "block");
+              });
             $('body').on('mouseleave', '.cc-desktop-dropdown .dropdown-toggle',  function(){
                 $(this).next().css("display", "none");
             });
