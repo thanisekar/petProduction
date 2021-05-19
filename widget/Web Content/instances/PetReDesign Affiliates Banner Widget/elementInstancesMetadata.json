@@ -7,7 +7,7 @@
       "text": null,
       "borderConfig": {
         "borderColor": "#000000",
-        "borderWidth": 0
+        "borderWidth": "0"
       },
       "paddingConfig": {
         "paddingBottom": "0",
@@ -20,9 +20,9 @@
       },
       "imageConfig": {
         "altText": "Affiliates",
-        "zoomEnabled": false,
         "titleText": "Affiliates",
-        "isProductImage": false,
+        "zoomEnabled": "0",
+        "isProductImage": "0",
         "fileName": "PetmateAffiliateBanner.jpg"
       }
     },

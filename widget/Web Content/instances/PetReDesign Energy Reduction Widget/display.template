@@ -1,0 +1,21 @@
+<div id="energyReduction">
+	<h6 class="header">As the leading manufacturer of pet products in the U.S., we are extremely diligent when it comes to the conservation of energy. From energy-efficient lighting in our offices and warehouses, to how we cool our machinery, Petmate routinely finds ways to limit our energy usage and reduce the consumption of what’s in place.</h6>
+	<hr>
+	<div class="descriptions">
+		<div class="row one">
+		    <div class="col-md-7 col-sm-12">
+				<h6 class="top">We’re Going Down, Down, Down</h6>
+				<p>Over a recent two-year period, our energy conservation efforts have resulted in reducing our CO2 emissions by 1,159 metric tons. That’s about the same amount put out by 46,230 propane tanks. Through ongoing optimization and efficiency programs, we will continue to improve upon this energy reduction.</p>
+			</div>
+			<div class="col-md-5 col-sm-12"> <img src="/file/general/CO2Emissions@2x.png" alt="We’re Going Down, Down, Down" title="We’re Going Down, Down, Down" class="img-responsive"> </div>
+		</div>
+		<hr>
+		<div class="row two">
+		    	<div class="col-md-7 col-sm-12 image-container-toggle">
+				<h6>Lights, Cooling Towers, Water!</h6>
+				<p>Complex machinery requires complex solutions when it comes to reducing the environmental impact. We’ve recently reduced our electrical consumption by 14.2%, and by year's end have a goal for a further savings of 400K kWh. Replacing machinery with more efficient options, improving our water consumption practices, and continual evaluation of operational practices will be an ongoing effort for us as we look to the future.</p>
+			</div>
+			<div class="col-md-5 col-sm-12 "> <img src="/file/general/Lights Cooling Towers, Water@2x.png" alt="Lights, Cooling Towers, Water!" title="Lights, Cooling Towers, Water!" class="img-responsive"> </div>
+		</div>
+	</div>
+</div>

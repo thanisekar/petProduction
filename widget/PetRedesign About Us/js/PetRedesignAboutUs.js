@@ -54,8 +54,8 @@ define(
 				  "content":"Meet Lucky Boy! He's an 8-year-old Staffordshire Terrier who is a total mama's boy. His favorite thing about coming to work with mom is getting to test all the new toys Petmate creates. When he's not testing toys, he loves sitting in his very own chair so it's easier for humans to pet him as they walk by. He has so much fun at work with mom, that he snoozes the whole ride home. At home, his favorite thing to do is snuggle under the covers and chase his tail.",
 				  "altText":"Meet-Katie-and-Lucky"
 			   },{
-				  "image":"facesofpetmate_Donna_Teddy.png",
-				  "content":"Meet Teddy!  He's an energetic 14-month-old Australian Shepherd Mix who loves coming to work with his mama. While his mama works, he enjoys getting all the head rubs and treats from anyone that stops by. At home, he drives his sisters crazy by chasing them all around the yard. Donna fostered Teddy for 7 months and has recently become her newly adopted pack member.",
+				  "image":"facesofpetmate_TiffaneyandCupcake.png",
+				  "content":"Meet Cupcake! She's a cuddly 8-year-old part Dachshund part Coton de Tulear mix that loves coming into the office with her mom, Tiffaney. Her favorite thing about coming to work is getting the spend the whole day by her mom's side. While Tiffaney works hard, you can find Cupcake snoozing the day away in her comfy bed on her mom's desk.",
 				  "altText":"Meet-Donna-and-Teddy"
 			   },{
 				  "image":"facesofpetmate_Tess_Seymour.png",

@@ -1,29 +1,29 @@
 {
   "configuration": {
     "ArticleImage4": {
-      "src": "/file/v73342984264266845/general/a90100.HowToTreatMattedDogFur_MainImage.jpg",
-      "mediaName": "/general/a90100.HowToTreatMattedDogFur_MainImage.jpg"
+      "src": "/file/v6718078595439909361/general/a10025.OutdoorPetSafety_MainImage.jpg",
+      "mediaName": "/general/a10025.OutdoorPetSafety_MainImage.jpg"
     },
     "ArticleImage3": {
-      "src": "/file/v8934607868434572710/general/a90134.MakingYourDogYourBestFriend_MainImage.jpg",
-      "mediaName": "/general/a90134.MakingYourDogYourBestFriend_MainImage.jpg"
+      "src": "/file/v4066090957178291368/general/b10021.8ChewToysForChewers_MainImage.jpg",
+      "mediaName": "/general/b10021.8ChewToysForChewers_MainImage.jpg"
     },
     "ArticleImage2": {
-      "src": "/file/v479207800326020295/general/a90135.WhyDoCatsPurrr_MainImage.jpg",
-      "mediaName": "/general/a90135.WhyDoCatsPurrr_MainImage.jpg"
+      "src": "/file/v3750700167060762975/general/a90129.DehydrationInDogs_MainImage.jpg",
+      "mediaName": "/general/a90129.DehydrationInDogs_MainImage.jpg"
     },
     "ArticleImage1": {
-      "src": "/file/v7020790984511078132/general/a90136.NationalAdoptAShelterPet_MainImage.jpg",
-      "mediaName": "/general/a90136.NationalAdoptAShelterPet_MainImage.jpg"
+      "src": "/file/v5199776234377440871/general/a90143.FactsAboutCatWhiskers_MainImage.jpg",
+      "mediaName": "/general/a90143.FactsAboutCatWhiskers_MainImage.jpg"
     },
-    "ArticleImage3Des": "Making Your Dog Your Bestfriend",
-    "ArticleImage1Des": "National Adopt a Shelter Pet Day: How to Make a Difference in a Shelter Pet's Life",
-    "ArticleImage2Des": "Why Do Cats Purr?",
-    "ArticleImage2URL": "/why-do-cats-purr-/article/a90135",
-    "ArticleImage4Des": "How to Treat Matted Dog Fur",
-    "ArticleImage1URL": "national-adopt-a-shelter-pet-day-how-you-can-make-a-difference-in-a-shelter-pets-life/a90136",
-    "ArticleImage3URL": "/making-your-dog-your-best-friend/article/a90134",
-    "ArticleImage4URL": "/how-to-treat-matted-dog-fur/article/a90100"
+    "ArticleImage3Des": "8 Chew Toys for the Toughest Chewers",
+    "ArticleImage1Des": "Facts About Cat Whiskers",
+    "ArticleImage2Des": "Dehydration In Dogs: Warning Signs",
+    "ArticleImage2URL": "/dehydration-in-dogs-warning-signs/article/a90129",
+    "ArticleImage4Des": "Outdoor Pet Safety",
+    "ArticleImage1URL": "/facts-about-cat-whiskers/article/a90143",
+    "ArticleImage3URL": "/8-chew-toys-for-the-toughest-chewers/article/b10021",
+    "ArticleImage4URL": "/outdoor-pet-safety/article/a10025"
   },
   "displayName": "PetReDesign Home Article Updated"
 }

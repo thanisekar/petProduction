@@ -29,7 +29,7 @@
                         <div  id="CC-Video">
                            <div class="" id="productVideo">
                               <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/Hb444wWkvpY'}">
-                                 <img alt="Our Promise" title="Our Promise" src="/file/general/copy2.png" class="img-responsive video-banner">
+                                 <img alt="Our Promise" title="Our Promise" src="/file/general/Petmate_careers.png" class="img-responsive video-banner">
                                  <div class="play-icon"><img alt="Play" title="Play" src="/file/general/youTubeVideo.png" /></div>
                               </a>
                            </div>
@@ -52,15 +52,17 @@
 
                   <div class="row">
                      <div class="col-sm-4 col-xs-12">
-                         <img alt="Petmate resin is made with over 95% recycled content" title="Petmate resin environmental stat" src="/file/general/PM_EnvironmentalStats_1RECT.jpg" class="img-responsive">
+                         <img alt="Petmate resin is made with over 95% recycled content" title="Petmate resin environmental stat" src="/file/general/PMEnvironmentalStats_01.png" class="img-responsive">
                         </div>
                        <div class="col-sm-4 col-xs-12">
-                           <img alt="We keep over 60 million pounds of waste out of landfills every year" title="Petmate waste environmental stat" src="/file/general/PM_EnvironmentalStats_2RECT.jpg" class="img-responsive">
+                           <img alt="We keep over 60 million pounds of waste out of landfills every year" title="Petmate waste environmental stat" src="/file/general/PMEnvironmentalStats_02.png" class="img-responsive">
                         </div>
                         <div class="col-sm-4 col-xs-12">
-                          <img alt="Over 90% of all manufacturing scrap is recycled" title="Petmate recycling environmental stat" src="/file/general/PM_EnvironmentalStats_3RECT.jpg" class="img-responsive">
+                          <img alt="Over 90% of all manufacturing scrap is recycled" title="Petmate recycling environmental stat" src="/file/general/PMEnvironmentalStats_03.png" class="img-responsive">
                         </div>
-
+                        <div class="more" style="text-align: center;margin-top:30px">
+                           <a class="learn-more" alt="Click for Learn More" title="Learn More" data-bind="ccLink: 'ourenvironment'">Learn More</a>
+                           </div>
                  
                    
                </div>

@@ -151,6 +151,27 @@
 				  <li>Affiliates</li>
 			<!-- /ko -->
 			
+			
+			<!-- redesignAboutUs section-->
+             <!-- ko if:(koPageId() == 'ourenvironment') -->
+             <li  class="no_underline"><a data-bind="ccLink: 'ourstory'">Our Story</a> / Environmental Practices</li>
+             <!-- /ko -->
+             
+             <!-- redesignAboutUs section-->
+             <!-- ko if:(koPageId() == 'RecycledMaterial') -->
+             <li  class="no_underline"><a data-bind="ccLink: 'ourstory'">Our Story</a> / <a data-bind="ccLink: 'ourenvironment'">Environmental Practices</a> / Recycled Material</li>
+             <!-- /ko -->
+             
+             <!-- redesignAboutUs section-->
+             <!-- ko if:(koPageId() == 'packaging') -->
+             <li  class="no_underline"><a data-bind="ccLink: 'ourstory'">Our Story</a> / <a data-bind="ccLink: 'ourenvironment'">Environmental Practices</a> / Packaging</li>
+             <!-- /ko -->
+             
+             <!-- redesignAboutUs section-->
+             <!-- ko if:(koPageId() == 'EnergyReduction') -->
+             <li  class="no_underline"><a data-bind="ccLink: 'ourstory'">Our Story</a> / <a data-bind="ccLink: 'ourenvironment'">Environmental Practices</a> / Energy Reduction</li>
+             <!-- /ko -->
+			
 			 <!-- redesignAboutUs section-->
             	<!-- ko if:(koPageId() == 'Accessibility') -->
 				  <li>Accessibility Statement</li>

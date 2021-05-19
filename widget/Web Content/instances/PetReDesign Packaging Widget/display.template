@@ -1,0 +1,21 @@
+<div id="packaging">
+	<h6 class="header">One of the biggest challenges the world sees when buying any consumer good is what happens with packaging. The oceans alone can tell a very clear, and sad, story concerning the consequence of haphazard decisions. At Petmate, we are evolving all aspects of our products and how they reach the consumer. Eliminating hard-to-recycle clamshell packaging, more efficient display and shipping methods, and of course the products themselves. All aspects of a product's life are constantly being evaluated.</h6>
+	<hr>
+	<div class="descriptions">
+		<div class="row one">
+		    <div class="col-md-7 col-sm-12">
+				<h6 class="top">The End Result</h6>
+				<p>Our Chuckit! EcoFriendly Launcher is a prime example. Designed with over 95% recycled plastic and is shipped in plastic-free packaging. Paired with the Rebounce Ball, being made from over 40% recycled rubber, it’s our latest effort to help create a beautiful world for our pets to play.</p>
+			</div>
+			<div class="col-md-5 col-sm-12"> <img src="/file/general/ChuckIT@2x.png" alt="The End Result" title="The End Result" class="img-responsive"> </div>
+		</div>
+		<hr>
+		<div class="row two">
+		    <div class="col-md-7 col-sm-12 image-container-toggle">
+				<h6>Eco-Friendly Partners</h6>
+				<p>The most encouraging part related to our efforts is that we’re not doing this alone. Many of our partners in the pet space are working just as hard and setting long-term goals for how they can soften their environmental footprint in our world. We have been and will continue, to work closely with them to identify areas of opportunity in how we can all improve in this very important area.</p>
+			</div>
+			<div class="col-md-5 col-sm-12"> <img src="/file/general/Partners@2x.png" alt="Reducing Our Carbon Footprint" title="Reducing Our Carbon Footprint" class="img-responsive"> </div>
+		</div>
+	</div>
+</div>

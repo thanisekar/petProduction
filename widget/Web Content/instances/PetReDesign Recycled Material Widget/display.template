@@ -1,0 +1,35 @@
+<div id="recycledMaterial">
+    <h6 class="header">Petmate currently prevents over 60 million pounds of waste from ever reaching a landfill every year. The bulk comes from what’s known as “post-industrial” waste. When another manufacturer makes a product deemed defective, it would otherwise end up in a waste heap somewhere before ever reaching a consumer’s hands. That’s where we come into play.</h6>
+    <hr>
+    <div class="descriptions">
+        <div class="row one">
+            <div class="col-md-7 col-sm-12">
+                <h6 class="top">How It Works</h6>
+                <p>The team at our award-winning Spectrum facility works to identify those unused products. Following environmental guidelines, we then process that waste into a resin material which is incorporated into over 60% of the products we make, right here is the USA.</p>
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <img src="/file/general/VisionValues@2x.png" alt="How It Works" title="How It Works" class="img-responsive how-it-works">
+            </div>
+        </div>
+        <hr>
+        <div class="row two">
+             <div class="col-md-7 col-sm-12 image-container-toggle">
+                <h6 class="top">Reducing Our Carbon Footprint</h6>
+                <p>Working alongside our retail partners, including Walmart’s Project Gigaton, our recycling efforts have helped remove 118 metric tons of carbon dioxide emissions since 2019. Our goal by the end of 2021 is to increase our diversion of various plastic waste by an additional 10%.</p>
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <img src="/file/general/CarbonFootprint@2x.png" alt="Reducing Our Carbon Footprint" title="Reducing Our Carbon Footprint" class="img-responsive">
+            </div>
+        </div>
+        <hr>
+        <div class="row three">
+            <div class="col-md-7 col-sm-12">
+                <h6 class="top">There’s Waste From What You Make Though, Right?</h6>
+                <p>Yes, there is. With manufacturing, anything becomes leftovers. But we take great pride in the fact that over 90% of all scrap is recycled for additional purposes. And when it comes to our machinery, any new investment in equipment must equate to a 15% reduction in energy usage.</p>
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <img src="/file/general/Production Waste@2x.png" alt="There’s Waste From What You Make Though, Right?" title="There’s Waste From What You Make Though, Right?" class="img-responsive">
+            </div>
+        </div>
+        </div>
+        </div>

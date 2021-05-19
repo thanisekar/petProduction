@@ -1,0 +1,35 @@
+<div id="environmentalPractices">
+    
+    <div class="contents">
+        <h6>There is only one world for us to live, laugh, and play in.<br/> At Petmate, we’re doing our part to ensure it’s safe for humans, and our pets, to enjoy. </h6>
+    <div class="row rowG">
+        <div class="col-xs-12 col-sm-4">
+            <img src="/file/general/RecycledMaterial_Img.png" class="img-responsive" alt="" title="">
+            <a class="learn-more" alt="Click for Learn More" title="Learn More" data-bind="ccLink: 'RecycledMaterial'">Learn More</a>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <img src="/file/general/Packaging_Img.png" class="img-responsive" alt="" title="">
+            <a class="learn-more" alt="Click for Learn More" title="Learn More" data-bind="ccLink: 'packaging'">Learn More</a>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <img src="/file/general/EnergyReduction_Img.png" class="img-responsive" alt="" title="">
+            <a class="learn-more" alt="Click for Learn More" title="Learn More" data-bind="ccLink: 'EnergyReduction'">Learn More</a>
+        </div>
+    </div>
+    <p>What does “environmental sustainability” really mean to a business? At its core, it’s about responsibility. Conserving natural resources, re-using materials for production, eliminating harmful waste being released; these areas and many more are efforts all companies should be mindful of when it comes to how their business is run.</p>
+    </div>
+    <hr>
+    <div class="bottom">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <img src="/file/general/pet_sus.jpg" class="img-responsive" alt="" title="">
+            </div>
+            <div class="col-xs-12 col-sm-5">
+                <p>Petmate is proud to be a member of the PSC</p>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <a class="learn-more" alt="Click for Learn More" title="Learn More" data-bind="ccLink: 'petsustainability'">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>

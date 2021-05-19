@@ -39,7 +39,7 @@ define(
 		        $(".subCatagory").css("display", "none");
                 $(this).next().css("display", "block");
             });
-            $('body').on('focus', '.cc-desktop-dropdown .dropdown-toggle', function(){
+             $('body').on('focus', '.cc-desktop-dropdown .dropdown-toggle', function(){
               $(".subCatagory").css("display", "none");
                   $(this).next().css("display", "block");
               });

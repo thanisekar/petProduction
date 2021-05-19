@@ -1,24 +1,24 @@
 {
   "configuration": {
-    "homeBannerLink3": "/category/L1-beddingL2-dog-beds",
+    "homeBannerLink3": "/searchresults?Ntt=wondersnaxx%20naturals&Nty=1&No=0&Nrpp=12&Rdm=136&searchType=simple&type=search",
     "homeBannerLink4": "/category/petmate-brands",
-    "homeBannerLink1": "/searchresults?Ntt=nutterz&Nty=1&No=0&Nrpp=12&Rdm=899&searchType=simple&type=search",
-    "homeBannerLink2": "/jw-hol-ee-roller/product/43113",
+    "homeBannerLink1": "/category/outdoor-dog-beds",
+    "homeBannerLink2": "/searchresults?Ntt=Chuckit!%20Amphibious&Nty=1&No=0&Nrpp=12&Rdm=127&searchType=simple&type=search",
     "homeBanner4": {
       "src": "/file/v7057230527119932312/general/PM_HPBanner_Kennel_DOG.jpg",
       "mediaName": "/general/PM_HPBanner_Kennel_DOG.jpg"
     },
     "homeBanner3": {
-      "src": "/file/v7010431642876507352/general/March-2021_Bedding_Web-Banner_1906x650.jpg",
-      "mediaName": "/general/March-2021_Bedding_Web-Banner_1906x650.jpg"
+      "src": "/file/v6430465974512181100/general/HC_Naturals_Web-Bann.jpg",
+      "mediaName": "/general/HC_Naturals_Web-Bann.jpg"
     },
     "homeBanner2": {
-      "src": "/file/v1548280877021621539/general/JW_HYH_Web-Banner.jpg",
-      "mediaName": "/general/JW_HYH_Web-Banner.jpg"
+      "src": "/file/v8485846094611074866/general/CI_Amphibious_Web-Banner.jpg",
+      "mediaName": "/general/CI_Amphibious_Web-Banner.jpg"
     },
     "homeBanner1": {
-      "src": "/file/v7415501514222423475/general/HC_Nutterz_Web-Banne.jpg",
-      "mediaName": "/general/HC_Nutterz_Web-Banne.jpg"
+      "src": "/file/v2812617022917427703/general/LZB_OutdoorBeddingBanner-19.jpg",
+      "mediaName": "/general/LZB_OutdoorBeddingBanner-19.jpg"
     }
   },
   "displayName": "PetReDesign Home Banner Carousel Widget"

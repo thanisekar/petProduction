@@ -67,6 +67,10 @@
                                                         </li>
                                                         
                                                         <li>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/pet-furniture'}">Furniture</a>
+                                                        </li>
+                                                        
+                                                        <li>
                                                           <a class="Level3 " data-bind="ccLink:{route:'/category/dog-kennel-mats'}">Kennel Mats</a>
                                                         </li>
                                                      
@@ -76,6 +80,10 @@
                                                      
                                                         <li>
                                                           <a class="Level3 " data-bind="ccLink:{route:'/category/orthopedic-dog-beds'}">Orthopedic Beds</a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/outdoor-dog-beds'}">Outdoor Beds</a>
                                                         </li>
                                                      
                                                         <li>
@@ -827,9 +835,6 @@
                                                         <li>
                                                           <a class="Level3 " data-bind="ccLink:{route:'/category/chicken-coops'}" >chicken coops</a>
                                                         </li>
-                                                          <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/small-animal-cages'}" >small animal cages</a>
-                                                        </li>
                                                      </ul>
                                                  
 												</li>
@@ -1202,6 +1207,10 @@
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/pet-furniture'}" >Furniture</a> </li>
+                                                </ul>
+                                                
+                                                <ul class="sub-menu third-level">
                                                     <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/dog-kennel-mats'}" >Kennel Mats</a> </li>
                                                 </ul>
                                                 
@@ -1211,6 +1220,10 @@
                                                 
                                                 <ul class="sub-menu third-level">
                                                     <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/orthopedic-dog-beds'}" >Orthopedic Beds</a> </li>
+                                                </ul>
+                                                
+                                                <ul class="sub-menu third-level">
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/outdoor-dog-beds'}" >Outdoor Beds</a> </li>
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">
@@ -2042,10 +2055,7 @@
                                                 <ul class="sub-menu third-level">
                                                     <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/chicken-coops'}" >chicken coops</a> </li>
                                                 </ul>
-                                                 <ul class="sub-menu third-level">
-                                                     <li><a class="Level3 " data-bind="attr:{href :'/category/small-animal-cages'}" >small animal cages</a></li>
-                                                 </ul>
-                                            </div>
+                                                 </div>
                                          </li>  
                                         
                                        	

@@ -34,7 +34,7 @@
       "text": null,
       "borderConfig": {
         "borderColor": "#000000",
-        "borderWidth": 0
+        "borderWidth": "0"
       },
       "paddingConfig": {
         "paddingBottom": "0",
@@ -46,12 +46,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Click now for Adopt-a-Pet",
-        "zoomEnabled": false,
-        "titleText": "Adopt-a-Pet",
-        "link": "/adoptapet",
-        "isProductImage": false,
-        "fileName": "April-2021_PM_National-Adop.jpg"
+        "altText": "Shop Pet Qwerks",
+        "titleText": "Shop Pet Qwerks",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "link": "/category/brand-petqwerks",
+        "fileName": "May-2021_PQ_BrandAwareness_.jpg"
       }
     },
     {
@@ -61,7 +61,7 @@
       "text": null,
       "borderConfig": {
         "borderColor": "#000000",
-        "borderWidth": 0
+        "borderWidth": "0"
       },
       "paddingConfig": {
         "paddingBottom": "0",
@@ -73,12 +73,11 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Petmate's April 2021 Product of the Month",
-        "zoomEnabled": false,
-        "titleText": "Petmate's April 2021 Product of the Month",
-        "link": "/gamma2-nano-automatic-pet-feeder/product/43535",
-        "isProductImage": false,
-        "fileName": "April-2021_PM_Product-of-th.jpg"
+        "altText": "Petmate May Sale - Save 20% on Orders $49+",
+        "titleText": "Petmate May Sale",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "fileName": "May-2021_PM_Sitewide-Sale_Web-Banner_1535x750.jpg"
       }
     },
     {
@@ -88,7 +87,7 @@
       "text": null,
       "borderConfig": {
         "borderColor": "#000000",
-        "borderWidth": 0
+        "borderWidth": "0"
       },
       "paddingConfig": {
         "paddingBottom": "0",
@@ -100,12 +99,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Click now to read about Adopt A Shelter Pet Day",
-        "zoomEnabled": false,
-        "titleText": "How You Can Make A Difference In A Shelter Pet's ",
-        "isProductImage": false,
-        "link": "/national-adopt-a-shelter-pet-day-how-to-can-make-a-difference-in-a-shelter-pets-life/article/a90136",
-        "fileName": "April-2021_PM-Academy-Adopt.jpg"
+        "altText": "Petmate's May 2021 Product of the Month ",
+        "titleText": "Petmate's May 2021 Product of the Month",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "link": "/gen7pets-dress-blue-monaco-pet-stroller/product/G2350DB",
+        "fileName": "May-2021_PM_Product-of-the-.jpg"
       }
     },
     {

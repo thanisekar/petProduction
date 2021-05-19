@@ -1,0 +1,130 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+    
+    hr{
+        border-top: 1px solid #ccc!important;
+    }
+#recycledMaterial{
+    width: 80%;
+    margin:0 auto;
+    .header{
+        padding: 30px 0;
+        text-align:center;
+        width: 90%;
+        margin:0 auto;
+        font-weight: 600;
+    }
+    .descriptions{
+        .top{
+            margin-top: 40px;
+        }
+        .row{
+            padding: 15px 0;
+        }
+        h6{
+            font-weight: 700;
+        }
+        .how-it-works{
+            max-width:100%;
+            cursor: pointer;
+        }
+        img{
+            margin:0 auto;
+            max-width: 300px;
+        }
+        @media (min-width: 1025px){
+            .image-container-toggle{
+              float: right !important;
+           }
+          /* .how-it-works{
+            max-width:100%;
+            cursor: pointer;
+            &:hover{
+                transform: scale(2); 
+                z-index: 1;
+                position: relative;
+            }
+        }*/
+        }
+    }
+    
+    //Ipad
+
+        @media only screen
+        and (min-device-width : 768px)
+        and (max-device-width : 1024px){
+            hr{
+                width: 80%;
+            }
+            .header{
+                font-size: 16px!important;
+                width: 90%;
+                line-height: 28px !important;
+                padding-bottom: 10px;
+            }
+            .descriptions{
+                .top{
+                    margin-top: 0px;
+                }
+                .row{
+                     padding-bottom:0px!important;
+                }
+                .how-it-works{
+                    max-width:300px;
+                }
+                h6{
+                    font-size: 20px;
+                     text-align:center;
+                }
+                img{
+                    padding-bottom:20px!important;
+                }
+                p{
+                  font-size: 16px!important;
+                  line-height: 28px !important;
+                   text-align:center;
+                }
+            }
+        }
+
+//Iphone
+
+        @media only screen
+        and (min-device-width : 375px)
+        and (max-device-width : 667px) {
+            hr{
+                width: 80%;
+            }
+            
+            .header{
+                font-size: 15px!important;
+                width: 90%;
+                line-height: 25px !important;
+                padding-bottom: 10px;
+            }
+            .descriptions{
+                .top{
+                    margin-top: 0px;
+                }
+                .row{
+                     padding:0px!important;
+                }
+                h6{
+                    font-size: 18px;
+                     text-align:center;
+                }
+                img{
+                    padding-bottom:10px!important;
+                }
+                p{
+                  font-size: 15px!important;
+                  line-height: 25px !important;
+                   text-align:center;
+                }
+            }
+        
+        }
+           
+        }
+
+
+}
