@@ -541,7 +541,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
 								   <div class="control-values">
 								         
                                          <!-- ko foreach:optionValues -->
-                                           <a class="form-control cc-skuDropdownColor btn btn-default option-values" data-bind="click: function(data,event){$parent.selectedOption($data);  },text:$data.key.toLowerCase() , css:{ disableState : ($parents[1].showStockStatus() && !$parents[1].stockStatus()), SelectedSku: $parents[1].getSkuColor($parent.optionValues().length) ,  selectSkuValue: $parents[1].getSkuSelected($parent, $data.key) } ,attr:{ 'data-key' : $data.key }"> </a>
+                                           <a href="#" class="form-control cc-skuDropdownColor btn btn-default option-values" tabindex="0" data-bind="click: function(data,event){$parent.selectedOption($data);  },text:$data.key.toLowerCase() , css:{ disableState : ($parents[1].showStockStatus() && !$parents[1].stockStatus()), SelectedSku: $parents[1].getSkuColor($parent.optionValues().length) ,  selectSkuValue: $parents[1].getSkuSelected($parent, $data.key) } ,attr:{ 'data-key' : $data.key, title: $data.key, alt: $data.key }"> </a>
                                        <!-- /ko --> 
                                        <!-- ko if: $data.selectedOption() === undefined -->
                                        <div class="select-sku-error">Please Select Color</div>
@@ -559,7 +559,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
 								   <!-- /ko-->
 								    <div class="control-values">
                                          <!-- ko foreach:optionValues -->
-                                           <a class="form-control cc-skuDropdownSize btn btn-default option-values" data-bind="click: function(data,event){$parent.selectedOption($data); },text:$data.key.toLowerCase(), css:{ disableState : ($parents[1].showStockStatus() && !$parents[1].stockStatus()),  SelectedSku: $parents[1].getSkuSize($parent.optionValues().length) ,selectSkuValue: $parents[1].getSkuSelected($parent, $data.key)  } ,attr:{ 'data-key' : $data.key }"></a>
+                                           <a href="#" class="form-control cc-skuDropdownSize btn btn-default option-values" tabindex="0" data-bind="click: function(data,event){$parent.selectedOption($data); },text:$data.key.toLowerCase(), css:{ disableState : ($parents[1].showStockStatus() && !$parents[1].stockStatus()),  SelectedSku: $parents[1].getSkuSize($parent.optionValues().length) ,selectSkuValue: $parents[1].getSkuSelected($parent, $data.key)  } ,attr:{ 'data-key' : $data.key, title: $data.key, alt: $data.key }"></a>
                                        <!-- /ko --> 
                                        <!-- ko if: $data.selectedOption() === undefined -->
                                        <div class="select-sku-error">Please Select Size</div>
