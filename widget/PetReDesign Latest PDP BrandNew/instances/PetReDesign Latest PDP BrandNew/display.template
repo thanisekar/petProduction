@@ -965,32 +965,7 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
 </div>     
      <!-- size charts -->
      
-     <!-- CFO Cartridge -->
-     
-     <!-- ko if: product().x_cFOPDPUpdates() != null -->
-     <div class="container">
-     <div class="row cfo-cartridge">
-         <div class="left-content col-sm-3">
-         <img alt="CFO Approved" title="CFO Approved" src="/file/general/CFO_Approved.png" class="img-responsive">
-         </div>
-         <div class="right-content col-sm-9">
-         <p data-bind="html:product().x_cFOPDPUpdates"></p>
-         <a class="shopping-cart" data-bind="ccLink:{route:'/cfo'}" >Learn more about our CFO</a>
-         </div>
-        
-         
-         
-     </div>
-     </div>
-     <!-- /ko -->
-     
-     <!-- CFO Ends -->
-     
-     
-     
-     
  
-     
      
      <!--Replacement Parts-->
     <!-- ko if: koreplacementPartsProduct().length > 0 -->
