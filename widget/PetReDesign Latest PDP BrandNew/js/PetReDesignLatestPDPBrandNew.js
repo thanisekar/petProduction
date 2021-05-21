@@ -59,6 +59,7 @@ define(
 
         return {
             koproductItemNo: ko.observable(),
+            koDeliveryDelay: ko.observable(false),
             koBrandRoute: ko.observable(),
             koFreeShippingBadge: ko.observable(),
             koOverSizeAlert: ko.observable(),
@@ -1256,6 +1257,7 @@ define(
                 var childSkusArray = [];
                 var item = [];
                 var petWeightRange;
+                var deliveryDelay = ["00700", "00500", "21950", "21554", "21700", "21184", "41036", "21798", "21796", "41158","41444","00400","21949","21553","37062","21795"];
                 this.koproductSkuId(id);
                 widgetModel.koreplacementParts([]);
                 widgetModel.koreplacementPartsProduct([]);
@@ -1288,6 +1290,12 @@ define(
                                 widgetModel.koProductSpecTitle(true)
                                 widgetModel.koVariantSelect(true);
                             }
+                             if(deliveryDelay.includes(itemNumber)){
+                                widgetModel.koDeliveryDelay(true);
+                            }else{
+                               widgetModel.koDeliveryDelay(false);
+                            }
+
 
 
                         }

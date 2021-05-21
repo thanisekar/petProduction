@@ -448,6 +448,11 @@ currencyObj: $data.site().selectedPriceListGroup().currency, nullReplace: '0.00'
                          <!-- /ko -->
                   <!-- /oc -->
               
+                 <div class="delivery-delay">
+                     <!-- ko if: koDeliveryDelay -->
+                     <span>For oversize kennels, 36”- 48” please expect delivery within 10-14 business days from the date your order ships.</span>
+                     <!-- /ko -->
+                 </div>
                   <div class="item-stock-wrapper">
                            <div class="item-number">
                                 <span>Item: <span itemprop="sku" data-bind='text:koproductItemNo'></span></span>
