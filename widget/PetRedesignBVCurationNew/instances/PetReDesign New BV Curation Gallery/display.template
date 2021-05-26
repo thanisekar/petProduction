@@ -1,3 +1,4 @@
+<!--<div data-crl8-container-id="homepage"></div>-->
 <div id="bvCurationWrap" >  
-  <div data-bind="attr: { 'data-bv-show': 'curations', 'data-bv-widget': 'bv-grid-gallery','data-bv-display-tag': koDisplayProperty }"></div>
+  <div data-bind="attr: { 'data-crl8-container-id': koDisplayProperty, 'data-crl8-auto-init': 'false' }"></div>
 </div>

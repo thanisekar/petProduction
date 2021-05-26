@@ -3,7 +3,7 @@
  *
  * @author Taistech
  */
-define(
+ define(
     //-------------------------------------------------------------------
     // DEPENDENCIES
     // Adding knockout
@@ -13,7 +13,7 @@ define(
     // MODULE DEFINITION
     //-------------------------------------------------------------------
     function($, ko, spinner, CCi18n, t, c, storageApi, bazzarVoice) {
-            "use strict";
+        "use strict";
         var getWidget = "";
 
 
@@ -22,54 +22,94 @@ define(
 
             koBrandPage: ko.observable(),
             koDisplayProperty: ko.observable(''),
-            koProductProperty:ko.observable(''),
+            koProductProperty: ko.observable(''),
             onLoad: function(widget) {
-         
-               
+
+
             },
 
 
             beforeAppear: function(page) {
-              
-                 var widget = this;
-                 
-                 
-                    if(page.pageId == 'category'){
-                         var brandProperty = page.contextId.replace('brand-','');
-                                widget.koDisplayProperty(brandProperty);
-                                widget.koProductProperty('');
-                    }else if(page.pageId == 'home' || page.pageId == 'Gallery'){
-                         widget.koDisplayProperty('homepage');
-                         widget.koProductProperty('');
-                    }else if(page.pageId == 'product'){
-                        widget.koDisplayProperty('');
-                        widget.koProductProperty(widget.product().id());
-                    }else if(page.pageId == 'NationalFetchDay'){
-                        widget.koDisplayProperty('chuckit');
-                        widget.koProductProperty('');
-                    }else if(page.pageId == 'keriskorner'){
-                        widget.koDisplayProperty('jw');
-                        widget.koProductProperty('');
-                    }else if(page.pageId == 'healthychews'){
-                        widget.koDisplayProperty('healthychews');
-                        widget.koProductProperty('');
+
+                var widget = this;
+
+                widget.koProductProperty('');
+
+                //widget.koDisplayProperty('');
+                var BvCallBackDestroy = setInterval(function() {
+                    if (window.crl8 && window.crl8.ready) {
+                        // window.crl8.ready fires the callback once the crl8 api is available for use on the page
+                        if (widget.koDisplayProperty()) {
+                                window.crl8.destroyExperience(widget.koDisplayProperty());
+                        }
+                        console.log('Check Leak');
+                        window.clearInterval(BvCallBackDestroy);
+
                     }
-                     var BvCallBack = setInterval(function() {
-                            if(typeof window.BVWidgets.reset !== 'undefined'){ 
-                               BVWidgets.reset(
-                                  {
-                                    
-                                    "display":widget.koDisplayProperty(),
-                                    "productId": widget.koProductProperty()
-                                  }, function() { } // Optional callback function.
-                                );
-                                 window.clearInterval(BvCallBack);
-                               }
-                        }, 500)
-                                                
+                }, 100)
+
+
+                setTimeout(function() {
+                    var BvCallBack = setInterval(function() {
+                        if (window.crl8 && window.crl8.ready) {
+                            if (page.pageId == 'category') {
+                                var brandProperty = page.contextId.replace('brand-', '');
+                                if (brandProperty == 'aspenpet') {
+                                    widget.koDisplayProperty('gallery-o7r1KTct');
+                                } else if (brandProperty == 'gensevenpets') {
+                                    widget.koDisplayProperty('gallery-z3J4n56Q');
+                                } else if (brandProperty == 'lazboy') {
+                                    widget.koDisplayProperty('gallery-pCJdqPcf');
+                                } else if (brandProperty == 'Chuckit') {
+                                    widget.koDisplayProperty('gallery-fVAlBEWK');
+                                } else if (brandProperty == 'dogzilla') {
+                                    widget.koDisplayProperty('gallery-Amr36pRH');
+                                } else if (brandProperty == 'fatcat') {
+                                    widget.koDisplayProperty('gallery-TuWColLk');
+                                } else if (brandProperty == 'jackson-galaxy') {
+                                    widget.koDisplayProperty('gallery-mAdqUQSV');
+                                } else if (brandProperty == 'jw') {
+                                    widget.koDisplayProperty('gallery-rqLWarqM');
+                                } else if (brandProperty == 'muttnation') {
+                                    widget.koDisplayProperty('gallery-NWMm2Srt');
+                                } else if (brandProperty == 'petmate') {
+                                    widget.koDisplayProperty('gallery-7z5cZ9CC');
+                                } else if (brandProperty == 'vittlesvault') {
+                                    widget.koDisplayProperty('gallery-792i6Kwk');
+                                } else if (brandProperty == 'wondersnaxx') {
+                                    widget.koDisplayProperty('gallery-DEotgVu9');
+                                } else if (brandProperty == 'wwe') {
+                                    widget.koDisplayProperty('gallery-sZtAqYT4');
+                                } else if (brandProperty == 'zoobilee') {
+                                    widget.koDisplayProperty('gallery-YI5lJBWG');
+                                }
+                            } else if (page.pageId == 'home') {
+                                widget.koDisplayProperty('homepage');
+                            } else if (page.pageId == 'Gallery') {
+                                widget.koDisplayProperty('gallery-vDMbKsJq');
+                            } else if (page.pageId == 'product') {
+                                widget.koDisplayProperty('product');
+                                widget.koProductProperty(widget.product().id());
+                            } else if (page.pageId == 'NationalFetchDay') {
+                                widget.koDisplayProperty('gallery-fVAlBEWK');
+                            } else if (page.pageId == 'keriskorner') {
+                                widget.koDisplayProperty('gallery-rqLWarqM');
+                            } else if (page.pageId == 'healthychews') {
+                                widget.koDisplayProperty('gallery-3I6G91Ed');
+                            }
+                            // window.crl8.ready fires the callback once the crl8 api is available for use on the page
+                                window.crl8.createExperience(widget.koDisplayProperty());
+                                console.log('Check Leak 2');
+                            window.clearInterval(BvCallBack);
+                        }
+                    }, 100)
+                }, 500);
+
+
+
             },
-  
-           
+
+
         };
     }
 );

@@ -3,7 +3,7 @@
  *
  * @author Taistech
  */
-define(
+ define(
     //-------------------------------------------------------------------
     // DEPENDENCIES
     // Adding knockouton
@@ -73,12 +73,24 @@ define(
 
                 getWidget = widget;
                 widget.appendScript('https://apps.bazaarvoice.com/deployments/petmate/main_site/production/en_US/bv.js');
-               widget.appendScript('//nsg.symantec.com/Web/Seal/gjs.aspx?SN=965624406');
-               //widget.appendScript('https://www.myus.com/_/Signup/RemoteRegistration?aid=1006685&noimg=1');
+                widget.appendScript('//nsg.symantec.com/Web/Seal/gjs.aspx?SN=965624406');
+                //widget.appendScript('https://www.myus.com/_/Signup/RemoteRegistration?aid=1006685&noimg=1');
                 //Cookie
 
                 //console.log(ko.toJS(widget) , '------ widget---');
                 //console.log(widget.pageContext().page.name,'--------')
+
+                //Insert New Curalate
+
+                //$('script[id="curalate"]').remove();
+
+                if ($('script[id="curalate"]').length === 0) {
+                    var curalateObject = "<script id='curalate'>var CRL8_SITENAME = 'petmate-lnuqyt';!function(){var e=window.crl8=window.crl8||{},n=!1,i=[];e.ready=function(e){n?e():i.push(e)},e.pixel=e.pixel||function(){e.pixel.q.push(arguments)},e.pixel.q=e.pixel.q||[];var t=window.document,o=t.createElement('script'),c=e.debug||-1!==t.location.search.indexOf('crl8-debug=true')?'js':'min.js';o.async=!0,o.src=t.location.protocol+'//edge.curalate.com/sites/'+CRL8_SITENAME+'/site/latest/site.'+c,o.onload=function(){n=!0,i.forEach(function(e){e()})};var r=t.getElementsByTagName('script')[0];r.parentNode.insertBefore(o,r.nextSibling)}();</script>";
+
+                    $("head").append(curalateObject);
+                }
+
+                //Ends
 
                 $.Topic(t.topicNames.PAGE_READY).subscribe(function(obj) {
                     if (widget.pageContext().page.name == 'home') {
@@ -248,11 +260,11 @@ define(
                     $('meta[name=viewport]').attr('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0');
 
                 });
-                
-                 //Added password hint for header login element
-                   setTimeout(function(){
-                 $( "#CC-userRegistration-password, #CC-updatePassword-password" ).after( "<div class='pass-hint'>*Password should be a minimum of 7 characters including 1 number & 1 uppercase letter</div>" );
-                   },500)
+
+                //Added password hint for header login element
+                setTimeout(function() {
+                    $("#CC-userRegistration-password, #CC-updatePassword-password").after("<div class='pass-hint'>*Password should be a minimum of 7 characters including 1 number & 1 uppercase letter</div>");
+                }, 500)
 
             },
 
@@ -425,7 +437,7 @@ define(
                 getData = ko.toJS(getWidget.product());
                 var getPathURL = window.location.host;
                 getPath = window.location.pathname + window.location.hash;
-              
+
                 if (window.location.href.match(/^.*k9control/)) {
                     window.location.replace("/k9-control-retractable-leash/product/13994");
                 } else if (window.location.href.match(/^.*jacksongalaxy/)) {
