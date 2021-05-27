@@ -34,7 +34,7 @@
       "text": null,
       "borderConfig": {
         "borderColor": "#000000",
-        "borderWidth": "0"
+        "borderWidth": 0
       },
       "paddingConfig": {
         "paddingBottom": "0",
@@ -46,12 +46,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Shop Pet Qwerks",
-        "titleText": "Shop Pet Qwerks",
-        "zoomEnabled": "0",
-        "isProductImage": "0",
-        "link": "/category/brand-petqwerks",
-        "fileName": "May-2021_PQ_BrandAwareness_.jpg"
+        "altText": "SAVE 30% on our Cat Goodie Box - Shop Now",
+        "zoomEnabled": false,
+        "titleText": "SAVE 30% on our Cat Goodie Box - Shop Now",
+        "link": "/petmate-goodie-box-for-cats/product/29125",
+        "isProductImage": false,
+        "fileName": "May-2021_Cat-Goodie-Box_Web.jpg"
       }
     },
     {
@@ -61,7 +61,7 @@
       "text": null,
       "borderConfig": {
         "borderColor": "#000000",
-        "borderWidth": "0"
+        "borderWidth": 0
       },
       "paddingConfig": {
         "paddingBottom": "0",
@@ -73,11 +73,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Petmate May Sale - Save 20% on Orders $49+",
-        "titleText": "Petmate May Sale",
-        "zoomEnabled": "0",
-        "isProductImage": "0",
-        "fileName": "May-2021_PM_Sitewide-Sale_Web-Banner_1535x750.jpg"
+        "altText": "Shop Cat Litter Pans",
+        "zoomEnabled": false,
+        "titleText": "Shop Cat Litter Pans",
+        "link": "/category/cat-litter-boxes-pans",
+        "isProductImage": false,
+        "fileName": "May-2021_PM_Litter-Pan-Awar.jpg"
       }
     },
     {
@@ -87,7 +88,7 @@
       "text": null,
       "borderConfig": {
         "borderColor": "#000000",
-        "borderWidth": "0"
+        "borderWidth": 0
       },
       "paddingConfig": {
         "paddingBottom": "0",
@@ -100,10 +101,10 @@
       },
       "imageConfig": {
         "altText": "Petmate's May 2021 Product of the Month ",
+        "zoomEnabled": false,
         "titleText": "Petmate's May 2021 Product of the Month",
-        "zoomEnabled": "0",
-        "isProductImage": "0",
         "link": "/gen7pets-dress-blue-monaco-pet-stroller/product/G2350DB",
+        "isProductImage": false,
         "fileName": "May-2021_PM_Product-of-the-.jpg"
       }
     },

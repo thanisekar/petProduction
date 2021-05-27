@@ -80,7 +80,7 @@
                 //console.log(ko.toJS(widget) , '------ widget---');
                 //console.log(widget.pageContext().page.name,'--------')
 
-                //Insert New Curalate
+               //Insert New Curalate
 
                 //$('script[id="curalate"]').remove();
 
@@ -91,6 +91,7 @@
                 }
 
                 //Ends
+                
 
                 $.Topic(t.topicNames.PAGE_READY).subscribe(function(obj) {
                     if (widget.pageContext().page.name == 'home') {

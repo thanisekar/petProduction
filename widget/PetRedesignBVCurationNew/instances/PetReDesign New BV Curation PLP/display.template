@@ -1,4 +1,4 @@
 <div class="bvCurationWrap" >  
-    <div data-bind="attr: {'data-crl8-container-id': koDisplayProperty, 'data-crl8-auto-init': 'false'}"></div>
-    <!--<div data-crl8-container-id="gallery-fVAlBEWK" data-crl8-auto-init="false"></div>-->
-    </div>
+<div data-bind="attr: {'data-crl8-container-id': koDisplayProperty, 'data-crl8-auto-init': 'false'}"></div>
+<!--<div data-crl8-container-id="gallery-fVAlBEWK" data-crl8-auto-init="false"></div>-->
+</div>

@@ -1,3 +1,4 @@
+
 <div id="bvCurationWrap" >  
   <div data-bind="attr: {'data-crl8-container-id': koDisplayProperty,  'data-crl8-auto-init': 'false'}"></div>
         <div style="text-align: center;">

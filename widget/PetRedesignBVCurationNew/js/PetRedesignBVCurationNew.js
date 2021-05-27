@@ -3,7 +3,7 @@
  *
  * @author Taistech
  */
- define(
+define(
     //-------------------------------------------------------------------
     // DEPENDENCIES
     // Adding knockout

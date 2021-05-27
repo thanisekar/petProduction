@@ -10,7 +10,8 @@
       "altText": "${occ:widgetCustomText('1900005')}",
       "altTextId": "1900005",
       "isProductImage": false,
-      "src": "/file/v6921893758623167672/general/May-2021_PM_Sitewide-Sale_Web-Banner_1535x750.jpg",
+      "link": "/category/cat-litter-boxes-pans",
+      "src": "/file/v5308465718676957771/general/May-2021_PM_Litter-Pan-Awar.jpg",
       "titleText": "${occ:widgetCustomText('1900006')}",
       "titleTextId": "1900006",
       "zoomEnabled": false
@@ -70,8 +71,8 @@
       "altText": "${occ:widgetCustomText('3000001')}",
       "altTextId": "3000001",
       "isProductImage": false,
-      "link": "/category/brand-petqwerks",
-      "src": "/file/v3441275311185372452/general/May-2021_PQ_BrandAwareness_.jpg",
+      "link": "/petmate-goodie-box-for-cats/product/29125",
+      "src": "/file/v8734550744614726781/general/May-2021_Cat-Goodie-Box_Web.jpg",
       "titleText": "${occ:widgetCustomText('2100001')}",
       "titleTextId": "2100001",
       "zoomEnabled": false
@@ -105,7 +106,6 @@
 
       <!-- oc section: image -->
 <span data-bind="element: 'image',id: '1900011'"></span>
-
       <!-- /oc -->
 
     </div>
