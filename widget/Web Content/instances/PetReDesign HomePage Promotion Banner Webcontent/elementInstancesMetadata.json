@@ -46,12 +46,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "SAVE 30% on our Cat Goodie Box - Shop Now",
+        "altText": "Petmate Academy - Expert Pet Advice",
         "zoomEnabled": false,
-        "titleText": "SAVE 30% on our Cat Goodie Box - Shop Now",
-        "link": "/petmate-goodie-box-for-cats/product/29125",
+        "titleText": "Petmate Academy - Expert Pet Advice",
         "isProductImage": false,
-        "fileName": "May-2021_Cat-Goodie-Box_Web.jpg"
+        "link": "/category/articles",
+        "fileName": "March21_PMAcademyWbBannere.jpg"
       }
     },
     {
@@ -73,12 +73,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Shop Cat Litter Pans",
+        "altText": "Jackson Galaxy Cat Toy Sale",
         "zoomEnabled": false,
-        "titleText": "Shop Cat Litter Pans",
-        "link": "/category/cat-litter-boxes-pans",
+        "titleText": "Jackson Galaxy Cat Toy Sale",
         "isProductImage": false,
-        "fileName": "May-2021_PM_Litter-Pan-Awar.jpg"
+        "link": "/category/brand-jackson-galaxy",
+        "fileName": "June-2021_JG_CatToySale_Web.jpg"
       }
     },
     {
@@ -100,12 +100,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Petmate's May 2021 Product of the Month ",
+        "altText": "Petmate's June 2021 Product of the Month ",
         "zoomEnabled": false,
-        "titleText": "Petmate's May 2021 Product of the Month",
-        "link": "/gen7pets-dress-blue-monaco-pet-stroller/product/G2350DB",
+        "titleText": "Petmate's June 2021 Product of the Month",
+        "link": "/vittles-vault-travel-trainer-portable-food-storage-container/product/4504",
         "isProductImage": false,
-        "fileName": "May-2021_PM_Product-of-the-.jpg"
+        "fileName": "June-2021_PM_Product-of-the.jpg"
       }
     },
     {

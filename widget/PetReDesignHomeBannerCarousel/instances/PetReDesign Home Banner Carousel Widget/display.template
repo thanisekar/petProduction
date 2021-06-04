@@ -28,7 +28,7 @@
                               <!-- ko if : homeBanner3.src() != '' -->
                             <div class="item">
                               <a data-bind="ccLink: {route: homeBannerLink3()}">
-                            <img data-bind="attr:{src: homeBanner3.src()}" alt="A web banner promoting New WonderSnaXX Naturals Dog Treats" title="Shop WonderSnaXX Naturals Dog Treats">
+                            <img data-bind="attr:{src: homeBanner3.src()}" alt="A web banner containing JW Hol-ee Dog Toys" title="Shop JW Hol-ee Dog Toys">
                           </a>
                             </div>
                              <!-- /ko -->

@@ -10,8 +10,8 @@
       "altText": "${occ:widgetCustomText('1900005')}",
       "altTextId": "1900005",
       "isProductImage": false,
-      "link": "/category/cat-litter-boxes-pans",
-      "src": "/file/v5308465718676957771/general/May-2021_PM_Litter-Pan-Awar.jpg",
+      "link": "/category/brand-jackson-galaxy",
+      "src": "/file/v5626955834643005933/general/June-2021_JG_CatToySale_Web.jpg",
       "titleText": "${occ:widgetCustomText('1900006')}",
       "titleTextId": "1900006",
       "zoomEnabled": false
@@ -34,8 +34,8 @@
       "altText": "${occ:widgetCustomText('1900003')}",
       "altTextId": "1900003",
       "isProductImage": false,
-      "link": "/gen7pets-dress-blue-monaco-pet-stroller/product/G2350DB",
-      "src": "/file/v6673383055215203770/general/May-2021_PM_Product-of-the-.jpg",
+      "link": "/vittles-vault-travel-trainer-portable-food-storage-container/product/4504",
+      "src": "/file/v642123016301436082/general/June-2021_PM_Product-of-the.jpg",
       "titleText": "${occ:widgetCustomText('1900004')}",
       "titleTextId": "1900004",
       "zoomEnabled": false
@@ -71,8 +71,8 @@
       "altText": "${occ:widgetCustomText('3000001')}",
       "altTextId": "3000001",
       "isProductImage": false,
-      "link": "/petmate-goodie-box-for-cats/product/29125",
-      "src": "/file/v8734550744614726781/general/May-2021_Cat-Goodie-Box_Web.jpg",
+      "link": "/category/articles",
+      "src": "/file/v5057311474515144660/general/March21_PMAcademyWbBannere.jpg",
       "titleText": "${occ:widgetCustomText('2100001')}",
       "titleTextId": "2100001",
       "zoomEnabled": false
