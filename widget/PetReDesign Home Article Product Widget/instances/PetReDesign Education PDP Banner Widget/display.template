@@ -1,0 +1,32 @@
+<!-- ko ifnot: product().brand() === "GiftGuides" -->
+<div id="educationPdpBanner">
+            <!--ko with:product-->
+    <div class="banner">
+      <img data-bind="attr: {src: '/file/general/'+brand(),alt:displayName,title:displayName}" class="ban img-responsive">
+      <div class="contents">
+        <div class="container">
+        <h1 data-bind="text: displayName"></h1>
+        <div class="row content2">
+            <div class="col-sm-6 col-xs-9">
+                <table>
+                    <tr>
+                        <td><img src="/file/general/Petmate_Logo Blue.png" class="img-responsive"> </td>
+                        <td class="academy"><p class="acad">Petmate Academy</p> <p class="date" data-bind="text: $parent.koFormattedDate()"></p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-6  col-xs-3">
+                 <div class="social-share-div right">
+                 <div id="petmateSocialIcons" class="social-share-icons social-links social-links--product-details">
+                    <div class="addthis_sharing_toolbox">
+                    </div>
+                 </div>
+              </div>
+            </div>
+        </div>
+         </div>
+       </div>
+    </div>
+    <!-- /ko -->
+</div>
+<!-- /ko -->

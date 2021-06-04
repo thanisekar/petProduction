@@ -1,0 +1,115 @@
+<div id="main-container">
+   <div class="">
+      <div id="academy-education-pdp" >
+         <div class="collection-section">
+            <table>
+               <tr>
+                  <td><a data-bind="ccLink: {route: '/category/articles'}"><img data-bind="attr: {src: '/file/general/article_academy.png'}" class="img-responsive"></a></td>
+                  <td><a data-bind="ccLink: {route: '/category/dogarticle'}"><img data-bind="attr: {src: '/file/general/article_dog.png'}" class="img-responsive"></a></td>
+               </tr>
+               <tr>
+                  <td><a data-bind="ccLink: {route: '/category/catarticle'}"><img data-bind="attr: {src: '/file/general/article_cat.png'}" class="img-responsive"></a></td>
+                  <td><a data-bind="ccLink: {route: '/category/birdarticle'}"><img data-bind="attr: {src: '/file/general/article_bird.png'}" class="img-responsive"></a></td>
+               </tr>
+            </table>
+         </div>
+         
+         <div class="recentPost">
+            <h6>Recent Post</h6>
+            <div class="row gridRow">
+               <!-- ko foreach: koGetCollectionList -->
+               <!-- ko foreach: items -->
+               <div class="cc-product-item">
+                  <div class="product-item-wrapper">
+                     <div class="row">
+                        <div class="col-md-6 col-sm-12 nopad read-articles">
+                           <a   data-bind="ccLink: {route: $data.route} ">
+                           <img data-bind="ccResizeImage: {
+                              source: fullImageURLs[0],
+                              xsmall: '500,270',
+                              small: '500,270',
+                              medium: '500,893',
+                              large: '500,1106',
+                              alt: displayName,
+                              title:displayName}"  class="img-responsive" width="100%"/>
+                           <span data-bind="attr:{alt:displayName,title:displayName}" class="overlay"></span>                    
+                           </a>  
+                        </div>
+                        <div class="col-md-6 col-sm-12 nopad descriptionContent">
+                           <div data-bind="text:$parents[1].newMonthDisplay($data)" class="plp-date"></div>
+                           <a data-bind="ccLink: {route: $data.route} ">
+                              <p class="product-title" data-bind="text: displayName"></p>
+                           </a>
+                           <div class="wrap">
+                              <div class='description' data-bind="text: $parents[1].truncate($data.description)"></div>
+                              <span><a data-bind="ccLink: {route: $data.route} "  class="read-article">
+                              Read Article
+                              </a></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- /ko -->
+               <!-- /ko -->
+            </div>
+         </div>
+         <div class="subscribe">
+            <h6>Never Miss A Post!</h6>
+            
+            <div id='sign-up-pdp'>
+                <p class="desc">Enter your email below to receive exclusive offers and paw-some pet parenting advice.</p>
+               <!-- <a href='#' data-toggle="modal" data-target="#emailSignupModal" class='modalBtn hide'></a>-->
+               <input data-bind="validatableValue: EmailPDP" id="emailSignUpPDP" type="text" class="form-control" placeholder="Your email address" value=''>   
+               <button class="submit-btn submitMailPDP">Subscribe</button>
+            
+            <p class="text-danger" data-bind="validationMessage: EmailPDP"></p>
+            <p class="success-msg-pdp">Thanks for signing up. You'll be the first to know about pawsome deals and pet-parent tips.</p>
+            </div>
+         </div>
+         <!-- ko if: koGetRecommendedData -->
+         <div class="recommendedProducts">
+             <h6>Products Recommended in this Article</h6>
+                <div class="row" style="padding: 0 15px;">
+             <!-- ko foreach: koGetRecommendedData -->
+              <div class="product-item">
+                  <div class="product-item-wrapper-prod">
+                     <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-6 nopad left">
+                           <a data-bind="attr: {href: route}"> <img data-bind="attr: {src:primarySmallImageURL, title: displayName, alt: displayName}" class="img-responsive"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-6 nopad items">
+                           <span class="price" data-bind="text: '$' + listPrice()"></span>
+                 <div data-bv-show="inline_rating" data-bind="attr: {'data-bv-product-id':id,'data-bv-redirect-url':route}"></div>
+                  <div class="name"><a  data-bind="attr: {href: route},text: displayName"></a></div>
+                        </div>
+                     </div>
+                  </div>
+              </div>
+             <!-- /ko -->
+             </div>
+         </div>
+          <!-- /ko -->
+         <div class="stayTouch">
+            <h6>Stay In Touch</h6>
+            <div class="socialIcons">
+               <div class="icons">
+                  <a href="https://www.facebook.com/Petmate"  target="_blank"><span alt="Facebook" title="Facebook" class="fa fa-facebook fa-2x facebook_icon"></span></a>
+               </div>
+               <div class="icons">
+                  <a href="https://www.twitter.com/petmateproducts"  target="_blank"><span alt="Twitter" title="Twitter" class="fa fa-twitter fa-2x twitter_icon"></span></a>
+               </div>
+               <div class="icons">
+                  <a href="https://instagram.com/petmatepetproducts/"  target="_blank"><span alt="Instagram" title="Instagram" class="fa fa-instagram fa-2x instagram_icon"></span></a>
+               </div>
+               <div class="icons">
+                  <a href="https://www.pinterest.com/PetmateProducts"  target="_blank"><span alt="Pinterest" title="Pinterest" class="fa fa-pinterest fa-2x pinterest_icon"></span></a>
+               </div>
+               <div class="icons">
+                  <a href="https://www.youtube.com/user/petmatepetproducts"  target="_blank"><span alt="Youtube" title="Youtube" class="fa fa-youtube fa-2x youtube_icon"></span></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

@@ -1,191 +1,161 @@
 <!--
- /**
-  *
-  * Product Details Widget Template
-  *
-  */
--->
+   /**
+    *
+    * Product Details Widget Template
+    *
+    */
+   -->
 <!-- ko if: loaded -->
-<div id="petredesignEducationArticlePDP" class="container article-pdp-content">
-<div class="templateRegion" id="cc-product-details" data-oc-id="cc-product-details">
-    <div class="page-header-details clearfix left row">  
-        <span data-bind="window.articleSearchBackToListLink"></span>
-        <span class="long-arrow-left"></span>
-        <!-- ko ifnot: isMediaArticle -->
-        <!-- ko ifnot: isGiftCard -->
-			<a href="#" class="backToArticles" data-bind="ccLink: {route: '/category/articles'}">Back to all articles</a>
-			<!-- /ko -->
-			<!-- /ko -->
-			<!-- ko if: isMediaArticle -->
-			<a href="#" class="backToArticles" data-bind="ccLink: {route: '/media'}">Back to Media</a>
-			<!-- /ko -->
-			<!-- ko if: isGiftCard -->
-			<a href="#" class="backToArticles" data-bind="ccLink: {route: '/category/giftGuides'}">Back to Gift Guides</a>
-			<!-- /ko -->
-			<!--a href="/education">&lt; back to listings</a>-->
-	</div>
-<hr>  
-
-<!-- oc section: petmate-product-long-description -->
-        
-        <div class="row prod-long-description">
-            <div data-bind="html: product().longDescription" id="CC-prodDetails-longDescription"></div>
-        </div>
-    <!-- /oc -->
-
-
-<div class="select-detail-wrapper mb-50 clearfix">
-    <div class="prev-next-margin next-previous-button-margin select-detail show-for-large-up clearfix">
-    	    
-    <!-- ko if: product -->
-    <!-- ko if: product().previousId -->
-        <a class="prev" data-bind="ccLink: {route:  product().previousId(), displayName: 'Previous' }">prev</a>
-    <!-- /ko -->
-    
-    <!-- ko if: product().nextid -->
-        <a class="next" data-bind="ccLink: {route:  product().nextid(), displayName: 'Next' }">next </a>
-    <!-- /ko -->
-    <!-- /ko -->
-    </div>
-</div>
-<hr class="">
-<div class="articleTag">
-    <span class="TagTitle">Tags: </span>
-    <!-- ko foreach: koArticleProductCategory() -->
-    <a class="prev" data-bind="ccLink: {route:  route }">
-        <span data-bind="text: displayName"></span>
-    </a>
-    <!-- /ko -->
-</div>
-    <div class="social-share-div right">
-        <span class="socialShareTitle">Share this article:</span>
-      <div id="petmateSocialIcons" class="social-share-icons social-links social-links--product-details">
-          <div class="addthis_sharing_toolbox">
-              
-          </div>
-      <!--       <div id="global-social-email">-->
-      <!--    <a id="global-social-shareemail" href="#">-->
-      <!--        <img src="/file/general/social-email-icon.png" style="width:20px; height:20px" class="social-email-icon img-responsive">-->
-      <!--    </a>-->
-      <!--</div>-->
+<div id="petredesignEducationArticlePDP" class="article-pdp-content" data-bind="template: { afterRender: function() {$data.receiveProductId() }}">
+   <div class="templateRegion" id="cc-product-details" data-oc-id="cc-product-details">
+      <!-- oc section: petmate-product-long-description -->
+      <div class="row prod-long-description">
+         <div data-bind="html: product().longDescription" id="CC-prodDetails-longDescription"></div>
       </div>
-      <!--<div id="global-social-email">-->
-      <!--    <a id="global-social-shareemail" href="#">-->
-      <!--        <img src="/file/general/social-email-icon.png" style="width:20px; height:20px" class="social-email-icon img-responsive">-->
-      <!--    </a>-->
-      <!--</div>-->
-    </div>  
+      <!-- /oc -->
+      <div class="select-detail-wrapper mb-50 clearfix">
+         <div class="prev-next-margin next-previous-button-margin select-detail show-for-large-up clearfix">
+             <div class="row">
+            <!-- ko if: product -->
+            <!-- ko if: product().previousId -->
+             <!--  ko with: getFinalProductData()[0] -->
+             <div class="col-sm-6 prev">
+                 <table>
+                     <tr><td><a class="nav" data-bind="attr: {href: route()}" >Previous Post</a></td></tr>
+                     <tr><td><a class="name" data-bind="attr: {href: route()}, text: displayName()"></a></td></tr>
+                 </table>
+              </div>
+            <!-- /ko -->
+            <!-- /ko -->
+            <!-- ko if: product().nextid -->
+             <!--  ko with: getFinalProductData()[1] -->
+             <div class="col-sm-6 next">
+                 <table>
+                     <tr><td><a class="nav" data-bind="attr: {href: route()}" >Next Post</a></td></tr>
+                     <tr><td><a class="name" data-bind="attr: {href: route()}, text: displayName()"></a></td></tr>
+                    
+                 </table>
+              </div>
+            <!-- /ko -->
+            <!-- /ko -->
+            <!-- /ko -->
+            </div>
+         </div>
+      </div>
+      <hr class="">
 
-</div>
-<!--Promo-->
+      
+   </div>
+   <!--Promo-->
 <!-- ko if: product().id() == 'a10002' -->
 <div class="promo">
-    <form action="https://bm5150.com/public/webform/process/" method="post">
-       <input type="hidden" name="fid" value="357frkqb4mil7gr1llzy41jgpnrkl" />
-       <input type="hidden" name="sid" value="c870c70bc4229a431f4cebfef43e131d" />
-       <input type="hidden" name="delid" value="" />
-       <input type="hidden" name="subid" value="" />
-       <input type="hidden" name="td" value="" />
-       <input type="hidden" name="formtype" value="addcontact" />
-       <script type="text/javascript">
-          var fieldMaps = {};
-       </script>
-       <div class="section" id="row_46880">
-          <div class="" id="column_57654">
-             <div class="">
-                <div class="row">
-                   <div class="col-sm-7 col-xs-12 email-center">
-                      <div class="contents">
-                         <p style="font-family: helvetica;" xml="lang"><strong><span style="font-size: 14pt;" xml="lang">DID YOU LIKE THIS ARTICLE?</span></strong></p>
-                         <p><span style="font-size: 12pt;">Enter your email address below to download and receive exclusive offers.</span></p>
-                         <div class="email field_block">
-                            <div class="caption"></div>
-                            <div class="field" style="position:relative;margin-bottom: 10px;">
-                               <i class="fa fa-envelope" id="envelope-icon" aria-hidden="true"></i>
-                               <input type="text" class="text field fb-email" placeholder="Email Address"  name="110912" value="" />
-                               <div class="field_error"></div>
-                               <p style="font-size: 12px!important;margin-bottom: 0!important;">You may unsubscribe at any time</p>
-                            </div>
-                         </div>
-                         <input type="hidden" name="110913[1689877]" value="true" />
-                         <div class="field_block" field_id="4169964">
-                            <div class="field">
-                               <span>
-                               <input type="hidden" id="field_4169964" class="hidden field" name="110917[4169964]" value="1" />
-                               </span>
-                            </div>
-                         </div>
-                         <div class="field_block">
-                            <div class="field">
-                               <span>
-                               <input class="subscribe" type="submit" value="Submit" />
-                               </span>
-                            </div>
-                         </div>
-                         <hr/>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </form>
- </div>
- <!-- /ko -->
- <!-- ko if: product().id() == 'a90005' -->
- <div class="promo">
-    <form action="https://bm5150.com/public/webform/process/" method="post">
-       <input type="hidden" name="fid" value="e42me9wc9airztqqhvpcpjt6ig3kj" />
-       <input type="hidden" name="sid" value="c870c70bc4229a431f4cebfef43e131d" />
-       <input type="hidden" name="delid" value="" />
-       <input type="hidden" name="subid" value="" />
-       <input type="hidden" name="td" value="" />
-       <input type="hidden" name="formtype" value="addcontact" />
-       <script type="text/javascript">
-          var fieldMaps = {};
-       </script>
-       <div class="section" id="row_46876">
-          <div class="" id="column_57650">
-             <div class="">
-                <div class="row">
-                   <div class="col-sm-7 col-xs-12 email-center">
-                      <div class="contents">
-                         <p style="font-family: helvetica;" xml="lang"><strong><span style="font-size: 14pt;" xml="lang">DID YOU LIKE THIS ARTICLE?</span></strong></p>
-                         <p><span style="font-size: 12pt;">Enter your email address below to download and receive exclusive offers.</span></p>
-                         <div class="email field_block">
-                            <div class="caption"> </div>
-                            <div class="field" style="position:relative;margin-bottom: 10px;">
-                               <i class="fa fa-envelope" id="envelope-icon" aria-hidden="true"></i>
-                               <input type="text" class="text field fb-email" placeholder="Email Address"  name="110905" value="" />
-                               <div class="field_error"></div>
-                               <p style="font-size: 12px!important;margin-bottom: 0!important;">You may unsubscribe at any time</p>
-                            </div>
-                         </div>
-                         <input type="hidden" name="110908[1689877]" value="true" />
-                         <div class="field_block" field_id="4169963">
-                            <div class="field">
-                               <span>
-                               <input type="hidden" id="field_4169963" class="hidden field" name="110910[4169963]" value="1" />
-                               </span>
-                            </div>
-                         </div>
-                         <div class="field_block">
-                            <div class="field">
-                               <span>
-                               <input class="subscribe" type="submit" value="Submit" />
-                               </span>
-                            </div>
-                         </div>
-                         <hr/>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </form>
- </div>
- <!-- /ko -->
- <!--Ends-->
+   <form action="http://bm5150.com/public/webform/process/" method="post">
+      <input type="hidden" name="fid" value="357frkqb4mil7gr1llzy41jgpnrkl" />
+      <input type="hidden" name="sid" value="c870c70bc4229a431f4cebfef43e131d" />
+      <input type="hidden" name="delid" value="" />
+      <input type="hidden" name="subid" value="" />
+      <input type="hidden" name="td" value="" />
+      <input type="hidden" name="formtype" value="addcontact" />
+      <script type="text/javascript">
+         var fieldMaps = {};
+      </script>
+      <div class="section" id="row_46880">
+         <div class="" id="column_57654">
+            <div class="">
+               <div class="row">
+                  <div class="col-sm-7 col-xs-12 email-center">
+                     <div class="contents">
+                        <p style="font-family: helvetica;" xml="lang"><strong><span style="font-size: 14pt;" xml="lang">DID YOU LIKE THIS ARTICLE?</span></strong></p>
+                        <p><span style="font-size: 12pt;">Enter your email address below to download and receive exclusive offers.</span></p>
+                        <div class="email field_block">
+                           <div class="caption"></div>
+                           <div class="field" style="position:relative;margin-bottom: 10px;">
+                              <i class="fa fa-envelope" id="envelope-icon" aria-hidden="true"></i>
+                              <input type="text" class="text field fb-email" placeholder="Email Address"  name="110912" value="" />
+                              <div class="field_error"></div>
+                              <p style="font-size: 12px!important;margin-bottom: 0!important;">You may unsubscribe at any time</p>
+                           </div>
+                        </div>
+                        <input type="hidden" name="110913[1689877]" value="true" />
+                        <div class="field_block" field_id="4169964">
+                           <div class="field">
+                              <span>
+                              <input type="hidden" id="field_4169964" class="hidden field" name="110917[4169964]" value="1" />
+                              </span>
+                           </div>
+                        </div>
+                        <div class="field_block">
+                           <div class="field">
+                              <span>
+                              <input class="subscribe" type="submit" value="Submit" />
+                              </span>
+                           </div>
+                        </div>
+                        <hr/>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </form>
 </div>
+<!-- /ko -->
+<!-- ko if: product().id() == 'a90005' -->
+<div class="promo">
+   <form action="http://bm5150.com/public/webform/process/" method="post">
+      <input type="hidden" name="fid" value="e42me9wc9airztqqhvpcpjt6ig3kj" />
+      <input type="hidden" name="sid" value="c870c70bc4229a431f4cebfef43e131d" />
+      <input type="hidden" name="delid" value="" />
+      <input type="hidden" name="subid" value="" />
+      <input type="hidden" name="td" value="" />
+      <input type="hidden" name="formtype" value="addcontact" />
+      <script type="text/javascript">
+         var fieldMaps = {};
+      </script>
+      <div class="section" id="row_46876">
+         <div class="" id="column_57650">
+            <div class="">
+               <div class="row">
+                  <div class="col-sm-7 col-xs-12 email-center">
+                     <div class="contents">
+                        <p style="font-family: helvetica;" xml="lang"><strong><span style="font-size: 14pt;" xml="lang">DID YOU LIKE THIS ARTICLE?</span></strong></p>
+                        <p><span style="font-size: 12pt;">Enter your email address below to download and receive exclusive offers.</span></p>
+                        <div class="email field_block">
+                           <div class="caption"> </div>
+                           <div class="field" style="position:relative;margin-bottom: 10px;">
+                              <i class="fa fa-envelope" id="envelope-icon" aria-hidden="true"></i>
+                              <input type="text" class="text field fb-email" placeholder="Email Address" size="35" name="110905" value="" />
+                              <div class="field_error"></div>
+                              <p style="font-size: 12px!important;margin-bottom: 0!important;">You may unsubscribe at any time</p>
+                           </div>
+                        </div>
+                        <input type="hidden" name="110908[1689877]" value="true" />
+                        <div class="field_block" field_id="4169963">
+                           <div class="field">
+                              <span>
+                              <input type="hidden" id="field_4169963" class="hidden field" name="110910[4169963]" value="1" />
+                              </span>
+                           </div>
+                        </div>
+                        <div class="field_block">
+                           <div class="field">
+                              <span>
+                              <input class="subscribe" type="submit" value="Submit" />
+                              </span>
+                           </div>
+                        </div>
+                        <hr/>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </form>
+</div>
+<!-- /ko -->
+<!--Ends-->
+</div>
+
 <!-- /ko -->

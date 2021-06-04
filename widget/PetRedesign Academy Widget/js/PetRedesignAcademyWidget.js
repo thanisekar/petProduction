@@ -1,72 +1,137 @@
-define(['knockout','CCi18n','ccConstants', 'pubsub', 'storageApi', 'ccRestClient'], 
+define(['knockout', 'CCi18n', 'ccConstants', 'pubsub', 'storageApi', 'ccRestClient'],
 
-function(ko, CCi18n, CCConstants, pubsub, storageApi, rest) {  
-  
-  "use strict";
-  var getWidget = '';
-  var getPath = "";
-  return {
-    koGetCollectionList:ko.observableArray([]),
-     
-        
-        onLoad: function(widget) {
+    function(ko, CCi18n, CCConstants, pubsub, storageApi, rest) {
+
+        "use strict";
+        var getWidget = '';
+        var getPath = "";
+        var emailval;
+        return {
+            koGetCollectionList: ko.observableArray([]),
+            koGetRecommendedData: ko.observable(),
+            EmailPDP: ko.observable(null),
+            koEmailSignupValuePDP: ko.observable(''),
+
+            onLoad: function(widget) {
                 getWidget = widget;
-        },
-        
-        beforeAppear: function (page) {
-        	 var widget = this;
-        	 widget.categoryCollectionsFunction();
-    
-         },
-          newMonthDisplay: function(data) {
-              //console.log("get date")
-                if(data.startDateStr !==null && data.startDateStr !== "") {
-                    
+                $("body").on("click", ".submitMailPDP", function() {
+                    //Bronto email signup
+                    emailval = $("#emailSignUpPDP").val();
+                    widget.koEmailSignupValuePDP(emailval);
+                    $('#brontoEmailId').remove();
+                    var brontoEmail = '<img id="brontoEmailId" src="https://app.bronto.com/public/?q=direct_add&fn=Public_DirectAddForm&id=bjoxunlmlfrmycqpxmpztvpnnlwkbof&email=' + getWidget.koEmailSignupValuePDP() + '&&list1=0bcd03ec000000000000000000000019c915" width="0" height="0" border="0" alt=""/>'
+                    $('body').append(brontoEmail);
+                    //Ends
+                    var modalInput = $("#emailAddressinPopUp").val();
+                    var homeInput = $("#emailSignUpPDP").val();
+                    var inputVal = "";
+                    if (modalInput) {
+                        inputVal = modalInput;
+                    } else {
+                        inputVal = homeInput;
+                    }
+                    var objNew = {
+                        "emailId": inputVal.toString()
+                    };
+                    // console.log(objNew);
+                    if (getWidget.validationModel.isValid() && emailval !== "") {
+                        $.ajax({
+                            url: "https://services.petmate.com:9090/email/signup",
+                            type: "POST",
+                            contentType: "application/json",
+                            data: JSON.stringify(objNew),
+                            success: function(response) {
+                                //  console.log(response,'Success Message');
+                                $('.success-msg-pdp').css('display', 'block');
+                                $('.success-msg-pdp').fadeOut(8000);
+                                $("#emailSignUpPDP").val('');
+                            }
+                        });
+                    } else {
+                        //  console.log(".......email invalid.........")
+                    }
+
+
+                });
+                /* email validation */
+
+
+                widget.EmailPDP.extend({
+
+                    pattern: {
+                        params: /^([\d\w-\.]+@([\d\w-]+\.)+(com|edu|org|net|ca|me|mil|cc))/,
+                        message: widget.translate('Please enter a valid email address.'),
+                    }
+                });
+                widget.validationModel = ko.validatedObservable({
+                    EmailPDP: widget.EmailPDP
+
+                });
+
+                $.Topic("sendRecommendedProducts.memory").subscribe(function(data) {
+                    widget.koGetRecommendedData(data);
+                });
+            },
+
+            beforeAppear: function(page) {
+                var widget = this;
+                widget.categoryCollectionsFunction();
+
+
+
+            },
+
+
+
+
+            newMonthDisplay: function(data) {
+                //console.log("get date")
+                if (data.startDateStr !== null && data.startDateStr !== "") {
+
                     var startDateArr = data.startDateStr.split("-");
-                    var shortMon = ["Jan","Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
-                     
-                     var startDateFormat = shortMon[(parseInt(startDateArr[1])-1)]+" "+startDateArr[2]+", "+startDateArr[0];
+                    var shortMon = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
+
+                    var startDateFormat = shortMon[(parseInt(startDateArr[1]) - 1)] + " " + startDateArr[2] + ", " + startDateArr[0];
                     return startDateFormat;
                 } else {
                     return "";
                 }
-                
+
             },
-          categoryCollectionsFunction: function() {
-                if(getWidget.enabled()) {
-				   var dataUrl = ""	;
-				   var url = window.location.hostname;
-		   
-		            var o = CCConstants.ENDPOINT_PRODUCTS_LIST_PRODUCTS,
-					u = {};
-					u[CCConstants.CATEGORY] = getWidget.collectionId(), u.includeChildren = !0;
-				//	u['fields'] = 'category.id, category.displayName, category.longDescription, category.route, items.creationDate,items.route,items.primaryFullImageURL,items.route,items.displayName,items.longDescription,items.startDateStr,items.id';
-					rest.request(o, u, function(e) {
-					 //  console.log('Data1 before', e);
-    							for(var j=0;j<e.length;j++){
-                    		       var imagePath = e[j].primaryFullImageURL.split('=');
-                                   e[j].primaryFullImageURL=ko.observable(imagePath[1]);
-            		            }
-            		            getWidget.koGetCollectionList([])
-            		            getWidget.koGetCollectionList.push(e)
-					});
-					
-				
-				  			   
-			 }
-          },
-          
-          truncate:function(string ){
-			var getString = string;
-                   if (string.length > 150 )
-                   {
-                     getString= string.substring(0,150)+'...'; 
-                   }   
-                       return getString;
-            
-             
-          }
-          
-          
-  };
-});
+            categoryCollectionsFunction: function() {
+                if (getWidget.enabled()) {
+                    var dataUrl = "";
+                    var url = window.location.hostname;
+
+                    var o = CCConstants.ENDPOINT_PRODUCTS_LIST_PRODUCTS,
+                        u = {};
+                    u[CCConstants.CATEGORY] = getWidget.collectionId(), u.includeChildren = !0;
+                    //	u['fields'] = 'category.id, category.displayName, category.longDescription, category.route, items.creationDate,items.route,items.primaryFullImageURL,items.route,items.displayName,items.longDescription,items.startDateStr,items.id';
+                    rest.request(o, u, function(e) {
+                        //  console.log('Data1 before', e);
+                        for (var j = 0; j < e.length; j++) {
+                            var imagePath = e[j].primaryFullImageURL.split('=');
+                            e[j].primaryFullImageURL = ko.observable(imagePath[1]);
+                        }
+                        getWidget.koGetCollectionList([])
+                        getWidget.koGetCollectionList.push(e)
+                    });
+
+
+
+                }
+            },
+
+            truncate: function(string) {
+                var getString = string;
+                if (string.length > 150) {
+                    getString = string.substring(0, 150) + '...';
+                }
+                return getString;
+
+
+            }
+
+
+        };
+    });

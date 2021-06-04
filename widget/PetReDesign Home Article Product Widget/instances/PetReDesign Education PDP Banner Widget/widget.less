@@ -1,0 +1,203 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+    
+	#educationPdpBanner {
+		.banner {
+			position: relative;
+			.ban {
+				width: 100%;
+				-webkit-filter: brightness(50%);
+			}
+			.contents {
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin-left: auto;
+				margin-right: auto;
+				bottom: 20%;
+				h1 {
+					color: #fff!important;
+					font-weight: bold;
+					margin-bottom: 30px;
+					font-size: 46px;
+				}
+				.content2 {
+					border-bottom: 1px solid #fff;
+					padding-bottom: 30px;
+					p {
+						font-size: 16px !important;
+						margin: 0px 0 0 15px;
+						color: #fff !important;
+						line-height: 24px!important;
+						font-weight: bold;
+						font-family: 'Nunito', sans-serif;
+					}
+					.date {
+						font-size: 14px !important;
+						font-style: italic;
+						font-weight: normal;
+					}
+				}
+			}
+			.social-share-div {
+				float: right;
+				margin-top: 20px;
+				.at-icon-wrapper {
+					height: 30px!important;
+					width: 30px!important;
+					svg {
+						height: 30px!important;
+						width: 30px!important;
+					}
+				}
+			}
+		}
+	}
+	//Ipad
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		#educationPdpBanner {
+			.banner {
+				.contents {
+					h1 {
+						font-size: 22px;
+						margin-bottom: 10px;
+						margin-left: 10px;
+					}
+				}
+				.container {
+					.content2 {
+						padding-bottom: 5px!important;
+						table {
+							tbody {
+								tr {
+									td {
+										img {
+											max-width: 75px;
+										}
+										.acad {
+											font-size: 12px !important
+										}
+										.date {
+											font-size: 12px !important;
+										}
+									}
+								}
+							}
+						}
+						.social-share-div {
+							.at-icon-wrapper {
+								height: 20px!important;
+								width: 20px!important;
+								svg {
+									height: 20px !important;
+									width: 20px !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	//Iphone
+	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+		#educationPdpBanner {
+			.banner {
+			    .ban{
+			        min-height:125px;
+			    }
+				.contents {
+					bottom: 10%;
+					h1 {
+						font-size: 18px;
+						margin-bottom: 10px;
+						margin-left: 10px;
+					}
+				}
+				.container {
+					.content2 {
+						padding-bottom: 5px!important;
+						table {
+							tbody {
+								tr {
+									td {
+										img {
+											max-width: 50px;
+										}
+									}
+									.academy {
+										display: flex;
+										.acad {
+											font-size: 10px !important
+										}
+										.date {
+											font-size: 10px !important;
+										}
+										p {
+											margin-left: 5px;
+										}
+									}
+								}
+							}
+						}
+						.social-share-div {
+							margin-top: 5px;
+							.at-icon-wrapper {
+								height: 10px!important;
+								width: 10px!important;
+								svg {
+									height: 10px !important;
+									width: 10px !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	//Medium laptops
+	/* For 1366 Resolution */
+	@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+		#educationPdpBanner {
+			.banner {
+				.contents {
+					h1 {
+						font-size: 24px;
+						margin-bottom: 10px;
+					}
+				}
+				.content2 {
+					padding-bottom: 5px;
+					table {
+						tbody {
+							tr {
+								td {
+									img {
+										max-width: 75px;
+									}
+									p {
+										font-size: 12px !important
+									}
+									.date {
+										font-size: 12px !important;
+									}
+								}
+							}
+						}
+					}
+					.social-share-div {
+						.at-icon-wrapper {
+							height: 20px!important;
+							width: 20px!important;
+							svg {
+								height: 20px !important;
+								width: 20px !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

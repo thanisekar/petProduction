@@ -1,130 +1,108 @@
 #WIDGET_ID-WIDGET_INSTANCE_ID {
-//#recommendations_v4-wi2700026 {
-#cc-recs {
-  #cc-recs-title {
-    margin-bottom: 0px;
-  }
-  h3{
-      color:#333333;
-      text-align:center;
-          font-size: 37px;
-    font-weight: normal;
-  }
-  .carousel-inner {
-    .item {
-      .collection-container {
-        padding-right: 5px;
-        padding-left: 5px
-      }
-      .collection-container:first-child {
-        padding-left: 0px;
-        padding-right: 5px;
-      }
-      .collection-container:last-child {
-        padding-left: 5px;
-        padding-right: 0px;
-      }
-    }
-    .cc-product-item {
-      .cc-item-detail a img{
-        height: 100%;       
-      }
-    }    
-    .cc-product-item {
-            overflow: hidden;
-            height: 100%;
-            vertical-align: top;
-            margin-top: 50px;
-            
-    }
-    .cc-item-detail {
-      height: 64%;
-      text-align: center;
-    }
-    .cc-item-title {
-      height: 15%;
-      display: inline-block;
-      overflow: hidden;
-      width: 100%;
-      color: #195d8d;
-      font-weight: Bold;
-      text-align: center;
-    }
-    .cc-item-price {
-      height: 15%;
-      margin-bottom: 10px;
-      color: #195d8d;
-      font-weight: Bold;
-      text-align: center;
-      font-size: 17.5px;
-      display:none;
-    }
-  }
-  .carousel-inner .row {
-    vertical-align: middle;
-    height: 270px;
-    display: none;
-  }
-  .carousel-inner .active {
-    display: block;
-  }
-  .collection-carousel-control {
-    color: #000000;
-    background-color: #f8f8f8;
-    border-color: #e7e7e7;
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-  .controls {
-    margin-top: 20px;
-  }
-  .carousel-indicators {
-    position: relative;
-    display: block;
-    text-align: center;
-    right: 0px;
-    vertical-align: top;
     
-    li {
-      display: inline-block;
-      float: none;
-      text-align: center;
-      background-color: #999999;
+    #cc-recs{
+            background: #eee;
+            padding: 30px 0;
+        h5{
+            font-weight: 700;
+        }
+    .inner-corousel{
+           margin-top: 30px; 
     }
-    .active {
-      background-color: #222222;
+    .corousel-left{
+        top: 35px;
+    background: rgba(0, 0, 0, 0) url(/file/general/Carouselarrowleft_hover_28x28.png) no-repeat 0 0 !important;  
+    height: 30px;
+    right: 0px;
+    position: absolute;
+    width: 30px;
+    background-repeat: no-repeat;
+    width: 32px;
+    z-index: 999;
+    opacity: 1 !important;
+    border-radius: 0 !important;
+    &:hover{
+        background: rgba(0, 0, 0, 0) url(/file/general/Carouselleftarrow_28x28.png) no-repeat 0 0 !important;
     }
-  }
-  #cc-carousel-indicators {
-    margin-bottom: 20px;
-  }
-  hr {
-    margin-top: 0px;
-  }
-  #cc-carousel-controls {
-    bottom: 10px;
-    float: right;
-  }
-  #cc-carousel-left-control {
-    padding-right: 0px;
-  }
-  #cc-carousel-right-control {
-    padding-left: 5px;
-  }
-  .cc-text-overflow {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    display: block;
-    margin-top: 5px;
-  } 
-  .cc-item-price .label-danger{
-    background-color: #e50000;
-    margin-left:10px;
-    padding: 2px 4px 2px 4px;
-    font-size: 70%;
-  }
+    }
+    .corousel-right{
+        top: 35px;
+        background: rgba(0, 0, 0, 0) url(/file/general/Carouselarrow_right_hover_28x28.png) no-repeat 0 0 !important; 
+        height: 30px;
+        position: absolute;
+        width: 30px;
+        background-repeat: no-repeat;
+        width: 39px;
+        z-index: 999;
+        opacity: 1 !important;
+        border-radius: 0 !important;
+        &:hover{
+            background: rgba(0, 0, 0, 0) url(/file/general/Carouselrightarrow_28x28.png) no-repeat 0 0 !important;
+        }
+    }
+    .pdpProdCarousel{
+        p{
+           font-family: 'Nunito',sans-serif;
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+            line-height: 26px!important;
+        }
+        .parent{
+            color: #2654bf!important;
+            margin-top: 10px;
+            text-transform: capitalize;
+        }
+    }
 }
 
-//}
+//Iphone
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) { 
+    
+    #cc-recs{
+        h5{
+            font-size: 24px;
+            margin: 0;
+        }
+        .pdpProdCarousel {
+            p{
+                font-size: 14px !important;
+                line-height: 19px !important;
+            }
+        }
+    }
+
+}
+
+//Ipad
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px){
+    #cc-recs{
+        h5{
+            font-size: 26px;
+        }
+        .pdpProdCarousel {
+            p{
+                font-size: 16px !important;
+                line-height: 22px !important;
+            }
+        }
+    }
+}
+
+//Medium laptops
+
+/* For 1366 Resolution */  
+
+@media only screen   and (min-width: 1030px)   and (max-width: 1366px)  
+
+{ /* STYLES GO HERE */}
+
+
+
 }

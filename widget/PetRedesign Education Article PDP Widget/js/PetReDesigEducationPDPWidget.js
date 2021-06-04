@@ -37,6 +37,24 @@ define(
       isMediaArticle : ko.observable(false),
       isGiftCard : ko.observable(false),
       imgGroups: ko.observableArray(),
+      getFinalProductData:ko.observableArray([]),
+      getRecommendedProductData:ko.observableArray([]),
+      
+       updateData: function (getData) {
+		     var widget=this;
+		     
+			ko.mapping.fromJS(getData,{}, this.getFinalProductData);
+    
+	    
+       },
+       updateDataRecommended: function (getData) {
+		     var widget=this;
+			ko.mapping.fromJS(getData,{}, this.getRecommendedProductData);
+			 $.Topic('sendRecommendedProducts.memory').publish(widget.getRecommendedProductData());
+              console.log(widget.getRecommendedProductData(),'getRecommendedProductData');
+	    
+       },
+
 
       onLoad: function (widget) {
           widgetModel = widget;
@@ -44,6 +62,8 @@ define(
                     var name = $(this).attr('id');
                     getWidget.socialLink(name);
                 });
+                
+                
       },
 
       beforeAppear: function (page) {
@@ -80,10 +100,52 @@ define(
                             widget.createSocialLink();
                         }
                     }, 100);
-        //Fix for articles image stylings
+       //Fix for articles image stylings
         setTimeout(function(){$( "#CC-prodDetails-longDescription img" ).addClass( "img-responsive" );},1000)
+        var nextIds = [];
+        nextIds.push(widget.product().previousId());
+        nextIds.push(widget.product().nextid());
+        widget.getProductDetailsPDP(nextIds);
+        //widget.receiveProductId();
+        
         
       },
+      
+      
+      getProductDetailsPDP:function(getProductId){
+              var widget = this;
+               ccRestClient.authenticatedRequest("/ccstoreui/v1/products/?productIds="+ getProductId.toString() + "&fields=route,displayName,id", {}, function(e) {
+                    widget.updateData(e);
+    			 }, function(data) {}, "GET");
+      
+            
+        },
+        
+        getRecommendedPDP:function(getProductId){
+            console.log(getProductId,'getProductId');
+              var widget = this;
+               ccRestClient.authenticatedRequest("/ccstoreui/v1/products/?productIds="+ getProductId + "&fields=route,displayName,id,primarySmallImageURL,listPrice", {}, function(e) {
+                    widget.updateDataRecommended(e);
+    			 }, function(data) {}, "GET");
+      
+            
+        },
+        
+        receiveProductId : function() {
+            var widget = this;
+            console.log('receiveProductId');
+             widget.getRecommendedProductData('');
+             console.log(widget.product().ratingCount(),'widget.product().ratingCount()');
+                if ((widget.product().ratingCount() !== null) && (widget.product().ratingCount() !== "0")) {
+                    if (widget.product().ratingCount().indexOf(',') != -1) {
+                        var productIds = widget.product().ratingCount().split(',');
+                        widget.getRecommendedPDP(productIds);
+                    }
+                }else{
+                    console.log('getRecommendedProductData else');
+                    $.Topic('sendRecommendedProducts.memory').publish(widget.getRecommendedProductData());
+                }
+            },
      
         
         createSocialLink: function() {

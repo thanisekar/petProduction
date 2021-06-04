@@ -30,16 +30,23 @@
             <!-- education section -->
             
             <!-- Start Product Section -->
-			<!-- ko if:koPageId() == 'product' -->
-				<!-- ko with: product -->
-				 
-				   <li data-bind="text:displayName "></li>
-				   
-				   
-				<!-- /ko -->
-				
-			<!-- /ko -->
-            <!-- Ends Product Section -->
+	         <!-- ko if:koPageId() == 'product' -->
+	         <!-- ko with: product -->
+	         <!-- ko ifnot:isArticle -->
+	         <li data-bind="text:displayName "></li>
+	         <!--/ko-->
+	         <!-- ko if:isArticle -->
+	         <li><a data-bind="ccLink: {route: '/category/articles'}">Education</a></li>
+	         <span class="delimiter">/</span>
+	         <!-- ko with: parentCategory -->
+	         <li><a data-bind="text: displayName, ccLink: {url:route()}"></a></li>
+	         <span class="delimiter">/</span>
+	         <!--/ko-->
+	         <li data-bind="text: displayName"></li>
+	         <!--/ko-->
+	         <!-- /ko -->
+	         <!-- /ko -->
+	         <!-- Ends Product Section -->
             
             	            
             <!-- Start Search Section -->
