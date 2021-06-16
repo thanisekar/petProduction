@@ -474,7 +474,7 @@ define(
                     if (newValue) {
             if (widget.skipSpinner()) {
               widget.skipSpinner(false);
-            } else {
+            } else if(widget.shippingmethods().shippingOptions().length > 0){
               widget.createSpinner();
             }
             // clears invalid shipping method error only if user selects any shipping option
