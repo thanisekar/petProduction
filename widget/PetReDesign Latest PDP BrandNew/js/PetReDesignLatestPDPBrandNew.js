@@ -757,7 +757,27 @@ define(
                     }
                 });
 */
-
+                // Attentive Product View
+                var prodValue = widget.product();
+                var attentiveDestroy = setInterval(function() {
+                    if (window.attentive) {
+                        window.attentive.analytics.productView({
+                            items: [{
+                                productId: prodValue.id(),
+                                productVariantId: prodValue.childSKUs()[0].repositoryId(),
+                                name: prodValue.displayName(),
+                                productImage: 'https://www.petmate.com/' + prodValue.primaryFullImageURL(),
+                                category: prodValue.parentCategory.displayName(),
+                                price: {
+                                    value: prodValue.childSKUs()[0].listPrice(),
+                                    currency: 'USD',
+                                }
+                            }]
+                        })
+                        window.clearInterval(attentiveDestroy);
+                        console.log('Set Interval leak');
+                    }
+                }, 100)
             },
             
             
@@ -767,9 +787,9 @@ define(
                 widget.koPlasticKennels(false);
                 if(widget.product().brand() === 'Petmate'){
                     for (var i = 0; i < getProduct.length; i++) {
-                        console.log(getProduct[i].id(),'getProduct[i].id()');
+                       
                         if((getProduct[i].id() === 'plastic-dog-kennels' || getProduct[i].id() === 'cat-kennels-carriers')){
-                            console.log(getProduct[i].id(),'getProduct[i].id()1');
+                            
                              widget.koPlasticKennels(true);
                         }
                 }
@@ -1728,18 +1748,34 @@ define(
                         }
 
                 
-
-                
-                
-                
                  
                 /*$.Topic(pubsub.topicNames.CART_ADD).publishWith(
                   newProduct,[{message:"success"}]);*/
                 $.when($.Topic(pubsub.topicNames.CART_ADD).publishWith(
                     newProduct, [{
                         message: "success"
-                    }])).then(function() {
-                });
+                        }])).then(function() {});
+
+
+
+                    // Attentive Add to cart
+                        if(this.selectedSku()){
+                            var prodData = this.product().product;
+                            window.attentive.analytics.addToCart({ 
+                                items: [{
+                                    productId: prodData.id,
+                                    productVariantId: this.selectedSku().repositoryId,
+                                    name: prodData.displayName,
+                                    productImage: 'https://www.petmate.com/' + prodData.primaryFullImageURL,
+                                    category: prodData.parentCategory.displayName,
+                                    price: {
+                                        value: this.selectedSku().listPrice,
+                                        currency: 'USD',
+                                    }
+                                }]
+                            })
+                        }                  
+                    /*Ends*/
                 }
                 
                 

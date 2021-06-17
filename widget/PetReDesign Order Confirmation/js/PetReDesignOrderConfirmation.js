@@ -555,6 +555,39 @@ define(
                     
                     /*Ends*/
                     
+                    
+                      //Attentive Tag Order confirmation
+               var attentiveData = {};
+               var attentiveItems = [];
+               var attentiveCartItems = getWidget.confirmation().shoppingCart.items;
+                 
+                 
+                  for(var i=0; i < attentiveCartItems.length; i++){
+                    
+                     var itemsobj = {};
+                     var priceObj = {};
+                     itemsobj.productId = attentiveCartItems[i].productId;
+                     itemsobj.productVariantId = attentiveCartItems[i].catRefId;
+                     itemsobj.name = attentiveCartItems[i].displayName;
+                     itemsobj.productImage = 'https://www.petmate.com'+attentiveCartItems[i].primaryThumbImageURL;
+                     itemsobj.quantity = attentiveCartItems[i].quantity;
+                     itemsobj.category = getWidget.koCategory();
+                     priceObj.value = attentiveCartItems[i].unitPrice;
+                     priceObj.currency = 'USD';
+                     itemsobj.price = priceObj;
+                     attentiveItems.push(itemsobj);
+                }
+                attentiveData.items = attentiveItems;
+                
+                var orderObj = {};
+                
+                orderObj.orderId = getWidget.koOrderID();
+                
+                attentiveData.order = orderObj;
+                
+             window.attentive.analytics.purchase(attentiveData)
+            
+            /*Ends*/
                  /*Side Car Implementation*/
                 var sidecarData = {};
                 sidecarData.add = true;

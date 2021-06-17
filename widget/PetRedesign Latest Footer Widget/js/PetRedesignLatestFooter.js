@@ -118,7 +118,10 @@ define(
 
                 var brontoHeaderScript = '<script bronto-popup-id="ab0a6242-1739-45c5-85b7-95652b63b808" src="https://cdn.bronto.com/popup/delivery.js"></script>'
                $("head").append(brontoHeaderScript);
+               //Attentive Script
 
+                var attentiveScript = '<script src="https://cdn.attn.tv/petmate/dtag.js"></script>'
+               $("body").append(attentiveScript);
               //Bing Tracking Tag
                
               var bingTrackingScript = '<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"134203866"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>';
