@@ -37,7 +37,7 @@ define(
 
         function userLogin() {
             $.validator.addMethod("loginFormemailFormat", function(value, element) {
-                return this.optional(element) || value.match(/^([\d\w-\.]+@([\d\w-]+\.)+(com|edu|org|net|ca|in|gov|mil|cc|me))/);
+                return this.optional(element) || value.match(/^([\d\w-\.]+@([\d\w-]+\.)+(com|COM|edu|EDU|org|ORG|net|NET|ca|CA|in|IN|gov|GOV|mil|MIL|cc|CC|me|ME))/);
             }, "Invalid entry. Please enter valid email address, for example, john@smith.com.");
 
             userLoginForm = $("#loginForm").validate({
@@ -77,7 +77,7 @@ define(
 
         function forgotPasswordEmail() {
             $.validator.addMethod("forgotPasswordemailFormat", function(value, element) {
-                return this.optional(element) || value.match(/^([\d\w-\.]+@([\d\w-]+\.)+(com|edu|org|net|ca|in|gov|mil|cc|me))/);
+                return this.optional(element) || value.match(/^([\d\w-\.]+@([\d\w-]+\.)+(com|COM|edu|EDU|org|ORG|net|NET|ca|CA|in|IN|gov|GOV|mil|MIL|cc|CC|me|ME))/);
             }, "This value should be a valid email.");
 
             forgotPwd = $("#forgotPassword").validate({
@@ -108,7 +108,7 @@ define(
 
         function createaccount() {
             $.validator.addMethod("createaccountemailFormat", function(value, element) {
-                return this.optional(element) || value.match(/^([\d\w-\.]+@([\d\w-]+\.)+(com|edu|org|net|ca|in|gov|mil|cc|me))/);
+                return this.optional(element) || value.match(/^([\d\w-\.]+@([\d\w-]+\.)+(com|COM|edu|EDU|org|ORG|net|NET|ca|CA|in|IN|gov|GOV|mil|MIL|cc|CC|me|ME))/);
             }, "This value should be a valid email.");
 
             $.validator.addMethod("allowCharacters", function(value, element) {
@@ -238,7 +238,7 @@ define(
         /* Profile page validation Starts */
         function editprofile() {
             $.validator.addMethod("editprofileemailFormat", function(value, element) {
-                return this.optional(element) || value.match(/^([\d\w-\.]+@([\d\w-]+\.)+(com|edu|org|net|ca|in|gov|mil|cc|me))/);
+                return this.optional(element) || value.match(/^([\d\w-\.]+@([\d\w-]+\.)+(com|COM|edu|EDU|org|ORG|net|NET|ca|CA|in|IN|gov|GOV|mil|MIL|cc|CC|me|ME))/);
             }, "This value should be a valid email.");
 
             $.validator.addMethod("allowCharacters", function(value, element) {
@@ -716,7 +716,7 @@ define(
         function checkoutGuestEmail() {
             //console.log("checkoutGuestEmail");
             $.validator.addMethod("guestUseremailFormat", function(value, element) {
-                return this.optional(element) || value.match(/^([\d\w-\.]+@([\d\w-]+\.)+(com|edu|org|net|ca|in|gov|mil|cc|me))/);
+                return this.optional(element) || value.match(/^([\d\w-\.]+@([\d\w-]+\.)+(com|COM|edu|EDU|org|ORG|net|NET|ca|CA|in|IN|gov|GOV|mil|MIL|cc|CC|me|ME))/);
             }, "This value should be a valid email.");
 
             customGuestUserForm = $("#checkoutGuestForm").validate({
@@ -761,7 +761,7 @@ define(
 
         function checkoutCreateAccount() {
             $.validator.addMethod("checkoutCreateAccountemailFormat", function(value, element) {
-                return this.optional(element) || value.match(/^([\d\w-\.]+@([\d\w-]+\.)+(com|edu|org|net|ca|in|gov|mil|cc|me))/);
+                return this.optional(element) || value.match(/^([\d\w-\.]+@([\d\w-]+\.)+(com|COM|edu|EDU|org|ORG|net|NET|ca|CA|in|IN|gov|GOV|mil|MIL|cc|CC|me|ME))/);
             }, "This value should be a valid email.");
 
             $.validator.addMethod("allowCharacters", function(value, element) {
@@ -1114,7 +1114,7 @@ define(
 
         function checkoutuserLogin() {
             $.validator.addMethod("checkoutuserLoginemailFormat", function(value, element) {
-                return this.optional(element) || value.match(/^([\d\w-\.]+@([\d\w-]+\.)+(com|edu|org|net|ca|in|gov|mil|cc|me))/);
+                return this.optional(element) || value.match(/^([\d\w-\.]+@([\d\w-]+\.)+(com|COM|edu|EDU|org|ORG|net|NET|ca|CA|in|IN|gov|GOV|mil|MIL|cc|CC|me|ME))/);
             }, "This value should be a valid email.");
 
             checkoutLoginForm = $("#checkoutLoginForm").validate({
@@ -1289,7 +1289,7 @@ define(
         /* Anonymous Order status validation starts */
         function anonymousOrder() {
             $.validator.addMethod("anonymousOrderemailFormat", function(value, element) {
-                return this.optional(element) || value.match(/^([\d\w-\.]+@([\d\w-]+\.)+(com|edu|org|net|ca|in|gov|mil|cc|me))/);
+                return this.optional(element) || value.match(/^([\d\w-\.]+@([\d\w-]+\.)+(com|COM|edu|EDU|org|ORG|net|NET|ca|CA|in|IN|gov|GOV|mil|MIL|cc|CC|me|ME))/);
             }, "Invalid entry. Please enter valid email address, for example, john@smith.com.");
             anonymousOrderForm = $("#anonymousOrderDetail").validate({
                 onfocusout: false,
