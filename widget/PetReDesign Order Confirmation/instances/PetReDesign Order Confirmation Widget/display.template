@@ -97,7 +97,7 @@
                             
                                 <div class="name"><span data-bind="text: displayName" class="name"></span></div>
                                
-                                <div class="item-number">Items: <span data-bind="text : skuProperties[1].value"></span></div>
+                                <div class="item-number">Items: <span data-bind="text : catRefId"></span></div>
                                 
                                 <div class="variant">
                                     <!-- ko foreach: variant -->
