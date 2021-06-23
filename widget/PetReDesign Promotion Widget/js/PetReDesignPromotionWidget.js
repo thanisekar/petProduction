@@ -11,12 +11,12 @@ define(
   //-------------------------------------------------------------------
   // DEPENDENCIES
   //-------------------------------------------------------------------
-  ['knockout', 'pubsub', 'ccConstants', 'koValidate', 'ccKoValidateRules', 'CCi18n'], 
+    ['knockout', 'pubsub', 'notifier', 'ccConstants', 'koValidate', 'ccKoValidateRules', 'CCi18n'],
 
   //-------------------------------------------------------------------
   // MODULE DEFINITION
   //-------------------------------------------------------------------
-  function(ko, pubsub, CCConstants, koValidate, rules, CCi18n) {
+    function(ko, pubsub, notifier, CCConstants, koValidate, rules, CCi18n) {
 
     "use strict";
     var couponSuccess = false;
@@ -57,6 +57,24 @@ define(
           $(".successMessage").remove();
         // Clear the coupon input field when successfully applied.
         
+              //Address 1 employee validation check
+               
+               $('body').delegate('#txtAddress31', 'focusout', function() {
+                   widget.removeEmployeeCoupon();
+               });
+               
+               
+               //Remove Employe coupon if another address
+                $.Topic(pubsub.topicNames.SHIPPING_METHODS_LOADED).subscribe(function() {
+                     widget.removeEmployeeCoupon();
+                });
+                
+                
+                //Employee Check after coupon removed
+                
+                $.Topic(pubsub.topicNames.COUPON_DELETE_SUCCESSFUL).subscribe(function() {
+                    $.Topic('employeeCheck.memory').publish(true);
+                });
         // Clears coupon input field and error message after logout
         $.Topic(pubsub.topicNames.USER_LOGOUT_SUBMIT).subscribe(function() {
           widget.promoCode('');
@@ -75,9 +93,27 @@ define(
         promoCode: widget.promoCode
       });
       
-        
-        
-        
+            },
+            
+            
+            
+            removeEmployeeCoupon: function(){
+                var widget = this;
+                    var couponCheck = widget.cart().coupons().length;
+                    if(couponCheck > 0){
+                    for (var i = 0; i < couponCheck; i++) {
+                        if (widget.cart().coupons()[i].code() == "PETMATE") {
+                            if (widget.employeeCheck(widget.cart().coupons()[i].code())) {
+                                 $.Topic('employeeCheck.memory').publish(true);
+                               // $('#appliedCoupon').click();
+                                    widget.cart().removeCouponFromCart(widget.cart().coupons()[i]);
+                                    $( "#employee-error" ).show();
+                            }
+
+                        }
+                    }
+                    }
+                    //widget.removeCouponFromCart(data);
       },
       
       /**
@@ -86,6 +122,9 @@ define(
       handleApplyCoupon: function() {
           var widget = this;
          couponSuccess = false;
+                if (widget.employeeCheck(widget.promoCode())) {
+                    return;
+                }
                 $("#successMsg").remove();
                 $("#removeMsg").remove();
                 $('#successMsg').hide();
@@ -209,7 +248,50 @@ define(
         function enableApplyCodeButton() {
           widget.isApplyCodeClicked(false);
         };
-      }
+            },
+            employeeCheck: function(promoCode) {
+                var widget = this;
+                if (promoCode && promoCode == "PETMATE") {
+                    if (widget.cart().shippingAddress().address1) {
+                        var petAddress1 = ['RANDOL MILL', 'HOUSTON SCHOOL', 'WEST STEPHENS', 'JUSTICE LANE', 'JUSTICE LN', 'TECH DR', 'TECH DRIVE'];
+                     var petCity = ['ARLINGTON','MANSFIELD','SWEETWATER','LANCASTER'];
+                        //var shippingAddress = widget.cart().shippingAddress().address1.toUpperCase();
+                        //var shippingCity = widget.cart().shippingAddress().city.toUpperCase();
+                        var shippingAddress = $('#txtAddress31').val().toUpperCase();
+                        var shippingCity = $('#txtCity3').val().toUpperCase();
+                       var addressResult = false;
+                       var cityResult = false;
+                      for(var i=0; i < petAddress1.length; i++){
+                          addressResult = shippingAddress.includes(petAddress1[i]);
+                          if(addressResult){
+                              break;
+                          }
+                      }
+                      for(var i=0; i < petCity.length; i++){
+                          cityResult = shippingCity.includes(petCity[i]);
+                          if(cityResult){
+                              break;
+                          }
+                      }
+                        if (!addressResult || !cityResult) {
+                            notifier.sendError(widget.WIDGET_ID, "Promo Code PETMATE Valid only on order shipping to a Petmate Facility. Enter a Petmate facility address or remove promo code", true);
+                             $.Topic('employeeCheck.memory').publish(true);
+                              $( "#employee-error" ).show();
+                            return true;
+                        } else {
+                        notifier.clearError(widget.WIDGET_ID);
+                         $.Topic('employeeCheck.memory').publish(false);
+                          $( "#employee-error" ).hide();
+                        return false;
+                       }
+                    }
+                }else{
+                 $.Topic('employeeCheck.memory').publish(true);
+                 $( "#employee-error" ).hide();
+                return false;
+                }
+
+            }
     };
   }
 );

@@ -52,6 +52,7 @@ define(
             koIsFreeShipping: ko.observable(false),
             overRideWeight: ko.observable(false),
             koOrderExceptionSku: ko.observable(),
+            employeeCheck: ko.observable(true),
             koPromoUpsell: ko.observable(),
             paypalImageSrc: ko.observable("https://fpdbs.paypal.com/dynamicimageweb?cmd=_dynamic-image"),
             // Spinner resources
@@ -99,6 +100,10 @@ define(
 
             onLoad: function(widget) {
                 getWidget = widget;
+               $.Topic("employeeCheck.memory").subscribe(function(data) {
+                    getWidget.employeeCheck(data);
+                });
+                
                 widget.shippingmethods().defaultShipping("300010");
                 shippingmethods.getInstance().defaultShipping("300010");
                 // //console.log(ko.toJS(widget.cart()) , '------ Cart---');

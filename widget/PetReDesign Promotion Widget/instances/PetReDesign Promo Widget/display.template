@@ -49,6 +49,7 @@
           <!--<p class="text-danger" id="CC-promotionDetails-promoCode-error" data-bind="validationMessage:promoCode" role="alert"></p>-->
            <p class="text-danger invalid-promo" id="CC-promotionDetails-promoCodeApply-error-xs" role="alert"></p>
         <!-- /ko -->
+        <p class="text-danger invalid-promo" id="employee-error" role="alert">Do you have a Employee Promocode?</p>
       </div>
      
      

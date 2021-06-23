@@ -65,6 +65,7 @@
       </div>
     </div>
       <!-- Selected Shipping Option -->
+      <!-- ko if: employeeCheck -->
       <div class="row shipping-row" data-bind="template: { afterRender: commonShippingLogic }">
         <div class="col-xs-7 nopad">
             <!--<span id="CC-checkoutOrderSummary-shippingName" data-bind="text: selectedShippingName"></span>-->
@@ -140,10 +141,12 @@
         </div>
       <!-- /ko -->
       
+      <!-- /ko -->
       
       <!--Promo Upsell Display-->
-      
+            <!-- ko if: employeeCheck -->
        <span class="promoUpsell" data-bind="html:koPromoUpsell"></span>
+       <!-- /ko -->
       <!--Ends-->
       
       
