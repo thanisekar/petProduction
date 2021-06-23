@@ -1,8 +1,8 @@
 #WIDGET_ID-WIDGET_INSTANCE_ID {
     #category-desciption{
         .plpCategoryDescription{
-                 p:not(:first-child){
-                     display:none;
+             h2{
+             font-size: 36px;
                  }
                  
              }
@@ -113,7 +113,7 @@
  #categorydescriptionContainer{
      #category-desciption{
          border-top:1px solid #E5E3DF;
-          padding: 90px 0px;
+          padding: 50px 0px;
           div{
                 font-family:@font-family-roboto;
                 color: #000000 !important;
@@ -137,7 +137,7 @@
     .plpCategoryDescription{
             padding: 0px 15px !important;
             h2{
-                font-size: 26px;
+                font-size: 26px!important;
             }
     }
     .categoryTable{
@@ -174,6 +174,12 @@
 }
 
  @media only screen and (min-width:768px) and(max-width:1023px){
+     .plpCategoryDescription{
+            padding: 0px 15px !important;
+            h2{
+                font-size: 26px!important;
+            }
+    }
        .categoryTable{
            .categoryTable-center{
                .table-borderless{

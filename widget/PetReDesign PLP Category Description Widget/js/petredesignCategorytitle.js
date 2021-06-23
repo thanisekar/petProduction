@@ -33,8 +33,10 @@ define(
 		//	console.log("page",page);
 		//	console.log("getWidget",getWidget)
 		if($('.plpCategoryDescription p').length > 1){
+		    $(".plpCategoryDescription p:not(:first)").css("display","none");
 		    $('.show_hide').show();
 		}else{
+		    $(".plpCategoryDescription p:not(:first)").css("display","none");
 		    $('.show_hide').hide();
 		}
 			if(page.contextId.indexOf("brand") != -1){
