@@ -132,6 +132,13 @@
           </div>
         </div>
       <!-- /ko -->
+
+      <!--Promo Upsell Display-->
+            <!-- ko if: employeeCheck -->
+            <span class="promoUpsell" data-bind="html:koPromoUpsell"></span>
+            <!-- /ko -->
+           <!--Ends-->
+
       <!-- Shipping Surcharge -->
       <!-- ko if: displayShippingOptions() && cart().shippingSurcharge() !== 0 -->
         <div id="CC-checkoutOrderSummary-shippingSurcharge" class="shippingSurcharge clearfix" role="alert" aria-atomic="true" aria-live="polite">
@@ -141,14 +148,7 @@
         </div>
       <!-- /ko -->
       
-      <!-- /ko -->
-      
-      <!--Promo Upsell Display-->
-            <!-- ko if: employeeCheck -->
-       <span class="promoUpsell" data-bind="html:koPromoUpsell"></span>
-       <!-- /ko -->
-      <!--Ends-->
-      
+      <!-- /ko --> 
       
     <!-- discount descriptions -->
 
