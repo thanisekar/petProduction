@@ -3,7 +3,7 @@
  *
  * @author Taistech
  */
-define(
+ define(
     //-------------------------------------------------------------------
     // DEPENDENCIES
     // Adding knockout
@@ -112,7 +112,7 @@ define(
             }, "This value should be a valid email.");
 
             $.validator.addMethod("allowCharacters", function(value, element) {
-                return this.optional(element) || value.match(/^[a-zA-Z\s'-,]+$/);
+                return this.optional(element) || value.match(/^[A-Za-z .\-'/,]+$/);
             }, "Only letters, space, - or ' are allowed. Please check your input.");
 
             $.validator.addMethod("passwordPattern", function(value, element) {
@@ -242,7 +242,7 @@ define(
             }, "This value should be a valid email.");
 
             $.validator.addMethod("allowCharacters", function(value, element) {
-                return this.optional(element) || value.match(/^[a-zA-Z\s'-,]+$/);
+                return this.optional(element) || value.match(/^[A-Za-z .\-'/,]+$/);
             }, "Only letters, space, - or ' are allowed. Please check your input.");
 
             $.validator.addMethod("phoneUS", function(value, element) {
@@ -360,13 +360,13 @@ define(
 
         function callDynamicPetProfileValidate() {
             $.validator.addMethod("allowCharacters", function(value, element) {
-                return this.optional(element) || value.match(/^[a-zA-Z\s'-,]+$/);
+                return this.optional(element) || value.match(/^[A-Za-z .\-'/,]+$/);
             }, function(value, element) {
                 $(element).parents('.pet-add').find(".commonError").html('');
                 return "Only letters, space, - or ' are allowed. Please check your input."
             });
             $.validator.addMethod("allowCharacters1", function(value, element) {
-                return this.optional(element) || value.match(/^[a-zA-Z\s'-,]+$/);
+                return this.optional(element) || value.match(/^[A-Za-z .\-'/,]+$/);
             }, "Only letters, space, - or ' are allowed. Please check your input.");
             $.validator.addMethod("futureDate", function(value, element) {
                 var currentDate = new Date();
@@ -499,7 +499,7 @@ define(
             }, "Allows 1-30 alphanumeric characters, '.','-' and blank space.");
 
             $.validator.addMethod("allowCharacters", function(value, element) {
-                return this.optional(element) || value.match(/^[a-zA-Z\s'-,]+$/);
+                return this.optional(element) || value.match(/^[A-Za-z .\-'/,]+$/);
             }, "Only letters, space, - or ' are allowed. Please check your input.");
 
             $.validator.addMethod("address", function(value, element) {
@@ -642,10 +642,10 @@ define(
         /* Pet Information section Validation starts */
         function petProfileValidationMethod() {
             $.validator.addMethod("allowCharacters", function(value, element) {
-                return this.optional(element) || value.match(/^[a-zA-Z\s'-,]+$/);
+                return this.optional(element) || value.match(/^[A-Za-z .\-'/,]+$/);
             }, "Only letters, space, - or ' are allowed. Please check your input.");
             $.validator.addMethod("allowCharacters1", function(value, element) {
-                return this.optional(element) || value.match(/^[a-zA-Z\s'-,]+$/);
+                return this.optional(element) || value.match(/^[A-Za-z .\-'/,]+$/);
             }, "Only letters, space, - or ' are allowed. Please check your input.");
             $.validator.addMethod("futureDate", function(value, element) {
                 var currentDate = new Date();
@@ -765,7 +765,7 @@ define(
             }, "This value should be a valid email.");
 
             $.validator.addMethod("allowCharacters", function(value, element) {
-                return this.optional(element) || value.match(/^[a-zA-Z\s'-,]+$/);
+                return this.optional(element) || value.match(/^[A-Za-z .\-'/,]+$/);
             }, "Only letters, space, - or ' are allowed. Please check your input.");
 
             $.validator.addMethod("passwordPattern", function(value, element) {
@@ -833,8 +833,7 @@ define(
 
 
             $.validator.addMethod("allowCharacters", function(value, element) {
-
-                return this.optional(element) || value.match(/^[a-zA-Z\s'-,]+$/);
+                return this.optional(element) || value.match(/^[A-Za-z .\-'/,]+$/);
             }, "Only letters, space, - or ' are allowed. Please check your input.");
 
             $.validator.addMethod("address", function(value, element) {
@@ -980,7 +979,7 @@ define(
             }, "Allows 1-30 alphanumeric characters, '.','-' and blank space.");
 
             $.validator.addMethod("allowCharacters", function(value, element) {
-                return this.optional(element) || value.match(/^[a-zA-Z\s'-,]+$/);
+                return this.optional(element) || value.match(/^[A-Za-z .\-'/,]+$/);
             }, "Only letters, space, - or ' are allowed. Please check your input.");
 
             $.validator.addMethod("address", function(value, element) {
@@ -1157,7 +1156,7 @@ define(
             
 
             $.validator.addMethod("allowCharacters", function(value, element) {
-                return this.optional(element) || value.match(/^[a-zA-Z\s'-,]+$/);
+                return this.optional(element) || value.match(/^[A-Za-z .\-'/,]+$/);
             }, "Only letters, space, - or ' are allowed. Please check your input.");
 
 
