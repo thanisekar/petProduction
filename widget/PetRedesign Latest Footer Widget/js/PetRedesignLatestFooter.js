@@ -82,6 +82,8 @@ define(
                     m.parentNode.insertBefore(a, m)
                 })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
+                
+
 
                  /*Google Analytics doskocilpetmate@gmail.com*/
                  $('head').prepend("<script defer src='https://www.googletagmanager.com/gtag/js?id=UA-155409198-1'></script>");
@@ -126,6 +128,9 @@ define(
                
               var bingTrackingScript = '<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"134203866"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>';
               $("head").append(bingTrackingScript);
+
+             
+
               
                 var brontoCommerceTag =
                     '<script data-name="__br_tm" type="text/javascript">' +
@@ -317,6 +322,15 @@ define(
                     ga('create', 'UA-92830133-1', 'auto');
                     ga('send', 'pageview');
                 }
+
+                /*Hide Petmate Perks for Signup  Save*/
+                if (page.pageId == 'SignupAndSave') {
+                    $('.email-signup-wrapper').css('display','none');
+                }else{
+                     $('.email-signup-wrapper').css('display','block');
+                }
+                
+                /*Ends*/
 
                 /* critio home tag*/
                 if (page.pageId == 'home') {
