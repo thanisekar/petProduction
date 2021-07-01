@@ -93,27 +93,8 @@ define(
                  }
                  gtag('js', new Date());
                  gtag('config', 'UA-155409198-1'); // dosckocilpetmate@gmail.com GA code
-                 gtag('config', 'AW-828992767'); //trimax tracking
                  /*Ends*/
 
-
-                
-                
-                
-
-
-                //Trimax Pubsub call
-                $.Topic("trimaxOrder.memory").subscribe(function(trimaxOrderConfirmation) {
-                    $("script[id='trimaxOrderId']").remove();
-                    //console.log(trimaxOrderConfirmation,'trimaxOrderConfirmation');
-                    if ($("script[id='trimaxOrderId']").length === 0) {
-                        $("head").append(trimaxOrderConfirmation);
-                    }
-
-                });
-
-
-                //Ends
 
                 //Bronto Script
 
@@ -331,49 +312,6 @@ define(
                 }
                 
                 /*Ends*/
-
-                /* critio home tag*/
-                if (page.pageId == 'home') {
-                    $("script[id='criteoHome']").remove();
-                    if ($("script[id='criteoHome']").length === 0) {
-                        var criteoHomePageTag =
-                            '<script type="text/javascript" id="criteoHome">' +
-                            'var dataLayer = dataLayer || [];' +
-                            'dataLayer.push({' +
-                            '"event":"HomePage",' +
-                            '"PageType":"HomePage",' +
-                            '"email":"' + getWidget.user().emailAddress() + '"' +
-                            '});' +
-                            '</script>';
-                        $("head").append(criteoHomePageTag);
-                    }
-                }
-                /* critio home tag*/
-
-                /* critio tag*/
-
-                $("script[id='CriterAllPgeTag']").remove();
-                if ($("script[id='CriterAllPgeTag']").length === 0) {
-                    var criteoAllPageTag =
-                        '<script type="text/javascript" id="CriterAllPgeTag">' +
-                        'var dataLayer = dataLayer || [];' +
-                        'dataLayer.push({' +
-                        '"email":"' + getWidget.user().emailAddress() + '"' +
-                        '});' +
-                        '</script>';
-                    $("head").append(criteoAllPageTag);
-                }
-
-                /* critio tag*/
-
-
-
-
-
-
-
-
-
 
 
 

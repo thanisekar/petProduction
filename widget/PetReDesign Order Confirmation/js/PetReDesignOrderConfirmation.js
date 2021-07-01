@@ -554,22 +554,7 @@
                 });
                 /*Add Shopper Ends*/
 
-                /*Trimax*/
 
-
-                var trimaxOrderConfirmation =
-                    "<script id='trimaxOrderId'> gtag('event', 'conversion'," +
-                    "{ 'send_to': 'AW-828992767/-Ns2CMXWyocBEP_ZpYsD', " +
-                    "'value': " + getWidget.koSubTotal() + ", " +
-                    "'currency': 'USD'," +
-                    "'transaction_id': ' " + getWidget.koOrderID() + "' }" +
-                    "); " +
-                    "</script>";
-
-                $.Topic("trimaxOrder.memory").publish(trimaxOrderConfirmation);
-
-
-                /*Ends*/
 
 
                 //Attentive Tag Order confirmation
@@ -688,21 +673,7 @@
                 //Ends
                 //getWidget.appendScript('https://apps.bazaarvoice.com/deployments/Petmate/main_site/production/en_US/bv.js');
 
-                $("script[id='CriteoOrderConfirmation']").remove();
 
-
-                var criteoConfirmationPageTag =
-                    '<script type="text/javascript" id="CriteoOrderConfirmation">' +
-                    'var dataLayer = dataLayer || [];' +
-                    'dataLayer.push({' +
-                    '"event":"TransactionPage",' +
-                    '"PageType": "TransactionPage",' +
-                    '"email":"' + getWidget.user().emailAddress() + '",' +
-                    '"ProductTransactionProducts":' + ko.toJSON(getWidget.koProduct_listArray()) + ',' +
-                    '"TransactionID":"' + getWidget.koOrderID() + '"' +
-                    '});' +
-                    '</script>';
-                $("head").append(criteoConfirmationPageTag);
 
                 /*window.bvCallback = function(BV) {
                     BV.pixel.trackTransaction({
@@ -832,7 +803,7 @@
                 widget.calculateNewCustomer();
                 var shareImg = '<img id="_SHRSL_img_1" src="https://www.shareasale.com/sale.cfm?tracking=' + getWidget.koOrderID() + '&amount=' + getWidget.kototalWithDisount() + '&merchantID=74750&transtype=sale&couponcode=' + getWidget.koCouponCode() + '&skulist=' + getWidget.koTrackingProductIDs() + '&quantitylist=' + getWidget.koTrackingproductQuanties() + '&pricelist=' + getWidget.koTrackingproductUnitPrices() + '&newcustomer=' + getWidget.koNewCustomer() + '&currency=USD&sscid=' + getWidget.koSscid() + '&sscidmode=6&v=2.0" width="1" height="1">'
 
-                var shareAnalytics = '<script defer async type="text/javascript" src=""https://www.dwin1.com/19038.js"></script>'
+                var shareAnalytics = '<script defer async type="text/javascript" src="https://www.dwin1.com/19038.js"></script>'
 
                 $('body').append(shareImg, shareAnalytics);
 

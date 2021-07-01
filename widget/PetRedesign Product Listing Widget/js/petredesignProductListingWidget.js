@@ -633,28 +633,7 @@ define(['knockout', 'viewModels/productListingViewModelFactory', 'CCi18n',
                     widget.listingViewModel().currentProducts()[i].creationNewFlag = ko.observable(newFlag);
                      
                 }
-                
-                /*Criteo */
-                if(productIDs.length>0){
-                    if ($("script[id='productListing']").length === 0) {
-                      var criteoProductListingTag =  
-                        '<script type="text/javascript" id="productListing">'+
-                        'var dataLayer = dataLayer || [];'+
-                        'dataLayer.push({'+
-                        '"event":"ListingPage",'+
-                        '"PageType":"ListingPage",'+
-                        '"email":"'+ widget.user().emailAddress() + '",'+
-                        '"ProductIDList":"[' + productIDs + ']",'+
-                        '});'+
-                        '</script>';
-                         $("head").append(criteoProductListingTag);
-                   }
-                   /*Criteo  end here*/
-                }
-                
-                
-                
-              
+                 
             },
 
             getPageUrlData: function(data) {

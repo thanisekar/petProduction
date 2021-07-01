@@ -280,41 +280,6 @@ define(
       },
       beforeAppear: function(page) {
           var widget = this;
-          
-          
-          
-          /* CriteoBasketTag*/
-          widget.koProduct_listArray([]);
-           for(var i=0; i<widget.cart().items().length; i++){
-            var productListObj ={
-                    'id':widget.cart().items()[i].productId ,
-                    'price': widget.cart().items()[i].originalPrice, 
-                    'quantity': widget.cart().items()[i].updatableQuantity()
-                }
-                widget.koProduct_listArray.push(productListObj)
-                
-           }
-          
-          //console.log('koProduct_listArray :' + widget.koProduct_listArray());
-          
-             $("script[id='BasketPage']").remove();
-             if ($("script[id='BasketPage']").length === 0) {
-                var criteoBasketTag =  
-                '<script type="text/javascript" id="BasketPage">'+ 
-                'var dataLayer = dataLayer || [];'+
-                'dataLayer.push({'+
-                '"event":"BasketPage",'+
-                '"PageType":"BasketPage",'+
-                '"email":"'+ widget.user().emailAddress() + '",'+
-                '"ProductBasketProducts" :' + ko.toJSON(widget.koProduct_listArray()) +
-                '});'+
-                '</script>';
-                $("head").append(criteoBasketTag);
-            }
-            
-             /* CriteoBasketTag*/
-            
-  
       },
       changeQty : function(item, event) {
             var target = $(event.currentTarget);

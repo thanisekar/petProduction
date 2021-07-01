@@ -502,8 +502,6 @@ define(
                         }
                     }
 
-                    /* critoe tag in PDP page*/
-
 
 
                     //Side Car Implementation
@@ -514,24 +512,6 @@ define(
                         };
                     }
 
-
-                    $("script[id='CriteoPDP']").remove();
-                    if ($("script[id='CriteoPDP']").length === 0) {
-                        var criteoProductPageTag =
-                            '<script type="text/javascript" id="CriteoPDP">' +
-                            'var dataLayer = dataLayer || [];' +
-                            'dataLayer.push({' +
-                            '"event":"ProductPage",' +
-                            '"PageType":"ProductPage",' +
-                            '"email":"' + widget.user().emailAddress() + '",' +
-                            '"ProductID":"' + getCurrentData.product.id + '"' +
-                            '});' +
-                            '</script>';
-                        $("head").append(criteoProductPageTag);
-                    }
-
-
-                    /* ends up critoe tags in PDP page */
 
 
                     //BV Product dynamic feed
