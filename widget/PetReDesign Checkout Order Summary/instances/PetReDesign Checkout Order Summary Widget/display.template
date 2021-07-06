@@ -138,15 +138,6 @@
             <span class="promoUpsell" data-bind="html:koPromoUpsell"></span>
             <!-- /ko -->
            <!--Ends-->
-
-      <!-- Shipping Surcharge -->
-      <!-- ko if: displayShippingOptions() && cart().shippingSurcharge() !== 0 -->
-        <div id="CC-checkoutOrderSummary-shippingSurcharge" class="shippingSurcharge clearfix" role="alert" aria-atomic="true" aria-live="polite">
-          <span data-bind="widgetLocaleText: 'shippingSurchargeText'"></span>
-          <span class="ordersumprice pull-right" 
-            data-bind="currency: {price: cart().shippingSurcharge(), currencyObj: $data.site().selectedPriceListGroup().currency}"></span>
-        </div>
-      <!-- /ko -->
       
       <!-- /ko --> 
       
@@ -167,6 +158,17 @@
         <!-- /ko -->
       </div>
     </div>
+
+    <!-- ko if: displayShippingOptions() && cart().shippingDiscount() !== 0-->
+        <!-- Shipping Surcharge -->
+      <!-- ko if: displayShippingOptions() && cart().shippingSurcharge() !== 0 -->
+      <div id="CC-checkoutOrderSummary-shippingSurcharge" class="shippingSurcharge clearfix" role="alert" aria-atomic="true" aria-live="polite">
+        <span data-bind="widgetLocaleText: 'shippingSurchargeText'"></span>
+        <span class="ordersumprice pull-right" 
+          data-bind="currency: {price: cart().shippingSurcharge(), currencyObj: $data.site().selectedPriceListGroup().currency}"></span>
+      </div>
+    <!-- /ko -->
+       <!-- /ko -->
       
       
       
