@@ -20,7 +20,7 @@ module.exports = {
         }
         if(details.totalWeight > 0 && details.totalWeight <= 150 ){
 
-          fedEx.rates(prepareFedReq(input.inputData,details.totalWeight),function(err, res) {
+      fedEx.rates(prepareFedReq(input.inputData, details.totalWeight, details.dimensionKey), function (err, res) {
             if(err) {
               LOG.error("Error in getting shipping rates : "+JSON.stringify(err));
               //return input.cb("error",unknownErrorResponse());
@@ -89,6 +89,7 @@ function getDetails(inputData){
   let order = inputData.order;
   let totalWeight = 0;
   let isFreeShipping = false;
+  let dimArray = [];
   if(order){
     //console.log("inside order")
       try{
@@ -102,14 +103,74 @@ function getDetails(inputData){
               if("isFreeShipping" === prop.id && prop.value){
                 isFreeShipping = true;
               }
+          //console.log('prop.id',prop.id);
+          //console.log('prop.value',prop.value);
+          if ("x_dimShip" === prop.id && prop.value) {
+            if(prop.value){
+              dimArray.push(prop.value);
+            }        
+          }
             });
         });
     }catch(e){
-
+      console.log(`Error in getting Property: ${e.message}`)
     }
   }
+  let finalDimension = {
+    l: 0,
+    w: 0,
+    h: 0
+  }
+  try {
+    finalDimension = getMax(dimArray);
+    console.log(finalDimension, 'finalDimension');
   console.log("totalWeight : "+totalWeight+", isFreeShipping : "+isFreeShipping);
-  return {totalWeight : totalWeight, isFreeShipping : isFreeShipping};
+  } catch (e) {
+    console.log(`Error in getting Dimension: ${e.message}`)
+  }
+  return { totalWeight: totalWeight, isFreeShipping: isFreeShipping, dimensionKey: finalDimension };
+}
+function getMax(dimArray) {
+  const values = [];
+  if(dimArray === undefined || dimArray.length == 0){
+     return ({
+      l: 0,
+      w: 0,
+      h: 0
+    });
+  }
+  const eachValueArray = dimArray.map(function (string) {
+    return string.replace(/[^0-9,.,x]+/g, "").split("x").map(function (item) {
+      return isNaN(parseInt(item)) ? 0 : parseInt(item)
+    });
+
+  })
+  const multipliedValue = eachValueArray.map(function (elementArray) {
+    return ((elementArray[0] || 0) * (elementArray[1] || 0 )* (elementArray[2] || 0))
+})
+for (let i = 0; i < multipliedValue.length; i++) {
+    values.push({
+        dimension: {
+            l: eachValueArray[i][0] || 0,
+            w: eachValueArray[i][1] || 0,
+            h: eachValueArray[i][2] || 0,
+        },
+        value: multipliedValue[i]
+    })
+}
+  const sortedDim = values.sort(function (a, b) {
+    return b.value - a.value
+  })
+  if(sortedDim[0].value){
+    return sortedDim[0].dimension
+  } else {
+    return {
+      l: 0,
+      w: 0,
+      h: 0
+  }
+  }
+  
 }
 
 function prepareSuccessResponse(inputReq,res,externallyPricedMethodsMap){
@@ -291,7 +352,7 @@ function prepareErrorResponse(){
 
 
 
-function prepareFedReq(inputData,totalWeight){
+function prepareFedReq(inputData, totalWeight, dimensionKey) {
   //console.log("inside prepareFedReq");
   let address = inputData.request.address;
 
@@ -340,13 +401,13 @@ function prepareFedReq(inputData,totalWeight){
         Weight: {
           Units: "LB",
           Value: String(totalWeight)
-        }/* ,
+        },
         Dimensions: {
-          Length: 108,
-          Width: 5,
-          Height: 5,
+          Length: String(dimensionKey.l),
+          Width: String(dimensionKey.w),
+          Height: String(dimensionKey.h),
           Units: 'IN'
-        } */
+        }
       }
     }
   };
