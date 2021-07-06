@@ -57,7 +57,7 @@
     						  <li class='footer-menu-item'><a data-bind="ccLink: 'Affiliates'" >Affiliates</a></li>
     						  <li class='footer-menu-item'><a data-bind="ccLink: 'media'" >Media</a></li>
     						  <li class='footer-menu-item'><a data-bind="ccLink: 'adoptapet'" href="/adoptapet">Adopt A Pet</a></li>
-							  <li class='footer-menu-item'><a data-bind="ccLink: 'petsustainability'" >Pet Sustainability Coalition</a></li>
+							  <li class='footer-menu-item'><a data-bind="ccLink: 'ourenvironment'" >Corporate Sustainability</a></li>
     					 </ul>
     				</div>
     				<div class='col-sm-2 nopad'>
@@ -84,6 +84,7 @@
     							errorAlt:'No Image Found'}" id="logoFoot">
     					</a>
     					</div>
+    					<h4 class="follow">Follow Petmate</h4>
     					<div class='social-icons'>
     					   <ul class='social-icon-menu'>
     					       <li class='social-icon-item'><a alt="Facebook" title="Facebook" href="http://www.facebook.com/Petmate" target="_blank" class='facebook_icon'></a></li>
@@ -163,7 +164,7 @@
             						  <li class='panel-menu-item'><a  data-bind="ccLink: 'Affiliates'">Affiliates</a></li>
             						  <li class='panel-menu-item'><a  data-bind="ccLink: 'media'" >Media</a></li>
             						   <li class='panel-menu-item'><a data-bind="ccLink: 'adoptapet'" href="/adoptapet">Adopt A Pet</a></li> 
-									  <li class='panel-menu-item'><a  data-bind="ccLink: 'petsustainability'" >Pet Sustainability Coalition</a></li>
+									  <li class='panel-menu-item'><a  data-bind="ccLink: 'ourenvironment'" >Corporate Sustainability</a></li>
             					 </ul>
                     		  </div> 
                     		</div>
@@ -206,6 +207,7 @@
                 							errorAlt:'No Image Found'}" id="logoFoot" alt="petRedesignLogo">
             					</a>
         					</div>
+        					<h6 class="follow">Follow Petmate</h6>
         					<div class='social-icons'>
         					   <ul class='social-icon-menu'>
         					       <li class='social-icon-item'><a href="http://www.facebook.com/Petmate" target="_blank" ><span class='facebook_icon'></span></a></li>
