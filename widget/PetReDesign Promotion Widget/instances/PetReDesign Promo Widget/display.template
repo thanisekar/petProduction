@@ -22,7 +22,7 @@
           <div class="text-center  promo-div  nopad">
               <div class="promoCode-Input form-group col-md-9 col-sm-7 col-xs-8 nopad">
                 <div class="control">
-                  <input type="text" class="input-inline" placeholder="Enter Promo Code" name="promoCode" id="CC-promotionDetails-promoCode" data-bind="validatableValue:promoCode, widgetLocaleText : {value:'promoCodeAriaLabelText', attr:'aria-label'}">
+                  <input type="text" class="input-inline" placeholder="Enter Promo Code" name="promoCode" oninput="this.value = this.value.toUpperCase()" id="CC-promotionDetails-promoCode" data-bind="validatableValue:promoCode, widgetLocaleText : {value:'promoCodeAriaLabelText', attr:'aria-label'}">
                 </div>
               </div>
               <div class="form-group col-md-3 col-sm-5 col-xs-4 nopad apply-content">
