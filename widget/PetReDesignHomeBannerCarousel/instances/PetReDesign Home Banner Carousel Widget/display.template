@@ -14,21 +14,21 @@
                           <!-- ko if : homeBanner1.src() != '' -->
                             <div class="item active">
                                <a data-bind="ccLink: {route: homeBannerLink1()}">
-                              <img data-bind="attr:{src: homeBanner1.src()}" alt="Shop NEW La-Z-Boy Outdoor Dog Beds" title="Shop NEW La-Z-Boy Outdoor Dog Beds">
+                              <img data-bind="attr:{src: homeBanner1.src()}" alt="Shop NEW Top Load Cat Carriers" title="Shop NEW Top Load Cat Carriers">
                               </a>
                             </div>
                             <!-- /ko -->
                             <!-- ko if : homeBanner2.src() != '' -->
                             <div class="item">
                                 <a data-bind="ccLink: {route: homeBannerLink2()}">
-                              <img data-bind="attr:{src: homeBanner2.src()}" alt="A web banner containing Chuckit! Amphibious Dog Toys - Shop now" title="Shop Chuckit! Amphibious Dog Toys">
+                              <img data-bind="attr:{src: homeBanner2.src()}" alt="A web banner containing a dog laying on a outdoor La-z-boy dog bed" title="Shop La-Z-Boy Outdoor Dog Bedding">
                             </a>
                             </div>
                              <!-- /ko -->
                               <!-- ko if : homeBanner3.src() != '' -->
                             <div class="item">
                               <a data-bind="ccLink: {route: homeBannerLink3()}">
-                            <img data-bind="attr:{src: homeBanner3.src()}" alt="A web banner containing JW Hol-ee Dog Toys" title="Shop JW Hol-ee Dog Toys">
+                            <img data-bind="attr:{src: homeBanner3.src()}" alt="A web banner containing NutterZ Dog Treats made with real peanut butter" title="Shop NutterZ Dog Treats with Real Peanut Butter">
                           </a>
                             </div>
                              <!-- /ko -->

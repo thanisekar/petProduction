@@ -729,7 +729,7 @@
                                                         </li>
                                                      
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/121009'}" >litter mats</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/litter-catcher-mats'}" >litter mats</a>
                                                         </li>
                                                      
                                                         <li>
@@ -1938,7 +1938,7 @@
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/121009'}" >litter mats</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/litter-catcher-mats'}" >litter mats</a> </li>
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">

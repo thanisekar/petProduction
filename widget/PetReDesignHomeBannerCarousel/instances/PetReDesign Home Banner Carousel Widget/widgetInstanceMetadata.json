@@ -1,24 +1,24 @@
 {
   "configuration": {
-    "homeBannerLink3": "/searchresults?Ntt=hol-ee&Nty=1&No=0&Nrpp=12&Rdm=268&searchType=simple&type=search",
+    "homeBannerLink3": "/searchresults?Ntt=nutterz&Nty=1&No=0&Nrpp=12&Rdm=637&searchType=simple&type=search",
     "homeBannerLink4": "/category/petmate-brands",
-    "homeBannerLink1": "/category/outdoor-dog-beds",
-    "homeBannerLink2": "/searchresults?Ntt=Chuckit!%20Amphibious&Nty=1&No=0&Nrpp=12&Rdm=127&searchType=simple&type=search",
+    "homeBannerLink1": "/petmate-top-load-cat-kennel/product/PM110",
+    "homeBannerLink2": "/category/outdoor-dog-beds",
     "homeBanner4": {
-      "src": "/file/v7057230527119932312/general/PM_HPBanner_Kennel_DOG.jpg",
-      "mediaName": "/general/PM_HPBanner_Kennel_DOG.jpg"
+      "src": "/file/v5847305468797394860/general/PM_Homepage-Banner_60years.jpg",
+      "mediaName": "/general/PM_Homepage-Banner_60years.jpg"
     },
     "homeBanner3": {
-      "src": "/file/v1548280877021621539/general/JW_HYH_Web-Banner.jpg",
-      "mediaName": "/general/JW_HYH_Web-Banner.jpg"
+      "src": "/file/v4330487755573949789/general/HC_NutterZDogTreats_Bannerj.jpg",
+      "mediaName": "/general/HC_NutterZDogTreats_Bannerj.jpg"
     },
     "homeBanner2": {
-      "src": "/file/v8485846094611074866/general/CI_Amphibious_Web-Banner.jpg",
-      "mediaName": "/general/CI_Amphibious_Web-Banner.jpg"
-    },
-    "homeBanner1": {
       "src": "/file/v2812617022917427703/general/LZB_OutdoorBeddingBanner-19.jpg",
       "mediaName": "/general/LZB_OutdoorBeddingBanner-19.jpg"
+    },
+    "homeBanner1": {
+      "src": "/file/v4171330315925903096/general/PM_Top-Load-Kennel_Web-Bann.jpg",
+      "mediaName": "/general/PM_Top-Load-Kennel_Web-Bann.jpg"
     }
   },
   "displayName": "PetReDesign Home Banner Carousel Widget"

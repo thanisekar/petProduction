@@ -10,8 +10,8 @@
       "altText": "${occ:widgetCustomText('1900005')}",
       "altTextId": "1900005",
       "isProductImage": false,
-      "link": "/category/brand-jackson-galaxy",
-      "src": "/file/v5626955834643005933/general/June-2021_JG_CatToySale_Web.jpg",
+      "link": "/category/brand-petqwerks",
+      "src": "/file/v8483021329777390597/general/July-2021_PQ_Review_Web-Banner.jpg",
       "titleText": "${occ:widgetCustomText('1900006')}",
       "titleTextId": "1900006",
       "zoomEnabled": false
@@ -34,8 +34,8 @@
       "altText": "${occ:widgetCustomText('1900003')}",
       "altTextId": "1900003",
       "isProductImage": false,
-      "link": "/vittles-vault-travel-trainer-portable-food-storage-container/product/4504",
-      "src": "/file/v642123016301436082/general/June-2021_PM_Product-of-the.jpg",
+      "link": "/category/dog-travel-education",
+      "src": "/file/v6087785363223110548/general/July-2021_PM-Academy-PetTra.jpg",
       "titleText": "${occ:widgetCustomText('1900004')}",
       "titleTextId": "1900004",
       "zoomEnabled": false
@@ -71,8 +71,8 @@
       "altText": "${occ:widgetCustomText('3000001')}",
       "altTextId": "3000001",
       "isProductImage": false,
-      "link": "/category/articles",
-      "src": "/file/v5057311474515144660/general/March21_PMAcademyWbBannere.jpg",
+      "link": "/chuckit-amphibious-fetch-balls-3-pack/product/32355",
+      "src": "/file/v2190180591946553940/general/July-2021_PM_ProductOfTheMonth_1535x750.jpg",
       "titleText": "${occ:widgetCustomText('2100001')}",
       "titleTextId": "2100001",
       "zoomEnabled": false
@@ -106,6 +106,7 @@
 
       <!-- oc section: image -->
 <span data-bind="element: 'image',id: '1900011'"></span>
+
       <!-- /oc -->
 
     </div>

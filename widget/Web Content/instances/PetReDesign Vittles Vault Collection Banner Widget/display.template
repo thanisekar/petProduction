@@ -1,0 +1,68 @@
+<!-- ko setContextVariable: {name: 'elementConfig', value: {
+  "4100002": {
+    "border": {
+      "borderColor": "#000000",
+      "borderWidth": 0
+    },
+    "horizontalAlignment": {"horizontalAlignment": "left"},
+    "id": "4100002",
+    "image": {
+      "altText": "${occ:widgetCustomText('3500001')}",
+      "altTextId": "3500001",
+      "isProductImage": false,
+      "src": "/file/v4118611134720681394/general/VV_FB_Banner_desktop.jpg",
+      "titleText": "${occ:widgetCustomText('3500002')}",
+      "titleTextId": "3500002",
+      "zoomEnabled": false
+    },
+    "padding": {
+      "paddingBottom": "0",
+      "paddingLeft": "0",
+      "paddingRight": "0",
+      "paddingTop": "0"
+    }
+  },
+  "4100003": {
+    "border": {
+      "borderColor": "#000000",
+      "borderWidth": 0
+    },
+    "horizontalAlignment": {"horizontalAlignment": "left"},
+    "id": "4100003",
+    "image": {
+      "altText": "${occ:widgetCustomText('3500003')}",
+      "altTextId": "3500003",
+      "isProductImage": false,
+      "src": "/file/v559449078073093178/general/VittlesVault_FB Mobile.png",
+      "titleText": "${occ:widgetCustomText('3500004')}",
+      "titleTextId": "3500004",
+      "zoomEnabled": false
+    },
+    "padding": {
+      "paddingBottom": "0",
+      "paddingLeft": "0",
+      "paddingRight": "0",
+      "paddingTop": "0"
+    }
+  }
+}} --><!-- /ko -->
+
+<!-- oc layout: panels -->
+  <div class="row">
+
+    <div class="oc-panel col-md-12 nopad" data-oc-id="panel-0-0">
+
+      <!-- oc section: image -->
+<span data-bind="element: 'image',id: '4100002'" class="hidden-xs"></span>
+      <!-- /oc -->
+
+      <!-- oc section: image -->
+<span data-bind="element: 'image',id: '4100003'" class="visible-xs"></span>
+
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+  <!-- /oc -->

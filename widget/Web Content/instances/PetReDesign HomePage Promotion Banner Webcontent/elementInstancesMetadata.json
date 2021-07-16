@@ -46,12 +46,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Petmate Academy - Expert Pet Advice",
+        "altText": "Petmate July 2021 Product of the Month",
         "zoomEnabled": false,
-        "titleText": "Petmate Academy - Expert Pet Advice",
+        "titleText": "Petmate July 2021 Product of the Month",
+        "link": "/chuckit-amphibious-fetch-balls-3-pack/product/32355",
         "isProductImage": false,
-        "link": "/category/articles",
-        "fileName": "March21_PMAcademyWbBannere.jpg"
+        "fileName": "July-2021_PM_ProductOfTheMonth_1535x750.jpg"
       }
     },
     {
@@ -73,12 +73,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Jackson Galaxy Cat Toy Sale",
+        "altText": "Review a Pet Qwerks Toy for a Special Offer!",
         "zoomEnabled": false,
-        "titleText": "Jackson Galaxy Cat Toy Sale",
+        "titleText": "Review a Pet Qwerks Toy for a Special Offer!",
+        "link": "/category/brand-petqwerks",
         "isProductImage": false,
-        "link": "/category/brand-jackson-galaxy",
-        "fileName": "June-2021_JG_CatToySale_Web.jpg"
+        "fileName": "July-2021_PQ_Review_Web-Banner.jpg"
       }
     },
     {
@@ -100,12 +100,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Petmate's June 2021 Product of the Month ",
+        "altText": "Tips for Dog Travel",
         "zoomEnabled": false,
-        "titleText": "Petmate's June 2021 Product of the Month",
-        "link": "/vittles-vault-travel-trainer-portable-food-storage-container/product/4504",
+        "titleText": "Tips for Dog Travel",
+        "link": "/category/dog-travel-education",
         "isProductImage": false,
-        "fileName": "June-2021_PM_Product-of-the.jpg"
+        "fileName": "July-2021_PM-Academy-PetTra.jpg"
       }
     },
     {

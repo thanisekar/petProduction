@@ -4,7 +4,7 @@
                </div>
           <img src="/file/general/GreenArch_Bottom.png" class="img-responsive hidden-md hidden-lg back-image">
                <img src="/file/general/GreenArch_Bottom_Resized_desktop.png" class="visible-md visible-lg img-responsive back-image">
-   <div class="wrapper">
+  <!-- <div class="wrapper">
     <div data-bind="attr: {'data-crl8-container-id': koDisplayProperty, 'data-crl8-auto-init': 'false' }"></div>
-   </div>
+   </div>-->
 </div>

@@ -1,7 +1,7 @@
 <div id="PetPromise">
     <div class="promiseDesktop hidden-xs hidden-sm">
         <a data-bind="ccLink: 'ourstory'">
-            <img alt="Our Story" title="Our Story" class="img-responsive" width="100%" src="/file/general/OurStoryHomepageBanner1.jpg">
+            <img alt="Our Story" title="Our Story" class="img-responsive" width="100%" src="/file/general/PM_OurStory_Homepage_Banner_1680x420.jpg">
         </a>
 
     </div>

@@ -1,29 +1,29 @@
 {
   "configuration": {
     "ArticleImage4": {
-      "src": "/file/v6718078595439909361/general/a10025.OutdoorPetSafety_MainImage.jpg",
-      "mediaName": "/general/a10025.OutdoorPetSafety_MainImage.jpg"
+      "src": "/file/v3763964988835200750/general/a90072.HowToCleanAPetmateGravityPetWaterer_MainImage.jpg",
+      "mediaName": "/general/a90072.HowToCleanAPetmateGravityPetWaterer_MainImage.jpg"
     },
     "ArticleImage3": {
-      "src": "/file/v4066090957178291368/general/b10021.8ChewToysForChewers_MainImage.jpg",
-      "mediaName": "/general/b10021.8ChewToysForChewers_MainImage.jpg"
+      "src": "/file/v3739319423657094548/general/a90132.GuideToFosteringACAt_MainImage.jpg",
+      "mediaName": "/general/a90132.GuideToFosteringACAt_MainImage.jpg"
     },
     "ArticleImage2": {
-      "src": "/file/v3750700167060762975/general/a90129.DehydrationInDogs_MainImage.jpg",
-      "mediaName": "/general/a90129.DehydrationInDogs_MainImage.jpg"
+      "src": "/file/v4960399963702108421/general/a90153.PetOwnershipBenefits_MainImage.jpg",
+      "mediaName": "/general/a90153.PetOwnershipBenefits_MainImage.jpg"
     },
     "ArticleImage1": {
-      "src": "/file/v5199776234377440871/general/a90143.FactsAboutCatWhiskers_MainImage.jpg",
-      "mediaName": "/general/a90143.FactsAboutCatWhiskers_MainImage.jpg"
+      "src": "/file/v6974213964716266233/general/a90155.DogParkEtiquette_MainImage.jpg",
+      "mediaName": "/general/a90155.DogParkEtiquette_MainImage.jpg"
     },
-    "ArticleImage3Des": "8 Chew Toys for the Toughest Chewers",
-    "ArticleImage1Des": "Facts About Cat Whiskers",
-    "ArticleImage2Des": "Dehydration In Dogs: Warning Signs",
-    "ArticleImage2URL": "/dehydration-in-dogs-warning-signs/article/a90129",
-    "ArticleImage4Des": "Outdoor Pet Safety",
-    "ArticleImage1URL": "/facts-about-cat-whiskers/article/a90143",
-    "ArticleImage3URL": "/8-chew-toys-for-the-toughest-chewers/article/b10021",
-    "ArticleImage4URL": "/outdoor-pet-safety/article/a10025"
+    "ArticleImage3Des": "A Step-by-Step Guide to Fostering a Cat",
+    "ArticleImage1Des": "Dog Park Etiquette",
+    "ArticleImage2Des": "Health Benefits of Pet Ownership",
+    "ArticleImage2URL": "/health-benefits-of-pet-ownership/article/a90153",
+    "ArticleImage4Des": "How To Clean a Petmate Gravity Pet Waterer",
+    "ArticleImage1URL": "/dog-park-etiquette/article/a90155",
+    "ArticleImage3URL": "/a-step-by-step-guide-to-fostering-a-cat/article/a90132",
+    "ArticleImage4URL": "/how-to-clean-a-petmate-gravity-pet-waterer/article/a90072"
   },
   "displayName": "PetReDesign Home Article Updated"
 }

@@ -3,8 +3,8 @@
       <img src="/file/general/Desktop_Banner_VittlesVault_FINAL.jpg" class="img-responsive hidden-xs">
        <img src="/file/general/Mobile_Banner_VittlesVault_FINAL.jpg" class="img-responsive visible-xs">
       <div class="col-sm-6 col-xs-12 nopad content-center">
-      <p>You love your pets enough to buy them the very best. And the very best pet food can be expensive. Vittles Vault pays for itself by helping keep their premium food fresher longer. It’s not just for dogs - it keeps premium cat food, rabbit food, guinea pig food, even duck food fresher longer. No matter your pet’s size or type, Vittles Vault will protect your investment by offering advanced freshness. <b style="margin-right:10px">Freshness You Can Take To The Bank<sup>TM</sup> </b><span class="hidden-xs"><a data-bind="ccLink: {route: '/brands/vittlesvault/category/brand-vittlesvault'}" class="shopNow">SHOP NOW  <i class="fa fa-play" aria-hidden="true"></i></a></span></p>
-      <div class="visible-xs shop-now-mob"><a data-bind="ccLink: {route: '/brands/vittlesvault/category/brand-vittlesvault'}" class="shopNow">SHOP NOW  <i class="fa fa-play" aria-hidden="true"></i></a></div>
+      <p>You love your pets enough to buy them the very best. And the very best pet food can be expensive. Vittles Vault pays for itself by helping keep their premium food fresher longer. It’s not just for dogs - it keeps premium cat food, rabbit food, guinea pig food, even duck food fresher longer. No matter your pet’s size or type, Vittles Vault will protect your investment by offering advanced freshness. <b style="margin-right:10px">Freshness You Can Take To The Bank<sup>TM</sup> </b><span class="hidden-xs"><a data-bind="ccLink: {route: '/category/brand-vittlesvault'}" class="shopNow">SHOP NOW  <i class="fa fa-play" aria-hidden="true"></i></a></span></p>
+      <div class="visible-xs shop-now-mob"><a data-bind="ccLink: {route: '/category/brand-vittlesvault'}" class="shopNow">SHOP NOW  <i class="fa fa-play" aria-hidden="true"></i></a></div>
       </div>
    </div>
    <div class="img-carousel">
@@ -68,7 +68,7 @@
       <div class="visible-xs bottom-section">
           <img src="/file/general/image_Mobile_CMB_VittlesVault.jpg" class="img-responsive">
                 <p>Our threaded locking system works in conjunction with reliable double gaskets to create a state known as Controlled Moisture Balance. Beneficial moisture, which keeps food fresh and tasty is trapped inside while harmful moisture, which contributes to contamination is locked out.</p>
-                  <a data-bind="ccLink: {route: '/brands/vittlesvault/category/brand-vittlesvault'}"> <img src="/file/general/image_Mobile_ShopNowButton_VittlesVault.jpg" class="img-responsive"> </a>
+                  <a data-bind="ccLink: {route: '/category/brand-vittlesvault'}"> <img src="/file/general/image_Mobile_ShopNowButton_VittlesVault.jpg" class="img-responsive"> </a>
       </div>
       
       <!--Life Style Carousel-->

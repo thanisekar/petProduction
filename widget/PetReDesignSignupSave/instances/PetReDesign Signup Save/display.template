@@ -13,10 +13,10 @@
                   <div><p style="font-family: helvetica;" xml="lang"><strong><span style="font-size: 14pt;" xml="lang">Sign Up &amp; Save 10%</span></strong></p><p style="    font-size: 14px;
     font-family: 'Roboto',sans-serif;
     font-weight: 300;
-    vertical-align: -webkit-baseline-middle;" xml="lang"><span style="font-weight: 400;" xml="lang">Let's get you signed up for Petmate emails. It'll take just a minute. You may unsubscribe at any time. New subscribers will receive a 10% off promo code. Check your inbox for details. View Privacy Policy (link to privacy policy page)</span></p></div>
+    vertical-align: -webkit-baseline-middle;" xml="lang"><span style="font-weight: 400;" xml="lang">Let's get you signed up for Petmate emails. It'll take just a minute. You may unsubscribe at any time. New subscribers will receive a 10% off promo code. Check your inbox for details. <a href="https://www.petmate.com/privacy" target="_blank">View Privacy Policy</a></div>
               </div>
           </div>
-         
+         p
       </div>
       <div style="clear: both;">&nbsp;</div>
    </div>

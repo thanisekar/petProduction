@@ -1,0 +1,139 @@
+<div id="collection-contents">
+   <div class="container">
+      <div class="section1">
+         <div class="col-md-10 col-sm-12 reduceWidth">
+            <h3>Benefits of Vittles Vault Pet Food Storage Containers</h3>
+            <div class="row">
+               <div class="col-xs-12 col-sm-3"> <img src="/file/general/Icon1_Storage.png" alt="Convenience and
+                  storage space" title="Convenience and
+                  storage space" class="img-responsive"> </div>
+               <div class="col-xs-12 col-sm-3"> <img src="/file/general/Icon2_ShelfLife.png" alt="Keep food fresh for the
+                  duration of it's shelf life." title="Keep food fresh for the
+                  duration of it's shelf life." class="img-responsive"> </div>
+               <div class="col-xs-12 col-sm-3"> <img src="/file/general/Icon3_Taste.png" alt="Preserve taste
+                  and texture." title="Preserve taste
+                  and texture." class="img-responsive"> </div>
+               <div class="col-xs-12 col-sm-3"> <img src="/file/general/Icon4_Bacteria.png" alt="Keep bacteria
+                  and pests out!" title="Keep bacteria
+                  and pests out!" class="img-responsive"> </div>
+            </div>
+         </div>
+      </div>
+      <div class="section2"> <img src="/file/general/VittlesVault4.5StarRating_Banner.png" alt="Average Rating" title="Average & Rating" class="img-responsive"> </div>
+      <div class="section3">
+         <div class="row">
+            <div class="col-sm-6 col-md-6 col-xs-12 vittlesLogo"> <img class="img-responsive" alt="Storage Containers" title="Storage Containers" src="/file/general/scoop_img.png"> </div>
+            <div class="col-sm-6 col-md-6 col-xs-12 vittlesDescriptionContainer">
+               <div class="vittlesTitle">
+                  <h3>About Vittles Vault Pet
+                     Food Storage Containers
+                  </h3>
+               </div>
+               <div class="vittlesDescription">
+                  <p>You love your pets enough to buy them the very best. And the very best pet food can be expensive. Vittles Vault pays for itself by helping keep their premium food fresher longer. It’s not just for dogs - it keeps premium cat food, rabbit food, guinea pig food, even duck food fresher longer. No matter your pet’s size or type, Vittles Vault will protect your investment by offering advanced freshness.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section4">
+         <div class="col-md-10 col-sm-12 reduceWidth">
+            <div class="row gridRow">
+               <h3>Order Today and Get Free Shipping on Orders Over $49</h3>
+               <!-- ko foreach: koGetCollectionList -->
+               <!-- ko foreach: items -->
+               <div class="cc-product-item col-sm-3 col-xs-12">
+                  <div class='product-item-wrapper'>
+                     <div class="row">
+                        <div class="col-xs-6 col-sm-12 nopad imageContent">
+                           <div class="cc-item-detail">
+                              <a data-bind="ccLink: {route: $data.route} "> <img data-bind="ccResizeImage: {
+                                 source: fullImageURLs[0],
+                                 xsmall: '500,270',
+                                 small: '500,270',
+                                 medium: '500,893',
+                                 large: '500,1106',
+                                 alt: displayName,
+                                 title:displayName}" class="img-responsive" width="100%" /> </a>
+                           </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12 nopad detailsContent">
+                           <div class="cc-item-price"> <span class="product-title" data-bind="text:  '$' + listPrice"></span> </div>
+                           <div class="cc-item-title">
+                              <a data-bind="ccLink: {route: $data.route} ">
+                                 <p class="product-title" data-bind="text: displayName"></p>
+                              </a>
+                           </div>
+                           <div class='cc-item-rating'>
+                              <div data-bv-show="inline_rating" data-bind="attr: {'data-bv-product-id':id,'data-bv-redirect-url':route}"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- /ko -->
+               <!-- /ko -->
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="section5"> <img src="/file/general/VittlesVaultsReviews_Banner.jpg" alt="Reviews" title="Reviews" class="img-responsive hidden-xs">
+   <img src="/file/general/reviews_mob.png" alt="Reviews" title="Reviews" class="img-responsive visible-xs">
+   </div>
+   <div class="container">
+      <div class="section6">
+         <div class="col-md-10 col-sm-12 reduceWidth">
+            <h3>Frequently Asked Questions</h3>
+            <div class="accordion" id="accordionExample">
+               <div class="card">
+                  <div class="card-header" id="headingOne">
+                     <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How does Vittles Vault keep pet food fresher longer?
+                        </button>
+                     </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                     <div class="card-body"> Vittles Vault Food Storage Containers are made with a BPA-free resin formula that makes them safe for storing food. The secret to keeping your pet's food fresher longer lies in the patented Gamma Seal. Double gaskets coupled with the threaded locking system creates an ideal environment for storing dry pet food, called Controlled Moisture Balance. </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card-header" id="headingTwo">
+                     <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What is Controlled Moisture Balance?
+                        </button>
+                     </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                     <div class="card-body"> Our threaded locking system works in conjunction with reliable double gaskets to create a state known as Controlled Moisture Balance. In this state, beneficial moisture, which keeps food fresh and tasty, is trapped inside while harmful moisture, which contributes to contamination, is locked out. </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card-header" id="headingThree">
+                     <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What can I store in my Vittles Vault?
+                        </button>
+                     </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                     <div class="card-body"> Vittles Vault containers are made for keeping dry pet food fresh, however it can be used to bulk human foods and household items such as potting soil too! Besides storing pet food, you can also store beans, flours, sugars, rice, nuts, and other bulk foods. </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card-header" id="headingTwo">
+                     <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        I lost my Vittles Vault Lid. Can I buy a replacement? What size lid do I need?
+                        </button>
+                     </h2>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                     <div class="card-body"> We offer two replacement lids for our Vittles Vault Food Storage Containers. If you own aa 8lbs., 15lbs., 25 lbs., 35 lbs., or 40 lbs. Vittles Vault Container, you'll need a 2.0 Replacement Lid. If you own a 10 lbs., 20 lbs., 30 lbs., 50 lbs., or 80 lbs. Vittles Vault, you'll need a 5.0 Replacement Lid. </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
