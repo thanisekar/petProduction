@@ -7,12 +7,12 @@
     //-------------------------------------------------------------------
     // DEPENDENCIES
     //-------------------------------------------------------------------
-    ['knockout', 'CCi18n', 'pubsub', 'notifier', 'ccConstants', 'spinner', 'ccRestClient', 'moment'],
+    ['knockout', 'CCi18n', 'pubsub', 'notifier', 'ccConstants', 'jquery', 'spinner', 'ccRestClient', 'moment'],
 
     //-------------------------------------------------------------------
     // MODULE DEFINITION
     //-------------------------------------------------------------------
-    function(ko, CCi18n, pubsub, notifier, CCConstants, spinner, ccRestClient, moment) {
+    function(ko, CCi18n, pubsub, notifier, CCConstants, $, spinner, ccRestClient, moment) {
 
         "use strict";
         var getWidget = "";
@@ -237,26 +237,7 @@
                         //  console.log(value.customItemImage(), '-----value.customItemImage----');
                     }, function(prodDetail) {}, p, r);
 
-                    //Bing Conversion Goal
 
-                    var bingConversion = "<script > (function(w, d, t, r, u) {" +
-                        "var f, n, i;" +
-                        "w[u] = w[u] || [], f = function() {" +
-                        "var o = {" +
-                        "ti: '134203866'" +
-                        "};" +
-                        "o.q = w[u], w[u] = new UET(o), w[u].push('pageLoad')" +
-                        "}, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function() {" +
-                        "var s = this.readyState;" +
-                        "s && s !== 'loaded' && s !== 'complete' || (f(), n.onload = n.onreadystatechange = null)" +
-                        "}, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)" +
-                        "})(window, document, 'script', '//bat.bing.com/bat.js', 'uetq');" +
-                        "window.uetq = window.uetq || [];" +
-                        "window.uetq.push('event', '', {" +
-                        "'revenue_value': " + getWidget.koTotal() + "," +
-                        "'currency': 'USD'" +
-                        "}); < /script>"
-                    $("head").append(bingConversion);
 
 
                     getPath = window.location.host;
@@ -289,6 +270,158 @@
 
 
                 });
+
+                //Bing Conversion Goal
+
+                var bingConversion = "<script > (function(w, d, t, r, u) {" +
+                    "var f, n, i;" +
+                    "w[u] = w[u] || [], f = function() {" +
+                    "var o = {" +
+                    "ti: '134203866'" +
+                    "};" +
+                    "o.q = w[u], w[u] = new UET(o), w[u].push('pageLoad')" +
+                    "}, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function() {" +
+                    "var s = this.readyState;" +
+                    "s && s !== 'loaded' && s !== 'complete' || (f(), n.onload = n.onreadystatechange = null)" +
+                    "}, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)" +
+                    "})(window, document, 'script', '//bat.bing.com/bat.js', 'uetq');" +
+                    "window.uetq = window.uetq || [];" +
+                    "window.uetq.push('event', '', {" +
+                    "'revenue_value': " + getWidget.koTotal() + "," +
+                    "'currency': 'USD'" +
+                    "}); < /script>"
+                $("head").append(bingConversion);
+
+
+
+                //Klaviyo Order Placed
+                if (getWidget.confirmation()) {
+                    var confirmation = getWidget.confirmation();
+                    var klaviyoOrderJson = {};
+
+
+                    var klaviyoLineItems = [];
+                    var klaviyoItemName = [];
+                    var klaviyoCategoryName = [];
+                    var shoppingCartItems = []
+                    var shoppingCart = getWidget.confirmation().shoppingCart;
+                    shoppingCartItems = getWidget.confirmation().shoppingCart.items;
+                    var eventId;
+                    eventId = confirmation.shippingAddress.address1.replace(/[^A-Z0-9]/ig, "_");
+                    eventId += Math.round(confirmation.priceInfo.subTotal);
+                    $.each(shoppingCartItems, function(k, v) {
+                        var values = v;
+                        console.log(values.dynamicProperties[0].value, 'values.dynamicProperties[0]');
+                        var displayName = values.displayName.replace(/"/g, "");
+                        var brandValue = values.dynamicProperties[0].value.replace(/[^\w\s]/gi, ',');
+                        var lineItemsObj = {};
+                        lineItemsObj.Categories = [];
+                        lineItemsObj.ProductID = values.productId;
+                        lineItemsObj.SKU = displayName;
+                        lineItemsObj.ProductName = displayName;
+                        lineItemsObj.Quantity = values.quantity;
+                        lineItemsObj.ItemPrice = values.listPrice;
+                        lineItemsObj.RowTotal = values.listPrice;
+                        lineItemsObj.ProductURL = 'https://www.petmate.com/' + values.route;
+                        lineItemsObj.ImageURL = 'https://www.petmate.com/' + values.primaryThumbImageURL;
+                        lineItemsObj.Categories.push(brandValue);
+                        lineItemsObj.Brand = brandValue;
+                        klaviyoItemName.push(displayName);
+                        klaviyoCategoryName.push(brandValue);
+                        klaviyoLineItems.push(lineItemsObj);
+
+                    })
+
+
+
+                    klaviyoOrderJson = {
+                        "token": "S3dfRa",
+                        "event": "Placed Order",
+                        "customer_properties": {
+                            "$email": confirmation.shippingAddress.email,
+                            "$first_name": confirmation.shippingAddress.firstName,
+                            "$last_name": confirmation.shippingAddress.lastName,
+                            "$phone_number": confirmation.shippingAddress.phoneNumber,
+                            "$address1": confirmation.shippingAddress.address1,
+                            "$address2": confirmation.shippingAddress.address2,
+                            "$city": confirmation.shippingAddress.city,
+                            "$zip": confirmation.shippingAddress.postalCode,
+                            "$region": confirmation.shippingAddress.state,
+                            "$country": "USA"
+                        },
+                        "properties": {
+                            "$event_id": eventId,
+                            //"$event_id": "ABCWS",
+                            "$value": confirmation.priceInfo.total,
+                            "OrderId": confirmation.id,
+                            "Categories": klaviyoCategoryName,
+                            "ItemNames": klaviyoItemName,
+                            "Brands": klaviyoCategoryName,
+                            "DiscountCode": "",
+                            "DiscountValue": confirmation.discountInfo.orderDiscount,
+                            "Items": klaviyoLineItems,
+                            "BillingAddress": {
+                                "FirstName": confirmation.billingAddress.firstName,
+                                "LastName": confirmation.billingAddress.lastName,
+                                "Company": "",
+                                "Address1": confirmation.billingAddress.address1,
+                                "Address2": confirmation.billingAddress.address2,
+                                "City": confirmation.billingAddress.city,
+                                "Region": confirmation.billingAddress.state,
+                                "RegionCode": confirmation.billingAddress.state,
+                                "Country": "United States",
+                                "CountryCode": "US",
+                                "Zip": confirmation.billingAddress.postalCode,
+                                "Phone": confirmation.billingAddress.phoneNumber
+                            },
+                            "ShippingAddress": {
+                                "FirstName": confirmation.shippingAddress.firstName,
+                                "LastName": confirmation.shippingAddress.lastName,
+                                "Company": "",
+                                "Address1": confirmation.shippingAddress.address1,
+                                "Address2": confirmation.shippingAddress.address2,
+                                "City": confirmation.shippingAddress.city,
+                                "Region": confirmation.shippingAddress.state,
+                                "RegionCode": confirmation.shippingAddress.state,
+                                "Country": "United States",
+                                "CountryCode": "US",
+                                "Zip": confirmation.shippingAddress.postalCode,
+                                "Phone": confirmation.shippingAddress.phoneNumber
+                            }
+                        },
+                        "time": Date.now() / 1000
+                    }
+
+
+                    var encodedString = btoa(JSON.stringify(klaviyoOrderJson));
+                    //console.log(encodedString,'encodedString');
+                    //var decodedString = atob(encodedString);
+
+
+                    var objNew = {
+                        "encoded": encodedString
+                    }
+
+                    $.ajax({
+                        url: "/ccstorex/custom/petmate/v1/klaviyoPlacedOrder", //external URL
+                        type: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify(objNew), //data needs to be passed
+                        async: false,
+                        dataType: 'json',
+                        success: function(data) {
+                            console.log('Order details sent to Klaviyo');
+                        },
+                        error: function(data) {
+                            console.log(data, 'Error in sending Order details sent to Klaviyo');
+                        }
+                    });
+                }
+
+
+
+
+                //Ends
 
                 getWidget.koProductPromoCode([])
                 if (getWidget.confirmation().discountInfo.orderDiscountDescList.length > 0) {

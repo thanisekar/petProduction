@@ -60,6 +60,10 @@ define(
 
                 /* Gtm Tracking code ens here */
 
+                /*SEO facebook meta tag*/
+                var seoMeta = '<meta name="facebook-domain-verification" content="zdz4rmdeun0kkfdyhg8gh1tql64e40" />';
+                $("head").append(seoMeta);
+                /*Ends*/
 
                 /* steel house tracking pixel script starts*/
                 var steelHouseTrackingPixel = '<script type="text/javascript">' +
@@ -220,11 +224,39 @@ define(
                             data: JSON.stringify(objNew),
                             success: function(response) {
                                 //  console.log(response,'Success Message');
+                                //$('.success-msg').css('display', 'block');
+                                //$('.success-msg').fadeOut(8000);
+                                // $("#emailSignUp").val('');
+                            }
+                        });
+                     
+                     
+                     //Klaviyo Footer Signup
+                        var settings = {
+                            "async": true,
+                            "crossDomain": true,
+                            "url": "https://manage.kmail-lists.com/ajax/subscriptions/subscribe",
+                            "method": "POST",
+                            "headers": {
+                                "content-type": "application/x-www-form-urlencoded",
+                                "cache-control": "no-cache"
+                            },
+                            "data": {
+                                "g": "W8hEMQ",//Master List Id
+                                "$fields": "$source",
+                                "email": inputVal.toString(),
+                                "$source": "Footer"
+                            }
+                        }
+
+                        $.ajax(settings).done(function(response) {
+                            if (response.success) {
                                 $('.success-msg').css('display', 'block');
                                 $('.success-msg').fadeOut(8000);
                                 $("#emailSignUp").val('');
                             }
                         });
+                        //Ends
                     } else {
                         //  console.log(".......email invalid.........")
                     }

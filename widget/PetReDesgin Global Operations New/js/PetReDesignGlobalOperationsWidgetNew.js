@@ -74,6 +74,9 @@
                 getWidget = widget;
                 widget.appendScript('https://apps.bazaarvoice.com/deployments/petmate/main_site/production/en_US/bv.js');
                 widget.appendScript('//nsg.symantec.com/Web/Seal/gjs.aspx?SN=965624406');
+                widget.appendScript('https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=S3dfRa');
+
+
                 //widget.appendScript('https://www.myus.com/_/Signup/RemoteRegistration?aid=1006685&noimg=1');
                 //Cookie
 

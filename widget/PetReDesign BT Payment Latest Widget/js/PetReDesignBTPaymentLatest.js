@@ -214,6 +214,30 @@ var deviceData  = null;
                         $('#brontoEmailId').remove();
                         var brontoEmail = '<img id="brontoEmailId" src="https://app.bronto.com/public/?q=direct_add&fn=Public_DirectAddForm&id=bjoxunlmlfrmycqpxmpztvpnnlwkbof&email=' + getWidget.koEmailSignupValue() + '&&list1=0bcd03ec000000000000000000000019c915" width="0" height="0" border="0" alt=""/>'
                         $('body').append(brontoEmail);
+                        //Klaviyo Checkout Signup
+                        var settings = {
+                            "async": true,
+                            "crossDomain": true,
+                            "url": "https://manage.kmail-lists.com/ajax/subscriptions/subscribe",
+                            "method": "POST",
+                            "headers": {
+                                "content-type": "application/x-www-form-urlencoded",
+                                "cache-control": "no-cache"
+                            },
+                            "data": {
+                                "g": "W8hEMQ",//Master List Id
+                                "$fields": "$source",
+                                "email": optInMail.toString(),
+                                "$source": "Checkout"
+                            }
+                        }
+
+                        $.ajax(settings).done(function(response) {
+                            if (response.success) {
+                                console.log('Successfully subscribed to Klaviyo');
+                            }
+                        });
+                        //Ends
                     } 
                    // },1000);
                     

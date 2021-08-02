@@ -43,11 +43,11 @@ define(
 
             koProductDataArray: ko.observableArray([]),
             koOverSizedArray: ko.observableArray([]),
-      		skipSpinner                  : ko.observable(false),
-			isOverSized: ko.observable(false),
-			isAPOCheck: ko.observable(false),
+            skipSpinner: ko.observable(false),
+            isOverSized: ko.observable(false),
+            isAPOCheck: ko.observable(false),
             airCheck: ko.observable(false),
-			getSelectedState: ko.observable(),
+            getSelectedState: ko.observable(),
             isOverWeight: ko.observable(false),
             koIsFreeShipping: ko.observable(false),
             overRideWeight: ko.observable(false),
@@ -100,10 +100,10 @@ define(
 
             onLoad: function(widget) {
                 getWidget = widget;
-               $.Topic("employeeCheck.memory").subscribe(function(data) {
+                $.Topic("employeeCheck.memory").subscribe(function(data) {
                     getWidget.employeeCheck(data);
                 });
-                
+
                 widget.shippingmethods().defaultShipping("300010");
                 shippingmethods.getInstance().defaultShipping("300010");
                 // //console.log(ko.toJS(widget.cart()) , '------ Cart---');
@@ -112,12 +112,12 @@ define(
                     getWidget.shippingMethodLoaded();
                     getWidget.commonShippingLogic();
                     //Reordering and changing names for shipping methods
-                    setTimeout(function(){
+                    setTimeout(function() {
                         $(".CC-checkoutOrderSummary-shippingOption-300008").insertAfter(".CC-checkoutOrderSummary-shippingOption-300009");
                         $("#CC-checkoutOrderSummary-shippingOptionPrice-300010").text("Ground (Standard Shipping: 3 - 5 Business Days)");
                         $("#CC-checkoutOrderSummary-shippingOptionPrice-300009").text("Two Day Shipping: Expect Within 2 Business Days");
                         //$( "#CC-checkoutOrderSummary-discounts span:contains('FREE Ground Shipping All Orders')" ).css( "display", "none" );
-                        },3500)
+                    }, 3500)
                 });
                 //Popup
                 widget.shippingSurchargeMouseOver = function(widget, event) {
@@ -285,7 +285,7 @@ define(
                 // check the current cart to see if there is a shipping method
                 // if not it sets the default shipping method
                 widget.shippingMethodsLoadedListener = function(obj) {
-                    if(getWidget.isOverWeight()) {
+                    if (getWidget.isOverWeight()) {
                         shippingmethods.getInstance().defaultShipping("300004");
                     } else {
                         shippingmethods.getInstance().defaultShipping("300010");
@@ -310,7 +310,7 @@ define(
                             if (getWidget.isOverWeight()) {
                                 widget.selectedShippingValue("300004");
                             } else {
-                                if(widget.cart().shippingMethod() === "300004") {
+                                if (widget.cart().shippingMethod() === "300004") {
                                     widget.selectedShippingValue("300004");
                                 } else {
                                     widget.selectedShippingValue(widget.cart().shippingMethod());
@@ -333,7 +333,7 @@ define(
                             if (!getWidget.isOverWeight()) {
                                 widget.selectedShippingValue("300010");
                             } else {
-                                 widget.selectedShippingValue("300004")
+                                widget.selectedShippingValue("300004")
                             }
                         }
                     }
@@ -451,9 +451,9 @@ define(
                 //This subscribe is used when order total is changed when cart is updated
                 widget.cart().total.subscribe(function(newValue) {
                     widget.totalCost(widget.cart().total());
-          if (widget.order().shippingAddress() && widget.order().shippingAddress().validateForShippingMethod()) {
-                    widget.salesTax(widget.cart().tax());
-          }
+                    if (widget.order().shippingAddress() && widget.order().shippingAddress().validateForShippingMethod()) {
+                        widget.salesTax(widget.cart().tax());
+                    }
                 });
 
                 widget.destroySpinner = function() {
@@ -472,51 +472,52 @@ define(
 
                 // Handle changes to Selected Shipping option
                 widget.selectedShippingValue.subscribe(function(newValue) {
-          if(widget.cart().items().length <= 0) {
-            widget.displayShippingOptions(false);
-            return;
-          }
+                    if (widget.cart().items().length <= 0) {
+                        widget.displayShippingOptions(false);
+                        return;
+                    }
                     if (newValue) {
-            if (widget.skipSpinner()) {
-              widget.skipSpinner(false);
-            } else if(widget.shippingmethods().shippingOptions().length > 0){
-              widget.createSpinner();
-            }
-            // clears invalid shipping method error only if user selects any shipping option
-            // but not if default shipping method is selected after shipping options reload.
-            if (widget.clearInvalidShippingMethodError) {
-              notifier.clearError("OrderViewModel");
-              widget.clearInvalidShippingMethodError = false;
-            }
-            
-            // Check to see if selected shipping option is in the list of valid shipping options
-            for (var i = 0; i < widget.shippingOptions().length; i++) {
-              if (widget.shippingOptions()[i].repositoryId === widget.selectedShippingValue()) {
-                widget.selectedShippingOption(null);
-                widget.selectedShippingOption(widget.shippingOptions()[i]);
-                // Request checkout re-pricing as shipping method has changed
-                widget.sendShippingNotification();
-                if (widget.shippingMethodsLoaded()) {
-                  widget.removeAdjacentShippingAmount(true);
-                } else {
-                  widget.shippingMethodsLoaded(true);
-                  widget.removeAdjacentShippingAmount(false);
-                }
-                
-                // Housekeeping: reset flags/errors
-                if (widget.reloadShippingMethods()) {
-                  widget.reloadShippingMethods(false);
-                } else {
-                  notifier.clearError(widget.typeId()+'-shippingMethods');
-                }
-                break;
-              }
-            }
-            if( widget.cart().currentOrderState()== CCConstants.PENDING_PAYMENT ||  widget.cart().currentOrderState()== CCConstants.PENDING_PAYMENT_TEMPLATE){
-              widget.setupShippingOptions();
-            }
-          }
-        });
+                        if (widget.skipSpinner()) {
+                            widget.skipSpinner(false);
+                        } else if (widget.shippingmethods().shippingOptions().length > 0) {
+                            $.Topic('klaviyoStartedCheckout.memory').publish(widget.cart().shippingAddress());
+                            widget.createSpinner();
+                        }
+                        // clears invalid shipping method error only if user selects any shipping option
+                        // but not if default shipping method is selected after shipping options reload.
+                        if (widget.clearInvalidShippingMethodError) {
+                            notifier.clearError("OrderViewModel");
+                            widget.clearInvalidShippingMethodError = false;
+                        }
+
+                        // Check to see if selected shipping option is in the list of valid shipping options
+                        for (var i = 0; i < widget.shippingOptions().length; i++) {
+                            if (widget.shippingOptions()[i].repositoryId === widget.selectedShippingValue()) {
+                                widget.selectedShippingOption(null);
+                                widget.selectedShippingOption(widget.shippingOptions()[i]);
+                                // Request checkout re-pricing as shipping method has changed
+                                widget.sendShippingNotification();
+                                if (widget.shippingMethodsLoaded()) {
+                                    widget.removeAdjacentShippingAmount(true);
+                                } else {
+                                    widget.shippingMethodsLoaded(true);
+                                    widget.removeAdjacentShippingAmount(false);
+                                }
+
+                                // Housekeeping: reset flags/errors
+                                if (widget.reloadShippingMethods()) {
+                                    widget.reloadShippingMethods(false);
+                                } else {
+                                    notifier.clearError(widget.typeId() + '-shippingMethods');
+                                }
+                                break;
+                            }
+                        }
+                        if (widget.cart().currentOrderState() == CCConstants.PENDING_PAYMENT || widget.cart().currentOrderState() == CCConstants.PENDING_PAYMENT_TEMPLATE) {
+                            widget.setupShippingOptions();
+                        }
+                    }
+                });
 
                 // Sends shipping notification details to the subscribers along with shipping address and shipping options
                 widget.sendShippingNotification = function() {
@@ -548,21 +549,21 @@ define(
                         return "";
                     }
                 };
-        widget.shippingMethodSelected = function(data) {
-          widget.selectedShippingValue(data.repositoryId);
-        };
-        widget.getDropdownCaption = ko.computed(function() {
-          if (widget.selectedShippingValue()) {
-            for (var i = 0; i < widget.shippingOptions().length; i++) {
-              if (widget.shippingOptions()[i].repositoryId === widget
-                  .selectedShippingValue()) {
-                return widget.shippingOptions()[i].displayName; 
-              }
-            }
-          } else {
-            return CCi18n.t('ns.common:resources.selectShippingMethodText');
-          }
-        });
+                widget.shippingMethodSelected = function(data) {
+                    widget.selectedShippingValue(data.repositoryId);
+                };
+                widget.getDropdownCaption = ko.computed(function() {
+                    if (widget.selectedShippingValue()) {
+                        for (var i = 0; i < widget.shippingOptions().length; i++) {
+                            if (widget.shippingOptions()[i].repositoryId === widget
+                                .selectedShippingValue()) {
+                                return widget.shippingOptions()[i].displayName;
+                            }
+                        }
+                    } else {
+                        return CCi18n.t('ns.common:resources.selectShippingMethodText');
+                    }
+                });
                 widget.displayShippingMethodsDropdown = function(data, event) {
                     var self = this;
                     self.removeAdjacentShippingAmount(false);
@@ -576,18 +577,18 @@ define(
                             });
                         }
                         self.isCartPriceUpdated(false);
-            if (self.order().shippingAddress() && self.order().shippingAddress().validateForShippingMethod()) {
-                        self.createSpinner();
-              // Skip the pricing spinner when the drop down is getting clicked for the first time after address change
-              self.skipSpinner(true);
-              var shippingAddressWithProductIDs = {};
-              shippingAddressWithProductIDs[CCConstants.SHIPPING_ADDRESS_FOR_METHODS] = self.order().shippingAddress();
-              shippingAddressWithProductIDs[CCConstants.PRODUCT_IDS_FOR_SHIPPING] = self.cart().getProductIdsForItemsInCart();
-              self.cart().updateShippingAddress.bind(shippingAddressWithProductIDs)();
-            }
-          }
-          return true;
-          };
+                        if (self.order().shippingAddress() && self.order().shippingAddress().validateForShippingMethod()) {
+                            self.createSpinner();
+                            // Skip the pricing spinner when the drop down is getting clicked for the first time after address change
+                            self.skipSpinner(true);
+                            var shippingAddressWithProductIDs = {};
+                            shippingAddressWithProductIDs[CCConstants.SHIPPING_ADDRESS_FOR_METHODS] = self.order().shippingAddress();
+                            shippingAddressWithProductIDs[CCConstants.PRODUCT_IDS_FOR_SHIPPING] = self.cart().getProductIdsForItemsInCart();
+                            self.cart().updateShippingAddress.bind(shippingAddressWithProductIDs)();
+                        }
+                    }
+                    return true;
+                };
 
                 widget.shippingOptionBlured = function(data, event) {
                     var self = this;
@@ -598,8 +599,8 @@ define(
                 $.Topic(pubsub.topicNames.NO_SHIPPING_METHODS).subscribe(widget.handleNoShippingMethods);
                 $.Topic(pubsub.topicNames.CHECKOUT_SHIPPING_ADDRESS_INVALID).subscribe(function(obj) {
                     widget.resetShippingOptions();
-          widget.destroySpinner();
-          widget.shippingMethodsLoaded(false);
+                    widget.destroySpinner();
+                    widget.shippingMethodsLoaded(false);
                 });
 
                 // Handle server responses when data is missing or invalid
@@ -633,8 +634,8 @@ define(
                     // Enable button again
                     else if (this.errorCode == CCConstants.INVALID_SHIPPING_METHOD) {
                         widget.invalidShippingMethod(true);
-            widget.selectedShippingValue(null);
-            widget.cart().shippingMethod('');
+                        widget.selectedShippingValue(null);
+                        widget.cart().shippingMethod('');
                         // Notification sent by OrderViewModel to be cleared when valid shipping method is selected
                         widget.clearInvalidShippingMethodError = true;
 
@@ -751,103 +752,107 @@ define(
                     widget.paypalImageSrc(widget.paypalImageSrc() + "&locale=" + widget.persistedLocaleName()[0].name);
                 }
                 $.Topic(pubsub.topicNames.CART_REMOVE_SUCCESS).subscribe(function() {
-                    if(!getWidget.overWeight()) {
+                    if (!getWidget.overWeight()) {
                         //getWidget.invokeExternalShippingMethodsCall();
 
                     }
-                    if(getWidget.order().shippingAddress() && getWidget.order().shippingAddress().postalCode() !== '') {
+                    if (getWidget.order().shippingAddress() && getWidget.order().shippingAddress().postalCode() !== '') {
                         var shippingAddressWithProductIDs = {};
                         shippingAddressWithProductIDs[CCConstants.SHIPPING_ADDRESS_FOR_METHODS] = getWidget.order().shippingAddress();
                         shippingAddressWithProductIDs[CCConstants.PRODUCT_IDS_FOR_SHIPPING] = getWidget.cart().getProductIdsForItemsInCart();
                         $.Topic(pubsub.topicNames.RELOAD_SHIPPING_METHODS).publishWith(
                             shippingAddressWithProductIDs, [{
                                 message: "success"
-                        }]);
+                            }]);
                     }
-                    
+
                     getWidget.displayOverWeightSection();
                     getWidget.displayFreeShippingSection();
                     getWidget.displayOverSizeSection();
                     getWidget.displayOverRideWeightSection();
                     getWidget.commonShippingLogic();
                 });
-                
+
                 //Promo Upsell Message capture
                 $.Topic("promotionMessage.memory").subscribe(function(data) {
-                   if(data.length != 0){
-                   getWidget.koPromoUpsell(data[0].text)
-                   }
+                    if (data.length != 0) {
+                        getWidget.koPromoUpsell(data[0].text)
+                    }
                 });
-                
-                
-                //Sticky Checkout Order Summary
-                
-                
-                 $.Topic(pubsub.topicNames.PAGE_READY).subscribe(function() {
-                            if ($('#CC-checkoutOrderSummary').is(':visible')) {
-                                var fixmeTop = $('#CC-checkoutOrderSummary').offset().top;
-                                $(window).scroll(function() {
-                                    var currentScroll = $(window).scrollTop();
-                                    var parentwidth = $("#CC-checkoutOrderSummary").parent().width();    
-                                    var parentHeight = $("#CC-checkoutOrderSummary").height();   
 
-                                    if (currentScroll >= fixmeTop) {
-                                        $('#CC-checkoutOrderSummary').css({
-                                            'position' : 'fixed',
-                                             'width' : parentwidth + 'px',
-                                             'top' : '0'
-                                        });
-                                        $('#CC-promotionDetails').css({
-                                            'position' : 'fixed',
-                                             'width' : parentwidth + 'px',
-                                             'top' : parentHeight + 'px'
-                                        });
-                                    } else {
-                                        $('#CC-checkoutOrderSummary').css({
-                                            'position' : 'relative',
-                                             'width' : 'auto',
-                                             'top' : 'auto'
-                                        });
-                                        $('#CC-promotionDetails').css({
-                                            'position' : 'relative',
-                                             'width' : 'auto',
-                                             'top' : 'auto'
-                                        });
-                                    } 
-                                    if ($('#brain-tree-integration').is(':visible')) {
-                                        var braintreeOffset = $('#brain-tree-integration').offset();
-                                          var braintreeTop = $('#brain-tree-integration').offset().top;
-                                    if(currentScroll >= braintreeTop){
-                                             $('#checkoutCartSummary').css({
-                                            'height':'500px',
-                                            'overflow':'scroll'
-                                        });
-                                        $('#CC-checkoutOrderSummary').css({
-                                            'position' : 'relative',
-                                             'width' : 'auto'
-                                        });
-                                       $('#CC-promotionDetails').css({
-                                            'position' : 'relative',
-                                             'width' : 'auto'
-                                        });
-                                        $("#CC-checkoutOrderSummary").offset({ top: braintreeOffset.top});
-                                        $("#CC-promotionDetails").offset({ top: braintreeOffset.top + parentHeight});
-                                         
-                                    }else{
-                                        $('#checkoutCartSummary').css({
-                                            'height':'auto',
-                                            'overflow':'initial'
-                                        });
-                                    }
-                                    
-                                    }
+
+                //Sticky Checkout Order Summary
+
+
+                $.Topic(pubsub.topicNames.PAGE_READY).subscribe(function() {
+                    if ($('#CC-checkoutOrderSummary').is(':visible')) {
+                        var fixmeTop = $('#CC-checkoutOrderSummary').offset().top;
+                        $(window).scroll(function() {
+                            var currentScroll = $(window).scrollTop();
+                            var parentwidth = $("#CC-checkoutOrderSummary").parent().width();
+                            var parentHeight = $("#CC-checkoutOrderSummary").height();
+
+                            if (currentScroll >= fixmeTop) {
+                                $('#CC-checkoutOrderSummary').css({
+                                    'position': 'fixed',
+                                    'width': parentwidth + 'px',
+                                    'top': '0'
+                                });
+                                $('#CC-promotionDetails').css({
+                                    'position': 'fixed',
+                                    'width': parentwidth + 'px',
+                                    'top': parentHeight + 'px'
+                                });
+                            } else {
+                                $('#CC-checkoutOrderSummary').css({
+                                    'position': 'relative',
+                                    'width': 'auto',
+                                    'top': 'auto'
+                                });
+                                $('#CC-promotionDetails').css({
+                                    'position': 'relative',
+                                    'width': 'auto',
+                                    'top': 'auto'
                                 });
                             }
-                    })
-                    
-                    
-                    
-             
+                            if ($('#brain-tree-integration').is(':visible')) {
+                                var braintreeOffset = $('#brain-tree-integration').offset();
+                                var braintreeTop = $('#brain-tree-integration').offset().top;
+                                if (currentScroll >= braintreeTop) {
+                                    $('#checkoutCartSummary').css({
+                                        'height': '500px',
+                                        'overflow': 'scroll'
+                                    });
+                                    $('#CC-checkoutOrderSummary').css({
+                                        'position': 'relative',
+                                        'width': 'auto'
+                                    });
+                                    $('#CC-promotionDetails').css({
+                                        'position': 'relative',
+                                        'width': 'auto'
+                                    });
+                                    $("#CC-checkoutOrderSummary").offset({
+                                        top: braintreeOffset.top
+                                    });
+                                    $("#CC-promotionDetails").offset({
+                                        top: braintreeOffset.top + parentHeight
+                                    });
+
+                                } else {
+                                    $('#checkoutCartSummary').css({
+                                        'height': 'auto',
+                                        'overflow': 'initial'
+                                    });
+                                }
+
+                            }
+                        });
+                    }
+                })
+
+
+
+
             },
 
             /**
@@ -859,27 +864,27 @@ define(
                 this.order().validateCheckoutOrderSummary();
                 return !this.order().errorFlag;
             },
- invokeExternalShippingMethodsCall: function() {
-                if($("[class^=CC-checkoutOrderSummary-shippingOption]").length === 4) {
+            invokeExternalShippingMethodsCall: function() {
+                if ($("[class^=CC-checkoutOrderSummary-shippingOption]").length === 4) {
                     getWidget.selectedShippingValue("300010");
                     getWidget.cart().shippingMethod("300010");
-                    getWidget.shippingMethodLoaded(); 
+                    getWidget.shippingMethodLoaded();
                     getWidget.commonShippingLogic();
                 } else {
-                    if(getWidget.order().shippingAddress() && getWidget.order().shippingAddress().postalCode() !== '') {
+                    if (getWidget.order().shippingAddress() && getWidget.order().shippingAddress().postalCode() !== '') {
                         var shippingAddressWithProductIDs = {};
                         shippingAddressWithProductIDs[CCConstants.SHIPPING_ADDRESS_FOR_METHODS] = getWidget.order().shippingAddress();
                         shippingAddressWithProductIDs[CCConstants.PRODUCT_IDS_FOR_SHIPPING] = getWidget.cart().getProductIdsForItemsInCart();
                         $.Topic(pubsub.topicNames.RELOAD_SHIPPING_METHODS).publishWith(
                             shippingAddressWithProductIDs, [{
                                 message: "success"
-                        }]);
+                            }]);
                     }
                 }
             },
-            
+
             getShippingMethods: function() {
-               $.Topic("selectedState").subscribe(function(data) {
+                $.Topic("selectedState").subscribe(function(data) {
                     getWidget.getSelectedState(data);
                     getWidget.propertyCheck();
                     getWidget.displayOverSizeSection();
@@ -889,15 +894,15 @@ define(
                     getWidget.propertyCheck();
                     getWidget.displayOverSizeSection();
                 });
-},
-            freeShipping: function(){
-                
             },
- 
+            freeShipping: function() {
+
+            },
+
             overWeight: function() {
 
                 var widget = this;
-                
+
                 getWidget.isOverWeight(false);
 
                 var getItems = widget.cart().allItems();
@@ -908,7 +913,7 @@ define(
                     if (v.productData().childSKUs[0].petWeight != '' && v.productData().childSKUs[0].petWeight != undefined && v.productData().childSKUs[0].petWeight !== null) {
                         //console.log('Has petweight');
                         var petWeight = 0;
-                        if(v.productData().childSKUs[0].petWeight) {
+                        if (v.productData().childSKUs[0].petWeight) {
                             petWeight = v.productData().childSKUs[0].petWeight.split(" ")[0];
                         }
                         totalProductWeight = quantity * petWeight;
@@ -916,22 +921,22 @@ define(
                     }
                 });
                 //console.log('finalTotalProductWeight......', finalTotalProductWeight);
-                if(finalTotalProductWeight > 150) {
+                if (finalTotalProductWeight > 150) {
                     getWidget.isOverWeight(true);
                     return true;
                 }
-                return  false;
+                return false;
             },
-            propertyCheck: function(){
-                 getWidget.isOverSized(false);
-                 getWidget.koIsFreeShipping(false);
-                 getWidget.overRideWeight(false);
+            propertyCheck: function() {
+                getWidget.isOverSized(false);
+                getWidget.koIsFreeShipping(false);
+                getWidget.overRideWeight(false);
                 $.each(getWidget.cart().allItems(), function(index, value) {
                     if (value.productData() != undefined) {
                         if (value.productData().childSKUs !== null) {
                             if (value.productData().childSKUs != undefined || value.productData().childSKUs.length > 0) {
                                 if (value.productData().childSKUs[0] != undefined) {
-                                   
+
                                     if (value.productData().childSKUs[0].overSizedSku) {
                                         getWidget.isOverSized(true);
                                         getWidget.koOrderExceptionSku(value.productData().childSKUs[0].repositoryId);
@@ -947,84 +952,84 @@ define(
                         }
                     }
                 });
-                
+
                 getWidget.commonShippingLogic();
             },
-    
-            
-            
-            displayFreeShippingSection: function(){
-                
+
+
+
+            displayFreeShippingSection: function() {
+
                 getWidget.propertyCheck();
                 //console.log(getWidget.koIsFreeShipping(),'getWidget.koIsFreeShipping()');
-    
-                
+
+
             },
-            
+
             displayOverWeightSection: function() {
                 getWidget.overWeight();
                 //console.log(getWidget.isOverWeight(),'getWidget.isOverWeight()');
             },
-            
-            displayOverSizeSection: function(){
+
+            displayOverSizeSection: function() {
                 getWidget.propertyCheck();
                 //console.log(getWidget.isOverSized(),'getWidget.isOverSized()');
-                 if (getWidget.getSelectedState() == 'AA' || getWidget.getSelectedState() == 'AE' || getWidget.getSelectedState() == 'AP') {
+                if (getWidget.getSelectedState() == 'AA' || getWidget.getSelectedState() == 'AE' || getWidget.getSelectedState() == 'AP') {
                     getWidget.isAPOCheck(true);
                 } else {
                     getWidget.isAPOCheck(false);
                 }
-		
-		
-		if (getWidget.getSelectedState() == 'AK' || getWidget.getSelectedState() == 'HI') {
-		                   
-		                    getWidget.airCheck(true);
-		                } else {
-		                    getWidget.airCheck(false);
-		                }
-            	},
-            
-           
-            
-            displayOverRideWeightSection: function(){
+
+
+                if (getWidget.getSelectedState() == 'AK' || getWidget.getSelectedState() == 'HI') {
+
+                    getWidget.airCheck(true);
+                } else {
+                    getWidget.airCheck(false);
+                }
+            },
+
+
+
+            displayOverRideWeightSection: function() {
                 getWidget.propertyCheck();
 
                 //getWidget.overRideWeight();
                 //console.log(getWidget.overRideWeight(),'getWidget.overRideWeight()');
             },
-            
-            
-           
-                commonShippingLogic: function() {
-                    
-                    //console.log('commonShippingLogic');
-                    //Default options     
-                
-                    $(".CC-checkoutOrderSummary-shippingOption-300010").show();
-                    $(".CC-checkoutOrderSummary-shippingOption-300009").show();
-                    $(".CC-checkoutOrderSummary-shippingOption-300008").show();
-                    getWidget.shippingmethods().defaultShipping("300010");
-                    shippingmethods.getInstance().defaultShipping("300010");
-                    $('.overSized').hide();
-                    $(".shippingOptions").show();
-                    $('.orderPopup').hide();
-                    $('#CC-Checkout-Placeorder').attr('disabled', false);
-                    $('.bt-popup').hide();
+
+
+
+            commonShippingLogic: function() {
+
+                //console.log('commonShippingLogic');
+                //Default options     
+
+                $(".CC-checkoutOrderSummary-shippingOption-300010").show();
+                $(".CC-checkoutOrderSummary-shippingOption-300009").show();
+                $(".CC-checkoutOrderSummary-shippingOption-300008").show();
+                getWidget.shippingmethods().defaultShipping("300010");
+                shippingmethods.getInstance().defaultShipping("300010");
+                $('.overSized').hide();
+                $(".shippingOptions").show();
+                $('.orderPopup').hide();
+                $('#CC-Checkout-Placeorder').attr('disabled', false);
+                $('.bt-popup').hide();
                 //Case 1 : Free Shipping
-                
-                if(getWidget.koIsFreeShipping()){
+
+                if (getWidget.koIsFreeShipping()) {
                     $('.overSized').hide();
                     $(".shippingOptions").show();
                     $('.orderPopup').hide();
                     $('#CC-Checkout-Placeorder').attr('disabled', false);
                     $('.bt-popup').hide();
-                    $( ".bt-popup" ).removeClass( "popupCheck" );
+                    $(".bt-popup").removeClass("popupCheck");
                 }
-                
-                
+
+
                 //Case 2 : oversized
-                
-                if(getWidget.isOverSized()){
+
+                if (getWidget.isOverSized()) {
                     //console.log('oversized');
                     $(".CC-checkoutOrderSummary-shippingOption-300009").hide();
                     $(".CC-checkoutOrderSummary-shippingOption-300008").hide();
@@ -1033,12 +1038,12 @@ define(
                     $('.orderPopup').hide();
                     $('#CC-Checkout-Placeorder').attr('disabled', false);
                     $('.bt-popup').hide();
-                    $( ".bt-popup" ).removeClass( "popupCheck" );
+                    $(".bt-popup").removeClass("popupCheck");
                 }
-                
+
                 //Case 3: OverWeight
-                
-                if(getWidget.isOverWeight()){
+
+                if (getWidget.isOverWeight()) {
                     //console.log('over weight');
                     $(".CC-checkoutOrderSummary-shippingOption-300009").hide();
                     $(".CC-checkoutOrderSummary-shippingOption-300008").hide();
@@ -1047,12 +1052,12 @@ define(
                     $('.orderPopup').show();
                     $('#CC-Checkout-Placeorder').attr('disabled', true);
                     $('.bt-popup').show();
-                    $( ".bt-popup" ).addClass( "popupCheck" );
+                    $(".bt-popup").addClass("popupCheck");
                 }
-                
+
                 //Case 4: Over Ride Shipping
-                
-                if(getWidget.overRideWeight()){
+
+                if (getWidget.overRideWeight()) {
                     $(".CC-checkoutOrderSummary-shippingOption-300009").show();
                     $(".CC-checkoutOrderSummary-shippingOption-300008").show();
                     $('.overSized').hide();
@@ -1060,12 +1065,12 @@ define(
                     $('.orderPopup').hide();
                     $('#CC-Checkout-Placeorder').attr('disabled', false);
                     $('.bt-popup').hide();
-                    $( ".bt-popup" ).removeClass( "popupCheck" );
+                    $(".bt-popup").removeClass("popupCheck");
                 }
-                
+
                 //Case 5: Free Shipping and Over Size
-                
-                if(getWidget.koIsFreeShipping() && getWidget.isOverSized()){
+
+                if (getWidget.koIsFreeShipping() && getWidget.isOverSized()) {
                     //console.log('Free shipping and Oversized');
                     $(".CC-checkoutOrderSummary-shippingOption-300009").hide();
                     $(".CC-checkoutOrderSummary-shippingOption-300008").hide();
@@ -1074,17 +1079,17 @@ define(
                     $('.orderPopup').hide();
                     $('#CC-Checkout-Placeorder').attr('disabled', false);
                     $('.bt-popup').hide();
-                    $( ".bt-popup" ).removeClass( "popupCheck" );
+                    $(".bt-popup").removeClass("popupCheck");
                 }
-                
-                
+
+
                 //Case 6: Free Shipping and Over Weight
-                
-                if(getWidget.koIsFreeShipping() && getWidget.isOverWeight()){
-                     //console.log('Free shipping and Over weight');
-                     getWidget.selectedShippingValue("300010");
-                     getWidget.shippingmethods().defaultShipping("300010");
-                     shippingmethods.getInstance().defaultShipping("300010");
+
+                if (getWidget.koIsFreeShipping() && getWidget.isOverWeight()) {
+                    //console.log('Free shipping and Over weight');
+                    getWidget.selectedShippingValue("300010");
+                    getWidget.shippingmethods().defaultShipping("300010");
+                    shippingmethods.getInstance().defaultShipping("300010");
                     $(".CC-checkoutOrderSummary-shippingOption-300009").hide();
                     $(".CC-checkoutOrderSummary-shippingOption-300008").hide();
                     $('.overSized').show();
@@ -1092,12 +1097,12 @@ define(
                     $('.orderPopup').hide();
                     $('#CC-Checkout-Placeorder').attr('disabled', false);
                     $('.bt-popup').hide();
-                    $( ".bt-popup" ).removeClass( "popupCheck" );
+                    $(".bt-popup").removeClass("popupCheck");
                 }
-                
+
                 //Case 7: Over Sized and Over Weight
-                
-                if(getWidget.isOverSized() && getWidget.isOverWeight()){
+
+                if (getWidget.isOverSized() && getWidget.isOverWeight()) {
                     //console.log('over sized and Over weight');
                     $(".CC-checkoutOrderSummary-shippingOption-300009").hide();
                     $(".CC-checkoutOrderSummary-shippingOption-300008").hide();
@@ -1106,12 +1111,12 @@ define(
                     $('.orderPopup').show();
                     $('#CC-Checkout-Placeorder').attr('disabled', true);
                     $('.bt-popup').show();
-                    $( ".bt-popup" ).addClass( "popupCheck" );
+                    $(".bt-popup").addClass("popupCheck");
                 }
-                
+
                 //Case 8: Over Sized and Over ride weight
-                
-                if(getWidget.isOverSized() && getWidget.overRideWeight()){
+
+                if (getWidget.isOverSized() && getWidget.overRideWeight()) {
                     //console.log('over sized and Over ride weight');
                     $(".CC-checkoutOrderSummary-shippingOption-300009").hide();
                     $(".CC-checkoutOrderSummary-shippingOption-300008").hide();
@@ -1120,12 +1125,12 @@ define(
                     $('.orderPopup').hide();
                     $('#CC-Checkout-Placeorder').attr('disabled', false);
                     $('.bt-popup').hide();
-                    $( ".bt-popup" ).removeClass( "popupCheck" );
+                    $(".bt-popup").removeClass("popupCheck");
                 }
-                
-                
+
+
                 //Case 9: Over ride and over weight
-                if(getWidget.isOverWeight() && getWidget.overRideWeight()){
+                if (getWidget.isOverWeight() && getWidget.overRideWeight()) {
                     //console.log('over weight and Over ride weight');
                     $(".CC-checkoutOrderSummary-shippingOption-300010").show();
                     $(".CC-checkoutOrderSummary-shippingOption-300009").hide();
@@ -1137,12 +1142,12 @@ define(
                     $('.orderPopup').hide();
                     $('#CC-Checkout-Placeorder').attr('disabled', false);
                     $('.bt-popup').hide();
-                    $( ".bt-popup" ).removeClass( "popupCheck" );
+                    $(".bt-popup").removeClass("popupCheck");
                 }
-                
+
                 // Case 10 : Free shipping and Over Sized and Over Weight
-                
-                if(getWidget.koIsFreeShipping() && getWidget.isOverSized() && getWidget.isOverWeight()){
+
+                if (getWidget.koIsFreeShipping() && getWidget.isOverSized() && getWidget.isOverWeight()) {
                     //console.log('Free shipping and over size and over weight');
                     $(".CC-checkoutOrderSummary-shippingOption-300010").show();
                     $(".CC-checkoutOrderSummary-shippingOption-300009").hide();
@@ -1153,12 +1158,12 @@ define(
                     $('.orderPopup').hide();
                     $('#CC-Checkout-Placeorder').attr('disabled', false);
                     $('.bt-popup').hide();
-                    $( ".bt-popup" ).removeClass( "popupCheck" );
+                    $(".bt-popup").removeClass("popupCheck");
                 }
-                
+
                 // Case 11 : Free shipping and Over Sized and Over Weight and Over ride weight
-                
-                if(getWidget.koIsFreeShipping() && getWidget.isOverSized() && getWidget.isOverWeight() && getWidget.overRideWeight()){
+
+                if (getWidget.koIsFreeShipping() && getWidget.isOverSized() && getWidget.isOverWeight() && getWidget.overRideWeight()) {
                     //console.log('Free shipping and over size and over weight and over ride weight');
                     $(".CC-checkoutOrderSummary-shippingOption-300010").show();
                     $(".CC-checkoutOrderSummary-shippingOption-300009").hide();
@@ -1169,222 +1174,221 @@ define(
                     $('.orderPopup').hide();
                     $('#CC-Checkout-Placeorder').attr('disabled', false);
                     $('.bt-popup').hide();
-                    $( ".bt-popup" ).removeClass( "popupCheck" );
+                    $(".bt-popup").removeClass("popupCheck");
                 }
-                
+
 
 
 
                 setTimeout(function() {
-                 //$.Topic("shippingLoaded.memory").subscribe(function(e){
+                    //$.Topic("shippingLoaded.memory").subscribe(function(e){
                     //})
                     //Alaska Hawaii
-                    if((getWidget.airCheck() && getWidget.isOverSized()) || (getWidget.isAPOCheck() && getWidget.isOverSized()) ){
+                    if ((getWidget.airCheck() && getWidget.isOverSized()) || (getWidget.isAPOCheck() && getWidget.isOverSized())) {
                         $("#CC-orderSummaryLoadingModal").hide();
-                        $('.state-alert').css('display','block'); 
+                        $('.state-alert').css('display', 'block');
                         $('.overSized').hide();
                         $('#CC-Checkout-Placeorder').attr('disabled', true);
-                    }
-                    else if (getWidget.airCheck()) {
-                        
-                  
+                    } else if (getWidget.airCheck()) {
+
+
                         $('.overSized').hide();
                         $("#CC-orderSummaryLoadingModal").show();
-                        $('.state-alert').css('display','none'); 
+                        $('.state-alert').css('display', 'none');
                         $('#CC-Checkout-Placeorder').attr('disabled', false);
                         $('.bt-popup').hide();
-                       $('#CC-checkoutOrderSummary-shippingOption-300009').prop("checked", true).trigger("click");
-                       $(".CC-checkoutOrderSummary-shippingOption-300010").hide();
-                       
-                    }else{
-                       
+                        $('#CC-checkoutOrderSummary-shippingOption-300009').prop("checked", true).trigger("click");
+                        $(".CC-checkoutOrderSummary-shippingOption-300010").hide();
+
+                    } else {
+
                         $("#CC-orderSummaryLoadingModal").show();
-                         $('.state-alert').css('display','none'); 
-                         $('#CC-Checkout-Placeorder').attr('disabled', false);
+                        $('.state-alert').css('display', 'none');
+                        $('#CC-Checkout-Placeorder').attr('disabled', false);
                         getWidget.shippingmethods().defaultShipping("300010");
                         getWidget.selectedShippingValue("300010");
                     }
-              
-                 
-                 //APO Check
-                 
-                  if(getWidget.isAPOCheck()){
-                    //console.log('APO True');
-                    $(".CC-checkoutOrderSummary-shippingOption-300009").hide();
-                    $(".CC-checkoutOrderSummary-shippingOption-300008").hide();
-                    $('.overSized').show();
-                    $(".shippingOptions").show();
-                    $('.orderPopup').hide();
-                    $('#CC-Checkout-Placeorder').attr('disabled', false);
-                    $('.bt-popup').hide();
-                    $( ".bt-popup" ).removeClass( "popupCheck" );
-                }
-                
+
+
+                    //APO Check
+
+                    if (getWidget.isAPOCheck()) {
+                        //console.log('APO True');
+                        $(".CC-checkoutOrderSummary-shippingOption-300009").hide();
+                        $(".CC-checkoutOrderSummary-shippingOption-300008").hide();
+                        $('.overSized').show();
+                        $(".shippingOptions").show();
+                        $('.orderPopup').hide();
+                        $('#CC-Checkout-Placeorder').attr('disabled', false);
+                        $('.bt-popup').hide();
+                        $(".bt-popup").removeClass("popupCheck");
+                    }
+
                 }, 2000);
-                },
+            },
 
-                beforeAppear: function(page) {
+            beforeAppear: function(page) {
 
-                    var widget = this;
+                var widget = this;
                 // code for triggering shipping options on page load
-                if(!getWidget.overWeight()) {
+                if (!getWidget.overWeight()) {
                     widget.shippingmethods().defaultShipping("300010");
                     shippingmethods.getInstance().defaultShipping("300010");
-                    if(widget.cart().shippingMethod() !== '' && widget.cart().shippingMethod() === "300004") {
+                    if (widget.cart().shippingMethod() !== '' && widget.cart().shippingMethod() === "300004") {
                         widget.cart().shippingMethod("300010");
                     }
                     getWidget.invokeExternalShippingMethodsCall();
                 } else {
-                    if(widget.cart().shippingMethod() != "300004" && widget.cart().shippingMethod() !== "") {
+                    if (widget.cart().shippingMethod() != "300004" && widget.cart().shippingMethod() !== "") {
                         widget.shippingmethods().defaultShipping("300004");
                         shippingmethods.getInstance().defaultShipping("300004");
                         widget.cart().shippingMethod("300004");
                     }
                 }
-                
+
                 // ends
-                    ////console.log(ko.toJS(widget.order().cart().items()))
-                    if (widget.order().cart().items().length > 0) {
-                        //widget.initBTCall();
-                    }
-    
-                    if (!widget.user().loggedIn()) {
-                        ////console.log('loggedin user',widget.user().loggedIn())
-                    }
-    
-                    if (widget.shippingmethods().shippingOptions().length > 0) {
-                        //console.log("shipping methods")
-                        widget.skipShipMethodNotification(true);
-                        widget.shippingMethodsLoadedListener();
-                        widget.setupShippingOptions();
-    
-                    }
-    
-                    widget.getShippingMethods();
-                   
+                ////console.log(ko.toJS(widget.order().cart().items()))
+                if (widget.order().cart().items().length > 0) {
+                    //widget.initBTCall();
+                }
+
+                if (!widget.user().loggedIn()) {
+                    ////console.log('loggedin user',widget.user().loggedIn())
+                }
+
+                if (widget.shippingmethods().shippingOptions().length > 0) {
+                    //console.log("shipping methods")
+                    widget.skipShipMethodNotification(true);
+                    widget.shippingMethodsLoadedListener();
+                    widget.setupShippingOptions();
+
+                }
+
+                widget.getShippingMethods();
+
                 widget.shippingMethodsLoaded(false);
                 //Display shipping options in dropdown only if shipping address is valid
-                if(widget.order().shippingAddress() 
-                    && widget.order().shippingAddress().validateForShippingMethod()) {
-                  widget.displayShippingOptions(true);
+                if (widget.order().shippingAddress() &&
+                    widget.order().shippingAddress().validateForShippingMethod()) {
+                    widget.displayShippingOptions(true);
                 }
-        
 
-    
-    
-    
-    
-                    widget.shippingMethodsLoaded(false);
-                    widget.removeAdjacentShippingAmount(true);
-                    $('#CC-checkoutOrderSummary-selectedShippingValue').hide();
-                    widget.paypalAddressAltered(false);
+
+
+
+                widget.shippingMethodsLoaded(false);
+                widget.removeAdjacentShippingAmount(true);
+                $('#CC-checkoutOrderSummary-selectedShippingValue').hide();
+                widget.paypalAddressAltered(false);
                 getWidget.displayOverWeightSection();
                 getWidget.displayFreeShippingSection();
                 getWidget.displayOverSizeSection();
                 getWidget.displayOverRideWeightSection();
-                 getWidget.invokeExternalShippingMethodsCall();
+                getWidget.invokeExternalShippingMethodsCall();
                 //getWidget.commonShippingLogic();
                 //Recaptcha Code begins
                 $("script[id='googleRecaptcha']").remove();
                 $("script[id='recaptchaCallback']").remove();
                 var recaptchaScript = '<script id="googleRecaptcha" src="https://www.google.com/recaptcha/api.js?render=6LcE1OEZAAAAACWi7zHYjM7B4PjZUqniRlDBZHDi"></script>'
-                
+
                 var recaptchaMainScript = "<script id='recaptchaCallback' type='text/javascript'>" +
-                                          "function onSubmit(token) {" +
-                                             "document.getElementById('CC-Checkout-Placeorder').submit();" +
-                                             "document.getElementById('CC-Checkout-Placeorder-Mobile').submit();" +
-                                           "}" +
-                                        "</script>"
+                    "function onSubmit(token) {" +
+                    "document.getElementById('CC-Checkout-Placeorder').submit();" +
+                    "document.getElementById('CC-Checkout-Placeorder-Mobile').submit();" +
+                    "}" +
+                    "</script>"
 
                 if ($("script[id='googleRecaptcha']").length === 0 && $("script[id='recaptchaCallback']").length === 0) {
-                     $("head").append(recaptchaScript);
-                     $("head").append(recaptchaMainScript);
+                    $("head").append(recaptchaScript);
+                    $("head").append(recaptchaMainScript);
                 }
                 //Recaptcha Code Ends
-                },
-                
+            },
+
             shippingMethodLoaded: function() {
-                if(getWidget.koIsFreeShipping()){
+                if (getWidget.koIsFreeShipping()) {
                     getWidget.displayFreeShippingSection();
                     //getWidget.selectedShippingValue("300010");
                 }
-                if(getWidget.isOverWeight()) {
+                if (getWidget.isOverWeight()) {
                     getWidget.displayOverWeightSection();
                 }
-               if(getWidget.isOverSized()){
-                   getWidget.displayOverSizeSection();
-               }
-               if(getWidget.overRideWeight()){
-                   getWidget.displayOverRideWeightSection();
-               }
-               // getWidget.commonShippingLogic();
+                if (getWidget.isOverSized()) {
+                    getWidget.displayOverSizeSection();
+                }
+                if (getWidget.overRideWeight()) {
+                    getWidget.displayOverRideWeightSection();
+                }
+                // getWidget.commonShippingLogic();
             },
             // Click handler for the place order button
             handleCreateOrder: function(viewModel, event) {
                 //   //console.log('Test Trigger');
                 //$.Topic("checkoutBTPaymentDetails").publish("success");
-                
+
                 var widget = this;
-               
+
                 grecaptcha.ready(function() {
-                  grecaptcha.execute('6LcE1OEZAAAAACWi7zHYjM7B4PjZUqniRlDBZHDi', {action: 'submit'}).then(function(token) {
-                    //console.log(token,'Recaptcha Token');
-                     var objNew = {
-                                "token": token
-                            }
-                     $.ajax({
-                                url: "/ccstorex/custom/petmate/v1/googleRecaptcha", //external URL
-                                type: 'POST',
-                                contentType: 'application/json',
-                                data: JSON.stringify(objNew), //data needs to be passed
-                                async: false,
-                                dataType: 'json',
-                                success: function(data) {
-                     
-                                    //console.log("----------googleRecaptcha success data-------------", data.response.score);
-                                    
-                                    if(data.response.score > 0.2 && data.response.success){
-                                        //After checking it is a valid score from google the place order function triggers
-                                        widget.placeOrderComplete();
-                                    }else{
-                                        notifier.sendError(getWidget.WIDGET_ID, "We found suspicious activity. Please contact our Consumer Services Team at 1-877-738-6283 to complete the order", true);
-                                    }
-                                },
-                                error: function(data) {
-                                     widget.placeOrderComplete();
-                                    console.log(".......Recaptcha Error hosting.........", data);
+                    grecaptcha.execute('6LcE1OEZAAAAACWi7zHYjM7B4PjZUqniRlDBZHDi', {
+                        action: 'submit'
+                    }).then(function(token) {
+                        //console.log(token,'Recaptcha Token');
+                        var objNew = {
+                            "token": token
+                        }
+                        $.ajax({
+                            url: "/ccstorex/custom/petmate/v1/googleRecaptcha", //external URL
+                            type: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify(objNew), //data needs to be passed
+                            async: false,
+                            dataType: 'json',
+                            success: function(data) {
+
+                                //console.log("----------googleRecaptcha success data-------------", data.response.score);
+
+                                if (data.response.score > 0.2 && data.response.success) {
+                                    //After checking it is a valid score from google the place order function triggers
+                                    widget.placeOrderComplete();
+                                } else {
+                                    notifier.sendError(getWidget.WIDGET_ID, "We found suspicious activity. Please contact our Consumer Services Team at 1-877-738-6283 to complete the order", true);
                                 }
-                            });
-                   
-                  });
+                            },
+                            error: function(data) {
+                                widget.placeOrderComplete();
+                                console.log(".......Recaptcha Error hosting.........", data);
+                            }
+                        });
+
+                    });
                 });
-                
+
             },
-            
-            placeOrderComplete: function(){
+
+            placeOrderComplete: function() {
                 var widget = this;
-                $("#CC-Checkout-Placeorder-Mobile").attr('disabled',true);
-                                        
-                                        //console.log(widget,'widget');
-                                        if (widget.user().loggedIn() === true && !widget.user().loggedinAtCheckout()) {
-                                            widget.order().id(widget.user().orderId());
-                                            widget.order().op("complete");
-                                        }
-                        
-                        
-                                        $("#cartType-error").removeClass('error');
-                        
-                                        if (this.displayShippingOptions() && !this.cart().isSplitShipping() && !this.selectedShippingValue()) {
-                                            this.order().errorFlag = true;
-                                            $('#CC-checkoutOrderSummary-selectedShippingValue').show();
-                                            notifier.sendError("checkoutOrderSummary", CCi18n.t('ns.ordersummary:resources.checkoutErrorMsg'), true);
-                                            widget.destroySpinner();
-                                            // //console.log('Error Occured');
-                                            return;
-                                        }
-                                        //this.cart().clearAllUnpricedErrorsAndSaveCart();
-                                        $("#bt-submit-pay").trigger('click');
-                                        //this.order().handlePlaceOrder();
+                $("#CC-Checkout-Placeorder-Mobile").attr('disabled', true);
+
+                //console.log(widget,'widget');
+                if (widget.user().loggedIn() === true && !widget.user().loggedinAtCheckout()) {
+                    widget.order().id(widget.user().orderId());
+                    widget.order().op("complete");
+                }
+
+
+                $("#cartType-error").removeClass('error');
+
+                if (this.displayShippingOptions() && !this.cart().isSplitShipping() && !this.selectedShippingValue()) {
+                    this.order().errorFlag = true;
+                    $('#CC-checkoutOrderSummary-selectedShippingValue').show();
+                    notifier.sendError("checkoutOrderSummary", CCi18n.t('ns.ordersummary:resources.checkoutErrorMsg'), true);
+                    widget.destroySpinner();
+                    // //console.log('Error Occured');
+                    return;
+                }
+                //this.cart().clearAllUnpricedErrorsAndSaveCart();
+                $("#bt-submit-pay").trigger('click');
+                //this.order().handlePlaceOrder();
             },
         };
     });

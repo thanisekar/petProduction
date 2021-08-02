@@ -536,6 +536,29 @@ define(
                                                           $("head").append(bvProductDynamicFeed);
                                     }                    
                                                           
+                    //Klaviyo Viewed Product
+                    $("script[id='klaviyoViewedProduct']").remove();
+                    if ($("script[id='klaviyoViewedProduct']").length === 0) {
+                        var displayName = getCurrentData.product.displayName.replace(/"/g, "'");
+                        var klaviyoViewedProduct = '<script id="klaviyoViewedProduct" type="text/javascript">' +
+                            'var _learnq = _learnq || [];' +
+                            'var item = {' +
+                            '"ProductName":"' + displayName + '",' +
+                            '"ProductID":"' + getCurrentData.product.id + '",' +
+                            '"SKU":"' + getCurrentData.childSKUs[0].repositoryId + '",' +
+                            '"Categories":["' + getCurrentData.brandCategory + '"],' +
+                            '"ImageURL":"https://www.petmate.com' + getCurrentData.product.primaryFullImageURL + '",' +
+                            '"URL":"https://www.petmate.com' + getCurrentData.product.route + '",' +
+                            '"Brand":"' + getCurrentData.brand + '",' +
+                            '"Price":"' + getCurrentData.listPrice + '",' +
+                            '"CompareAtPrice":"' + getCurrentData.listPrice + '",' +
+                            '};' +
+                            '_learnq.push(["track", "Viewed Product", item]);' +
+                            '</script>'
+                        $("head").append(klaviyoViewedProduct);
+                    }
+
+                    //Ends
                                 window.bvCallback = function (BV) {
                                 // Use a loop for multiple products
                                     for(var i=0, len=window.bvDCC.catalogData.catalogProducts.length; i < len; ++i){
@@ -1755,6 +1778,58 @@ define(
                                 }]
                             })
                         }                  
+                    /*Ends*/
+                    //Klaviyo Added to Cart
+                    if (this.selectedSku()) {
+                        var prodData = this.product().product;
+                        var selectedSku = this.selectedSku();
+                        $("script[id='klaviyoAddedCart']").remove();
+                        if ($("script[id='klaviyoAddedCart']").length === 0) {
+                            setTimeout(function() {
+                                var getWidget = widget;
+                                var klaviyoLineItems = [];
+                                var klaviyoItemName = [];
+                                var shoppingCartItems = []
+                                shoppingCartItems = getWidget.cart().items();
+                                $.each(shoppingCartItems, function(k, v) {
+                                    var values = v.productData();
+                                    var displayName = values.displayName.replace(/"/g, "");
+                                    var lineItemsObj = {};
+                                    lineItemsObj.ProductID = values.id;
+                                    lineItemsObj.SKU = displayName;
+                                    lineItemsObj.ProductName = displayName;
+                                    lineItemsObj.Quantity = v.quantity();
+                                    lineItemsObj.ItemPrice = v.listPrice;
+                                    lineItemsObj.RowTotal = v.listPrice;
+                                    lineItemsObj.ProductURL = 'https://www.petmate.com/' + values.route;
+                                    lineItemsObj.ImageURL = 'https://www.petmate.com/' + values.primaryFullImageURL;
+                                    lineItemsObj.ProductCategories = values.brandCategory;
+                                    klaviyoItemName.push(displayName);
+                                    klaviyoLineItems.push(JSON.stringify(lineItemsObj));
+                                })
+                                var displayName = prodData.displayName.replace(/"/g, "");
+                                var klaviyoAddedCart = '<script id="klaviyoAddedCart" type="text/javascript">' +
+                                    '_learnq.push(["track", "Added to Cart", {' +
+                                    '"$value":"' + getWidget.cart().subTotal() + '",' +
+                                    '"AddedItemProductName":"' + displayName + '",' +
+                                    '"AddedItemProductID":"' + prodData.id + '",' +
+                                    '"AddedItemSKU":"' + selectedSku.repositoryId + '",' +
+                                    '"AddedItemCategories":["' + prodData.brandCategory + '"],' +
+                                    '"AddedItemImageURL":"https://www.petmate.com' + selectedSku.primaryFullImageURL + '",' +
+                                    '"AddedItemURL":"https://www.petmate.com' + prodData.route + '",' +
+                                    '"AddedItemPrice":"' + selectedSku.listPrice + '",' +
+                                    '"AddedItemQuantity":"' + getWidget.itemQuantity() + '",' +
+                                    '"ItemNames": "[' + klaviyoItemName + ']' + '",' +
+                                    '"CheckoutURL": "https://www.petmate.com/checkout",' +
+                                    '"Items": [' + klaviyoLineItems + ']' +
+                                    '}]);' +
+                                    '</script>'
+                                $("head").append(klaviyoAddedCart);
+                            }, 500)
+
+                        }
+
+                    }
                     /*Ends*/
                 }
                 

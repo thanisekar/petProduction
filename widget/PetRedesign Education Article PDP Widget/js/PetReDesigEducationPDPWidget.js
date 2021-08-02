@@ -109,6 +109,53 @@ define(
         //widget.receiveProductId();
         
         
+        //Form submit to Klaviyo
+        
+        $("#promoSubmit").on('click', function(){
+            var promoInput = $("#promoInput").val();
+            //Pass dog or cat value to source
+             //Klaviyo Footer Signup
+             if(promoInput != ''){
+                 var source = "";
+                 $('.text-danger').css('display', 'none');
+                 if(widget.product().id() == 'a10002'){
+                     source = "Petmate Academy Cat";
+                 }else if(widget.product().id() == 'a90005'){
+                     source = "Petmate Academy Dog";
+                 }else{
+                     source = "";
+                 }
+                        var settings = {
+                            "async": true,
+                            "crossDomain": true,
+                            "url": "https://manage.kmail-lists.com/ajax/subscriptions/subscribe",
+                            "method": "POST",
+                            "headers": {
+                                "content-type": "application/x-www-form-urlencoded",
+                                "cache-control": "no-cache"
+                            },
+                            "data": {
+                                "g": "W8hEMQ",//Master List Id
+                                "$fields": "$source",
+                                "email": promoInput.toString(),
+                                "$source": source
+                            }
+                        }
+
+                        $.ajax(settings).done(function(response) {
+                            if (response.success) {
+                                $('.success-msg').css('display', 'block');
+                                $('.success-msg').fadeOut(8000);
+                                $("#promoInput").val('');
+                            }
+                        });
+        }else{
+            $('.text-danger').css('display', 'block');
+        }
+                        //Ends
+        });
+        
+        
       },
       
       
