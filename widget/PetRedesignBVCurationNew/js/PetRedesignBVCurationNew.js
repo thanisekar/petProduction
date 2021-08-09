@@ -48,7 +48,7 @@ define(
                     }
                 }, 100)
 
-
+                
                 setTimeout(function() {
                     var BvCallBack = setInterval(function() {
                         if (window.crl8 && window.crl8.ready) {
@@ -82,6 +82,8 @@ define(
                                     widget.koDisplayProperty('gallery-sZtAqYT4');
                                 } else if (brandProperty == 'zoobilee') {
                                     widget.koDisplayProperty('gallery-YI5lJBWG');
+                                }else if (brandProperty == 'petqwerks') {
+                                    widget.koDisplayProperty('gallery-cQYfVhYy');
                                 }
                             } else if (page.pageId == 'home') {
                                 widget.koDisplayProperty('homepage');
