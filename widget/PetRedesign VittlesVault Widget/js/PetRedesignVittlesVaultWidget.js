@@ -18,7 +18,9 @@ define(['knockout', 'CCi18n', 'ccConstants', 'pubsub', 'storageApi', 'ccRestClie
             beforeAppear: function(page) {
                 var widget = this;
                 widget.categoryCollectionsFunction();
-
+                $( ".btn-link" ).click(function() {
+                  $(this).find(".plus").toggle();
+                });
 
 
             },

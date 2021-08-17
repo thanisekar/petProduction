@@ -7,6 +7,27 @@
       <div class="visible-xs"><a data-bind="ccLink: {route: '/gamma2-seal-lids/product/GM01'}" class="shopNow">SHOP NOW  <i class="fa fa-play" aria-hidden="true"></i></a></div>
       </div>
    </div>
+
+   <div class="col-sm-6 sealLidCenter">
+      <div class='videoDisplay'>
+                      <div class=''>
+                       <div class='row' id='videoSectionPlay'>
+                             <div class='col-xs-12 nopad' id="CC-Video">
+                                    <div class="" id="productVideo">
+                                        
+                                        <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/H_8pFUp9wBk'}">
+                                   
+                                         <img data-bind="attr : {src : '/file/general/Gamma_Seal_Lids_screenshot.png'}" class="img-responsive video-banner" src="">
+                                       
+                                         <div class="play-icon"><img src="/file/general/playbutton_32x32.svg" /></div>
+                                         
+                                        </a>
+                                      </div>
+                             </div>
+                         </div>
+                      </div>
+                 </div> 
+</div>
    <div class="img-carousel">
       <div class="row hidden-xs">
          <div class="col-xs-3 hidden-xs">

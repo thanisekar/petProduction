@@ -337,7 +337,7 @@ define(
                 }
 
                 /*Hide Petmate Perks for Signup  Save*/
-                if (page.pageId == 'SignupAndSave') {
+                if (page.pageId == 'SignupAndSave' || page.pageId == 'vittlesvaultFB') {
                     $('.email-signup-wrapper').css('display','none');
                 }else{
                      $('.email-signup-wrapper').css('display','block');

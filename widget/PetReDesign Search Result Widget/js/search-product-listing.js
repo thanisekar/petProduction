@@ -195,7 +195,7 @@ define(['knockout', 'viewModels/productListingViewModelFactory', 'CCi18n',
                     if (this.parameters && this.parameters.searchType) {
                         recSearchType = this.parameters.searchType;
                     }
-                    var searchFilterRec = 'product.x_surchargeProductFilter:True';
+                    var searchFilterRec = 'product.x_surchargeProductFilter:TRUE';
                     var searchParams = {
                         getFromUrlParam: true,
                         newSearch: false,

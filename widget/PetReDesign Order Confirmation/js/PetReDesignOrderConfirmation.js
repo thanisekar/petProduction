@@ -311,9 +311,20 @@
                     eventId += Math.round(confirmation.priceInfo.subTotal);
                     $.each(shoppingCartItems, function(k, v) {
                         var values = v;
-                        console.log(values.dynamicProperties[0].value, 'values.dynamicProperties[0]');
-                        var displayName = values.displayName.replace(/"/g, "");
-                        var brandValue = values.dynamicProperties[0].value.replace(/[^\w\s]/gi, ',');
+                        //console.log(values.dynamicProperties[0].value, 'values.dynamicProperties[0]');
+                        var displayName;
+                        var brandValue;
+                        if(values.displayName){
+                             displayName = values.displayName.replace(/"/g, "");
+                        }else{
+                             displayName = "";
+                        }
+                        if(values.dynamicProperties[0].value){
+                             brandValue = values.dynamicProperties[0].value.replace(/[^\w\s]/gi, ',');
+                        }else{
+                             brandValue = "";
+                        }
+                        
                         var lineItemsObj = {};
                         lineItemsObj.Categories = [];
                         lineItemsObj.ProductID = values.productId;

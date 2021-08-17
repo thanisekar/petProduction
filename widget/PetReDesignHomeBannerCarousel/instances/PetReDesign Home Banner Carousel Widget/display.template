@@ -14,7 +14,7 @@
                           <!-- ko if : homeBanner1.src() != '' -->
                             <div class="item active">
                                <a data-bind="ccLink: {route: homeBannerLink1()}">
-                              <img data-bind="attr:{src: homeBanner1.src()}" alt="Shop NEW Top Load Cat Carriers" title="Shop NEW Top Load Cat Carriers">
+                              <img data-bind="attr:{src: homeBanner1.src()}" alt="Shop NEW Chuckit! Crunch Balls" title="Shop NEW Chuckit! Crunch Balls">
                               </a>
                             </div>
                             <!-- /ko -->
@@ -28,7 +28,7 @@
                               <!-- ko if : homeBanner3.src() != '' -->
                             <div class="item">
                               <a data-bind="ccLink: {route: homeBannerLink3()}">
-                            <img data-bind="attr:{src: homeBanner3.src()}" alt="A web banner containing NutterZ Dog Treats made with real peanut butter" title="Shop NutterZ Dog Treats with Real Peanut Butter">
+                            <img data-bind="attr:{src: homeBanner3.src()}" alt="A web banner containing a cat resting on a SnooZZy Round Cat Bed" title="Shop Cat Beds">
                           </a>
                             </div>
                              <!-- /ko -->

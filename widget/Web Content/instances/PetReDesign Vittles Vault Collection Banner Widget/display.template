@@ -58,7 +58,6 @@
 
       <!-- oc section: image -->
 <span data-bind="element: 'image',id: '4100003'" class="visible-xs"></span>
-
       <!-- /oc -->
 
     </div>

@@ -1,5 +1,6 @@
 #WIDGET_ID-WIDGET_INSTANCE_ID {
 
+}
 	#collection-contents {
 		.reduceWidth {
 			float: none;
@@ -154,6 +155,40 @@
 		}
 		.section5 {
 			margin-bottom: 5%;
+			.prodReview{
+			    background: #F1F1F1;
+			    padding: 30px 0;
+			    h3{
+			        text-align:center;
+			    }
+			    .groups{
+			              text-align: center;
+                        background: #000;
+                        margin-bottom: 20px;
+                        padding: 5% 8%;
+                        border-radius: 20px;
+			        .star{
+			           .checked {
+                           color: #ff0;
+                            font-size: 30px;
+                            margin: 0 2px;
+                        } 
+			        }
+			        .reviewContents{
+			            	//font-size: 14px;
+			            p{
+			                 text-align: center;
+                            background: #000;
+                            margin-bottom: 0px;
+                            margin-top: 10px;
+                            border-radius: 20px;
+                            color: #fff!important;
+                            font-style: italic;
+			            }
+			        }
+			        
+			    }
+			}
 		}
 		.section6 {
 			//margin-bottom:10%;
@@ -176,16 +211,24 @@
 					margin-bottom: 20px;
 				}
 				h2 {
-					display: list-item;
+					//display: list-item;
 					/* This has to be "list-item"                                               */
-					list-style-type: disc;
+					//list-style-type: disc;
 					/* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
-					list-style-position: inside;
+					//list-style-position: inside;
 					font-size: 15px;
 					line-height: 10px;
 					font-weight: normal;
 					margin: 0;
 					margin-bottom: 20px;
+				}
+				.plus{
+				    margin-right: 5px;
+                    font-weight: bold;
+                    font-size: 20px;
+                    float: left;
+                    width: 10px;
+                    line-height: 23px;
 				}
 				button {
 					color: #000;
@@ -195,7 +238,13 @@
 					text-align: left;
 					&:focus {
 						outline: none!important;
+						text-decoration: none;
 					}
+					&:hover {
+						outline: none!important;
+						text-decoration: none;
+					}
+					
 				}
 			}
 		}
@@ -258,6 +307,30 @@
 					font-size: 22px !important;
 				}
 			}
+			.section5{
+			     .prodReview{
+			    h3{
+			        font-size: 26px;
+			    }
+			    .groups{
+			              
+			        .star{
+			           .checked {
+                           font-size: 18px;
+                        } 
+			        }
+			        .reviewContents{
+			            	//font-size: 14px;
+			            p{
+			               margin-top: 5px;
+                            font-size: 16px!important;
+                            line-height: 22px!important;
+			            }
+			        }
+			        
+			    }
+			}
+			}
 			.section6 {
 				h3 {
 					font-size: 28px !important;
@@ -286,7 +359,6 @@
 					h3 {
 						margin-top: 0px;
 						font-size: 18px !important;
-						text-align:center;
 					}
 				}
 				p {
@@ -304,6 +376,30 @@
 				h3 {
 					font-size: 22px !important;
 				}
+			}
+			.section5{
+			    .prodReview{
+			    h3{
+			        font-size: 26px;
+			    }
+			    .groups{
+			              
+			        .star{
+			           .checked {
+                           font-size: 18px;
+                        } 
+			        }
+			        .reviewContents{
+			            	//font-size: 14px;
+			            p{
+			                margin-top:5px;
+			                font-size: 16px!important;
+                            line-height: 22px!important;
+			            }
+			        }
+			        
+			    }
+			}
 			}
 			.section6 {
 				h3 {
@@ -325,5 +421,3 @@
 			}
 		}
 	}
-
-}

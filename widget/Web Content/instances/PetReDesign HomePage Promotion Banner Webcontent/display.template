@@ -10,8 +10,7 @@
       "altText": "${occ:widgetCustomText('1900005')}",
       "altTextId": "1900005",
       "isProductImage": false,
-      "link": "/category/brand-petqwerks",
-      "src": "/file/v8483021329777390597/general/July-2021_PQ_Review_Web-Banner.jpg",
+      "src": "/file/v6513235142915367710/general/August-2021_PM_Social_Banner_1535x750.jpg",
       "titleText": "${occ:widgetCustomText('1900006')}",
       "titleTextId": "1900006",
       "zoomEnabled": false
@@ -34,8 +33,8 @@
       "altText": "${occ:widgetCustomText('1900003')}",
       "altTextId": "1900003",
       "isProductImage": false,
-      "link": "/category/dog-travel-education",
-      "src": "/file/v6087785363223110548/general/July-2021_PM-Academy-PetTra.jpg",
+      "link": "/category/brand-jw",
+      "src": "/file/v1415054676076764683/general/August-2021_JW_ToyBundle_GIF.gif",
       "titleText": "${occ:widgetCustomText('1900004')}",
       "titleTextId": "1900004",
       "zoomEnabled": false
@@ -71,8 +70,8 @@
       "altText": "${occ:widgetCustomText('3000001')}",
       "altTextId": "3000001",
       "isProductImage": false,
-      "link": "/chuckit-amphibious-fetch-balls-3-pack/product/32355",
-      "src": "/file/v2190180591946553940/general/July-2021_PM_ProductOfTheMonth_1535x750.jpg",
+      "link": "/how-to-dog-proof-your-backyard/article/a90133",
+      "src": "/file/v875212692950995813/general/August-2021_PM-Academy-Dog-.jpg",
       "titleText": "${occ:widgetCustomText('2100001')}",
       "titleTextId": "2100001",
       "zoomEnabled": false
@@ -116,7 +115,6 @@
 
       <!-- oc section: image -->
 <span data-bind="element: 'image',id: '1900010'"></span>
-
       <!-- /oc -->
 
     </div>

@@ -4,37 +4,15 @@
          <div class="col-md-10 col-sm-12 reduceWidth">
             <h3>Benefits of Vittles Vault Pet Food Storage Containers</h3>
             <div class="row">
-               <div class="col-xs-12 col-sm-3"> <img src="/file/general/Icon1_Storage.png" alt="Convenience and
-                  storage space" title="Convenience and
-                  storage space" class="img-responsive"> </div>
-               <div class="col-xs-12 col-sm-3"> <img src="/file/general/Icon2_ShelfLife.png" alt="Keep food fresh for the
-                  duration of it's shelf life." title="Keep food fresh for the
-                  duration of it's shelf life." class="img-responsive"> </div>
-               <div class="col-xs-12 col-sm-3"> <img src="/file/general/Icon3_Taste.png" alt="Preserve taste
-                  and texture." title="Preserve taste
-                  and texture." class="img-responsive"> </div>
-               <div class="col-xs-12 col-sm-3"> <img src="/file/general/Icon4_Bacteria.png" alt="Keep bacteria
-                  and pests out!" title="Keep bacteria
-                  and pests out!" class="img-responsive"> </div>
+               <div class="col-xs-12 col-sm-3"> <img src="/file/general/icon_FoodSafeBPAFree.png" alt="bpa-free yellow icon" title="Food Safe & BPA-free" class="img-responsive"> </div>
+               <div class="col-xs-12 col-sm-3"> <img src="/file/general/icon_AirtightSeal.png" alt="Airtight engineering yellow icon" title="Airtight Engineered" class="img-responsive"> </div>
+               <div class="col-xs-12 col-sm-3"> <img src="/file/general/icon_ControlledMoistureBalance.png" alt="Controlled Moisture Balance yellow icon" title="Controlled Moisture Balance" class="img-responsive"> </div>
+               <div class="col-xs-12 col-sm-3"> <img src="/file/general/icon_PestProof.png" alt="Pest-proof yellow icon" title="Pest proof" class="img-responsive"> </div>
             </div>
          </div>
       </div>
-      <div class="section2"> <img src="/file/general/VittlesVault4.5StarRating_Banner.png" alt="Average Rating" title="Average & Rating" class="img-responsive"> </div>
-      <div class="section3">
-         <div class="row">
-            <div class="col-sm-6 col-md-6 col-xs-12 vittlesLogo"> <img class="img-responsive" alt="Storage Containers" title="Storage Containers" src="/file/general/scoop_img.png"> </div>
-            <div class="col-sm-6 col-md-6 col-xs-12 vittlesDescriptionContainer">
-               <div class="vittlesTitle">
-                  <h3>About Vittles Vault Pet
-                     Food Storage Containers
-                  </h3>
-               </div>
-               <div class="vittlesDescription">
-                  <p>You love your pets enough to buy them the very best. And the very best pet food can be expensive. Vittles Vault pays for itself by helping keep their premium food fresher longer. It’s not just for dogs - it keeps premium cat food, rabbit food, guinea pig food, even duck food fresher longer. No matter your pet’s size or type, Vittles Vault will protect your investment by offering advanced freshness.</p>
-               </div>
-            </div>
-         </div>
-      </div>
+      <div class="section2"> <img src="/file/general/4.5starreview_banner.png" alt="Average Rating" title="Average & Rating" class="img-responsive hidden-xs"><img src="/file/general/Mobile_VVFB_Reviews_ProtectInvestment.jpg" alt="Average Rating" title="Average & Rating" class="img-responsive visible-xs">  </div>
+      <div class="section3 hidden-xs"> <img src="/file/general/ProtectYourInvestment_banner.png" alt="Storage Containers" title="Storage Containers" class='img-responsive'> </div>
       <div class="section4">
          <div class="col-md-10 col-sm-12 reduceWidth">
             <div class="row gridRow">
@@ -76,8 +54,75 @@
          </div>
       </div>
    </div>
-   <div class="section5"> <img src="/file/general/VittlesVaultsReviews_Banner.jpg" alt="Reviews" title="Reviews" class="img-responsive hidden-xs">
-   <img src="/file/general/reviews_mob.png" alt="Reviews" title="Reviews" class="img-responsive visible-xs">
+   <div class="section5">
+       <!-- <img src="/file/general/VVReviews.png" alt="Reviews" title="Reviews" class="img-responsive hidden-xs">
+   <img src="/file/general/VVReviews_mobile.png" alt="Reviews" title="Reviews" class="img-responsive visible-xs">-->
+   <div class="prodReview">
+        <div class="container">
+            <h3>Average 4.5 Star Rating with 4,800+ Reviews!</h3>
+           
+           <div class="row">
+               <div class="col-sm-6">
+                  <div class="groups">
+                      <div class="star">
+                          <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                      </div>
+                      <div class="reviewContents">
+                          <p>I have ordered 4 of these so far. Overall, this is an excellent storage container. The material is extremely thick and I have no doubt that is completely pest proof. It also does an excellent job of keeping the kibble fresh.</p>
+                      </div>
+               </div>
+               </div>
+               <div class="col-sm-6">
+                   <div class="groups">
+                      <div class="star">
+                          <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                      </div>
+                      <div class="reviewContents">
+                          <p>This is a great way to store dog food. The gamma lid screws on tightly which is great fr pet owners that need to keep the food out in the garage or something. It keeps bugs and critters out of the food.</p>
+                      </div>
+               </div>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-sm-6">
+                  <div class="groups">
+                      <div class="star">
+                          <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                      </div>
+                      <div class="reviewContents">
+                          <p>Absolutely LOVE them!! They do not collapse and fall in with the weight of the horse grain and they are stack-able and look very nice!!</p>
+                      </div>
+               </div>
+               </div>
+               <div class="col-sm-6">
+                   <div class="groups">
+                      <div class="star">
+                          <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                      </div>
+                      <div class="reviewContents">
+                          <p>All I can say is every time I open up that bins now, it smells like a brand new bag of dog food. No staleness or little critter concerns</p>
+                      </div>
+               </div>
+               </div>
+           </div>
+       </div>
+   </div>
    </div>
    <div class="container">
       <div class="section6">
@@ -88,7 +133,8 @@
                   <div class="card-header" id="headingOne">
                      <h2 class="mb-0">
                         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        How does Vittles Vault keep pet food fresher longer?
+                        <span class="plus">+</span>
+                         <span class="plus" style="display: none">-</span>How does Vittles Vault keep pet food fresher longer?
                         </button>
                      </h2>
                   </div>
@@ -100,7 +146,8 @@
                   <div class="card-header" id="headingTwo">
                      <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        What is Controlled Moisture Balance?
+                        <span class="plus">+</span>
+                         <span class="plus" style="display: none">-</span>What is Controlled Moisture Balance?
                         </button>
                      </h2>
                   </div>
@@ -112,7 +159,8 @@
                   <div class="card-header" id="headingThree">
                      <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        What can I store in my Vittles Vault?
+                        <span class="plus">+</span>
+                         <span class="plus" style="display: none">-</span>What can I store in my Vittles Vault?
                         </button>
                      </h2>
                   </div>
@@ -124,7 +172,8 @@
                   <div class="card-header" id="headingTwo">
                      <h2 class="mb-0">
                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        I lost my Vittles Vault Lid. Can I buy a replacement? What size lid do I need?
+                        <span class="plus">+</span>
+                         <span class="plus" style="display: none">-</span>I lost my Vittles Vault Lid. Can I buy a replacement? What size lid do I need?
                         </button>
                      </h2>
                   </div>

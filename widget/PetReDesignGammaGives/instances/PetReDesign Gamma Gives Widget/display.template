@@ -1,0 +1,289 @@
+<div id="gammaGives">
+   <div class="header hide">
+      <div class="row">
+         <div class="col-sm-3 left">
+            <img src="/file/general/Gamma2GivesLOGO_final.png" alt="" title="" class="img-responsive hide">
+         </div>
+         <div class="col-sm-9 right">
+            <a data-bind="ccLink : {route : 'TermsAndAgreements'}" title="Terms And Agreements" alt="Terms And Agreements">Terms And Agreements</a>
+         </div>
+      </div>
+   </div>
+   <div class="section1">
+       <img src="/file/general/Gamma2GivesLOGO_final.png" alt="" title="" class="img-responsive logo hide">
+      <img style="width:100%;height:auto;" src="/file/general/GammaGivesLandingPage_conteststeps_desktop_FINAL.png" alt="" title="" class="img-responsive hidden-xs">
+      <img style="width:100%;height:auto;" src="/file/general/GammaGivesLandingPage_conteststeps_mobile_FINAL.png" alt="" title="" class="img-responsive visible-xs">
+      <a data-bind="ccLink : {route : 'TermsAndAgreements'}" class="main" style="position: absolute;  top: 44%; width: 3.5%; height: 5%;display:inline-block;cursor:pointer;"><span class="tooltiptext"></span></a>
+   </div>
+   <div class="section2">
+      <img src="/file/general/LetsGetStarted_Heading.png" alt="" title="" class="img-responsive getStarted" data-toggle="modal" data-target="#ModalCarousel">
+      <div class="container text-center">
+         <div class="modal fade" data-backdrop="static" id="ModalCarousel" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <a href="#" class="pull-right close" data-dismiss="modal" aria-label="Close">X</a>
+                  </div>
+                  <div id="carousel-modal-demo" class="carousel slide" data-ride="carousel"  data-interval="false" >
+                     <!-- Sliding images statring here --> 
+                       <form id="form">
+                     <div class="carousel-inner">
+                       
+                        <div class="item active">
+                           <div class="top">
+                              <p>Thank you for raising your hand and<br>starting the process of rewarding<br>Your Hero.</p>
+                              <p>We will need some information<br>from you, but don't worry -<br>we've tried to make it as fast<br>and as easy as possible.</p>
+                              <p>This process should take 5 minutes.</p>
+                              <p>The next screen will give you a list<br>of things you will need.</p>
+                           </div>
+                           <div class="modal-footer">
+                              <a class="left carousel-control-left" href="" data-slide="" ><span style="cursor:not-allowed;color:#bd392d;" class="glyphicon glyphicon-circle-arrow-left"></span>
+                              </a>
+                              <p class="pageNumber">1 OF 10</p>
+                              <a class="right carousel-control-right" href="#carousel-modal-demo" data-slide="next"><span class="glyphicon glyphicon-circle-arrow-right"></span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="top">
+                              <p>Below are the things you will need<br>to provide us throughout this session:</p>
+                              <p>Your name and email address,<br>Your Hero's organization name,<br>their web address and phone number,<br>the name and email address of the person<br>you're nominating.</p>
+                           </div>
+                           <div class="modal-footer">
+                              <a class="left carousel-control-left" href="#carousel-modal-demo" data-slide="prev"><span class="glyphicon glyphicon-circle-arrow-left"></span>
+                              </a>
+                              <p class="pageNumber">2 OF 10</p>
+                              <a class="right carousel-control-right" href="#carousel-modal-demo" data-slide="next"><span class="glyphicon glyphicon-circle-arrow-right"></span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="top">
+                              <p>First, tell us a little about you.</p>
+                              <div class="form-group">
+                                 <label>What's your name?</label>
+                                 <input name="COLUMN2" type="text" id="name" class="form-control">
+                              </div>
+                              <div class="form-group">
+                                 <label>What's your email address?</label>
+                                 <input name="COLUMN3" type="text" id="email" class="form-control">
+                              </div>
+                              <div class="form-group">
+                                 <label>How about the best phone number to reach you?</label>
+                                 <input style="margin-bottom: 10px;" maxlength="10" data-bind="validatableValue: phoneNum" placeholder="1234567890" name="COLUMN4" type="tel" id="phone" class="form-control">
+                                 <span class="text-danger" data-bind="validationMessage: phoneNum"></span>
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <a class="left carousel-control-left" href="#carousel-modal-demo" data-slide="prev"><span class="glyphicon glyphicon-circle-arrow-left"></span>
+                              </a>
+                              <p class="pageNumber">3 OF 10</p>
+                              <a class="right carousel-control-right" href="#carousel-modal-demo" data-slide="next"><span class="glyphicon glyphicon-circle-arrow-right"></span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="top">
+                              <p>Thanks! Now, tell us a little about<br>your Hero. They can be a single person<br>or a whole organization.</p>
+                              <div class="form-group">
+                                 <label>What's the name of your hero's organization?</label>
+                                 <input type="text" name="COLUMN5" id="hero" class="form-control">
+                              </div>
+                              <div class="form-group">
+                                 <label>What is their web address?</label>
+                                 <input type="text" name="COLUMN6" id="web" class="form-control">
+                              </div>
+                              <div class="form-group">
+                                 <label>What city and state are they located in?</label>
+                                 <input type="text" name="COLUMN7" id="cityNstate" class="form-control">
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <a class="left carousel-control-left" href="#carousel-modal-demo" data-slide="prev"><span class="glyphicon glyphicon-circle-arrow-left"></span>
+                              </a>
+                              <p class="pageNumber">4 OF 10</p>
+                              <a class="right carousel-control-right" href="#carousel-modal-demo" data-slide="next"><span class="glyphicon glyphicon-circle-arrow-right"></span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="top">
+                              <p>Did you work with someone in<br>particular? If so, please tell us<br>about them. If not, just leave it blank.</p>
+                              <div class="form-group">
+                                 <label>What is their name?</label>
+                                 <input type="name" name="COLUMN8" id="someName" class="form-control">
+                              </div>
+                              <div class="form-group">
+                                 <label>What is their email address?</label>
+                                 <input type="text" name="COLUMN9" id="someEmail" class="form-control">
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <a class="left carousel-control-left" href="#carousel-modal-demo" data-slide="prev"><span class="glyphicon glyphicon-circle-arrow-left"></span>
+                              </a>
+                              <p class="pageNumber">5 OF 10</p>
+                              <a class="right carousel-control-right" href="#carousel-modal-demo" data-slide="next"><span class="glyphicon glyphicon-circle-arrow-right"></span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="top">
+                              <p>Now, let's see if we have this straight.<br>Is all this information correct?<br>If not, just hit the back button<br>to go back and make corrections.</p>
+                              <div class="info">
+                              <div class="row">
+                                  <div class="col-sm-4">
+                                      <h3>You.</h3>
+                                  </div>
+                                  <div class="col-sm-8">
+                                      <p id="displayName"></p>
+                                          <p id="displayEmail"></p>
+                                          <p id="displayPhone"></p>
+                                  </div>
+                              </div>
+                              <hr>
+                              <div class="row">
+                                  <div class="col-sm-4">
+                                      <h3>Your Hero.</h3>
+                                  </div>
+                                  <div class="col-sm-8">
+                                      <p id="orgName"></p>
+                                     <p id="orgWeb"></p>
+                                     <p id="displaycityNstate"></p>
+                                      <p id="displaysomeName"></p>
+                                          <p id="displaysomeEmail"></p>
+                                  </div>
+                              </div>
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <a class="left carousel-control-left" href="#carousel-modal-demo" data-slide="prev"><span class="glyphicon glyphicon-circle-arrow-left"></span>
+                              </a>
+                              <p class="pageNumber">6 OF 10</p>
+                              <a class="right carousel-control-right" href="#carousel-modal-demo" data-slide="next"><span class="glyphicon glyphicon-circle-arrow-right"></span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="top">
+                              <p>Now for some details.</p>
+                              <div class="form-group">
+                                 <label>When did you first meet your hero?</label>
+                                 <input type="text" class="form-control" name="COLUMN10" placeholder="Example: Sometime in January, 2016">
+                              </div>
+                              <div class="form-group">
+                                 <label>Where did you first meet your hero?</label>
+                                 <input type="text" class="form-control" name="COLUMN11" placeholder="Example: At an adoption event">
+                              </div>
+                              <div class="form-group">
+                                 <label>What caused you to seek them out?</label>
+                                 <input type="text" class="form-control" name="COLUMN12" placeholder="Example: I was intersted in finding a new pet">
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <a class="left carousel-control-left" href="#carousel-modal-demo" data-slide="prev"><span class="glyphicon glyphicon-circle-arrow-left"></span>
+                              </a>
+                              <p class="pageNumber">7 OF 10</p>
+                              <a class="right carousel-control-right" href="#carousel-modal-demo" data-slide="next"><span class="glyphicon glyphicon-circle-arrow-right"></span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="top">
+                              <div class="form-group">
+                                 <label>How has your hero impacted your community?</label>
+                                 <input type="text" class="form-control" name="COLUMN13">
+                              </div>
+                              <div class="form-group">
+                                 <label>Why do you beleive they deserve to be a finalist?</label>
+                                 <input type="text" class="form-control" name="COLUMN14">
+                              </div>
+                              <div class="form-group">
+                                 <label>In what ways would they benefit from winning the grant?</label>
+                                 <input type="text" class="form-control" name="COLUMN15">
+                              </div>
+                              <div class="form-group">
+                                 <label>What is your relationship with your hero?</label>
+                                 <input type="text" class="form-control" name="COLUMN16">
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <a class="left carousel-control-left" href="#carousel-modal-demo" data-slide="prev"><span class="glyphicon glyphicon-circle-arrow-left"></span>
+                              </a>
+                              <p class="pageNumber">8 OF 10</p>
+                              <a class="right carousel-control-right" href="#carousel-modal-demo" data-slide="next"><span class="glyphicon glyphicon-circle-arrow-right"></span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="item">
+                        <div class="top">
+                           <p>Now let's get to the story. Let's do an overview first, then details later.</p>
+                           <div class="form-group">
+                              <label>How did this hero change your life? (50 words or less)</label>
+                              <textarea class="form-control" name="COLUMN17"></textarea>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                           <a class="left carousel-control-left" href="#carousel-modal-demo" data-slide="prev"><span class="glyphicon glyphicon-circle-arrow-left"></span>
+                           </a>
+                           <p class="pageNumber">9 OF 10</p>
+                           <a class="right carousel-control-right" href="#carousel-modal-demo" data-slide="next"><span class="glyphicon glyphicon-circle-arrow-right"></span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="top">
+                           <p>Final Thoughts.</p>
+                           <div class="form-group">
+                              <label>What is the biggest impact your hero made on your life?</label>
+                              <textarea  class="form-control" name="COLUMN18"></textarea>
+                           </div>
+                           <div class="form-group">
+                              <label>What would you say is the most interesting thing about your story?</label>
+                              <textarea  class="form-control" name="COLUMN19"></textarea>
+                               <input type="text" class="form-control hide" name="COLUMN20" value="">
+                              <input id="submit" type="submit" name="submit" value="SUBMIT">
+                              <div class="success-msg">Thank you for rasing your hand<br>and sharing your story.<br>We'll be in touch soon to let you<br>know about next steps.</div>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                              <a class="left carousel-control-left" href="#carousel-modal-demo" data-slide="prev"><span class="glyphicon glyphicon-circle-arrow-left"></span>
+                              </a>
+                              <p class="pageNumber">10 OF 10</p>
+                              <!--<a class="right carousel-control-right" href="#carousel-modal-demo" data-slide="next"><span class="glyphicon glyphicon-circle-arrow-right"></span>
+                              </a>-->
+                           </div>
+                     </div>
+                    
+                     </div>
+                      </form>
+                     <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="section3">
+       <div class="row">
+           <div class="col-sm-4 nopad">
+               <img src="/file/general/image_dog.jpg" alt="" title="" class="img-responsive">
+           </div>
+           <div class="col-sm-4 nopad">
+               <img src="/file/general/image_horse.jpg" alt="" title="" class="img-responsive middle">
+           </div>
+           <div class="col-sm-4 nopad">
+               <img src="/file/general/image_dogandwoman.jpg" alt="" title="" class="img-responsive">
+           </div>
+       </div>
+   </div>
+   <div class="section4">
+       <p>They work tirelessly to protect, restore and enhance the wellness of animals with little reward or recognition. Now<br>you can give back in a big way without even opening your pocketbook. We at <b>Gamma2</b> want  to make it easy for<br>you to make a big impact with the <b>Gamma2 Gives Hero Spotlight Program</b>. All you have to do is tell us the<br>story of how your favorite Pet-centric, Non-Profit Hero made a big difference in your life. We’ll do the rest, including<br>producing a professional video that tells that story to the world. If that video earns the most votes, we’ll<br>award your Hero a <b>$5000 grant</b>. It’s that easy.</p>
+   </div>
+   <div class="section5">
+        <img src="/file/general/GiveBackBig_Header.png" alt="" title="" class="img-responsive hidden-xs" data-toggle="modal" data-target="#ModalCarousel">
+        <img src="/file/general/GiveBackBigHeader_mobile.png" alt="" title="" class="img-responsive visible-xs" data-toggle="modal" data-target="#ModalCarousel">
+        <div class="right">
+            <a data-bind="ccLink : {route : 'gammagivescontestrules'}" title="Gamma Gives Contest Rules" alt="Gamma Gives Contest Rules">Contest Rules</a>
+         </div>
+   </div>
+</div>

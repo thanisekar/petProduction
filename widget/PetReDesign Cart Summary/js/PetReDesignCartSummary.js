@@ -84,7 +84,6 @@ define(
                                 '"CheckoutURL": "https://www.petmate.com/checkout",' +
                                 '"Categories": [' + klaviyoCategoryName + ']' + ',' +
                                 '"Items": [' + klaviyoLineItems + ']' +
-                                
                                 '}]);' +
                                 '</script>'
                             $("head").append(klaviyoCheckout);

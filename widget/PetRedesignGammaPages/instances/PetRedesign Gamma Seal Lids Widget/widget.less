@@ -1,6 +1,26 @@
 #WIDGET_ID-WIDGET_INSTANCE_ID {
     
 #sealLids {
+	.sealLidCenter{
+        float: none;
+        margin: 0 auto;
+        margin: 50px auto;
+        .videoDisplay{
+            #productVideo{
+                position:relative;
+                .video-banner{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                .play-icon{
+                        position: absolute;
+                        top: 50%;
+                        right: 50%;
+                }
+            }
+        }
+    }
 		.content-center {
 			float: none;
 			margin: 0 auto;
@@ -54,6 +74,9 @@
 			      }
 				}
 		@media screen and (max-width: 767px) {
+			.sealLidCenter{
+				margin: 30px auto!important;
+		   }
 			p {
 				font-size: 16px !important;
 				line-height: 28px !important;

@@ -1,29 +1,29 @@
 {
   "configuration": {
     "ArticleImage4": {
-      "src": "/file/v3763964988835200750/general/a90072.HowToCleanAPetmateGravityPetWaterer_MainImage.jpg",
-      "mediaName": "/general/a90072.HowToCleanAPetmateGravityPetWaterer_MainImage.jpg"
+      "src": "/file/v5504267912091724037/general/a10088.HowToGetYourCatToLoveHerKennel_MainImage.jpg",
+      "mediaName": "/general/a10088.HowToGetYourCatToLoveHerKennel_MainImage.jpg"
     },
     "ArticleImage3": {
-      "src": "/file/v3739319423657094548/general/a90132.GuideToFosteringACAt_MainImage.jpg",
-      "mediaName": "/general/a90132.GuideToFosteringACAt_MainImage.jpg"
+      "src": "/file/v7354221939040383732/general/a10002.TheDosAndDontOfCatnip_MainImage.jpg",
+      "mediaName": "/general/a10002.TheDosAndDontOfCatnip_MainImage.jpg"
     },
     "ArticleImage2": {
-      "src": "/file/v4960399963702108421/general/a90153.PetOwnershipBenefits_MainImage.jpg",
-      "mediaName": "/general/a90153.PetOwnershipBenefits_MainImage.jpg"
+      "src": "/file/v3850599972339768501/general/a90156.SummerActivitiesForDogs_MainImage.jpg",
+      "mediaName": "/general/a90156.SummerActivitiesForDogs_MainImage.jpg"
     },
     "ArticleImage1": {
-      "src": "/file/v6974213964716266233/general/a90155.DogParkEtiquette_MainImage.jpg",
-      "mediaName": "/general/a90155.DogParkEtiquette_MainImage.jpg"
+      "src": "/file/v1597153829715952908/general/a90165.BackToSchoolRoutineWithPets_MainImage.jpg",
+      "mediaName": "/general/a90165.BackToSchoolRoutineWithPets_MainImage.jpg"
     },
-    "ArticleImage3Des": "A Step-by-Step Guide to Fostering a Cat",
-    "ArticleImage1Des": "Dog Park Etiquette",
-    "ArticleImage2Des": "Health Benefits of Pet Ownership",
-    "ArticleImage2URL": "/health-benefits-of-pet-ownership/article/a90153",
-    "ArticleImage4Des": "How To Clean a Petmate Gravity Pet Waterer",
-    "ArticleImage1URL": "/dog-park-etiquette/article/a90155",
-    "ArticleImage3URL": "/a-step-by-step-guide-to-fostering-a-cat/article/a90132",
-    "ArticleImage4URL": "/how-to-clean-a-petmate-gravity-pet-waterer/article/a90072"
+    "ArticleImage3Des": "The Do's And Don'ts of Catnip",
+    "ArticleImage1Des": "Tips to Help Ease Your Pet Into Your Back to School Routine",
+    "ArticleImage2Des": "Cool Summer Activities For Dogs",
+    "ArticleImage2URL": "/cool-summer-activities-for-dogs/article/a90156",
+    "ArticleImage4Des": "How To Get Your Cat To Love Her Kennel",
+    "ArticleImage1URL": "/tips-to-help-ease-your-pet-into-your-back-to-school-routine/article/a90165",
+    "ArticleImage3URL": "/the-dos-and-donts-of-catnip/article/a10002",
+    "ArticleImage4URL": "/how-to-get-your-cat-to-love-the-kennel/article/a10088"
   },
   "displayName": "PetReDesign Home Article Updated"
 }

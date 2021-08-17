@@ -1,24 +1,24 @@
 {
   "configuration": {
-    "homeBannerLink3": "/searchresults?Ntt=nutterz&Nty=1&No=0&Nrpp=12&Rdm=637&searchType=simple&type=search",
+    "homeBannerLink3": "/category/L1-beddingL2-cat-beds",
     "homeBannerLink4": "/category/petmate-brands",
-    "homeBannerLink1": "/petmate-top-load-cat-kennel/product/PM110",
+    "homeBannerLink1": "/searchresults?Ntt=chuckit%20crunch&Nty=1&No=0&Nrpp=12&Rdm=480&searchType=simple&type=search",
     "homeBannerLink2": "/category/outdoor-dog-beds",
     "homeBanner4": {
       "src": "/file/v5847305468797394860/general/PM_Homepage-Banner_60years.jpg",
       "mediaName": "/general/PM_Homepage-Banner_60years.jpg"
     },
     "homeBanner3": {
-      "src": "/file/v4330487755573949789/general/HC_NutterZDogTreats_Bannerj.jpg",
-      "mediaName": "/general/HC_NutterZDogTreats_Bannerj.jpg"
+      "src": "/file/v1398160119621983534/general/March-2021_CatBedding_Web-B.jpg",
+      "mediaName": "/general/March-2021_CatBedding_Web-B.jpg"
     },
     "homeBanner2": {
       "src": "/file/v2812617022917427703/general/LZB_OutdoorBeddingBanner-19.jpg",
       "mediaName": "/general/LZB_OutdoorBeddingBanner-19.jpg"
     },
     "homeBanner1": {
-      "src": "/file/v4171330315925903096/general/PM_Top-Load-Kennel_Web-Bann.jpg",
-      "mediaName": "/general/PM_Top-Load-Kennel_Web-Bann.jpg"
+      "src": "/file/v6134341589370271946/general/July-2021_CI_New-Products_W.jpg",
+      "mediaName": "/general/July-2021_CI_New-Products_W.jpg"
     }
   },
   "displayName": "PetReDesign Home Banner Carousel Widget"
