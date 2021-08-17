@@ -1,0 +1,2 @@
+order-id	order-item-id	quantity	ship-date	carrier-code	carrier-name	tracking-number	ship-method
+111-7511863-6806628	13067710311074	1	2018-08-08	FedEx	FedEx	169010434505257	FedEx

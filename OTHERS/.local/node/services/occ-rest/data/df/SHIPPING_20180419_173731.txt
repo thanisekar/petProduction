@@ -1,0 +1,2 @@
+order-id	order-item-id	quantity	ship-date	carrier-code	carrier-name	tracking-number	ship-method
+111-9758486-8754623	26927038329602	1	2018-04-19	FED EX	FED EX	169010434408855	FED EX
