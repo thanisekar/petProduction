@@ -37,7 +37,7 @@
                               <p>The next screen will give you a list<br>of things you will need.</p>
                            </div>
                            <div class="modal-footer">
-                              <a class="left carousel-control-left" href="" data-slide="" ><span style="cursor:not-allowed;color:#bd392d;" class="glyphicon glyphicon-circle-arrow-left"></span>
+                              <a class="left carousel-control-left" href="" data-slide="" ><span style="cursor:not-allowed;" class="glyphicon glyphicon-circle-arrow-left"></span>
                               </a>
                               <p class="pageNumber">1 OF 10</p>
                               <a class="right carousel-control-right" href="#carousel-modal-demo" data-slide="next"><span class="glyphicon glyphicon-circle-arrow-right"></span>
@@ -277,7 +277,7 @@
        </div>
    </div>
    <div class="section4">
-       <p>They work tirelessly to protect, restore and enhance the wellness of animals with little reward or recognition. Now<br>you can give back in a big way without even opening your pocketbook. We at <b>Gamma2</b> want  to make it easy for<br>you to make a big impact with the <b>Gamma2 Gives Hero Spotlight Program</b>. All you have to do is tell us the<br>story of how your favorite Pet-centric, Non-Profit Hero made a big difference in your life. We’ll do the rest, including<br>producing a professional video that tells that story to the world. If that video earns the most votes, we’ll<br>award your Hero a <b>$5000 grant</b>. It’s that easy.</p>
+       <p>They work tirelessly to protect, restore and enhance the wellness of animals with little reward or recognition. Now<br>you can give back in a big way without even opening your pocketbook. We at <b>Gamma2</b> want  to make it easy for<br>you to make a big impact with the <b>Gamma2 Gives Spotlight Hero Program</b>. All you have to do is tell us the<br>story of how your favorite Pet-centric, Non-Profit Hero made a big difference in your life. We’ll do the rest, including<br>producing a professional video that tells that story to the world. If that video earns the most votes, we’ll<br>award your Hero a <b>$5000 grant</b>. It’s that easy.</p>
    </div>
    <div class="section5">
         <img src="/file/general/GiveBackBig_Header.png" alt="" title="" class="img-responsive hidden-xs" data-toggle="modal" data-target="#ModalCarousel">
