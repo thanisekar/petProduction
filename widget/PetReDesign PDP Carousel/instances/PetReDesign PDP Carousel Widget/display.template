@@ -114,6 +114,31 @@
                  <div data-bv-show="inline_rating" data-bv-seo = "false" data-bind="attr: {'data-bv-product-id':id(),'data-bv-redirect-url':route()}"></div>
                  
              </div>
+             <!-- ko if: childSKUs().length == 1 -->
+           <div class="cc-add-to-cart">
+               <a type="button" data-bind="event: { click: function(data,event) { $parents[1].handleAddToCartRecommendation($data,event) } }" class="input-group-btn addCart">  
+                        <div  class="CC-prodDetails-recommendation-btn">
+                              <button  class="cc-recommendation-btn btn" >
+                                  Add to Cart
+                              </button>
+                          </div>
+                          
+                       </a>
+           </div>
+           <!-- /ko-->
+         
+           <!-- ko if: childSKUs().length !== 1 -->
+           <div class="cc-view-more">
+               <a data-bind="ccLink: {route: $data.route()}" class="input-group-btn addCart">  
+                        <div class="CC-prodDetails-recommendation-btn">
+                              <span  class="cc-recommendation-btn btn">
+                                 View More Details
+                              </span>
+                          </div>
+                          
+                       </a>
+           </div>
+           <!-- /ko-->
           </div>
         </div>
       <!-- /ko -->

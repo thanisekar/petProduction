@@ -2,12 +2,12 @@ define(
     //-------------------------------------------------------------------
     // DEPENDENCIES
     //-------------------------------------------------------------------
-    ['knockout', 'ccRestClient', 'ccConstants', 'storageApi',],
+    ['knockout', 'ccRestClient','pubsub', 'ccConstants', 'storageApi',],
 
     //-------------------------------------------------------------------
     // MODULE DEFINITION
     //-------------------------------------------------------------------
-    function(ko, i, ccConstants, storageApi) {
+    function(ko, i, pubsub, ccConstants, storageApi) {
 
         "use strict";
         var productIds = '';
@@ -173,6 +173,75 @@ define(
                 $.Topic("relatedProducts").publish();
                 
             },
+            handleAddToCartRecommendation: function(data, event) {
+                
+
+               var getRepProductId = data.id();
+                //var replaceQty = $("#CC-prodDetails-quantity" + getRepProductId).val();
+                var replaceQty = 1;
+                /*if (parseInt(replaceQty) < 1) {
+                    return;
+                }*/
+
+                var a = ccConstants.ENDPOINT_PRODUCTS_GET_PRODUCT;
+                var l = {};
+                var p = getRepProductId;
+                var output = [];
+                i.request(a, l, function(output) {
+                    var skuItem = {};
+                    /*for (var index in output.childSKUs) {
+                        console.log(getRepProductId,'getRepProductId');
+                        console.log(output.childSKUs[index].repositoryId,'output.childSKUs[index].repositoryId');
+                        if (getRepProductId == output.childSKUs[index].repositoryId) {
+                            skuItem = output.childSKUs[index];
+                            console.log(skuItem,'skuItem');
+                        }
+                    }*/
+                    skuItem = output.childSKUs[0];
+                    var t1 = [];
+                    var result = {};
+                    for (var variant in output.productVariantOptions) {
+                        t1.push({
+                            optionValue: skuItem[output.productVariantOptions[variant].optionId],
+                            optionId: output.productVariantOptions[variant].optionId,
+                        });
+                    }
+
+                    result = {
+                        selectedOptions: t1
+                    };
+
+
+                    var s = $.extend(!0, {}, output, result);
+                    //var rquantity =1;
+                    s.childSKUs = [skuItem], s.orderQuantity = parseInt(replaceQty, 10);
+                    $.Topic(pubsub.topicNames.CART_ADD).publishWith(s, [{
+                        message: "success"
+                    }]);
+
+
+                }, function(output) {
+
+                }, p);
+                if ($(window).width() >= 1025) {
+                    $('.modal-backdrop').remove();
+                    $('body').removeClass('modal-open');
+                    $('#mobilAddCart').modal('hide')
+                } else if ($(window).width() < 1025) {
+                    $('#mobilAddCart').modal('show')
+                }
+                $(window).on('resize', function() {
+                    var win = $(this); //this = window
+                    if (win.width() >= 1025) {
+                        $('.modal-backdrop').remove();
+                        $('body').removeClass('modal-open');
+                        $('#mobilAddCart').modal('hide')
+                    }
+
+                });
+            
+            },
+        
             
 
             getStockPrice: function() {
