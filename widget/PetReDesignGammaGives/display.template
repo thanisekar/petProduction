@@ -47,7 +47,12 @@
                         <div class="item">
                            <div class="top">
                               <p>Below are the things you will need<br>to provide us throughout this session:</p>
-                              <p>Your name and email address,<br>Your Hero's organization name,<br>their web address and phone number,<br>the name and email address of the person<br>you're nominating.</p>
+                              <ul>
+                                  <li>Your name and email address</li>
+                                  <li>Your Hero's organization name</li>
+                                  <li>Their web address and phone number</li>
+                                  <li>The name and email address of the person you're nominating.</li>
+                              </ul>
                            </div>
                            <div class="modal-footer">
                               <a class="left carousel-control-left" href="#carousel-modal-demo" data-slide="prev"><span class="glyphicon glyphicon-circle-arrow-left"></span>
@@ -230,7 +235,7 @@
                            </a>
                         </div>
                      </div>
-                     <div class="item">
+                     <div class="item last">
                         <div class="top">
                            <p>Final Thoughts.</p>
                            <div class="form-group">
@@ -249,6 +254,19 @@
                               <a class="left carousel-control-left" href="#carousel-modal-demo" data-slide="prev"><span class="glyphicon glyphicon-circle-arrow-left"></span>
                               </a>
                               <p class="pageNumber">10 OF 10</p>
+                              <a class="right carousel-control-right" href="#carousel-modal-demo" data-slide="next"><span class="glyphicon glyphicon-circle-arrow-right"></span>
+                              </a>
+                           </div>
+                     </div>
+                      <div class="item end">
+                        <div class="top">
+                            <br><br><br><br><br>
+                           <p>Thank you for raising your hand and sharing your story. We'll be in touch soon to let you know about next steps.</p>
+                        </div>
+                        <div class="modal-footer">
+                              <!--<a class="left carousel-control-left" href="#carousel-modal-demo" data-slide="prev"><span class="glyphicon glyphicon-circle-arrow-left"></span>
+                              </a>-->
+                              <p class="pageNumber">End</p>
                               <!--<a class="right carousel-control-right" href="#carousel-modal-demo" data-slide="next"><span class="glyphicon glyphicon-circle-arrow-right"></span>
                               </a>-->
                            </div>

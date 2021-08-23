@@ -58,8 +58,10 @@ define(
                 $("#form").submit(function(e) {
                     e.preventDefault();
                     //console.log(JSON.stringify($("#form").serializeArray()),'JSON.stringify($("#form").serializeArray())');
-                    $('.success-msg').css('display', 'block');
-                    $('.success-msg').fadeOut(12000);
+                    $(".end").addClass("active");
+                      $(".last").removeClass("active");
+                    //$('.success-msg').css('display', 'block');
+                    //$('.success-msg').fadeOut(12000);
                     //Construct Input JSON     
                     var finalData = {};
                     $.each($('form').serializeArray(), function() {
