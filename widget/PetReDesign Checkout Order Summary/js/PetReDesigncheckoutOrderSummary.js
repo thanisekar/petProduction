@@ -782,7 +782,16 @@ define(
 
 
                 //Sticky Checkout Order Summary
-
+                $.Topic(pubsub.topicNames.SHIPPING_METHODS_LOADED).subscribe(function() {
+                    $(window).resize(function() {
+                        if ($(window).width() > 767) {
+                            $('#CC-checkoutOrderSummary').css({
+                                  'min-height': '580px',
+                              });
+                        }
+                    });
+                   
+              });
 
                 $.Topic(pubsub.topicNames.PAGE_READY).subscribe(function() {
                     if ($('#CC-checkoutOrderSummary').is(':visible')) {
