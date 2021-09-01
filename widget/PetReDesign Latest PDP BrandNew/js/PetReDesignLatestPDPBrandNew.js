@@ -769,7 +769,7 @@ define(
                                 productId: prodValue.id(),
                                 productVariantId: prodValue.childSKUs()[0].repositoryId(),
                                 name: prodValue.displayName(),
-                                productImage: 'https://www.petmate.com/' + prodValue.primaryFullImageURL(),
+                                productImage: 'https://www.petmate.com' + prodValue.primaryFullImageURL(),
                                 category: prodValue.parentCategory.displayName(),
                                 price: {
                                     value: prodValue.childSKUs()[0].listPrice(),
@@ -1769,7 +1769,7 @@ define(
                                     productId: prodData.id,
                                     productVariantId: this.selectedSku().repositoryId,
                                     name: prodData.displayName,
-                                    productImage: 'https://www.petmate.com/' + prodData.primaryFullImageURL,
+                                    productImage: 'https://www.petmate.com' + prodData.primaryFullImageURL,
                                     category: prodData.parentCategory.displayName,
                                     price: {
                                         value: this.selectedSku().listPrice,
