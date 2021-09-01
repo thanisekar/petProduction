@@ -57,6 +57,7 @@ app.use('/shipping',require('./shipping'));
 app.use('/admin',require('./admin'));
 app.use('/email',require('./email'));
 app.use('/gamma',require('./gamma'));
+app.use('/backinstock',require('./backinstock'));
 
 /* 
 
