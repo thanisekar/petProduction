@@ -184,7 +184,7 @@
                                         </div>
                                         <div class="form__item column col-sm-12 form-elements">
                                           <label class="inline-label label-text" for="">Phone Number</label>
-                                          <input type="text" maxlength="18" id="editProfilePhoneNumber" class="input-field input-box"  placeholder="123-456-7890"  name="phonenumber" data-bind="textInput: $parent.koPhoneNumber">
+                                          <input type="text" maxlength="18" id="editProfilePhoneNumber" class="input-field input-box"  placeholder="1234567890"  name="phonenumber" data-bind="textInput: $parent.koPhoneNumber">
                                           <span class="displayErrorIcons"></span>
                                           
                                         </div>
@@ -322,14 +322,14 @@
                                       <span data-bind="text: $data.petGender " class='profileInfoValues'></span>
                                     </div>
                                   </div>
-                                  <div class="row mb-10">
+                                  <!--<div class="row mb-10">
                                     <div class="col-xs-12 col-sm-5 nopad">
                                       <span class='profileInfoTitle'>Breed</span>
                                     </div>
                                     <div class="col-xs-12 col-sm-7 nopad">
                                       <span data-bind="text: $data.petBreed " class='profileInfoValues'></span>
                                     </div>
-                                  </div>
+                                  </div>-->
                                   <div class="row mb-10">
                                     <div class="col-xs-12 col-sm-5 nopad">
                                       <span class='profileInfoTitle'>Birthday</span>
@@ -378,6 +378,13 @@
                                       </select>
                                         <span class='displayErrorIcons'></span>
                                     </div>
+                                    <div class="col-xs-12 input-field--edit-profile-large input-birth columns nopad form-elements">
+                                      <label class="label-text" for="">Birthday or Adoption Day</label>
+                                     <input type="text" id="petDOB" data-format="MM/DD/YYYY" data-template="MMM DD YYYY" name="date"  class="input-field date-field input-field--calendar pet_Birthday input-box" data-bind="textInput:petDOB">
+                                    
+                                     <!-- <input  placeholder="Birthday"  id='petDOB' name='petDOB' readonly="true" data-bind="textInput:petDOB" class="input-field date-field input-field--calendar pet_Birthday input-box" type="text">-->
+                                       <span class='displayErrorIcons'></span>
+                                    </div>
                                     <div class="col-xs-12 column left input-gender input-field--edit-profile-large nopad gender">
                                       <label class="mb-10 input-field--edit-profile-gender-label label-text">Gender</label> 
                                       <div class="flex-display">
@@ -406,16 +413,9 @@
                                           
                                       </div>
                                     </div>
-                                    <div class="col-xs-12 input-field--edit-profile-large columns input-breed desktop-no-pad-left nopad form-elements">
+                                    <div class="col-xs-12 input-field--edit-profile-large columns input-breed desktop-no-pad-left nopad form-elements hide">
                                       <label class="label-text" for="">Breed</label>
                                       <input type="text" maxlength="40"  name='petBreed'  id='petBreed' placeholder="Breed"  data-bind="textInput:petBreed" class="input-field pet_Breed input-box">
-                                       <span class='displayErrorIcons'></span>
-                                    </div>
-                                    <div class="col-xs-12 input-field--edit-profile-large input-birth columns nopad form-elements">
-                                      <label class="label-text" for="">Birthday</label>
-                                     <input type="text" id="petDOB" data-format="MM/DD/YYYY" data-template="MMM DD YYYY" name="date"  class="input-field date-field input-field--calendar pet_Birthday input-box" data-bind="textInput:petDOB">
-                                    
-                                     <!-- <input  placeholder="Birthday"  id='petDOB' name='petDOB' readonly="true" data-bind="textInput:petDOB" class="input-field date-field input-field--calendar pet_Birthday input-box" type="text">-->
                                        <span class='displayErrorIcons'></span>
                                     </div>
                                     <div class="col-sm-12 savePetDetails">

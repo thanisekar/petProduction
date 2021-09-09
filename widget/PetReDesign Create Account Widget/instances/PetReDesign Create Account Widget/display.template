@@ -83,6 +83,13 @@
 									
 								</div>
 								
+								<div class="small-6 col-xs-12 col-sm-12 col-md-12 column large-6 left mb-20 form-elements">
+										<label data-bind="attr: {'for': 'DOB' + $index()}" class="inlines label-text">Birthday or Adoption Day</label>
+										<div data-bind="template: {afterRender: $parent.getPetDob($index())}">
+										<input type="text"  data-format="MM/DD/YYYY" data-template="MMM DD YYYY" name="date" placeholder="MM/DD/YYYY"  class="input-field input-field--calendar petBirthday input-box" data-bind="textInput:petDOB  , attr:{name: 'petDOB'+$index(), id: 'DOB'+$index()}">
+                                    </div>
+									</div>
+								
 								<div class="col-xs-12 nopad form-elements">
 								    <div class="small-6 col-xs-6 medium-6 large-6 columns clearfix nopad-left">
 								
@@ -117,7 +124,7 @@
 								    </div>
 								</div>
 								
-								<div class="col-xs-12 nopad">
+								<div class="col-xs-12 nopad hide">
 								    <div class="small-6 medium-6 col-xs-6 large-6 columns mb-20 form-elements nopad-left">
 										<label for="" class="label-text">Breed</label>
 											<input type="text" minlength="2" maxlength="40" class="input-field input-box ignore breed " placeholder="Breed" data-bind="textInput:petBreed, attr:{name: 'petbreed'+$index()}">
@@ -130,12 +137,7 @@
 								
 								
 									
-									<div class="small-6 col-xs-12 col-sm-12 col-md-12 column large-6 left mb-20 form-elements">
-										<label data-bind="attr: {'for': 'DOB' + $index()}" class="inlines label-text">Date of Birth</label>
-										<div data-bind="template: {afterRender: $parent.getPetDob($index())}">
-										<input type="text"  data-format="MM/DD/YYYY" data-template="MMM DD YYYY" name="date"  class="input-field input-field--calendar petBirthday input-box" data-bind="textInput:petDOB  , attr:{name: 'petDOB'+$index(), id: 'DOB'+$index()}">
-                                    </div>
-									</div>
+									
 									<hr class="mb-30">
                             </div>
                             <hr class="mb-30">

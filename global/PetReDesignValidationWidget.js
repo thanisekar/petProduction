@@ -310,8 +310,8 @@
                     },
                     phonenumber: {
                         required: true,
-                        //digits:true,
-                        maskedPhone: true,
+                        digits:true,
+                        maskedPhone: false,
                         minlength: 10,
                         maxlength: 12,
                         phoneUS: true
@@ -355,7 +355,7 @@
 
             });
             callDynamicPetProfileValidate();
-            $("#editProfilePhoneNumber").mask("999-999-9999");
+            //$("#editProfilePhoneNumber").mask("999-999-9999");
         };
 
         function callDynamicPetProfileValidate() {
