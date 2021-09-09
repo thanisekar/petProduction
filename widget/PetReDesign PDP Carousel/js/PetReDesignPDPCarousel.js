@@ -60,9 +60,10 @@ define(
                     if (getData != null || getData != undefined) {
                         var imagePath= "";
                         for (var j = 0; j < getData.length; j++) {
+                            if(getData[j] && getData[j].primaryFullImageURL){
                              imagePath = getData[j].primaryFullImageURL.split("=");
                             getData[j].primaryFullImageURL = ko.observable(imagePath[1]);
-                            
+                            }                           
                         }
                     }
                     getWidget.updateDataRelated(getData);
