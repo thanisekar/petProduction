@@ -43,6 +43,8 @@ define(
 					widget.koBrandRedirect('/vittlesvault');
 				}else if(page.contextId == 'brand-gamma2'){
 					widget.koBrandRedirect('/gamma2');
+				}else if(page.contextId == 'brand-Chuckit'){
+					widget.koBrandRedirect('/nationalfetchday');
 				}else{
 					widget.koBrandRedirect('');
 				}
