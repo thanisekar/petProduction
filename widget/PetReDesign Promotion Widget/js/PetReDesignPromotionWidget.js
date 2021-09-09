@@ -253,7 +253,7 @@ define(
                 var widget = this;
                 if (promoCode && promoCode == "PETMATE") {
                     if (widget.cart().shippingAddress().address1) {
-                        var petAddress1 = ['RANDOL MILL', 'HOUSTON SCHOOL', 'WEST STEPHENS', 'JUSTICE LANE', 'JUSTICE LN', 'TECH DR', 'TECH DRIVE'];
+                        var petAddress1 = ['RANDOL MILL', 'HOUSTON SCHOOL', 'WEST STEPHENS', '800', 'W STEPHENS', 'JUSTICE LANE', 'JUSTICE LN', 'TECH DR', 'TECH DRIVE'];
                      var petCity = ['ARLINGTON','MANSFIELD','SWEETWATER','LANCASTER'];
                         //var shippingAddress = widget.cart().shippingAddress().address1.toUpperCase();
                         //var shippingCity = widget.cart().shippingAddress().city.toUpperCase();
