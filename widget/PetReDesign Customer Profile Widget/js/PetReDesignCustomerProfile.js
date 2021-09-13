@@ -288,6 +288,27 @@ define(
               inputParams["petProfileProperty"] = JSON.stringify(setPetProfile);
              // ////console.log("User Object params ...  ",inputParams);
              //console.log(getWidget.koDOB(),'DOB');
+
+             //Send user Profile to Klaviyo
+              //Klaviyo user Profile Signup
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://manage.kmail-lists.com/ajax/subscriptions/subscribe",
+                "method": "POST",
+                "headers": {
+                    "content-type": "application/x-www-form-urlencoded",
+                    "cache-control": "no-cache"
+                },
+                "data": {
+                    "g": "W8hEMQ",//Master List Id
+                    "$fields": "$source",
+                    "email": getWidget.koEmail().toString(),
+                    "$source": "Profile"
+                }
+            }
+
+            $.ajax(settings).done(function(response) {});
 			  
               ////console.log(inputParams);
             user.adapter.loadJSON(CCConstants.ENDPOINT_UPDATE_PROFILE, user.id(), inputParams,

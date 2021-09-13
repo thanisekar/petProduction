@@ -172,7 +172,28 @@ define(
         
         //console.log(ko.toJS(getWidget.petProfile()));
       //  //console.log("INPUT PARAMS.....",inputParams);
-          
+          //Send New user details to Klaviyo
+          //Klaviyo New User Signup
+          var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://manage.kmail-lists.com/ajax/subscriptions/subscribe",
+            "method": "POST",
+            "headers": {
+                "content-type": "application/x-www-form-urlencoded",
+                "cache-control": "no-cache"
+            },
+            "data": {
+                "g": "W8hEMQ",//Master List Id
+                "$fields": "$source",
+                "email": getWidget.email().toString(),
+                "$source": "Register"
+            }
+        }
+
+        $.ajax(settings).done(function(response) {});
+
+          //Ends 
           user.adapter.persistCreate(CCConstants.ENDPOINT_CREATE_PROFILE, CCConstants.ENDPOINT_CREATE_PROFILE, inputParams,
           //success callback 
             function(data) {
