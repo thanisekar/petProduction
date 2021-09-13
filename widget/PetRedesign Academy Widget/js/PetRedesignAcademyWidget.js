@@ -10,18 +10,10 @@ define(['knockout', 'CCi18n', 'ccConstants', 'pubsub', 'storageApi', 'ccRestClie
             koGetCollectionList: ko.observableArray([]),
             koGetRecommendedData: ko.observable(),
             EmailPDP: ko.observable(null),
-            koEmailSignupValuePDP: ko.observable(''),
 
             onLoad: function(widget) {
                 getWidget = widget;
                 $("body").on("click", ".submitMailPDP", function() {
-                    //Bronto email signup
-                    emailval = $("#emailSignUpPDP").val();
-                    widget.koEmailSignupValuePDP(emailval);
-                    $('#brontoEmailId').remove();
-                    var brontoEmail = '<img id="brontoEmailId" src="https://app.bronto.com/public/?q=direct_add&fn=Public_DirectAddForm&id=bjoxunlmlfrmycqpxmpztvpnnlwkbof&email=' + getWidget.koEmailSignupValuePDP() + '&&list1=0bcd03ec000000000000000000000019c915" width="0" height="0" border="0" alt=""/>'
-                    $('body').append(brontoEmail);
-                    //Ends
                     var modalInput = $("#emailAddressinPopUp").val();
                     var homeInput = $("#emailSignUpPDP").val();
                     var inputVal = "";

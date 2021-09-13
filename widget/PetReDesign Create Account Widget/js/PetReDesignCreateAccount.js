@@ -200,16 +200,6 @@ define(
           );
           
            
-        //Bronto New User Email
-            if(getWidget.emailOpt()){
-               var email = getWidget.email();
-               getWidget.koEmailSignupValue(email)
-               $('#brontoEmailId').remove();
-                var brontoEmail = '<img id="brontoEmailId" src="https://app.bronto.com/public/?q=direct_add&fn=Public_DirectAddForm&id=bjoxunlmlfrmycqpxmpztvpnnlwkbof&email=' + getWidget.koEmailSignupValue() + '&createCookie=1" width="0" height="0" border="0" alt=""/>'
-                $('body').append(brontoEmail);
-           }
-       
-        //Ends
              
     
       },

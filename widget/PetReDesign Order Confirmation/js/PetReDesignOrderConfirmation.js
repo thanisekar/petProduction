@@ -188,53 +188,7 @@
                         value.customItemImage(prodDetail.primaryThumbImageURL);
                         value.customProductRoute(prodDetail.route);
 
-                        //Bronto Tracker
 
-                        $('script[id="brontoTag"]').remove();
-                        // setTimeout(function(){
-                        if ($('script[id="brontoTag"]').length === 0) {
-                            var brontoCart = {};
-                            var brontoLineItems = [];
-                            var shoppingCartItems = []
-                            shoppingCartItems = getWidget.confirmation().shoppingCart.items;
-
-                            $.each(shoppingCartItems, function(k, v) {
-
-                                var lineItemsObj = {};
-                                lineItemsObj.sku = v.productId;
-                                lineItemsObj.name = v.displayName;
-                                lineItemsObj.category = v.dynamicProperties[0].value;
-                                lineItemsObj.unitPrice = v.unitPrice;
-                                lineItemsObj.salePrice = v.salePrice;
-                                lineItemsObj.quantity = v.quantity;
-                                lineItemsObj.totalPrice = v.rawTotalPrice;
-                                if (v.customItemImage() != undefined) {
-                                    lineItemsObj.imageUrl = "https://www.petmate.com" + v.customItemImage();
-                                }
-                                lineItemsObj.productUrl = "https://www.petmate.com" + v.customProductRoute();
-                                brontoLineItems.push(lineItemsObj);
-                            })
-
-                            var brontoObject = '<script id="brontoTag" type="text/javascript">' +
-                                'brontoCart ={' +
-                                '"cartPhase": "ORDER_COMPLETE",' +
-                                '"currency": "USD",' +
-                                '"subtotal": ' + getWidget.koSubTotal() + ',' +
-                                '"discountAmount": ' + getWidget.koDiscount() + ',' +
-                                '"taxAmount": ' + getWidget.koTax() + ',' +
-                                '"grandTotal": ' + getWidget.koTotal() + ',' +
-                                '"orderId": " ' + getWidget.koOrderID() + ' ", ' +
-                                '"emailAddress": " ' + getWidget.koEmail() + ' ", ' + //omit line if value not available
-                                '"cartUrl":"https://www.petmate.com/cart ", ' +
-                                '"lineItems":  ' + JSON.stringify(brontoLineItems) +
-                                '}' +
-                                '</script>'
-                            if (shoppingCartItems.length > 0) {
-                                $("footer .footer").append(brontoObject);
-                            }
-                        }
-                        //},1000); 
-                        //  console.log(value.customItemImage(), '-----value.customItemImage----');
                     }, function(prodDetail) {}, p, r);
 
 

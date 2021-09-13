@@ -100,11 +100,7 @@ define(
                  /*Ends*/
 
 
-                //Bronto Script
-
-
-                var brontoHeaderScript = '<script bronto-popup-id="ab0a6242-1739-45c5-85b7-95652b63b808" src="https://cdn.bronto.com/popup/delivery.js"></script>'
-               $("head").append(brontoHeaderScript);
+                
                //Attentive Script
 
                 var attentiveScript = '<script src="https://cdn.attn.tv/petmate/dtag.js"></script>'
@@ -117,20 +113,7 @@ define(
              
 
               
-                var brontoCommerceTag =
-                    '<script data-name="__br_tm" type="text/javascript">' +
-                    'var _bsw = _bsw || [];' +
-                    '_bsw.push(["_bswId", "d7a4119bd35c40559d2b8aa3d30dc78576a0e02c41d9cc260680e24af76e53f1"]);' +
-                    '(function() {' +
-                    'var bsw = document.createElement("script");' +
-                    'bsw.type = "text/javascript";' +
-                    'bsw.async = true;' +
-                    'bsw.src = ("https:" == document.location.protocol ? "https://" : "http://") + "js.bronto.com/c/aylvxl2i83pejg41ms09mzxajhp4vpldjj8cb7ip7ybjpc4w1h/d7a4119bd35c40559d2b8aa3d30dc78576a0e02c41d9cc260680e24af76e53f1/s/b.min.js";' +
-                    'var t = document.getElementsByTagName("script")[0];' +
-                    't.parentNode.insertBefore(bsw, t);' +
-                    '})();' +
-                    '</script>'
-                $("head").append(brontoCommerceTag);
+               
                 //Ends
 
 
@@ -199,13 +182,6 @@ define(
        emailVar.emailId="testabcd@a.com" ;*/
 
                 $("body").on("click", ".submitMail", function() {
-                    //Bronto email signup
-                    emailval = $("#emailSignUp").val();
-                    widget.koEmailSignupValue(emailval);
-                    $('#brontoEmailId').remove();
-                    var brontoEmail = '<img id="brontoEmailId" src="https://app.bronto.com/public/?q=direct_add&fn=Public_DirectAddForm&id=bjoxunlmlfrmycqpxmpztvpnnlwkbof&email=' + getWidget.koEmailSignupValue() + '&&list1=0bcd03ec000000000000000000000019c915" width="0" height="0" border="0" alt=""/>'
-                    $('body').append(brontoEmail);
-                    //Ends
                     var modalInput = $("#emailAddressinPopUp").val();
                     var homeInput = $("#emailSignUp").val();
                     var inputVal = "";

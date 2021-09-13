@@ -204,16 +204,12 @@ var deviceData  = null;
                    $('#CC-Checkout-Placeorder-Mobile').trigger('click'); 
                    
                          
-                    //Bronto
+   
                    // setTimeout(function(){
                        var emailFlagCheckout = widget.user().emailMarketingMails();
                     if(emailFlagCheckout){
                         //var optInMail = widget.user().email();
                         var optInMail = $('#CC-checkoutRegistration-email').val();
-                        widget.koEmailSignupValue(optInMail);
-                        $('#brontoEmailId').remove();
-                        var brontoEmail = '<img id="brontoEmailId" src="https://app.bronto.com/public/?q=direct_add&fn=Public_DirectAddForm&id=bjoxunlmlfrmycqpxmpztvpnnlwkbof&email=' + getWidget.koEmailSignupValue() + '&&list1=0bcd03ec000000000000000000000019c915" width="0" height="0" border="0" alt=""/>'
-                        $('body').append(brontoEmail);
                         //Klaviyo Checkout Signup
                         var settings = {
                             "async": true,

@@ -324,24 +324,14 @@ define(
               getWidget.isPetDetailsEdited(false);
               $('#removePetNote').css("display","none");
               
-              //Bronto Email Subscribe
+      
           var emailFlagRegistration;
          emailFlagRegistration = getWidget.koEmailSubscribe;
           getWidget.koReceiveEmail(typeof emailFlagRegistration ==="function" ? emailFlagRegistration() : emailFlagRegistration);
 
               if(getWidget.koReceiveEmail() == 'yes'){
-                        var optInMail = getWidget.user().email();
-                        getWidget.koEmailSignupValue(optInMail);
-                        $('#brontoEmailId').remove();
-                        var brontoEmail = '<img id="brontoEmailId" src="https://app.bronto.com/public/?q=direct_add&fn=Public_DirectAddForm&id=bjoxunlmlfrmycqpxmpztvpnnlwkbof&email=' + getWidget.koEmailSignupValue() + '&&list1=0bcd03ec000000000000000000000019c915" width="0" height="0" border="0" alt=""/>'
-                        $('body').append(brontoEmail);
                     }
             else if(getWidget.koReceiveEmail() == 'no'){
-                    var optOutMail = getWidget.user().email();
-                    getWidget.koEmailSignupValue(optOutMail);
-                    $('#brontoEmailId').remove();
-                    var brontoEmail = '<img id="brontoEmailId" src="https://app.bronto.com/public/?q=direct_add&fn=Public_DirectAddForm&id=bjoxunlmlfrmycqpxmpztvpnnlwkbof&email=' + getWidget.koEmailSignupValue() + '&&list1=0bcd03ec000000000000000000000019c915" width="0" height="0" border="0" alt=""/>'
-                    $('body').append(brontoEmail);
                 } 
 
           //Ends
