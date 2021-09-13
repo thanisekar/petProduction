@@ -198,7 +198,7 @@
                                          
                                         </div>
                                         <div class="form__item column col-sm-12 gender form-elements">
-                                          <label class="mb-10 label-text">Gender</label> 
+                                          <label class="mb-10 label-text">Gender (Optional)</label> 
                                           <div class="flex-display">
                        
                                             <label class="control radio radio-control">
@@ -210,7 +210,7 @@
                                                 <input type="radio" value="female" data-bind="checked: $parent.koGender">
                                                 <span class="control-indicator checkmark"></span> Female
                                             </label>
-                                            <label class="control radio radio-control">
+                                            <label class="control radio radio-control hide">
                                                 <input type="radio" value="other" data-bind="checked: $parent.koGender">
                                                  <span class="control-indicator checkmark"></span> Prefer not to say
                                             </label>
@@ -386,7 +386,7 @@
                                        <span class='displayErrorIcons'></span>
                                     </div>
                                     <div class="col-xs-12 column left input-gender input-field--edit-profile-large nopad gender">
-                                      <label class="mb-10 input-field--edit-profile-gender-label label-text">Gender</label> 
+                                      <label class="mb-10 input-field--edit-profile-gender-label label-text">Gender (Optional)</label> 
                                       <div class="flex-display">
                                           <label class="control radio radio-control">
                                             <input type="radio"   value="male" name="petGender"   data-bind="checked:$data.petGender">
@@ -396,7 +396,7 @@
                                             <input type="radio" value="female" name="petGender" data-bind="checked:$data.petGender">
                                             <span class="control-indicator checkmark"></span> Female
                                           </label>
-                                           <label class="control radio radio-control">
+                                           <label class="control radio radio-control hide">
                                                 <input type="radio" value="other" data-bind="checked:$data.petGender">
                                                  <span class="control-indicator checkmark"></span> Prefer not to say
                                             </label>
