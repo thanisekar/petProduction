@@ -1,5 +1,101 @@
 
 <!-- ko ifnot:isBrandPage()-->
+
+<div class="ArticleCarousel">
+    <div class="container">
+    <!-- ko if: koGetCategoriesArticles() != null -->
+   <!-- ko if: koGetCategoriesArticles().length > 0  -->
+   <div class="templateRegion" id="cc-recs" data-oc-id="cc-recs">
+      <!-- oc layout: panels -->
+      <div class="row">
+         <div class="oc-panel" data-oc-id="panel-0-0">
+            <div class="head-section">
+               
+               <div class="row shopAllLinkWrapper">
+                   <div class="col-xs-8"><h3 class="title-txt">Related Articles</h3></div>
+                      <div id="article-carousel-controls" class="col-xs-4 nopad">
+                  <!-- Carousel Controls -->
+                  <!-- ko if: recommendationsGroupsArticles() && (recommendationsGroupsArticles().length > 1) -->
+                  <div class="controls row pull-right ">
+                     <div id="article-carousel-left-control" class="col-xs-6">
+                        <a class="article-corousel-left disabled" data-slide="prev" data-bind="widgetLocaleText:{value:'previousImageText',attr:'title'}, attr:{href: '#articlesCarousel'}">
+                           <!--<i class="fa-2x fa fa-caret-left "></i>-->
+                        </a>
+                     </div>
+                     <div id="article-carousel-right-control" class="col-xs-6">
+                        <a class="article-corousel-right" data-slide="next" data-bind="widgetLocaleText:{value:'nextImageText',attr:'title'}, attr:{href: '#articlesCarousel'}">
+                           <!--<i class="fa-2x fa fa-caret-right "></i>-->
+                        </a>
+                     </div>
+                  </div>
+                  <!-- /ko -->
+               </div>
+               </div>
+            </div>
+
+            <!-- oc section: recommendations-carousel -->
+            <!--        <div data-bind="element: 'recommendations-carousel', visible: recommendations().length > 0"></div>-->
+            <!--ko if: recommendationsGroupsArticles() && (recommendationsGroupsArticles().length > 0) -->
+            
+            <div data-bind="carouselSwipe, attr:{id: 'articlesCarousel'}" class="articleCollectionCarousel carousel slide inner-corousel" data-interval="false">
+               <div class="carousel-inner article-carousel" >
+                    <!-- ko foreach: recommendationsGroupsArticles -->
+                
+                  <div class="item row" data-bind="css: {'active': $index()==0},foreach: $data">
+                      	<div class="cc-product-item col-sm-3 col-xs-6">
+							<div class="product-item-wrapper">
+								<div class="row">
+									<div class="nopad read-articles"> 
+									<a class="brandDisplayName" data-bind="attr : { id: 'CC-product-detail-'+id, title: displayName }, ccLink: {route: $data.route}">
+                           <span data-bind="text: displayName" class="sr-only"></span>
+                           
+                           <img data-bind="ccResizeImage: {
+                                source: primarySmallImageURL, 
+                                xsmall: '300,270',
+                                small: '300,270',
+                                medium: '266,266',
+                                large: '266,266',
+                                alt: displayName,
+                                title:displayName,
+                                errorSrc: '/file/general/petmate-no-image.jpg',
+                                errorAlt: 'Missing category Image'}"  class="img-responsive" width="100%"/>
+                          <span data-bind="attr:{alt:displayName,title:displayName}" class="overlay"></span>
+                           </a>
+                           </div>
+									<div class="nopad descriptionContent">
+										<div data-bind="text:$parents[1].newMonthDisplay($data)" class="plp-date"></div>
+										<a data-bind="ccLink: {route: $data.route}">
+											<p class="product-title" data-bind="text: displayName, attr: {id: 'CC-product-list-displayName-'+id+'-'+$parentContext.$index()+$index()}"></p>
+										</a>
+										
+										<div class="wrap">
+										    <div class='description' data-bind="text: $parents[1].truncate($data.description)"></div>
+										
+											<span><a data-bind="ccLink: {route: $data.route}" class="read-article">
+                              Read Article
+                              </a></span> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+                  </div>
+                  
+                  <!-- /ko -->
+               </div>
+               
+            </div>
+            <!--/ko-->
+            <!-- /oc -->
+         </div>
+      </div>
+      <!-- /oc -->
+   </div>
+   <!-- /ko -->
+   <!-- /ko -->
+   </div>
+</div>
+
+
 <!-- ko with: category -->
   <!-- ko if : longDescription -->	
  
