@@ -1,5 +1,8 @@
 #WIDGET_ID-WIDGET_INSTANCE_ID {
 
+	
+    
+
 	#gammaGives {
 	    .text-danger{
 	        color: #fff !important;
@@ -311,6 +314,43 @@
 				}
 			}
 		}
+		.section6{
+            padding: 10px 0 0 0;
+            .video-desc{
+                  font-size: 21px !important;
+                line-height: 45px!important;
+                font-family: Helvatica_Bold;
+                color: #414143!important;
+                text-transform: uppercase;
+                text-shadow: 1px 1px #000;
+                text-align: center;
+				margin-bottom: 20px;
+            }
+                    #productVideo{
+                        position:relative;
+                        img{
+                            margin:0 auto;
+                            width:90%;
+                            cursor: pointer;
+                        }
+                        .video-banner{
+                                //border: 10px solid #2654bf;
+                                    border: 1px solid #ccc;
+                                     padding: 10px;
+                                margin-bottom: 10px;
+                                cursor: pointer;
+                            &:hover{
+                            cursor: pointer;
+                        }
+                        }
+                        .play-icon{
+                            position: absolute;
+                            top: 45%;
+                            right: 45%;
+                           }
+                        }
+                
+		}
 	}
 	//Iphone
 	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
@@ -397,6 +437,12 @@
 						font-size: 18px!important;
 					}
 				}
+			}
+			.section6{
+			    .video-desc{
+			        font-size: 16px !important;
+                    line-height: 25px !important;
+			    }
 			}
 		}
 	}
@@ -485,5 +531,8 @@
 	//Medium laptops
 	/* For 1366 Resolution */
 	@media only screen and (min-width: 1030px) and (max-width: 1366px) {}
+
+
+
 
 }
