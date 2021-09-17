@@ -50,7 +50,7 @@ define(
             },
             getProductDetails: function(getProductId) {
                 var widget = this;
-                i.authenticatedRequest("/ccstoreui/v1/products/?productIds=" + getProductId.toString() + "&fields=route,displayName,primaryFullImageURL,description,id,startDateStr", {}, function(e) {
+                i.authenticatedRequest("/ccstoreui/v1/products/?productIds=" + getProductId.toString() + "&fields=route,displayName,primaryFullImageURL,description,id,startDateStr,parentCategory", {}, function(e) {
                     widget.updateData(e);
 
                 }, function(data) {}, "GET");
@@ -76,6 +76,11 @@ define(
                 if (page.pageId == 'product') {
                     widget.newMonthDisplay(widget.product());
                 }
+                console.log('widget.product()');
+                if(widget.product()){
+                   // console.log(widget.product().parentCategory.id(),'widget.product().parentCategory.id()');
+                    $.Topic('sendMediaCollectionId.memory').publish(widget.product().parentCategory.id());
+               } 
             },
             getArticleProduct: function() {
                 if (getWidget.productId() !== null) {

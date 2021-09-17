@@ -9,6 +9,7 @@ define(['knockout', 'CCi18n', 'ccConstants', 'pubsub', 'storageApi', 'ccRestClie
         return {
             koGetCollectionList: ko.observableArray([]),
             koGetRecommendedData: ko.observable(),
+            koFilterMediaArticles: ko.observable(),
             EmailPDP: ko.observable(null),
 
             onLoad: function(widget) {
@@ -63,6 +64,10 @@ define(['knockout', 'CCi18n', 'ccConstants', 'pubsub', 'storageApi', 'ccRestClie
                 $.Topic("sendRecommendedProducts.memory").subscribe(function(data) {
                     widget.koGetRecommendedData(data);
                 });
+
+                $.Topic("sendMediaCollectionId.memory").subscribe(function(data) {
+                    widget.koFilterMediaArticles(data);
+                 });
             },
 
             beforeAppear: function(page) {
