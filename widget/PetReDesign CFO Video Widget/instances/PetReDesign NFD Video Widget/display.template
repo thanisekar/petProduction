@@ -64,10 +64,10 @@
             </div>
          </div>
           <!--Remove this portion and enable section4 in future-->
-         <div class="temporary">
+         <div class="temporary hide">
             <h2>Party Location Details Coming Soon!</h2>
          </div>
-         <div class="section4 hide">
+         <div class="section4">
             <div class="row onlyDesktopView hidden-xs">
                <img alt="Who's Participating?" title="Who's Participating?" src="/file/general/NFG_whos_participating.png" class="img-responsive participating">
                <div class="col-xs-1">
@@ -76,144 +76,168 @@
                   <table class="table borderless">
                      <thead>
                         <tr>
-                           <th scope="col">Idle Hour</th>
-                           <th scope="col">Rock & Brews</th>
+                           <th scope="col">The Barking Bodega</th>
+                           <th scope="col">Uncle Bear's AZ Brewery & Taproom</th>
+                           <th scope="col">Rock & Brews - Tustin</th>
+                           <th scope="col">Rock & Brews - El Segundo</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td alt="Tempe, AZ" title="Tempe, AZ">Tempe, AZ</td>
+                           <td alt="Gilbert, AZ" title="Gilbert, AZ">Gilbert, AZ</td>
+                           <td alt="Tustin, CA" title="Tustin, CA">Tustin, CA</td>
+                           <td alt="El Segundo, CA" title="El Segundo, CA">El Segundo, CA</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://www.thebarkingbodega.com/" target="_blank">thebarkingbodega.com</a></td>
+                           <td><a href="https://www.unclebearsaz.com/" target="_blank">unclebearsaz.com</a></td>
+                           <td><a href="https://www.rockandbrews.com/" target="_blank">rockandbrews.com</a></td>
+                           <td><a href="https://www.rockandbrews.com/" target="_blank">rockandbrews.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Rock & Brews - Redondo Beach</th>
+                           <th scope="col">Rock & Brews - Corona</th>
+                           <th scope="col">Rock & Brews - Cal Expo</th>
+                           <th scope="col">Rock & Brews - Buena Park</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td alt="Redondo Beach, CA" title="Redondo Beach, CA">Redondo Beach, CA</td>
+                           <td alt="Corona, CA" title="Corona, CA">Corona, CA</td>
+                           <td alt="Sacramento, CA" title="Sacramento, CA">Sacramento, CA</td>
+                           <td alt="Buena Park, CA" title="Buena Park, CA">Buena Park, CA</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://www.rockandbrews.com/" target="_blank">rockandbrews.com</a></td>
+                           <td><a href="https://www.rockandbrews.com/" target="_blank">rockandbrews.com</a></td>
+                           <td><a href="https://www.rockandbrews.com/" target="_blank">rockandbrews.com</a></td>
+                           <td><a href="https://www.rockandbrews.com/" target="_blank">rockandbrews.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Stone Brewing - Liberty Station</th>
                            <th scope="col">Urban Roots Brewing & Smokehouse</th>
                            <th scope="col">Pub Dog Colorado</th>
+                           <th scope="col">Watering Bowl</th>
                         </tr>
                      </thead>
                      <tbody>
                         <tr>
-                           <td alt="Los Angeles, CA" title="Los Angeles, CA">Los Angeles, CA</td>
-                           <td alt="Orange County, CA" title="Orange County, CA">Orange County, CA</td>
+                           <td alt="San Diego, CA" title="San Diego, CA">San Diego, CA</td>
                            <td alt="Sacramento, CA" title="Sacramento, CA">Sacramento, CA</td>
                            <td alt="Colorado Springs, CO" title="Colorado Springs, CO">Colorado Springs, CO</td>
+                           <td alt="Denver, CO" title="Denver, CO">Denver, CO</td>
                         </tr>
                         <tr>
-                           <td><a href="https://www.idlehourbar.com/" target="_blank">idlehourbar.com</a></td>
-                           <td><a href="https://www.rockandbrews.com/" target="_blank">rockandbrews.com</a></td>
+                           <td><a href="https://stonebrewing.com/" target="_blank">stonebrewing.com</a></td>
                            <td><a href="https://www.urbanrootsbrewing.com/" target="_blank">urbanrootsbrewing.com</a></td>
                            <td><a href="https://www.pubdogcolorado.com/" target="_blank">pubdogcolorado.com</a></td>
+                           <td><a href="https://www.denverwateringbowl.com/" target="_blank">denverwateringbowl.com</a></td>
                         </tr>
                      </tbody>
                   </table>
                   <table class="table borderless">
                      <thead>
                         <tr>
-                           <th scope="col">The Watering Bowl</th>
-                           <th scope="col">Ivanhoe Park Brewing</th>
-                           <th scope="col">Kush Coconut Grove</th>
                            <th scope="col">81 Bay Brewing Co.</th>
+                           <th scope="col">Ivanhoe Park Brew</th>
+                           <th scope="col">Kush Coconut Grove</th>
+                           <th scope="col">The Dog Bar</th>
                         </tr>
                      </thead>
                      <tbody>
                         <tr>
-                           <td alt="Denver, CO" title="Denver, CO">Denver, CO</td>
+                           <td alt="Tampa, FL" title="Tampa, FL">Tampa, FL</td>
                            <td alt="Orlando, FL" title="Orlando, FL">Orlando, FL</td>
                            <td alt="Miami, FL" title="Miami, FL">Miami, FL</td>
-                           <td alt="Tampa, FL" title="Tampa, FL">Tampa, FL</td>
+                           <td alt="St. Petersburg, FL" title="St. Petersburg, FL">St. Petersburg, FL</td>
                         </tr>
                         <tr>
-                           <td><a href="http://www.denverwateringbowl.com/" target="_blank">denverwateringbowl.com</a></td>
-                           <td><a href="https://www.ivanhoeparkbrewing.com/" target="_blank">ivanhoeparkbrewing.com</a></td>
-                           <td><a href="https://www.kushhospitality.com/" target="_blank">kushhospitality.com</a></td>
                            <td><a href="https://www.81baybrewco.com/" target="_blank">81baybrewco.com</a></td>
+                           <td><a href="https://www.ivanhoeparkbrewing.com/" target="_blank">ivanhoeparkbrewing.com</a></td>
+                           <td><a href="https://kushhospitality.com/locations/spillover/" target="_blank">kushhospitality.com</a></td>
+                           <td><a href="https://www.dogbarstpete.com/" target="_blank">dogbarstpete.com</a></td>
                         </tr>
                      </tbody>
                   </table>
                   <table class="table borderless">
                      <thead>
                         <tr>
-                           <th scope="col">Fetch Park ATL</th>
-                           <th scope="col">Park & Field Chicago</th>
-                           <th scope="col">Daddy Jones Bar</th>
-                           <th scope="col">The Freehouse</th>
+                           <th scope="col">Fetch Park - Columbus</th>
+                           <th scope="col">Fetch Park - Old 4th Ward</th>
+                           <th scope="col">Park and Field Chicago</th>
+                           <th scope="col">Bark Social</th>
                         </tr>
                      </thead>
                      <tbody>
                         <tr>
                            <td alt="Atlanta, GA" title="Atlanta, GA">Atlanta, GA</td>
+                           <td alt="Columbus, GA" title="Columbus, GA">Columbus, GA</td>
                            <td alt="Chicago, IL" title="Chicago, IL">Chicago, IL</td>
-                           <td alt="Boston, MA" title="Boston, MA">Boston, MA</td>
+                           <td alt="North Bethesda, MD" title="North Bethesda, MD">North Bethesda, MD</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://www.fetchpark.com" target="_blank">fetchpark.com</a></td>
+                           <td><a href="https://www.fetchpark.com" target="_blank">fetchpark.com</a></td>
+                           <td><a href="https://www.parkandfieldchicago.com/" target="_blank">parkandfieldchicago.com</a></td>
+                           <td><a href="https://www.barksocial.com/" target="_blank">barksocial.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Unleashed Hops and Hounds</th>
+                           <th scope="col">Bar K Dog Bar</th>
+                           <th scope="col">NoDa Brewing</th>
+                           <th scope="col">Omaha Dog Bar</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
                            <td alt="Minneapolis, MN" title="Minneapolis, MN">Minneapolis, MN</td>
-                        </tr>
-                        <tr>
-                           <td><a href="https://fetchpark.com/" target="_blank">fetchparkatl.com</a></td>
-                           <td><a href="http://www.parkandfieldchicago.com/" target="_blank">parkandfieldchicago.com</a></td>
-                           <td><a href="https://www.daddyjonesbar.com/" target="_blank">daddyjonesbar.com</a></td>
-                           <td><a href="https://www.freehousempls.com/" target="_blank">freehousempls.com</a></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <table class="table borderless">
-                     <thead>
-                        <tr>
-                           <th scope="col">Bar K</th>
-                           <th scope="col">Big Dog's Brewing Company</th>
-                           <th scope="col">Nexus Brewery & Restaurant</th>
-                           <th scope="col">NoDa Brewing Company</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
                            <td alt="Kansas City, MO" title="Kansas City, MO">Kansas City, MO</td>
-                           <td alt="Las Vegas, NV" title="Las Vegas, NV">Las Vegas, NV</td>
-                           <td alt="Albuquerque, NM" title="Albuquerque, NM">Albuquerque, NM</td>
-                           <td alt="Charlotte/Raleigh, NC" title="Charlotte/Raleigh, NC">Charlotte/Raleigh, NC</td>
+                           <td alt="Charlotte, NC" title="Charlotte, NC">Charlotte, NC</td>
+                           <td alt="Omaha, NE" title="Omaha, NE">Omaha, NE</td>
                         </tr>
                         <tr>
+                           <td><a href="https://www.unleashedhopsandhounds.com/" target="_blank">unleashedhopsandhounds.com</a></td>
                            <td><a href="https://www.barkdogbar.com/" target="_blank">barkdogbar.com</a></td>
-                           <td><a href="https://www.bigdogsbrews.com/" target="_blank">bigdogsbrews.com</a></td>
-                           <td><a href="https://www.nexusbrewery.com/" target="_blank">nexusbrewery.com</a></td>
                            <td><a href="https://www.nodabrewing.com/" target="_blank">nodabrewing.com</a></td>
+                           <td><a href="https://www.omahadogbar.com/" target="_blank">omahadogbar.com</a></td>
                         </tr>
                      </tbody>
                   </table>
                   <table class="table borderless">
                      <thead>
                         <tr>
-                           <th scope="col">The Roosevelt Coffeehouse at Gravity</th>
-                           <th scope="col">Lardo Sandwiches</th>
-                           <th scope="col">Double Wide Grill</th>
-                           <th scope="col">Contigo Austin</th>
+                           <th scope="col">Big Dog's Brewing Company</th>
+                           <th scope="col">Mutt's Canine Cantina</th>
+                           <th scope="col">Yard Bar</th>
+                           <th scope="col">Dogwood Play Park</th>
                         </tr>
                      </thead>
                      <tbody>
                         <tr>
-                           <td alt="Columbus, OH" title="Columbus, OH">Columbus, OH</td>
-                           <td alt="Portland, OR" title="Portland, OR">Portland, OR</td>
-                           <td alt="Pittsburg, PA" title="Pittsburg, PA">Pittsburg, PA</td>
+                           <td alt="Las Vegas, NV" title="Las Vegas, NV">Las Vegas, NV</td>
+                           <td alt="Dallas, TX" title="Dallas, TX">Dallas, TX</td>
                            <td alt="Austin, TX" title="Austin, TX">Austin, TX</td>
+                           <td alt="Seattle, WA" title="Seattle, WA">Seattle, WA</td>
                         </tr>
                         <tr>
-                           <td><a href="https://linktr.ee/rooseveltcoffee" target="_blank">rooseveltcoffee.com</a></td>
-                           <td><a href="https://www.lardosandwiches.com/" target="_blank">lardosandwiches.com</a></td>
-                           <td><a href="https://www.doublewidegrill.com/" target="_blank">doublewidegrill.com</a></td>
-                           <td><a href="https://www.contigotexas.com/" target="_blank">contigotexas.com</a></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <table class="table borderless">
-                     <thead>
-                        <tr>
-                           <th scope="col">Cane Rosso</th>
-                           <th scope="col">Boheme</th>
-                           <th scope="col"></th>
-                           <th scope="col"></th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td alt="Dallas/Fort Worth, TX" title="Dallas/Fort Worth, TX">Dallas/Fort Worth, TX</td>
-                           <td alt="Houston, TX" title="Houston, TX">Houston, TX</td>
-                           <td></td>
-                           <td></td>
-                        </tr>
-                        <tr>
-                           <td><a href="http://www.canerosso.com/" target="_blank">canerosso.com</a></td>
-                           <td><a href="https://www.barboheme.com/" target="_blank">barboheme.com</a></td>
-                           <td></td>
-                           <td></td>
+                           <td><a href="https://www.bigdogsbrews.com/" target="_blank">bigdogsbrew.com</a></td>
+                           <td><a href="https://www.muttscantina.com/" target="_blank">muttscantina.com</a></td>
+                           <td><a href="https://www.yardbar.com/" target="_blank">yardbar.com</a></td>
+                           <td><a href="https://www.dogwoodplaypark.com/" target="_blank">dogwoodplaypark.com</a></td>
                         </tr>
                      </tbody>
                   </table>
@@ -227,30 +251,135 @@
                   <table class="table borderless">
                      <thead>
                         <tr>
-                           <th scope="col">Idle Hour</th>
+                           <th scope="col">The Barking Bodega</th>
                         </tr>
                      </thead>
                      <tbody>
                         <tr>
-                           <td>Los Angeles, CA</td>
+                           <td>Tempe, AZ</td>
                         </tr>
                         <tr>
-                           <td><a href="https://www.idlehourbar.com/" target="_blank">idlehourbar.com</a></td>
+                           <td><a href="https://www.thebarkingbodega.com/" target="_blank">thebarkingbodega.com</a></td>
                         </tr>
                      </tbody>
                   </table>
                   <table class="table borderless">
                      <thead>
                         <tr>
-                           <th scope="col">Rock & Brews</th>
+                           <th scope="col">Uncle Bear's AZ Brewery & Taproom</th>
                         </tr>
                      </thead>
                      <tbody>
                         <tr>
-                           <td>Orange County, CA</td>
+                           <td>Gilbert, AZ</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://www.unclebearsaz.com/" target="_blank">unclebearsaz.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Rock & Brews - Tustin</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Tustin, CA</td>
                         </tr>
                         <tr>
                            <td><a href="https://www.rockandbrews.com/" target="_blank">rockandbrews.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Rock & Brews - El Segundo</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>El Segundo, CA</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://www.rockandbrews.com/" target="_blank">rockandbrews.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Rock & Brews - Redondo Beach</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Redondo Beach, CA</td>
+                        </tr>
+                        <tr>
+                           <td><a href="http://www.rockandbrews.com/" target="_blank">rockandbrews.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Rock & Brews - Corona</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Corona, CA</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://www.rockandbrews.com/" target="_blank">rockandbrews.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Rock & Brews - Cal Expo</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Sacramento, CA</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://www.rockandbrews.com/" target="_blank">rockandbrews.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Rock & Brews - Buena Park</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Buena Park, CA</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://www.rockandbrews.com/" target="_blank">rockandbrews.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Stone Brewing - Liberty Station</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>San Diego, CA</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://www.stonebrewing.com/" target="_blank">stonebrewing.com</a></td>
                         </tr>
                      </tbody>
                   </table>
@@ -265,7 +394,7 @@
                            <td>Sacramento, CA</td>
                         </tr>
                         <tr>
-                           <td><a href="https://www.urbanrootsbrewing.com/" target="_blank">urbanrootsbrewing.com</a></td>
+                           <td><a href="http://www.urbanrootsbrewing.com/" target="_blank">urbanrootsbrewing.com</a></td>
                         </tr>
                      </tbody>
                   </table>
@@ -287,7 +416,7 @@
                   <table class="table borderless">
                      <thead>
                         <tr>
-                           <th scope="col">The Watering Bowl</th>
+                           <th scope="col">Watering Bowl</th>
                         </tr>
                      </thead>
                      <tbody>
@@ -295,44 +424,14 @@
                            <td>Denver, CO</td>
                         </tr>
                         <tr>
-                           <td><a href="http://www.denverwateringbowl.com/" target="_blank">denverwateringbowl.com</a></td>
+                           <td><a href="https://www.denverwateringbowl.com/" target="_blank">denverwateringbowl.com</a></td>
                         </tr>
                      </tbody>
                   </table>
                   <table class="table borderless">
                      <thead>
                         <tr>
-                           <th scope="col">Ivanhoe Park Brewing</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>Orlando, FL</td>
-                        </tr>
-                        <tr>
-                           <td><a href="https://www.ivanhoeparkbrewing.com/" target="_blank">ivanhoeparkbrewing.com</a></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <table class="table borderless">
-                     <thead>
-                        <tr>
-                           <th scope="col">Kush Coconut Grove/th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>Miami, FL</td>
-                        </tr>
-                        <tr>
-                           <td><a href="https://www.kushhospitality.com/" target="_blank">kushhospitality.com</a></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <table class="table borderless">
-                     <thead>
-                        <tr>
-                           <th scope="col">81 Bay Brewing Co./th>
+                           <th scope="col">81 Bay Brewing Co.</th>
                         </tr>
                      </thead>
                      <tbody>
@@ -347,7 +446,52 @@
                   <table class="table borderless">
                      <thead>
                         <tr>
-                           <th scope="col">Fetch Park ATL</th>
+                           <th scope="col">Ivanhoe Park Brew</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Orlando, FL</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://www.ivanhoeparkbrewing.com/" target="_blank">ivanhoeparkbrewing.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Kush Coconut Grove</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Miami, FL</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://kushhospitality.com/locations/spillover/" target="_blank">kushhospitality.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">The Dog Bar</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>St. Petersburg, FL</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://www.dogbarstpete.com/" target="_blank">dogbarstpete.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Fetch Park - Columbus</th>
                         </tr>
                      </thead>
                      <tbody>
@@ -355,14 +499,29 @@
                            <td>Atlanta, GA</td>
                         </tr>
                         <tr>
-                           <td><a href="https://www.fetchparkatl.com/" target="_blank">fetchparkatl.com</a></td>
+                           <td><a href="https://fetchpark.com" target="_blank">fetchpark.com</a></td>
                         </tr>
                      </tbody>
                   </table>
                   <table class="table borderless">
                      <thead>
                         <tr>
-                           <th scope="col">Park & Field Chicago</th>
+                           <th scope="col">Fetch Park - Old 4th Ward</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Columbus, GA</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://www.fetchpark.com" target="_blank">fetchpark.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Park and Field Chicago</th>
                         </tr>
                      </thead>
                      <tbody>
@@ -370,29 +529,29 @@
                            <td>Chicago, IL</td>
                         </tr>
                         <tr>
-                           <td><a href="http://www.parkandfieldchicago.com/" target="_blank">parkandfieldchicago.com</a></td>
+                           <td><a href="https://www.parkandfieldchicago.com" target="_blank">parkandfieldchicago.com</a></td>
                         </tr>
                      </tbody>
                   </table>
                   <table class="table borderless">
                      <thead>
                         <tr>
-                           <th scope="col">Daddy Jones Bar</th>
+                           <th scope="col">Bark Social</th>
                         </tr>
                      </thead>
                      <tbody>
                         <tr>
-                           <td>Boston, MA</td>
+                           <td>North Bethesda, MD</td>
                         </tr>
                         <tr>
-                           <td><a href="https://www.daddyjonesbar.com/" target="_blank">daddyjonesbar.com</a></td>
+                           <td><a href="https://www.barksocial.com/" target="_blank">barksocial.com</a></td>
                         </tr>
                      </tbody>
                   </table>
                   <table class="table borderless">
                      <thead>
                         <tr>
-                           <th scope="col">The Freehouse</th>
+                           <th scope="col">Unleashed Hops and Hounds</th>
                         </tr>
                      </thead>
                      <tbody>
@@ -400,14 +559,14 @@
                            <td>Minneapolis, MN</td>
                         </tr>
                         <tr>
-                           <td><a href="https://www.freehousempls.com/" target="_blank">freehousempls.com</a></td>
+                           <td><a href="http://www.unleashedhopsandhounds.com/" target="_blank">unleashedhopsandhounds.com</a></td>
                         </tr>
                      </tbody>
                   </table>
                   <table class="table borderless">
                      <thead>
                         <tr>
-                           <th scope="col">Bar K</th>
+                           <th scope="col">Bar K Dog Bar</th>
                         </tr>
                      </thead>
                      <tbody>
@@ -416,6 +575,36 @@
                         </tr>
                         <tr>
                            <td><a href="https://www.barkdogbar.com/" target="_blank">barkdogbar.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">NoDa Brewing</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Charlotte, NC</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://www.nodabrewing.com/" target="_blank">nodabrewing.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table class="table borderless">
+                     <thead>
+                        <tr>
+                           <th scope="col">Omaha Dog Bar</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Omaha, NE</td>
+                        </tr>
+                        <tr>
+                           <td><a href="https://www.omahadogbar.com/" target="_blank">omahadogbar.com</a></td>
                         </tr>
                      </tbody>
                   </table>
@@ -437,82 +626,22 @@
                   <table class="table borderless">
                      <thead>
                         <tr>
-                           <th scope="col">Nexus Brewery & Restaurant</th>
+                           <th scope="col">Mutt's Canine Cantina</th>
                         </tr>
                      </thead>
                      <tbody>
                         <tr>
-                           <td>Albuquerque, NM</td>
+                           <td>Dallas, TX</td>
                         </tr>
                         <tr>
-                           <td><a href="https://www.nexusbrewery.com/" target="_blank">nexusbrewery.com</a></td>
+                           <td><a href="https://www.muttscantina.com/" target="_blank">muttscantina.com</a></td>
                         </tr>
                      </tbody>
                   </table>
                   <table class="table borderless">
                      <thead>
                         <tr>
-                           <th scope="col">NoDa Brewing Company</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>Charlotte/Raleigh, NC</td>
-                        </tr>
-                        <tr>
-                           <td><a href="https://www.nodabrewing.com/" target="_blank">nodabrewing.com</a></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <table class="table borderless">
-                     <thead>
-                        <tr>
-                           <th scope="col">The Roosevelt Coffeehouse at Gravity</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>Columbus, OH</td>
-                        </tr>
-                        <tr>
-                           <td><a href="https://linktr.ee/rooseveltcoffee/" target="_blank">rooseveltcoffee.com</a></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <table class="table borderless">
-                     <thead>
-                        <tr>
-                           <th scope="col">Lardo Sandwiches</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>Portland, OR</td>
-                        </tr>
-                        <tr>
-                           <td><a href="https://www.lardosandwiches.com" target="_blank">lardosandwiches.com</a></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <table class="table borderless">
-                     <thead>
-                        <tr>
-                           <th scope="col">Double Wide Grill</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>Pittsburg, PA</td>
-                        </tr>
-                        <tr>
-                           <td><a href="https://www.doublewidegrill.com" target="_blank">doublewidegrill.com</a></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <table class="table borderless">
-                     <thead>
-                        <tr>
-                           <th scope="col">Contigo Austin</th>
+                           <th scope="col">Yard Bar</th>
                         </tr>
                      </thead>
                      <tbody>
@@ -520,37 +649,22 @@
                            <td>Austin, TX</td>
                         </tr>
                         <tr>
-                           <td><a href="https://www.contigotexas.com/" target="_blank">contigotexas.com</a></td>
+                           <td><a href="https://www.yardbar.com/" target="_blank">yardbar.com</a></td>
                         </tr>
                      </tbody>
                   </table>
                   <table class="table borderless">
                      <thead>
                         <tr>
-                           <th scope="col">Cane Rosso</th>
+                           <th scope="col">Dogwood Play Park</th>
                         </tr>
                      </thead>
                      <tbody>
                         <tr>
-                           <td>Dallas/Fort Worth, TX</td>
+                           <td>Seattle, WA</td>
                         </tr>
                         <tr>
-                           <td><a href="http://www.canerosso.com/" target="_blank">canerosso.com</a></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <table class="table borderless">
-                     <thead>
-                        <tr>
-                           <th scope="col">Boheme</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>Houston, TX</td>
-                        </tr>
-                        <tr>
-                           <td><a href="https://www.barboheme.com/" target="_blank">barboheme.com</a></td>
+                           <td><a href="https://www.dogwoodplaypark.com/" target="_blank">dogwoodplaypark.com</a></td>
                         </tr>
                      </tbody>
                   </table>
