@@ -1097,7 +1097,7 @@
             	           <ul class='myaccount-menu'>
             		            <li  class='myaccount-menu-items' ><a data-bind="ccLink: 'profile'">Profile</a></li>
             		           <li  class='myaccount-menu-items' ><a data-bind="ccLink: 'orderHistory'">Order History</a></li>
-            		           <li  class='myaccount-menu-items' ><a data-bind="ccLink: 'wishlist'">Wishlist</a></li>
+            		           <li  class='myaccount-menu-items hide' ><a data-bind="ccLink: 'wishlist'">Wishlist</a></li>
             		          <li  class='myaccount-menu-items'  ><a class='signOut' data-bind="click: function(data, event) {handleLogout()}"  >sign out</a></li>
             		    </ul>
             	     </div>

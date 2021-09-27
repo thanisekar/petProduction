@@ -9,7 +9,7 @@
      <ul class="myaccount-listing">
 	 <li><a data-bind="ccLink:{route:'/profile'}" class="myaccount-left-link" id="myaccount-link-profile" data-target="myaccount-profile">Profiles</a></li>
 	 <li><a data-bind="ccLink:{route:'/orderHistory'}" id="myaccount-link-orderhistory" data-target="CC-orderHistory">order history</a></li>
-	 <li><a data-bind="ccLink:{route:'/wishlist'}" id="myaccount-link-wishlist">Wish list</a></li>
+	 <li class="hide"><a data-bind="ccLink:{route:'/wishlist'}" id="myaccount-link-wishlist">Wish list</a></li>
 	
    </ul>
 </div>
@@ -32,7 +32,7 @@
                         <li>
                           <a data-bind="ccLink:{route:'/orderHistory'}">Order History</a>
                         </li>
-                        <li>
+                        <li class="hide">
                           <a data-bind="ccLink:{route:'/wishlist'}">Wish List</a>
                         </li>
                       </ul>

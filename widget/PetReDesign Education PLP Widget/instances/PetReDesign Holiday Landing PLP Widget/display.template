@@ -36,7 +36,7 @@
         <div  class="cc-product-item col-md-3  col-xs-12  ">
         <div class='product-item-wrapper'>  
             <!-- ko with: $parents[1].user -->
-               <div class='add-to-wishlist'  data-bind='visible:loggedInUserName() && (loggedIn() && !isUserSessionExpired())'>
+               <div class='add-to-wishlist hide'  data-bind='visible:loggedInUserName() && (loggedIn() && !isUserSessionExpired())'>
                  <a class="prodListingAddToWishlist default-link blue" data-bind="attr:{'data-prod-id': $parent.repositoryId, 'id': $parent.repositoryId}" >
                     <span class='addtoWishList' ></span>
                 </a>
@@ -99,7 +99,7 @@
              </div>
                <div class='col-xs-6 nopad'>
                    <!-- ko with: $parents[1].user -->
-                 <div class='addtoWishlistforMobile' data-bind='visible:loggedInUserName() && (loggedIn() && !isUserSessionExpired())'>
+                 <div class='addtoWishlistforMobile hide' data-bind='visible:loggedInUserName() && (loggedIn() && !isUserSessionExpired())'>
                          <a class="prodListingAddToWishlist default-link blue"  data-bind="attr:{'data-prod-id': $parent.repositoryId, 'id': $parent.repositoryId}"  >
                             <span class='addtoWishList' ></span>
                         </a>

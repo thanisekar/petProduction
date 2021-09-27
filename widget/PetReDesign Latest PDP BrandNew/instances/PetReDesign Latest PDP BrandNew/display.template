@@ -559,7 +559,7 @@
                  <!-- oc section: product-add-to-space -->
                  <!-- ko if: koreplacementPartsProduct().length==0 -->
                  <!-- ko if: showSWM -->
-                 <div class="btn-group swm-add-to-wishlist-selector col-sm-12">
+                 <div class="btn-group swm-add-to-wishlist-selector col-sm-12 hide">
                     <div class="wish-list">
                        <!-- ko if: $data.user().loggedIn() -->
                        <span class='heart-icon'> </span>  
@@ -603,7 +603,7 @@
                  <!-- /oc -->
                  <!-- ko if: koreplacementPartsProduct().length > 0 -->
                  <div class='replacementPartsAvailable row'>
-                    <div class="btn-group swm-add-to-wishlist-selector col-sm-6 col-xs-12">
+                    <div class="btn-group swm-add-to-wishlist-selector col-sm-6 col-xs-12 hide">
                        <!-- ko if: $data.user().loggedIn() --> 
                        <span class='heart-icon'> </span>    
                        <a id="cc-prodDetailsAddToSpaceSelector"  data-backdrop="static" data-bind="disabled: {condition: !validateAddToSpace() || disableAddToSpace}, click: isAddToSpaceClicked() == false && addToSpaceClick" class="btn cc-button-secondary col-xs-12">
@@ -641,7 +641,7 @@
                        <!-- /ko -->
                     </div>
                     <!-- ko if: $data.user().loggedIn() -->
-                    <div class="col-xs-12 col-sm-6 replacementPartForLoggedInUser" style='padding:0px;padding-top:13px;'><a href="#replacementPartsSection" id="goToRepPartBucket" class="showReplacementParts" >See Replacement Parts</a></div>
+                    <div class="col-xs-12 col-sm-12 replacementPartForLoggedInUser" style='text-align:center;padding:0px;padding-top:13px;'><a href="#replacementPartsSection" id="goToRepPartBucket" class="showReplacementParts" >See Replacement Parts</a></div>
                     <!-- /ko -->
                     <div class="col-xs-12 col-sm-12 replaceMentPartsSection" data-bind="visible:(!$data.user().loggedIn() || $data.user().isUserSessionExpired())"><a href="#replacementPartsSection" id="goToRepPartBucket" class="showReplacementParts" >See Replacement Parts</a></div>
                  </div>

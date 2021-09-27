@@ -85,7 +85,7 @@
           <ul class="myaccount-listing">
         	 <li><a data-bind="ccLink:{route: '/login'}" class="myaccount-left-link" id="myaccount-link-profile" data-target="myaccount-profile">Profiles</a></li>
         	 <li><a data-bind="ccLink:{route: '/login'}" id="myaccount-link-orderhistory" data-target="CC-orderHistory">Order</a></li>
-        	 <li><a data-bind="ccLink:{route: '/login'}" id="myaccount-link-wishlist">Wishlist</a></li>
+        	 <li class="hide"><a data-bind="ccLink:{route: '/login'}" id="myaccount-link-wishlist">Wishlist</a></li>
         	 <li><a data-bind="ccLink:{route: '/login'}" class="myaccount-left-link" id="myaccount-link-addressbook" data-target="myaccount-addressbook">Address Book</a></li>
            </ul>
         </div>
