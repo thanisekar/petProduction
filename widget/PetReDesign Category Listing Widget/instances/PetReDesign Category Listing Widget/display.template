@@ -1,13 +1,5 @@
 <div id="categoryCLP">
-    <!-- ko with: category -->
-         <!-- ko if: longDescription !== null -->
-     <div class="row" id='maincategorydesc' >
-           <div class='col-md-12 col-lg-12 ' id='maincategoryWrapper'>
-               <p data-bind='html:$data.longDescription' class='main-category-desc-txt'></p>
-        </div>
-    </div>  
-    <!-- /ko --> 
-    <!-- /ko -->
+    
   <div class="row hidden-sm hidden-xs" id='childCategoriesListing' >   
         <div class='col-md-12 col-lg-12' id='childCategoriesWrapper'>
          <!-- ko foreach: categoryDataModal() --> 
@@ -68,5 +60,16 @@
         </div>
          <!-- /ko -->
     </div>
+    
+    <!-- ko with: category -->
+         <!-- ko if: longDescription !== null -->
+     <div class="row" id='maincategorydesc' >
+           <div class='col-md-12 col-lg-12 ' id='maincategoryWrapper'>
+               <p data-bind='html:$data.longDescription' class='main-category-desc-txt'></p>
+               <h6 class="show_hide" data-content="toggle-text">Read More</h6>
+        </div>
+    </div>  
+    <!-- /ko --> 
+    <!-- /ko -->
    
 </div>

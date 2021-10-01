@@ -6,42 +6,70 @@
             
         </div>
         <div class="col-sm-10 col-xs-12" id='CLPArticleContainer'>
-          <div class='article-content-container '>
-             <h2 class='heading'>Petmate Academy</h2>
-               <p class='education-content'>When your dog won't stop whining or your cat won't stop scratching, find the right answers that will put your mind (and your heart) at ease.</p>
-                
-                  <!-- ko foreach: koGetRouteCategoryPath -->
-                 <a data-bind='attr:{href:$data.route}, ccLink:$data'  class='redirectingLink'>More Articles
-                  <span  class='redirect-arrow-icon'></span>
+            
+            
+            <div class='academyWrap'>
+				<div class="col-sm-12 col-md-4 academyLogo"> <img data-bind="attr: {src: '/file/general/PetmateAcademyLogo.png'}" class="img-responsive"> </div>
+				<div class="col-sm-12 col-md-8 academyDescriptionContainer">
+					<div class="academyTitle">
+						<h3>Petmate Academy</h3></div>
+					<div class='academyDescription'>
+					    <p>Because we know pet-parenting is no walk in the park, Petmate strives to provide solutions for all pet owners, from the pet-parent novice to the seasoned veteran. With our 50 years worth of pet expertise, we take pride in being your go-to for providing the knowledge to keep your furry 
+					    (and feathered) friends happy and healthy. Check out these articles for tips and tricks to make loving and caring for your pet a little easier.</p>
+					</div>
+				</div>
+				<div>
+				      <!-- ko foreach: koGetRouteCategoryPath -->
+                 <a data-bind='attr:{href:$data.route}, ccLink:$data'  class='redirectingLink'>
+                     <span class="more-articles">More Articles</span>
+                     <span  class='redirect-arrow-icon'></span>
                  </a>
                   <!--/ko-->
-            
-           </div>
+				</div>
+			</div>
          
     
        <div class='col-sm-12 col-xs-12'>
+              <div class="row">
            <!-- ko foreach: koClpRelatedArticles -->
-           <div class='col-sm-4 col-xs-12'> 
-            <div class="article-products read-articles">
-                <a data-bind="ccLink: $data, attr: {href: $data.route}">
-		        <img data-bind="ccResizeImage: {
-                                  source: primaryFullImageURL,
-                                  xsmall: '500,300',
-                                  small: '500,300',
-                                  medium: '500,300',
-                                  large: '500,300',
-                                  alt: displayName,
-                                 title:displayName}" class="img-responsive" width="100%" >
-                               
-                                 <span data-bind="attr:{alt:displayName,title:displayName}" class="overlay"></span>
-			 	 </a>
-			 	 
-			 </div>	 
-			 	<div  class='display-name'>
-			 	     <a alt='displayName' data-bind="ccLink: $data, attr: {href: $data.route}, text:displayName" ></a>
-			 	     </div>
-              </div>
+           <div class="cc-product-item col-sm-4 col-xs-12">
+							<div class="product-item-wrapper">
+								<div class="row">
+									<div class="nopad read-articles"> 
+									<a class="brandDisplayName" data-bind="attr : { id: 'CC-product-detail-'+id, title: displayName }, ccLink: {route: $data.route}">
+                           <span data-bind="text: displayName" class="sr-only"></span>
+                           
+                           <img data-bind="ccResizeImage: {
+                                source: primaryFullImageURL, 
+                                xsmall: '300,270',
+                                small: '300,270',
+                                medium: '266,266',
+                                large: '266,266',
+                                alt: displayName,
+                                title:displayName,
+                                errorSrc: '/file/general/petmate-no-image.jpg',
+                                errorAlt: 'Missing category Image'}"  class="img-responsive" width="100%"/>
+                          <span data-bind="attr:{alt:displayName,title:displayName}" class="overlay"></span>
+                           </a>
+                           </div>
+									<div class="nopad descriptionContent">
+										<div data-bind="text:$parent.newMonthDisplay($data)" class="plp-date"></div>
+										<a data-bind="ccLink: {route: $data.route}">
+											<p class="product-title" data-bind="text: displayName, attr: {id: 'CC-product-list-displayName-'+id+'-'+$parentContext.$index()+$index()}"></p>
+										</a>
+										
+										<div class="wrap">
+										    <div class='description' data-bind="text: $parent.truncate($data.description)"></div>
+										
+											<span><a data-bind="ccLink: {route: $data.route}" class="read-article">
+                              Read Article
+                              </a></span> </div>
+									</div>
+								</div>
+							</div>
+						</div>
                <!--/ko-->
+               </div>
          </div>
       
     </div>

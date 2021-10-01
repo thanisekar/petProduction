@@ -43,6 +43,34 @@ define(
             
 		
 		},
+		truncate:function(string){
+                 var getString;
+        			   getString=string;
+        			   if(getString){
+        			        if (string.length > 155 )
+                           {
+                             getString= string.substring(0,155)+'...'; 
+                               return getString;
+                           }
+                           else{
+                                return getString;
+                           }
+        			   }
+                       
+             
+                 },
+		newMonthDisplay: function(data) {
+                if(data.startDateStr !==null && data.startDateStr !== "") {
+                    var startDateArr = data.startDateStr.split("-");
+                       var shortMon =["Jan","Feb", "Mar", "Apr","May" ,"Jun" ,"Jul" ,"Aug", "Sep" ,"Oct", "Nov","Dec"];
+                     
+                     var startDateFormat = shortMon[(parseInt(startDateArr[1])-1)]+" "+startDateArr[2]+", "+startDateArr[0];
+                    return startDateFormat;
+                } else {
+                    return "";
+                }
+                
+            },
 	   
 	   getArticleProducts:function(getArticleId){
 	       var getProductId='';
@@ -58,7 +86,7 @@ define(
 	        }
 	              
 	              
-	        i.authenticatedRequest("/ccstoreui/v1/products/?productIds="+ getProductId.toString() + "&fields=route,displayName,primaryFullImageURL,id", {}, function(data) {
+	        i.authenticatedRequest("/ccstoreui/v1/products/?productIds="+ getProductId.toString() + "&fields=route,displayName,primaryFullImageURL,id,description,startDateStr", {}, function(data) {
 	          //  console.log(data ,'----article data--');
                     //widget.updateData(e);
                     for(var j=0;j<data.length;j++){

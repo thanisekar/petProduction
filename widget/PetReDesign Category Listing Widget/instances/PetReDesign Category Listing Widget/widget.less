@@ -2,6 +2,33 @@
 
 /*custom styles*/
 #categoryCLP{
+    .show_hide {
+			font-size: 16px !important;
+			line-height: 1.4 !important;
+			border-radius: 6px !important;
+			color: #fff !important;
+			text-decoration: none;
+			text-transform: uppercase !important;
+			letter-spacing: .02rem;
+			padding-bottom: 22px;
+			cursor: pointer;
+			border: 1px solid transparent;
+			white-space: nowrap;
+			padding: 8px 12px;
+			font-size: 18px;
+			line-height: 2;
+			background-color: #2654bf;
+			white-space: normal;
+			color: #fff;
+			font-weight: normal;
+			border-radius: 4px;
+			text-transform: uppercase;
+			height: 42px;
+			font-weight: bold!important;
+			width: 180px;
+			margin: 0 auto;
+			text-align: center;
+		}
     #maincategorydesc{
             
         #maincategoryWrapper{
@@ -113,6 +140,43 @@
     }
     
 }
+
+//Iphone
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 767px) {
+    #maincategoryWrapper{
+        .main-category-desc-txt{
+            h1{
+                    font-size: 32px;
+            }
+            p{
+               font-size: 16px !important;
+               line-height: 26px !important;  
+            }
+        }
+    }
+}
+
+//Ipad
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px){
+      #maincategoryWrapper{
+        .main-category-desc-txt{
+            h1{
+                    font-size: 32px;
+            }
+            p{
+               font-size: 16px !important;
+               line-height: 26px !important;  
+            }
+        }
+    }
+}
+  
 
 @media only screen and(max-width:768px){
     #maincategoryWrapper{

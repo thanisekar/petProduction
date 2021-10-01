@@ -1,24 +1,78 @@
 #WIDGET_ID-WIDGET_INSTANCE_ID {
     #CLPArticleSection{
+        
+        .cc-product-item {
+			// margin-bottom:30px;
+			//padding: 20px 15px 0 15px;
+			.product-item-wrapper {
+				
+				padding: 20px 15px 0 15px;
+				&:hover {
+					box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+				}
+				.read-articles {
+					img {
+						width: 100%;
+					}
+					.overlay {
+						width: 100%!important;
+					}
+				}
+				.descriptionContent {
+					.product-title {
+						font-family: 'nunito', sans-serif;
+						font-weight: 700 !important;
+						word-spacing: normal !important;
+						letter-spacing: -0.02em !important;
+						line-height: 1.3em !important;
+						text-transform: none !important;
+						font-size: 22px !important;
+						text-align: center;
+						min-height: 50px;
+						margin-bottom: 5px!important;
+					}
+					.plp-date,
+					.read-article {
+						margin: 10px 0 5px 0;
+						font-size: 13px;
+						font-style: italic;
+						font-family: 'Roboto', sans-serif;
+						font-weight: bold;
+						color: #2654bf;
+					}
+					.wrap {
+						min-height: 130px;
+						.description {
+							font-family: 'nunito', sans-serif;
+							font-weight: 600;
+							display: inline;
+						}
+					}
+				}
+			}
+			@media (min-width:769px) {
+				//height: 480px;
+			}
+		}
             //padding: 3% 15px;
-        .article-content-container {
-               text-align: center;
-                padding: 10px 20%;
-            .heading{
-                font-size: 46px;
-                line-height: 1.3;
-                font-family:@font-family-nunito; 
-                font-weight: 400;
-                color: #000;
-                letter-spacing:-.2rem;
+        .academyWrap{
+
+            .academyLogo{
+                    padding: 25px !important;
+                img{
+                    margin:0 auto;
+                }
             }
-            .education-content{
-                        font-size: 16px;
-                        font-weight: 300;
-                        color: #000;
-                        font-family:@font-family-roboto; 
-                        margin: 20px 0px;
-                        line-height: 1.5;
+            .academyTitle{
+                h3{
+                    margin-top:0!important;
+                    padding: 0 15px;
+                }
+            }
+            .academyDescription{
+                p{
+                   font-family: 'Nunito',sans-serif!important; 
+                }
             }
         }
         #CLPArticleContainer{
@@ -49,17 +103,19 @@
               }
         }
         .redirectingLink{
-            position: absolute;
-            right: 5%;
-            //top: 20%;
-            color: #2654bf;
-            font-size: 13px;
+            font-weight: bold !important;
+            border-radius: 6px;
+            padding: 15px 19px !important;
+            text-align: center;
+            font-style: normal;
+            font-family: 'Roboto',sans-serif;
+            font-size: 14px !important;
             text-transform: uppercase;
-            font-family:@font-family-nunito;
-            font-weight: bold;
-            letter-spacing: 1.1px;
             text-decoration: none;
-            margin: -44px 0px;
+            display: flex;
+            line-height: 13px !important;
+            letter-spacing: -0.36px !important;
+            float: right;
             &:hover{
                 color:@link_hover;
             }
@@ -67,17 +123,117 @@
         
         .redirect-arrow-icon{
                 background-image: url('/file/general/ArrowBlueright_16x16.png');
-                    width: 16px;
-                    height: 16px;
-                    background-repeat: no-repeat;
-                    background-color: transparent;
-                    border: none;
-                    position: absolute;
-                    top: 3px;
-                    right: -26px;
+                top: 11px;
+                width: 16px;
+                height: 16px;
+               // position: absolute;
+                background-repeat: no-repeat;
+        }
+        .more-articles{
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #2654bf;
+            font-size: 13px;
+            font-family: 'Nunito',sans-serif;
+            letter-spacing: .3px;
+            padding-right: 6px;
+            box-shadow: none;
+            line-height: 15px;
         }
             
     }
+ 
+ //Iphone
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 767px) {
+    .cc-product-item {
+            .product-item-wrapper{
+                padding: 0;
+                .row{
+                    .descriptionContent{
+                       .product-title{
+                           font-size: 16px !important;
+                               min-height: 40px;
+                       } 
+                       .wrap{
+                           
+                       }
+                    }
+                }
+            }
+        }
+    .academyWrap{
+             float: none;
+            margin: 0 auto;
+            .academyLogo{
+                    padding: 25px !important;
+                img{
+                    margin:0 auto;
+                }
+            }
+            .academyTitle{
+                h3{
+                    font-size: 26px;
+                   margin-left: 15px;
+                    padding:0;
+                    text-align:center;
+                }
+            }
+             .about-content{
+                    font-size: 14px!important;
+                    line-height: 20px!important;
+                     text-align:center;
+                }
+         }
+}
+
+//Ipad
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px){
+     .cc-product-item {
+            .product-item-wrapper{
+                padding: 0;
+                .row{
+                    .descriptionContent{
+                       .product-title{
+                           font-size: 16px !important;
+                               min-height: 40px;
+                       } 
+                       .wrap{
+                           
+                       }
+                    }
+                }
+            }
+        }
+   .academyWrap{
+             float: none;
+            margin: 0 auto;
+            .academyLogo{
+                    padding: 25px !important;
+                img{
+                    margin:0 auto;
+                }
+            }
+            .academyTitle{
+                h3{
+                    font-size: 26px;
+                   margin-left: 15px;
+                    padding:0;
+                    text-align:center;
+                }
+            }
+             .about-content{
+                    font-size: 14px!important;
+                    line-height: 20px!important;
+                     text-align:center;
+                }
+         } 
+}
  
   @media only screen and (min-width:768px) and (max-width:768px){
          .article-products {

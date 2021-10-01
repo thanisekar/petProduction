@@ -15,6 +15,11 @@ function(ko, $, CCConstants, pubsub , storageApi,ccRestClient) {
     WIDGET_ID: 'categoryListing',
     onLoad: function(widget) {
          getWidget = widget;
+         $('body').delegate('.show_hide', 'click', function() {
+		             var txt = $(".main-category-desc-txt p:not(:first)").is(':visible') ? 'Read More' : 'Read Less';
+                        $(".show_hide").text(txt);
+                        $('.main-category-desc-txt p:not(:first)').slideToggle(300);
+                });
     },
      
     beforeAppear: function (page) {
@@ -23,6 +28,15 @@ function(ko, $, CCConstants, pubsub , storageApi,ccRestClient) {
         childLevel = getWidget.category().childCategories;
         
         getWidget.categoryData();
+        setTimeout(function(){
+            if($('.main-category-desc-txt p').length > 1){
+		    $(".main-category-desc-txt p:not(:first)").css("display","none");
+		    $('.show_hide').show();
+    		}else{
+    		    $(".main-category-desc-txt p:not(:first)").css("display","none");
+    		    $('.show_hide').hide();
+    		}
+        },500)
         
      },
      categoryData : function(){
