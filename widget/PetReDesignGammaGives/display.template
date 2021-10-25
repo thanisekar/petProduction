@@ -15,7 +15,7 @@
       <img style="width:100%;height:auto;" src="/file/general/Gamma2Gives_MainImage_HERO_SPOTLIGHT_MOBILE.png" alt="Sign up your local Pet hero for Gamma2Gives" title="Gamma2Gives Steps" class="img-responsive visible-xs">
       <a data-bind="ccLink : {route : 'TermsAndAgreements'}" class="main" style="position: absolute;  top: 44%; width: 3.5%; height: 5%;display:inline-block;cursor:pointer;"><span class="tooltiptext"></span></a>
    </div>
-   <div class="section2">
+   <div class="section2 hide">
       <img src="/file/general/LetsGetStarted_Heading.png" alt="" title="" class="img-responsive getStarted" data-toggle="modal" data-target="#ModalCarousel">
       <div class="container text-center">
          <div class="modal fade" data-backdrop="static" id="ModalCarousel" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
@@ -322,7 +322,7 @@
        </div>
    </div>
    <hr>
-   <div class="section5">
+   <div class="section5 hide">
         <img src="/file/general/GiveBackBig_Header.png" alt="" title="" class="img-responsive hidden-xs" data-toggle="modal" data-target="#ModalCarousel">
         <img src="/file/general/GiveBackBigHeader_mobile.png" alt="" title="" class="img-responsive visible-xs" data-toggle="modal" data-target="#ModalCarousel">
         <div class="right">

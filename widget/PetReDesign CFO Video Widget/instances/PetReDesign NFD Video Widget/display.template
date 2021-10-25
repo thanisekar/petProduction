@@ -14,7 +14,7 @@
    </div>
    <div class="container">
       <div class="row" style="margin-top:10px;">
-         <div class="section1">
+         <div class="section1 hide">
             <!-- <div class="col-md-1">
                </div>-->
             <div class="row">
@@ -35,19 +35,7 @@
                </div>
             </div>
          </div>
-         <div class="section2">
-            <img alt="Win Grand Prize" title="Win Grand Prize" src="/file/general/NFD_Champ2.png" class="img-responsive hidden-xs">
-            <img alt="Win Grand Prize" title="Win Grand Prize" src="/file/general/NFD_Champ_Mobile.png" class="img-responsive visible-xs">
-            <div class="caption1">
-                <div class="more">
-               <p class="p1">A $500 PERSONALIZED SHOPPING EXPERIENCE ON PETMATE.COM</p>
-               </div>
-            </div>
-            <div class="caption2">
-               <h2 class="hidden-xs">WIN THE GRAND PRIZE.</h2>
-               <p class="p2"><b>Even after the parties are over, you can still win big.</b><br>The Chuckit! Champ Shopping Spree is a personalized shopping experience on Petmate.com valued at $500. All you have to do to win is post and share how you celebrate National Fetch Day using <span class="yellow">#NationalFetchDay</span>. The more times you post, the better your chances of winning. We encourage you to post your DecoLauncher creations, your 2021 Party Ball pics, just about anything you can think of that shows the world how you celebrate The Best Dog Party of the Year.</p>
-            </div>
-         </div>
+         
          <div class="section3">
             <div class="row">
                <div class="col-sm-4">
@@ -669,6 +657,22 @@
                      </tbody>
                   </table>
                </div>
+            </div>
+         </div>
+          <a data-bind="ccLink:{route:'/ChuckitxKatherine'}"><img alt="Win Grand Prize" title="Win Grand Prize" src="/file/general/CI_Katherine-S-ProductPage_Banner_1613x511.jpg" class="img-responsive katherine hidden-xs hide"></a>
+          <a data-bind="ccLink:{route:'/ChuckitxKatherine'}"><img alt="Win Grand Prize" title="Win Grand Prize" src="/file/general/Oct-2021_CI_Katherine-S_Social_1080x1080.jpg" class="img-responsive katherine visible-xs hide"></a>
+          <div class="section2">
+              
+            <img alt="Win Grand Prize" title="Win Grand Prize" src="/file/general/NFD_Champ2.png" class="img-responsive hidden-xs">
+            <img alt="Win Grand Prize" title="Win Grand Prize" src="/file/general/NFD_Champ_Mobile.png" class="img-responsive visible-xs">
+            <div class="caption1">
+                <div class="more">
+               <p class="p1">A $500 PERSONALIZED SHOPPING EXPERIENCE ON PETMATE.COM</p>
+               </div>
+            </div>
+            <div class="caption2">
+               <h2 class="hidden-xs">WIN THE GRAND PRIZE.</h2>
+               <p class="p2"><b>Even after the parties are over, you can still win big.</b><br>The Chuckit! Champ Shopping Spree is a personalized shopping experience on Petmate.com valued at $500. All you have to do to win is post and share how you celebrate National Fetch Day using <span class="yellow">#NationalFetchDay</span>. The more times you post, the better your chances of winning. We encourage you to post your DecoLauncher creations, your 2021 Party Ball pics, just about anything you can think of that shows the world how you celebrate The Best Dog Party of the Year.</p>
             </div>
          </div>
          <div class="section5">
