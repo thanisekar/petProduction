@@ -663,17 +663,6 @@
      </div>
   </div>
   <!--/ko-->
-   <!-- ko if : product().brand() === "Chuckit" -->
-       <!-- ko ifnot : ($data.koproductSkuId() == '60181') || ($data.koproductSkuId() == '60182') -->
-       <div class="container" >
-         <div class='col-xs-12 nopad categoryImageWidget'>
-            <a data-bind="attr: {href: '/ChuckitxKatherine',target: '_blank'}">
-            <img  alt="Katherine" title="Katherine" src="/file/general/CI_Katherine-S-ProductPage_Banner_1088x254.jpg" class="img-responsive">
-            </a>		
-         </div>
-      </div>
-      <!--/ko-->
-      <!--/ko-->
   <!-- ko if : product().brand() === "WONDER" -->
   <div class="container" >
      <div class='col-xs-12 nopad categoryImageWidget'>
