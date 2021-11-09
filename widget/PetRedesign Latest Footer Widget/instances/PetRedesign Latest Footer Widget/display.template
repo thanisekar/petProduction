@@ -43,6 +43,7 @@
     						  <li class='footer-menu-item'><a data-bind="ccLink: 'storelocator'"  >Where To Buy</a></li>
     						  <li class='footer-menu-item'><a data-bind="ccLink: 'returns'">Return Policy</a></li>
     						  <li class='footer-menu-item'><a data-bind="ccLink: 'shipping'">Shipping Policy</a></li>
+							  <li class='footer-menu-item'><a  data-bind="ccLink: 'mappolicy'" >Map Policy</a></li>
     						  <li class='footer-menu-item'><a data-bind="ccLink : {route : '/internationalShipping'}">International Shipping</a></li>
     						  <li class='footer-menu-item'><a data-bind="ccLink: 'faq'" >FAQS</a></li>
     						  <li class='footer-menu-item'><a data-bind="ccLink: 'SiteMap'" >Site Map</a></li>
@@ -139,6 +140,7 @@
             						  <li class='panel-menu-item'><a data-bind="ccLink: 'storelocator'" >Where To Buy</a></li>
             						  <li class='panel-menu-item'><a data-bind="ccLink: 'returns'"  >Return Policy</a></li>
             						  <li class='panel-menu-item'><a data-bind="ccLink: 'shipping'" >Shipping Policy</a></li>
+									  <li class='panel-menu-item'><a  data-bind="ccLink: 'mappolicy'" >Map Policy</a></li>
             						  <li class='panel-menu-item'><a data-bind="ccLink : {route : '/internationalShipping'}">International Shipping</a></li>
             						  <li class='panel-menu-item'><a data-bind="ccLink: 'faq'"  >FAQS</a></li>
             				     </ul>

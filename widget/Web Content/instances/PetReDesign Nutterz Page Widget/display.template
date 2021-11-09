@@ -1,0 +1,30 @@
+<div id="nutterz">
+    <div class="section1">
+        <img src="/file/general/HC_NutterZ-LandingPage_TopBanner_1903x723.png" alt="" title="" class="img-responsive">
+         <a data-bind="ccLink : {route : '/category/brand-healthychews'}"><img src="/file/general/HC_NutterZ-LandingPage_OurProducts_1903x847.png" alt="" title="" class="img-responsive"></a>
+    </div>
+    <div class="col-sm-9 nutterzCenter">
+        <div class='videoDisplay'>
+                             <div class=''>
+                              <div class='row' id='videoSectionPlay'>
+                                    <div class='col-xs-12 nopad' id="CC-Video">
+                                           <div class="" id="productVideo">
+                                               
+                                               <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/ZeffqaWet1w'}">
+                                          
+                                                <img data-bind="attr : {src : '/file/general/HC_NutterZ-LandingPage_Video-FPO_1903x888.png'}" class="img-responsive video-banner" src="">
+                                              
+                                                <!--<div class="play-icon"><img src="/file/general/playbutton_32x32.svg" /></div>-->
+                                                
+                                               </a>
+                                             </div>
+                                    </div>
+                                </div>
+                             </div>
+                        </div> 
+    </div>
+    <div class="section2">
+        <img src="/file/general/HC_NutterZ-LandingPage_Process_1903x573.png" alt="" title="" class="img-responsive">
+         <img src="/file/general/HC_NutterZ-LandingPage_Features_1903x1488.png" alt="" title="" class="img-responsive">
+    </div>
+</div>

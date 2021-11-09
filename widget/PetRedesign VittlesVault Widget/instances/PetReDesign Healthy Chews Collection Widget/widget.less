@@ -1,0 +1,426 @@
+#WIDGET_ID-WIDGET_INSTANCE_ID {
+    
+	#healthyChews {
+		background: #F0F0F0;
+		    overflow-y: hidden;
+			sup {
+					top: -1em!important;
+					font-size: 66%!important;
+				}
+		.section1 {}
+		.section2 {
+			.head {
+				font-size: 35px;
+				text-align: center;
+				font-weight: 600;
+			}
+			.head-para {
+				font-size: 14px!important;
+				text-align: center;
+				margin: 0 auto;
+				width: 60%;
+				line-height: 21px!important;
+				margin-bottom: 40px;
+				font-family: 'Nunito', sans-serif;
+			}
+			.tab-center {
+				float: none;
+				margin: 0 auto;
+			}
+			#myTab {
+				border: none;
+				.active {
+					a {
+						background: #00C1DE!important;
+						font-weight: bold;
+					}
+				}
+				li {
+					a {
+						cursor: pointer;
+						border: none;
+						color: #fff;
+						padding: 18px 79px;
+						margin: 0 8px;
+						background: #028EAA;
+						-moz-border-radius: 0px;
+						-webkit-border-radius: 12px 12px 0px 0px;
+						border-radius: 12px 12px 0px 0px;
+						font-size: 18px;
+					}
+				}
+			}
+			.tab-content {
+				.active {
+					margin: 0;
+				}
+				.tab-pane {
+					h3 {
+						font-size: 35px;
+						text-align: center;
+						font-weight: 600;
+					}
+					img {
+						margin: 0 auto;
+					}
+					table {
+						max-width: 70%;
+						margin: 0 auto;
+						border-collapse: separate;
+                        border-spacing: 0 2em;
+						tbody {
+							tr {
+							    margin-bottom:20px;
+								td {
+									.star {
+										.checked {
+											color: #F4DB6C;
+											font-size: 20px;
+											margin: 0 2px;
+										}
+									}
+									.reviewContents {
+										p {
+											text-align: left;
+											/* background: #000; */
+											margin-bottom: 0;
+											margin-top: 10px;
+											border-radius: 20px;
+											/* color: #fff !important; */
+											font-style: italic;
+											line-height: 22px!important;
+											font-size: 17px!important;
+										}
+									}
+									img {
+										min-width: 200px;
+										margin-right: 20px;
+									}
+								}
+							}
+						}
+					}
+					.videoDisplay {
+						#productVideo {
+							position: relative;
+							.video-banner {
+								&:hover {
+									cursor: pointer;
+								}
+							}
+							.play-icon {
+								position: absolute;
+								top: 50%;
+								right: 50%;
+							}
+						}
+					}
+				}
+			}
+			.stick{
+			  position: relative;
+			  img{
+			           max-width: 550px;
+                    top: -240px;
+                    left: -5%;
+                    position: absolute;
+			  }
+			}
+		}
+		.section3 {
+                width: 85%;
+                background: #F0F0F0;
+                margin: 0 auto;
+                float: none;
+                    margin-top: 10%;
+			.head {
+				font-size: 35px;
+				text-align: center;
+				font-weight: 600;
+				margin:0;
+				    margin: 30px 0;
+			}
+			.cc-product-item {
+				padding-left: 13px;
+				padding-right: 13px;
+				overflow: hidden;
+				background: #F0F0F0;
+				vertical-align: top;
+				.product-item-wrapper {
+					height: 411px;
+					//border: 1px solid #e0e0e0;
+					padding: 10px;
+					margin-bottom: 30px;
+					&:hover {
+						box-shadow: 5px 5px 10px #888;
+					}
+					.detailsContent{
+					    margin-top: 25px;
+					}
+				}
+				.cc-item-detail {
+					height: 253px;
+					text-align: center;
+					a {
+						/*display: inline-block;*/
+						/*  height:100%;*/
+						img {
+							// min-height:237px;
+						}
+					}
+					a:focus {
+						//  outline: 1px solid -webkit-focus-ring-color;
+					}
+				}
+				.cc-item-title {
+					height: 47px;
+					display: inline-block;
+					overflow: hidden;
+					width: 100%;
+					color: @color_natrualGrey;
+					font-weight: Bold;
+					text-align: center;
+					a:focus {
+						outline: none;
+						text-decoration: underline !important;
+						//font-weight: 600 !important;
+					}
+					p {
+						text-align: center;
+						font-size: 15px!important;
+						line-height: 1.6 !important;
+						text-transform: capitalize;
+						font-family: @font-family-roboto;
+						font-weight: 400 !important;
+						color: @color_natrualGrey !important;
+						letter-spacing: 0.45px;
+						margin: 0px !important;
+						&:hover {
+							text-decoration: underline !important;
+							// font-weight: 600 !important;
+						}
+					}
+				}
+				.cc-item-rating {
+					text-align: center;
+				}
+				.cc-item-promo-text {
+					.promo-desktop {
+						position: absolute;
+						right: 0px;
+						top: 0px;
+						z-index: 100;
+						text-transform: uppercase;
+						background-color: #2753bf;
+						color: #fff;
+						padding: 4px 12px;
+						border-radius: 2px;
+						font-size: 10px;
+						line-height: 1.5;
+						font-weight: bold;
+						text-align: center;
+						font-family: 'Nunito', sans-serif;
+					}
+					.free-shipping-desktop {
+						position: absolute;
+						top: 0px;
+						left: 0;
+						z-index: 100;
+						text-transform: uppercase;
+						background-color: #2753bf;
+						color: #fff;
+						padding: 4px 12px;
+						border-radius: 2px;
+						font-size: 10px;
+						line-height: 1.5;
+						font-weight: bold;
+						text-align: center;
+						font-family: 'Nunito', sans-serif;
+					}
+				}
+				.cc-item-price {
+					height: 6%;
+					margin-bottom: 0px;
+					color: #000;
+					font-weight: 600;
+					text-align: center;
+					font-size: 14px;
+					font-family: @font-family-roboto;
+					margin-top: 5px;
+				}
+			}
+			.stick2{
+			  position: relative;
+			  img{
+			          max-width: 500px;
+                    top: -180px;
+                    left: -44%;
+                    position: absolute;
+			  }
+			}
+		}
+		
+		//Iphone
+
+        @media only screen
+        and (min-device-width : 375px)
+        and (max-device-width : 667px) {
+            
+            .section1{
+                
+            }
+            .section2{
+                padding: 0 10px;
+                .head{
+                        font-size: 22px;
+                }
+                .head-para{
+                    line-height: 18px !important;
+                    font-size: 12px !important;
+                }
+                #myTab{
+                    li{
+                        float: left;
+                        a{
+                            padding: 10px 13px;
+                            margin: 0 5px;
+                            font-size: 12px;
+                           border-radius: 3px 3px 0 0;
+                        }
+                    }
+                }
+                .tab-content{
+                    .tab-pane{
+                        h3{
+                            font-size: 22px;
+                        }
+                        table{
+                            max-width: 85%;
+                            tbody{
+                                tr{
+                                    td{
+                                        .star{
+                                            .checked{
+                                                    font-size: 14px;
+                                            }
+                                        }
+                                        .reviewContents {
+                                            p{
+                                                line-height: 16px !important;
+                                                 font-size: 12px !important;
+                                                 margin-bottom: 15px;
+                                            }
+                                        }
+                                        img{
+                                            min-width: 85px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .section3{
+                .head{
+                    font-size: 22px;
+                        margin: 20px 0;
+                }
+                .cc-product-item{
+                    .product-item-wrapper{
+                            height: 155px;
+                            .detailsContent{
+					           margin-top: 0px;
+					     }
+                    }
+                    .cc-item-detail{
+                        height: 135px;
+                    }
+                }
+            }
+        
+        }
+        
+        //Ipad
+        
+        @media only screen
+        and (min-device-width : 768px)
+        and (max-device-width : 1024px){
+            .section1{
+                
+            }
+            .section2{
+                .head{
+                        font-size: 26px;
+                }
+                .head-para{
+                    line-height: 18px !important;
+                    font-size: 12px !important;
+                }
+                #myTab{
+                    li{
+                        a{
+                            padding: 10px;
+                            margin: 0 5px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .tab-content{
+                    .tab-pane{
+                        h3{
+                            font-size: 22px;
+                        }
+                        table{
+                            max-width: 85%;
+                            tbody{
+                                tr{
+                                    td{
+                                        .star{
+                                            .checked{
+                                                    font-size: 14px;
+                                            }
+                                        }
+                                        .reviewContents {
+                                            p{
+                                                line-height: 16px !important;
+                                                 font-size: 12px !important;
+                                            }
+                                        }
+                                        img{
+                                            min-width: 150px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .section3{
+                .head{
+                    font-size: 28px;
+                        margin: 20px 0;
+                }
+                .cc-product-item{
+                    .product-item-wrapper{
+                            height: 270px;
+                             .detailsContent{
+					           margin-top: 0px;
+					     }
+                    }
+                    .cc-item-detail{
+                        height: 135px;
+                    }
+                }
+            }
+        }
+		
+		
+		
+		
+		
+		
+	}
+
+}

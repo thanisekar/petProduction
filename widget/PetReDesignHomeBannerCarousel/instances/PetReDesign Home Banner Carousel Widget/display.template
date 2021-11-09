@@ -5,7 +5,7 @@
                           <ol class="carousel-indicators">
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                           <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
 							<li data-target="#carousel-example-generic" data-slide-to="3"></li>
                           </ol>
                         
@@ -14,21 +14,21 @@
                           <!-- ko if : homeBanner1.src() != '' -->
                             <div class="item active">
                                <a data-bind="ccLink: {route: homeBannerLink1()}">
-                              <img data-bind="attr:{src: homeBanner1.src()}" alt="Shop NEW Chuckit! Crunch Balls" title="Shop NEW Chuckit! Crunch Balls">
+                              <img data-bind="attr:{src: homeBanner1.src()}" alt="Click now to shop our brands" title="Shop Our Brands">
                               </a>
                             </div>
                             <!-- /ko -->
                             <!-- ko if : homeBanner2.src() != '' -->
                             <div class="item">
                                 <a data-bind="ccLink: {route: homeBannerLink2()}">
-                              <img data-bind="attr:{src: homeBanner2.src()}" alt="A web banner containing a dog laying on a outdoor La-z-boy dog bed" title="Shop La-Z-Boy Outdoor Dog Bedding">
+                              <img data-bind="attr:{src: homeBanner2.src()}" alt="Click now to shop Gamma2 Nano Automated Pet Feeder" title="Nano Automated Pet Feeder - Shop Now">
                             </a>
                             </div>
                              <!-- /ko -->
                               <!-- ko if : homeBanner3.src() != '' -->
                             <div class="item">
                               <a data-bind="ccLink: {route: homeBannerLink3()}">
-                            <img data-bind="attr:{src: homeBanner3.src()}" alt="A web banner containing a cat resting on a SnooZZy Round Cat Bed" title="Shop Cat Beds">
+                            <img data-bind="attr:{src: homeBanner3.src()}" alt="National Fetch Day is Oct. 16th" title="Chuckit! National Fetch Day">
                           </a>
                             </div>
                              <!-- /ko -->

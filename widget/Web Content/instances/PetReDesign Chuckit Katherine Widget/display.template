@@ -1,0 +1,41 @@
+<div id="katherine">
+    <img alt="Limited Edition Launcher Set" title="Limited Edition Launcher Set" class="img-responsive" src="/file/general/CI_Katherine-S-LP_Header.jpg">
+    <div class="background">
+        <img alt="Save Them All" title="Save Them All" class="img-responsive hidden-xs hidden-sm" src="/file/general/CI_Katherine-S-LP_BFAS_1903x486.png">
+         <img alt="Save Them All" title="Save Them All" class="img-responsive visible-xs visible-sm" src="/file/general/BestFriends.jpg">
+        <div class="caption1">
+                  <p class="p1" alt="Fan Fare" title="Fan Fare">Best Friends Animal Society is the leading animal welfare organization working to end the killing of dogs and cats in America's shelters by 2025. Founded in 1984, Best Friends is a pioneer in the no-kill movement and has helped reduce the number of animals killed in shelters from an estimated 17 million per year to around 347,000. Best Friends runs livesaving programs all across the country, as well as the nation's largest no-kill sanctuary. Working collaboratively with a network of more than 3,300 animal welfare and shelter partners, and community members nationwide, Best Friends is working to Save Them All&reg;. For more information, visit <b><a href="https://bestfriends.org/" target="_blank">bestfriends.org</a></b></p>
+               </div>
+    </div>
+    
+    <div class="reducer col-sm-9 col-xs-12 nopad">
+    <p class="cause">The Chuckit!<sup>®</sup> X Katherine Schwarzenegger Limited Edition Launcher Set is an exclusive collaboration between Chuckit!<sup>®</sup> and Katherine Schwarzenegger to benefit Katherine’s favorite cause, Best Friends Animal Society. Pre-order through October 31st for delivery in 2022. All proceeds benefit* <br><strong> Best Friends. Save Them All.</strong></p>
+    <div class="productSection">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="wrap">
+                    <a data-bind="ccLink:{route:'/chuckit!-x-katherine-schwarzenegger-limited-edition-launcher-set/product/60181'}">
+                        <img alt="Launcher Set" title="Launcher Set" class="img-responsive prod-image" src="/file/general/Chuckit_KatherineS_Limited_Edition_Launcher_Set.jpg">
+                        <p>Chuckit!<sup>®</sup> X Katherine Schwarzenegger Launcher Set</p>
+                    </a>
+                    <p class="price">$40.00</p>
+                    <a data-bind="ccLink:{route:'/chuckit!-x-katherine-schwarzenegger-limited-edition-launcher-set/product/60181'}"> <img alt="Pre Order Now" title="Pre Order Now" class="img-responsive preOrder" src="/file/general/CI_Katherine-S-LP_PreOrder-Button_smaller.jpg">  </a>
+                </div>
+            </div>
+            <hr class="visible-xs">
+            <div class="col-sm-6">
+                <div class="wrap">
+                    <a data-bind="ccLink:{route:'/chuckit!-x-katherine-schwarzenegger-limited-edition-fetch-favorites-gift-set/product/60182'}">
+                        <img alt="Launcher Set" title="Launcher Set" class="img-responsive prod-image" src="/file/general/Chuckit_Fetch_Favorites_Gift_Set_NFD.jpg">
+                        <p>Chuckit!<sup>®</sup> X Katherine Schwarzenegger<br> Gift Set</p>
+                    </a>
+                    <p class="price">$125.00</p>
+                    <a data-bind="ccLink:{route:'/chuckit!-x-katherine-schwarzenegger-limited-edition-fetch-favorites-gift-set/product/60182'}"> <img alt="Pre Order Now" title="Pre Order Now" class="img-responsive preOrder" src="/file/general/CI_Katherine-S-LP_PreOrder-Button_smaller.jpg">  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <p class="cause2">*Proceeds from each promotional item purchased (at least 10% of retail purchase price), will be donated to Best Friends Animal Society (BFAS) with a minimum donation of $2,500. Purchases available for a limited time only – through October 31, 2021. Promotion not available for purchase in AL, HI, NH, MA, MI, and SC. Promotional Offers not valid on Chuckit! X Katherine Schwarzenegger products.</p>
+    </div>
+     <a data-bind="ccLink:{route:'/nationalfetchday'}"><img alt="Best Dog Party of The Year" title="Best Dog Party of The Year" class="img-responsive" src="/file/general/CI_Katherine-S-LP_Footer_LearnMoreButton.jpg"></a>
+</div>

@@ -725,15 +725,15 @@
                                                         </li>
                                                      
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/litter-box-liners'}" >liners</a>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/litter-box-liners'}" >litter box liners</a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/cat-litter-boxes-pans'}">litter boxes</a>
                                                         </li>
                                                      
                                                         <li>
                                                           <a class="Level3 " data-bind="ccLink:{route:'/category/litter-catcher-mats'}" >litter mats</a>
-                                                        </li>
-                                                     
-                                                        <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/cat-litter-boxes-pans'}">litter pans</a>
                                                         </li>
                                                      
                                                         <li>
@@ -1012,28 +1012,13 @@
               </ul>
             </li>
         <li class="dropdown mega-menu-fullwidth menu-item cc-desktop-dropdown">
-             <a class="dropdown-toggle Level1" data-bind="ccLink:{route:'/category/articles'}"><span class="greyColor">Education</span></a>
-          </li>
-        <li class="dropdown mega-menu-fullwidth menu-item cc-desktop-dropdown">
               <a class="dropdown-toggle Level1" data-bind="ccLink:{route:'/category/sale'}"  title="Sale Items">
                 <span  class="salePage greyColor">Sale Items</span> 
               </a>
         </li>
         <li class="dropdown mega-menu-fullwidth menu-item cc-desktop-dropdown">
-          <a class="dropdown-toggle Level1" data-bind="ccLink:{route:'/adoptapet'}"  title="Adopt A Pet">
-            <span  class="Insuracne greyColor">Adopt A Pet</span> 
-          </a>
-        </li>
-       <li class="dropdown mega-menu-fullwidth menu-item cc-desktop-dropdown">
-          <a class="dropdown-toggle Level1" data-bind="ccLink:{route:'/careers'}"  title="Careers">
-            <span  class="Insuracne greyColor">Careers</span> 
-          </a>
-        </li>
-        <li class="dropdown mega-menu-fullwidth menu-item cc-desktop-dropdown">
-          <a class="dropdown-toggle Level1" data-bind="ccLink:{route:'/SignupAndSave'}"   title="SignUp">
-            <span  class="Insuracne greyColor">Sign Up & Save</span> 
-          </a>
-        </li>
+          <a class="dropdown-toggle Level1" data-bind="ccLink:{route:'/category/articles'}"><span class="greyColor">Education</span></a>
+       </li>
 
        </ul>
         
@@ -1934,15 +1919,15 @@
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/litter-box-liners'}" >liners</a> </li>
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/litter-box-liners'}" >litter box liners</a> </li>
+                                                </ul>
+                                                
+                                                <ul class="sub-menu third-level">
+                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/cat-litter-boxes-pans'}" >litter boxes</a> </li>
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">
                                                     <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/litter-catcher-mats'}" >litter mats</a> </li>
-                                                </ul>
-                                                
-                                                <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/cat-litter-boxes-pans'}" >litter pans</a> </li>
                                                 </ul>
                                                 
                                                 <ul class="sub-menu third-level">
@@ -2177,15 +2162,6 @@
                                 </li>
                         <li class="mobile-menu-list-noarrow">
         					       <a href="/category/articles">Education</a>
-        					     </li>
-        					     <li class="mobile-menu-list-noarrow">
-        					       <a href="/careers">Careers</a>
-        					     </li>
-        					     <li class="mobile-menu-list-noarrow">
-        					       <a href="/adoptapet">Adopt A Pet</a>
-        					     </li>
-        					     <li class="mobile-menu-list-noarrow">
-        					       <a href="/SignupAndSave">Sign Up & Save</a>
         					     </li>
         					      <!-- ko with: user -->
         					   <!-- ko if:loggedInUserName() && (loggedIn() && !isUserSessionExpired())--><!-- /ko -->

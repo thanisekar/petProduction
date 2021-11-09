@@ -76,13 +76,13 @@ define(
 	       var getProductId='';
 	       
 	       if(getArticleId=='dogarticle'){
-	           getProductId='a90055,a90064,a90073';
+	           getProductId='a90182,a90166,a90111';
 	        }
 	        else if(getArticleId=='catarticle'){
-	            getProductId='a90087,a90083,a90074';
+	            getProductId='a90177,a90168,a90069';
 	        }
 	        else if(getArticleId=='birdarticle'){
-	            getProductId='a90082,a90007,a90077';
+	            getProductId='a90153,a90082,a90062';
 	        }
 	              
 	              

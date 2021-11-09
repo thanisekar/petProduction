@@ -101,9 +101,9 @@
                        </span>
                        <a id="cc-prodDetailsAddToCart" type="button" data-bind="disabled: {condition: !validateAddToCart() || isAddToCartClicked}, event: { click: function(event) { handleAddToCart(event) } }" class="input-group-btn addCart">
                           <div  id="CC-prodDetails-addToCart" data-bind="inTabFlow:(validateAddToCart())" >
-                             <button  class="btn btn-default btn-number cc-button-primary">
+                              <button  class="btn btn-default btn-number cc-button-primary addCartBtn">
                                 <!--  <span class="glyphicon glyphicon-cart-btn"></span> Add to cart-->
-                                <span class="glyphicon glyphicon-cart-btn" data-bind="css: {'glyphicon-ok': validateAddToCart() || !isAddToCartClicked}"></span> Add to cart
+                                 <span class="glyphicon glyphicon-cart-btn hide" data-bind="css: {'glyphicon-ok': validateAddToCart() || !isAddToCartClicked}"></span> Add to Cart
                              </button>
                           </div>
                        </a>
@@ -527,9 +527,9 @@
                           </span>
                           <a  id="cc-prodDetailsAddToCart" type="button" data-bind="disabled: {condition: !validateAddToCart() || isAddToCartClicked},event: { click: function(event) { handleAddToCart(event) } }" class="input-group-btn addCart">
                              <div id="CC-prodDetails-addToCart" data-bind="inTabFlow:(validateAddToCart())">
-                                <button class="btn btn-default btn-number cc-button-primary" tabindex="0">
+                                 <button class="btn btn-default btn-number cc-button-primary addCartBtn" tabindex="0">
                                    <!-- <span class="glyphicon glyphicon-cart-btn"></span> Add to cart-->
-                                   <span class="glyphicon glyphicon-cart-btn glyphicon-ok" data-bind="css: {'glyphicon-ok': validateAddToCart() || !isAddToCartClicked}"></span> Add to cart
+                                    <span class="glyphicon glyphicon-cart-btn glyphicon-ok hide" data-bind="css: {'glyphicon-ok': validateAddToCart() || !isAddToCartClicked}"></span> Add to Cart
                                 </button>
                              </div>
                           </a>
@@ -748,10 +748,10 @@
                  <!-- ko if: koProductSpecTitle -->
                  <!-- ko if: koproductDimension-->
                  <div class='col-xs-12 dimensionDetails nopad'  >
-                    <div class='col-xs-6 nopad'>
+                    <div class='col-xs-4 nopad'>
                        <div  class='pet-dimensionValue'>Dimensions</div>
                     </div>
-                    <div class='col-xs-6 nopad'>
+                    <div class='col-xs-8 nopad'>
                        <div  class='pet-dimensionValue' data-bind="text: koproductDimension"></div>
                     </div>
                  </div>
@@ -909,8 +909,8 @@
                              </span>
                              <a type="button"  data-bind="enable: stockStatus, click: function(data, event){$parent.handleReplacementAddToCart(data, replacementProductDetail.id())}" class="input-group-btn addCart">
                                 <div  id="CC-prodDetails-addToCart" >
-                                   <button   class="btn btn-default btn-number cc-button-primary">
-                                   <span class="glyphicon glyphicon-cart-btn"></span> Add to cart
+                                    <button   class="btn btn-default btn-number cc-button-primary addCartBtn">
+                                    <span class="glyphicon glyphicon-cart-btn hide"></span> Add to Cart
                                    </button>
                                 </div>
                              </a>

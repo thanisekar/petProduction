@@ -1,0 +1,154 @@
+<div id="healthyChews">
+   <div class="section1">
+       <div class="container">
+      <img src="/file/general/HealthyChews_LandingPageBanner_Desktop.jpg"  class="img-responsive">
+      </div>
+   </div>
+   <div class="section2">
+      <div class="row">
+         <div class="col-sm-8 col-xs-12 nopad tab-center">
+            <h3 class="head">Peace of Mind at Snack Time</h3>
+            <p class="head-para">With patented SAFE-HIDE&reg; technology, WonderSnaXX&reg; provides healthy & safe treats that engage pets and give pet parents peace of mind.</p>
+            <ul id="myTab" class="nav nav-tabs nav-justified">
+               <li class="active"><a style="margin-left:0" href=".safe" title="safe" data-toggle="tab">SAFE-HIDE<sup>&#174;</sup></a></li>
+               <li class=""><a href=".size" title="size" data-toggle="tab">Size Chart</a></li>
+               <li class=""><a href=".review" title="review" data-toggle="tab">Reviews</a></li>
+               <li class=""><a style="margin-right:0" href=".media" title="media" data-toggle="tab">Media</a></li>
+            </ul>
+            <div class="tab-content">
+               <div class="tab-pane safe active in fade">
+                    <h3>What Makes SAFE-HIDE<sup>&#174;</sup> Special?</h3>
+                  <img src="/file/general/safe-banner.jpg"  class="img-responsive">
+               </div>
+               <div class="tab-pane size in fade">
+                  <img src="/file/general/test-treat.jpg"  class="img-responsive">
+               </div>
+               <div class="tab-pane review in fade">
+                   <h3>Hear it from pet parents</h3>
+                  <table>
+                      <tbody>
+                          <tr>
+                              <td>
+                                  <img src="/file/general/HCReview1.png"  class="img-responsive">
+                              </td>
+                              <td style="padding-left:15px;">
+                                  <div class="star">
+                                      <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                  </div>
+                                  <div class="reviewContents">
+                                      <p>Even though I can't talk to my fur baby, I could definitely tell that this was a tasteful treat for her!! She came running back for another after she quickly finished the first one. The peanut butter smell also added a lot of appeal to her.</p>
+                                  </div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <img src="/file/general/HCReview2.png"  class="img-responsive">
+                              </td>
+                              <td style="padding-left:15px;">
+                                  <div class="star">
+                                      <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                  </div>
+                                  <div class="reviewContents">
+                                      <p>I have a 96 pound GSD and let me tell ya, he is one picky dog when it comes to treats...I put this treat in front of him and he instantly started wagging his tail. He took off with it! Safe to safe this peanut butter treat is a new favorite of his!</p>
+                                  </div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <img src="/file/general/HCReview3.png"  class="img-responsive">
+                              </td>
+                              <td style="padding-left:15px;">
+                                  <div class="star">
+                                      <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                  </div>
+                                  <div class="reviewContents">
+                                      <p>My dog has really loved these treats! She is about 13lbs and so I decided to cut these treats with a knife into little bite sized pieces to make them last longer. They are a little difficult for her to chew through when I do that but she really enjoys them! I compared them to other treats we have and was impressed at how different the ingredients. My dog can be sensitive with other raw hide so really liked that this one digests easily and that she has not had any tummy upset. Love that these are healthy and tasty treats and I dont feel guilty giving them to my dog!</p>
+                                  </div>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+               </div>
+               <div class="tab-pane media in fade">
+                  <div class='videoDisplay'>
+                     <div class=''>
+                        <div class='row' id='videoSectionPlay'>
+                           <div class='col-xs-12 nopad' id="CC-Video">
+                              <div class="" id="productVideo">
+                                 <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/JoCKR4Oe-Mo'}">
+                                    <img data-bind="attr : {src : '/file/general/HCVideo_PLAY_Resized.png'}" class="img-responsive video-banner" src="">
+                                    <!--<div class="play-icon"><img src="/file/general/playbutton_32x32.svg" /></div>-->
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="stick">
+          <img src="/file/general/Braid@2x.png"  class="img-responsive  visible-lg">
+      </div>
+   </div>
+   <div class="section3">
+       <div class="container">
+        <h3 class="head">Our SAFE-HIDE<sup>&#174;</sup> Snacks</h3>
+        <div class="row">
+        <!-- ko foreach: koGetCollectionList -->
+        
+   <!-- ko foreach: items -->
+   
+   <div class="cc-product-item col-sm-3 col-xs-12">
+      <div class='product-item-wrapper'>
+         <div class="row">
+            <div class="col-xs-6 col-sm-12 nopad imageContent">
+               <div class="cc-item-detail">
+                  <a data-bind="ccLink: {route: $data.route} "> <img data-bind="ccResizeImage: {
+                     source: fullImageURLs[0],
+                     xsmall: '500,270',
+                     small: '500,270',
+                     medium: '500,893',
+                     large: '500,1106',
+                     alt: displayName,
+                     title:displayName}" class="img-responsive" width="100%" /> </a>
+               </div>
+            </div>
+            <div class="col-xs-6 col-sm-12 nopad detailsContent">
+               <div class="cc-item-price"> <span class="product-title" data-bind="text:  '$' + listPrice"></span> </div>
+               <div class="cc-item-title">
+                  <a data-bind="ccLink: {route: $data.route} ">
+                     <p class="product-title" data-bind="text: displayName"></p>
+                  </a>
+               </div>
+               <div class='cc-item-rating'>
+                  <div data-bv-show="inline_rating" data-bind="attr: {'data-bv-product-id':id,'data-bv-redirect-url':route}"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- /ko -->
+   <!-- /ko -->
+      </div>
+       <div class="stick2 hide">
+          <img src="/file/general/Sticks@2x.png"  class="img-responsive  visible-lg">
+      </div>
+      </div>
+   </div>
+     
+</div>

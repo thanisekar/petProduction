@@ -285,7 +285,7 @@
 			            <li>Media</li>
 			  <!-- /ko -->
 			  
-			  	<!-- ko if:(koPageId() == 'redesignmappolicy') -->
+			  	<!-- ko if:(koPageId() == 'mappolicy') -->
 			           <li>Map Policy</li>
 			  <!-- /ko -->
 			  

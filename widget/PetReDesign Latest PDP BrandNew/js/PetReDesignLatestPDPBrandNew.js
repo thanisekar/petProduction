@@ -2394,6 +2394,10 @@ define(
                          $('.cc-image-area').show();
                   //  },500)
                      this.activeImgIndex(tempActiveIndex);
+                     //Fix to make current thumbnail image active
+                    $(".thumbnail").removeClass("active");
+                    $(event.currentTarget).addClass("active");
+                    //ends
                      var localImg = this.product().mediumImageURLs()[tempActiveIndex];
                      this.mainImgUrl(localImg);
                      
@@ -2466,18 +2470,9 @@ define(
             imgGroupRendering: function() {
                 var widget = this;
                 widget.koImageContainer([]);
-                if(widget.product()) {
-                    for (var i = 0; i < widget.product().mediumImageURLs().length; i++) {
-                        widget.koImageContainer.push({
-                            'type': "image",
-                            //"thumbImageContainer": "/ccstore/v1/images/?source=/file/products/"+widget.getFilename(widget.product().mediumImageURLs()[i])+".jpg&height=100&width=100",
-                            "thumbImageContainer": widget.replaceThumbImage(widget.product().mediumImageURLs()[i]),
-                            "mainImageContainer": widget.product().mediumImageURLs()[i],
-                            'mediumImageContainer': widget.product().mediumImageURLs()[i],
-                        });
-                         
-                    } 
-                    
+                if (widget.product()) {
+                  
+
                     if (widget.product().hasOwnProperty('videoUrl')) {
                         if (widget.product().videoUrl() !== null) {
                             if (widget.product().videoUrl().indexOf(',') != -1) {
@@ -2508,8 +2503,19 @@ define(
                                 
                             }
                         }
-                        
-                       
+
+
+
+                    }
+                    
+                      for (var i = 0; i < widget.product().mediumImageURLs().length; i++) {
+                        widget.koImageContainer.push({
+                            'type': "image",
+                            //"thumbImageContainer": "/ccstore/v1/images/?source=/file/products/"+widget.getFilename(widget.product().mediumImageURLs()[i])+".jpg&height=100&width=100",
+                            "thumbImageContainer": widget.replaceThumbImage(widget.product().mediumImageURLs()[i]),
+                            "mainImageContainer": widget.product().mediumImageURLs()[i],
+                            'mediumImageContainer': widget.product().mediumImageURLs()[i],
+                        });
 
                     }
 

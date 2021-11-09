@@ -17,10 +17,10 @@
          <!--ko if: recommendationsGroups() && (recommendationsGroups().length > 0) -->
   <div class="row">
     <!-- Collection Title -->
-    <div class="col-xs-9">
+    <div class="col-sm-9 col-xs-12">
                 <h3 class="title-txt">You May Also Like</h3> 
             </div>
-    <div id="cc-carousel-controls-pdp" class="col-xs-3">
+    <div id="cc-carousel-controls-pdp" class="col-sm-3">
       <!-- Carousel Controls -->
       <!-- ko if: recommendationsGroups() && (recommendationsGroups().length > 1) -->
       <div class="controls row pull-right hidden-xs">
@@ -52,10 +52,6 @@
               <span data-bind="text: displayName" class="sr-only"></span>
               <img   class="img-responsive center-block" data-bind="ccResizeImage: {
                                    source: primaryFullImageURL,
-                                   xsmall: '500,300',
-                                   small: '500,300',
-                                   medium: '266,266',
-                                   large: '266,266', 
                                    alt: displayName, 
                                    title:displayName}">
               </a>

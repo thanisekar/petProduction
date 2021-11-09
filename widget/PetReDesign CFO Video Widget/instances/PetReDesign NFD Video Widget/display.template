@@ -659,8 +659,8 @@
                </div>
             </div>
          </div>
-          <a data-bind="ccLink:{route:'/ChuckitxKatherine'}"><img alt="Win Grand Prize" title="Win Grand Prize" src="/file/general/CI_Katherine-S-ProductPage_Banner_1613x511.jpg" class="img-responsive katherine hidden-xs hide"></a>
-          <a data-bind="ccLink:{route:'/ChuckitxKatherine'}"><img alt="Win Grand Prize" title="Win Grand Prize" src="/file/general/Oct-2021_CI_Katherine-S_Social_1080x1080.jpg" class="img-responsive katherine visible-xs hide"></a>
+          <a data-bind="ccLink:{route:'/ChuckitxKatherine'}"><img alt="Chuckit! X Katherine Schwarzenegger Limited Edition Launcher Set Presale" title="Chuckit! X Katherine Presale" src="/file/general/CI_Katherine-S-NFDPage_Banner.jpg" class="img-responsive katherine hidden-xs hide"></a>
+          <a data-bind="ccLink:{route:'/ChuckitxKatherine'}"><img alt="Chuckit! X Katherine Schwarzenegger Limited Edition Launcher Set Presale" title="Chuckit! X Katherine Presale" src="/file/general/CI_KatherineS_NFDPage_Banner_mobile.jpg" class="img-responsive katherine visible-xs hide"></a>
           <div class="section2">
               
             <img alt="Win Grand Prize" title="Win Grand Prize" src="/file/general/NFD_Champ2.png" class="img-responsive hidden-xs">

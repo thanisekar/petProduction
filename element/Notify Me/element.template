@@ -1,0 +1,17 @@
+<!-- Notify Me Element -->
+<!-- ko if: initialized() && $data.elements.hasOwnProperty('product-notify-me') -->
+<div id="notifyMe" data-bind="visible: $data.elements['product-notify-me'].showNotifyMe">
+   <p class="how">How To Get it</p>
+   <p class="unavailable">This Item is currently unavailable</p>
+   <p class="outStock">Out of stock online</p>
+   <p class="receive">Receive an email when this item is back in stock.</p>
+   <div class="input-group input-section">
+      <input type="text" class="form-control input-box" id="CC-notify-email-input" name="CC-notify-email-input" aria-required="true"
+         data-bind="validatableValue: user().emailAddress,valueUpdate: 'afterkeydown', widgetLocaleText: {value: 'emailAddressText', attr:'placeholder'},
+         event: { blur: $data.user().emailAddressLostFocus.bind(this), focus: $data.user().emailAddressFocused.bind(this) }" />
+      <button class="btn btn-outline-secondary notify-btn" data-bind="click: $data.elements['product-notify-me'].confirm.bind(this), disabled: !user().emailAddress.isValid()">Notify Me</button> 
+   </div>
+   <div role="alert" class="text-danger" id="CC-notify-email-input-error" data-bind="validationMessage: user().emailAddress"></div>
+   <p class="thanks-message"><b>&#10003; Thank you!</b> We'll send you an email when the product is back in stock</p>
+</div>
+<!-- /ko --> 

@@ -34,7 +34,7 @@
       "text": null,
       "borderConfig": {
         "borderColor": "#000000",
-        "borderWidth": "0"
+        "borderWidth": 0
       },
       "paddingConfig": {
         "paddingBottom": "0",
@@ -46,12 +46,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "How To Dog Proof Your Backyard",
-        "titleText": "How To Dog Proof Your Backyard",
-        "zoomEnabled": "0",
-        "isProductImage": "0",
-        "link": "/how-to-dog-proof-your-backyard/article/a90133",
-        "fileName": "August-2021_PM-Academy-Dog-.jpg"
+        "altText": "JW NEW Banana Chew-ee Dog Dental Toy",
+        "zoomEnabled": false,
+        "titleText": "JW NEW Banana Chew-ee Dog Dental Toy",
+        "link": "/jw-banana-chew-ee-dental-dog-toy/product/60639",
+        "isProductImage": false,
+        "fileName": "Nov-2021_JW_Banana-Chewee_WebBanner_1535x750.jpg"
       }
     },
     {
@@ -61,7 +61,7 @@
       "text": null,
       "borderConfig": {
         "borderColor": "#000000",
-        "borderWidth": "0"
+        "borderWidth": 0
       },
       "paddingConfig": {
         "paddingBottom": "0",
@@ -73,11 +73,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Follow Petmate on Instagram and Facebook",
-        "titleText": "Follow Petmate on Instagram and Facebook",
-        "zoomEnabled": "0",
-        "isProductImage": "0",
-        "fileName": "August-2021_PM_Social_Banner_1535x750.jpg"
+        "altText": "Fun Fall Activities To Do With Your Dog",
+        "zoomEnabled": false,
+        "titleText": "Fun Fall Activities To Do With Your Dog",
+        "isProductImage": false,
+        "link": "/5-fun-fall-activities-to-do-with-your-dog/article/a90192",
+        "fileName": "Nov-2021_PM-Academy_Fall-with-Dog_WebBanner_1535x750.jpg"
       }
     },
     {
@@ -87,7 +88,7 @@
       "text": null,
       "borderConfig": {
         "borderColor": "#000000",
-        "borderWidth": "0"
+        "borderWidth": 0
       },
       "paddingConfig": {
         "paddingBottom": "0",
@@ -99,12 +100,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Shop JW Dog Toy Bundles",
-        "titleText": "Shop JW Dog Toy Bundles",
-        "zoomEnabled": "0",
-        "isProductImage": "0",
-        "link": "/category/brand-jw",
-        "fileName": "August-2021_JW_ToyBundle_GIF.gif"
+        "altText": "Shop Aspen Pet Self-Warming Pet Beds",
+        "zoomEnabled": false,
+        "titleText": "Shop Aspen Pet Self-Warming Pet Beds",
+        "isProductImage": false,
+        "link": "/aspen-pet-self-warming-dog-bed/product/AP04",
+        "fileName": "Nov-2021_AP_Self-Warming-Beds_WebBanner_1535x750.jpg"
       }
     },
     {
