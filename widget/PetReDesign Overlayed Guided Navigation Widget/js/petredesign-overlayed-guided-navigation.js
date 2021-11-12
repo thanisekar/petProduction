@@ -27,7 +27,10 @@ define(
        */
       onLoad : function(widget) {
         widget.guidedNavigationViewModel = ko.observable();
-        widget.guidedNavigationViewModel(new GuidedNavigationViewModel(widget.maxDimensionCount(), widget.maxRefinementCount(), widget.locale()));
+        //widget.guidedNavigationViewModel(new GuidedNavigationViewModel(widget.maxDimensionCount(), widget.maxRefinementCount(), widget.locale()));
+        //Make all filters show
+       widget.guidedNavigationViewModel(new GuidedNavigationViewModel("20", "20", widget.locale()));
+       //Ends
         widget.isExpanded = ko.observable(false);
         widget.isNavigationVisible = ko.observable(false);
         widget.hideRefinements = function() {

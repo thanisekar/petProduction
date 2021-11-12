@@ -28,8 +28,10 @@ define(
        */
       onLoad: function(widget) {
         widget.guidedNavigationViewModel = ko.observable();
-        widget.guidedNavigationViewModel(new GuidedNavigationViewModel(widget.maxDimensionCount(), widget.maxRefinementCount(), widget.locale()));
-        
+        //widget.guidedNavigationViewModel(new GuidedNavigationViewModel(widget.maxDimensionCount(), widget.maxRefinementCount(), widget.locale()));
+        //Make all filters show
+        widget.guidedNavigationViewModel(new GuidedNavigationViewModel("20", "20", widget.locale()));
+        //Ends
         $.Topic(pubsub.topicNames.SEARCH_RESULTS_FOR_CATEGORY_UPDATED).subscribe(function(obj){
           if (!this.navigation || this.navigation.length == 0) {
             widget.displayRefineResults(false);
