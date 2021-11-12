@@ -701,15 +701,7 @@
   </div>
   <!--/ko-->
   <!--/ko-->
-  <!-- ko if : (product().brand() === "GAMMA2") && ($data.koproductSkuId() == '43535') -->
-  <div class="container" >
-     <div class='col-xs-12 nopad categoryImageWidget'>
-        <a data-bind="attr: {href: '/nano',target: '_blank'}">
-        <img alt="Nano" title="Nano" src="/file/general/G2_NanoPDP_Banner.jpg" class="img-responsive">
-        </a>		
-     </div>
-  </div>
-  <!--/ko-->
+
   <!-- ko if : product().brandCategory() === "waste management" && product().petTypes() === "cat"-->
   <div class="container" >
      <div class='col-xs-12 nopad categoryImageWidget'>
