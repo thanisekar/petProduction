@@ -133,11 +133,16 @@
         </div>
       <!-- /ko -->
 
-      <!--Promo Upsell Display-->
+       <!--Promo Upsell Display-->
             <!-- ko if: employeeCheck -->
-            <span class="promoUpsell" data-bind="html:koPromoUpsell"></span>
-            <!-- /ko -->
-           <!--Ends-->
+             <!-- ko ifnot: displayShippingOptions() && cart().shippingDiscount() !== 0-->
+             <span class="promoUpsell" data-bind="html:koPromoUpsell"></span>
+             <!-- /ko -->
+             <!-- ko if: displayShippingOptions() && cart().shippingDiscount() !== 0-->
+                <span class="promoUpsell"><p>Congratulations! Free Ground Shipping</p><i class="fa fa-truck"></i></span>
+             <!-- /ko -->
+        <!-- /ko -->
+       <!--Ends-->
       
       <!-- /ko --> 
       
