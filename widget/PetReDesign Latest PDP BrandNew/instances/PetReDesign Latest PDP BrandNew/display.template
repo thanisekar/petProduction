@@ -30,13 +30,13 @@
                        <!-- ko if: product().brand() -->
                        <div class="item-brand">
                           <!-- ko if: product().brand().toLowerCase() == 'jw pet' -->
-                          <span>Brand :  <a  data-bind="ccLink: {route: koBrandRoute()}"><span class="itemBrandName" data-bind='text:product().brand()'></span></a></span>
+                          <span>Brand :  <a  data-bind="ccLink: {route: koBrandRoute()}"><span class="itemBrandName" itemprop="brand" data-bind='text:product().brand()'></span></a></span>
                           <!-- /ko -->
                           <!-- ko if: product().brand().toLowerCase() == 'petqwerks' -->
-                          <span>Brand :  <a  data-bind="ccLink: {route: koBrandRoute()}"><span class="itemBrandName">Pet Qwerks</span></a></span>
+                          <span>Brand :  <a  data-bind="ccLink: {route: koBrandRoute()}"><span class="itemBrandName" itemprop="brand">Pet Qwerks</span></a></span>
                           <!-- /ko -->
                           <!-- ko ifnot: (product().brand().toLowerCase() == 'jw pet') || (product().brand().toLowerCase() == 'petqwerks') -->
-                          <span>Brand :  <a  data-bind="ccLink: {route: koBrandRoute()}"><span class="itemBrandName" data-bind='text:product().brand().toLowerCase()'></span></a></span>
+                          <span>Brand :  <a  data-bind="ccLink: {route: koBrandRoute()}"><span class="itemBrandName" itemprop="brand" data-bind='text:product().brand().toLowerCase()'></span></a></span>
                           <!-- /ko -->
                        </div>
                        <!-- /ko -->
@@ -405,13 +405,13 @@
                     <!-- ko if: product().brand() -->
                     <div class="item-brand">
                        <!-- ko if: product().brand().toLowerCase() == 'jw pet' -->
-                       <span>Brand:  <a  data-bind="ccLink: {route: koBrandRoute()}"><span class="itemBrandName" data-bind='text:product().brand()'></span></a></span>
+                       <span>Brand:  <a  data-bind="ccLink: {route: koBrandRoute()}"><span class="itemBrandName" itemprop="brand" data-bind='text:product().brand()'></span></a></span>
                        <!-- /ko -->
                        <!-- ko if: product().brand().toLowerCase() == 'petqwerks' -->
-                       <span>Brand:  <a  data-bind="ccLink: {route: koBrandRoute()}"><span class="itemBrandName">Pet Qwerks</span></a></span>
+                       <span>Brand:  <a  data-bind="ccLink: {route: koBrandRoute()}"><span class="itemBrandName" itemprop="brand">Pet Qwerks</span></a></span>
                        <!-- /ko -->
                        <!-- ko ifnot: (product().brand().toLowerCase() == 'jw pet') || (product().brand().toLowerCase() == 'petqwerks') -->
-                       <span>Brand:  <a  data-bind="ccLink: {route: koBrandRoute()}"><span class="itemBrandName" data-bind='text:product().brand().toLowerCase()'></span></a></span>
+                       <span>Brand:  <a  data-bind="ccLink: {route: koBrandRoute()}"><span class="itemBrandName" itemprop="brand" data-bind='text:product().brand().toLowerCase()'></span></a></span>
                        <!-- /ko -->
                     </div>
                     <!-- /ko -->
@@ -654,15 +654,6 @@
         <!-- /ko -->
      </div>
   </div>
-  <!-- ko if : product().brand() === "Fat Cat" -->
-  <div class="container" >
-     <div class='col-xs-12 nopad categoryImageWidget'>
-        <a  data-bind="attr: {href: '/bigmamasroadtrip',target: '_blank'}">
-        <img  alt="Fat Cat" title="Fat Cat" src="/file/general/Fatcat-PDP.png" class="img-responsive">
-        </a>		
-     </div>
-  </div>
-  <!--/ko-->
   <!-- ko if : product().brand() === "WONDER" -->
   <div class="container" >
      <div class='col-xs-12 nopad categoryImageWidget'>
