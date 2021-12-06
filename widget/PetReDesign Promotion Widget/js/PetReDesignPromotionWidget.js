@@ -122,40 +122,7 @@ define(
       handleApplyCoupon: function() {
           var widget = this;
           couponSuccess = false;
-          //Temporary Until Black Friday
-          setTimeout(function(){
-            //console.log(widget.cart().coupons(),'widget.cart().coupons()');
-            var saleItems = [];
-            var cartData =  widget.cart().allItems();
-            //console.log(cartData,'cartData');
-            if(cartData && cartData.length > 0){
-                for (var i = 0; i < cartData.length; i++) {
-                  //console.log(cartData[i].productData(),'cartData[i].discountInfo.length');
-                  
-                  if(cartData[i].productData().salePrice){
-                     saleItems.push(cartData[i].productData().displayName);
-                  }
-              }
-            }
-            var cartCoupons = widget.cart().coupons();
-            if (cartCoupons && cartCoupons.length > 0) {
-              var couponCount = cartCoupons.length;
-              //console.log(saleItems,'saleItems');
-              for (var i = 0; i < couponCount; i++) {
-                  console.log(cartCoupons[i].code(),'cartCoupons[i].code()');
-                  console.log(cartCoupons[i],'cartCoupons[i].status');
-                  if((cartCoupons[i].code() == "DEALS2021") && (cartCoupons[i].status() == "unclaimed") && (saleItems.length > 0)){
-                      notifier.sendError(widget.WIDGET_ID, "Promocode DEALS2021 not applicable for sale items", true);
-                  }else if((cartCoupons[i].code() == "DEALS2021") && (cartCoupons[i].status() == "claimed") && (saleItems.length > 0)){
-                      notifier.sendError(widget.WIDGET_ID, "Promocode DEALS2021 not applicable for sale items "+ saleItems, true);
-                  }else if((cartCoupons[i].code() == "DEALS2021") && (cartCoupons[i].status() == "unclaimed")){
-                       notifier.sendError(widget.WIDGET_ID, "Minimum threshold not met", true);
-                  }
-              }
-          }
-        },500)
-        
-        //Ends
+         
          
                 if (widget.employeeCheck(widget.promoCode())) {
                     return;
