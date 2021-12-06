@@ -223,7 +223,7 @@
 	             </div>
 	             <!--Accordion for mobile device-->
     		   <div class='col-xs-12  termsAndpolicy' id='terms-and-policy-section'>
-    		      <div class='policy-txt col-xs-12  col-md-10'>
+    		      <div class='policy-txt col-xs-12  col-md-7'>
     		          <ul class='pet-terms'>
     		              <li class='pet-terms-menu'><a data-bind="ccLink: 'termsandconditions'" >Terms of use</a></li>
     		              <li class='pet-terms-menu'><a data-bind="ccLink: 'privacy'" >Privacy Policy</a></li>
@@ -232,9 +232,12 @@
     		          </ul>
     			  </div>
     			  
-    			 
+				  <div class="accesibility-txt col-xs-12  col-md-4">
+					<span class="accesibility-condition">If you are using a screen-reader and having problems using our website please call 1.877.738.6283 
+						  between the hours of 8:00 A.M. and 5:00 P.M. Central Standard Time for assistance</span>
+				</div>
     			  
-    			  <div class='norton-logo col-xs-12  col-md-2'>
+    			  <div class='norton-logo col-xs-12  col-md-1'>
     			      <a href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.petmate.com&amp;lang=en" target="popup" onclick="window.open('https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.petmate.com&amp;lang=en','popup','width=600,height=600'); return false;" style="color:#ffffff; text-decoration:none; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">
                             <img class='resize' name="seal" src="/file/general/footer-norton.png" alt="Norton SECURED" title="Norton SECURED">
                         </a>
