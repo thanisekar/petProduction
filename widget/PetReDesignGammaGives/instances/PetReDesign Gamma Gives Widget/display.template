@@ -11,8 +11,8 @@
    </div>
    <div class="section1">
        <img src="/file/general/Gamma2GivesLOGO_final.png" alt="" title="" class="img-responsive logo hide">
-      <img style="width:100%;height:auto;" src="/file/general/Gamma2Gives_MainImage_HERO_SPOTLIGHT_DESKTOP.png" alt="Sign up your local Pet hero for Gamma2Gives" title="Gamma2Gives Steps" class="img-responsive hidden-xs">
-      <img style="width:100%;height:auto;" src="/file/general/Gamma2Gives_MainImage_HERO_SPOTLIGHT_MOBILE.png" alt="Sign up your local Pet hero for Gamma2Gives" title="Gamma2Gives Steps" class="img-responsive visible-xs">
+      <img style="width:100%;height:auto;" src="/file/general/Gamma2Gives_finalistheader_desktop.jpg" alt="" title="" class="img-responsive hidden-xs">
+      <img style="width:100%;height:auto;" src="/file/general/Gamma2Gives_finalistheader_desktop.jpg" alt="" title="" class="img-responsive visible-xs">
       <a data-bind="ccLink : {route : 'TermsAndAgreements'}" class="main" style="position: absolute;  top: 44%; width: 3.5%; height: 5%;display:inline-block;cursor:pointer;"><span class="tooltiptext"></span></a>
    </div>
    <div class="section2 hide">
@@ -281,7 +281,7 @@
          </div>
       </div>
    </div>
-   <div class="section3">
+   <div class="section3 hide">
        <div class="row">
            <div class="col-sm-4 nopad">
                <img src="/file/general/image_dog.jpg" alt="" title="" class="img-responsive">
@@ -295,9 +295,13 @@
        </div>
    </div>
    <div class="section4">
-       <p>They work tirelessly to protect, restore and enhance the wellness of animals with little reward or recognition. Now you can give back in a big way without even opening your pocketbook. We at <b>Gamma2</b> want  to make it easy for you to make a big impact with the <b>Gamma2Gives Hero Spotlight Program</b>. All you have to do is tell us the story of how your favorite Pet-centric, Non-Profit Hero made a big difference in your life. We’ll do the rest, including producing a professional video that tells that story to the world. If that video earns the most votes, we’ll award your Hero a <b>$5000 grant</b>. It’s that easy. Hurry! The nomination period ends October 4, 2021.</p>
+       <p>They work tirelessly to protect, restore and enhance the wellness of animals with little reward or recognition. The <b>Gamma2 Gives Hero Spotlight Program</b>
+provides these organizations the opportunity to share their story with a larger audience. Our 4 finalists each recieve <b>$4000</b> in prizes,
+including a professional video, to help further their cause of improving the lives of animals and their humans. The <b>Gamma2 Gives Hero Spotlight Program</b>
+is giving all 4 of these organizations this platform to tell their stories, producing a professional video that tells that story to the world.
+Follow <b>@vittlesvault</b> on Facebook and Instagram to learn how you can help one of these organizations win a <b>$5,000</b> grant.</p>
    </div>
-   <div class="section6">
+   <div class="section6 hide">
        <div class="container">
        <div class="row">
              <div class='col-sm-6' id="CC-Video">
@@ -321,7 +325,7 @@
        </div>
        </div>
    </div>
-   <hr>
+ 
    <div class="section5 hide">
         <img src="/file/general/GiveBackBig_Header.png" alt="" title="" class="img-responsive hidden-xs" data-toggle="modal" data-target="#ModalCarousel">
         <img src="/file/general/GiveBackBigHeader_mobile.png" alt="" title="" class="img-responsive visible-xs" data-toggle="modal" data-target="#ModalCarousel">
@@ -329,4 +333,40 @@
             <a data-bind="ccLink : {route : 'gammagivescontestrules'}" title="Gamma Gives Contest Rules" alt="Gamma Gives Contest Rules">Contest Rules</a>
          </div>
    </div>
+   <div class="container">
+   <div class="section7">
+       <div class="row">
+           <div class="col-sm-6">
+               <div class="wrap">
+               <img src="/file/general/OinkinAcres(Horizontal)15less.jpg" alt="" title="" class="img-responsive">
+               <p>At Oinking Acres our mission is to rescue, rehabilitate, rehome, and advocate for abandoned, neglected, abused, and unwanted pot bellied pigs and other farm animals in our community. </p>
+               </div>
+           </div>
+           <div class="col-sm-6">
+               <div class="wrap">
+                <img src="/file/general/HELP(Horizontal)15less.jpg" alt="" title="" class="img-responsive">
+               <p>Horse Empowered Learning Programs, Inc. (H.E.L.P.) provides clients with disabilities an opportunity to develop life-long skills that will increase their personal strength, independence, and confidence.</p>
+               </div>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col-sm-6">
+               <div class="wrap">
+               <img src="/file/general/4PAWS(Horizontal)15less.jpg" alt="" title="" class="img-responsive">
+               <p><b>4 paws : </b>4 PAWS for Ability is a nonprofit organization whose mission is to place quality service dogs with clients all over the world who have unique and individual needs.</p>
+               </div>
+           </div>
+           <div class="col-sm-6">
+               <div class="wrap">
+                <img src="/file/general/WildBlueHorizontal15less.jpg" alt="" title="" class="img-responsive">
+               <p>Wild Blue Cats is a non-profit dedicated to saving the precious lives of cats and kittens who are abandoned, abused, neglected, displaced, or surrendered, and to find them permanent homes, a lifetime sanctuary, or foster care.</p>
+               </div>
+           </div>
+       </div>
+       <img src="/file/general/Gamma2Gives_Social_bannr_desktop.jpg" alt="Follow-us" title="Follow-us" class="img-responsive hidden-xs" style="margin-top:2%;">
+       <img src="/file/general/Gamma2gives_Social_banner_mobile.jpg" alt="Follow-us" title="Follow-us" class="img-responsive visible-xs" style="margin-top:2%;">
+   </div>
+     <img src="/file/general/Gamma2Gives_Video_Header_desktop.jpg" alt="Watch Now" title="Watch Now" class="img-responsive hide"  style="margin:10px 0;">
+   </div>
+ 
 </div>
