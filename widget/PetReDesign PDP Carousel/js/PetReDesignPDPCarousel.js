@@ -57,7 +57,7 @@ define(
                     getWidget.koRelatedItems([]);
                     getData = getWidget.product().relatedProducts;
                     // to split up the image path URL 
-                    if (getData != null || getData != undefined) {
+                    if (typeof(getData) !== "undefined" && getData !== null ) {
                         var imagePath= "";
                         for (var j = 0; j < getData.length; j++) {
                             if(getData[j] && getData[j].primaryFullImageURL){
