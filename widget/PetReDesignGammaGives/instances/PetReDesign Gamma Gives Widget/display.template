@@ -301,30 +301,7 @@ including a professional video, to help further their cause of improving the liv
 is giving all 4 of these organizations this platform to tell their stories, producing a professional video that tells that story to the world.
 Follow <b>@vittlesvault</b> on Facebook and Instagram to learn how you can help one of these organizations win a <b>$5,000</b> grant.</p>
    </div>
-   <div class="section6 hide">
-       <div class="container">
-       <div class="row">
-             <div class='col-sm-6' id="CC-Video">
-               <div class="" id="productVideo">
-                  <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/l0fafGjP06U'}">
-                     <img  data-bind="attr : {src : '/file/general/G2G-intro_VideoPlayHolder.jpg'}" class="img-responsive video-banner" src="">
-                     <div class="play-icon hide"><img src="/file/general/youtube-play-button-48.png" /></div>
-                  </a>
-                  <p class="video-desc">Gamma2Gives Program Overview</p>
-               </div>
-            </div>
-              <div class='col-sm-6' id="CC-Video">
-               <div class="" id="productVideo">
-                  <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/P1oLRRx5biM'}">
-                     <img  data-bind="attr : {src : '/file/general/G2G_how-to-sign-up_VideoPlayHolder.jpg'}" class="img-responsive video-banner" src="">
-                     <div class="play-icon hide"><img src="/file/general/youtube-play-button-48.png" /></div>
-                  </a>
-                  <p class="video-desc">How to nominate a Hero</p>
-               </div>
-            </div>
-       </div>
-       </div>
-   </div>
+   
  
    <div class="section5 hide">
         <img src="/file/general/GiveBackBig_Header.png" alt="" title="" class="img-responsive hidden-xs" data-toggle="modal" data-target="#ModalCarousel">
@@ -353,7 +330,7 @@ Follow <b>@vittlesvault</b> on Facebook and Instagram to learn how you can help 
            <div class="col-sm-6">
                <div class="wrap">
                <img src="/file/general/4PAWS(Horizontal)15less.jpg" alt="" title="" class="img-responsive">
-               <p><b>4 paws : </b>4 PAWS for Ability is a nonprofit organization whose mission is to place quality service dogs with clients all over the world who have unique and individual needs.</p>
+               <p>4 PAWS for Ability is a nonprofit organization whose mission is to place quality service dogs with clients all over the world who have unique and individual needs.</p>
                </div>
            </div>
            <div class="col-sm-6">
@@ -366,7 +343,55 @@ Follow <b>@vittlesvault</b> on Facebook and Instagram to learn how you can help 
        <img src="/file/general/Gamma2Gives_Social_bannr_desktop.jpg" alt="Follow-us" title="Follow-us" class="img-responsive hidden-xs" style="margin-top:2%;">
        <img src="/file/general/Gamma2gives_Social_banner_mobile.jpg" alt="Follow-us" title="Follow-us" class="img-responsive visible-xs" style="margin-top:2%;">
    </div>
-     <img src="/file/general/Gamma2Gives_Video_Header_desktop.jpg" alt="Watch Now" title="Watch Now" class="img-responsive hide"  style="margin:10px 0;">
+     <img src="/file/general/Gamma2Gives_Video_Header_desktop.jpg" alt="Watch Now" title="Watch Now" class="img-responsive "  style="margin:10px 0;">
+     <div class="section6">
+       <div class="">
+       <div class="row">
+             <div class='col-sm-6' id="CC-Video">
+               <div class="" id="productVideo">
+                  <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/SkBwDlJGlgg'}">
+                     <img  data-bind="attr : {src : '/file/general/oinking.png'}" class="img-responsive video-banner" src="">
+                     <div class="play-icon"><img src="/file/general/youtube-play-button-48.png" /></div>
+                  </a>
+                  <p class="video-desc">OINKING ACRES FARM</p>
+               </div>
+            </div>
+              <div class='col-sm-6' id="CC-Video">
+               <div class="" id="productVideo">
+                  <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/OKNatsRigBs'}">
+                     <img  data-bind="attr : {src : '/file/general/help-help.png'}" class="img-responsive video-banner" src="">
+                     <div class="play-icon"><img src="/file/general/youtube-play-button-48.png" /></div>
+                  </a>
+                  <p class="video-desc">H.E.L.P</p>
+               </div>
+            </div>
+       </div>
+       </div>
+   </div>
+   <div class="section6">
+       <div class="">
+       <div class="row">
+             <div class='col-sm-6' id="CC-Video">
+               <div class="" id="productVideo">
+                  <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/HWjMYY3qtMM'}">
+                     <img  data-bind="attr : {src : '/file/general/4paws.png'}" class="img-responsive video-banner" src="">
+                     <div class="play-icon"><img src="/file/general/youtube-play-button-48.png" /></div>
+                  </a>
+                  <p class="video-desc">4 PAWS</p>
+               </div>
+            </div>
+              <div class='col-sm-6' id="CC-Video">
+               <div class="" id="productVideo">
+                  <a class="pdp-video"  data-bind="attr: { videourl: 'https://www.youtube.com/embed/gIEe9iQ9RBY'}">
+                     <img  data-bind="attr : {src : '/file/general/wildlife.png'}" class="img-responsive video-banner" src="">
+                     <div class="play-icon"><img src="/file/general/youtube-play-button-48.png" /></div>
+                  </a>
+                  <p class="video-desc">WILD BLUE</p>
+               </div>
+            </div>
+       </div>
+       </div>
+   </div>
    </div>
  
 </div>
