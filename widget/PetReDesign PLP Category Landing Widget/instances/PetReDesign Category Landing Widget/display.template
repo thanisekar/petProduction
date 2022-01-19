@@ -1,5 +1,5 @@
 <div id="displayRouteCategoryContainer">
-     <div class="row hidden-xs hidden-sm"  >
+     <div class="row hidden-xs hidden-sm hide"  >
    <!--    <pre data-bind="text: ko.toJSON(category(), null, 2)"></pre> -->
           <!-- ko with: category -->
               <!-- ko foreach :fixedParentCategories-->
