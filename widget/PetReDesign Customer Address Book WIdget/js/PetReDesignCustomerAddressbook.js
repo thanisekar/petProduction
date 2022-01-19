@@ -341,51 +341,16 @@ define(
           }
         });
 
-        widget.order().shippingAddress.hasChanged.subscribe(function (hasChanged) {
-                 getWidget.koSelectedState(widget.order().shippingAddress().selectedState());
-                    $.Topic('newSelectedState').publish(getWidget.koSelectedState());
-                    getWidget.sortingStages();
-                    
-                    //Disable city for AO,AE,AA
- 
-                    if((getWidget.koSelectedState() == "AA") || (getWidget.koSelectedState() == "AE") || (getWidget.koSelectedState() == "AP")){ 
-                        if($('#checkoutAddressBook').is(':visible')){
-                            
-                            $('#checkoutAddressBook #txtCity3').attr("placeholder", "APO / FPO / DPO");
-                             
-                        }
-                    }
-                    else{
-                        $('#checkoutAddressBook #txtCity3').attr("placeholder", "City");
-                        
-                        
-                    }
-          
-          if (hasChanged && widget.order().shippingAddress().validateForShippingMethod()) {
-                        /*var shippingAddressWithProductIDs = {};
-                        shippingAddressWithProductIDs[CCConstants.SHIPPING_ADDRESS_FOR_METHODS] = widget.order().shippingAddress();
-                        shippingAddressWithProductIDs[CCConstants.PRODUCT_IDS_FOR_SHIPPING] = widget.cart().getProductIdsForItemsInCart();
-                        $.Topic(pubsub.topicNames.POPULATE_SHIPPING_METHODS).publishWith(
-                            shippingAddressWithProductIDs, [{
-                                message: "success"
-                            }]);*/
-                        if (hasChanged && widget.order().shippingAddress().isValid()) {
-
-                            // Shipping address has changed and is valid and being used as the billing address so copy it.
-                            if (widget.useAsBillAddress() === true) {
-                                widget.order().shippingAddress().copyTo(widget.order().billingAddress());
-                            }
-                            $.Topic(pubsub.topicNames.CHECKOUT_SHIPPING_ADDRESS).publishWith(
-                                widget.order().shippingAddress(), [{
-                                    message: "success"
-                                }]);
-
-                        }
-
-                        // widget.notifyListenersOfShippingAddressUpdate();
-                    } else if (hasChanged && !widget.order().shippingAddress().isValid()) {
-                        $.Topic(pubsub.topicNames.CHECKOUT_SHIPPING_ADDRESS_INVALID).publish();
-                    }
+        widget.order().shippingAddress().address1.subscribe(function (hasChanged) {
+            widget.shippingMethodCustomCalling(hasChanged);
+        });
+        
+         widget.order().shippingAddress().state.subscribe(function (hasChanged) {
+            widget.shippingMethodCustomCalling(hasChanged);
+        });
+        
+         widget.order().shippingAddress().postalCode.subscribe(function (hasChanged) {
+            widget.shippingMethodCustomCalling(hasChanged);
         });
         
         widget.notifyListenersOfShippingAddressUpdate = function () {
@@ -487,6 +452,56 @@ define(
                          $('#checkoutAddressBook').trigger("reset");
                          //Ends
        },
+       
+       
+      shippingMethodCustomCalling :  function(hasChanged){
+             var getWidget = this;
+                 getWidget.koSelectedState(getWidget.order().shippingAddress().selectedState());
+                    $.Topic('newSelectedState').publish(getWidget.koSelectedState());
+                    getWidget.sortingStages();
+                    
+                    //Disable city for AO,AE,AA
+ 
+                    if((getWidget.koSelectedState() == "AA") || (getWidget.koSelectedState() == "AE") || (getWidget.koSelectedState() == "AP")){ 
+                        if($('#checkoutAddressBook').is(':visible')){
+                            
+                            $('#checkoutAddressBook #txtCity3').attr("placeholder", "APO / FPO / DPO");
+                             
+                        }
+                    }
+                    else{
+                        $('#checkoutAddressBook #txtCity3').attr("placeholder", "City");
+                        
+                        
+                    }
+          
+          if (hasChanged && getWidget.order().shippingAddress().validateForShippingMethod()) {
+                        /*var shippingAddressWithProductIDs = {};
+                        shippingAddressWithProductIDs[CCConstants.SHIPPING_ADDRESS_FOR_METHODS] = widget.order().shippingAddress();
+                        shippingAddressWithProductIDs[CCConstants.PRODUCT_IDS_FOR_SHIPPING] = widget.cart().getProductIdsForItemsInCart();
+                        $.Topic(pubsub.topicNames.POPULATE_SHIPPING_METHODS).publishWith(
+                            shippingAddressWithProductIDs, [{
+                                message: "success"
+                            }]);*/
+                        if (hasChanged && getWidget.order().shippingAddress().isValid()) {
+
+                            // Shipping address has changed and is valid and being used as the billing address so copy it.
+                            if (getWidget.useAsBillAddress() === true) {
+                                getWidget.order().shippingAddress().copyTo(getWidget.order().billingAddress());
+                            }
+                            $.Topic(pubsub.topicNames.CHECKOUT_SHIPPING_ADDRESS).publishWith(
+                                getWidget.order().shippingAddress(), [{
+                                    message: "success"
+                                }]);
+
+                        }
+
+                        // widget.notifyListenersOfShippingAddressUpdate();
+                    } else if (hasChanged && !getWidget.order().shippingAddress().isValid()) {
+                        $.Topic(pubsub.topicNames.CHECKOUT_SHIPPING_ADDRESS_INVALID).publish();
+                    }
+        
+      },
       beforeAppear: function (page) {
         var widget = this;
        $('body').on('focus','#txtAddress31', function() {
