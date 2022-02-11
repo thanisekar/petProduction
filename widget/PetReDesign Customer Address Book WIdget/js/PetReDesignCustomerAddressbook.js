@@ -1050,12 +1050,12 @@ define(
                 country: "us"
             }
         };
-        autocomplete = new google.maps.places.Autocomplete((document.getElementById('txtAddress31')), options);
+        //autocomplete = new google.maps.places.Autocomplete((document.getElementById('txtAddress31')), options);
         //console.log('AUTOComplete Init', autocomplete);
         //console.log('place before', autocomplete.getPlace());
         // When the user selects an address from the dropdown, populate the address
         // fields in the form.
-        autocomplete.addListener('place_changed', getWidget.fillInAddress);
+        //autocomplete.addListener('place_changed', getWidget.fillInAddress);
         /*if($("#txtAddress31").is(":focus")) {
         autocomplete = new google.maps.places.Autocomplete((document.getElementById('txtAddress31')), options);
         
@@ -1079,12 +1079,12 @@ define(
                 country: "us"
             }
         };
-        autocomplete = new google.maps.places.Autocomplete((document.getElementById('txtAddress1234')), options);
+        //autocomplete = new google.maps.places.Autocomplete((document.getElementById('txtAddress1234')), options);
         //console.log('AUTOComplete Init', autocomplete);
         //console.log('place before', autocomplete.getPlace());
         // When the user selects an address from the dropdown, populate the address
         // fields in the form.
-        autocomplete.addListener('place_changed', getWidget.fillInAddressBilling);
+        //autocomplete.addListener('place_changed', getWidget.fillInAddressBilling);
     }
       
     };
