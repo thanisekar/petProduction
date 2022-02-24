@@ -457,7 +457,7 @@ define(
       shippingMethodCustomCalling :  function(hasChanged){
              var getWidget = this;
                  getWidget.koSelectedState(getWidget.order().shippingAddress().selectedState());
-                    $.Topic('newSelectedState').publish(getWidget.koSelectedState());
+                    $.Topic('newSelectedState.memory').publish(getWidget.koSelectedState());
                     getWidget.sortingStages();
                     
                     //Disable city for AO,AE,AA

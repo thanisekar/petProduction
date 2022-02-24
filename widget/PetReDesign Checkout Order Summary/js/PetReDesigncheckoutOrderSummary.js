@@ -893,12 +893,12 @@ define(
             },
 
             getShippingMethods: function() {
-                $.Topic("selectedState").subscribe(function(data) {
+                /*$.Topic("selectedState").subscribe(function(data) {
                     getWidget.getSelectedState(data);
                     getWidget.propertyCheck();
                     getWidget.displayOverSizeSection();
-                });
-                $.Topic("newSelectedState").subscribe(function(data) {
+                });*/
+                $.Topic("newSelectedState.memory").subscribe(function(data) {
                     getWidget.getSelectedState(data);
                     getWidget.propertyCheck();
                     getWidget.displayOverSizeSection();
@@ -1233,7 +1233,7 @@ define(
                         $(".bt-popup").removeClass("popupCheck");
                     }
 
-                }, 2000);
+                }, 3000);
             },
 
             beforeAppear: function(page) {
