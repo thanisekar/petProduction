@@ -343,7 +343,7 @@ define(
 
         widget.order().shippingAddress.hasChanged.subscribe(function (hasChanged) {
                  getWidget.koSelectedState(widget.order().shippingAddress().selectedState());
-                    $.Topic('newSelectedState').publish(getWidget.koSelectedState());
+                    $.Topic('newSelectedState.memory').publish(getWidget.koSelectedState());
                     getWidget.sortingStages();
                     
                     //Disable city for AO,AE,AA
@@ -552,7 +552,7 @@ define(
                     var selectedState2 = $("#selectState3").val();
  
                     widget.koSelectedState(selectedState2);
-                    $.Topic('newSelectedState').publish(widget.koSelectedState());
+                    $.Topic('newSelectedState.memory').publish(widget.koSelectedState());
       },
             checkoutAddressBookFormRendered: function() {
                 setTimeout(function(){
@@ -656,7 +656,7 @@ define(
                     widget.sortingStages();
                     var selectedState1 = $(this).val();
                     getWidget.koSelectedState(selectedState1);
-                    $.Topic('newSelectedState').publish(getWidget.koSelectedState());  
+                    $.Topic('newSelectedState.memory').publish(getWidget.koSelectedState());  
                     
                 });
                 
