@@ -42,15 +42,14 @@ define(
             paypalAddressAltered: ko.observable(false),
 
             koProductDataArray: ko.observableArray([]),
-            koOverSizedArray: ko.observableArray([]),
             skipSpinner: ko.observable(false),
             isOverSized: ko.observable(false),
             isAPOCheck: ko.observable(false),
             airCheck: ko.observable(false),
+            poCheck :  ko.observable(false),
             getSelectedState: ko.observable(),
             isOverWeight: ko.observable(false),
             koIsFreeShipping: ko.observable(false),
-            overRideWeight: ko.observable(false),
             koOrderExceptionSku: ko.observable(),
             employeeCheck: ko.observable(true),
             koPromoUpsell: ko.observable(),
@@ -103,6 +102,16 @@ define(
                 $.Topic("employeeCheck.memory").subscribe(function(data) {
                     getWidget.employeeCheck(data);
                 });
+                
+                 $('body').delegate('#txtAddress31', 'focusout', function() {
+                     getWidget.poCheck(false);
+                   var getPo = $('#txtAddress31').val().toUpperCase();
+                   var twoChar = getPo.substring(0, 2);
+                   var threeChar = getPo.substring(0, 3);
+                   if(twoChar == 'PO' || threeChar == 'P.O'){
+                       getWidget.poCheck(true);
+                   }
+               });
 
                 widget.shippingmethods().defaultShipping("300010");
                 shippingmethods.getInstance().defaultShipping("300010");
@@ -769,7 +778,6 @@ define(
                     getWidget.displayOverWeightSection();
                     getWidget.displayFreeShippingSection();
                     getWidget.displayOverSizeSection();
-                    getWidget.displayOverRideWeightSection();
                     getWidget.commonShippingLogic();
                 });
 
@@ -939,7 +947,6 @@ define(
             propertyCheck: function() {
                 getWidget.isOverSized(false);
                 getWidget.koIsFreeShipping(false);
-                getWidget.overRideWeight(false);
                 $.each(getWidget.cart().allItems(), function(index, value) {
                     if (value.productData() != undefined) {
                         if (value.productData().childSKUs !== null) {
@@ -952,9 +959,6 @@ define(
                                     }
                                     if (value.productData().childSKUs[0].isFreeShipping) {
                                         getWidget.koIsFreeShipping(true);
-                                    }
-                                    if (value.productData().childSKUs[0].x_overRideWeight) {
-                                        getWidget.overRideWeight(true);
                                     }
                                 }
                             }
@@ -1000,12 +1004,7 @@ define(
 
 
 
-            displayOverRideWeightSection: function() {
-                getWidget.propertyCheck();
 
-                //getWidget.overRideWeight();
-                //console.log(getWidget.overRideWeight(),'getWidget.overRideWeight()');
-            },
 
 
 
@@ -1064,18 +1063,6 @@ define(
                     $(".bt-popup").addClass("popupCheck");
                 }
 
-                //Case 4: Over Ride Shipping
-
-                if (getWidget.overRideWeight()) {
-                    $(".CC-checkoutOrderSummary-shippingOption-300009").show();
-                    $(".CC-checkoutOrderSummary-shippingOption-300008").show();
-                    $('.overSized').hide();
-                    $(".shippingOptions").show();
-                    $('.orderPopup').hide();
-                    $('#CC-Checkout-Placeorder').attr('disabled', false);
-                    $('.bt-popup').hide();
-                    $(".bt-popup").removeClass("popupCheck");
-                }
 
                 //Case 5: Free Shipping and Over Size
 
@@ -1123,36 +1110,9 @@ define(
                     $(".bt-popup").addClass("popupCheck");
                 }
 
-                //Case 8: Over Sized and Over ride weight
-
-                if (getWidget.isOverSized() && getWidget.overRideWeight()) {
-                    //console.log('over sized and Over ride weight');
-                    $(".CC-checkoutOrderSummary-shippingOption-300009").hide();
-                    $(".CC-checkoutOrderSummary-shippingOption-300008").hide();
-                    $('.overSized').show();
-                    $(".shippingOptions").show();
-                    $('.orderPopup').hide();
-                    $('#CC-Checkout-Placeorder').attr('disabled', false);
-                    $('.bt-popup').hide();
-                    $(".bt-popup").removeClass("popupCheck");
-                }
 
 
-                //Case 9: Over ride and over weight
-                if (getWidget.isOverWeight() && getWidget.overRideWeight()) {
-                    //console.log('over weight and Over ride weight');
-                    $(".CC-checkoutOrderSummary-shippingOption-300010").show();
-                    $(".CC-checkoutOrderSummary-shippingOption-300009").hide();
-                    $(".CC-checkoutOrderSummary-shippingOption-300008").hide();
-                    getWidget.shippingmethods().defaultShipping("300010");
-                    getWidget.selectedShippingValue("300010");
-                    $('.overSized').hide();
-                    $(".shippingOptions").show();
-                    $('.orderPopup').hide();
-                    $('#CC-Checkout-Placeorder').attr('disabled', false);
-                    $('.bt-popup').hide();
-                    $(".bt-popup").removeClass("popupCheck");
-                }
+
 
                 // Case 10 : Free shipping and Over Sized and Over Weight
 
@@ -1172,7 +1132,7 @@ define(
 
                 // Case 11 : Free shipping and Over Sized and Over Weight and Over ride weight
 
-                if (getWidget.koIsFreeShipping() && getWidget.isOverSized() && getWidget.isOverWeight() && getWidget.overRideWeight()) {
+                if (getWidget.koIsFreeShipping() && getWidget.isOverSized()) {
                     //console.log('Free shipping and over size and over weight and over ride weight');
                     $(".CC-checkoutOrderSummary-shippingOption-300010").show();
                     $(".CC-checkoutOrderSummary-shippingOption-300009").hide();
@@ -1193,7 +1153,7 @@ define(
                     //$.Topic("shippingLoaded.memory").subscribe(function(e){
                     //})
                     //Alaska Hawaii
-                    if ((getWidget.airCheck() && getWidget.isOverSized()) || (getWidget.isAPOCheck() && getWidget.isOverSized())) {
+                    if ((getWidget.airCheck() && getWidget.isOverSized()) || (getWidget.isAPOCheck() && getWidget.isOverSized()) || (getWidget.poCheck() && getWidget.isOverSized())) {
                         $("#CC-orderSummaryLoadingModal").hide();
                         $('.state-alert').css('display', 'block');
                         $('.overSized').hide();
@@ -1208,7 +1168,7 @@ define(
                         $('.bt-popup').hide();
                         $('#CC-checkoutOrderSummary-shippingOption-300009').prop("checked", true).trigger("click");
                         $(".CC-checkoutOrderSummary-shippingOption-300010").hide();
-
+                        $(".CC-checkoutOrderSummary-shippingOption-300008").hide();
                     } else {
 
                         $("#CC-orderSummaryLoadingModal").show();
@@ -1223,6 +1183,7 @@ define(
 
                     if (getWidget.isAPOCheck()) {
                         //console.log('APO True');
+                         $(".CC-checkoutOrderSummary-shippingOption-300010").show();
                         $(".CC-checkoutOrderSummary-shippingOption-300009").hide();
                         $(".CC-checkoutOrderSummary-shippingOption-300008").hide();
                         $('.overSized').show();
@@ -1292,7 +1253,6 @@ define(
                 getWidget.displayOverWeightSection();
                 getWidget.displayFreeShippingSection();
                 getWidget.displayOverSizeSection();
-                getWidget.displayOverRideWeightSection();
                 getWidget.invokeExternalShippingMethodsCall();
                 //getWidget.commonShippingLogic();
                 //Recaptcha Code begins
@@ -1324,9 +1284,6 @@ define(
                 }
                 if (getWidget.isOverSized()) {
                     getWidget.displayOverSizeSection();
-                }
-                if (getWidget.overRideWeight()) {
-                    getWidget.displayOverRideWeightSection();
                 }
                 // getWidget.commonShippingLogic();
             },

@@ -553,7 +553,7 @@
                  <!-- /oc -->
                  <!-- ko if: koOverSizeAlert -->  
                  <div class="oversize-error-msg">
-                    This item must ship motor freight. Cannot ship to AK, HI, or APO’s
+                    This item must ship motor freight. Cannot ship to AK, HI, APO’s or PO Box Address 
                  </div>
                  <!-- /ko -->
                  <!-- oc section: product-add-to-space -->
