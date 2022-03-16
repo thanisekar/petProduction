@@ -1,4 +1,3 @@
-<div class="bvCurationWrap" >
-    <!--<div  class="BVGalleryWrap"  data-bind="attr: {'id': koBVGalleryContainer()}"></div> -->
+<!--<div class="bvCurationWrap" >
     <div data-bind="attr: {'data-crl8-container-id': koDisplayProperty, 'data-crl8-auto-init': 'false' }"></div>
-</div>
+</div>-->

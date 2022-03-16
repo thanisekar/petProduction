@@ -30,7 +30,7 @@ define(
 
 
             beforeAppear: function(page) {
-
+                /*
                 var widget = this;
 
                 widget.koProductProperty('');
@@ -107,7 +107,7 @@ define(
                     }, 100)
                 }, 500);
 
-
+              Ends */
 
             },
 

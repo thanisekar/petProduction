@@ -10,8 +10,8 @@
       "altText": "${occ:widgetCustomText('1900005')}",
       "altTextId": "1900005",
       "isProductImage": false,
-      "link": "/5-fun-fall-activities-to-do-with-your-dog/article/a90192",
-      "src": "/file/v1508568194560780895/general/Nov-2021_PM-Academy_Fall-with-Dog_WebBanner_1535x750.jpg",
+      "link": "/hyper-pet-go-dog-go-g5-fetch-machine/product/51370GDG",
+      "src": "/file/v3680806173939882660/general/GoDogGo_Web-Banner_1535x750.jpg",
       "titleText": "${occ:widgetCustomText('1900006')}",
       "titleTextId": "1900006",
       "zoomEnabled": false
@@ -34,8 +34,8 @@
       "altText": "${occ:widgetCustomText('1900003')}",
       "altTextId": "1900003",
       "isProductImage": false,
-      "link": "/aspen-pet-self-warming-dog-bed/product/AP04",
-      "src": "/file/v4883471979864608041/general/Nov-2021_AP_Self-Warming-Beds_WebBanner_1535x750.jpg",
+      "link": "/category/cats",
+      "src": "/file/v5994202120289683897/general/March-2022_PM_Cat-Sale_Web-Banner_1535x750.jpg",
       "titleText": "${occ:widgetCustomText('1900004')}",
       "titleTextId": "1900004",
       "zoomEnabled": false
@@ -71,8 +71,8 @@
       "altText": "${occ:widgetCustomText('3000001')}",
       "altTextId": "3000001",
       "isProductImage": false,
-      "link": "/jw-banana-chew-ee-dental-dog-toy/product/60639",
-      "src": "/file/v8224865127328092698/general/Nov-2021_JW_Banana-Chewee_WebBanner_1535x750.jpg",
+      "link": "/category/brand-jw",
+      "src": "/file/v6035031213716587825/general/March-2021_JW_Wand-Sale_Web-Banner_1535x750.jpg",
       "titleText": "${occ:widgetCustomText('2100001')}",
       "titleTextId": "2100001",
       "zoomEnabled": false

@@ -1,7 +1,7 @@
 <div id="CC-megaMenu_new"  class="mainMegaMenu">
   <div class="container mega-menu-container">  
   
-    <!-- Desktop Megamenu -->
+     <!-- Desktop Megamenu -->
 	<div class=' desktop-menu'>	
      <nav class="mega-menu navbar  visible-lg  visible-md " role="navigation"> 
     <div class="collapse navbar-collapse mega-menu-fullwidth-collapse themeBlue">
@@ -19,19 +19,11 @@
 									<div class="subCategoryColumn">
 										
 											<ul>
-											    <li class="subCatagoryLevel1">
-													<a tabindex="0" data-bind="ccLink:{route:'/category/giftGuides'}" class="category-header Level2 inLine font14">Gift Guides</a>
-												
-											    </li>
-										
+											    
 												<li class="subCatagoryLevel1">
 													<a tabindex="0" data-bind="ccLink:{route:'/category/L1-accessoriesL2-dog-accessories'}" class="category-header Level2 inLine font14">accessories</a>
                                                 
                                                     <ul >
-                                                        <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/dog-apparel'}">Apparel</a>
-                                                        </li>
-                                                     
                                                         <li>
                                                           <a class="Level3 " data-bind="ccLink:{route:'/category/dog-gift-box'}">Goodie Box</a>
                                                         </li>
@@ -407,10 +399,6 @@
                                                         </li>
                                                         
                                                         <li>
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/dog-treats-strips'}" >Strips</a>
-                                                        </li>
-                                                     
-                                                        <li>
                                                           <a class="Level3 " data-bind="ccLink:{route:'/category/dog-treats-twists'}" >Twists</a>
                                                         </li>
                                                      </ul>
@@ -468,11 +456,7 @@
 									<div class="subCategoryColumn">
 									
 											<ul>
-											    <li class="subCatagoryLevel1">
-													<a tabindex="0" data-bind="ccLink:{route:'/category/giftGuides'}" class="category-header Level2 inLine font14">Gift Guides</a>
-												
-											    </li>
-										
+											    
 												<li class="subCatagoryLevel1">
 													<a tabindex="0" data-bind="ccLink:{route:'/category/L1-accessoriesL2-cat-accessories'}" class="category-header Level2 inLine font14"> accessories</a>
                                                
@@ -901,8 +885,8 @@
                                                  <a data-bind="ccLink:{route:'/category/brand-gensevenpets'}" class=" brand-image-link" href="">
                                                     <img src="/file/collections/brand-gensevenpets.png"  class="brand-image " alt="brand-gensevenpets" title="brand-gensevenpets">
                                                 </a>
-                                                <a  data-bind="ccLink:{route:'/category/brand-healthychews'}"  class=" brand-image-link" >
-                                                    <img src="/file/collections/brand-healthychews.png"  class="brand-image " alt="brand-healthychews" title="brand-healthychews">
+                                                <a  data-bind="ccLink:{route:'/category/brand-hyper-pet'}"  class=" brand-image-link" >
+                                                    <img src="/file/collections/brand-hyperpet.png"  class="brand-image " alt="brand-hyperpet" title="brand-hyperpet">
                                                 </a>
                                                 <a data-bind="ccLink:{route:'/category/brand-petqwerks'}" class=" brand-image-link" href="">
                                                     <img src="/file/collections/brand-petqwerks.png"  class="brand-image " alt="brand-petqwerks" title="brand-petqwerks">
@@ -961,6 +945,9 @@
                                                           <a class="Level3 " data-bind="ccLink : {route :'/category/brand-healthychews'}" >Healthy Chews</a>
     												</li>
     												<li class="subCatagoryLevel1">
+                                                          <a class="Level3 " data-bind="ccLink : {route :'/category/brand-hyper-pet'}" >Hyper Pet</a>
+    												</li>
+    												<li class="subCatagoryLevel1">
                                                       <a class="Level3 " data-bind="ccLink:{route:'/category/brand-jackson-galaxy'}" >Jackson Galaxy</a>
     												</li>
     												<li class="subCatagoryLevel1">
@@ -992,9 +979,6 @@
                                                           <a class="Level3 " data-bind="ccLink : {route :'/category/brand-vittlesvault'}" >Vittles Vault</a>
     												</li>
     												<li class="subCatagoryLevel1">
-                                                          <a class="Level3 " data-bind="ccLink:{route:'/category/brand-wouapy'}" >Wouapy</a>
-    												</li>
-    												<li class="subCatagoryLevel1">
                                                           <a class="Level3 " data-bind="ccLink:{route:'/category/brand-zoobilee'}" >Zoobilee</a>
     												</li>
 											
@@ -1012,8 +996,8 @@
               </ul>
             </li>
         <li class="dropdown mega-menu-fullwidth menu-item cc-desktop-dropdown">
-              <a class="dropdown-toggle Level1" data-bind="ccLink:{route:'/category/sale'}"  title="Sale Items">
-                <span  class="salePage greyColor">Sale Items</span> 
+              <a class="dropdown-toggle Level1" data-bind="ccLink:{route:'/category/sale'}"  title="Sale">
+                <span  class="salePage greyColor">Sale</span> 
               </a>
         </li>
         <li class="dropdown mega-menu-fullwidth menu-item cc-desktop-dropdown">
@@ -1134,10 +1118,6 @@
                                    
                                     <ul class="sub-menu third-level">
                                         <li class="mobile-menu-list1">
-                                            <a class="" data-bind="attr:{href :'/category/giftGuides'}">Gift Guides</a>
-                                         </li>
-                                         
-                                        <li class="mobile-menu-list1">
                                             <a class="" href="javascript:void(0)">accessories</a>
                                             
                                             <div class="mp-level" data-level="3">
@@ -1150,10 +1130,6 @@
                                                    </div>
                                                  </div>
                                            
-                                                <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/dog-apparel'}">Apparel</a> </li>
-                                                </ul>
-                                                
                                                 <ul class="sub-menu third-level">
                                                     <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/dog-gift-box'}" >Dog Gift Box</a> </li>
                                                 </ul>
@@ -1548,11 +1524,7 @@
                                                 <ul class="sub-menu third-level">
                                                     <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/dog-treats-stixx'}" >StiXX</a> </li>
                                                 </ul>
-                                                
-                                                <ul class="sub-menu third-level">
-                                                    <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/dog-treats-strips'}" >Strips</a> </li>
-                                                </ul>
-                                                
+                                          
                                                 <ul class="sub-menu third-level">
                                                     <li class="mobile-menu-list-noarrow"><a data-bind="attr:{href :'/category/dog-treats-twists'}" >Twists</a> </li>
                                                 </ul>
@@ -1611,10 +1583,7 @@
                                       </div>
                                    
                                     <ul class="sub-menu third-level">
-                                    	<li class="mobile-menu-list1">
-                                            <a class="" data-bind="attr:{href :'/category/giftGuides'}">Gift Guides</a>
-                                         </li>
-                                         
+                                    	
                                         <li class="mobile-menu-list1">
                                             <a class=""  href="javascript:void(0)">accessories</a>
                                             
@@ -2123,6 +2092,9 @@
                                                           <a  data-bind="ccLink : {route :'/category/brand-healthychews'}" >Healthy Chews</a>
     												</li>
     												<li class="mobile-menu-list-noarrow">
+                                                          <a  data-bind="ccLink : {route :'/category/brand-hyper-pet'}" >Hyper Pet</a>
+    												</li>
+    												<li class="mobile-menu-list-noarrow">
                                                       <a data-bind="attr:{href :'/category/brand-jackson-galaxy'}" >Jackson Galaxy</a>
     												</li>
     												<li class="mobile-menu-list-noarrow">
@@ -2148,9 +2120,6 @@
     												</li>
     												<li class="mobile-menu-list-noarrow">
                                                           <a  data-bind="ccLink : {route :'/category/brand-vittlesvault'}" >Vittles Vault</a>
-    												</li>
-    												<li class="mobile-menu-list-noarrow">
-                                                          <a data-bind="attr:{href :'/category/brand-wouapy'}" >Wouapy</a>
     												</li>
     												<li class="mobile-menu-list-noarrow">
                                                           <a data-bind="attr:{href :'/category/brand-zoobilee'}" >Zoobilee</a>

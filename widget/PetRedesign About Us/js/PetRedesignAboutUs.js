@@ -38,17 +38,17 @@ define(
 				  "content":"Meet Koby! He's a happy 2-year-old Shetland Sheepdog who loves coming to work with mom. Every morning, he dances at the front door hoping he gets to go to work with mom. While mom works, Koby enjoys playing with the other dogs in the office as well as hoping in your lap to make sure you get to pet him. At home, his favorite thing to do is play in the water as his dad tries to water the plants.",
 				  "altText":"Meet-Kelly-and-Koby"
 			   },{
-				  "image":"facesofpetmate_laurenM_alfie.png",
-				  "content":"Meet Alfie! He's a 15-year-old Dachshund who loves coming to work with his mom for all the smells around the office. His mom, Lauren describes him as grumpy, yet cuddly with a serious case of FOMO. He is terrified of missing out on anything. When he's not busy being nosy around the office, you can find him right under his mom's feet.",
-				  "altText":"Meet-LaurenM-and-Alfie"
+				  "image":"facesofpetmate_jill_pepper.png",
+				  "content":"Meet Jill and Pepper! Jill works in our product development department here at Petmate and brings her sweet 11-year-old dog, Pepper to work with her every day. Pepper's favorite thing about coming to work with his mom is testing all the new toys she makes. When he's not at work with mom, Pepper enjoys making his presence known while herding all the other dogs at the dog park.",
+				  "altText":"Meet-Jill-and-Pepper"
 			   },{
 				  "image":"facesofpetmate_lindsey_peyton.png",
 				  "content":"Meet Peyton! She's a sweet 7-year-old, soft-coated Wheaten Terrier who was rescued by her mom, Lindsey in 2013. In between meetings she attends with mom, Peyton loves getting all the attention from anyone who stops by to say hi and will smother you in kisses as long as you let her. At home, her favorite thing to do is nap... that is, when she can catch a break from her mischievous kitten brother.",
 				  "altText":"Meet-Lindsey-and-Peyton"
 			   },{
-				  "image":"facesofpetmate_mary_summer2.png",
-				  "content":"Meet Summer! She's a spunky 9-year-old Chihuahua who loves coming to work with mom and playing with all of mom's friends. After her morning playtime, you can find Summer napping in her bed right next to her mom's keyboard. At home, Summer's favorite thing to do is play and catch bouncing balls.",
-				  "altText":"Meet-Mary-and-Summer"
+				  "image":"facesofpetmate_alyson_sunny.png",
+				  "content":"Meet Sunny! She's a one-and-a-half-year-old Cocker Spaniel who loves coming to the office with her momma! Her favorite thing about coming to the office is the belly rubs and pets she gets from all the people who pass by her mom's desk during the day. At home, this spunky girl loves playing on the outdoor trampoline and can jump from the group up to the opening in one single jump!",
+				  "altText":"Meet-Alyson-and-Sunny"
 			   },{
 				  "image":"facesofpetmate_katie_lucky.png",
 				  "content":"Meet Lucky Boy! He's an 8-year-old Staffordshire Terrier who is a total mama's boy. His favorite thing about coming to work with mom is getting to test all the new toys Petmate creates. When he's not testing toys, he loves sitting in his very own chair so it's easier for humans to pet him as they walk by. He has so much fun at work with mom, that he snoozes the whole ride home. At home, his favorite thing to do is snuggle under the covers and chase his tail.",

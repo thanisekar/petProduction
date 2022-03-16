@@ -34,7 +34,7 @@
       "text": null,
       "borderConfig": {
         "borderColor": "#000000",
-        "borderWidth": 0
+        "borderWidth": "0"
       },
       "paddingConfig": {
         "paddingBottom": "0",
@@ -46,12 +46,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "JW NEW Banana Chew-ee Dog Dental Toy",
-        "zoomEnabled": false,
-        "titleText": "JW NEW Banana Chew-ee Dog Dental Toy",
-        "link": "/jw-banana-chew-ee-dental-dog-toy/product/60639",
-        "isProductImage": false,
-        "fileName": "Nov-2021_JW_Banana-Chewee_WebBanner_1535x750.jpg"
+        "altText": "Shop JW Cat Wands",
+        "titleText": "Shop JW Cat Wands",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "link": "/category/brand-jw",
+        "fileName": "March-2021_JW_Wand-Sale_Web-Banner_1535x750.jpg"
       }
     },
     {
@@ -61,7 +61,7 @@
       "text": null,
       "borderConfig": {
         "borderColor": "#000000",
-        "borderWidth": 0
+        "borderWidth": "0"
       },
       "paddingConfig": {
         "paddingBottom": "0",
@@ -73,12 +73,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Fun Fall Activities To Do With Your Dog",
-        "zoomEnabled": false,
-        "titleText": "Fun Fall Activities To Do With Your Dog",
-        "isProductImage": false,
-        "link": "/5-fun-fall-activities-to-do-with-your-dog/article/a90192",
-        "fileName": "Nov-2021_PM-Academy_Fall-with-Dog_WebBanner_1535x750.jpg"
+        "altText": "Shop the Go Dog Go G5 Fetch Machine Now on Petmate",
+        "titleText": "Shop the Go Dog Go G5 Fetch Machine Now on Petmate",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "link": "/hyper-pet-go-dog-go-g5-fetch-machine/product/51370GDG",
+        "fileName": "GoDogGo_Web-Banner_1535x750.jpg"
       }
     },
     {
@@ -88,7 +88,7 @@
       "text": null,
       "borderConfig": {
         "borderColor": "#000000",
-        "borderWidth": 0
+        "borderWidth": "0"
       },
       "paddingConfig": {
         "paddingBottom": "0",
@@ -100,12 +100,12 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Shop Aspen Pet Self-Warming Pet Beds",
-        "zoomEnabled": false,
-        "titleText": "Shop Aspen Pet Self-Warming Pet Beds",
-        "isProductImage": false,
-        "link": "/aspen-pet-self-warming-dog-bed/product/AP04",
-        "fileName": "Nov-2021_AP_Self-Warming-Beds_WebBanner_1535x750.jpg"
+        "altText": "use code CATS20 to get 20% off cat products",
+        "titleText": "Save 20% on Cat Products",
+        "zoomEnabled": "0",
+        "isProductImage": "0",
+        "link": "/category/cats",
+        "fileName": "March-2022_PM_Cat-Sale_Web-Banner_1535x750.jpg"
       }
     },
     {

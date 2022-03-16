@@ -228,7 +228,7 @@
     		              <li class='pet-terms-menu'><a data-bind="ccLink: 'termsandconditions'" >Terms of use</a></li>
     		              <li class='pet-terms-menu'><a data-bind="ccLink: 'privacy'" >Privacy Policy</a></li>
     		               <li class='pet-terms-menu'><a data-bind="ccLink: 'Accessibility'" >Accessibility Statement</a></li>
-    		              <li class='pet-terms-menu'><span class="footer-copyrights">© 2021 Doskocil Manufacturing Company, Inc. dba Petmate</span></li>
+    		              <li class='pet-terms-menu'><span class="footer-copyrights">© 2022 Doskocil Manufacturing Company, Inc. dba Petmate</span></li>
     		          </ul>
     			  </div>
     			  

@@ -1,7 +1,5 @@
 
-<div class="bvCurationWrap" >
-    <!--<div  class="BVGalleryWrap"  data-bind="attr: {'id': koBVGalleryContainer()}"></div> -->
-    <!--<div data-crl8-container-id="product" data-crl8-filter="productId:17001"></div>-->
+<!--<div class="bvCurationWrap" >
     <div data-bind="attr: {'data-crl8-container-id': koDisplayProperty, 'data-crl8-auto-init': 'false', 'data-crl8-filter': 'productId:' + koProductProperty()}"></div>
-</div>
+</div>-->
 

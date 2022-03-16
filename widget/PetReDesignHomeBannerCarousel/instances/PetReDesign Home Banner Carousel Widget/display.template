@@ -14,21 +14,21 @@
                           <!-- ko if : homeBanner1.src() != '' -->
                             <div class="item active">
                                <a data-bind="ccLink: {route: homeBannerLink1()}">
-                              <img data-bind="attr:{src: homeBanner1.src()}" alt="Click now to shop our brands" title="Shop Our Brands">
+                              <img data-bind="attr:{src: homeBanner1.src()}" alt="Pet Qwerks Brand Sale" title="Pet Qwerks Brand Sale">
                               </a>
                             </div>
                             <!-- /ko -->
                             <!-- ko if : homeBanner2.src() != '' -->
                             <div class="item">
                                 <a data-bind="ccLink: {route: homeBannerLink2()}">
-                              <img data-bind="attr:{src: homeBanner2.src()}" alt="Click now to shop Gamma2 Nano Automated Pet Feeder" title="Nano Automated Pet Feeder - Shop Now">
+                              <img data-bind="attr:{src: homeBanner2.src()}" alt="click to Shop Gamma2 Nano Automated Pet Feeder" title="Shop Gamma2 Nano Automated Pet Feeder">
                             </a>
                             </div>
                              <!-- /ko -->
                               <!-- ko if : homeBanner3.src() != '' -->
                             <div class="item">
                               <a data-bind="ccLink: {route: homeBannerLink3()}">
-                            <img data-bind="attr:{src: homeBanner3.src()}" alt="National Fetch Day is Oct. 16th" title="Chuckit! National Fetch Day">
+                            <img data-bind="attr:{src: homeBanner3.src()}" alt="Shop Chuckit! New Kick Off Dog Fetch Toy" title="shop chuckit! Kick Off Dog Fetch Toy">
                           </a>
                             </div>
                              <!-- /ko -->

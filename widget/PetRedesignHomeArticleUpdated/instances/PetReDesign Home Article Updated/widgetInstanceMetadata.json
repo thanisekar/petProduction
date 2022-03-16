@@ -1,29 +1,29 @@
 {
   "configuration": {
     "ArticleImage4": {
-      "src": "/file/v6921393778872290237/general/a90137.WhyDoCatsKnead_MainImage.jpg",
-      "mediaName": "/general/a90137.WhyDoCatsKnead_MainImage.jpg"
+      "src": "/file/v1115046141470723629/general/a90208.7TipsToControlDogShedding_MainImage.jpg",
+      "mediaName": "/general/a90208.7TipsToControlDogShedding_MainImage.jpg"
     },
     "ArticleImage3": {
-      "src": "/file/v3247290190819055671/general/a90190.BenefitsOfTugToys_MainImage.jpg",
-      "mediaName": "/general/a90190.BenefitsOfTugToys_MainImage.jpg"
+      "src": "/file/v8246543128726263239/general/a90216.RentingWithPets101_MainImage.jpg",
+      "mediaName": "/general/a90216.RentingWithPets101_MainImage.jpg"
     },
     "ArticleImage2": {
-      "src": "/file/v8594452803285680686/general/a90173.DifferentTypesOfCatBeds_MainImage.jpg",
-      "mediaName": "/general/a90173.DifferentTypesOfCatBeds_MainImage.jpg"
+      "src": "/file/v7163671277305024958/general/a90115.WaysToCelebrateNationalWalkTheDogDay2021_MainImage.jpg",
+      "mediaName": "/general/a90115.WaysToCelebrateNationalWalkTheDogDay2021_MainImage.jpg"
     },
     "ArticleImage1": {
-      "src": "/file/v9142249607240775053/general/a90189.WhichDogHouseIsRightForMyDog_MainImage.jpg",
-      "mediaName": "/general/a90189.WhichDogHouseIsRightForMyDog_MainImage.jpg"
+      "src": "/file/v8103258193803090354/general/a90217.HardVsSoftCatCarriers_MainImage.jpg",
+      "mediaName": "/general/a90217.HardVsSoftCatCarriers_MainImage.jpg"
     },
-    "ArticleImage3Des": "Benefits of Tug Toys",
-    "ArticleImage1Des": "Which Doghouse Is Right For My Dog?",
-    "ArticleImage2Des": "Different Types of Cat Beds",
-    "ArticleImage2URL": "/different-types-of-cat-beds/article/a90173",
-    "ArticleImage4Des": "Why Do Cats Knead?",
-    "ArticleImage1URL": "/which-doghouse-is-right-for-my-dog-/article/a90189",
-    "ArticleImage3URL": "/benefits-of-tug-toys/article/a90190",
-    "ArticleImage4URL": "/why-do-cats-knead-/article/a90137"
+    "ArticleImage3Des": "Renting With Pets 101: Finding Pet-Friendly Living",
+    "ArticleImage1Des": "Hard Vs. Soft Cat Carriers: Which is Right For You?",
+    "ArticleImage2Des": "Ways to Celebrate National Walking the Dog Day",
+    "ArticleImage2URL": "/ways-to-celebrate-national-walk-the-dog-day-2022/article/a90115",
+    "ArticleImage4Des": "8 Tips to Control Dog Shedding",
+    "ArticleImage1URL": "/hard-vs-soft-cat-carriers-which-is-right-for-you-/article/a90217",
+    "ArticleImage3URL": "/renting-with-pets-101-finding-pet-friendly-living/article/a90216",
+    "ArticleImage4URL": "/8-tips-to-control-dog-shedding/article/a90208"
   },
   "displayName": "PetReDesign Home Article Updated"
 }

@@ -76,10 +76,10 @@ define(
 	       var getProductId='';
 	       
 	       if(getArticleId=='dogarticle'){
-	           getProductId='a90182,a90166,a90111';
+	           getProductId='a90210,a90206,a90186';
 	        }
 	        else if(getArticleId=='catarticle'){
-	            getProductId='a90177,a90168,a90069';
+	            getProductId='a90211,a90185,a90201';
 	        }
 	        else if(getArticleId=='birdarticle'){
 	            getProductId='a90153,a90082,a90062';

@@ -1,24 +1,24 @@
 {
   "configuration": {
-    "homeBannerLink3": "petmate-diy-wood-doghouse/product/25959",
+    "homeBannerLink3": "/chuckit-kickoff-dog-fetch-toy/product/47026",
     "homeBannerLink4": "",
-    "homeBannerLink1": "/category/petmate-brands",
+    "homeBannerLink1": "/category/brand-petqwerks",
     "homeBannerLink2": "/gamma2-nano-automatic-pet-feeder/product/43535",
     "homeBanner4": {
       "src": "",
       "mediaName": ""
     },
     "homeBanner3": {
-      "src": "/file/v5628149501834174718/general/PM_DIY-Doghouse-01_Web-Banner.jpg",
-      "mediaName": "/general/PM_DIY-Doghouse-01_Web-Banner.jpg"
+      "src": "/file/v5631416280122240356/general/CI_New-Kickoff_Web-Banner_1903x650.jpg",
+      "mediaName": "/general/CI_New-Kickoff_Web-Banner_1903x650.jpg"
     },
     "homeBanner2": {
-      "src": "/file/v9099300388647008369/general/G2_NanoAutomaticFeeder_Bann.jpg",
-      "mediaName": "/general/G2_NanoAutomaticFeeder_Bann.jpg"
+      "src": "/file/v8545570466617622989/general/Homepage-01.png",
+      "mediaName": "/general/Homepage-01.png"
     },
     "homeBanner1": {
-      "src": "/file/v5847305468797394860/general/PM_Homepage-Banner_60years.jpg",
-      "mediaName": "/general/PM_Homepage-Banner_60years.jpg"
+      "src": "/file/v2825405617915914048/general/March-2021_PQ_Toy-Sale_Web-Banner_1903x650.jpg",
+      "mediaName": "/general/March-2021_PQ_Toy-Sale_Web-Banner_1903x650.jpg"
     }
   },
   "displayName": "PetReDesign Home Banner Carousel Widget"
