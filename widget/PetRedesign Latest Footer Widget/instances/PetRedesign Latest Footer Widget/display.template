@@ -238,7 +238,7 @@
 				</div>
     			  
     			  <div class='norton-logo col-xs-12  col-md-1'>
-    			      <a href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.petmate.com&amp;lang=en" target="popup" onclick="window.open('https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.petmate.com&amp;lang=en','popup','width=600,height=600'); return false;" style="color:#ffffff; text-decoration:none; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">
+    			      <a href="https://norton.buysafe.com/shoppers/terms-and-conditions/" target="popup" onclick="window.open('https://norton.buysafe.com/shoppers/terms-and-conditions/','popup','width=600,height=600'); return false;" style="color:#ffffff; text-decoration:none; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">
                             <img class='resize' name="seal" src="/file/general/footer-norton.png" alt="Norton SECURED" title="Norton SECURED">
                         </a>
     			  </div> 
