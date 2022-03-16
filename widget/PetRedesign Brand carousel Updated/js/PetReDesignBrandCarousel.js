@@ -109,11 +109,6 @@ define(
 				  "id":"brand-booda"
 			   },
 			   {
-				  "route":"/category/brand-wouapy",
-				  "displayName":"Wouapy",
-				  "id":"brand-wouapy"
-			   },
-			   {
 				  "route":"/category/brand-zoobilee",
 				  "displayName":"Zoobilee",
 				  "id":"brand-zoobilee"
