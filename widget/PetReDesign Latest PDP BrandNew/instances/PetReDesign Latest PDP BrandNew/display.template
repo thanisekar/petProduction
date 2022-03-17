@@ -128,7 +128,7 @@
   </div>
 </div>
 <!--Stick Nav Ends-->
-<div id="CC-ProductDetails" data-bind="onRender: bvSchemaAppend">
+<div id="CC-ProductDetails">
   <div class="container">
      <div class="main-content">
         <!-- ko if: loaded -->

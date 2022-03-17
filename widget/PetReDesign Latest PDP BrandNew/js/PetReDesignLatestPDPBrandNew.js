@@ -389,10 +389,7 @@ define(
 
 
             },
-            bvSchemaAppend: function(){
-         
-                $("#PDP-Sticky-Nav").parents(".row").attr({itemtype:"http://schema.org/Product",itemscope:""});
-            },
+
 
             beforeAppear: function(page) {
                 var widget = this;
@@ -559,18 +556,61 @@ define(
                     }
 
                     //Ends
-                                window.bvCallback = function (BV) {
-                                // Use a loop for multiple products
-                                    for(var i=0, len=window.bvDCC.catalogData.catalogProducts.length; i < len; ++i){
-                                      BV.pixel.trackEvent("CatalogUpdate", {
-                                        type: 'Product',
-                                        locale: window.bvDCC.catalogData.locale,
-                                        catalogProducts: [ window.bvDCC.catalogData.catalogProducts[i] ]
-                                      });
-                                    }
-                                  };
-                                
-                                //BV Product dynamic feed Ends
+                    
+                    
+                     //BV Schema Product
+                     //console.log(getCurrentData.childSKUs[0],'getCurrentData.childSKUs[0].repositoryId');
+                    $("script[id='bvSchemaProduct']").remove();
+                    if ($("script[id='bvSchemaProduct']").length === 0) {
+                        var displayName = getCurrentData.product.displayName.replace(/"/g, "'");
+                        var bvLongDescription = getCurrentData.product.longDescription.replace(/<\/?[^>]+(>|$)/g, "");
+                        
+                       
+                        var bvSchemaProduct = '<script id="bvSchemaProduct" type="application/ld+json">' +
+                            '{' +
+                            '"@context" : "https://schema.org",' +
+                            '"@type" : "Product",'+
+                            '"@id":"https://www.petmate.com' + getCurrentData.product.route + '",' +
+                            '"name":"' + displayName + '",' +
+                            '"image":"https://www.petmate.com' + getCurrentData.product.primaryFullImageURL + '",' +
+                            '"description":"' + bvLongDescription + '",' +
+                            '"sku":"' + getCurrentData.childSKUs[0].repositoryId + '",' +
+                            '"brand": { '+
+                                '"@type": "Brand",'+
+                               ' "name":"' + getCurrentData.brand + '"' +
+                               '},'+
+                               '"offers": {'+
+                                '"@type": "Offer",'+
+                                '"url":"https://www.petmate.com' + getCurrentData.product.route + '",' +
+                                '"priceCurrency": "USD",'+
+                                '"price": "' + getCurrentData.childSKUs[0].listPrice + '"' +
+                              '}'+
+                            '}' +
+                            '</script>'
+                            
+                            // console.log(bvSchemaProduct,'bvSchemaProduct');
+                        $("head").append(bvSchemaProduct);
+                    }
+
+                    //Ends
+                    
+                  
+
+
+
+                    window.bvCallback = function(BV) {
+                        console.log(window.bvDCC.catalogData.catalogProducts,'window.bvDCC.catalogData.catalogProducts');
+                        // Use a loop for multiple products
+                        for (var i = 0, len = window.bvDCC.catalogData.catalogProducts.length; i < len; ++i) {
+                            BV.pixel.trackEvent("CatalogUpdate", {
+                                type: 'Product',
+                                locale: window.bvDCC.catalogData.locale,
+                                catalogProducts: [window.bvDCC.catalogData.catalogProducts[i]]
+                            });
+                        }
+                    };
+
+                    //BV Product dynamic feed Ends
                     var minPrice = getCurrentData.minPrice;
                     var minPrice1 = [];
                     if (parseInt(minPrice) == minPrice) {
