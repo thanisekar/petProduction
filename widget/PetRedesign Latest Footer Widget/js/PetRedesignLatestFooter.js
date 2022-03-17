@@ -368,7 +368,7 @@ define(
                 setTimeout(function() {
                     _GUARANTEE.ResetKickers();
                     //Make Google review hide behind cookie control
-                    $("#___ratingbadge_1").css({"z-index": "1"});
+                    $("#___ratingbadge_1").css({"z-index": "1","right":"25px"});
                 }, 2000)
 
             },
