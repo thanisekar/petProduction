@@ -564,7 +564,7 @@ define(
                     if ($("script[id='bvSchemaProduct']").length === 0) {
                         var displayName = getCurrentData.product.displayName.replace(/"/g, "'");
                         var bvLongDescription = getCurrentData.product.longDescription.replace(/<\/?[^>]+(>|$)/g, "");
-                        
+                        var bvLongDescriptionFinal = bvLongDescription.replace(/"/g, "'");
                        
                         var bvSchemaProduct = '<script id="bvSchemaProduct" type="application/ld+json">' +
                             '{' +
@@ -573,7 +573,7 @@ define(
                             '"@id":"https://www.petmate.com' + getCurrentData.product.route + '",' +
                             '"name":"' + displayName + '",' +
                             '"image":"https://www.petmate.com' + getCurrentData.product.primaryFullImageURL + '",' +
-                            '"description":"' + bvLongDescription + '",' +
+                            '"description":"' + bvLongDescriptionFinal + '",' +
                             '"sku":"' + getCurrentData.childSKUs[0].repositoryId + '",' +
                             '"brand": { '+
                                 '"@type": "Brand",'+
@@ -588,7 +588,7 @@ define(
                             '}' +
                             '</script>'
                             
-                            // console.log(bvSchemaProduct,'bvSchemaProduct');
+                            //console.log(bvSchemaProduct,'bvSchemaProduct1');
                         $("head").append(bvSchemaProduct);
                     }
 
