@@ -20,7 +20,7 @@ define(
             itemsPerRowInLargeDesktopView: ko.observable(6),
             itemsPerRowInDesktopView: ko.observable(6),
             itemsPerRowInTabletView: ko.observable(4),
-            itemsPerRowInPhoneView: ko.observable(2),
+            itemsPerRowInPhoneView: ko.observable(1),
             itemsPerRow: ko.observable(),
             viewportWidth: ko.observable(),
             viewportMode: ko.observable(),
