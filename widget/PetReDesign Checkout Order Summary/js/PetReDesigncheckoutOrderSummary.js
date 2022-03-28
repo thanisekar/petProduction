@@ -1021,7 +1021,7 @@ define(
                 $('.overSized').hide();
                 $(".shippingOptions").show();
                 $('.orderPopup').hide();
-                $('#CC-Checkout-Placeorder').attr('disabled', false);
+                
                 $('.bt-popup').hide();
                 //Case 1 : Free Shipping
 
@@ -1029,7 +1029,7 @@ define(
                     $('.overSized').hide();
                     $(".shippingOptions").show();
                     $('.orderPopup').hide();
-                    $('#CC-Checkout-Placeorder').attr('disabled', false);
+                    
                     $('.bt-popup').hide();
                     $(".bt-popup").removeClass("popupCheck");
                 }
@@ -1044,7 +1044,7 @@ define(
                     $('.overSized').show();
                     $(".shippingOptions").show();
                     $('.orderPopup').hide();
-                    $('#CC-Checkout-Placeorder').attr('disabled', false);
+                    
                     $('.bt-popup').hide();
                     $(".bt-popup").removeClass("popupCheck");
                 }
@@ -1058,7 +1058,6 @@ define(
                     $('.overSized').hide();
                     $(".shippingOptions").hide();
                     $('.orderPopup').show();
-                    $('#CC-Checkout-Placeorder').attr('disabled', true);
                     $('.bt-popup').show();
                     $(".bt-popup").addClass("popupCheck");
                 }
@@ -1073,7 +1072,6 @@ define(
                     $('.overSized').show();
                     $(".shippingOptions").show();
                     $('.orderPopup').hide();
-                    $('#CC-Checkout-Placeorder').attr('disabled', false);
                     $('.bt-popup').hide();
                     $(".bt-popup").removeClass("popupCheck");
                 }
@@ -1091,7 +1089,7 @@ define(
                     $('.overSized').show();
                     $(".shippingOptions").show();
                     $('.orderPopup').hide();
-                    $('#CC-Checkout-Placeorder').attr('disabled', false);
+                    
                     $('.bt-popup').hide();
                     $(".bt-popup").removeClass("popupCheck");
                 }
@@ -1105,7 +1103,6 @@ define(
                     $('.overSized').hide();
                     $(".shippingOptions").hide();
                     $('.orderPopup').show();
-                    $('#CC-Checkout-Placeorder').attr('disabled', true);
                     $('.bt-popup').show();
                     $(".bt-popup").addClass("popupCheck");
                 }
@@ -1125,7 +1122,6 @@ define(
                     $('.overSized').show();
                     $(".shippingOptions").show();
                     $('.orderPopup').hide();
-                    $('#CC-Checkout-Placeorder').attr('disabled', false);
                     $('.bt-popup').hide();
                     $(".bt-popup").removeClass("popupCheck");
                 }
@@ -1141,7 +1137,7 @@ define(
                     $('.overSized').show();
                     $(".shippingOptions").show();
                     $('.orderPopup').hide();
-                    $('#CC-Checkout-Placeorder').attr('disabled', false);
+                    
                     $('.bt-popup').hide();
                     $(".bt-popup").removeClass("popupCheck");
                 }
@@ -1157,14 +1153,17 @@ define(
                         $("#CC-orderSummaryLoadingModal").hide();
                         $('.state-alert').css('display', 'block');
                         $('.overSized').hide();
-                        $('#CC-Checkout-Placeorder').attr('disabled', true);
+                        $('#CC-Checkout-Placeorder').hide();
+                        $('#CC-Checkout-Placeorder-Mobile').hide();
+
                     } else if (getWidget.airCheck()) {
 
 
                         $('.overSized').hide();
                         $("#CC-orderSummaryLoadingModal").show();
                         $('.state-alert').css('display', 'none');
-                        $('#CC-Checkout-Placeorder').attr('disabled', false);
+                        $('#CC-Checkout-Placeorder').show();
+                        $('#CC-Checkout-Placeorder-Mobile').show();
                         $('.bt-popup').hide();
                         $('#CC-checkoutOrderSummary-shippingOption-300009').prop("checked", true).trigger("click");
                         $(".CC-checkoutOrderSummary-shippingOption-300010").hide();
@@ -1173,7 +1172,8 @@ define(
 
                         $("#CC-orderSummaryLoadingModal").show();
                         $('.state-alert').css('display', 'none');
-                        $('#CC-Checkout-Placeorder').attr('disabled', false);
+                        $('#CC-Checkout-Placeorder').show();
+                        $('#CC-Checkout-Placeorder-Mobile').show();
                         getWidget.shippingmethods().defaultShipping("300010");
                         getWidget.selectedShippingValue("300010");
                     }
@@ -1189,7 +1189,6 @@ define(
                         $('.overSized').show();
                         $(".shippingOptions").show();
                         $('.orderPopup').hide();
-                        $('#CC-Checkout-Placeorder').attr('disabled', false);
                         $('.bt-popup').hide();
                         $(".bt-popup").removeClass("popupCheck");
                     }
