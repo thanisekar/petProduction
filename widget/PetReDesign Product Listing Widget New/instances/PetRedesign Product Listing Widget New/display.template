@@ -222,7 +222,7 @@
                <div class="col-xs-12 shopAllLinkWrapper">
                    
                   
-                  <div id="brand-carousel-controls" class="col-sm-4 hidden-xs nopad">
+                  <div id="brand-carousel-controls" class="col-sm-4 nopad">
                   <!-- Carousel Controls -->
                   <!-- ko if: recommendationsGroups() && (recommendationsGroups().length > 1) -->
                   <div class="controls row pull-right ">

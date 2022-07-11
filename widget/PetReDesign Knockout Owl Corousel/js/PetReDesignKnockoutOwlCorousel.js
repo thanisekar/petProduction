@@ -2,14 +2,15 @@ define(
     //-------------------------------------------------------------------
     // DEPENDENCIES
     //-------------------------------------------------------------------
-    ['knockout', 'ccRestClient', 'ccConstants', 'storageApi'],
+    ['knockout', 'ccRestClient', 'ccConstants', 'storageApi', 'pubsub'],
 
     //-------------------------------------------------------------------
     // MODULE DEFINITION
     //-------------------------------------------------------------------
-    function(ko, ccRestClient, ccConstants, storageApi) {
+    function(ko, ccRestClient, ccConstants, storageApi, pubsub) {
 
         "use strict";
+        var newRoute = "";
         var productIds = '';
         var getWidget = "";
         var dataLayer = [];
@@ -29,7 +30,7 @@ define(
             koDealsModelData: ko.observableArray([]),
             koDealsIsFlagData: ko.observableArray([]),
             koProductId: ko.observable(),
-
+            variantOptionsArray: ko.observableArray([]),
 
             // END Copied from the collection widget
 
@@ -42,10 +43,12 @@ define(
             getProductDetails: function(getProductId) {
                
                 var widget = this;
-                ccRestClient.authenticatedRequest("/ccstoreui/v1/products/?productIds=" + getProductId.toString() + "&fields=route,displayName,primarySmallImageURL,description,id,startDateStr,isGetSalePrice,listPrice,onSale,promotext,x_freeShippingRibbon,salePrice", {}, function (e) {
+                 widget.getCarouselArrow();
+                ccRestClient.authenticatedRequest("/ccstoreui/v1/products/?productIds=" + getProductId.toString() + "&fields=route,childSKUs,displayName,primarySmallImageURL,description,id,startDateStr,isGetSalePrice,listPrice,onSale,promotext,x_freeShippingRibbon,salePrice", {}, function (e) {
                     widget.updateData(e);
                     console.log("e-->",e);
                 }, function(data) {}, "GET");
+                
             },
             getStockPrice: function(getData) {
                 if (getWidget.productId() !== null) {
@@ -178,6 +181,7 @@ define(
 
                 getWidget = widget;
                 
+                
 
                 // set up the recommendations ko observable
                 widget.recommendations = ko.observableArray();
@@ -271,7 +275,7 @@ define(
                         widget.checkResponsiveFeatures($(window)[0].innerWidth || $(window).width());
                         widget.viewportWidth($(window)[0].innerWidth || $(window).width());
                     });
-                $("body").delegate(".collectionProdCarousel", "slid.bs.carousel", function(e) {
+                $("body").delegate(".collectionProdCarousel-p", "slid.bs.carousel", function(e) {
                     widget.getCarouselArrow()
                 });
                 $("body").delegate(".collectionfatCatCarousel", "slid.bs.carousel", function(e) {
@@ -285,15 +289,120 @@ define(
             beforeAppear: function(page) {
                 getWidget.getProductIds();
             },
+            
+           handleAddToCartRecommendation: function(data, event) {
+                console.log(data,'Home data');
+
+               var getRepProductId = data.id;
+                //var replaceQty = $("#CC-prodDetails-quantity" + getRepProductId).val();
+                var replaceQty = 1;
+                /*if (parseInt(replaceQty) < 1) {
+                    return;
+                }*/
+
+                var a = ccConstants.ENDPOINT_PRODUCTS_GET_PRODUCT;
+                var l = {};
+                var p = getRepProductId;
+                var output = [];
+                ccRestClient.request(a, l, function(output) {
+                    var skuItem = {};
+                    /*for (var index in output.childSKUs) {
+                        console.log(getRepProductId,'getRepProductId');
+                        console.log(output.childSKUs[index].repositoryId,'output.childSKUs[index].repositoryId');
+                        if (getRepProductId == output.childSKUs[index].repositoryId) {
+                            skuItem = output.childSKUs[index];
+                            console.log(skuItem,'skuItem');
+                        }
+                    }*/
+                    skuItem = output.childSKUs[0];
+                    var t1 = [];
+                    var result = {};
+                    for (var variant in output.productVariantOptions) {
+                        t1.push({
+                            optionValue: skuItem[output.productVariantOptions[variant].optionId],
+                            optionId: output.productVariantOptions[variant].optionId,
+                        });
+                    }
+
+                    result = {
+                        selectedOptions: t1
+                    };
+
+
+                    var s = $.extend(!0, {}, output, result);
+                    //var rquantity =1;
+                    s.childSKUs = [skuItem], s.orderQuantity = parseInt(replaceQty, 10);
+                    $.Topic(pubsub.topicNames.CART_ADD).publishWith(s, [{
+                        message: "success"
+                    }]);
+
+
+                }, function(output) {
+
+                }, p);
+                if ($(window).width() >= 1025) {
+                    $('.modal-backdrop').remove();
+                    $('body').removeClass('modal-open');
+                    $('#mobilAddCart').modal('hide')
+                } else if ($(window).width() < 1025) {
+                    $('#mobilAddCart').modal('show')
+                }
+                $(window).on('resize', function() {
+                    var win = $(this); //this = window
+                    if (win.width() >= 1025) {
+                        $('.modal-backdrop').remove();
+                        $('body').removeClass('modal-open');
+                        $('#mobilAddCart').modal('hide')
+                    }
+
+                });
+               
+            
+            },
+            
+            truncate:function(string){
+                 console.log(string(),'string');
+                 var getString;
+        			   getString=string();
+        			   if(getString){
+        			        if (string().length > 155 )
+                           {
+                             getString= string().substring(0,155)+'...'; 
+                               return getString;
+                           }
+                           else{
+                                return getString;
+                           }
+        			   }
+                       
+             
+                 },
+            
+            newMonthDisplay: function(data) {
+                if(data.startDateStr() !==null && data.startDateStr() !== "") {
+                    var startDateArr = data.startDateStr().split("-");
+                       var shortMon =["Jan","Feb", "Mar", "Apr","May" ,"Jun" ,"Jul" ,"Aug", "Sep" ,"Oct", "Nov","Dec"];
+                     
+                     var startDateFormat = shortMon[(parseInt(startDateArr[1])-1)]+" "+startDateArr[2]+", "+startDateArr[0];
+                    return startDateFormat;
+                } else {
+                    return "";
+                }
+                
+            },
             getCarouselArrow: function () {
-                if ($('.home-carousel .item').length > 0) {
-                    $('#cc-carousel-controls a').removeClass('disabled');
-                    if ($(".home-carousel .item:first").hasClass("active")) {
-                        $('#cc-carousel-left-control .corousel-left').addClass('disabled');
-                    } else if ($(".home-carousel .item:last").hasClass("active")) {
-                        $('#cc-carousel-right-control .corousel-right').addClass('disabled');
+                if ($('.home-carousel-p .item').length > 0) {
+                    $('#cc-carousel-controls-p a').removeClass('disabled');
+                     $('.home-carousel-p a').removeClass('disabled');
+                    if ($(".home-carousel-p .item:first").hasClass("active")) {
+                        $('#cc-carousel-left-control-p .corousel-left').addClass('disabled');
+                        $('#cc-carousel-left-control-m .corousel-left').addClass('disabled');
+                    } else if ($(".home-carousel-p .item:last").hasClass("active")) {
+                        $('#cc-carousel-right-control-p .corousel-right').addClass('disabled');
+                        $('#cc-carousel-right-control-m .corousel-right').addClass('disabled');
                     } else {
-                        $('#cc-carousel-controls a').removeClass('disabled');
+                        $('#cc-carousel-controls-p a').removeClass('disabled');
+                         $('.home-carousel-p a').removeClass('disabled');
                     }
                 }
             },
@@ -303,6 +412,7 @@ define(
                     if ($(".fatCat-carousel .item:first").hasClass("active")) {
                         $('#cc-carousel-left-control .corousel-left').addClass('disabled');
                     } else if ($(".fatCat-carousel .item:last").hasClass("active")) {
+                        console.log('No');
                         $('#cc-carousel-right-control .corousel-right').addClass('disabled');
                     } else {
                         $('#cc-carousel-controls a').removeClass('disabled');

@@ -1,4 +1,13 @@
 <div id="CC-promotionUpsell">
+    <!--Static Banner Content-->
+    <div class='petredeisgnshippingBar_wrapper'>
+            <div class='container'>
+                    <div class='petredesing-shippingBar col-xs-12 col-sm-12 '>
+                         <a class="cc-rich-text"><p>Buy Direct From The Manufacturer And Save!</p></a>
+                      </div>
+                </div>
+            </div>
+    <!--Static Banner Content Ends-->
   <!-- ko foreach : {data: $data.promotionUpsellMessages(), as: 'message'}-->
             <div class='petredeisgnshippingBar_wrapper'>
             <div class='container'>

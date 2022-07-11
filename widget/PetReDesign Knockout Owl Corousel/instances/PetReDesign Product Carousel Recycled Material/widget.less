@@ -1,57 +1,45 @@
 #WIDGET_ID-WIDGET_INSTANCE_ID {
-
-#cc-recs {
-    .brandCollectionCarousel{
-        position:initial!important;
+    
+    
+    #cc-recs {
+    
+    /*Price Styles*/
+    .salePriceValue{
+        color: #eb2b2b !important;
+        font-family: 'Roboto',sans-serif;
+        font-weight: bold !important;
     }
-    .head-section{
-            margin-bottom: 20px;
+    .listPriceValue{
+        text-decoration: line-through;
     }
-    #brand-carousel-left-control {
+    /*Ends*/
+    #cc-carousel-left-control {
         .disabled{
         pointer-events: none;
         background: rgba(0, 0, 0, 0) url(/file/general/arrowcircle_left_unactive_28x28.svg) no-repeat 0 0 !important;
      }
     }
-     #brand-carousel-right-control{
+     #cc-carousel-right-control{
         .disabled{
         pointer-events: none;
         background: rgba(0, 0, 0, 0) url(/file/general/arrowcircle_right_unactive_28x28.svg) no-repeat 0 0 !important;
      }
     }
-    h2 {
-        font-size: 28px;
-        font-weight: 500;
-        line-height: 20px;
-        margin: 0;
-        font-family: 'Nunito',sans-serif;
-        padding: 0 15px;
-    }
-    .shopAllLinkWrapper {
-        text-align: left;
-        padding: 15px 0 0 0;
-        .shop-all-brands {
-            font-family: 'Nunito',sans-serif;
-            text-transform: uppercase;
-            color: #2654bf;
-            font-size: 13px;
-            font-weight: bold;
-            text-decoration: none;
-            letter-spacing: .5px;
-            line-height: 13px;
-            position: relative;
-            float:right;
-        }
-    }
-    .brandDisplayName {
-        background-color: #fcfbf7;
-        padding: 10px 20px;
-        display: block;
-        border: 1px solid #eeedeb;
-    }
   #cc-recs-title {
     margin-bottom: 0px;
   }
+  .title-txt{
+              font-size: 42px;
+            line-height: 50px;
+            color: #000;
+            font-weight: 300;
+            font-family: 'Nunito',sans-serif;
+            text-align:center;
+            @media (max-width:767px){
+             font-size: 28px;
+             line-height: 38px;
+            }
+        }
   .title{
       font-family: @font-family-nunito;  
         font-size: 28px !important;
@@ -72,11 +60,12 @@
         padding-right: 0px;
       }
     }
-    /*.cc-product-item {
+    .cc-product-item {
       .cc-item-detail a img{
-        height: 100%;       
+        height: 100%;   
+        margin: 0 auto;
       }
-    }  */  
+    }    
     .cc-product-item {
       overflow: hidden;
       height: 95%;
@@ -85,13 +74,10 @@
     .cc-item-detail {
       height: 64%;
       text-align: center;
-        border: 1px solid #fff;
-        &:hover{
-            border: 1px solid #2654bf;
-        }
+      position:relative;
     }
     .cc-item-title {
-       height: 15%;
+       height: 17%;
       display: inline-block;
       overflow: hidden;
       width: 100%;
@@ -100,17 +86,12 @@
       
     }
     .cc-item-price {
-      height: 7%;
-      margin-top: 10px;
-      color: #000;
-      font-weight: Bold;
-      text-align: center;
-      font-size: 15px;
+     
     }
   }
   .cc-item-rating{
           height: 7%;
-          margin-top: 10px;
+          //margin-top: 10px;
          text-align: center;
 	    .bv-cv2-cleanslate{
 	        .bv-inline-rating-container{
@@ -126,11 +107,89 @@
 	            }
 	            
 	        }
-	    }
+	    } 
 	}
+	.product-flag{
+	   position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: 10px;
+            .petmate-sale-flag{
+                text-transform: uppercase;
+                background-color: #eb2b2b;
+                color: #fff;
+                padding: 5px 12px;
+                border-radius: 2px;
+                font-size: 11px !important;
+                line-height: 13px !important;
+                font-weight: 700 !important;
+                text-align: center !important;
+                letter-spacing: 0.66px !important;
+                font-family:@font-family-roboto !important;
+             }
+            .petmate-new-flag{
+                text-transform: uppercase;
+                background-color: #2654bf !important;
+                color: #fff !important;
+                padding: 5px 12px !important;
+                border-radius: 2px;
+                font-size: 11px !important;
+                line-height: 13px !important;
+                font-weight: 700 !important;
+                text-align: center !important;
+                letter-spacing: 0.66px !important;
+                font-family:@font-family-roboto !important;
+            }
+        }
+        .cc-item-price{
+                font-size: 14px;
+            color: #151515;
+            font-weight: 500;
+            line-height: 21px;
+            //margin-top: 25px;
+            text-align: center;
+            font-family: 'Roboto',sans-serif;
+        }
+        .product-seller{
+            .petmate-promo-text{
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 100;
+            text-transform: uppercase;
+            background-color: #2753bf;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 2px;
+            font-size: 10px;
+            line-height: 1.5;
+            font-weight: 600;
+            text-align: center;
+            font-family: 'Nunito',sans-serif;
+            }
+            .petmate-free-shipping-text{
+            position: absolute;
+            top: 0;
+            z-index: 100;
+            text-transform: uppercase;
+            background-color: #2753bf;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 2px;
+            font-size: 10px;
+            line-height: 1.5;
+            font-weight: 600;
+            text-align: center;
+            font-family: 'Nunito',sans-serif;
+            }
+            
+        }
   .carousel-inner .row {
     vertical-align: middle;
-    //height: 270px;
+    height: 270px;
     display: none;
   }
   .carousel-inner .active {
@@ -144,7 +203,7 @@
     padding-bottom: 0px;
   }
   .controls {
-    //margin-top: 20px;
+    margin-top: 20px;
   }
   .carousel-indicators {
     position: relative;
@@ -163,27 +222,32 @@
       background-color: #222222;
     }
   }
-  #brand-carousel-indicators {
+  #cc-carousel-indicators {
     margin-bottom: 20px;
   }
   hr {
     margin-top: 0px;
   }
-  #brand-carousel-controls {
-    bottom: 26px;
+  #cc-carousel-controls {
+    bottom: 30px;
     float: right;
+    @media (max-width:767px){
+             bottom: 70px;
+            }
   }
-  #brand-carousel-left-control {
+  #cc-carousel-left-control {
     padding-right: 0px;
   }
-  #brand-carousel-right-control {
+  #cc-carousel-right-control {
     padding-left: 5px;
   }
   .cc-text-overflow {
       color:#8f8d8b!important;
     letter-spacing:0.30px;
     margin-top: 5px;
-        font-size: 15px!important;
+        font-size: 12px!important;
+        line-height: 18px!important;
+        font-weight:500;
   } 
   .cc-item-price .label-danger{
     background-color: #e50000;
@@ -194,8 +258,8 @@
 /*Custom Stylings*/
 
 #cc-recs{
-    margin-top: 15px;
-    margin-bottom: 45px;
+   // margin-top: 65px;
+   // margin-bottom: 55px;
     .collection-header{
         padding-left:15px!important;
         padding-right:15px!important;
@@ -215,8 +279,12 @@
     
     .inner-corousel{
            margin-top: 30px; 
+           @media (max-width:767px){
+             margin-top: 0px; 
+            }
+
     }
-    .brand-corousel-left{
+    .corousel-left{
     background: rgba(0, 0, 0, 0) url(/file/general/Carouselarrowleft_hover_28x28.png) no-repeat 0 0 !important;  
     height: 30px;
     right: 22px;
@@ -230,13 +298,8 @@
     &:hover{
         background: rgba(0, 0, 0, 0) url(/file/general/Carouselleftarrow_28x28.png) no-repeat 0 0 !important;
     }
-    @media only screen and (max-width: 767px) {
-				&:hover {
-					background: rgba(0, 0, 0, 0) url(/file/general/Carouselarrowleft_hover_28x28.png) no-repeat 0 0 !important;  
-				}
-			}
     }
-    .brand-corousel-right{
+    .corousel-right{
         background: rgba(0, 0, 0, 0) url(/file/general/Carouselarrow_right_hover_28x28.png) no-repeat 0 0 !important;
         height: 30px;
         position: absolute;
@@ -249,25 +312,8 @@
         &:hover{
             background: rgba(0, 0, 0, 0) url(/file/general/Carouselrightarrow_28x28.png) no-repeat 0 0 !important;
         }
-        @media only screen and (max-width: 767px) {
-				&:hover {
-					 background: rgba(0, 0, 0, 0) url(/file/general/Carouselarrow_right_hover_28x28.png) no-repeat 0 0 !important;
-				}
-			}
     }
-    
-    
 }
- @media only screen and (max-width: 767px){
-         .head-section{
-             h2, .shopAllLinkWrapper{
-                 text-align:center!important;
-             }
-             .shop-all-brands{
-                 float:none!important;
-             }
-         }
-     }
 
 
 }

@@ -17,7 +17,7 @@
                      </div>
                       <p class="text-danger" data-bind="validationMessage: Email"></p>
                       <p class="disclaimer">*Your email will be entered into the Petmate mailing list. <br>You may unsubscribe at any time</p>
-                      <p class="success-msg">Thanks for signing up. You'll be the first to know about pawsome deals and pet-parent tips.</p>
+                      <p class="success-msg">Thanks for signing up. You'll be the first to know about our pawsome deals and pet-parenting tips.</p>
                 </div>
                </div>
            </div>

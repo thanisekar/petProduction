@@ -1,44 +1,44 @@
 <div id="home-banner-carousel">
       <!-- oc section: unknown-1 -->
+      <div id="mini-banner" class="visible-xs">
+      <div class="category-ribbons">
+          <div class="category-banner" style="border-right : 0.01px solid #ccc;"><a data-bind="ccLink: {route:'/category/dogs'}">Shop for Dogs</a></div>
+          <div class="category-banner"><a data-bind="ccLink: {route:'/category/cats'}">Shop for Cats</a></div>
+      </div>
+      </div>
       <div id="carousel-example-generic"  class="carousel slide homeBanner-carousel" data-ride="carousel">
                           <!-- Indicators -->
                           <ol class="carousel-indicators">
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                           <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
-							<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                           </ol>
                         
-                          <!-- Wrapper for slides -->
-                          <div class="carousel-inner" data-bind="template: { afterRender: function() {homeCarousel() }}"> 
-                          <!-- ko if : homeBanner1.src() != '' -->
+                         <div class="carousel-inner" data-bind="template: { afterRender: function() {homeCarousel() }}"> 
                             <div class="item active">
-                               <a data-bind="ccLink: {route: homeBannerLink1()}">
-                              <img data-bind="attr:{src: homeBanner1.src()}" alt="Pet Qwerks Brand Sale" title="Pet Qwerks Brand Sale">
+                                <a class="hidden-xs desktop" data-bind="ccLink: {route: '/category/cats'}">
+                                 <img class="img-responsive" alt="national kitten day sale. use code KITTENS20 to get 20% off cat products" title="National Kitten Day Sale" src="/file/general/July-2022_PM_Kitten-Day_WebBannerDESKTOP_1903x650.jpg">
+                              </a>
+                                <a class="visible-xs mobile" data-bind="ccLink: {route: '/category/cats'}">
+                                 <img class="img-responsive" alt="national kitten day sale. use code KITTENS20 to get 20% off cat products" title="National Kitten Day Sale" src="/file/general/July-2022_PM_Kitten-Day_WebBannerMOBILE_1080x1920.jpg">
                               </a>
                             </div>
-                            <!-- /ko -->
-                            <!-- ko if : homeBanner2.src() != '' -->
                             <div class="item">
-                                <a data-bind="ccLink: {route: homeBannerLink2()}">
-                              <img data-bind="attr:{src: homeBanner2.src()}" alt="click to Shop Gamma2 Nano Automated Pet Feeder" title="Shop Gamma2 Nano Automated Pet Feeder">
-                            </a>
+                               <a class="hidden-xs desktop" data-bind="ccLink: {route: '/category/top-rated-products'}">
+                                 <img class="img-responsive" alt="click to shop our top-rated pet products" title="Shop Top-Rated Pet Products" src="/file/general/July-2022_PM_5-Star_WebBanner_1903x650DESKTOP.jpg">
+                              </a>
+                                <a class="visible-xs mobile" data-bind="ccLink: {route: '/category/top-rated-products'}">
+                                 <img class="img-responsive" alt="click to shop our top-rated pet products" title="Shop Top-Rated Pet Products" src="/file/general/July-2022_PM_5-Star_WebBanner_1080x1920MOBILE.jpg">
+                              </a>
                             </div>
-                             <!-- /ko -->
-                              <!-- ko if : homeBanner3.src() != '' -->
                             <div class="item">
-                              <a data-bind="ccLink: {route: homeBannerLink3()}">
-                            <img data-bind="attr:{src: homeBanner3.src()}" alt="Shop Chuckit! New Kick Off Dog Fetch Toy" title="shop chuckit! Kick Off Dog Fetch Toy">
-                          </a>
+                               <a class="hidden-xs desktop" data-bind="ccLink: {route: '/how-to-celebrate-national-kitten-day/article/a90233'}">
+                                 <img class="img-responsive" alt="Learn About National Kitten Day" title="National Kitten Day Article" src="/file/general/July-2022_PM_Academy_Kitten-Day_WebBanner_1903x650.jpg">
+                              </a>
+                                <a class="visible-xs mobile" data-bind="ccLink: {route: '/how-to-celebrate-national-kitten-day/article/a90233'}">
+                                 <img class="img-responsive" alt="Learn About National Kitten Day" title="National Kitten Day Article" src="/file/general/July-2022_PM_Academy_Kitten-Day_WebBanner_1080x1920.jpg">
+                              </a>
                             </div>
-                             <!-- /ko -->
-							 <!-- ko if : homeBanner4.src() != '' -->
-                            <div class="item">
-                              <a data-bind="ccLink: {route: homeBannerLink4()}">
-                            <img data-bind="attr:{src: homeBanner4.src()}" alt="Shop Our Brands" title="Shop Our Brands">
-                          </a>
-                            </div>
-                             <!-- /ko -->
                           </div>
                         
                           <!-- Controls -->
@@ -49,4 +49,5 @@
                             <span class="glyphicon glyphicon-chevron-right"></span>
                           </a>
                         </div>
+                        
 </div>

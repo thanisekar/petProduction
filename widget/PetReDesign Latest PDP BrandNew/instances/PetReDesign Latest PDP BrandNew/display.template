@@ -315,7 +315,7 @@
                           <!-- ko if: $data.hasOwnProperty("madeInUsa") -->
                           <div class='madeInUsa'>        
                              <img class="right" data-bind="visible : $parent.MadeInUSA(),ccResizeImage: {
-                                source: '/file/general/PetReDesignMade_In_USA.PNG',
+                                source: '/file/general/Made-In-USA_Logo_BLUE.png',
                                 xsmall: '80,100',
                                 small: '80,100',
                                 medium: '120,120',

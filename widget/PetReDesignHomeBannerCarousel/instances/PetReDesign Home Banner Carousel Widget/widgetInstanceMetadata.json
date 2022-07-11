@@ -1,24 +1,24 @@
 {
   "configuration": {
-    "homeBannerLink3": "/chuckit-kickoff-dog-fetch-toy/product/47026",
+    "homeBannerLink3": "/category/L1-groomingL2-dog-grooming",
     "homeBannerLink4": "",
-    "homeBannerLink1": "/category/brand-petqwerks",
-    "homeBannerLink2": "/gamma2-nano-automatic-pet-feeder/product/43535",
+    "homeBannerLink1": "/category/brand-petmate",
+    "homeBannerLink2": "/hyper-pet-godoggo-fetch-machine-g5-rechargeable-ball-launcher/product/51370GDG",
     "homeBanner4": {
       "src": "",
       "mediaName": ""
     },
     "homeBanner3": {
-      "src": "/file/v5631416280122240356/general/CI_New-Kickoff_Web-Banner_1903x650.jpg",
-      "mediaName": "/general/CI_New-Kickoff_Web-Banner_1903x650.jpg"
+      "src": "/file/v6261589782425344611/general/April-2022_JW_Grooming_Web-Banner_1903x650.jpg",
+      "mediaName": "/general/April-2022_JW_Grooming_Web-Banner_1903x650.jpg"
     },
     "homeBanner2": {
-      "src": "/file/v8545570466617622989/general/Homepage-01.png",
-      "mediaName": "/general/Homepage-01.png"
+      "src": "/file/v2267809478985602858/general/HP_GoDogGo_Web-Banner_1903x650.jpg",
+      "mediaName": "/general/HP_GoDogGo_Web-Banner_1903x650.jpg"
     },
     "homeBanner1": {
-      "src": "/file/v2825405617915914048/general/March-2021_PQ_Toy-Sale_Web-Banner_1903x650.jpg",
-      "mediaName": "/general/March-2021_PQ_Toy-Sale_Web-Banner_1903x650.jpg"
+      "src": "/file/v1973364591604393627/general/Homepage-02.png",
+      "mediaName": "/general/Homepage-02.png"
     }
   },
   "displayName": "PetReDesign Home Banner Carousel Widget"

@@ -19,8 +19,6 @@
         "horizontalAlignment": "left"
       },
       "imageConfig": {
-        "altText": "Welcome Home Contest",
-        "titleText": "Welcome Home Contest",
         "zoomEnabled": "0",
         "isProductImage": "0",
         "link": "/WelcomeHome",

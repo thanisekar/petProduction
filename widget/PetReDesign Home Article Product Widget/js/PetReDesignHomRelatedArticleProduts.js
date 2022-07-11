@@ -40,7 +40,7 @@ define(
                 var widget = this;
                 if (data.startDateStr() !== null && data.startDateStr() !== "") {
                     var startDateArr = data.startDateStr().split("-");
-                    var shortMon = ["January", "February", "March", "Aprril", "May", "June", "July", "August", "September", "October", "November", "December"];
+                    var shortMon = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
                     var startDateFormat = shortMon[(parseInt(startDateArr[1]) - 1)] + " " + startDateArr[2] + ", " + startDateArr[0];
                     widget.koFormattedDate(startDateFormat);
                 } else {

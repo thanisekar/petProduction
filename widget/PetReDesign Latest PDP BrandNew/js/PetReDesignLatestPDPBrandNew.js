@@ -574,17 +574,8 @@ define(
                             '"name":"' + displayName + '",' +
                             '"image":"https://www.petmate.com' + getCurrentData.product.primaryFullImageURL + '",' +
                             '"description":"' + bvLongDescriptionFinal + '",' +
-                            '"sku":"' + getCurrentData.childSKUs[0].repositoryId + '",' +
-                            '"brand": { '+
-                                '"@type": "Brand",'+
-                               ' "name":"' + getCurrentData.brand + '"' +
-                               '},'+
-                               '"offers": {'+
-                                '"@type": "Offer",'+
-                                '"url":"https://www.petmate.com' + getCurrentData.product.route + '",' +
-                                '"priceCurrency": "USD",'+
-                                '"price": "' + getCurrentData.childSKUs[0].listPrice + '"' +
-                              '}'+
+                            /*'"brand":"' + getCurrentData.brand + '",' +*/
+                            '"sku":"' +  getCurrentData.product.id + '"' +
                             '}' +
                             '</script>'
                             

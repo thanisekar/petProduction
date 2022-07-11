@@ -32,7 +32,14 @@ define(
 		    
 		beforeAppear: function(page) {
 		    var widget=this;
-		   
+		   $(document).ready(function() {
+                   $(".homeBanner-carousel").swiperight(function() {
+                      $(this).carousel('prev');
+                    });
+                   $(".homeBanner-carousel").swipeleft(function() {
+                     $(this).carousel('next');
+                   });
+                });
             
 		},
 		homeCarousel: function(){

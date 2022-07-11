@@ -42,23 +42,7 @@ define(
 
                 
 
-                /* GTM tracking code */
-                (function(w, d, s, l, i) {
-                    w[l] = w[l] || [];
-                    w[l].push({
-                        'gtm.start': new Date().getTime(),
-                        event: 'gtm.js'
-                    });
-                    var f = d.getElementsByTagName(s)[0],
-                        j = d.createElement(s),
-                        dl = l != 'dataLayer' ? '&l=' + l : '';
-                    j.defer = true;
-                    j.src =
-                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                    f.parentNode.insertBefore(j, f);
-                })(window, document, 'script', 'dataLayer', 'GTM-PRSZPD');
-
-                /* Gtm Tracking code ens here */
+                
 
                 /*SEO facebook meta tag*/
                 var seoMeta = '<meta name="facebook-domain-verification" content="zdz4rmdeun0kkfdyhg8gh1tql64e40" />';
@@ -74,6 +58,30 @@ define(
                     '</script>';
                 $("body").append(steelHouseTrackingPixel);
                 /* steel house tracking pixel script ends*/
+
+             /* GTM tracking code fires only after cookie consent is given*/
+                if ($("script[id='gtmId']").length === 0) {
+                    /* GTM tracking code */
+                    (function(w, d, s, l, i) {
+                        w[l] = w[l] || [];
+                        w[l].push({
+                            'gtm.start': new Date().getTime(),
+                            event: 'gtm.js'
+                        });
+                        var f = d.getElementsByTagName(s)[0],
+                            j = d.createElement(s),
+                            dl = l != 'dataLayer' ? '&l=' + l : '';
+                        j.defer = true;
+                        j.id = 'gtmId';
+                        j.src =
+                            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                        f.parentNode.insertBefore(j, f);
+                    })(window, document, 'script', 'dataLayer', 'GTM-PRSZPD');
+
+
+
+                }
+             /* Gtm Tracking code ens here */
                 (function(i, s, o, g, r, a, m) {
                     i['GoogleAnalyticsObject'] = r;
                     i[r] = i[r] || function() {
@@ -86,25 +94,20 @@ define(
                     m.parentNode.insertBefore(a, m)
                 })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
+
+                /*Google Analytics doskocilpetmate@gmail.com*/
+                $('head').prepend("<script defer src='https://www.googletagmanager.com/gtag/js?id=UA-155409198-1'></script>");
+                window.dataLayer = window.dataLayer || [];
+                window.gtag = function() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', 'UA-155409198-1'); // dosckocilpetmate@gmail.com GA code
+                /*Ends*/
+             
+             
+               
                 
-
-
-                 /*Google Analytics doskocilpetmate@gmail.com*/
-                 $('head').prepend("<script defer src='https://www.googletagmanager.com/gtag/js?id=UA-155409198-1'></script>");
-                 window.dataLayer = window.dataLayer || [];
-                 window.gtag = function() {
-                     dataLayer.push(arguments);
-                 }
-                 gtag('js', new Date());
-                 gtag('config', 'UA-155409198-1'); // dosckocilpetmate@gmail.com GA code
-                 /*Ends*/
-
-
-                
-               //Attentive Script
-
-                var attentiveScript = '<script src="https://cdn.attn.tv/petmate/dtag.js"></script>'
-               $("body").append(attentiveScript);
               //Bing Tracking Tag
                
               var bingTrackingScript = '<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"134203866"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>';
@@ -332,6 +335,8 @@ define(
                     $("head").append(shareSaleMaster);
                 }
                 //Ends
+
+                
 
                 function shareasaleGetCookie(e) {
                     var r = e + "=";

@@ -72,7 +72,16 @@
             onLoad: function(widget) {
 
                 getWidget = widget;
-                widget.appendScript('https://apps.bazaarvoice.com/deployments/petmate/main_site/production/en_US/bv.js');
+                
+                var bv_script = document.createElement('script');
+                
+                bv_script.async = true;
+
+                bv_script.setAttribute('src','https://apps.bazaarvoice.com/deployments/petmate/main_site/production/en_US/bv.js');
+                
+                document.head.appendChild(bv_script);
+                
+                //widget.appendScript('https://apps.bazaarvoice.com/deployments/petmate/main_site/production/en_US/bv.js');
                 widget.appendScript('//nsg.symantec.com/Web/Seal/gjs.aspx?SN=965624406');
                 widget.appendScript('https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=S3dfRa');
 

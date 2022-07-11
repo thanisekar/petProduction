@@ -1,5 +1,5 @@
 
-<div class="container" id="brandCollectionData">
+<div class="container visible-xs" id="brandCollectionData">
    <!-- ko if: koBrandCollectionData().length > 0 -->
    <div class="templateRegion" id="cc-recs" data-oc-id="cc-recs">
       <!-- oc layout: panels -->
@@ -45,11 +45,11 @@
                   <div class="item row" data-bind="css: {'active': $index()==0},foreach: $data">
                      <div data-bind="css: $parents[1].spanClass()" class="cc-product-item">
                         <div class="cc-item-detail">
-                           <a class="brandDisplayName" data-bind="attr : { id: 'CC-product-detail-'+id, title: displayName }, ccLink: {route: $data.route()}">
+                           <a class="brandDisplayName" data-bind="attr : { id: 'CC-product-detail-'+$data.id(), title: $data.displayName }, ccLink: {route: $data.route()}">
                            <span data-bind="text: displayName" class="sr-only"></span>
                            
                            <img data-bind="ccResizeImage: {
-                              source: '/file/collections/'+id()+'.png',
+                              source: $data.image,
                               xsmall: '171,300',
                               small: '171,300',
                               medium: '171,300',

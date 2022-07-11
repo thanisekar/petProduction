@@ -1,29 +1,29 @@
 {
   "configuration": {
     "ArticleImage4": {
-      "src": "/file/v1115046141470723629/general/a90208.7TipsToControlDogShedding_MainImage.jpg",
-      "mediaName": "/general/a90208.7TipsToControlDogShedding_MainImage.jpg"
+      "src": "",
+      "mediaName": ""
     },
     "ArticleImage3": {
-      "src": "/file/v8246543128726263239/general/a90216.RentingWithPets101_MainImage.jpg",
-      "mediaName": "/general/a90216.RentingWithPets101_MainImage.jpg"
+      "src": "",
+      "mediaName": ""
     },
     "ArticleImage2": {
-      "src": "/file/v7163671277305024958/general/a90115.WaysToCelebrateNationalWalkTheDogDay2021_MainImage.jpg",
-      "mediaName": "/general/a90115.WaysToCelebrateNationalWalkTheDogDay2021_MainImage.jpg"
+      "src": "",
+      "mediaName": ""
     },
     "ArticleImage1": {
-      "src": "/file/v8103258193803090354/general/a90217.HardVsSoftCatCarriers_MainImage.jpg",
-      "mediaName": "/general/a90217.HardVsSoftCatCarriers_MainImage.jpg"
+      "src": "",
+      "mediaName": ""
     },
-    "ArticleImage3Des": "Renting With Pets 101: Finding Pet-Friendly Living",
-    "ArticleImage1Des": "Hard Vs. Soft Cat Carriers: Which is Right For You?",
-    "ArticleImage2Des": "Ways to Celebrate National Walking the Dog Day",
-    "ArticleImage2URL": "/ways-to-celebrate-national-walk-the-dog-day-2022/article/a90115",
-    "ArticleImage4Des": "8 Tips to Control Dog Shedding",
-    "ArticleImage1URL": "/hard-vs-soft-cat-carriers-which-is-right-for-you-/article/a90217",
-    "ArticleImage3URL": "/renting-with-pets-101-finding-pet-friendly-living/article/a90216",
-    "ArticleImage4URL": "/8-tips-to-control-dog-shedding/article/a90208"
+    "ArticleImage3Des": "",
+    "ArticleImage1Des": "a90233,a90227,a90160,a90168,",
+    "ArticleImage2Des": "",
+    "ArticleImage2URL": "",
+    "ArticleImage4Des": "",
+    "ArticleImage1URL": "",
+    "ArticleImage3URL": "",
+    "ArticleImage4URL": ""
   },
   "displayName": "PetReDesign Home Article Updated"
 }

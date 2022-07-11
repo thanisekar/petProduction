@@ -1,212 +1,152 @@
-
-
-<div class="container" id="educationArticleSectionWidget" data-oc-id="educationArticleSectionWidget">
-    <div class="col-sm-12 col-xs-12 carousel-container-width">
-       <div class='article-content-container col-sm-12 col-xs-12 '>
-             <h2 class='heading'>Canine Know-How. Feline Facts.</h2>
+<!-- ko setContextVariable: {name: 'elementConfig', value: {"1400002": {
+   "font": {"styles": {"display": "block"}},
+   "id": "1400002"
+   }}} --><!-- /ko -->
+<div class="container">
+   <!-- ko if: koDealsModelData().length > 0 -->
+   <div class="templateRegion" id="cc-recs" data-oc-id="cc-recs">
+      <!-- oc layout: panels -->
+      <div class="row">
+         <div class="oc-panel col-md-12" data-oc-id="panel-0-0">
+            <div class='article-content-container col-sm-12 col-xs-12 '>
+               <h2 class='heading'>Canine Know-How. Feline Facts.</h2>
                <p class='heading2'>All-Around Pet Answers.</p>
                <p class='education-content'>When your dog won't stop whining or your cat won't stop scratching, find the right answers that will put your mind (and your heart) at ease.</p>
-                <a  data-bind="ccLink: {route: '/category/articles'}" href="" class="redirectingLink  hidden-sm hidden-xs" >More Articles
-                  <span class="redirect-arrow-icon"></span>
-                 </a>
-           </div>
-    
-       <div class='col-sm-12 col-xs-12'>
-           
-              <div class='col-sm-3 col-md-3 col-xs-12'>
-                  <div class="article-products read-articles">
-                 <!--  <div class='hoverImage'>-->
-                <a data-bind="ccLink: $data, attr: {href: ArticleImage1URL()}">
-		         <img   data-bind="ccResizeImage: {
-                                   source: ArticleImage1.src(),
-                                   xsmall: '368,296',
-                                   small: '368,296',
-                                   medium: '368,296',
-                                   large: '368,296', 
-                                   alt: ArticleImage1Des, 
-                                   title:ArticleImage1Des}" class="img-responsive article-image" >
-                                 
-                 <!--   <img  data-bind='attr:{src: primaryFullImageURL}'/>     -->        
-				 <span data-bind="attr:{alt:ArticleImage1Des,title:ArticleImage1Des}" class="overlay"></span>      
-			 	 </a>
-			 	 
-			 	 </div>
-			 <!--	 </div>-->
-			 	 <div  class='display-name'><a alt=displayName  data-bind="ccLink: {route:ArticleImage1URL()}, text: ArticleImage1Des" ></a></div>
-              </div>
-              <div class='col-sm-3 col-md-3 col-xs-12'>
-                  <div class="article-products read-articles">
-                 <!--  <div class='hoverImage'>-->
-                <a data-bind="ccLink: $data, attr: {href: ArticleImage2URL()}">
-		         <img   data-bind="ccResizeImage: {
-                                   source: ArticleImage2.src(),
-                                   xsmall: '368,296',
-                                   small: '368,296',
-                                   medium: '368,296',
-                                   large: '368,296', 
-                                   alt: ArticleImage2Des, 
-                                   title:ArticleImage2Des}" class="img-responsive article-image" >
-                                 
-                 <!--   <img  data-bind='attr:{src: primaryFullImageURL}'/>     -->        
-				 <span data-bind="attr:{alt:ArticleImage2Des,title:ArticleImage2Des}" class="overlay"></span>       
-			 	 </a>
-			 	 
-			 	 </div>
-			 <!--	 </div>-->
-			 	 <div  class='display-name'><a alt=displayName  data-bind="ccLink: {route:ArticleImage2URL()}, text: ArticleImage2Des" ></a></div>
-              </div>
-              <div class='col-sm-3 col-md-3 col-xs-12'>
-                  <div class="article-products read-articles">
-                 <!--  <div class='hoverImage'>-->
-                <a data-bind="ccLink: $data, attr: {href: ArticleImage3URL()}">
-		         <img   data-bind="ccResizeImage: {
-                                   source: ArticleImage3.src(),
-                                   xsmall: '368,296',
-                                   small: '368,296',
-                                   medium: '368,296',
-                                   large: '368,296', 
-                                   alt: ArticleImage3Des, 
-                                   title:ArticleImage3Des}" class="img-responsive article-image" >
-                                 
-                 <!--   <img  data-bind='attr:{src: primaryFullImageURL}'/>     -->        
-				 <span data-bind="attr:{alt:ArticleImage3Des,title:ArticleImage3Des}" class="overlay"></span>       
-			 	 </a>
-			 	 
-			 	 </div>
-			 <!--	 </div>-->
-			 	 <div  class='display-name'><a alt=displayName  data-bind="ccLink: {route:ArticleImage3URL()}, text: ArticleImage3Des" ></a></div>
-              </div>
-              <div class='col-sm-3 col-md-3 col-xs-12'>
-                  <div class="article-products read-articles">
-                 <!--  <div class='hoverImage'>-->
-                <a data-bind="ccLink: $data, attr: {href: ArticleImage4URL()}">
-		         <img   data-bind="ccResizeImage: {
-                                   source: ArticleImage4.src(),
-                                   xsmall: '368,296',
-                                   small: '368,296',
-                                   medium: '368,296',
-                                   large: '368,296', 
-                                   alt: ArticleImage4Des, 
-                                   title:ArticleImage4Des}" class="img-responsive article-image" >
-                                 
-                 <!--   <img  data-bind='attr:{src: primaryFullImageURL}'/>     -->        
-				 <span data-bind="attr:{alt:ArticleImage4Des,title:ArticleImage4Des}" class="overlay"></span>      
-			 	 </a>
-			 	 
-			 	 </div>
-			 <!--	 </div>-->
-			 	 <div  class='display-name'><a alt=displayName  data-bind="ccLink: {route:ArticleImage4URL()}, text: ArticleImage4Des" ></a></div>
-              </div>
-              
+               <a  data-bind="ccLink: {route: '/category/articles'}" href="" class="redirectingLink  hidden-sm hidden-xs" >More Articles
+               <span class="redirect-arrow-icon"></span>
+               </a>
+            </div>
+            <!-- oc section: recommendations-carousel -->
+            <!--        <div data-bind="element: 'recommendations-carousel', visible: recommendations().length > 0"></div>-->
+            <!--ko if: recommendationsGroups() && (recommendationsGroups().length > 0) -->
+            <div class="row">
+               <!-- Collection Title -->
+               <div id="cc-carousel-controls-a" class="col-xs-3 hidden-xs">
+                  <!-- Carousel Controls -->
+                  <!-- ko if: recommendationsGroups() && (recommendationsGroups().length > 1) -->
+                  <div class="controls row pull-right">
+                     <div id="cc-carousel-left-control-a" class="col-sm-6">
+                        <a class="corousel-left disabled" data-slide="prev" data-bind="widgetLocaleText:{value:'previousImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
+                           <!--<i class="fa-2x fa fa-caret-left "></i>-->
+                        </a>
+                     </div>
+                     <div id="cc-carousel-right-control-a" class="col-sm-6">
+                        <a class="corousel-right" data-slide="next" data-bind="widgetLocaleText:{value:'nextImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
+                           <!--<i class="fa-2x fa fa-caret-right "></i>-->
+                        </a>
+                     </div>
+                  </div>
+                  <!-- /ko -->
+               </div>
+            </div>
+            <div data-bind="carouselSwipe, attr:{id: 'carousel-id-'+id()}" class="collectionProdCarousel-a carousel slide inner-corousel" data-interval="false">
+               <div class="carousel-inner home-carousel-a" id="article-carousel">
+                   <div id="cc-carousel-left-control-a-m" class="visible-xs">
+                        <a class="corousel-left disabled" data-slide="prev" data-bind="widgetLocaleText:{value:'previousImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
+                           <!--<i class="fa-2x fa fa-caret-left "></i>-->
+                        </a>
+                     </div>
+                  <!-- ko foreach: recommendationsGroups -->
+                  <div class="item row rowNum" data-bind="css: {'active': $index()==0},foreach: $data">
+                     <div class="cc-product-item col-md-3  col-xs-12">
+                        <div class="product-item-wrapper">
+                           <div class="row">
+                              <div class="col-xs-12 col-sm-4 col-md-12 nopad read-articles"> <a data-bind="attr : { id: 'CC-product-detail-'+id(), title: displayName }, ccLink: {route: $data.route()}">
+                                 <span data-bind="text: displayName" class="sr-only"></span>
+                                 <img  class="img-responsive" data-bind="ccResizeImage: {
+                                    source: primarySmallImageURL,
+                                    size: '165,165',
+                                    alt: displayName, 
+                                    title:displayName}">
+                                 <span data-bind="attr:{alt:displayName,title:displayName}" class="overlay"></span>
+                                 </a>
+                              </div>
+                              <div class="col-xs-12 col-sm-8 col-md-12 nopad descriptionContent">
+                                 <div data-bind="text:$parents[1].newMonthDisplay($data)" class="plp-date hidden-xs"></div>
+                                 <a alt=displayName  data-bind="attr : { id: 'CC-product-title-'+id()},ccLink: {route: $data.route()}" >
+                                    <p data-bind="text: displayName" class="cc-text-overflow"></p>
+                                 </a>
+                                 <div class="wrap hidden-xs">
+                                    <div class='description' data-bind="text: $parents[1].truncate($data.description)"></div>
+                                    <span><a data-bind="attr : {  ccLink: {route: $data.route()}}"  class="read-article">
+                                    Read Article
+                                    </a></span> 
+                                 </div>
+                                 <div class="mob-wrap visible-xs" style="padding: 10px 0;">
+                                     <a data-bind="ccLink: {route:$data.route()}"  class="read-article">
+                                    Read More
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- /ko -->
+                  <div id="cc-carousel-right-control-a-m" class="visible-xs">
+                        <a class="corousel-right" data-slide="next" data-bind="widgetLocaleText:{value:'nextImageText',attr:'title'}, attr:{href: '#carousel-id-'+id()}">
+                           <!--<i class="fa-2x fa fa-caret-right "></i>-->
+                        </a>
+                     </div>
+               </div>
+               <!-- Carousel Indicators-->
+               <!-- ko if: recommendationsGroups().length > 1 -->
+               <div id="cc-carousel-indicators" class="row hide">
+                  <ol role="presentation" class="carousel-indicators" data-bind="foreach: recommendationsGroups">
+                     <li data-bind="css: {'active': $index()==0}, attr: {'data-slide-to': $index, 'data-target': '#carousel-id-'+$parent.id}"></li>
+                  </ol>
+               </div>
+               <!-- /ko -->
+            </div>
+            <!--/ko-->
+            <!-- /oc -->
          </div>
-      
-    </div>
+      </div>
+      <!-- /oc -->
+      <div class="categoryTable">
+         <div class="row">
+            <div class="col-md-9 col-sm-12 nopad categoryTableCenter">
+               <h3 class="title-txt">Shop Our Popular Categories</h3>
+               <div class="col-sm-4 col-xs-12">
+                  <ul>
+                     <li>Dogs</li>
+                     <li> <a tabindex="0" data-bind="ccLink:{route:'/category/L1-accessoriesL2-dog-accessories'}" class="category-header Level2 inLine font14">Dog Accessories</a></li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-beddingL2-dog-beds'}" class="category-header Level2 inLine font14">Dog Bedding</a></li>
+                     <li> <a tabindex="0" data-bind="ccLink:{route:'/category/L1-collars-leashesL2-dog-collars-leashes'}" class="category-header Level2 inLine font14" >Dog Collars &amp; Leashes</a></li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-feeding-wateringL2-dog-feeding-watering'}" class="category-header Level2 inLine font14" >Feeding &amp; Watering</a></li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-groomingL2-dog-grooming'}" class="category-header Level2 inLine font14" >Grooming Accessories for Dogs</a></li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-kennels-carriersL2-dog-kennels-carriers'}" class="category-header Level2 inLine font14" >Dog Kennels</a></li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-sheltersL2-dog-shelters'}" class="category-header Level2 inLine font14">Shelters for Dogs</a></li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-toysL2-dog-toys'}" class="category-header Level2 inLine font14">Popular Dog Toys</a></li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-travelL2-dog-travel'}" class="category-header Level2 inLine font14">Travel Accessories for Dog Owners</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-4 col-xs-12">
+                  <ul>
+                     <li>Cats</li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-accessoriesL2-cat-accessories'}" class="category-header Level2 inLine font14">Accessories for Cats</a></li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-beddingL2-cat-beds'}" class="category-header Level2 inLine font14" >Cat Beds</a></li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-collars-leashesL2-cat-collars-leashes'}" class="category-header Level2 inLine font14">Cat Collars &amp; Leashes</a></li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-feeding-wateringL2-cat-feeding-watering'}" class="category-header Level2 inLine font14" >Feeding &amp; Watering for Cats</a></li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-groomingL2-cat-grooming'}" class="category-header Level2 inLine font14" >Cat Grooming Supplies</a></li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-kennels-carriersL2-cat-kennels-carriers'}" class="category-header Level2 inLine font14">Cat Kennels &amp; Carriers</a></li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-toysL2-cat-toys'}" class="category-header Level2 inLine font14">Cat Toys</a></li>
+                     <li> <a tabindex="0" data-bind="ccLink:{route:'/category/L1-waste-managementL2-cat-waste-management'}" class="category-header Level2 inLine font14">Cat Litterboxes &amp; Accessories</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-4 col-xs-12">
+                  <ul>
+                     <li>Replacement Parts</li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-replacement-parts'}" class="category-header Level2 inLine font14">All Replacement Parts </a></li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-replacement-partsL2-feeding-watering'}" class="category-header Level2 inLine font14" >Feeding &amp; Watering Replacement Parts</a></li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-replacement-partsL2-kennels-carriers'}" class="category-header Level2 inLine font14">Kennel &amp; Carrier Replacement Parts</a></li>
+                     <li><a tabindex="0" data-bind="ccLink:{route:'/category/L1-replacement-partsL2-litter-pans'}" class="category-header Level2 inLine font14" >Litter Pan Replacement Parts</a></li>
+                     <li> <a tabindex="0" data-bind="ccLink:{route:'/category/L1-replacement-partsL2-shelters'}" class="category-header Level2 inLine font14" >Shelter Replacement Parts</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- /ko -->
 </div>
-
-
-<div class="container categoryTable">
-    <div class="row">
-        <div class="col-sm-9 col-xs-12 nopad categoryTable-center">
-                <h3 class="title-txt">Shop Our Popular Categories</h3>
-        <table class="table  table-borderless">
-	<thead>
-		       <tr>
-    			   <td>Dogs</td>
-    			   <td>Cats</td>
-    			   <td>Replacement Parts</td>
-			</tr>
-		</thead>
-		<tbody>
-				<tr>
-					<td>
-					    <a tabindex="0" data-bind="ccLink:{route:'/category/L1-accessoriesL2-dog-accessories'}" class="category-header Level2 inLine font14">Dog Accessories</a>
-					</td>
-					<td>
-					    <a tabindex="0" data-bind="ccLink:{route:'/category/L1-accessoriesL2-cat-accessories'}" class="category-header Level2 inLine font14">Accessories for Cats</a>
-					</td>
-					<td>
-					    <a tabindex="0" data-bind="ccLink:{route:'/category/L1-replacement-parts'}" class="category-header Level2 inLine font14">All Replacement Parts </a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-					   <a tabindex="0" data-bind="ccLink:{route:'/category/L1-beddingL2-dog-beds'}" class="category-header Level2 inLine font14">Dog Bedding</a>
-					</td>
-					<td>
-					    <a tabindex="0" data-bind="ccLink:{route:'/category/L1-beddingL2-cat-beds'}" class="category-header Level2 inLine font14" >Cat Beds</a>
-					</td>
-					<td>
-					    <a tabindex="0" data-bind="ccLink:{route:'/category/L1-replacement-partsL2-feeding-watering'}" class="category-header Level2 inLine font14" >Feeding &amp; Watering Replacement Parts</a>
-					</td>
-				</tr>
-				<tr>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-collars-leashesL2-dog-collars-leashes'}" class="category-header Level2 inLine font14" >Dog Collars &amp; Leashes</a>
-				    </td>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-collars-leashesL2-cat-collars-leashes'}" class="category-header Level2 inLine font14">Cat Collars &amp; Leashes</a>
-				    </td>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-replacement-partsL2-kennels-carriers'}" class="category-header Level2 inLine font14">Kennel &amp; Carrier Replacement Parts</a>
-				    </td>
-				</tr>
-				<tr>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-feeding-wateringL2-dog-feeding-watering'}" class="category-header Level2 inLine font14" >Feeding &amp; Watering</a>
-				    </td>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-feeding-wateringL2-cat-feeding-watering'}" class="category-header Level2 inLine font14" >Feeding &amp; Watering for Cats</a>
-				    </td>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-replacement-partsL2-litter-pans'}" class="category-header Level2 inLine font14" >Litter Pan Replacement Parts</a>
-				    </td>
-				</tr>
-				<tr>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-groomingL2-dog-grooming'}" class="category-header Level2 inLine font14" >Grooming Accessories for Dogs</a>
-				    </td>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-groomingL2-cat-grooming'}" class="category-header Level2 inLine font14" >Cat Grooming Supplies</a>
-				    </td>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-replacement-partsL2-shelters'}" class="category-header Level2 inLine font14" >Shelter Replacement Parts</a>
-				    </td>
-				</tr>
-				<tr>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-kennels-carriersL2-dog-kennels-carriers'}" class="category-header Level2 inLine font14" >Dog Kennels</a>
-				    </td>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-kennels-carriersL2-cat-kennels-carriers'}" class="category-header Level2 inLine font14">Cat Kennels &amp; Carriers</a>
-				    </td>
-				</tr>
-				<tr>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-sheltersL2-dog-shelters'}" class="category-header Level2 inLine font14">Shelters for Dogs</a>
-				    </td>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-sheltersL2-cat-shelters'}" class="category-header Level2 inLine font14">Top Cat Shelters</a>
-				    </td>
-				</tr>
-				<tr>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-toysL2-dog-toys'}" class="category-header Level2 inLine font14">Popular Dog Toys</a>
-				    </td>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-toysL2-cat-toys'}" class="category-header Level2 inLine font14">Cat Toys</a>
-				    </td>
-				</tr>
-				<tr>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-travelL2-dog-travel'}" class="category-header Level2 inLine font14">Travel Accessories for Dog Owners</a>
-				    </td>
-				    <td>
-				        <a tabindex="0" data-bind="ccLink:{route:'/category/L1-travelL2-cat-travel'}" class="category-header Level2 inLine font14">Travel Accessories for Cat Owners</a>
-				    </td>
-				</tr>
-			</tbody>
-		</table>
-        </div>
-    </div>
-</div>
-

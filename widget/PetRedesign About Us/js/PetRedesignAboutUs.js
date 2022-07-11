@@ -24,14 +24,14 @@ define(
 				  "altText":"Meet-Richard-and-Daphne"
 			   },
 			   {
-				  "image":"facesofpetmate_laurenS_fisher.png",
-				  "content":"Everyone, meet Fisher! He's a loving 1-year-old pup who was adopted by his mom, Lauren at the very beginning of quarantine. While he loved working from home with his mom and getting all of her attention, he now seeks the attention of another pup in the office, Ms. Martini who works with her mom is the next cubicle over. #OfficeRomance",
-				  "altText":"Meet-LaurenS-and-Fisher"
+				  "image":"facesofpetmate_casey_hazel.png",
+				  "content":"Meet Casey and Hazel! Casey works on our Sales Team here at Petmate and has been bringing Hazel to the office since she was 8 weeks old! Hazel, who is now 3, is a chunky English Lab who loves coming to work and enjoying treats from mom's co-workers. When she's not working hard for treats in the office, Hazel's favorite thing to do is go swimming in the pool, which is where you can find her every hot summer weekend in Texas.",
+				  "altText":"Meet-Caey-and-Hazel"
 			   },
 			   {
-				  "image":"facesofpetmate_patricia_martini.png",
-				  "content":"Meet Martini! She's a feisty 5-year-old Chiweenie Mix with the biggest personality a dog could ever have. Her favorite thing about coming to work with mom is testing every single bed sample Petmate makes and visiting all the people she loves. As the saying goes... it takes a village, but in Martin's case it takes the entire office! At home, Martini loves to walk the streets of downtown Dallas with her mom, bark at the mail man, kiss children, and play hard-to-get with the other dogs in the neighborhood.",
-				  "altText":"Meet-Patricia-and-Martini"
+				  "image":"facesofpetmate_karl_kodi.png",
+				  "content":"Say hi to Karl & Kodi! Karl works on our product development team here at Petmate, with Kodi tagging along. Kodi is a gorgeous 2-year-old Siberian Husky who loves coming to work with his dad and hanging out with his friends in the office. When Kodi isn't at work with dad, he enjoys long hikes. Karl describes Kodi as very sassy which has gotten him his very own Instagram account: @kodiak_the_siberian_husky",
+				  "altText":"Meet-Karl-and-Kodi"
 			   },
 			  {
 				  "image":"facesofpetmate_kelly_koby.png",

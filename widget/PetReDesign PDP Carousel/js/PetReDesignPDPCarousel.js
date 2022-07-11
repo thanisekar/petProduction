@@ -61,7 +61,7 @@ define(
                         var imagePath= "";
                         for (var j = 0; j < getData.length; j++) {
                             if(getData[j] && getData[j].primaryFullImageURL){
-                             imagePath = getData[j].primaryFullImageURL.split("=");
+                             imagePath = getData[j].primaryFullImageURL.toString().split("=");
                             getData[j].primaryFullImageURL = ko.observable(imagePath[1]);
                             }                           
                         }
